@@ -135,43 +135,58 @@ def section_raw_vs_cleaned(out, source, sample):
     n_clean_obj = sum(len(v) for v in clean.values())
     dropped_videos = len(set(raw) - set(clean))
 
-    same_id_same_label = same_attrs = cleaned_total = 0
-    kept_by_certainty = {True: [0, 0], False: [0, 0]}  # uncertain -> [kept, total]
-    label_kept, label_total = Counter(), Counter()
+    # Object ids are renumbered by cleaning, so match objects by content instead:
+    # (1) exact match on (label without "(uncertain)", attribute list) within the same video;
+    # (2) label counts per video, which needs no one-to-one match at all.
+    def signature(o):
+        return base_label(label_of(o)), tuple(o.get("attributes") or [])
+
+    id_match = exact_match = relabelled = 0
+    kept_by_certainty = {True: [0, 0], False: [0, 0]}   # raw "(uncertain)"? -> [matched, total]
+    label_raw, label_kept = Counter(), Counter()
     for vid, robjs in raw.items():
         cobjs = clean.get(vid, {})
         for oid, co in cobjs.items():
-            cleaned_total += 1
             ro = robjs.get(oid)
-            if ro is not None and base_label(label_of(ro)) == base_label(label_of(co)):
-                same_id_same_label += 1
-                same_attrs += (ro.get("attributes") or []) == (co.get("attributes") or [])
-        for oid, ro in robjs.items():
+            id_match += ro is not None and base_label(label_of(ro)) == base_label(label_of(co))
+        pool = Counter(signature(o) for o in cobjs.values())
+        for ro in robjs.values():
+            sig = signature(ro)
+            hit = pool[sig] > 0
+            if hit:
+                pool[sig] -= 1
+                exact_match += 1
             unc = "uncertain" in label_of(ro)
-            kept = oid in cobjs and base_label(label_of(cobjs[oid])) == base_label(label_of(ro))
-            kept_by_certainty[unc][0] += kept
+            kept_by_certainty[unc][0] += hit
             kept_by_certainty[unc][1] += 1
-            b = base_label(label_of(ro))
-            label_total[b] += 1
-            label_kept[b] += kept
+        r_labels = Counter(base_label(label_of(o)) for o in robjs.values())
+        c_labels = Counter(base_label(label_of(o)) for o in cobjs.values())
+        for lab, n in r_labels.items():
+            label_raw[lab] += n
+            label_kept[lab] += min(n, c_labels[lab])
+        relabelled += sum(max(0, n - r_labels[lab]) for lab, n in c_labels.items())
 
     out += [f"## B. raw → cleaned for `{source}` ({len(raw)} raw videos{' (sample)' if sample else ''})", "",
             f"- videos dropped entirely by cleaning: {dropped_videos} ({pct(dropped_videos, len(raw))})",
             f"- objects: raw {n_raw_obj} → cleaned {n_clean_obj} (kept {pct(n_clean_obj, n_raw_obj)})",
-            f"- cleaned objects whose id exists in raw with the same label: {pct(same_id_same_label, cleaned_total)}"
-            f"  (high = ids are preserved, so the per-object numbers below are meaningful)",
-            f"- …and with identical attributes: {pct(same_attrs, cleaned_total)}",
-            f"- keep rate of raw objects labelled '(uncertain)': {pct(*kept_by_certainty[True])} "
+            f"- cleaned objects whose *id* points to a raw object with the same label: {pct(id_match, n_clean_obj)} "
+            f"(low = ids were renumbered)",
+            f"- cleaned objects with an exact (label, attribute list) twin in raw: {pct(exact_match, n_clean_obj)} "
+            f"(high = cleaned objects are the raw objects, filtered; low = labels/attributes were regenerated)",
+            f"- cleaned objects whose label count exceeds raw's in that video (new or renamed labels): "
+            f"{pct(relabelled, n_clean_obj)}",
+            f"- raw '(uncertain)' objects with a cleaned twin: {pct(*kept_by_certainty[True])} "
             f"of {kept_by_certainty[True][1]}",
-            f"- keep rate of raw objects without '(uncertain)': {pct(*kept_by_certainty[False])} "
-            f"of {kept_by_certainty[False][1]}", ""]
-    common = [(l, label_total[l]) for l in label_total if label_total[l] >= 200]
+            f"- raw certain objects with a cleaned twin: {pct(*kept_by_certainty[False])} "
+            f"of {kept_by_certainty[False][1]}",
+            "  (the two twin rates are only meaningful if the exact-twin share above is high)", ""]
+    common = [(l, label_raw[l]) for l in label_raw if label_raw[l] >= 200]
     by_rate = sorted(common, key=lambda x: label_kept[x[0]] / x[1])
-    out.append("Most-removed labels (≥200 raw occurrences): " +
-               ", ".join(f"{l} {pct(label_kept[l], n)} kept" for l, n in by_rate[:20]))
+    out.append("Label keep rate = Σ_videos min(raw count, cleaned count) / raw count, labels with ≥200 raw objects.")
     out.append("")
-    out.append("Most-kept labels (≥200 raw occurrences): " +
-               ", ".join(f"{l} {pct(label_kept[l], n)} kept" for l, n in by_rate[::-1][:20]))
+    out.append("Most-removed labels: " + ", ".join(f"{l} {pct(label_kept[l], n)}" for l, n in by_rate[:25]))
+    out.append("")
+    out.append("Most-kept labels: " + ", ".join(f"{l} {pct(label_kept[l], n)}" for l, n in by_rate[::-1][:25]))
     out.append(f"\n({time.time() - t0:.0f}s)\n")
     return set(clean)
 
