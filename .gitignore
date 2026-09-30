@@ -1,0 +1,5 @@
+third_party/
+data/
+*.mp4
+*.parquet
+__pycache__/
