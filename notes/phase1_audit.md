@@ -15,31 +15,39 @@ VIPSeg: test videos whose **YouTube source video** also appears in VIPSeg traini
 
 - videos dropped entirely by cleaning: 20 (0.0%)
 - objects: raw 1263301 → cleaned 658504 (kept 52.1%)
-- cleaned objects whose id exists in raw with the same label: 10.6%  (high = ids are preserved, so the per-object numbers below are meaningful)
-- …and with identical attributes: 3.6%
-- keep rate of raw objects labelled '(uncertain)': 2.5% of 354782
-- keep rate of raw objects without '(uncertain)': 6.7% of 908519
+- cleaned objects whose *id* points to a raw object with the same label: 10.6% (low = ids were renumbered)
+- cleaned objects with an exact (label, attribute list) twin in raw: 100.0% (high = cleaned objects are the raw objects, filtered; low = labels/attributes were regenerated)
+- cleaned objects whose label count exceeds raw's in that video (new or renamed labels): 0.0%
+- raw '(uncertain)' objects with a cleaned twin: 29.9% of 354782
+- raw certain objects with a cleaned twin: 60.8% of 908519
+  (the two twin rates are only meaningful if the exact-twin share above is high)
 
-Most-removed labels (≥200 raw occurrences): object 0.0% kept, cylindrical object 0.0% kept, wooden object 0.0% kept, floor lamp 0.0% kept, triangular object 0.0% kept, fabric-like object 0.0% kept, power lines 0.0% kept, runner 0.0% kept, dumpster 0.0% kept, cooler 0.0% kept, street light 0.0% kept, plastic bags 0.0% kept, air conditioning unit 0.0% kept, telephone wire 0.0% kept, surfboard 0.0% kept, crane 0.0% kept, curb cut 0.0% kept, junction box 0.0% kept, street light fixture 0.0% kept, metallic object 0.0% kept
+Label keep rate = Σ_videos min(raw count, cleaned count) / raw count, labels with ≥200 raw objects.
 
-Most-kept labels (≥200 raw occurrences): duck 36.2% kept, pigeon 30.9% kept, sheep 30.6% kept, leaf 26.0% kept, goldfish 25.1% kept, goat 24.5% kept, hog 23.4% kept, fish 21.6% kept, kitten 20.2% kept, chicken 19.6% kept, monkey 19.0% kept, rock 18.9% kept, cow 18.0% kept, candle 17.6% kept, pig 17.3% kept, person 15.6% kept, tile 14.5% kept, horse 13.7% kept, apple 13.6% kept, brick 13.5% kept
+Most-removed labels: object 0.0%, cylindrical object 0.0%, wooden object 0.0%, triangular object 0.0%, fabric-like object 0.0%, telephone wire 0.0%, metallic object 0.0%, rectangular object 0.0%, floor lamp 0.1%, runner 0.2%, junction box 1.3%, power lines 2.0%, surfboard 2.3%, tape measure 3.2%, wall panel 3.3%, curb cut 3.8%, street light 4.7%, straw 4.8%, driftwood 5.0%, street light fixture 5.5%, bathtub 5.8%, skateboard 6.8%, air conditioning unit 7.3%, mirror 8.5%, crosswalk 8.7%
 
-(24s)
+Most-kept labels: sky 91.8%, hair 88.4%, house 88.1%, man 87.1%, pickup truck 86.4%, girl 85.7%, road 85.6%, shirt 85.3%, jeans 85.3%, sweatpants 85.0%, jar 84.0%, shutter 83.4%, tile 83.3%, woman 82.9%, shorts 82.6%, sedan 82.4%, motor scooter 82.4%, shopping bag 81.9%, building 81.5%, taillight 81.5%, sack 81.4%, trousers 81.4%, lane marking 81.2%, motorcycle wheel 81.0%, guardrail 80.9%
+
+(28s)
 
 ## B. raw → cleaned for `pvd` (20000 raw videos (sample))
 
 - videos dropped entirely by cleaning: 504 (2.5%)
 - objects: raw 689315 → cleaned 231376 (kept 33.6%)
-- cleaned objects whose id exists in raw with the same label: 17.6%  (high = ids are preserved, so the per-object numbers below are meaningful)
-- …and with identical attributes: 3.7%
-- keep rate of raw objects labelled '(uncertain)': 3.3% of 360584
-- keep rate of raw objects without '(uncertain)': 8.8% of 328731
+- cleaned objects whose *id* points to a raw object with the same label: 17.6% (low = ids were renumbered)
+- cleaned objects with an exact (label, attribute list) twin in raw: 100.0% (high = cleaned objects are the raw objects, filtered; low = labels/attributes were regenerated)
+- cleaned objects whose label count exceeds raw's in that video (new or renamed labels): 0.0%
+- raw '(uncertain)' objects with a cleaned twin: 20.1% of 360584
+- raw certain objects with a cleaned twin: 48.3% of 328731
+  (the two twin rates are only meaningful if the exact-twin share above is high)
 
-Most-removed labels (≥200 raw occurrences): table edge 0.0% kept, unknown 0.0% kept, star-shaped object 0.0% kept, elongated object 0.0% kept, choker 0.0% kept, triangular object 0.0% kept, object 0.0% kept, wooden rod 0.0% kept, rectangular object 0.0% kept, scarf 0.0% kept, drumstick 0.0% kept, watch strap 0.0% kept, stylus 0.0% kept, pan handle 0.0% kept, triangle-shaped object 0.0% kept, slipper 0.0% kept, bicycle pedal 0.0% kept, tail 0.0% kept, welding rod 0.0% kept, debris fragment 0.0% kept
+Label keep rate = Σ_videos min(raw count, cleaned count) / raw count, labels with ≥200 raw objects.
 
-Most-kept labels (≥200 raw occurrences): coffee bean 52.3% kept, heart 35.7% kept, almond 32.7% kept, brick 32.3% kept, potato chip 31.9% kept, seashell 29.2% kept, tile 28.8% kept, cereal piece 27.7% kept, walnut 27.2% kept, marshmallow 26.8% kept, playing card 26.7% kept, cherry 26.2% kept, capsule 25.5% kept, blueberry 25.1% kept, cube 25.0% kept, bead 23.6% kept, keyboard key 23.5% kept, coin 22.5% kept, rock 22.1% kept, grape 21.9% kept
+Most-removed labels: unknown 0.0%, star-shaped object 0.0%, elongated object 0.0%, triangular object 0.0%, object 0.0%, rectangular object 0.0%, triangle-shaped object 0.0%, stylus 0.4%, table edge 1.0%, wooden rod 1.1%, choker 1.1%, bicycle pedal 1.3%, reed 1.4%, welding rod 1.6%, remote control 1.7%, ice fragment 2.4%, pine needle 2.9%, tinfoil 3.6%, tape 4.2%, wall panel 4.9%, tissue paper 5.1%, skateboard 5.3%, wooden stick 5.6%, computer mouse 5.6%, drumstick 5.7%
 
-(16s)
+Most-kept labels: cereal piece 92.8%, keyboard key 88.7%, dollar bill 85.5%, tile 85.0%, coffee bean 84.5%, rose 84.4%, french fry 83.9%, palm tree 83.4%, marshmallow 83.3%, house 82.7%, bell pepper slice 81.3%, brick 81.1%, potato slice 80.7%, building 80.1%, raspberry 79.9%, walnut 79.8%, blueberry 79.5%, wall 79.1%, water 79.1%, hair 79.0%, roof 76.8%, glass cup 76.3%, olive 76.1%, plank 76.0%, arm 75.9%
+
+(19s)
 
 ## C. Label hygiene of object labels
 
