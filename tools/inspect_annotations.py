@@ -1,11 +1,13 @@
 """Phase 1.2: look inside the SVG2 annotation parquets (no masks, no videos needed).
 
-For every folder under data/SVG2/data/<version>/<source>/ it prints the columns, the
-number of videos, per-video object / attribute / relation statistics, relation types,
-object levels (SVG2_test only), statistics of relation time spans, and one example row.
+Writes a Markdown report (default notes/phase1_inspect.md) with one summary table
+comparing every split, then per-split details: top labels, relation types, and one
+example video. The terminal only shows progress.
 
-    python tools/inspect_annotations.py                       # every folder
-    python tools/inspect_annotations.py --only SVG2_test sav  # folders whose path contains all given words
+    python tools/inspect_annotations.py                    # every split
+    python tools/inspect_annotations.py --only SVG2_test   # splits whose path contains all given words
+
+Open the report in VS Code with Ctrl+Shift+V (Markdown preview).
 """
 import argparse
 import glob
@@ -30,117 +32,134 @@ def parse(value):
     return value
 
 
-def load_folder(folder):
-    files = sorted(glob.glob(os.path.join(folder, "*.parquet")))
-    return pa.concat_tables([pq.read_table(f) for f in files]), len(files)
-
-
-def pct(values, qs=(50, 90, 99, 100)):
-    if not values:
-        return "n/a"
-    arr = np.asarray(values, dtype=float)
-    return "  ".join(f"p{q}={np.percentile(arr, q):.1f}" for q in qs)
+def q(values, p):
+    return float(np.percentile(np.asarray(values, dtype=float), p)) if values else float("nan")
 
 
 def summarize(folder):
-    t0 = time.time()
-    table, n_files = load_folder(folder)
+    files = sorted(glob.glob(os.path.join(folder, "*.parquet")))
+    table = pa.concat_tables([pq.read_table(f) for f in files])
     cols = table.column_names
-    n = table.num_rows
-    name = os.path.relpath(folder, ROOT)
-    print("=" * 100)
-    print(f"{name}   ({n_files} parquet files, {n} videos)")
-    print(f"columns: {cols}")
-
-    if "source" in cols:
-        print("source:", dict(Counter(table.column("source").to_pylist())))
-
-    objs_col = table.column("objects").to_pylist()
-    rels_col = table.column("relationships").to_pylist()
 
     objs_per_video, attrs_per_obj, rels_per_video = [], [], []
-    rel_len, rel_types, levels, obj_keys = Counter(), Counter(), Counter(), Counter()
-    span_ends, span_lengths, n_spans_per_rel = [], [], []
-    frac_endpoints = total_endpoints = 0
-    camera_rels = uncertain_objs = 0
-    labels = Counter()
+    rel_types, levels, labels = Counter(), Counter(), Counter()
+    span_ends, span_lengths = [], []
+    frac_endpoints = total_endpoints = zero_len = 0
+    camera_rels = uncertain = 0
 
-    for o_raw, r_raw in zip(objs_col, rels_col):
+    for o_raw, r_raw in zip(table.column("objects").to_pylist(), table.column("relationships").to_pylist()):
         objs, rels = parse(o_raw), parse(r_raw)
         objs_per_video.append(len(objs))
         rels_per_video.append(len(rels))
         for ob in objs:
             key = next((k for k in ob if k.startswith("object")), None)
-            obj_keys[key.split("_")[0] if key else "NO_OBJECT_KEY"] += 1
-            if key:
-                label = str(ob[key])
-                labels[label] += 1
-                uncertain_objs += "uncertain" in label
+            label = str(ob[key]) if key else "<no object key>"
+            labels[label] += 1
+            uncertain += "uncertain" in label
             attrs_per_obj.append(len(ob.get("attributes") or []))
             if "level" in ob:
                 levels[ob["level"]] += 1
         for rel in rels:
-            rel_len[len(rel)] += 1
-            if len(rel) > 4:
-                rel_types[rel[4]] += 1
-            if -1 in (rel[0], rel[2]):
-                camera_rels += 1
-            spans = rel[3] if len(rel) > 3 else []
-            n_spans_per_rel.append(len(spans))
-            for s, e in spans:
+            rel_types[rel[4] if len(rel) > 4 else "<no type field>"] += 1
+            camera_rels += -1 in (rel[0], rel[2])
+            for s, e in (rel[3] if len(rel) > 3 else []):
                 span_ends.append(e)
                 span_lengths.append(e - s)
-                for v in (s, e):
-                    total_endpoints += 1
-                    frac_endpoints += float(v) != int(v)
+                zero_len += e == s
+                total_endpoints += 2
+                frac_endpoints += (float(s) != int(s)) + (float(e) != int(e))
 
-    n_obj, n_rel = sum(objs_per_video), sum(rels_per_video)
-    print(f"objects: {n_obj}   per video: {pct(objs_per_video)}")
-    print(f"attributes: {sum(attrs_per_obj)}   per object: {pct(attrs_per_obj)}   "
-          f"objects with 0 attributes: {sum(a == 0 for a in attrs_per_obj)}")
-    print(f"relations: {n_rel}   per video: {pct(rels_per_video)}   "
-          f"camera (-1) relations: {camera_rels}")
-    print(f"relation tuple lengths: {dict(rel_len)}")
-    if rel_types:
-        print(f"relation types: {dict(rel_types.most_common())}")
-    if levels:
-        print(f"object levels: {dict(levels)}")
-    print(f"object key styles: {dict(obj_keys)}   labels containing 'uncertain': {uncertain_objs}")
-    print(f"distinct object labels: {len(labels)}   top 15: {labels.most_common(15)}")
-    print(f"spans per relation: {pct(n_spans_per_rel)}")
-    print(f"span end (s): {pct(span_ends)}")
-    print(f"span length end-start (s): {pct(span_lengths)}   "
-          f"zero-length spans: {sum(l == 0 for l in span_lengths)}   negative: {sum(l < 0 for l in span_lengths)}")
-    print(f"fractional endpoints: {frac_endpoints} / {total_endpoints}")
+    example = {c: table.column(c)[0].as_py() for c in cols}
+    return {
+        "name": os.path.relpath(folder, ROOT),
+        "files": len(files),
+        "columns": cols,
+        "sources": dict(Counter(table.column("source").to_pylist())) if "source" in cols else {},
+        "videos": table.num_rows,
+        "objects": sum(objs_per_video),
+        "obj_p50": q(objs_per_video, 50), "obj_p90": q(objs_per_video, 90), "obj_max": q(objs_per_video, 100),
+        "attrs": sum(attrs_per_obj),
+        "attr_p50": q(attrs_per_obj, 50), "attr_p90": q(attrs_per_obj, 90),
+        "objs_no_attr": sum(a == 0 for a in attrs_per_obj),
+        "rels": sum(rels_per_video),
+        "rel_p50": q(rels_per_video, 50), "rel_p90": q(rels_per_video, 90),
+        "camera_rels": camera_rels,
+        "rel_types": rel_types,
+        "levels": levels,
+        "labels": labels,
+        "uncertain": uncertain,
+        "span_end_p50": q(span_ends, 50), "span_end_max": q(span_ends, 100),
+        "span_len_p50": q(span_lengths, 50),
+        "zero_len": zero_len,
+        "frac_pct": 100.0 * frac_endpoints / total_endpoints if total_endpoints else float("nan"),
+        "example": example,
+    }
 
-    # One example row, one line per object / relation, truncated so it stays readable.
-    print("example row:")
-    for c in cols:
-        value = table.column(c)[0].as_py()
-        if c in ("objects", "relationships"):
-            items = parse(value)
-            print(f"  {c}: {len(items)} items")
-            for item in items[:5]:
-                print("    ", json.dumps(item, ensure_ascii=False, default=str)[:250])
-            if len(items) > 5:
-                print("     ...")
-        else:
-            print(f"  {c}: {str(value)[:250]}")
-    print(f"({time.time() - t0:.1f}s)")
+
+def fmt(x, nd=1):
+    return "–" if x != x else (f"{x:.{nd}f}" if isinstance(x, float) else str(x))
+
+
+def write_report(stats, path):
+    lines = ["# Phase 1.2: SVG2 annotation inspection", "",
+             "Generated by `tools/inspect_annotations.py`. Spans are in seconds.", "",
+             "## Summary", "",
+             "| split | videos | objects | obj/video p50 (p90, max) | attrs/obj p50 (p90) | objs w/o attrs "
+             "| relations | rel/video p50 (p90) | camera rels | distinct labels | 'uncertain' labels "
+             "| span end p50 (max) | span len p50 | zero-len spans | fractional endpoints |",
+             "|" + "---|" * 15]
+    for s in stats:
+        lines.append(
+            f"| {s['name']} | {s['videos']} | {s['objects']} "
+            f"| {fmt(s['obj_p50'])} ({fmt(s['obj_p90'])}, {fmt(s['obj_max'], 0)}) "
+            f"| {fmt(s['attr_p50'])} ({fmt(s['attr_p90'])}) | {s['objs_no_attr']} "
+            f"| {s['rels']} | {fmt(s['rel_p50'])} ({fmt(s['rel_p90'])}) | {s['camera_rels']} "
+            f"| {len(s['labels'])} | {s['uncertain']} "
+            f"| {fmt(s['span_end_p50'])} ({fmt(s['span_end_max'])}) | {fmt(s['span_len_p50'])} "
+            f"| {s['zero_len']} | {fmt(s['frac_pct'])}% |")
+
+    for s in stats:
+        lines += ["", f"## {s['name']}", "",
+                  f"- parquet files: {s['files']}; columns: `{s['columns']}`",
+                  f"- sources: {s['sources']}"]
+        if s["levels"]:
+            lines.append(f"- object levels: {dict(s['levels'])}")
+        if s["rel_types"]:
+            lines.append(f"- relation types: {dict(s['rel_types'].most_common())}")
+        lines.append(f"- top 25 labels: {s['labels'].most_common(25)}")
+        ex = s["example"]
+        lines += ["", f"Example video `{ex.get('video_id')}`:", "", "```"]
+        for c in ("objects", "relationships"):
+            items = parse(ex.get(c))
+            lines.append(f"{c}: {len(items)} items")
+            lines += ["  " + json.dumps(it, ensure_ascii=False, default=str)[:300] for it in items[:6]]
+            if len(items) > 6:
+                lines.append("  ...")
+        lines.append("```")
+
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w") as f:
+        f.write("\n".join(lines) + "\n")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--only", nargs="*", default=[],
-                    help="only folders whose path contains all of these words")
+    ap.add_argument("--only", nargs="*", default=[], help="only splits whose path contains all of these words")
+    ap.add_argument("--out", default="notes/phase1_inspect.md")
     args = ap.parse_args()
 
     folders = sorted({os.path.dirname(p) for p in glob.glob(os.path.join(ROOT, "**", "*.parquet"), recursive=True)})
     folders = [f for f in folders if all(w in f for w in args.only)]
     if not folders:
         raise SystemExit(f"No parquet files under {ROOT}. Download data/* first.")
+
+    stats = []
     for f in folders:
-        summarize(f)
+        t0 = time.time()
+        stats.append(summarize(f))
+        print(f"done {os.path.relpath(f, ROOT):35s} {stats[-1]['videos']:8d} videos  ({time.time() - t0:.1f}s)")
+    write_report(stats, args.out)
+    print(f"\nReport written to {args.out}  (open it in VS Code, Ctrl+Shift+V for preview)")
 
 
 if __name__ == "__main__":
