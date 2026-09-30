@@ -16,7 +16,7 @@ The result is laid out like the real dataset, so the official converter runs unc
     data/SVG2_subset/masks/cleaned/pvd/subset.parquet
     data/videos/pvd/<video_id>.mp4
 
-    python tools/get_pvd_subset.py --tar train/000000.tar --max_videos 50
+    python tools/get_pvd_subset.py --max_videos 50   # tries extended/000000-000002.tar
     python third_party/SVG2/traser/data/prepare_svg2.py --source pvd --svg2_root data/SVG2_subset \
         --video_root data/videos/pvd --out_dir data/traser --max_object 40
 """
@@ -193,7 +193,8 @@ def fetch_mask_rows(ids, max_candidates):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--tar", default="train/000000.tar", help="PE-Video tar shard to use")
+    ap.add_argument("--tar", nargs="+", default=["extended/000000.tar", "extended/000001.tar", "extended/000002.tar"],
+                    help="PE-Video tar shards to try, in order, until --max_videos are found")
     ap.add_argument("--tar_path", default=None, help="use an already-downloaded tar instead")
     ap.add_argument("--max_videos", type=int, default=50)
     ap.add_argument("--max_candidates", type=int, default=2000)
@@ -202,18 +203,23 @@ def main():
     wanted = svg2_pvd_ids()
     print(f"SVG2 cleaned/pvd has {len(wanted)} video ids")
 
-    tar_path = args.tar_path
-    if tar_path is None:
-        from huggingface_hub import hf_hub_download
-        try:
-            tar_path = hf_hub_download(PEVIDEO_REPO, args.tar, repo_type="dataset")
-        except Exception as e:  # gated repo, missing login, network
-            raise SystemExit(f"Could not download {PEVIDEO_REPO}/{args.tar}: {e}\n"
-                             f"If it says 401/403 or 'gated': open https://huggingface.co/datasets/{PEVIDEO_REPO}, "
-                             f"accept the terms, then run `hf auth login` with a read token.")
-    videos = extract_videos(tar_path, wanted, args.max_videos)
+    videos = {}
+    for tar in ([args.tar_path] if args.tar_path else args.tar):
+        tar_path = tar
+        if args.tar_path is None:
+            from huggingface_hub import hf_hub_download
+            try:
+                tar_path = hf_hub_download(PEVIDEO_REPO, tar, repo_type="dataset")
+            except Exception as e:  # gated repo, missing login, network
+                raise SystemExit(f"Could not download {PEVIDEO_REPO}/{tar}: {e}\n"
+                                 f"If it says 401/403 or 'gated': open https://huggingface.co/datasets/{PEVIDEO_REPO}, "
+                                 f"accept the terms, then run `hf auth login` with a read token.")
+        print(f"--- {tar}")
+        videos.update(extract_videos(tar_path, wanted - set(videos), args.max_videos - len(videos)))
+        if len(videos) >= args.max_videos:
+            break
     if not videos:
-        raise SystemExit("No video of this tar is in SVG2 cleaned/pvd; try another --tar.")
+        raise SystemExit("None of these tars has a video in SVG2 cleaned/pvd; try other --tar shards.")
 
     table, found = fetch_mask_rows(set(videos), args.max_candidates)
     missing = set(videos) - found
