@@ -70,3 +70,26 @@ strong for large objects and an expansion for small ones.
 - `config.json`: `vocab_size 151667` = Qwen's 151,665 tokens + `<obj_traj_start>` (151665)
   + `<obj_traj_end>` (151666); the embedding matrix was shrunk from 151,936 rows when the
   two tokens were added.
+
+## Sensitivity runs (same video, same T4)
+
+| run | object labels | identical attribute lists | relations identical to reference (of 22) | tokens dropped |
+|---|---|---|---|---|
+| fp16, τ = 0.5 | 9/9 | 6/9 | 15 | 53.2% |
+| **bf16**, τ = 0.5 | 9/9 | 4/9 | **17** | 53.2% |
+| fp16, **τ = 0.7** (Hub default) | 9/9 | 3/9 | 16 | 58.6% |
+
+- **bf16 on the T4 still does not reproduce the reference.** So the difference is not only
+  the dtype: kernels/hardware matter too. "The same environment reproduces it exactly"
+  holds only on the authors' A100 setup.
+- **Object labels are rock-stable** across all variants. **Attribute lists are very
+  unstable** (3–6 of 9 identical): they are long lists of near-synonyms, so one flipped
+  token changes the rest of the list. **Relations are in between** (15–17 of 22).
+  Consequence for evaluation: attribute scores will carry the most run-to-run noise.
+- **τ = 0.7 vs 0.5**: 10% fewer tokens per object (e.g. 1,512 → 1,384, 23 → 17), but the
+  arranged sequence is the same length (2,641: the latent count depends only on which
+  windows an object appears in). On this one video its effect is no bigger than the
+  numeric noise above; a real answer needs many videos (Phase 5).
+- The 4 reference relations `child approaches/moves away from chair, table` are missing
+  in all three T4 runs, while `child moves away from toy car [0, 10]` appears in two of
+  them: small differences reshuffle which near-duplicate relations are emitted.
