@@ -13,8 +13,8 @@ IDs follow the implementation plan (Part C); new ones are numbered from P25.
 | P5 | VQA gains within noise | ✅ | AGQA +0.4 over video-only, n=1000, SE≈1.4 | McNemar test (Phase 7) |
 | P6 | Ablations single-seed, small deltas | ✅ | Tables 6, 11 | Re-run with seeds (Phase 6) |
 | P7 | "Consistently improves with data" overstated | ✅ | Table 10 non-monotonic columns | Phase 6 |
-| P8 | Resamplers can't see token order | 🔄 | Idefics2 Perceiver has no input positions | Shuffle test (Phase 3.5b) |
-| P9 | Absolute spatial position removed (1D RoPE) | 🔄 | `token_arrangement.py:244-249` | Probe + ablation (Phases 3, 6) |
+| P8 | Resamplers can't see token order | ✅ | Phase 3 trace: shuffling an object's 965 tokens changes the OTR output by 5e-3 (relative), reversing time by 7.5e-3, i.e. fp16 rounding; the paper's "temporally sorted" tokens (§4.1) make no difference to the resampler | Only the window a token falls in carries time |
+| P9 | Absolute spatial position removed (1D RoPE) | ✅ | Phase 3 trace: all 3 M-RoPE rows identical and equal to 0…L-1 in the arranged sequence | Probe / ablation (Phase 6) |
 | P10 | No scene context outside object masks | ✅ | Unselected tokens dropped; example video: **53%** of video tokens belong to no object (`experiments/phase2/*.stats.json`) | Count dropped tokens (Phase 3.3c) |
 | P11 | "Compact" depends on object count | 🔄 | Length formula (plan 3.4); example video 7,429 raw → 2,641 arranged tokens (9 objects); small objects are expanded (23 tokens → 32 + 32/window latents) | Length histogram (Phase 1.6/3) |
 | P12 | 20K truncation cuts the answer | 🔄 | `trainer_insert.py:166-179` | Count truncations (Phase 4) |
@@ -26,7 +26,7 @@ IDs follow the implementation plan (Part C); new ones are numbered from P25.
 | P18 | Comparison fairness (masks, +350M params, GPT-5-derived labels) | 🟡 | Setup confirmed | Phase 5 |
 | P19 | Train/test video overlap | ❌ | `notes/phase1_audit.md` §A: 0 shared ids, 0 shared VIPSeg YouTube sources | PVSG vs VidOR still untested |
 | P20 | Label quality/style leaks into the model | 🔄 | Training attributes 14.6% subjective words (SA-V) vs 1.7% test; academic labels `car_(automobile)`, `chair or seat`, `Vehical` | Phase 2 outputs |
-| P21 | Perceiver latents initialised identical | ✅ | Idefics2 `latents.fill_(1.0)` | Latent diversity (Phase 3.5c) |
+| P21 | Perceiver latents initialised identical | ✅ | Idefics2 `latents.fill_(1.0)`; after training they are still almost identical, see P36 | — |
 | P22 | [TRJ] notation vs code | ✅ | cosmetic | — |
 | P23 | `lm_head.requires_grad` on module | ✅ | minor | — |
 | P24 | Tracking AR numbers not reproducible | ✅ | no protocol, no code | — |
@@ -41,3 +41,6 @@ IDs follow the implementation plan (Part C); new ones are numbered from P25.
 | **P33** | The Hub's standalone inference differs from GitHub inference and training | ✅ | `notes/phase2_hf_vs_github.md`: Hub `select_tokens` default τ = 0.7 and the Hub `inference.py` passes no threshold (paper/training: 0.5); Hub uses a modified `qwen_vl_utils` frame sampler instead of the training loader's | Done on 1 video: τ 0.7 drops 10% more tokens, output change ≈ numeric noise; needs many videos (Phase 5) |
 | **P34** | `repetition_penalty 1.05` in the shipped generation config | 🟡 | `generation_config.json`; scene-graph JSON is repetitive by nature | Ablate 1.0 vs 1.05 (Phase 5) |
 | **P35** | Outputs are sensitive to numerics | ✅ | Same video, same weights, greedy: fp16/T4 15/22, bf16/T4 17/22 relations identical to the A100 reference; attribute lists 4–6/9 identical; object labels always identical (`notes/phase2_findings.md`) | Metric variance across runs (Phase 5) |
+| **P36** | The "32 learnable queries" have collapsed to (almost) one | 🔄 | Released checkpoint: mean/min pairwise cosine similarity of the 32 latents = **0.999/0.995 (OTR)** and **1.000/1.000 (TWR)**. Latents are RMS-normalised before becoming queries, so near-parallel latents give near-identical queries, hence near-identical outputs: each block likely carries ~1 distinct vector repeated 32 times. Consistent with Table 11 (16 vs 32 queries barely matters) | Measure similarity of the 32 *output* vectors per block (Phase 3 follow-up) |
+| **P37** | Small objects lose most of their temporal evidence | ✅ | Phase 3 trace: the ring gets **1 token in 1 of 9 temporal grids** (best coverage 0.58), so the model sees it only in the 12–16 s window, while the target says `ring on hand [4, 14]`, `ring approaching hand [2, 4]`. The fallback only fires when an object gets 0 tokens overall | Count objects with ≤ 2 grids across many samples |
+| **P38** | The model is only weakly sensitive to relation timing and direction | 🔄 | Phase 3 loss on one training sample: true 0.515; object names rotated **+0.358**; all spans shifted +4 s only **+0.069**; subject/object swapped only **+0.071**, although the span change touches far more answer tokens than the name change | Repeat on many samples, per-token losses (Phase 3 follow-up) |
