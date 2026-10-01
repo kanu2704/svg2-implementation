@@ -1,0 +1,67 @@
+{
+ "video": "third_party/SVG2/traser/examples/example/2401075277.mp4",
+ "task": "scene_graph",
+ "dtype": "bfloat16",
+ "load_s": 7.1,
+ "duration_s": 38.1,
+ "sampled_frames": 38,
+ "effective_fps": 0.997,
+ "grid_thw": [
+  19,
+  34,
+  46
+ ],
+ "raw_video_tokens": 7429,
+ "resized_hw": [
+  476,
+  644
+ ],
+ "objects": 9,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "tokens_per_object": [
+  1071,
+  1512,
+  47,
+  280,
+  79,
+  482,
+  74,
+  86,
+  23
+ ],
+ "tokens_selected_union": 3475,
+ "tokens_dropped_fraction": 0.532,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>",
+  "<8 - 12 sec>",
+  "<12 - 16 sec>",
+  "<16 - 20 sec>",
+  "<20 - 24 sec>",
+  "<24 - 28 sec>",
+  "<28 - 32 sec>",
+  "<32 - 36 sec>",
+  "<36 - 40 sec>"
+ ],
+ "prompt_tokens": 7463,
+ "arranged_tokens": 2641,
+ "arrange_s": 23.4,
+ "embeds_finite": true,
+ "generate_s": 63.5,
+ "new_tokens": 848,
+ "peak_gpu_gb": 9.08,
+ "json_ok": true,
+ "out_objects": 9,
+ "out_relationships": 18,
+ "out_uncertain_labels": 2
+}
