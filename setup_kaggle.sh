@@ -19,4 +19,11 @@ pip install -q "transformers==4.54.1" "huggingface_hub>=0.34,<1.0" \
                pycocotools pyarrow einops "opencv-python-headless>=4.9" || echo "!! pip install failed"
 pip install -q decord 2>/dev/null || pip install -q eva-decord || echo "!! no video reader installed"
 
+# 3) SAM2 (pipeline stages 1-2). --no-deps so it cannot replace Kaggle's torch;
+#    SAM2_BUILD_CUDA=0 skips the optional CUDA extension (only used for mask post-processing).
+python -c "import sam2" 2>/dev/null || {
+  pip install -q hydra-core iopath &&
+  SAM2_BUILD_CUDA=0 pip install -q --no-deps "git+https://github.com/facebookresearch/sam2.git"
+} || echo "!! sam2 install failed"
+
 echo "Setup done (check for !! lines above)."
