@@ -12,6 +12,16 @@ Changes for PVSG's 5-fps videos (their thresholds count frames, not seconds):
   * DAM describes every tracked object (their default: only the 40 largest);
   * stage 6 sees 1 frame per second, capped at --max_rel_frames.
 
+Speed options (--fast = all four; off by default, so the default run is their code as is):
+  * --fp16: T4s have no bfloat16 hardware, so their bfloat16 autocast (SAM2 stages 1-2) runs on slow
+    paths; run it in float16 instead (T4 tensor cores). Slightly different numerics.
+  * --no_offload: keep SAM2's video frames and tracking memory on the GPU (their default copies them
+    to CPU RAM and back every frame). Fine for short videos; more GPU memory.
+  * --points_per_batch 256: stage 1 sends 256 grid points through SAM2 at once instead of 64
+    (same masks, better use of the GPU).
+  * --overlap: while the GPU starts SAM2 on the next video, stages 5-7 (internet calls, no GPU) of
+    the previous video run in a background thread.
+
 Every stage's artifact is written to <out>/<video_id>/; a rerun skips the stages already done.
 Progress: <out>/<video_id>/status.json. The NIM key comes from $NVIDIA_API_KEY or /root/.svg2_keys.
 """
@@ -23,6 +33,7 @@ import re
 import sys
 import time
 import traceback
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -92,8 +103,8 @@ def ask(client, model, messages, settings, schema=None, max_tokens=4096, tries=2
 
 class NimStructurer:
     """Stands in for their SceneGraphStructurer: same prompt, schema and validation."""
-    def __init__(self, client, model):
-        self.client, self.model = client, model
+    def __init__(self, client, model, progress):
+        self.client, self.model, self.progress = client, model, progress
 
     def structure(self, description):
         msgs = [{"role": "system", "content": P.STRUCTURE_SYSTEM_PROMPT},
@@ -101,14 +112,14 @@ class NimStructurer:
         schema = {"name": "scene_graph", "schema": P.SCENE_GRAPH_SCHEMA, "strict": True}
         settings = dict(temperature=0.6, top_p=0.95, extra_body=THINK_OFF) if "nemotron" in self.model else dict(temperature=0.6)
         record = P._validate_scene_graph(ask(self.client, self.model, msgs, settings, schema, max_tokens=2048))
-        PROGRESS.tick()
+        self.progress.tick()
         return record
 
 
 class NimExtractor:
     """Stands in for their RelationshipExtractor: same system prompts and schemas, one call per kind."""
-    def __init__(self, client, model, max_tokens):
-        self.client, self.model, self.max_tokens = client, model, max_tokens
+    def __init__(self, client, model, max_tokens, progress):
+        self.client, self.model, self.max_tokens, self.progress = client, model, max_tokens, progress
 
     def extract(self, user_content, kind):
         for item in user_content:                    # NIM rejects OpenAI's image "detail" field
@@ -118,7 +129,7 @@ class NimExtractor:
                               "spatial": (P.SPATIAL_RELATION_SYS_PROMPT, P.SPATIAL_RELATION_SCHEMA)}[kind]
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user_content}]
         rels = ask(self.client, self.model, msgs, dict(temperature=0.6), schema, self.max_tokens).get("relationships", [])
-        PROGRESS.tick()
+        self.progress.tick()
         return rels
 
 
@@ -143,7 +154,27 @@ def make_cfg(video_path, out, args):
     cfg.tracking.adaptive_sample_rate = False
     cfg.caption.max_objects = cfg.tracking.max_objects
     cfg.relationship.max_frames = args.max_rel_frames
+    cfg.mask_gen.points_per_batch = args.points_per_batch
+    cfg.tracking.offload_to_cpu = not args.no_offload
     return cfg
+
+
+def use_fp16_autocast():
+    """Their stages 1-2 run under torch.autocast("cuda", dtype=torch.bfloat16). On GPUs without
+    bfloat16 hardware (compute capability < 8, e.g. T4) swap that for float16."""
+    import torch
+    if not torch.cuda.is_available() or torch.cuda.get_device_capability()[0] >= 8:
+        return False
+    original = torch.autocast
+
+    class Float16Autocast(original):
+        def __init__(self, device_type, dtype=None, *a, **k):
+            if device_type == "cuda" and dtype == torch.bfloat16:
+                dtype = torch.float16
+            super().__init__(device_type, dtype, *a, **k)
+
+    torch.autocast = Float16Autocast
+    return True
 
 
 def set_status(vdir, **kw):
@@ -249,21 +280,26 @@ def stage7_align(graph, anno, client, model, video_id):
     }
 
 
-def run_video(video_id, args, anno, client):
+def video_paths(video_id, args, anno):
     source = pvsg_data.video_source(anno, video_id)
     video = Path(args.pvsg_root, source, "videos", f"{video_id}.mp4")
-    cfg = make_cfg(video, args.out, args)
-    vdir = Path(args.out, video_id)
+    return video, make_cfg(video, args.out, args), Path(args.out, video_id)
+
+
+def timings_of(vdir):
+    p = Path(vdir) / "status.json"
+    return json.load(open(p)).get("seconds", {}) if p.exists() else {}
+
+
+def run_gpu_stages(video_id, args, anno):
+    """Stages 1-4 (SAM2, cleanup, DAM): their Pipeline, one stage at a time (resumable)."""
+    video, cfg, vdir = video_paths(video_id, args, anno)
     vdir.mkdir(parents=True, exist_ok=True)
     set_status(vdir, video=video_id, state="running", started=time.strftime("%Y-%m-%d %H:%M"))
-    PROGRESS.vdir = vdir
-    timings = json.load(open(vdir / "status.json")).get("seconds", {})
-
-    def done(k):
-        return P.artifact_path(cfg, k).exists()
-
-    for k in range(1, 5):                          # their Pipeline, one stage at a time (resumable)
-        if done(k):
+    PROGRESS.vdir, PROGRESS.step = vdir, None
+    timings = timings_of(vdir)
+    for k in range(1, 5):
+        if P.artifact_path(cfg, k).exists():
             continue
         set_status(vdir, stage=f"{k} {P.STAGE_NAMES[k - 1]}")
         PROGRESS.set({1: "SAM2: loading model", 2: "SAM2 tracking: loading video", 3: "cleanup",
@@ -273,24 +309,33 @@ def run_video(video_id, args, anno, client):
         P.Pipeline(cfg).run()
         timings[str(k)] = round(time.time() - t0)
         set_status(vdir, seconds=timings)
+    PROGRESS.vdir = None
 
-    frames = fps = None
-    if not done(5):
+
+def run_api_stages(video_id, args, anno, client):
+    """Stages 5-7: internet calls only (no GPU), so they can overlap with the next video's SAM2."""
+    video, cfg, vdir = video_paths(video_id, args, anno)
+    progress = Progress()
+    progress.vdir = vdir
+    timings = timings_of(vdir)
+    if not P.artifact_path(cfg, 5).exists():
         set_status(vdir, stage="5 structure")
         t0 = time.time()
-        PROGRESS.set("names (NIM): objects", 0, len(P.read_json(P.artifact_path(cfg, 4))["objects"]))
-        scene = P.stage5_structure(cfg, P.read_json(P.artifact_path(cfg, 4)), P.read_json(P.artifact_path(cfg, 3)),
-                                   NimStructurer(client, args.stage5_model))
+        descs = P.read_json(P.artifact_path(cfg, 4))
+        progress.set("names (NIM): objects", 0, len(descs["objects"]))
+        scene = P.stage5_structure(cfg, descs, P.read_json(P.artifact_path(cfg, 3)),
+                                   NimStructurer(client, args.stage5_model, progress))
         P.write_json(P.artifact_path(cfg, 5), scene)
         timings["5"] = round(time.time() - t0)
         set_status(vdir, seconds=timings)
-    if not done(6):
+    if not P.artifact_path(cfg, 6).exists():
         set_status(vdir, stage="6 relationships")
         t0 = time.time()
-        PROGRESS.set("relations (NIM): calls", 0, 2)
+        progress.set("relations (NIM): calls", 0, 2)
         frames, fps, _, _ = P.read_video_frames(str(video))
         graph = P.stage6_relationships(cfg, P.read_json(P.artifact_path(cfg, 5)), frames, fps,
-                                       NimExtractor(client, args.stage6_model, cfg.relationship.max_completion_tokens))
+                                       NimExtractor(client, args.stage6_model,
+                                                    cfg.relationship.max_completion_tokens, progress))
         P.write_json(P.artifact_path(cfg, 6), graph)
         timings["6"] = round(time.time() - t0)
         set_status(vdir, seconds=timings)
@@ -298,15 +343,20 @@ def run_video(video_id, args, anno, client):
     if not out7.exists():
         set_status(vdir, stage="7 align to PVSG")
         t0 = time.time()
-        PROGRESS.set("map to PVSG (NIM): calls", 0, 1)
+        progress.set("map to PVSG (NIM): calls", 0, 1)
         aligned = stage7_align(P.read_json(P.artifact_path(cfg, 6)), anno, client, args.map_model, video_id)
-        PROGRESS.tick()
-        aligned["settings"] = {"stage1_every": args.stage1_every, "max_rel_frames": args.max_rel_frames,
-                               "stage5_model": args.stage5_model, "stage6_model": args.stage6_model,
-                               "map_model": args.map_model}
+        progress.tick()
+        aligned["settings"] = {k: getattr(args, k) for k in (
+            "stage1_every", "max_rel_frames", "stage5_model", "stage6_model", "map_model",
+            "fp16", "no_offload", "points_per_batch", "overlap")}
         json.dump(aligned, open(out7, "w"), indent=1)
         timings["7"] = round(time.time() - t0)
     set_status(vdir, state="done", stage="finished", seconds=timings, step="finished", done=1, total=1)
+
+
+def failed(video_id, args, e):
+    log.error("%s failed: %s\n%s", video_id, e, traceback.format_exc())
+    set_status(Path(args.out, video_id), state="failed", error=f"{type(e).__name__}: {str(e)[:300]}")
 
 
 def main():
@@ -320,19 +370,47 @@ def main():
     ap.add_argument("--stage6_model", default="moonshotai/kimi-k3")
     ap.add_argument("--map_model", default="moonshotai/kimi-k3")
     ap.add_argument("--timeout", type=float, default=240)
+    ap.add_argument("--fast", action="store_true", help="= --fp16 --no_offload --points_per_batch 256 --overlap")
+    ap.add_argument("--fp16", action="store_true", help="SAM2 in float16 instead of bfloat16 (T4 has no bf16 hardware)")
+    ap.add_argument("--no_offload", action="store_true", help="keep SAM2 tracking state on the GPU")
+    ap.add_argument("--points_per_batch", type=int, default=64, help="stage-1 grid points per SAM2 batch (theirs: 64)")
+    ap.add_argument("--overlap", action="store_true", help="run stages 5-7 of a video while the GPU starts the next one")
     args = ap.parse_args()
+    if args.fast:
+        args.fp16 = args.no_offload = args.overlap = True
+        args.points_per_batch = max(args.points_per_batch, 256)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(name)s | %(message)s", stream=sys.stdout)
     logging.getLogger("svg2").addHandler(PROGRESS)
 
+    if args.fp16:
+        log.info("float16 autocast for SAM2: %s", "on" if use_fp16_autocast() else "not needed on this GPU")
+    log.info("settings: points_per_batch=%d, offload_to_cpu=%s, overlap=%s",
+             args.points_per_batch, not args.no_offload, args.overlap)
+
     anno = pvsg_data.load_anno(args.pvsg_root)
     client = nim_client(args.timeout)
+    api = ThreadPoolExecutor(max_workers=1) if args.overlap else None
+    pending = []
+
+    def api_stages(v):
+        try:
+            run_api_stages(v, args, anno, client)
+        except Exception as e:  # noqa: BLE001 - keep going with the next video
+            failed(v, args, e)
+
     for v in args.videos:
         log.info("########## %s ##########", v)
         try:
-            run_video(v, args, anno, client)
+            run_gpu_stages(v, args, anno)
         except Exception as e:  # noqa: BLE001 - keep going with the next video
-            log.error("%s failed: %s\n%s", v, e, traceback.format_exc())
-            set_status(Path(args.out, v), state="failed", error=f"{type(e).__name__}: {str(e)[:300]}")
+            failed(v, args, e)
+            continue
+        if api:
+            pending.append(api.submit(api_stages, v))
+        else:
+            api_stages(v)
+    for f in pending:
+        f.result()
 
 
 if __name__ == "__main__":
