@@ -100,7 +100,9 @@ class NimStructurer:
                 {"role": "user", "content": P.build_structure_prompt(description)}]
         schema = {"name": "scene_graph", "schema": P.SCENE_GRAPH_SCHEMA, "strict": True}
         settings = dict(temperature=0.6, top_p=0.95, extra_body=THINK_OFF) if "nemotron" in self.model else dict(temperature=0.6)
-        return P._validate_scene_graph(ask(self.client, self.model, msgs, settings, schema, max_tokens=2048))
+        record = P._validate_scene_graph(ask(self.client, self.model, msgs, settings, schema, max_tokens=2048))
+        PROGRESS.tick()
+        return record
 
 
 class NimExtractor:
@@ -115,7 +117,9 @@ class NimExtractor:
         sys_prompt, schema = {"temporal": (P.TEMPORAL_RELATION_SYS_PROMPT, P.TEMPORAL_RELATION_SCHEMA),
                               "spatial": (P.SPATIAL_RELATION_SYS_PROMPT, P.SPATIAL_RELATION_SCHEMA)}[kind]
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user_content}]
-        return ask(self.client, self.model, msgs, dict(temperature=0.6), schema, self.max_tokens).get("relationships", [])
+        rels = ask(self.client, self.model, msgs, dict(temperature=0.6), schema, self.max_tokens).get("relationships", [])
+        PROGRESS.tick()
+        return rels
 
 
 MAP_PROMPT = """You map free-text labels from an automatic video annotator onto a fixed vocabulary.
@@ -148,6 +152,56 @@ def set_status(vdir, **kw):
     st = json.load(open(path)) if path.exists() else {}
     st.update(kw, updated=time.strftime("%H:%M:%S"))
     json.dump(st, open(path, "w"), indent=1)
+
+
+class Progress(logging.Handler):
+    """Live progress for the bars in pvsg_run.ipynb: writes step / done / total into status.json.
+
+    Stages 1, 2 and 4 are their code, so we read their own log lines ("frame 5: 91 -> 54 masks",
+    "object 3: ...") and count the frames SAM2 tracking yields; stages 5-7 count our API calls."""
+    def __init__(self):
+        super().__init__(level=logging.INFO)
+        self.vdir, self.step, self.done, self.total, self.t = None, None, 0, 0, 0.0
+
+    def set(self, step, done, total, force=True):
+        self.step, self.done, self.total = step, done, total
+        if self.vdir and (force or time.time() - self.t > 5 or done >= total):
+            self.t = time.time()
+            set_status(self.vdir, step=step, done=done, total=total)
+
+    def tick(self):
+        self.set(self.step, self.done + 1, self.total, force=False)
+
+    def emit(self, record):
+        msg = record.getMessage()
+        m = re.match(r"Stage 1: generating masks on (\d+) / \d+ frames", msg)
+        if m:
+            self.set("SAM2 masks: frames", 0, int(m[1]))
+        elif re.match(r"\s+frame \d+: \d+ -> \d+ masks", msg):
+            self.tick()
+        elif msg.startswith("Stage 2 pass 1 complete"):
+            self.set("SAM2 tracking, pass 2 of 2: frames", 0, self.total)
+        elif re.match(r"Stage 4: describing (\d+) objects", msg):
+            self.set("DAM: objects described", 0, int(re.match(r"Stage 4: describing (\d+)", msg)[1]))
+        elif re.match(r"\s+object \d+: ", msg) and (self.step or "").startswith("DAM"):
+            self.tick()
+
+
+PROGRESS = Progress()
+_their_propagate = P.VideoTracker.propagate
+
+
+def _propagate_with_progress(self, state, start_frame, max_frames):
+    """Their VideoTracker.propagate, unchanged, plus a frame counter for the progress bar."""
+    total = state.get("num_frames", 0) if isinstance(state, dict) else 0
+    if not (PROGRESS.step or "").startswith("SAM2 tracking"):
+        PROGRESS.set("SAM2 tracking, pass 1 of 2: frames", 0, total)
+    for frame_idx, tracked in _their_propagate(self, state, start_frame, max_frames):
+        PROGRESS.set(PROGRESS.step, frame_idx + 1, total or PROGRESS.total, force=False)
+        yield frame_idx, tracked
+
+
+P.VideoTracker.propagate = _propagate_with_progress
 
 
 def to_frames(span, sampled, total):
@@ -202,6 +256,7 @@ def run_video(video_id, args, anno, client):
     vdir = Path(args.out, video_id)
     vdir.mkdir(parents=True, exist_ok=True)
     set_status(vdir, video=video_id, state="running", started=time.strftime("%Y-%m-%d %H:%M"))
+    PROGRESS.vdir = vdir
     timings = json.load(open(vdir / "status.json")).get("seconds", {})
 
     def done(k):
@@ -211,6 +266,8 @@ def run_video(video_id, args, anno, client):
         if done(k):
             continue
         set_status(vdir, stage=f"{k} {P.STAGE_NAMES[k - 1]}")
+        PROGRESS.set({1: "SAM2: loading model", 2: "SAM2 tracking: loading video", 3: "cleanup",
+                      4: "DAM: loading model"}[k], 0, 1)
         t0 = time.time()
         cfg.start_stage, cfg.end_stage = k, k
         P.Pipeline(cfg).run()
@@ -221,6 +278,7 @@ def run_video(video_id, args, anno, client):
     if not done(5):
         set_status(vdir, stage="5 structure")
         t0 = time.time()
+        PROGRESS.set("names (NIM): objects", 0, len(P.read_json(P.artifact_path(cfg, 4))["objects"]))
         scene = P.stage5_structure(cfg, P.read_json(P.artifact_path(cfg, 4)), P.read_json(P.artifact_path(cfg, 3)),
                                    NimStructurer(client, args.stage5_model))
         P.write_json(P.artifact_path(cfg, 5), scene)
@@ -229,6 +287,7 @@ def run_video(video_id, args, anno, client):
     if not done(6):
         set_status(vdir, stage="6 relationships")
         t0 = time.time()
+        PROGRESS.set("relations (NIM): calls", 0, 2)
         frames, fps, _, _ = P.read_video_frames(str(video))
         graph = P.stage6_relationships(cfg, P.read_json(P.artifact_path(cfg, 5)), frames, fps,
                                        NimExtractor(client, args.stage6_model, cfg.relationship.max_completion_tokens))
@@ -239,13 +298,15 @@ def run_video(video_id, args, anno, client):
     if not out7.exists():
         set_status(vdir, stage="7 align to PVSG")
         t0 = time.time()
+        PROGRESS.set("map to PVSG (NIM): calls", 0, 1)
         aligned = stage7_align(P.read_json(P.artifact_path(cfg, 6)), anno, client, args.map_model, video_id)
+        PROGRESS.tick()
         aligned["settings"] = {"stage1_every": args.stage1_every, "max_rel_frames": args.max_rel_frames,
                                "stage5_model": args.stage5_model, "stage6_model": args.stage6_model,
                                "map_model": args.map_model}
         json.dump(aligned, open(out7, "w"), indent=1)
         timings["7"] = round(time.time() - t0)
-    set_status(vdir, state="done", stage="finished", seconds=timings)
+    set_status(vdir, state="done", stage="finished", seconds=timings, step="finished", done=1, total=1)
 
 
 def main():
@@ -261,6 +322,7 @@ def main():
     ap.add_argument("--timeout", type=float, default=240)
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(name)s | %(message)s", stream=sys.stdout)
+    logging.getLogger("svg2").addHandler(PROGRESS)
 
     anno = pvsg_data.load_anno(args.pvsg_root)
     client = nim_client(args.timeout)
