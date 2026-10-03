@@ -89,7 +89,10 @@ def ask(client, model, messages, settings, schema=None, max_tokens=4096, tries=2
                 kw["response_format"] = fmt
             t0 = time.time()
             try:
-                raw = client.chat.completions.create(**kw).choices[0].message.content or ""
+                resp = client.chat.completions.create(**kw)
+                if not getattr(resp, "choices", None):   # NIM sometimes answers 200 with no choices
+                    raise RuntimeError(f"empty reply from the server: {str(resp)[:300]}")
+                raw = resp.choices[0].message.content or ""
                 parsed = extract_json(raw)
                 if parsed is not None:
                     log.info("    %s: ok via %s in %.0f s", model, name, time.time() - t0)
@@ -128,7 +131,8 @@ class NimExtractor:
         sys_prompt, schema = {"temporal": (P.TEMPORAL_RELATION_SYS_PROMPT, P.TEMPORAL_RELATION_SCHEMA),
                               "spatial": (P.SPATIAL_RELATION_SYS_PROMPT, P.SPATIAL_RELATION_SCHEMA)}[kind]
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user_content}]
-        rels = ask(self.client, self.model, msgs, dict(temperature=0.6), schema, self.max_tokens).get("relationships", [])
+        rels = ask(self.client, self.model, msgs, dict(temperature=0.6), schema, self.max_tokens,
+                   tries=1).get("relationships", [])          # stage 6 retries with fewer/smaller frames instead
         self.progress.tick()
         return rels
 
@@ -331,11 +335,26 @@ def run_api_stages(video_id, args, anno, client):
     if not P.artifact_path(cfg, 6).exists():
         set_status(vdir, stage="6 relationships")
         t0 = time.time()
-        progress.set("relations (NIM): calls", 0, 2)
         frames, fps, _, _ = P.read_video_frames(str(video))
-        graph = P.stage6_relationships(cfg, P.read_json(P.artifact_path(cfg, 5)), frames, fps,
-                                       NimExtractor(client, args.stage6_model,
-                                                    cfg.relationship.max_completion_tokens, progress))
+        scene = P.read_json(P.artifact_path(cfg, 5))
+        graph, last = None, None
+        # Kimi K3 on NIM returned empty replies for 16 full-size frames in one request (it handled 5):
+        # retry with fewer and smaller frames. The frames actually used are saved in the artifact.
+        for n_frames, width in stage6_attempts(args.max_rel_frames):
+            cfg.relationship.max_frames = n_frames
+            progress.set(f"relations (NIM, {n_frames} frames @ {width}px): calls", 0, 2)
+            try:
+                with smaller_frames(width):
+                    graph = P.stage6_relationships(cfg, scene, frames, fps,
+                                                   NimExtractor(client, args.stage6_model,
+                                                                cfg.relationship.max_completion_tokens, progress))
+                graph["relationships"]["frames_sent"] = {"max_frames": n_frames, "width": width}
+                break
+            except RuntimeError as e:
+                last = e
+                log.warning("stage 6 with %d frames at %d px failed (%s); trying fewer/smaller", n_frames, width, e)
+        if graph is None:
+            raise RuntimeError(f"stage 6 failed with every frame setting: {last}")
         P.write_json(P.artifact_path(cfg, 6), graph)
         timings["6"] = round(time.time() - t0)
         set_status(vdir, seconds=timings)
@@ -352,6 +371,38 @@ def run_api_stages(video_id, args, anno, client):
         json.dump(aligned, open(out7, "w"), indent=1)
         timings["7"] = round(time.time() - t0)
     set_status(vdir, state="done", stage="finished", seconds=timings, step="finished", done=1, total=1)
+
+
+def stage6_attempts(max_frames):
+    """(frames per request, image width) to try, best first."""
+    out = []
+    for n, w in ((max_frames, 640), (16, 512), (8, 512), (5, 448)):
+        n = min(n, max_frames)
+        if (n, w) not in out:
+            out.append((n, w))
+    return out
+
+
+class smaller_frames:
+    """Temporarily make their stage-6 JPEG encoder downscale frames to `width` pixels wide."""
+    def __init__(self, width):
+        self.width = width
+
+    def __enter__(self):
+        import cv2
+        self.original = P._encode_frame_data_url
+        width = self.width
+
+        def encode(frame_rgb, quality=90):
+            h, w = frame_rgb.shape[:2]
+            if w > width:
+                frame_rgb = cv2.resize(frame_rgb, (width, round(h * width / w)), interpolation=cv2.INTER_AREA)
+            return self.original(frame_rgb, quality=85)
+        P._encode_frame_data_url = encode
+
+    def __exit__(self, *exc):
+        P._encode_frame_data_url = self.original
+        return False
 
 
 def failed(video_id, args, e):
