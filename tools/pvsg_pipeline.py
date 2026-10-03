@@ -306,7 +306,7 @@ def run_gpu_stages(video_id, args, anno):
         if P.artifact_path(cfg, k).exists():
             continue
         set_status(vdir, stage=f"{k} {P.STAGE_NAMES[k - 1]}")
-        PROGRESS.set({1: "SAM2: loading model", 2: "SAM2 tracking: loading video", 3: "cleanup",
+        PROGRESS.set({1: "SAM2: loading model", 2: "SAM2: loading video for tracking", 3: "cleanup",
                       4: "DAM: loading model"}[k], 0, 1)
         t0 = time.time()
         cfg.start_stage, cfg.end_stage = k, k
