@@ -36,7 +36,7 @@
    "stuff found": 2,
    "our tracks": 36,
    "extra tracks": 32,
-   "named right": 1,
+   "named right": 2,
    "matched & described": 4
   },
   {
@@ -58,7 +58,7 @@
   "stuff found": 5,
   "our tracks": 148,
   "extra tracks": 120,
-  "named right": 19,
+  "named right": 20,
   "matched & described": 28
  },
  "naming_errors": [
@@ -101,16 +101,6 @@
    "our_name": "child",
    "our_class": "child",
    "viou": 0.97
-  },
-  {
-   "video": "0039_6951351121",
-   "gt_id": 1,
-   "human": "sky",
-   "is_thing": false,
-   "our_id": 11,
-   "our_name": "cloud",
-   "our_class": "none",
-   "viou": 0.89
   },
   {
    "video": "0039_6951351121",
@@ -175,6 +165,372 @@
    "viou": 0.93
   }
  ],
+ "stuff_named_as_object": [
+  {
+   "video": "0027_4571353789",
+   "gt_id": 1,
+   "human": "tree",
+   "is_thing": false,
+   "our_id": 7,
+   "our_name": "bush",
+   "our_class": "plant",
+   "viou": 0.71,
+   "judge": "related"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 1,
+   "human": "ground",
+   "is_thing": false,
+   "our_id": 1,
+   "our_name": "car",
+   "our_class": "car",
+   "viou": 0.94,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 2,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "child",
+   "our_class": "child",
+   "viou": 0.97,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 3,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.93,
+   "judge": "mismatch"
+  }
+ ],
+ "matched_objects": [
+  {
+   "video": "0027_4571353789",
+   "gt_id": 1,
+   "human": "tree",
+   "is_thing": false,
+   "our_id": 7,
+   "our_name": "bush",
+   "our_class": "plant",
+   "viou": 0.71,
+   "judge": "related"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 5,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 3,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.9,
+   "judge": "broader"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 6,
+   "human": "table",
+   "is_thing": true,
+   "our_id": 9,
+   "our_name": "tablecloth",
+   "our_class": "cloth",
+   "viou": 0.51,
+   "judge": "related"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 7,
+   "human": "light",
+   "is_thing": true,
+   "our_id": 56,
+   "our_name": "string of lights",
+   "our_class": "light",
+   "viou": 0.54,
+   "judge": "narrower"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 10,
+   "human": "car",
+   "is_thing": true,
+   "our_id": 13,
+   "our_name": "car",
+   "our_class": "car",
+   "viou": 0.54,
+   "judge": "identical"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 11,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 4,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.89,
+   "judge": "broader"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 12,
+   "human": "light",
+   "is_thing": true,
+   "our_id": 8,
+   "our_name": "lights",
+   "our_class": "light",
+   "viou": 0.65,
+   "judge": "identical"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 14,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 2,
+   "our_name": "man",
+   "our_class": "adult",
+   "viou": 0.93,
+   "judge": "narrower"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 15,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 57,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.68,
+   "judge": "broader"
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 16,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 61,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.95,
+   "judge": "broader"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 1,
+   "human": "ground",
+   "is_thing": false,
+   "our_id": 1,
+   "our_name": "car",
+   "our_class": "car",
+   "viou": 0.94,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 2,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "child",
+   "our_class": "child",
+   "viou": 0.97,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 3,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 3,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.89,
+   "judge": "broader"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 4,
+   "human": "child",
+   "is_thing": true,
+   "our_id": 5,
+   "our_name": "child",
+   "our_class": "child",
+   "viou": 0.72,
+   "judge": "identical"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 5,
+   "human": "bottle",
+   "is_thing": true,
+   "our_id": 7,
+   "our_name": "bottle",
+   "our_class": "bottle",
+   "viou": 0.78,
+   "judge": "identical"
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 7,
+   "human": "bag",
+   "is_thing": true,
+   "our_id": 6,
+   "our_name": "duffel bag",
+   "our_class": "bag",
+   "viou": 0.89,
+   "judge": "narrower"
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 1,
+   "human": "sky",
+   "is_thing": false,
+   "our_id": 11,
+   "our_name": "cloud",
+   "our_class": "sky",
+   "viou": 0.89,
+   "judge": "related"
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 3,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.93,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 8,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 35,
+   "our_name": "football",
+   "our_class": "ball",
+   "viou": 0.97,
+   "judge": "mismatch"
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 14,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 41,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.69,
+   "judge": "broader"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 2,
+   "human": "cabinet",
+   "is_thing": true,
+   "our_id": 43,
+   "our_name": "cabinet door",
+   "our_class": "cabinet",
+   "viou": 0.87,
+   "judge": "narrower"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 3,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 2,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.85,
+   "judge": "broader"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 4,
+   "human": "child",
+   "is_thing": true,
+   "our_id": 1,
+   "our_name": "baby",
+   "our_class": "baby",
+   "viou": 0.94,
+   "judge": "narrower"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 5,
+   "human": "dog",
+   "is_thing": true,
+   "our_id": 0,
+   "our_name": "dog",
+   "our_class": "dog",
+   "viou": 0.88,
+   "judge": "identical"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 6,
+   "human": "table",
+   "is_thing": true,
+   "our_id": 49,
+   "our_name": "countertop",
+   "our_class": "countertop",
+   "viou": 0.75,
+   "judge": "related"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 7,
+   "human": "hat",
+   "is_thing": true,
+   "our_id": 29,
+   "our_name": "baseball cap",
+   "our_class": "hat",
+   "viou": 0.72,
+   "judge": "narrower"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 8,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 41,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.85,
+   "judge": "broader"
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 9,
+   "human": "hat",
+   "is_thing": true,
+   "our_id": 11,
+   "our_name": "baseball cap",
+   "our_class": "hat",
+   "viou": 0.76,
+   "judge": "narrower"
+  }
+ ],
+ "names_strict_close_lenient": {
+  "strict": 20,
+  "close": 21,
+  "lenient": 24
+ },
+ "names_bare_mapping_vs_descriptions": {
+  "n": 28,
+  "bare": 19,
+  "descriptions": 20
+ },
  "relations": [
   {
    "video": "0027_4571353789",
@@ -185,10 +541,10 @@
    "reversed": 0,
    "pair not related": 4,
    "object missed": 10,
-   "our relations": 10,
-   "ours between found objects": 7,
+   "our relations": 9,
+   "ours between found objects": 6,
    "of those also in PVSG (any time)": 2,
-   "our predicates with no PVSG match": 6
+   "our predicates with no PVSG match": 7
   },
   {
    "video": "0028_4021064662",
@@ -199,10 +555,10 @@
    "reversed": 0,
    "pair not related": 8,
    "object missed": 6,
-   "our relations": 11,
-   "ours between found objects": 9,
+   "our relations": 9,
+   "ours between found objects": 7,
    "of those also in PVSG (any time)": 0,
-   "our predicates with no PVSG match": 2
+   "our predicates with no PVSG match": 3
   },
   {
    "video": "0039_6951351121",
@@ -216,34 +572,48 @@
    "our relations": 10,
    "ours between found objects": 0,
    "of those also in PVSG (any time)": 0,
-   "our predicates with no PVSG match": 4
+   "our predicates with no PVSG match": 5
   },
   {
    "video": "1122_3393449055",
    "human relations": 11,
    "correct": 2,
    "wrong time": 1,
-   "wrong predicate": 5,
+   "wrong predicate": 6,
    "reversed": 0,
-   "pair not related": 3,
+   "pair not related": 2,
    "object missed": 0,
-   "our relations": 12,
-   "ours between found objects": 9,
+   "our relations": 13,
+   "ours between found objects": 10,
    "of those also in PVSG (any time)": 3,
-   "our predicates with no PVSG match": 5
+   "our predicates with no PVSG match": 4
   }
  ],
  "relations_total": {
   "human relations": 59,
   "correct": 3,
   "wrong time": 2,
-  "wrong predicate": 10,
+  "wrong predicate": 11,
   "reversed": 0,
-  "pair not related": 16,
+  "pair not related": 15,
   "object missed": 28,
-  "our relations": 43,
-  "ours between found objects": 25,
+  "our relations": 41,
+  "ours between found objects": 23,
   "of those also in PVSG (any time)": 5,
-  "our predicates with no PVSG match": 17
+  "our predicates with no PVSG match": 19
+ },
+ "relations_strict_close_lenient": {
+  "close": {
+   "with time (tIoU \u2265 0.5)": 3,
+   "ignoring time": 5
+  },
+  "lenient": {
+   "with time (tIoU \u2265 0.5)": 5,
+   "ignoring time": 11
+  },
+  "strict": {
+   "with time (tIoU \u2265 0.5)": 3,
+   "ignoring time": 5
+  }
  }
 }

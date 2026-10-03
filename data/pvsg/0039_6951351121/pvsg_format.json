@@ -21,12 +21,13 @@
     "arms positioned close to body",
     "head slightly tilted",
     "consistent pace"
-   ]
+   ],
+   "description": "A person, dressed in a dark outfit, is captured in a dynamic sequence of movement. Initially, they are seen in a crouched position, suggesting readiness and anticipation. As the sequence progresses, the individual transitions into a standing posture, their body slightly leaning forward, indicating a shift in focus and engagement. The person then begins to move forward with a purposeful stride, their legs extending and contracting in a rhythmic pattern. Their arms are positioned close to their body, possibly for balance or to maintain momentum. The sequence captures the fluidity of their motion, as they appear to be running or jogging with determination. The person's head is slightly tilted, suggesting attentiveness to their surroundings or a specific destination. Throughout the sequence, the individual maintains a consistent pace, embodying a sense of determination and focus in their movement."
   },
   {
    "object_id": 11,
    "name": "cloud",
-   "category": "none",
+   "category": "sky",
    "is_thing": false,
    "attributes": [
     "large",
@@ -40,7 +41,8 @@
     "uniform",
     "serene",
     "tranquil"
-   ]
+   ],
+   "description": "A large, elongated cloud stretches horizontally across the sky, its form appearing smooth and continuous. The cloud maintains a consistent, slightly undulating shape, suggesting a gentle, flowing movement. Its edges are soft and diffuse, blending seamlessly into the surrounding atmosphere. As the sequence progresses, the cloud subtly shifts, with its lower edge appearing to lift slightly, creating a sense of dynamic motion. The cloud's texture is uniform, with no distinct breaks or variations in color, giving it a serene and tranquil appearance. Throughout the sequence, the cloud remains the focal point, its presence dominating the visual field with a calm and steady presence."
   },
   {
    "object_id": 35,
@@ -53,7 +55,8 @@
     "textured",
     "leather",
     "stitching"
-   ]
+   ],
+   "description": "A person wearing a blue shirt and red shorts is engaged in a dynamic activity, likely playing a sport. The individual is holding a football with both hands, which are covered by white gloves. The person's posture suggests they are in motion, possibly running or preparing to throw the ball. Their right arm is bent at the elbow, and the left arm is extended slightly, indicating a grip on the football. The person's head is turned slightly to the side, suggesting focus and intent in their actions. The movement is fluid, with the person's body leaning forward, indicating momentum and energy. The sequence captures the essence of an active participant in a sport, with the person's actions conveying a sense of agility and coordination."
   },
   {
    "object_id": 6,
@@ -66,7 +69,8 @@
     "sturdy",
     "textured",
     "textured bark"
-   ]
+   ],
+   "description": "A tall, slender tree with a sturdy trunk and numerous branches extends upward, creating a broad canopy. The branches are sparse, allowing glimpses of the sky through the gaps, giving the tree a delicate yet robust appearance. As the sequence progresses, the tree remains stationary, its branches subtly swaying as if responding to a gentle breeze. The trunk, with its textured bark, anchors the structure, providing a sense of stability amidst the subtle movements of the branches. The tree's presence is serene and timeless, standing as a solitary figure in the landscape, its form unchanging and steadfast throughout the sequence."
   },
   {
    "object_id": 1,
@@ -83,7 +87,8 @@
     "running stance",
     "mid-air pose",
     "arms extended forward"
-   ]
+   ],
+   "description": "A person dressed in a black sports uniform, complete with a helmet and gloves, is captured in a dynamic sequence of movement. Initially, they are seen holding a football, suggesting an action of running or preparing to pass. Their posture is slightly bent forward, indicating momentum and focus. As the sequence progresses, the person shifts their weight from one leg to the other, demonstrating agility and balance. Their arms are positioned to maintain control of the ball, with one hand gripping it securely. The person's legs are in a running stance, with one foot lifted, showcasing their athleticism. The sequence concludes with the individual appearing to be in mid-air, possibly leaping or diving, with their arms extended forward, maintaining the ball's grip. Throughout the sequence, the person's movements are fluid and purposeful, reflecting the intensity and skill typical of a football player in action."
   },
   {
    "object_id": 40,
@@ -106,13 +111,14 @@
     "harmonious",
     "calm",
     "timeless"
-   ]
+   ],
+   "description": "A tall, slender tree with a narrow trunk and numerous thin branches extends upward, creating a delicate, intricate network of twigs. The branches are mostly bare, suggesting a late autumn or winter season, with a few sparse leaves clinging to them. As the sequence progresses, the tree remains stationary, its branches subtly swaying as if responding to a gentle breeze. The trunk is sturdy and straight, providing a stable base for the expansive canopy above. The tree's silhouette is graceful, with the branches spreading out symmetrically, creating a balanced and harmonious appearance. Throughout the sequence, the tree maintains its elegant posture, embodying a sense of calm and timelessness."
   },
   {
    "object_id": 2,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "two-story",
     "gable roof",
@@ -125,7 +131,8 @@
     "subtle color variations in siding",
     "simple yet elegant design",
     "focus on functionality and comfort"
-   ]
+   ],
+   "description": "A two-story house with a gable roof and light gray siding is prominently featured. The house has a covered porch on the upper floor, supported by white columns, which adds a classic touch to its design. The windows are rectangular and evenly spaced, with white trim that complements the overall aesthetic. As the sequence progresses, the house appears to be stationary, maintaining its position and structure. The roof is slightly weathered, suggesting some age, and the siding shows subtle variations in color, possibly due to exposure to the elements. The house's design is simple yet elegant, with a focus on functionality and comfort. Throughout the sequence, the house remains the central focus, with no significant changes in its appearance or position."
   },
   {
    "object_id": 38,
@@ -143,13 +150,14 @@
     "sharp silhouette",
     "elegant",
     "solitary"
-   ]
+   ],
+   "description": "A tall, slender tree with a pointed top stands prominently, its branches extending outward in a graceful arc. The tree's foliage is dense, with leaves that appear to be a mix of light and dark shades, creating a textured canopy. As the sequence progresses, the tree remains mostly stationary, its branches subtly swaying as if responding to a gentle breeze. The tree's silhouette is distinct, with the pointed top rising sharply, giving it an air of elegance and height. The overall impression is one of tranquility and natural beauty, as the tree stands as a solitary figure, its presence both commanding and serene."
   },
   {
    "object_id": 43,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "light-colored exterior",
     "gently sloping roof",
@@ -159,13 +167,14 @@
     "evenly spaced windows",
     "smooth and well-maintained exterior",
     "uniform siding"
-   ]
+   ],
+   "description": "A house with a light-colored exterior and a gently sloping roof extends horizontally across the sequence. The structure features multiple windows, each framed with dark trim, suggesting a symmetrical design. The house appears to have a single-story layout, with a prominent entrance door visible in the center. As the sequence progresses, the house maintains its steady presence, with subtle shifts in perspective that highlight its architectural details, such as the slight overhang of the roof and the uniformity of the siding. The windows, evenly spaced, add to the house's symmetrical appearance, while the roofline remains consistent, emphasizing the house's cohesive design. The house's exterior is smooth and well-maintained, reflecting a sense of stability and permanence throughout the sequence."
   },
   {
    "object_id": 3,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "two-story",
     "light gray exterior",
@@ -177,13 +186,14 @@
     "slightly sloped roofline",
     "symmetrical design",
     "modern, suburban style"
-   ]
+   ],
+   "description": "A two-story house with a light gray exterior and a dark gray roof is prominently featured. The house has a symmetrical design with two visible stories, each adorned with evenly spaced windows. The windows are rectangular and framed in white, contrasting with the light-colored walls. The house's front facade includes a covered porch area, supported by columns, which adds a touch of elegance to the structure. As the sequence progresses, the house appears to be stationary, maintaining its position and orientation throughout. The roofline is slightly sloped, and the overall design suggests a modern, suburban style. The house's presence is consistent, with no visible changes in its appearance or position, indicating a stable and unchanging environment."
   },
   {
    "object_id": 45,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "single-story",
     "light brown exterior",
@@ -194,7 +204,8 @@
     "white window frames",
     "clean lines",
     "uniform appearance"
-   ]
+   ],
+   "description": "A single-story house with a gently sloping roof and a light brown exterior is prominently featured. The house has a rectangular shape with a chimney visible on the left side, adding to its classic design. The front of the house includes a covered porch with a white railing, providing a welcoming entrance. The windows are large and rectangular, with one window on the left side and another on the right, both framed in white. The house appears to be well-maintained, with clean lines and a uniform appearance. As the sequence progresses, the house remains stationary, maintaining its position and structure, suggesting a sense of stability and permanence. The consistent lighting and shadows across the frames highlight the house's features, emphasizing its role as a central, unchanging presence in the scene."
   },
   {
    "object_id": 8,
@@ -215,13 +226,14 @@
     "symmetrical",
     "balanced",
     "harmonious"
-   ]
+   ],
+   "description": "A tall, slender tree with a narrow trunk and numerous thin branches extends upward, creating a delicate, intricate network of twigs. The branches are mostly bare, suggesting a late autumn or winter season, with a few sparse leaves clinging to them. As the sequence progresses, the tree remains mostly stationary, its branches subtly swaying as if responding to a gentle breeze. The trunk, slightly darker and more robust, anchors the structure, providing a stable base for the expansive network of branches above. The tree's silhouette is graceful and elegant, with the branches spreading out symmetrically, creating a balanced and harmonious appearance. Throughout the sequence, the tree maintains its poised and serene presence, embodying a sense of quiet resilience and natural beauty."
   },
   {
    "object_id": 34,
    "name": "marker",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "orange",
     "rectangular",
@@ -230,13 +242,14 @@
     "vibrant orange hue",
     "straight alignment",
     "consistent spacing"
-   ]
+   ],
+   "description": "A series of orange, rectangular markers are arranged in a linear formation, each featuring a distinct, slightly curved top. The markers are evenly spaced, creating a rhythmic pattern as they stretch across the scene. As the sequence progresses, the markers appear to shift slightly, suggesting a gentle, continuous movement or adjustment. The markers maintain their vibrant orange hue, which stands out against the green background, emphasizing their presence. The consistent alignment and spacing of the markers suggest they are part of a structured arrangement, possibly for a sporting event or training exercise. The markers' movement is smooth and deliberate, indicating a well-coordinated setup designed for visibility and guidance."
   },
   {
    "object_id": 4,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "two-story",
     "gable roof",
@@ -252,13 +265,14 @@
     "classic style",
     "Victorian style",
     "traditional architectural elements"
-   ]
+   ],
+   "description": "A two-story house with a prominent gable roof and a well-defined facade is depicted. The exterior is characterized by a combination of light and dark materials, creating a subtle contrast that highlights the architectural details. The house features large windows on both levels, with the upper level windows being slightly smaller and more evenly spaced. The lower level has a covered porch supported by sturdy columns, adding a sense of grandeur and shelter. As the sequence progresses, the house appears to shift slightly, suggesting a gentle movement or change in perspective. The roofline remains consistent, with the gables maintaining their sharp angles, emphasizing the house's symmetrical design. The overall appearance of the house suggests a classic, possibly Victorian style, with a focus on symmetry and traditional architectural elements."
   },
   {
    "object_id": 39,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "elongated structure",
     "flat roof",
@@ -268,7 +282,8 @@
     "minimalist approach",
     "smooth roofline",
     "unadorned facade"
-   ]
+   ],
+   "description": "A house with a distinct, elongated structure and a flat roof extends horizontally across the sequence. Its exterior is characterized by a combination of light and dark panels, creating a subtle contrast that highlights its architectural design. The house appears to have a modern aesthetic, with clean lines and a minimalist approach. As the sequence progresses, the house maintains a consistent appearance, suggesting a stable and stationary presence. The roofline is smooth and uninterrupted, contributing to its sleek and contemporary look. The house's facade is unadorned, emphasizing its functional and minimalist design. Throughout the sequence, the house remains the focal point, with its form and structure clearly defined against any potential background elements."
   },
   {
    "object_id": 41,
@@ -287,13 +302,14 @@
     "one foot lifted off the ground",
     "uniform with padding",
     "padding on shoulders"
-   ]
+   ],
+   "description": "An athletic individual, clad in a dark uniform with protective gear, is captured in a dynamic sequence of movement. The person is wearing a helmet and gloves, suggesting they are engaged in a sport that requires such protective equipment. The sequence begins with the individual in a forward-leaning posture, indicating a swift, agile motion, possibly running or sprinting. Their arms are bent at the elbows, with one hand gripping an object, likely a ball, which is held firmly as they move. The legs are extended, showcasing a powerful stride, with one foot lifted off the ground, emphasizing the momentum and speed of the action. The uniform, with its distinct padding and padding on the shoulders, suggests a focus on safety and protection during the activity. As the sequence progresses, the individual maintains a consistent forward trajectory, with subtle shifts in posture that reflect the fluidity and control required in the sport. The overall impression is one of athleticism and focus, as the person navigates the field with purpose and determination."
   },
   {
    "object_id": 20,
    "name": "pole",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "tall",
     "slender",
@@ -305,7 +321,8 @@
     "elongated",
     "tapered",
     "streamlined"
-   ]
+   ],
+   "description": "A tall, slender pole stands upright, its surface smooth and metallic, reflecting a subtle sheen under the ambient light. The pole maintains a consistent vertical orientation throughout the sequence, suggesting a sturdy and fixed structure. Its elongated form is uninterrupted, with a slight tapering towards the top, giving it an elegant, streamlined appearance. As the sequence progresses, the pole remains stationary, exuding a sense of stability and permanence. The light plays across its surface, highlighting its metallic texture and casting gentle shadows that accentuate its height and slenderness. Despite the lack of movement, the pole's presence is commanding, serving as a silent sentinel in its environment."
   },
   {
    "object_id": 16,
@@ -321,7 +338,8 @@
     "rounded",
     "mature",
     "tapers"
-   ]
+   ],
+   "description": "A large, leafy tree with dense foliage stands prominently, its branches extending outward in a natural, irregular pattern. The leaves are a rich green, suggesting a healthy and vibrant tree. As the sequence progresses, the tree remains stationary, its broad canopy casting subtle shadows that hint at the presence of other trees nearby. The leaves, though still, convey a sense of life and vitality, as if they are gently rustling in a light breeze. The tree's structure is robust, with a rounded top that tapers slightly towards the base, giving it a classic, mature appearance. Throughout the sequence, the tree maintains its majestic presence, a silent sentinel amidst its surroundings, embodying the serene beauty of nature."
   },
   {
    "object_id": 13,
@@ -339,13 +357,14 @@
     "commanding",
     "intricate structure",
     "subtle variations in shading"
-   ]
+   ],
+   "description": "A tree with a broad, rounded canopy stands prominently, its branches extending outward in a symmetrical pattern. The foliage is dense, with leaves that appear to be a mix of green and brown, suggesting a transition between seasons. As the sequence progresses, the tree remains stationary, its form unwavering and solid. The leaves, though static, seem to catch the light differently, creating subtle variations in shading across the canopy. The tree's presence is commanding, with its expansive branches forming a natural arch, providing a sense of stability and permanence. Despite the lack of movement, the tree's intricate structure and the interplay of light and shadow across its surface give it a dynamic quality, as if it is a living entity in its environment."
   },
   {
    "object_id": 10,
    "name": "house",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "light-colored exterior walls",
     "steeply pitched roof",
@@ -356,7 +375,8 @@
     "solid structure",
     "well-defined",
     "uniform appearance"
-   ]
+   ],
+   "description": "A house with a distinctive gable roof and light-colored exterior walls stands prominently. The roof is steeply pitched, with a dark shingle covering that contrasts against the lighter walls. As the sequence progresses, the house appears to subtly shift in perspective, suggesting a gentle rotation or change in the viewer's angle. The gable end of the house remains a focal point, with its clean lines and symmetrical design. The house's structure is solid and well-defined, with no visible windows or doors in the segmented view. The consistent appearance of the house throughout the sequence highlights its architectural simplicity and the uniformity of its design."
   },
   {
    "object_id": 17,
@@ -372,7 +392,8 @@
     "polished",
     "streamlined",
     "tinted"
-   ]
+   ],
+   "description": "A sleek, white car with a modern design is prominently featured, showcasing its smooth, aerodynamic contours and polished surface. The vehicle's front end is characterized by a distinctive grille and sharp headlights, which give it a dynamic and assertive appearance. As the sequence progresses, the car maintains a steady and graceful motion, suggesting a sense of purpose and direction. The side profile reveals a streamlined body with subtle curves that enhance its elegant silhouette. The car's windows are tinted, adding a touch of sophistication and privacy. Throughout the sequence, the car appears to be moving forward with a consistent speed, exuding a sense of reliability and efficiency. Its presence is commanding, yet it moves with a quiet confidence, seamlessly integrating into its environment."
   },
   {
    "object_id": 12,
@@ -389,7 +410,8 @@
     "smooth",
     "robust",
     "sturdy"
-   ]
+   ],
+   "description": "A white pickup truck is prominently featured, showcasing a robust and sturdy design typical of utility vehicles. The truck's body is sleek, with a smooth, aerodynamic shape that suggests both power and efficiency. Its four doors are visible, with the rear section slightly elevated, indicating a spacious cargo area. The truck's wheels are large and well-defined, hinting at its capability to handle various terrains. As the sequence progresses, the truck appears to be in motion, moving steadily from left to right. The vehicle maintains a consistent trajectory, suggesting a smooth and controlled drive. The truck's windows are tinted, adding a touch of sophistication to its otherwise utilitarian appearance. Throughout the sequence, the truck exudes a sense of reliability and strength, embodying the essence of a workhorse vehicle designed for both urban and rural environments."
   },
   {
    "object_id": 15,
@@ -407,13 +429,14 @@
     "sturdy appearance",
     "well-constructed",
     "rustic charm"
-   ]
+   ],
+   "description": "A wooden fence, characterized by its horizontal planks and natural brown hue, extends across the sequence with a consistent, sturdy appearance. The fence maintains a uniform height and texture, suggesting a well-constructed barrier. As the sequence progresses, the fence remains stationary, indicating its role as a stable and enduring structure. The planks are aligned closely, with slight variations in color and grain visible, adding to the rustic charm. The fence's presence is unwavering, providing a sense of continuity and permanence throughout the sequence."
   },
   {
    "object_id": 19,
    "name": "log",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "long",
     "narrow",
@@ -424,7 +447,8 @@
     "greenish-brown",
     "consistent texture",
     "natural grain"
-   ]
+   ],
+   "description": "A long, narrow object, resembling a log, is prominently featured, displaying a smooth, elongated form with a slightly curved shape. Its surface appears to be a mix of earthy tones, predominantly greenish-brown, suggesting a natural, organic material. As the sequence progresses, the object maintains a consistent orientation, moving steadily from left to right. The texture appears consistent, with subtle variations in color that hint at the natural grain of the material. The object\u2019s movement is fluid, suggesting it is being carried or pushed along a flat surface, maintaining a steady pace throughout the sequence. Its presence is solitary, with no interaction with other objects, emphasizing its singular journey across the scene."
   },
   {
    "object_id": 14,
@@ -442,13 +466,14 @@
     "well-maintained",
     "healthy",
     "thriving"
-   ]
+   ],
+   "description": "A dense, lush bush with a vibrant green hue stretches horizontally across the sequence, maintaining a consistent, elongated shape. Its surface is textured with small, tightly packed leaves, giving it a rich, verdant appearance. The bush appears to be well-maintained, with no visible gaps or irregularities, suggesting a healthy and thriving plant. As the sequence progresses, the bush remains stationary, exuding a sense of stability and permanence. Its presence is solid and unwavering, with no interaction or movement relative to other objects, emphasizing its role as a steadfast element within the scene."
   },
   {
    "object_id": 21,
    "name": "traffic cone",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "orange",
     "bright",
@@ -458,7 +483,8 @@
     "slight sheen",
     "vibrant",
     "stationary"
-   ]
+   ],
+   "description": "An orange traffic cone, characterized by its bright, triangular shape, stands prominently in the sequence. Initially, it appears upright, showcasing its vibrant hue against a neutral background. As the sequence progresses, the cone maintains its upright position, suggesting stability and a fixed placement. The cone's surface is smooth, with a slight sheen that catches the light, emphasizing its vivid color. Throughout the sequence, the cone remains stationary, indicating its role as a marker or boundary marker. Its presence is consistent, with no visible interaction with other objects, reinforcing its function as a static object within the scene."
   },
   {
    "object_id": 18,
@@ -475,13 +501,14 @@
     "horizontal orientation",
     "elongated form",
     "gentle slope"
-   ]
+   ],
+   "description": "A green bench, characterized by its smooth, flat surface and slightly curved edges, appears prominently in the sequence. Its surface is uniform, with a subtle sheen that suggests a metallic or painted finish. The bench maintains a consistent horizontal orientation throughout the sequence, indicating stability and a fixed position. Its elongated form suggests it is designed for seating, with a gentle slope that provides ergonomic support. The bench's presence is solitary, with no interaction with other objects, emphasizing its role as a stationary fixture. Its design is simple yet functional, embodying a utilitarian aesthetic that blends seamlessly into its environment."
   },
   {
    "object_id": 25,
    "name": "traffic cone",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "orange",
     "triangular",
@@ -490,7 +517,8 @@
     "upright",
     "stationary",
     "fixed"
-   ]
+   ],
+   "description": "An orange traffic cone stands prominently, its vibrant hue contrasting against the surrounding environment. Initially, it appears upright, showcasing its triangular shape and smooth surface. As the sequence progresses, the cone maintains its position, suggesting stability and a fixed placement. Its surface reflects light subtly, indicating a slightly glossy texture. The cone's consistent appearance throughout the sequence suggests it is stationary, serving as a marker or boundary. Its presence is unwavering, emphasizing its role as a fixed point in the scene."
   },
   {
    "object_id": 22,
@@ -505,13 +533,14 @@
     "linear",
     "streamlined",
     "consistent"
-   ]
+   ],
+   "description": "A sleek, metallic structure, likely a streetlight, extends horizontally with a smooth, elongated form. Its surface is reflective, catching light in a way that highlights its streamlined design. The object maintains a consistent, linear shape throughout the sequence, suggesting a sturdy and fixed position. As the sequence progresses, the streetlight remains steady, with no visible movement or interaction with other objects. Its presence is marked by a sense of permanence and functionality, typical of urban infrastructure designed to provide illumination. The consistent appearance across the frames emphasizes its role as a reliable fixture in the environment."
   },
   {
    "object_id": 27,
    "name": "traffic cone",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "bright orange",
     "triangular shape",
@@ -520,13 +549,14 @@
     "consistent form",
     "pointed top",
     "broad base"
-   ]
+   ],
+   "description": "An orange traffic cone, characterized by its bright, triangular shape and smooth surface, stands prominently in the sequence. Initially, it appears upright, showcasing its vibrant hue against a contrasting background. As the sequence progresses, the cone maintains its upright position, suggesting stability and a fixed placement. Its surface reflects light subtly, indicating a slightly glossy texture. The cone's form remains consistent, with its pointed top and broad base, typical of a standard traffic cone. Throughout the sequence, the cone does not exhibit any significant movement or interaction with other objects, emphasizing its role as a stationary marker. Its presence is marked by a sense of purpose, likely serving as a visual cue or boundary marker in its environment."
   },
   {
    "object_id": 28,
    "name": "pole",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "slender",
     "elongated",
@@ -534,7 +564,8 @@
     "cylindrical",
     "metallic",
     "tapered"
-   ]
+   ],
+   "description": "A slender, elongated object, likely a pole, stands vertically with a smooth, cylindrical form. Its surface appears to be metallic, reflecting light subtly as it maintains a consistent upright position throughout the sequence. The pole exhibits a slight taper towards the top, suggesting a functional design, possibly for support or attachment. As the sequence progresses, the pole remains stationary, indicating its role as a fixed structure. Its presence is solitary, with no visible interaction with other objects, emphasizing its stability and purpose. The pole's uniformity and simplicity are highlighted by its unchanging form, suggesting it is a permanent fixture in its environment."
   },
   {
    "object_id": 23,
@@ -548,7 +579,8 @@
     "smooth",
     "metallic surface",
     "streamlined design"
-   ]
+   ],
+   "description": "A compact, dark-colored car is seen moving steadily along a road. Its boxy shape and smooth, metallic surface reflect a sense of modernity and functionality. The car maintains a consistent speed, suggesting a calm and controlled drive. As it progresses, the vehicle's rear lights and subtle contours become more pronounced, indicating its streamlined design. The car's movement is fluid, with no abrupt changes in direction, reflecting a straightforward path. Throughout the sequence, the car remains the focal point, exuding a sense of reliability and purpose as it continues its journey."
   },
   {
    "object_id": 24,
@@ -564,13 +596,14 @@
     "small",
     "tightly packed leaves",
     "full and vibrant appearance"
-   ]
+   ],
+   "description": "A dense, lush bush with a rich green hue, characterized by its rounded, slightly irregular shape, appears prominently in the sequence. The bush maintains a consistent form, suggesting a well-established and healthy plant. Its surface is textured with small, tightly packed leaves, giving it a full and vibrant appearance. As the sequence progresses, the bush remains stationary, exuding a sense of stability and permanence. The subtle variations in its foliage hint at the natural growth patterns typical of a well-maintained bush. Throughout the sequence, the bush's presence is unwavering, serving as a serene and enduring element within the scene."
   },
   {
    "object_id": 31,
    "name": "sign",
-   "category": "none",
-   "is_thing": false,
+   "category": "others",
+   "is_thing": true,
    "attributes": [
     "bright yellow",
     "diamond-shaped",
@@ -579,7 +612,8 @@
     "reflective",
     "upright",
     "vibrant hue"
-   ]
+   ],
+   "description": "A bright yellow, diamond-shaped sign with bold black lettering is prominently displayed, capturing attention with its vivid color and clear message. The sign is mounted on a sturdy pole, which remains stationary throughout the sequence, providing a stable base for the sign's visibility. The sign's surface is smooth and reflective, ensuring that the text is easily readable from a distance. As the sequence progresses, the sign maintains its upright position, with the letters remaining consistently visible and legible. The sign's vibrant hue contrasts sharply against its surroundings, making it a focal point in the scene. Its presence suggests an important message or direction, likely intended for passersby to notice and follow. The sign's design is simple yet effective, with the contrasting colors ensuring that it stands out in any setting."
   },
   {
    "object_id": 26,
@@ -595,7 +629,8 @@
     "smooth",
     "modern",
     "partially visible wheels"
-   ]
+   ],
+   "description": "A sleek, dark-colored car is prominently featured, showcasing its modern design and aerodynamic contours. The vehicle's glossy surface reflects light subtly, emphasizing its smooth curves and streamlined shape. As the sequence progresses, the car appears to be in motion, with its front end slightly tilting, suggesting a dynamic turn or maneuver. The headlights, though not illuminated, are distinct and add to the car's sophisticated appearance. The wheels, partially visible, hint at a steady, controlled movement, indicative of a vehicle navigating a turn with precision. Throughout the sequence, the car maintains a consistent trajectory, exuding an aura of elegance and power as it moves gracefully through the scene."
   },
   {
    "object_id": 30,
@@ -613,7 +648,8 @@
     "textured",
     "healthy",
     "upright"
-   ]
+   ],
+   "description": "A small, bushy plant with dense, vibrant green foliage is positioned at the top left corner of the sequence. Its compact, rounded shape suggests a well-maintained appearance, with leaves that are closely packed together, creating a lush, textured surface. As the sequence progresses, the plant remains stationary, maintaining its upright posture. The leaves exhibit a consistent green hue, indicating healthy growth, and the plant's overall form remains unchanged throughout the sequence, suggesting it is a stable and robust entity. The plant's presence is subtle yet distinct, adding a touch of natural beauty to the scene."
   }
  ],
  "relations": [
@@ -811,7 +847,7 @@
     ]
    ],
    "kind": "temporal",
-   "pvsg_predicate": "chasing"
+   "pvsg_predicate": "none"
   },
   {
    "subject": 1,
@@ -997,31 +1033,51 @@
    "pvsg_predicate": "next to"
   }
  ],
+ "mapping": "context",
  "name_map": {
-  "bench": "bench",
-  "bush": "plant",
-  "car": "car",
-  "cloud": "none",
-  "fence": "fence",
-  "football": "ball",
-  "house": "none",
-  "log": "none",
-  "marker": "none",
-  "person": "adult",
-  "pickup truck": "car",
-  "plant": "plant",
-  "pole": "none",
-  "sign": "none",
-  "streetlight": "light",
-  "traffic cone": "none",
-  "tree": "tree"
+  "0": "adult",
+  "11": "sky",
+  "35": "ball",
+  "6": "tree",
+  "1": "adult",
+  "40": "tree",
+  "2": "others",
+  "38": "tree",
+  "43": "others",
+  "3": "others",
+  "45": "others",
+  "8": "tree",
+  "34": "others",
+  "4": "others",
+  "39": "others",
+  "41": "adult",
+  "20": "others",
+  "16": "tree",
+  "13": "tree",
+  "10": "others",
+  "17": "car",
+  "12": "car",
+  "15": "fence",
+  "19": "others",
+  "14": "plant",
+  "21": "others",
+  "18": "bench",
+  "25": "others",
+  "22": "light",
+  "27": "others",
+  "28": "others",
+  "23": "car",
+  "24": "plant",
+  "31": "others",
+  "26": "car",
+  "30": "plant"
  },
  "predicate_map": {
-  "behind": "none",
   "carries": "carrying",
-  "follows": "chasing",
+  "runs past": "none",
+  "follows": "none",
   "near": "next to",
-  "runs past": "none"
+  "behind": "none"
  },
  "settings": {
   "stage1_every": 5,
@@ -1032,6 +1088,7 @@
   "fp16": false,
   "no_offload": false,
   "points_per_batch": 64,
-  "overlap": false
+  "overlap": false,
+  "map_mode": "context"
  }
 }

@@ -1,0 +1,1341 @@
+{
+ "video_id": "0027_4571353789",
+ "meta": {
+  "height": 360,
+  "width": 640,
+  "num_frames": 95
+ },
+ "objects": [
+  {
+   "object_id": 52,
+   "name": "awning",
+   "category": "cover",
+   "is_thing": true,
+   "attributes": [
+    "corrugated",
+    "weathered",
+    "uneven texture",
+    "slightly irregular edges",
+    "rustic appearance"
+   ]
+  },
+  {
+   "object_id": 2,
+   "name": "man",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "older",
+    "wearing a crisp white shirt",
+    "wearing light-colored trousers",
+    "adjusting a tie",
+    "slightly leaning forward",
+    "smooth skin",
+    "calm demeanor"
+   ]
+  },
+  {
+   "object_id": 1,
+   "name": "awning",
+   "category": "cover",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "corrugated",
+    "horizontal",
+    "slightly reflective",
+    "vertical",
+    "evenly spaced",
+    "warm-toned",
+    "small"
+   ]
+  },
+  {
+   "object_id": 56,
+   "name": "string of lights",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "warm",
+    "glowing",
+    "shimmering",
+    "evenly spaced",
+    "soft",
+    "inviting",
+    "suspended",
+    "horizontal",
+    "festive",
+    "rhythmic",
+    "dynamic"
+   ]
+  },
+  {
+   "object_id": 4,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "short curly blonde hair",
+    "sleeveless",
+    "form-fitting",
+    "white",
+    "extends to the ankles"
+   ]
+  },
+  {
+   "object_id": 5,
+   "name": "string of lights",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "warm",
+    "glowing",
+    "horizontal",
+    "evenly spaced",
+    "soft",
+    "golden hue",
+    "flickers gently",
+    "consistent glow",
+    "small",
+    "bright red accents",
+    "suspended",
+    "cascade slightly",
+    "flowing movement"
+   ]
+  },
+  {
+   "object_id": 3,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "confident posture",
+    "relaxed",
+    "crisp white shirt",
+    "gray trousers",
+    "light-colored tie",
+    "light-colored tie adding a touch of formality"
+   ]
+  },
+  {
+   "object_id": 23,
+   "name": "belt",
+   "category": "cloth",
+   "is_thing": true,
+   "attributes": [
+    "dark color",
+    "elongated shape",
+    "smooth texture",
+    "slightly reflective surface",
+    "slender width",
+    "flexible material",
+    "consistent width",
+    "undulating motion pattern"
+   ]
+  },
+  {
+   "object_id": 6,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "dark-colored",
+    "polished",
+    "smooth",
+    "glossy",
+    "streamlined",
+    "well-defined",
+    "robust"
+   ]
+  },
+  {
+   "object_id": 31,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "upright",
+    "smooth",
+    "dark",
+    "reflective",
+    "elongated",
+    "vertical",
+    "uniform",
+    "durable"
+   ]
+  },
+  {
+   "object_id": 54,
+   "name": "rectangular box",
+   "category": "box",
+   "is_thing": true,
+   "attributes": [
+    "rectangular",
+    "dark surface",
+    "smooth",
+    "sturdy material",
+    "well-defined edges",
+    "polished finish",
+    "slightly open"
+   ]
+  },
+  {
+   "object_id": 12,
+   "name": "corrugated metal sheet",
+   "category": "board",
+   "is_thing": true,
+   "attributes": [
+    "elongated",
+    "dark",
+    "corrugated",
+    "textured",
+    "slightly undulating",
+    "flexible",
+    "sturdy",
+    "smooth",
+    "well-defined",
+    "linear silhouette"
+   ]
+  },
+  {
+   "object_id": 9,
+   "name": "tablecloth",
+   "category": "cloth",
+   "is_thing": true,
+   "attributes": [
+    "translucent",
+    "white",
+    "lightweight",
+    "smooth",
+    "reflective",
+    "delicate",
+    "slightly reflective",
+    "flowing",
+    "undulating",
+    "soft",
+    "elegant",
+    "dynamic",
+    "graceful"
+   ]
+  },
+  {
+   "object_id": 61,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "short",
+    "dark",
+    "relaxed",
+    "slightly leaning forward",
+    "neutral",
+    "slight smile",
+    "bent at the elbows",
+    "casual yet neat",
+    "belt"
+   ]
+  },
+  {
+   "object_id": 49,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "dark-colored",
+    "smooth",
+    "aerodynamic",
+    "streamlined",
+    "glossy",
+    "reflective",
+    "streamlined",
+    "modern",
+    "assertive",
+    "robust"
+   ]
+  },
+  {
+   "object_id": 17,
+   "name": "tablecloth",
+   "category": "cloth",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "rectangular",
+    "smooth",
+    "slightly reflective",
+    "taut",
+    "subtle folds",
+    "creases",
+    "straight edges",
+    "well-defined"
+   ]
+  },
+  {
+   "object_id": 8,
+   "name": "lights",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "small",
+    "warm white",
+    "evenly spaced",
+    "soft",
+    "glowing",
+    "gentle",
+    "inviting",
+    "subtle",
+    "steady",
+    "rhythmic"
+   ]
+  },
+  {
+   "object_id": 51,
+   "name": "rectangular box",
+   "category": "box",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "light-colored",
+    "sharp edges",
+    "upright orientation",
+    "reflective",
+    "polished"
+   ]
+  },
+  {
+   "object_id": 50,
+   "name": "television set",
+   "category": "tv",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "rectangular",
+    "smooth",
+    "dark",
+    "flat screen",
+    "slim profile",
+    "glossy finish"
+   ]
+  },
+  {
+   "object_id": 11,
+   "name": "trash can",
+   "category": "dustbin",
+   "is_thing": true,
+   "attributes": [
+    "cylindrical",
+    "dark green",
+    "bright green band",
+    "logos and symbols",
+    "domed top"
+   ]
+  },
+  {
+   "object_id": 13,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "red",
+    "sleek",
+    "robust",
+    "smooth",
+    "glossy",
+    "tinted windows",
+    "well-defined contours",
+    "sturdy build"
+   ]
+  },
+  {
+   "object_id": 55,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "red",
+    "compact SUV",
+    "glossy finish",
+    "sleek design",
+    "smooth contours",
+    "aerodynamic shape",
+    "taillights (red and white)",
+    "tinted rear window"
+   ]
+  },
+  {
+   "object_id": 48,
+   "name": "tablecloth",
+   "category": "cloth",
+   "is_thing": true,
+   "attributes": [
+    "soft",
+    "flowing",
+    "light",
+    "neutral",
+    "smooth",
+    "undulating",
+    "lightweight",
+    "curved",
+    "elegant"
+   ]
+  },
+  {
+   "object_id": 53,
+   "name": "curtain",
+   "category": "curtain",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "dark",
+    "reflects ambient light",
+    "elongated",
+    "vertical",
+    "slightly irregular top edge",
+    "straight bottom edge",
+    "unadorned surface"
+   ]
+  },
+  {
+   "object_id": 10,
+   "name": "speaker",
+   "category": "others",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "rectangular",
+    "smooth",
+    "slightly reflective",
+    "well-defined edges",
+    "robust build"
+   ]
+  },
+  {
+   "object_id": 45,
+   "name": "rectangular box",
+   "category": "box",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "light-colored",
+    "red corner",
+    "elongated form",
+    "sharp edges",
+    "solid structure",
+    "sleek design"
+   ]
+  },
+  {
+   "object_id": 30,
+   "name": "curtain",
+   "category": "curtain",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "dark",
+    "straight",
+    "unwavering",
+    "elongated",
+    "heavy",
+    "rich",
+    "deep hue",
+    "velvet",
+    "soft",
+    "elegant"
+   ]
+  },
+  {
+   "object_id": 14,
+   "name": "television",
+   "category": "tv",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "rectangular",
+    "smooth",
+    "dark",
+    "flat",
+    "slim",
+    "glossy",
+    "well-defined",
+    "curvature",
+    "modern",
+    "sleek"
+   ]
+  },
+  {
+   "object_id": 21,
+   "name": "trash can",
+   "category": "dustbin",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "rectangular",
+    "smooth",
+    "solid",
+    "slightly rounded edges",
+    "sturdy material",
+    "matte finish",
+    "uniform",
+    "almost black appearance"
+   ]
+  },
+  {
+   "object_id": 7,
+   "name": "bush",
+   "category": "plant",
+   "is_thing": true,
+   "attributes": [
+    "lush",
+    "verdant",
+    "dense",
+    "vibrant green",
+    "soft",
+    "velvety",
+    "rounded",
+    "consistent shape",
+    "smooth surface",
+    "no visible damage",
+    "no visible discoloration"
+   ]
+  },
+  {
+   "object_id": 37,
+   "name": "branch",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "slender",
+    "elongated",
+    "curved",
+    "smooth",
+    "subtle texture variation",
+    "natural material appearance",
+    "soft muted green color",
+    "organic appearance"
+   ]
+  },
+  {
+   "object_id": 59,
+   "name": "umbrella",
+   "category": "cover",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "rounded",
+    "smooth",
+    "consistent",
+    "robust",
+    "tapers",
+    "classic"
+   ]
+  },
+  {
+   "object_id": 57,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "short",
+    "dark",
+    "dark-colored",
+    "smooth",
+    "deliberate",
+    "relaxed",
+    "neutral",
+    "slight",
+    "forward lean"
+   ]
+  },
+  {
+   "object_id": 60,
+   "name": "bird",
+   "category": "bird",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "streamlined",
+    "tucked",
+    "slightly fanned",
+    "rhythmic",
+    "fluid",
+    "continuous",
+    "calm",
+    "controlled",
+    "elegant",
+    "free"
+   ]
+  },
+  {
+   "object_id": 18,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "upright",
+    "smooth",
+    "dark",
+    "vertical",
+    "linear",
+    "consistent",
+    "sturdy"
+   ]
+  },
+  {
+   "object_id": 34,
+   "name": "truck",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "green",
+    "elongated",
+    "smooth",
+    "vertical lines",
+    "reflective",
+    "robust build"
+   ]
+  },
+  {
+   "object_id": 29,
+   "name": "string of lights",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "warm-toned",
+    "small bulbs",
+    "densely packed",
+    "luminous",
+    "continuous",
+    "pattern of glowing bulbs",
+    "twinkle",
+    "shimmer",
+    "red and orange",
+    "brightness fluctuating"
+   ]
+  },
+  {
+   "object_id": 42,
+   "name": "balloon",
+   "category": "ballon",
+   "is_thing": true,
+   "attributes": [
+    "elongated",
+    "bright yellow hue",
+    "deep blue",
+    "smooth",
+    "inflated",
+    "buoyant",
+    "airy",
+    "rounded",
+    "slightly tapered end",
+    "vibrant",
+    "dynamic form"
+   ]
+  },
+  {
+   "object_id": 58,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "short",
+    "dark",
+    "neatly styled",
+    "upright",
+    "smooth",
+    "continuous"
+   ]
+  },
+  {
+   "object_id": 38,
+   "name": "chair",
+   "category": "chair",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "elongated",
+    "rich dark brown",
+    "polished wooden texture",
+    "consistent horizontal orientation",
+    "slightly rounded edges",
+    "sleek and modern style"
+   ]
+  },
+  {
+   "object_id": 15,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "dark-colored",
+    "glossy",
+    "polished",
+    "aerodynamic",
+    "streamlined",
+    "robust"
+   ]
+  },
+  {
+   "object_id": 33,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "gray",
+    "short",
+    "white shirt",
+    "relaxed posture",
+    "slightly tilted forward",
+    "calm and composed",
+    "quiet engagement",
+    "arms positioned close to body",
+    "one arm slightly raised"
+   ]
+  },
+  {
+   "object_id": 35,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "upright",
+    "smooth",
+    "dark",
+    "sheen",
+    "elongated",
+    "vertical",
+    "uniform",
+    "solid"
+   ]
+  },
+  {
+   "object_id": 43,
+   "name": "hand",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "curled",
+    "extended",
+    "smooth",
+    "well-maintained",
+    "open",
+    "expansive",
+    "graceful",
+    "deliberate",
+    "elegant",
+    "fluid",
+    "consistent skin tone"
+   ]
+  },
+  {
+   "object_id": 36,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "dark",
+    "reflective",
+    "uniform",
+    "solid",
+    "sturdy"
+   ]
+  },
+  {
+   "object_id": 39,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "slender",
+    "vertical",
+    "smooth",
+    "dark",
+    "upright",
+    "linear"
+   ]
+  },
+  {
+   "object_id": 24,
+   "name": "bench",
+   "category": "bench",
+   "is_thing": true,
+   "attributes": [
+    "sturdy",
+    "rectangular",
+    "smooth",
+    "natural wood grain texture",
+    "robust",
+    "slightly angled outward",
+    "simple",
+    "functional",
+    "red accent"
+   ]
+  },
+  {
+   "object_id": 32,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "metallic silver",
+    "smooth",
+    "reflective",
+    "angular",
+    "well-defined contours",
+    "aerodynamic shape"
+   ]
+  },
+  {
+   "object_id": 26,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "silver",
+    "sleek",
+    "red taillight",
+    "modern design",
+    "aerodynamic contours",
+    "smooth flowing lines",
+    "metallic sheen"
+   ]
+  },
+  {
+   "object_id": 27,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "light-colored shirt",
+    "dark pants",
+    "relaxed posture",
+    "slightly tilted head",
+    "bent elbows",
+    "hands positioned close together",
+    "subtle shifts in posture",
+    "calm and stillness",
+    "absorbed expression"
+   ]
+  },
+  {
+   "object_id": 25,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "dark-colored",
+    "elongated",
+    "sleek",
+    "curved roofline",
+    "tapers towards the rear",
+    "glossy",
+    "reflecting light",
+    "tinted windows",
+    "streamlined appearance"
+   ]
+  },
+  {
+   "object_id": 41,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "vertical",
+    "smooth",
+    "dark",
+    "sturdy",
+    "elongated",
+    "tapered",
+    "upright"
+   ]
+  },
+  {
+   "object_id": 46,
+   "name": "streetlight (uncertain)",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "metallic",
+    "sleek",
+    "polished",
+    "streamlined",
+    "reflective",
+    "tilted"
+   ]
+  },
+  {
+   "object_id": 40,
+   "name": "handbag",
+   "category": "bag",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "elongated",
+    "smooth",
+    "slightly curved",
+    "flexible material",
+    "uniform color",
+    "sleek",
+    "streamlined",
+    "tapered",
+    "minimalist",
+    "functional"
+   ]
+  },
+  {
+   "object_id": 22,
+   "name": "baby buggy",
+   "category": "cart",
+   "is_thing": true,
+   "attributes": [
+    "compact",
+    "sturdy",
+    "dark",
+    "rounded",
+    "robust",
+    "thick",
+    "durable",
+    "sleek",
+    "functional"
+   ]
+  },
+  {
+   "object_id": 28,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "metallic",
+    "smooth",
+    "reflective",
+    "rounded",
+    "aerodynamic",
+    "compact",
+    "streamlined",
+    "polished",
+    "elegant",
+    "sophisticated"
+   ]
+  },
+  {
+   "object_id": 44,
+   "name": "pole",
+   "category": "stand",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "metallic",
+    "cylindrical",
+    "sleek",
+    "modern",
+    "polished"
+   ]
+  }
+ ],
+ "relations": [
+  [
+   2,
+   4,
+   "playing with",
+   [
+    [
+     0,
+     89
+    ]
+   ]
+  ],
+  [
+   2,
+   4,
+   "hugging",
+   [
+    [
+     35,
+     74
+    ]
+   ]
+  ],
+  [
+   2,
+   4,
+   "kissing",
+   [
+    [
+     50,
+     59
+    ]
+   ]
+  ],
+  [
+   3,
+   2,
+   "looking at",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   4,
+   2,
+   "guiding",
+   [
+    [
+     75,
+     89
+    ]
+   ]
+  ],
+  [
+   61,
+   4,
+   "walking on",
+   [
+    [
+     90,
+     94
+    ]
+   ]
+  ],
+  [
+   52,
+   2,
+   "over",
+   [
+    [
+     0,
+     89
+    ]
+   ]
+  ],
+  [
+   52,
+   4,
+   "over",
+   [
+    [
+     0,
+     94
+    ]
+   ]
+  ],
+  [
+   1,
+   3,
+   "over",
+   [
+    [
+     0,
+     59
+    ],
+    [
+     90,
+     94
+    ]
+   ]
+  ],
+  [
+   2,
+   4,
+   "beside",
+   [
+    [
+     0,
+     89
+    ]
+   ]
+  ]
+ ],
+ "relations_open": [
+  {
+   "subject": 2,
+   "predicate": "dancing with",
+   "object": 4,
+   "frames": [
+    [
+     0,
+     89
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "playing with"
+  },
+  {
+   "subject": 2,
+   "predicate": "embracing",
+   "object": 4,
+   "frames": [
+    [
+     35,
+     74
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "hugging"
+  },
+  {
+   "subject": 2,
+   "predicate": "kissing",
+   "object": 4,
+   "frames": [
+    [
+     50,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "kissing"
+  },
+  {
+   "subject": 3,
+   "predicate": "watching",
+   "object": 2,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "looking at"
+  },
+  {
+   "subject": 4,
+   "predicate": "walking with",
+   "object": 2,
+   "frames": [
+    [
+     75,
+     89
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "guiding"
+  },
+  {
+   "subject": 61,
+   "predicate": "walking past",
+   "object": 4,
+   "frames": [
+    [
+     90,
+     94
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "walking on"
+  },
+  {
+   "subject": 52,
+   "predicate": "above",
+   "object": 2,
+   "frames": [
+    [
+     0,
+     89
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "over"
+  },
+  {
+   "subject": 52,
+   "predicate": "above",
+   "object": 4,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "over"
+  },
+  {
+   "subject": 1,
+   "predicate": "above",
+   "object": 3,
+   "frames": [
+    [
+     0,
+     59
+    ],
+    [
+     90,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "over"
+  },
+  {
+   "subject": 56,
+   "predicate": "below",
+   "object": 52,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 5,
+   "predicate": "below",
+   "object": 52,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 2,
+   "predicate": "beside",
+   "object": 4,
+   "frames": [
+    [
+     0,
+     89
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "beside"
+  },
+  {
+   "subject": 3,
+   "predicate": "behind",
+   "object": 4,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 13,
+   "predicate": "behind",
+   "object": 3,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 23,
+   "predicate": "around",
+   "object": 3,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 9,
+   "predicate": "beneath",
+   "object": 54,
+   "frames": [
+    [
+     25,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  }
+ ],
+ "name_map": {
+  "awning": "cover",
+  "baby buggy": "cart",
+  "balloon": "ballon",
+  "belt": "cloth",
+  "bench": "bench",
+  "bird": "bird",
+  "branch": "tree",
+  "bush": "plant",
+  "car": "car",
+  "chair": "chair",
+  "corrugated metal sheet": "board",
+  "curtain": "curtain",
+  "hand": "none",
+  "handbag": "bag",
+  "lights": "light",
+  "man": "adult",
+  "person": "adult",
+  "pole": "stand",
+  "rectangular box": "box",
+  "speaker": "others",
+  "streetlight (uncertain)": "light",
+  "string of lights": "light",
+  "tablecloth": "cloth",
+  "television": "tv",
+  "television set": "tv",
+  "trash can": "dustbin",
+  "truck": "car",
+  "umbrella": "cover"
+ },
+ "predicate_map": {
+  "above": "over",
+  "around": "none",
+  "behind": "none",
+  "below": "none",
+  "beneath": "none",
+  "beside": "beside",
+  "dancing with": "playing with",
+  "embracing": "hugging",
+  "kissing": "kissing",
+  "walking past": "walking on",
+  "walking with": "guiding",
+  "watching": "looking at"
+ },
+ "settings": {
+  "stage1_every": 5,
+  "max_rel_frames": 40,
+  "stage5_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "stage6_model": "moonshotai/kimi-k3",
+  "map_model": "moonshotai/kimi-k3",
+  "fp16": true,
+  "no_offload": true,
+  "points_per_batch": 256,
+  "overlap": true
+ }
+}

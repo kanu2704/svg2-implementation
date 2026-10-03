@@ -1,8 +1,8 @@
 {
  "video": "0039_6951351121",
  "state": "done",
- "started": "2026-10-03 20:32",
- "updated": "20:32:57",
+ "started": "2026-10-03 21:23",
+ "updated": "21:24:02",
  "stage": "finished",
  "seconds": {
   "1": 684,
@@ -11,7 +11,7 @@
   "4": 393,
   "5": 88,
   "6": 53,
-  "7": 13
+  "7": 23
  },
  "error": "RuntimeError: plain: IndexError: list index out of range",
  "step": "finished",

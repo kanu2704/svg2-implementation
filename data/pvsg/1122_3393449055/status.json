@@ -1,8 +1,8 @@
 {
  "video": "1122_3393449055",
  "state": "done",
- "started": "2026-10-03 20:32",
- "updated": "20:34:38",
+ "started": "2026-10-03 21:24",
+ "updated": "21:24:21",
  "stage": "finished",
  "seconds": {
   "1": 869,
@@ -11,7 +11,7 @@
   "4": 483,
   "5": 143,
   "6": 64,
-  "7": 37
+  "7": 19
  },
  "error": "RuntimeError: plain: RateLimitError: Error code: 429 - {'status': 429, 'title': 'Too Many Requests'}",
  "step": "finished",
