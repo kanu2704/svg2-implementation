@@ -44,7 +44,7 @@ Mapping with bare names: 19/28 right; with descriptions: 20/28.
 | | with time (tIoU ≥ 0.5) | ignoring time | of |
 |---|---|---|---|
 | strict | 3 | 5 | 59 |
-| close | 3 | 5 | 59 |
+| close | 4 | 6 | 59 |
 | lenient | 5 | 11 | 59 |
 
 ## Naming errors (strict)

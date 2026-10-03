@@ -604,8 +604,8 @@
  },
  "relations_strict_close_lenient": {
   "close": {
-   "with time (tIoU \u2265 0.5)": 3,
-   "ignoring time": 5
+   "with time (tIoU \u2265 0.5)": 4,
+   "ignoring time": 6
   },
   "lenient": {
    "with time (tIoU \u2265 0.5)": 5,
