@@ -1,0 +1,1037 @@
+{
+ "video_id": "0039_6951351121",
+ "meta": {
+  "height": 360,
+  "width": 640,
+  "num_frames": 79
+ },
+ "objects": [
+  {
+   "object_id": 0,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "dark outfit",
+    "crouched position",
+    "standing posture",
+    "slightly leaning forward",
+    "purposeful stride",
+    "legs extending and contracting",
+    "arms positioned close to body",
+    "head slightly tilted",
+    "consistent pace"
+   ]
+  },
+  {
+   "object_id": 11,
+   "name": "cloud",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "large",
+    "elongated",
+    "smooth",
+    "continuous",
+    "consistent",
+    "slightly undulating",
+    "soft",
+    "diffuse",
+    "uniform",
+    "serene",
+    "tranquil"
+   ]
+  },
+  {
+   "object_id": 35,
+   "name": "football",
+   "category": "ball",
+   "is_thing": true,
+   "attributes": [
+    "brown",
+    "oval",
+    "textured",
+    "leather",
+    "stitching"
+   ]
+  },
+  {
+   "object_id": 6,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "sturdy",
+    "textured",
+    "textured bark"
+   ]
+  },
+  {
+   "object_id": 1,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "black",
+    "sports uniform",
+    "helmet",
+    "gloves",
+    "athletic posture",
+    "slightly bent forward",
+    "running stance",
+    "mid-air pose",
+    "arms extended forward"
+   ]
+  },
+  {
+   "object_id": 40,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "narrow trunk",
+    "numerous thin branches",
+    "bare",
+    "few sparse leaves",
+    "sturdy",
+    "straight",
+    "graceful",
+    "silhouette",
+    "symmetrical",
+    "balanced",
+    "harmonious",
+    "calm",
+    "timeless"
+   ]
+  },
+  {
+   "object_id": 2,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "two-story",
+    "gable roof",
+    "light gray siding",
+    "covered porch",
+    "white columns",
+    "rectangular windows",
+    "white trim",
+    "slightly weathered roof",
+    "subtle color variations in siding",
+    "simple yet elegant design",
+    "focus on functionality and comfort"
+   ]
+  },
+  {
+   "object_id": 38,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "pointed top",
+    "dense foliage",
+    "mix of light and dark shades",
+    "textured canopy",
+    "silhouette",
+    "sharp silhouette",
+    "elegant",
+    "solitary"
+   ]
+  },
+  {
+   "object_id": 43,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "light-colored exterior",
+    "gently sloping roof",
+    "single-story layout",
+    "dark trim",
+    "symmetrical design",
+    "evenly spaced windows",
+    "smooth and well-maintained exterior",
+    "uniform siding"
+   ]
+  },
+  {
+   "object_id": 3,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "two-story",
+    "light gray exterior",
+    "dark gray roof",
+    "rectangular windows",
+    "white window frames",
+    "covered porch",
+    "columns",
+    "slightly sloped roofline",
+    "symmetrical design",
+    "modern, suburban style"
+   ]
+  },
+  {
+   "object_id": 45,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "single-story",
+    "light brown exterior",
+    "rectangular shape",
+    "gently sloping roof",
+    "white railing",
+    "large rectangular windows",
+    "white window frames",
+    "clean lines",
+    "uniform appearance"
+   ]
+  },
+  {
+   "object_id": 8,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "narrow trunk",
+    "numerous thin branches",
+    "mostly bare",
+    "sparse leaves",
+    "slightly darker",
+    "more robust",
+    "graceful",
+    "elegant",
+    "symmetrical",
+    "balanced",
+    "harmonious"
+   ]
+  },
+  {
+   "object_id": 34,
+   "name": "marker",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "orange",
+    "rectangular",
+    "slightly curved top",
+    "evenly spaced",
+    "vibrant orange hue",
+    "straight alignment",
+    "consistent spacing"
+   ]
+  },
+  {
+   "object_id": 4,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "two-story",
+    "gable roof",
+    "light and dark materials",
+    "subtle contrast",
+    "large windows",
+    "smaller windows on upper level",
+    "evenly spaced windows",
+    "covered porch",
+    "sturdy columns",
+    "symmetrical design",
+    "sharp angles on gables",
+    "classic style",
+    "Victorian style",
+    "traditional architectural elements"
+   ]
+  },
+  {
+   "object_id": 39,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "elongated structure",
+    "flat roof",
+    "light and dark panels",
+    "modern aesthetic",
+    "clean lines",
+    "minimalist approach",
+    "smooth roofline",
+    "unadorned facade"
+   ]
+  },
+  {
+   "object_id": 41,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "athletic",
+    "male",
+    "dark uniform",
+    "protective gear",
+    "helmet",
+    "gloves",
+    "forward-leaning posture",
+    "extended legs",
+    "one foot lifted off the ground",
+    "uniform with padding",
+    "padding on shoulders"
+   ]
+  },
+  {
+   "object_id": 20,
+   "name": "pole",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "upright",
+    "smooth",
+    "metallic",
+    "reflective",
+    "vertical",
+    "elongated",
+    "tapered",
+    "streamlined"
+   ]
+  },
+  {
+   "object_id": 16,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "large",
+    "leafy",
+    "dense",
+    "rich green",
+    "robust",
+    "rounded",
+    "mature",
+    "tapers"
+   ]
+  },
+  {
+   "object_id": 13,
+   "name": "tree",
+   "category": "tree",
+   "is_thing": false,
+   "attributes": [
+    "broad",
+    "rounded",
+    "dense",
+    "mix of green and brown",
+    "solid",
+    "expansive",
+    "natural arch",
+    "commanding",
+    "intricate structure",
+    "subtle variations in shading"
+   ]
+  },
+  {
+   "object_id": 10,
+   "name": "house",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "light-colored exterior walls",
+    "steeply pitched roof",
+    "dark shingle covering",
+    "gable roof",
+    "clean lines",
+    "symmetrical design",
+    "solid structure",
+    "well-defined",
+    "uniform appearance"
+   ]
+  },
+  {
+   "object_id": 17,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "white",
+    "modern",
+    "aerodynamic",
+    "smooth",
+    "polished",
+    "streamlined",
+    "tinted"
+   ]
+  },
+  {
+   "object_id": 12,
+   "name": "pickup truck",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "white",
+    "sleek",
+    "aerodynamic",
+    "four doors",
+    "large wheels",
+    "tinted windows",
+    "smooth",
+    "robust",
+    "sturdy"
+   ]
+  },
+  {
+   "object_id": 15,
+   "name": "fence",
+   "category": "fence",
+   "is_thing": true,
+   "attributes": [
+    "horizontal planks",
+    "natural brown hue",
+    "uniform height",
+    "uniform texture",
+    "closely aligned planks",
+    "slight variations in color",
+    "slight variations in grain",
+    "sturdy appearance",
+    "well-constructed",
+    "rustic charm"
+   ]
+  },
+  {
+   "object_id": 19,
+   "name": "log",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "long",
+    "narrow",
+    "smooth",
+    "elongated",
+    "slightly curved",
+    "earthy tones",
+    "greenish-brown",
+    "consistent texture",
+    "natural grain"
+   ]
+  },
+  {
+   "object_id": 14,
+   "name": "bush",
+   "category": "plant",
+   "is_thing": true,
+   "attributes": [
+    "dense",
+    "lush",
+    "vibrant green",
+    "elongated",
+    "textured",
+    "small tightly packed leaves",
+    "rich verdant appearance",
+    "well-maintained",
+    "healthy",
+    "thriving"
+   ]
+  },
+  {
+   "object_id": 21,
+   "name": "traffic cone",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "orange",
+    "bright",
+    "triangular",
+    "upright",
+    "smooth",
+    "slight sheen",
+    "vibrant",
+    "stationary"
+   ]
+  },
+  {
+   "object_id": 18,
+   "name": "bench",
+   "category": "bench",
+   "is_thing": true,
+   "attributes": [
+    "green",
+    "smooth",
+    "flat",
+    "slightly curved edges",
+    "uniform surface",
+    "subtle sheen",
+    "horizontal orientation",
+    "elongated form",
+    "gentle slope"
+   ]
+  },
+  {
+   "object_id": 25,
+   "name": "traffic cone",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "orange",
+    "triangular",
+    "smooth",
+    "glossy",
+    "upright",
+    "stationary",
+    "fixed"
+   ]
+  },
+  {
+   "object_id": 22,
+   "name": "streetlight",
+   "category": "light",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "metallic",
+    "reflective",
+    "elongated",
+    "linear",
+    "streamlined",
+    "consistent"
+   ]
+  },
+  {
+   "object_id": 27,
+   "name": "traffic cone",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "bright orange",
+    "triangular shape",
+    "smooth surface",
+    "slightly glossy texture",
+    "consistent form",
+    "pointed top",
+    "broad base"
+   ]
+  },
+  {
+   "object_id": 28,
+   "name": "pole",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "cylindrical",
+    "metallic",
+    "tapered"
+   ]
+  },
+  {
+   "object_id": 23,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "compact",
+    "dark-colored",
+    "boxy shape",
+    "smooth",
+    "metallic surface",
+    "streamlined design"
+   ]
+  },
+  {
+   "object_id": 24,
+   "name": "bush",
+   "category": "plant",
+   "is_thing": true,
+   "attributes": [
+    "rich green hue",
+    "rounded",
+    "slightly irregular shape",
+    "consistent form",
+    "textured",
+    "small",
+    "tightly packed leaves",
+    "full and vibrant appearance"
+   ]
+  },
+  {
+   "object_id": 31,
+   "name": "sign",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "bright yellow",
+    "diamond-shaped",
+    "bold black lettering",
+    "smooth",
+    "reflective",
+    "upright",
+    "vibrant hue"
+   ]
+  },
+  {
+   "object_id": 26,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "dark-colored",
+    "glossy",
+    "aerodynamic",
+    "streamlined",
+    "smooth",
+    "modern",
+    "partially visible wheels"
+   ]
+  },
+  {
+   "object_id": 30,
+   "name": "plant",
+   "category": "plant",
+   "is_thing": true,
+   "attributes": [
+    "small",
+    "bushy",
+    "dense",
+    "vibrant green",
+    "compact",
+    "rounded",
+    "lush",
+    "textured",
+    "healthy",
+    "upright"
+   ]
+  }
+ ],
+ "relations": [
+  [
+   1,
+   35,
+   "carrying",
+   [
+    [
+     10,
+     19
+    ]
+   ]
+  ],
+  [
+   1,
+   21,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ]
+  ],
+  [
+   1,
+   25,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ]
+  ],
+  [
+   1,
+   27,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ]
+  ],
+  [
+   21,
+   25,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ]
+  ],
+  [
+   25,
+   27,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ]
+  ],
+  [
+   12,
+   3,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     39
+    ]
+   ]
+  ],
+  [
+   17,
+   2,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     30,
+     49
+    ]
+   ]
+  ],
+  [
+   18,
+   19,
+   "next to",
+   [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     49
+    ]
+   ]
+  ],
+  [
+   35,
+   1,
+   "next to",
+   [
+    [
+     10,
+     19
+    ]
+   ]
+  ]
+ ],
+ "relations_open": [
+  {
+   "subject": 1,
+   "predicate": "carries",
+   "object": 35,
+   "frames": [
+    [
+     10,
+     19
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "carrying"
+  },
+  {
+   "subject": 0,
+   "predicate": "runs past",
+   "object": 34,
+   "frames": [
+    [
+     20,
+     49
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 0,
+   "predicate": "runs past",
+   "object": 21,
+   "frames": [
+    [
+     0,
+     74
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": -1,
+   "predicate": "follows",
+   "object": 0,
+   "frames": [
+    [
+     0,
+     78
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "chasing"
+  },
+  {
+   "subject": 1,
+   "predicate": "near",
+   "object": 21,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 1,
+   "predicate": "near",
+   "object": 25,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 1,
+   "predicate": "near",
+   "object": 27,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 21,
+   "predicate": "near",
+   "object": 25,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 25,
+   "predicate": "near",
+   "object": 27,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 2,
+   "predicate": "behind",
+   "object": 8,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     30,
+     49
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 3,
+   "predicate": "behind",
+   "object": 14,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     39
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 12,
+   "predicate": "near",
+   "object": 3,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     39
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 17,
+   "predicate": "near",
+   "object": 2,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     30,
+     49
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 18,
+   "predicate": "near",
+   "object": 19,
+   "frames": [
+    [
+     0,
+     9
+    ],
+    [
+     20,
+     49
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 35,
+   "predicate": "near",
+   "object": 1,
+   "frames": [
+    [
+     10,
+     19
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  }
+ ],
+ "name_map": {
+  "bench": "bench",
+  "bush": "plant",
+  "car": "car",
+  "cloud": "none",
+  "fence": "fence",
+  "football": "ball",
+  "house": "none",
+  "log": "none",
+  "marker": "none",
+  "person": "adult",
+  "pickup truck": "car",
+  "plant": "plant",
+  "pole": "none",
+  "sign": "none",
+  "streetlight": "light",
+  "traffic cone": "none",
+  "tree": "tree"
+ },
+ "predicate_map": {
+  "behind": "none",
+  "carries": "carrying",
+  "follows": "chasing",
+  "near": "next to",
+  "runs past": "none"
+ },
+ "settings": {
+  "stage1_every": 5,
+  "max_rel_frames": 40,
+  "stage5_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "stage6_model": "moonshotai/kimi-k3",
+  "map_model": "moonshotai/kimi-k3",
+  "fp16": false,
+  "no_offload": false,
+  "points_per_batch": 64,
+  "overlap": false
+ }
+}

@@ -1,0 +1,1244 @@
+{
+ "video_id": "1122_3393449055",
+ "meta": {
+  "height": 360,
+  "width": 640,
+  "num_frames": 92
+ },
+ "objects": [
+  {
+   "object_id": 1,
+   "name": "baby",
+   "category": "baby",
+   "is_thing": true,
+   "attributes": [
+    "small",
+    "hoodie",
+    "green",
+    "smooth",
+    "bald",
+    "wide",
+    "attentive",
+    "relaxed",
+    "bent",
+    "fluid",
+    "gentle"
+   ]
+  },
+  {
+   "object_id": 2,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "wearing a dark jacket",
+    "wearing a baseball cap",
+    "jacket has a zipper",
+    "jacket has subtle stitching",
+    "cap has a distinct logo",
+    "cap has a brim",
+    "face partially visible",
+    "relaxed expression",
+    "slight smile",
+    "jacket texture",
+    "cap brim casts shadow"
+   ]
+  },
+  {
+   "object_id": 0,
+   "name": "dog",
+   "category": "dog",
+   "is_thing": true,
+   "attributes": [
+    "fluffy",
+    "golden-furred",
+    "soft",
+    "wavy coat",
+    "expressive face",
+    "floppy ears",
+    "well-groomed",
+    "voluminous",
+    "front paw raised"
+   ]
+  },
+  {
+   "object_id": 41,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "wearing a dark jacket",
+    "small emblem on the chest",
+    "smiling",
+    "head turned slightly to the side",
+    "cap",
+    "hands positioned in front",
+    "fingers slightly curled"
+   ]
+  },
+  {
+   "object_id": 53,
+   "name": "wall",
+   "category": "wall",
+   "is_thing": false,
+   "attributes": [
+    "vertical",
+    "smooth",
+    "unblemished",
+    "consistent",
+    "subtle sheen",
+    "light beige",
+    "uniform",
+    "no visible markings",
+    "no visible decorations"
+   ]
+  },
+  {
+   "object_id": 3,
+   "name": "wall panel",
+   "category": "wall",
+   "is_thing": false,
+   "attributes": [
+    "smooth",
+    "light-colored",
+    "uniform",
+    "unblemished",
+    "consistent texture",
+    "consistent color",
+    "slight curvature",
+    "gentle tapering at the edges",
+    "flexible",
+    "seamless integration"
+   ]
+  },
+  {
+   "object_id": 43,
+   "name": "cabinet door",
+   "category": "cabinet",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "cream-colored",
+    "subtle sheen",
+    "rectangular",
+    "clean lines",
+    "sharply defined edges",
+    "light, neutral shade (interior)"
+   ]
+  },
+  {
+   "object_id": 47,
+   "name": "object",
+   "category": "others",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "elongated form",
+    "vertical orientation",
+    "smooth surface",
+    "dark brown color",
+    "consistent color",
+    "uniform appearance",
+    "irregular top edge",
+    "gentle curve",
+    "solid appearance",
+    "polished appearance",
+    "sleek appearance",
+    "gentle sheen",
+    "subtle dynamic"
+   ]
+  },
+  {
+   "object_id": 38,
+   "name": "refrigerator",
+   "category": "fridge",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "metallic",
+    "rectangular",
+    "polished",
+    "reflective",
+    "curved edges",
+    "consistent texture",
+    "modern design"
+   ]
+  },
+  {
+   "object_id": 49,
+   "name": "countertop",
+   "category": "countertop",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "light-colored",
+    "polished",
+    "reflective",
+    "sharp-edged",
+    "well-crafted",
+    "consistent",
+    "static"
+   ]
+  },
+  {
+   "object_id": 7,
+   "name": "door",
+   "category": "door",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "elongated",
+    "uniform",
+    "muted color",
+    "vertical orientation",
+    "tapering towards the top",
+    "three-dimensional appearance"
+   ]
+  },
+  {
+   "object_id": 44,
+   "name": "mirror",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "rectangular",
+    "smooth",
+    "reflective",
+    "slender frame",
+    "light-colored material",
+    "subtle sheen",
+    "unmarred surface",
+    "polished finish",
+    "gentle curves"
+   ]
+  },
+  {
+   "object_id": 4,
+   "name": "hand",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "smooth",
+    "light skin tone",
+    "fingers slightly curled",
+    "thumb extended upwards",
+    "other fingers positioned close together",
+    "gentle curve"
+   ]
+  },
+  {
+   "object_id": 39,
+   "name": "hair dryer",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark",
+    "elongated",
+    "cylindrical",
+    "slightly tapered end",
+    "smooth",
+    "glossy surface",
+    "reflects light",
+    "handle extending upward",
+    "consistent orientation",
+    "nozzle pointing slightly downward",
+    "modern",
+    "functional",
+    "sleek"
+   ]
+  },
+  {
+   "object_id": 54,
+   "name": "cabinet door",
+   "category": "cabinet",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "elongated form",
+    "light neutral color",
+    "possibly white or cream",
+    "subtle sheen",
+    "polished surface",
+    "two round metallic knobs",
+    "symmetrical positioning",
+    "straight edges"
+   ]
+  },
+  {
+   "object_id": 25,
+   "name": "sleeve",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark",
+    "elongated",
+    "narrow",
+    "slightly curved",
+    "flexible",
+    "pliable",
+    "smooth texture"
+   ]
+  },
+  {
+   "object_id": 21,
+   "name": "door",
+   "category": "door",
+   "is_thing": true,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "elongated",
+    "light color",
+    "polished finish",
+    "vertical orientation",
+    "clean edges",
+    "straight edges"
+   ]
+  },
+  {
+   "object_id": 29,
+   "name": "baseball cap",
+   "category": "hat",
+   "is_thing": true,
+   "attributes": [
+    "dark fabric",
+    "prominent logo",
+    "slightly curved brim",
+    "structured crown",
+    "stiff brim",
+    "visible logo"
+   ]
+  },
+  {
+   "object_id": 46,
+   "name": "chair back",
+   "category": "chair",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "smooth",
+    "rich brown",
+    "consistent color",
+    "reflective surface",
+    "well-defined edges",
+    "gentle curve",
+    "upright position",
+    "solid form",
+    "well-crafted"
+   ]
+  },
+  {
+   "object_id": 36,
+   "name": "hand",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "warm skin tone",
+    "smooth texture",
+    "fingers slightly curled",
+    "consistent orientation",
+    "fingers slightly bent"
+   ]
+  },
+  {
+   "object_id": 37,
+   "name": "hair dryer",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "dark",
+    "glossy",
+    "elongated",
+    "smooth",
+    "polished",
+    "vertical",
+    "sleek",
+    "modern"
+   ]
+  },
+  {
+   "object_id": 11,
+   "name": "baseball cap",
+   "category": "hat",
+   "is_thing": true,
+   "attributes": [
+    "vibrant red",
+    "smooth",
+    "slightly glossy fabric",
+    "broad brim",
+    "curves gently downward",
+    "consistent orientation",
+    "upright position",
+    "reflects light subtly",
+    "texture",
+    "gentle folds of the material",
+    "intact structure",
+    "clearly defined crown and brim",
+    "casual yet stylish design"
+   ]
+  },
+  {
+   "object_id": 28,
+   "name": "curtain",
+   "category": "curtain",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "slightly reflective",
+    "lightweight fabric",
+    "warm muted shade",
+    "light brown or beige",
+    "consistent straight line edges",
+    "well-structured design"
+   ]
+  },
+  {
+   "object_id": 50,
+   "name": "paper towel",
+   "category": "towel",
+   "is_thing": true,
+   "attributes": [
+    "beige color",
+    "triangular shape (initial)",
+    "elongated form",
+    "soft texture",
+    "absorbent texture",
+    "subtle creases",
+    "irregular edges",
+    "smooth surface",
+    "lightweight",
+    "pliable nature"
+   ]
+  },
+  {
+   "object_id": 48,
+   "name": "picture frame",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "rectangular",
+    "smooth",
+    "light-colored",
+    "rounded edges",
+    "polished",
+    "upright",
+    "clean",
+    "elegant"
+   ]
+  },
+  {
+   "object_id": 20,
+   "name": "strap",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark",
+    "elongated",
+    "smooth",
+    "slightly curved",
+    "flexible",
+    "pliable",
+    "sturdy",
+    "slightly reflective",
+    "durable"
+   ]
+  },
+  {
+   "object_id": 8,
+   "name": "plush toy",
+   "category": "toy",
+   "is_thing": true,
+   "attributes": [
+    "fluffy",
+    "rounded shape",
+    "light creamy color",
+    "smooth surface",
+    "slightly textured",
+    "soft material",
+    "plush",
+    "cuddly",
+    "rounded form"
+   ]
+  },
+  {
+   "object_id": 40,
+   "name": "box",
+   "category": "box",
+   "is_thing": true,
+   "attributes": [
+    "rectangular",
+    "soft pastel green and peach color scheme",
+    "slightly glossy surface",
+    "smooth texture",
+    "subtle color variations with hints of pink and green",
+    "gentle, ethereal appearance"
+   ]
+  },
+  {
+   "object_id": 13,
+   "name": "curtain",
+   "category": "curtain",
+   "is_thing": true,
+   "attributes": [
+    "soft",
+    "flowing texture",
+    "light",
+    "airy",
+    "delicate folds",
+    "creases",
+    "ripples",
+    "fluidity",
+    "elegance"
+   ]
+  },
+  {
+   "object_id": 18,
+   "name": "plush toy",
+   "category": "toy",
+   "is_thing": true,
+   "attributes": [
+    "soft",
+    "plush",
+    "cream-colored",
+    "fluffy",
+    "smooth",
+    "velvety",
+    "rounded",
+    "slightly elongated",
+    "tapers towards one end",
+    "gentle sheen"
+   ]
+  },
+  {
+   "object_id": 6,
+   "name": "corner of a drawer",
+   "category": "drawer",
+   "is_thing": true,
+   "attributes": [
+    "triangular",
+    "smooth",
+    "reflective",
+    "warm, earthy brown",
+    "wooden or polished finish",
+    "consistent shape",
+    "pointed edge",
+    "subtly tapering towards the top",
+    "three-dimensional form",
+    "sleek and modern appearance"
+   ]
+  },
+  {
+   "object_id": 55,
+   "name": "tall object",
+   "category": "others",
+   "is_thing": true,
+   "attributes": [
+    "slender",
+    "elongated form",
+    "smooth surface",
+    "uniformly dark",
+    "matte finish",
+    "consistent width",
+    "rigid structure"
+   ]
+  },
+  {
+   "object_id": 56,
+   "name": "toy ball",
+   "category": "ball",
+   "is_thing": true,
+   "attributes": [
+    "small",
+    "round",
+    "smooth",
+    "dark",
+    "uniform color",
+    "subtle sheen",
+    "plastic or rubber material",
+    "slightly glossy texture",
+    "lightweight"
+   ]
+  },
+  {
+   "object_id": 57,
+   "name": "rectangular object",
+   "category": "others",
+   "is_thing": true,
+   "attributes": [
+    "dark",
+    "rectangular",
+    "smooth",
+    "flat",
+    "sharply defined edges",
+    "solid material",
+    "matte finish",
+    "subdued appearance"
+   ]
+  },
+  {
+   "object_id": 26,
+   "name": "strap",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark",
+    "elongated",
+    "smooth",
+    "slightly curved",
+    "flexible",
+    "pliable",
+    "sleek",
+    "uniform",
+    "consistent",
+    "tapered"
+   ]
+  },
+  {
+   "object_id": 51,
+   "name": "pipe",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "consistent surface",
+    "muted brown",
+    "straight",
+    "unwavering form",
+    "slight taper towards the top",
+    "gentle curvature at the bottom",
+    "dynamic element",
+    "reflects light softly",
+    "polished finish"
+   ]
+  },
+  {
+   "object_id": 17,
+   "name": "bowl",
+   "category": "bowl",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "curved",
+    "rounded",
+    "slightly concave",
+    "warm tones",
+    "gentle gradient",
+    "sheen",
+    "elegant form",
+    "well-crafted design",
+    "soft highlights",
+    "contours"
+   ]
+  },
+  {
+   "object_id": 12,
+   "name": "blanket",
+   "category": "blanket",
+   "is_thing": true,
+   "attributes": [
+    "soft",
+    "plush",
+    "creamy texture",
+    "smooth texture",
+    "gentle flowing form",
+    "lightweight",
+    "flexible material",
+    "uniform surface",
+    "subtle sheen",
+    "cozy appearance"
+   ]
+  },
+  {
+   "object_id": 24,
+   "name": "pole",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "slender",
+    "elongated",
+    "vertical",
+    "smooth",
+    "consistent surface",
+    "muted brown",
+    "uniform",
+    "subtle shading variations"
+   ]
+  },
+  {
+   "object_id": 14,
+   "name": "vase",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "tall",
+    "slender",
+    "smooth",
+    "elongated form",
+    "warm, earthy tone",
+    "consistent vertical orientation",
+    "subtle variations in surface texture",
+    "slightly glossy finish"
+   ]
+  },
+  {
+   "object_id": 52,
+   "name": "handle",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "smooth",
+    "curved",
+    "light beige",
+    "sleek",
+    "reflective",
+    "polished",
+    "consistent",
+    "gentle arc",
+    "rounded edge",
+    "minimalist",
+    "no visible embellishments"
+   ]
+  },
+  {
+   "object_id": 22,
+   "name": "choker",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark color",
+    "elongated shape",
+    "smooth surface",
+    "slightly reflective",
+    "polished finish",
+    "sleek style",
+    "uniform appearance",
+    "slight tapering",
+    "streamlined form"
+   ]
+  },
+  {
+   "object_id": 9,
+   "name": "rectangular object (box)",
+   "category": "box",
+   "is_thing": true,
+   "attributes": [
+    "smooth",
+    "flat surfaces",
+    "muted",
+    "earthy tone",
+    "angular orientation",
+    "soft sheen",
+    "possibly metallic or polished finish",
+    "solid structure"
+   ]
+  },
+  {
+   "object_id": 15,
+   "name": "light switch",
+   "category": "switch",
+   "is_thing": true,
+   "attributes": [
+    "rectangular",
+    "smooth",
+    "off-white",
+    "slightly raised",
+    "subtle indentation",
+    "uniform",
+    "gentle sheen",
+    "reflects light softly",
+    "stationary"
+   ]
+  },
+  {
+   "object_id": 45,
+   "name": "speaker",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "dark brown",
+    "smooth",
+    "polished",
+    "rectangular",
+    "slightly rounded edges",
+    "glossy finish",
+    "reflective"
+   ]
+  },
+  {
+   "object_id": 23,
+   "name": "zipper",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "metallic",
+    "flexible",
+    "sturdy",
+    "narrow profile",
+    "consistent",
+    "warm, golden hue",
+    "sleek appearance"
+   ]
+  },
+  {
+   "object_id": 27,
+   "name": "plush toy",
+   "category": "toy",
+   "is_thing": true,
+   "attributes": [
+    "small",
+    "rounded",
+    "soft",
+    "plush",
+    "smooth",
+    "light-colored",
+    "well-stuffed",
+    "resilient",
+    "slightly glossy"
+   ]
+  }
+ ],
+ "relations": [
+  [
+   2,
+   1,
+   "holding",
+   [
+    [
+     0,
+     91
+    ]
+   ]
+  ],
+  [
+   0,
+   1,
+   "licking",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   41,
+   0,
+   "holding",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   1,
+   0,
+   "looking at",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   41,
+   1,
+   "looking at",
+   [
+    [
+     25,
+     59
+    ]
+   ]
+  ],
+  [
+   2,
+   1,
+   "carrying",
+   [
+    [
+     60,
+     91
+    ]
+   ]
+  ],
+  [
+   1,
+   2,
+   "in front of",
+   [
+    [
+     0,
+     91
+    ]
+   ]
+  ],
+  [
+   0,
+   1,
+   "beside",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   0,
+   41,
+   "in front of",
+   [
+    [
+     0,
+     59
+    ]
+   ]
+  ],
+  [
+   4,
+   1,
+   "beside",
+   [
+    [
+     35,
+     89
+    ]
+   ]
+  ],
+  [
+   15,
+   53,
+   "on",
+   [
+    [
+     0,
+     24
+    ],
+    [
+     60,
+     74
+    ]
+   ]
+  ],
+  [
+   44,
+   53,
+   "on",
+   [
+    [
+     25,
+     89
+    ]
+   ]
+  ]
+ ],
+ "relations_open": [
+  {
+   "subject": 2,
+   "predicate": "holding",
+   "object": 1,
+   "frames": [
+    [
+     0,
+     91
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "holding"
+  },
+  {
+   "subject": 0,
+   "predicate": "licking",
+   "object": 1,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "licking"
+  },
+  {
+   "subject": 41,
+   "predicate": "holding",
+   "object": 0,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "holding"
+  },
+  {
+   "subject": 1,
+   "predicate": "looking at",
+   "object": 0,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "looking at"
+  },
+  {
+   "subject": 41,
+   "predicate": "looking at",
+   "object": 1,
+   "frames": [
+    [
+     25,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "looking at"
+  },
+  {
+   "subject": 2,
+   "predicate": "carrying",
+   "object": 1,
+   "frames": [
+    [
+     60,
+     91
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "carrying"
+  },
+  {
+   "subject": 2,
+   "predicate": "interacting with",
+   "object": 41,
+   "frames": [
+    [
+     25,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 1,
+   "predicate": "in front of",
+   "object": 2,
+   "frames": [
+    [
+     0,
+     91
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "in front of"
+  },
+  {
+   "subject": 2,
+   "predicate": "behind",
+   "object": 1,
+   "frames": [
+    [
+     0,
+     91
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 0,
+   "predicate": "beside",
+   "object": 1,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "beside"
+  },
+  {
+   "subject": 0,
+   "predicate": "in front of",
+   "object": 41,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "in front of"
+  },
+  {
+   "subject": 41,
+   "predicate": "behind",
+   "object": 0,
+   "frames": [
+    [
+     0,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 4,
+   "predicate": "below",
+   "object": 0,
+   "frames": [
+    [
+     0,
+     24
+    ],
+    [
+     35,
+     59
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 4,
+   "predicate": "beside",
+   "object": 1,
+   "frames": [
+    [
+     35,
+     89
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "beside"
+  },
+  {
+   "subject": 49,
+   "predicate": "below",
+   "object": 43,
+   "frames": [
+    [
+     25,
+     89
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 15,
+   "predicate": "on",
+   "object": 53,
+   "frames": [
+    [
+     0,
+     24
+    ],
+    [
+     60,
+     74
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "on"
+  },
+  {
+   "subject": 44,
+   "predicate": "on",
+   "object": 53,
+   "frames": [
+    [
+     25,
+     89
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "on"
+  }
+ ],
+ "name_map": {
+  "baby": "baby",
+  "baseball cap": "hat",
+  "blanket": "blanket",
+  "bowl": "bowl",
+  "box": "box",
+  "cabinet door": "cabinet",
+  "chair back": "chair",
+  "choker": "none",
+  "corner of a drawer": "drawer",
+  "countertop": "countertop",
+  "curtain": "curtain",
+  "dog": "dog",
+  "door": "door",
+  "hair dryer": "none",
+  "hand": "none",
+  "handle": "none",
+  "light switch": "switch",
+  "mirror": "none",
+  "object": "others",
+  "paper towel": "towel",
+  "person": "adult",
+  "picture frame": "none",
+  "pipe": "none",
+  "plush toy": "toy",
+  "pole": "none",
+  "rectangular object": "others",
+  "rectangular object (box)": "box",
+  "refrigerator": "fridge",
+  "sleeve": "none",
+  "speaker": "none",
+  "strap": "none",
+  "tall object": "others",
+  "toy ball": "ball",
+  "vase": "none",
+  "wall": "wall",
+  "wall panel": "wall",
+  "zipper": "none"
+ },
+ "predicate_map": {
+  "behind": "none",
+  "below": "none",
+  "beside": "beside",
+  "carrying": "carrying",
+  "holding": "holding",
+  "in front of": "in front of",
+  "interacting with": "none",
+  "licking": "licking",
+  "looking at": "looking at",
+  "on": "on"
+ },
+ "settings": {
+  "stage1_every": 5,
+  "max_rel_frames": 40,
+  "stage5_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "stage6_model": "moonshotai/kimi-k3",
+  "map_model": "moonshotai/kimi-k3",
+  "fp16": true,
+  "no_offload": true,
+  "points_per_batch": 256,
+  "overlap": true
+ }
+}

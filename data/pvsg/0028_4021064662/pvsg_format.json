@@ -1,0 +1,473 @@
+{
+ "video_id": "0028_4021064662",
+ "meta": {
+  "height": 480,
+  "width": 640,
+  "num_frames": 95
+ },
+ "objects": [
+  {
+   "object_id": 0,
+   "name": "child",
+   "category": "child",
+   "is_thing": true,
+   "attributes": [
+    "red cap",
+    "white shirt",
+    "red shorts",
+    "white shoes"
+   ]
+  },
+  {
+   "object_id": 1,
+   "name": "car",
+   "category": "car",
+   "is_thing": true,
+   "attributes": [
+    "sleek",
+    "dark-colored",
+    "glossy finish",
+    "aerodynamic shape",
+    "streamlined",
+    "low-profile stance",
+    "tinted windows"
+   ]
+  },
+  {
+   "object_id": 3,
+   "name": "person",
+   "category": "adult",
+   "is_thing": true,
+   "attributes": [
+    "bright pink shirt",
+    "gray shorts",
+    "upright posture",
+    "relaxed stance",
+    "slight lean to one side",
+    "steady balance on feet"
+   ]
+  },
+  {
+   "object_id": 2,
+   "name": "umbrella",
+   "category": "none",
+   "is_thing": false,
+   "attributes": [
+    "vibrant pink hue",
+    "smooth",
+    "slightly glossy",
+    "rounded",
+    "dome-like shape",
+    "fabric",
+    "curves",
+    "folds"
+   ]
+  },
+  {
+   "object_id": 5,
+   "name": "child",
+   "category": "child",
+   "is_thing": true,
+   "attributes": [
+    "young",
+    "wearing red cap",
+    "wearing white shirt",
+    "wearing red shorts",
+    "wearing white sneakers",
+    "holding sports ball in one hand"
+   ]
+  },
+  {
+   "object_id": 6,
+   "name": "duffel bag",
+   "category": "bag",
+   "is_thing": true,
+   "attributes": [
+    "black",
+    "smooth",
+    "slightly glossy",
+    "soft",
+    "flexible",
+    "structured",
+    "consistent",
+    "sturdy",
+    "flexible"
+   ]
+  },
+  {
+   "object_id": 7,
+   "name": "bottle",
+   "category": "bottle",
+   "is_thing": true,
+   "attributes": [
+    "translucent",
+    "plastic",
+    "glossy",
+    "smooth",
+    "tapered neck",
+    "rounded cap",
+    "subtle contours",
+    "standard design"
+   ]
+  },
+  {
+   "object_id": 8,
+   "name": "tennis racket (uncertain)",
+   "category": "racket",
+   "is_thing": true,
+   "attributes": [
+    "slender",
+    "elongated",
+    "smooth",
+    "curved form",
+    "pink hue",
+    "metallic or synthetic material appearance",
+    "streamlined design"
+   ]
+  }
+ ],
+ "relations": [
+  [
+   3,
+   5,
+   "playing with",
+   [
+    [
+     0,
+     94
+    ]
+   ]
+  ],
+  [
+   3,
+   5,
+   "throwing",
+   [
+    [
+     50,
+     59
+    ]
+   ]
+  ],
+  [
+   5,
+   3,
+   "toward",
+   [
+    [
+     10,
+     49
+    ]
+   ]
+  ],
+  [
+   3,
+   5,
+   "chasing",
+   [
+    [
+     60,
+     89
+    ]
+   ]
+  ],
+  [
+   3,
+   5,
+   "hitting",
+   [
+    [
+     75,
+     89
+    ]
+   ]
+  ],
+  [
+   5,
+   3,
+   "carrying",
+   [
+    [
+     90,
+     94
+    ]
+   ]
+  ],
+  [
+   3,
+   5,
+   "playing",
+   [
+    [
+     0,
+     94
+    ]
+   ]
+  ],
+  [
+   3,
+   5,
+   "next to",
+   [
+    [
+     0,
+     94
+    ]
+   ]
+  ],
+  [
+   2,
+   3,
+   "in front of",
+   [
+    [
+     0,
+     49
+    ],
+    [
+     60,
+     94
+    ]
+   ]
+  ],
+  [
+   2,
+   5,
+   "in front of",
+   [
+    [
+     0,
+     49
+    ],
+    [
+     60,
+     94
+    ]
+   ]
+  ],
+  [
+   7,
+   1,
+   "beside",
+   [
+    [
+     0,
+     94
+    ]
+   ]
+  ]
+ ],
+ "relations_open": [
+  {
+   "subject": 3,
+   "predicate": "plays catch with",
+   "object": 5,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "playing with"
+  },
+  {
+   "subject": 3,
+   "predicate": "throws ball to",
+   "object": 5,
+   "frames": [
+    [
+     50,
+     59
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "throwing"
+  },
+  {
+   "subject": 5,
+   "predicate": "runs toward",
+   "object": 3,
+   "frames": [
+    [
+     10,
+     49
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "toward"
+  },
+  {
+   "subject": 5,
+   "predicate": "runs away from",
+   "object": 3,
+   "frames": [
+    [
+     50,
+     74
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 3,
+   "predicate": "chases",
+   "object": 5,
+   "frames": [
+    [
+     60,
+     89
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "chasing"
+  },
+  {
+   "subject": 3,
+   "predicate": "tackles",
+   "object": 5,
+   "frames": [
+    [
+     75,
+     89
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "hitting"
+  },
+  {
+   "subject": 5,
+   "predicate": "carries football",
+   "object": 3,
+   "frames": [
+    [
+     90,
+     94
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "carrying"
+  },
+  {
+   "subject": 3,
+   "predicate": "plays football with",
+   "object": 5,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "temporal",
+   "pvsg_predicate": "playing"
+  },
+  {
+   "subject": 3,
+   "predicate": "near",
+   "object": 5,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "next to"
+  },
+  {
+   "subject": 2,
+   "predicate": "in front of",
+   "object": 3,
+   "frames": [
+    [
+     0,
+     49
+    ],
+    [
+     60,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "in front of"
+  },
+  {
+   "subject": 2,
+   "predicate": "in front of",
+   "object": 5,
+   "frames": [
+    [
+     0,
+     49
+    ],
+    [
+     60,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "in front of"
+  },
+  {
+   "subject": 6,
+   "predicate": "behind",
+   "object": 5,
+   "frames": [
+    [
+     0,
+     49
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "none"
+  },
+  {
+   "subject": 7,
+   "predicate": "beside",
+   "object": 1,
+   "frames": [
+    [
+     0,
+     94
+    ]
+   ],
+   "kind": "spatial",
+   "pvsg_predicate": "beside"
+  }
+ ],
+ "name_map": {
+  "bottle": "bottle",
+  "car": "car",
+  "child": "child",
+  "duffel bag": "bag",
+  "person": "adult",
+  "tennis racket (uncertain)": "racket",
+  "umbrella": "none"
+ },
+ "predicate_map": {
+  "behind": "none",
+  "beside": "beside",
+  "carries football": "carrying",
+  "chases": "chasing",
+  "in front of": "in front of",
+  "near": "next to",
+  "plays catch with": "playing with",
+  "plays football with": "playing",
+  "runs away from": "none",
+  "runs toward": "toward",
+  "tackles": "hitting",
+  "throws ball to": "throwing"
+ },
+ "settings": {
+  "stage1_every": 5,
+  "max_rel_frames": 40,
+  "stage5_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "stage6_model": "moonshotai/kimi-k3",
+  "map_model": "moonshotai/kimi-k3",
+  "fp16": true,
+  "no_offload": true,
+  "points_per_batch": 256,
+  "overlap": true
+ }
+}

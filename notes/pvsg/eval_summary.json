@@ -1,0 +1,249 @@
+{
+ "videos": [
+  "0027_4571353789",
+  "0028_4021064662",
+  "0039_6951351121",
+  "1122_3393449055"
+ ],
+ "objects": [
+  {
+   "video": "0027_4571353789",
+   "human things": 12,
+   "things found": 9,
+   "human stuff": 4,
+   "stuff found": 1,
+   "our tracks": 57,
+   "extra tracks": 47,
+   "named right": 8,
+   "matched & described": 10
+  },
+  {
+   "video": "0028_4021064662",
+   "human things": 8,
+   "things found": 4,
+   "human stuff": 2,
+   "stuff found": 2,
+   "our tracks": 8,
+   "extra tracks": 2,
+   "named right": 4,
+   "matched & described": 6
+  },
+  {
+   "video": "0039_6951351121",
+   "human things": 14,
+   "things found": 2,
+   "human stuff": 3,
+   "stuff found": 2,
+   "our tracks": 36,
+   "extra tracks": 32,
+   "named right": 1,
+   "matched & described": 4
+  },
+  {
+   "video": "1122_3393449055",
+   "human things": 8,
+   "things found": 8,
+   "human stuff": 1,
+   "stuff found": 0,
+   "our tracks": 47,
+   "extra tracks": 39,
+   "named right": 6,
+   "matched & described": 8
+  }
+ ],
+ "objects_total": {
+  "human things": 42,
+  "things found": 23,
+  "human stuff": 10,
+  "stuff found": 5,
+  "our tracks": 148,
+  "extra tracks": 120,
+  "named right": 19,
+  "matched & described": 28
+ },
+ "naming_errors": [
+  {
+   "video": "0027_4571353789",
+   "gt_id": 1,
+   "human": "tree",
+   "is_thing": false,
+   "our_id": 7,
+   "our_name": "bush",
+   "our_class": "plant",
+   "viou": 0.71
+  },
+  {
+   "video": "0027_4571353789",
+   "gt_id": 6,
+   "human": "table",
+   "is_thing": true,
+   "our_id": 9,
+   "our_name": "tablecloth",
+   "our_class": "cloth",
+   "viou": 0.51
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 1,
+   "human": "ground",
+   "is_thing": false,
+   "our_id": 1,
+   "our_name": "car",
+   "our_class": "car",
+   "viou": 0.94
+  },
+  {
+   "video": "0028_4021064662",
+   "gt_id": 2,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "child",
+   "our_class": "child",
+   "viou": 0.97
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 1,
+   "human": "sky",
+   "is_thing": false,
+   "our_id": 11,
+   "our_name": "cloud",
+   "our_class": "none",
+   "viou": 0.89
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 3,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.93
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 8,
+   "human": "adult",
+   "is_thing": true,
+   "our_id": 35,
+   "our_name": "football",
+   "our_class": "ball",
+   "viou": 0.97
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 4,
+   "human": "child",
+   "is_thing": true,
+   "our_id": 1,
+   "our_name": "baby",
+   "our_class": "baby",
+   "viou": 0.94
+  },
+  {
+   "video": "1122_3393449055",
+   "gt_id": 6,
+   "human": "table",
+   "is_thing": true,
+   "our_id": 49,
+   "our_name": "countertop",
+   "our_class": "countertop",
+   "viou": 0.75
+  }
+ ],
+ "stuff_named_as_person": [
+  {
+   "video": "0028_4021064662",
+   "gt_id": 2,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "child",
+   "our_class": "child",
+   "viou": 0.97
+  },
+  {
+   "video": "0039_6951351121",
+   "gt_id": 3,
+   "human": "grass",
+   "is_thing": false,
+   "our_id": 0,
+   "our_name": "person",
+   "our_class": "adult",
+   "viou": 0.93
+  }
+ ],
+ "relations": [
+  {
+   "video": "0027_4571353789",
+   "human relations": 17,
+   "correct": 1,
+   "wrong time": 1,
+   "wrong predicate": 1,
+   "reversed": 0,
+   "pair not related": 4,
+   "object missed": 10,
+   "our relations": 10,
+   "ours between found objects": 7,
+   "of those also in PVSG (any time)": 2,
+   "our predicates with no PVSG match": 6
+  },
+  {
+   "video": "0028_4021064662",
+   "human relations": 18,
+   "correct": 0,
+   "wrong time": 0,
+   "wrong predicate": 4,
+   "reversed": 0,
+   "pair not related": 8,
+   "object missed": 6,
+   "our relations": 11,
+   "ours between found objects": 9,
+   "of those also in PVSG (any time)": 0,
+   "our predicates with no PVSG match": 2
+  },
+  {
+   "video": "0039_6951351121",
+   "human relations": 13,
+   "correct": 0,
+   "wrong time": 0,
+   "wrong predicate": 0,
+   "reversed": 0,
+   "pair not related": 1,
+   "object missed": 12,
+   "our relations": 10,
+   "ours between found objects": 0,
+   "of those also in PVSG (any time)": 0,
+   "our predicates with no PVSG match": 4
+  },
+  {
+   "video": "1122_3393449055",
+   "human relations": 11,
+   "correct": 2,
+   "wrong time": 1,
+   "wrong predicate": 5,
+   "reversed": 0,
+   "pair not related": 3,
+   "object missed": 0,
+   "our relations": 12,
+   "ours between found objects": 9,
+   "of those also in PVSG (any time)": 3,
+   "our predicates with no PVSG match": 5
+  }
+ ],
+ "relations_total": {
+  "human relations": 59,
+  "correct": 3,
+  "wrong time": 2,
+  "wrong predicate": 10,
+  "reversed": 0,
+  "pair not related": 16,
+  "object missed": 28,
+  "our relations": 43,
+  "ours between found objects": 25,
+  "of those also in PVSG (any time)": 5,
+  "our predicates with no PVSG match": 17
+ }
+}
