@@ -148,6 +148,27 @@ PREDICATES: %s
 OBJECT NAMES: %s
 RELATION PREDICATES: %s"""
 
+# Mapping with context (default): the mapper sees each object's full description and attributes,
+# not just its name, so it can pick the right level of detail ("bush" with a trunk -> tree,
+# "young person" in a cot -> baby). It still answers "none" when nothing fits.
+CONTEXT_MAP_PROMPT = """You map the output of an automatic video annotator onto a fixed vocabulary of a human-labelled dataset.
+
+OBJECTS: for every object (given with its id, free-text name, attributes and the description it was named from),
+choose the single class from OBJECT_CLASSES that a human annotator of this dataset would most likely use for
+that region. Use the description to pick the right level of detail (e.g. tree vs plant, child vs baby vs adult,
+table vs countertop). Background regions (floor, ground, grass, wall, sky, road, ...) must get a background
+class. Answer "none" only if no class fits at all.
+
+PREDICATES: for every relation predicate (given with example uses), choose the single closest predicate from
+PREDICATES, or "none" if none fits.
+
+Answer only with JSON: {"objects": {"<id>": "<class>"}, "predicates": {"<predicate>": "<predicate>"}}.
+
+OBJECT_CLASSES: %s
+PREDICATES: %s
+OBJECTS: %s
+RELATION PREDICATES WITH EXAMPLES: %s"""
+
 
 # ----------------------------------------------------------------------------- one video
 def make_cfg(video_path, out, args):
@@ -248,16 +269,40 @@ def to_frames(span, sampled, total):
     return [sampled[a], end]
 
 
-def stage7_align(graph, anno, client, model, video_id):
-    """Ours: map names/predicates to PVSG classes and write PVSG's relation format."""
-    names = sorted({o["name"] for o in graph["objects"]})
+def stage7_align(graph, anno, client, model, video_id, mode="context"):
+    """Ours: map names/predicates to PVSG classes and write PVSG's relation format.
+
+    mode="context" (default): the mapper sees each object's description and attributes and the predicates'
+    example uses. mode="word": only the bare names and predicates (the first version)."""
     rels = graph["relationships"]
-    preds = sorted({r[1] for r in rels["temporal"] + rels["spatial"] if isinstance(r, list) and len(r) >= 4})
+    good = [r for r in rels["temporal"] + rels["spatial"] if isinstance(r, list) and len(r) >= 4]
+    preds = sorted({r[1] for r in good})
     classes = anno["objects"]["thing"] + anno["objects"]["stuff"]
-    prompt = MAP_PROMPT % (json.dumps(classes), json.dumps(anno["relations"]), json.dumps(names), json.dumps(preds))
-    mapping = ask(client, model, [{"role": "user", "content": prompt}], dict(temperature=0.2), max_tokens=4096)
-    obj_map = {k: (v if v in classes else "none") for k, v in mapping.get("objects", {}).items()}
+    name_of = {o["object_id"]: o["name"] for o in graph["objects"]}
+    if mode == "word":
+        names = sorted(set(name_of.values()))
+        prompt = MAP_PROMPT % (json.dumps(classes), json.dumps(anno["relations"]), json.dumps(names), json.dumps(preds))
+    else:
+        objs = [{"id": o["object_id"], "name": o["name"], "attributes": o.get("attributes", [])[:8],
+                 "description": (o.get("description") or "")[:400]} for o in graph["objects"]]
+        examples = {}
+        for r in good:
+            examples.setdefault(r[1], [])
+            if len(examples[r[1]]) < 2:
+                examples[r[1]].append(f"{name_of.get(r[0], 'camera' if r[0] == -1 else '?')} {r[1]} "
+                                      f"{name_of.get(r[2], 'camera' if r[2] == -1 else '?')}")
+        prompt = CONTEXT_MAP_PROMPT % (json.dumps(classes), json.dumps(anno["relations"]),
+                                       json.dumps(objs, ensure_ascii=False), json.dumps(examples, ensure_ascii=False))
+    mapping = ask(client, model, [{"role": "user", "content": prompt}], dict(temperature=0.2), max_tokens=8192)
     pred_map = {k: (v if v in anno["relations"] else "none") for k, v in mapping.get("predicates", {}).items()}
+    if mode == "word":
+        by_name = {k: (v if v in classes else "none") for k, v in mapping.get("objects", {}).items()}
+        cat_of = {oid: by_name.get(n, "none") for oid, n in name_of.items()}
+        obj_map = by_name
+    else:
+        got = {str(k): v for k, v in mapping.get("objects", {}).items()}
+        cat_of = {oid: (got.get(str(oid)) if got.get(str(oid)) in classes else "none") for oid in name_of}
+        obj_map = {str(oid): c for oid, c in cat_of.items()}
 
     sampled, total = rels["sampled_frame_indices"], graph["total_frames"]
     ids = {o["object_id"] for o in graph["objects"]}
@@ -275,12 +320,13 @@ def stage7_align(graph, anno, client, model, video_id):
     return {
         "video_id": video_id,
         "meta": {"height": graph["height"], "width": graph["width"], "num_frames": total},
-        "objects": [{"object_id": o["object_id"], "name": o["name"], "category": obj_map.get(o["name"], "none"),
-                     "is_thing": obj_map.get(o["name"]) in anno["objects"]["thing"], "attributes": o["attributes"]}
+        "objects": [{"object_id": o["object_id"], "name": o["name"], "category": cat_of[o["object_id"]],
+                     "is_thing": cat_of[o["object_id"]] in anno["objects"]["thing"], "attributes": o["attributes"],
+                     "description": o.get("description", "")}
                     for o in graph["objects"]],
         "relations": [[s, o, p, sorted(fr)] for (s, o, p), fr in pvsg_rels.items()],
         "relations_open": open_rels,
-        "name_map": obj_map, "predicate_map": pred_map,
+        "mapping": mode, "name_map": obj_map, "predicate_map": pred_map,
     }
 
 
@@ -359,15 +405,19 @@ def run_api_stages(video_id, args, anno, client):
         timings["6"] = round(time.time() - t0)
         set_status(vdir, seconds=timings)
     out7 = vdir / "pvsg_format.json"
-    if not out7.exists():
+    redo = args.redo_stage7 and out7.exists() and json.load(open(out7)).get("mapping") != "context"
+    if redo or not out7.exists():
         set_status(vdir, stage="7 align to PVSG")
         t0 = time.time()
         progress.set("map to PVSG (NIM): calls", 0, 1)
-        aligned = stage7_align(P.read_json(P.artifact_path(cfg, 6)), anno, client, args.map_model, video_id)
+        aligned = stage7_align(P.read_json(P.artifact_path(cfg, 6)), anno, client, args.map_model, video_id,
+                               mode=args.map_mode)
         progress.tick()
         aligned["settings"] = {k: getattr(args, k) for k in (
             "stage1_every", "max_rel_frames", "stage5_model", "stage6_model", "map_model",
-            "fp16", "no_offload", "points_per_batch", "overlap")}
+            "fp16", "no_offload", "points_per_batch", "overlap", "map_mode")}
+        if redo and not (vdir / "pvsg_format_wordonly.json").exists():
+            os.replace(out7, vdir / "pvsg_format_wordonly.json")   # keep the first (word-only) mapping to compare
         json.dump(aligned, open(out7, "w"), indent=1)
         timings["7"] = round(time.time() - t0)
     set_status(vdir, state="done", stage="finished", seconds=timings, step="finished", done=1, total=1)
@@ -421,6 +471,10 @@ def main():
     ap.add_argument("--stage6_model", default="moonshotai/kimi-k3")
     ap.add_argument("--map_model", default="moonshotai/kimi-k3")
     ap.add_argument("--timeout", type=float, default=240)
+    ap.add_argument("--map_mode", default="context", choices=["context", "word"],
+                    help="stage 7: map names using descriptions (context) or bare names (word, first version)")
+    ap.add_argument("--redo_stage7", action="store_true",
+                    help="redo stage 7 for videos mapped with the first (word-only) version; keeps it as pvsg_format_wordonly.json")
     ap.add_argument("--fast", action="store_true", help="= --fp16 --no_offload --points_per_batch 256 --overlap")
     ap.add_argument("--fp16", action="store_true", help="SAM2 in float16 instead of bfloat16 (T4 has no bf16 hardware)")
     ap.add_argument("--no_offload", action="store_true", help="keep SAM2 tracking state on the GPU")
