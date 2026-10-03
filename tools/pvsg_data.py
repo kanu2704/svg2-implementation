@@ -43,12 +43,16 @@ def video_source(anno, video_id):
     raise KeyError(video_id)
 
 
-def choose_videos(anno, source="vidor", split="val", n=4, min_frames=50):
-    """The n shortest videos of a split with at least min_frames frames (short = cheaper SAM2)."""
+def choose_videos(anno, source="vidor", split="val", n=4, min_frames=50, order="shortest", skip=(), seed=0):
+    """n videos of a split with at least min_frames frames, leaving out `skip` (already finished).
+    order="shortest": shortest first (cheaper SAM2); order="random": a fixed random order (seed)."""
+    import random
     data = {d["video_id"]: d for d in anno["data"]}
     ids = [v for v in anno["split"][source][split] if data[v]["meta"]["num_frames"] >= min_frames]
     ids.sort(key=lambda v: data[v]["meta"]["num_frames"])
-    return ids[:n]
+    if order == "random":
+        random.Random(seed).shuffle(ids)
+    return [v for v in ids if v not in set(skip)][:n]
 
 
 def _members_for(zf, video_id):
