@@ -604,16 +604,39 @@
  },
  "relations_strict_close_lenient": {
   "close": {
-   "with time (tIoU \u2265 0.5)": 4,
-   "ignoring time": 6
+   "with time (tIoU \u2265 0.5)": 3,
+   "ignoring time": 5
   },
   "lenient": {
    "with time (tIoU \u2265 0.5)": 5,
-   "ignoring time": 11
+   "ignoring time": 9
   },
   "strict": {
    "with time (tIoU \u2265 0.5)": 3,
    "ignoring time": 5
+  }
+ },
+ "final_scores": {
+  "strict": {
+   "object accuracy": 0.38461538461538464,
+   "relation recall": 0.05084745762711865,
+   "relation recall, ignoring time": 0.0847457627118644,
+   "triplet recall": 0.03389830508474576,
+   "triplet recall, ignoring time": 0.05084745762711865
+  },
+  "close": {
+   "object accuracy": 0.40384615384615385,
+   "relation recall": 0.05084745762711865,
+   "relation recall, ignoring time": 0.0847457627118644,
+   "triplet recall": 0.05084745762711865,
+   "triplet recall, ignoring time": 0.0847457627118644
+  },
+  "lenient": {
+   "object accuracy": 0.46153846153846156,
+   "relation recall": 0.0847457627118644,
+   "relation recall, ignoring time": 0.15254237288135594,
+   "triplet recall": 0.0847457627118644,
+   "triplet recall, ignoring time": 0.15254237288135594
   }
  }
 }

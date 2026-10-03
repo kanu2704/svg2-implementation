@@ -18,6 +18,16 @@ Human stuff (floor, ground, grass, …) named as an object: 4 of 5 found (as a p
 - 0028_4021064662: human `grass` → ours `child` (`child`)
 - 0039_6951351121: human `grass` → ours `person` (`adult`)
 
+## Final scores (per human label; missed objects count as failures)
+
+| | object accuracy | relation recall | relation recall, ignoring time | triplet recall | triplet recall, ignoring time |
+|---|---|---|---|---|---|
+| strict | 38.5% | 5.1% | 8.5% | 3.4% | 5.1% |
+| close | 40.4% | 5.1% | 8.5% | 5.1% | 8.5% |
+| lenient | 46.2% | 8.5% | 15.3% | 8.5% | 15.3% |
+
+52 human objects, 59 human relations. SVG2 paper, PVSG, lenient, tIoU 0.5 (a model given trajectories, not the pipeline): GPT-5 object 54.2 / relation 18.3 / triplet 16.6 (Table 2); TraSeR with pipeline masks 63.4 / 13.4 / 10.0 (Table 12).
+
 ## Names: strict vs lenient
 
 | | right | of |
@@ -44,8 +54,8 @@ Mapping with bare names: 19/28 right; with descriptions: 20/28.
 | | with time (tIoU ≥ 0.5) | ignoring time | of |
 |---|---|---|---|
 | strict | 3 | 5 | 59 |
-| close | 4 | 6 | 59 |
-| lenient | 5 | 11 | 59 |
+| close | 3 | 5 | 59 |
+| lenient | 5 | 9 | 59 |
 
 ## Naming errors (strict)
 
