@@ -1,0 +1,361 @@
+"""Score TRASER's predictions like Table 2 of the SVG2 paper: object accuracy, relation recall and
+triplet recall, lenient semantic criterion, temporal IoU >= 0.5.
+
+What the paper says (Sec. 5, "Evaluation Setup") and how it is done here:
+  - Models get the human object trajectories, so TRASER's "object k" IS a human object (via the mask
+    column it was given, ``stats["mask_columns"][k - 1]``). No object matching is needed.
+  - An LLM judge puts each (human label, predicted label) pair into one of five categories:
+    identical, synonym, hypernym/hyponym, semantic overlap, mismatch. Lenient = anything but mismatch.
+    The paper's judge is GPT-4o-mini with an unreleased prompt; ours is Kimi K3 (NVIDIA NIM) with the
+    prompt below, written from the paper's description. Strict = the same text after normalising
+    (lower case, "_" -> " ", "(uncertain)" removed).
+  - Object accuracy: a human object is right if the label TRASER gave it is not a mismatch.
+  - Relation recall: a human relation is right if TRASER has a relation between the same two objects,
+    in the same direction, whose predicate is not a mismatch and whose time spans overlap the human
+    ones with temporal IoU >= threshold (spans as unions of intervals; IoU of total lengths).
+  - Triplet recall: the relation is right AND both objects' labels are right (the camera, id -1,
+    counts as right).
+  - Not stated in the paper, our choice (reported): pooled over all human objects/relations of a
+    dataset ("micro"); the per-video average ("macro") is reported next to it.
+
+Time units: TRASER answers in indices of its ~1 fps sampled frames ("seconds"); [a, b] inclusive
+becomes [a, b + 1). For PVSG and VidOR (human spans in seconds) this is scaled by the real seconds per
+sampled frame (duration / sampled frames; 1.0 for videos up to 128 s). SVG2test's human spans are in
+the same index unit, so no scaling there.
+
+    python tools/bench_eval.py                 # all datasets with predictions; writes results/traser_bench/README.md
+"""
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO / "tools"))
+RESULTS = REPO / "results" / "traser_bench"
+DATASETS = ["pvsg", "vidor", "svg2test"]
+PAPER = {  # Table 2, TRASER row (lenient, tIoU 0.5)
+    "triplet": {"pvsg": 16.1, "vidor": 22.9, "svg2test": 16.7},
+    "relation": {"pvsg": 16.9, "vidor": 25.0, "svg2test": 18.7},
+    "object": {"pvsg": 72.7, "vidor": 91.4, "svg2test": 79.0},
+}
+SPLIT_SIZE = {"pvsg": 62, "vidor": 835, "svg2test": 100}
+CATEGORIES = ["identical", "synonym", "hypernym/hyponym", "semantic overlap", "mismatch"]
+
+JUDGE_PROMPT = """You are a strict lexical matcher for evaluating video scene graphs. For each item you get a
+REFERENCE label (from human annotators) and a PREDICTED label (from a model) for the same object, or for
+the relation between the same two objects. Classify how the PREDICTED label relates to the REFERENCE label:
+- "identical": the same label, ignoring case, plural/singular, spelling variants and word order
+- "synonym": different words with the same meaning (person / human, couch / sofa, on top of / on)
+- "hypernym/hyponym": one is a more general or more specific term for the other (plant / tree,
+  vehicle / car, child / baby, holding / grasping, next to / near)
+- "semantic overlap": clearly overlapping meaning but none of the above (table / countertop,
+  walking with / walking beside)
+- "mismatch": a different thing or a different relation (child / grass, car / ground, in front of / behind)
+Judge only the two labels; do not guess what the video shows.
+Answer only with JSON: {"results": [{"i": <item number>, "category": "<one of the five>"}]}
+
+ITEMS: %s"""
+
+
+# ----------------------------------------------------------------------------- parsing
+def norm(label):
+    s = str(label).lower().replace("_", " ")
+    s = re.sub(r"\(\s*uncertain\s*\)", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+OBJ_RE = re.compile(r'"object[ _](\d+)"\s*:\s*"((?:[^"\\]|\\.)*)"')
+REL_RE = re.compile(r'\[\s*(-?\d+)\s*,\s*"((?:[^"\\]|\\.)*)"\s*,\s*(-?\d+)\s*,\s*(\[\s*(?:\[[^\[\]]*\]\s*,?\s*)*\])\s*\]')
+
+
+def to_spans(x):
+    """[[a, b], ...] (or a single [a, b]) -> list of [float, float]; anything malformed is dropped."""
+    if isinstance(x, list) and len(x) == 2 and all(isinstance(v, (int, float)) for v in x):
+        x = [x]
+    out = []
+    for s in x if isinstance(x, list) else []:
+        try:
+            if isinstance(s, list) and len(s) == 2:
+                out.append([float(s[0]), float(s[1])])
+        except (TypeError, ValueError):
+            continue
+    return out
+
+
+def parse_prediction(text):
+    """{"objects": {k: label}, "relations": [(s, pred, o, [[a, b], ...])], "json_ok": bool}.
+    Invalid JSON (e.g. cut off at the token limit) is salvaged item by item."""
+    objects, relations = {}, []
+    try:
+        g = json.loads(text)
+        for o in g.get("objects", []):
+            for key, val in o.items():
+                m = re.fullmatch(r"object[ _](\d+)", key)
+                if m:
+                    objects[int(m.group(1))] = str(val)
+        for r in g.get("relationships", []):
+            if isinstance(r, list) and len(r) >= 4:
+                try:
+                    relations.append((int(r[0]), str(r[1]), int(r[2]), to_spans(r[3])))
+                except (TypeError, ValueError):
+                    continue
+        return {"objects": objects, "relations": relations, "json_ok": True}
+    except (json.JSONDecodeError, TypeError, ValueError, AttributeError):
+        pass
+    for m in OBJ_RE.finditer(text):
+        objects[int(m.group(1))] = m.group(2)
+    for m in REL_RE.finditer(text):
+        try:
+            relations.append((int(m.group(1)), m.group(2), int(m.group(3)), to_spans(json.loads(m.group(4)))))
+        except (json.JSONDecodeError, ValueError):
+            continue
+    return {"objects": objects, "relations": relations, "json_ok": False}
+
+
+# ----------------------------------------------------------------------------- time
+def merge(spans):
+    out = []
+    for a, b in sorted((float(a), float(b)) for a, b in spans if b > a):
+        if out and a <= out[-1][1]:
+            out[-1][1] = max(out[-1][1], b)
+        else:
+            out.append([a, b])
+    return out
+
+
+def length(spans):
+    return sum(b - a for a, b in spans)
+
+
+def tiou(gt_spans, pred_spans):
+    g, p = merge(gt_spans), merge(pred_spans)
+    inter = sum(max(0.0, min(b1, b2) - max(a1, a2)) for a1, b1 in g for a2, b2 in p)
+    union = length(g) + length(p) - inter
+    return inter / union if union > 0 else 0.0
+
+
+def pred_spans(spans, gt, stats):
+    if gt["time_unit"] == "index":
+        return [[a, b + 1] for a, b in spans]
+    scale = stats["duration_s"] / max(1, stats["sampled_frames"])
+    return [[a * scale, (b + 1) * scale] for a, b in spans]
+
+
+# ----------------------------------------------------------------------------- judge
+class Judge:
+    """Kimi K3 on NVIDIA NIM. Every answer is cached in results/traser_bench/judge_cache.json."""
+    def __init__(self, model="moonshotai/kimi-k3", cache=RESULTS / "judge_cache.json"):
+        self.model, self.cache_path = model, Path(cache)
+        self.cache = json.load(open(self.cache_path)) if self.cache_path.exists() else {}
+        self.client = None
+
+    @staticmethod
+    def key(kind, ref, pred):
+        return f"{kind}\t{norm(ref)}\t{norm(pred)}"
+
+    def ask_all(self, pairs, chunk=50, log=print):
+        todo = sorted({self.key(*p) for p in pairs if norm(p[1]) != norm(p[2])} - set(self.cache))
+        if not todo:
+            return
+        from pvsg_pipeline import ask, nim_client
+        self.client = self.client or nim_client(timeout=180)
+        for start in range(0, len(todo), chunk):
+            part = todo[start:start + chunk]
+            items = [{"i": n, "type": k.split("\t")[0], "reference": k.split("\t")[1], "predicted": k.split("\t")[2]}
+                     for n, k in enumerate(part)]
+            try:
+                reply = ask(self.client, self.model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(items)}],
+                            dict(temperature=0.0), max_tokens=4096)
+            except RuntimeError as e:
+                log(f"  judge call failed ({e}); these {len(part)} pairs stay unjudged for now")
+                continue
+            got = {int(x.get("i", -1)): str(x.get("category", "")).lower()
+                   for x in reply.get("results", []) if isinstance(x, dict)}
+            for n, k in enumerate(part):
+                if got.get(n) in CATEGORIES:
+                    self.cache[k] = got[n]
+            self.save()
+            log(f"  judged {min(start + chunk, len(todo))}/{len(todo)} new pairs")
+
+    def category(self, kind, ref, pred):
+        if norm(ref) == norm(pred):
+            return "identical"
+        return self.cache.get(self.key(kind, ref, pred))       # None = not judged (yet)
+
+    def save(self):
+        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = self.cache_path.with_suffix(".tmp")
+        tmp.write_text(json.dumps(self.cache, indent=0, sort_keys=True))
+        tmp.replace(self.cache_path)
+
+
+def is_right(category, criterion):
+    if criterion == "strict":
+        return category == "identical"
+    return category is not None and category != "mismatch"
+
+
+# ----------------------------------------------------------------------------- one video
+def load_video(dataset, video_id):
+    gt = json.load(open(RESULTS / dataset / "gt" / f"{video_id}.json"))
+    p = RESULTS / dataset / "preds" / f"{video_id}.json"
+    if not p.exists():
+        return gt, None, None
+    stats = json.load(open(RESULTS / dataset / "preds" / f"{video_id}.stats.json"))
+    return gt, parse_prediction(p.read_text()), stats
+
+
+def video_pairs(gt, pred, stats):
+    """The (kind, human label, predicted label) pairs this video needs judged."""
+    gt_of_col = {o["col"]: o for o in gt["objects"]}
+    to_gt = {k + 1: gt_of_col[c]["gt_id"] for k, c in enumerate(stats["mask_columns"]) if c in gt_of_col}
+    to_gt[-1] = -1
+    name = {o["gt_id"]: o["name"] for o in gt["objects"]}
+    pred_name = {to_gt[k]: v for k, v in pred["objects"].items() if k in to_gt}
+    pairs = [("object", name[g], pred_name[g]) for g in name if g in pred_name]
+    by_pair = {}
+    for s, p, o, spans in pred["relations"]:
+        if s in to_gt and o in to_gt:
+            by_pair.setdefault((to_gt[s], to_gt[o]), []).append((p, spans))
+    for r in gt["relations"]:
+        pairs += [("relation", r["pred"], p) for p, _ in by_pair.get((r["subj"], r["obj"]), [])]
+    return pairs, name, pred_name, by_pair
+
+
+def score_video(gt, pred, stats, judge, criterion="lenient", thr=0.5):
+    """Counts for one video. pred=None (no prediction) scores every human item as wrong."""
+    n_obj, n_rel = len(gt["objects"]), len(gt["relations"])
+    out = {"objects": n_obj, "relations": n_rel, "object_ok": 0, "relation_ok": 0, "triplet_ok": 0,
+           "relation_ok_any_time": 0, "unjudged": 0}
+    if pred is None:
+        return out
+    _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
+
+    def ok(kind, ref, hyp):
+        c = judge.category(kind, ref, hyp)
+        out["unjudged"] += c is None
+        return is_right(c, criterion)
+
+    obj_ok = {g: (g in pred_name and ok("object", name[g], pred_name[g])) for g in name}
+    obj_ok[-1] = True
+    out["object_ok"] = sum(v for g, v in obj_ok.items() if g != -1)
+    for r in gt["relations"]:
+        cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
+        word_ok = [(p, sp) for p, sp in cands if ok("relation", r["pred"], p)]
+        timed = [1 for _, sp in word_ok if tiou(r["spans"], sp) >= thr]
+        out["relation_ok_any_time"] += bool(word_ok)
+        if timed:
+            out["relation_ok"] += 1
+            out["triplet_ok"] += bool(obj_ok.get(r["subj"]) and obj_ok.get(r["obj"]))
+    return out
+
+
+# ----------------------------------------------------------------------------- whole run
+def video_ids(dataset):
+    d = RESULTS / dataset / "gt"
+    return sorted(p.stem for p in d.glob("*.json")) if d.exists() else []
+
+
+def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
+    judge = judge or Judge()
+    loaded = {ds: {v: load_video(ds, v) for v in video_ids(ds)} for ds in datasets}
+    if ask:
+        pairs = [p for ds in loaded for gt, pred, st in loaded[ds].values() if pred is not None
+                 for p in video_pairs(gt, pred, st)[0]]
+        log(f"{len(pairs)} label pairs to judge ({len(set(Judge.key(*p) for p in pairs))} distinct)")
+        judge.ask_all(pairs, log=log)
+    report = {}
+    for ds, vids in loaded.items():
+        if not vids:
+            continue
+        done = {v: x for v, x in vids.items() if x[1] is not None}
+        failed = sorted(p.name[:-len(".error.txt")] for p in (RESULTS / ds / "preds").glob("*.error.txt")) \
+            if (RESULTS / ds / "preds").exists() else []
+        rep = {"videos_prepared": len(vids), "videos_predicted": len(done), "split_size": SPLIT_SIZE[ds],
+               "failed": [v for v in failed if v not in done],
+               "json_invalid": sum(not x[1]["json_ok"] for x in done.values()), "scores": {}}
+        for criterion in ("lenient", "strict"):
+            for thr in (0.5, 0.1):
+                rows = [score_video(*x, judge, criterion, thr) for x in done.values()]
+                tot = {k: sum(r[k] for r in rows) for k in rows[0]} if rows else {}
+                pct = lambda a, b: round(100 * a / b, 1) if b else None  # noqa: E731
+                macro = lambda k, d: round(100 * sum(r[k] / r[d] for r in rows if r[d]) / max(1, sum(1 for r in rows if r[d])), 1)  # noqa: E731
+                rep["scores"][f"{criterion}@{thr}"] = {
+                    "object": pct(tot.get("object_ok", 0), tot.get("objects", 0)),
+                    "relation": pct(tot.get("relation_ok", 0), tot.get("relations", 0)),
+                    "triplet": pct(tot.get("triplet_ok", 0), tot.get("relations", 0)),
+                    "relation_any_time": pct(tot.get("relation_ok_any_time", 0), tot.get("relations", 0)),
+                    "macro_object": macro("object_ok", "objects") if rows else None,
+                    "macro_relation": macro("relation_ok", "relations") if rows else None,
+                    "macro_triplet": macro("triplet_ok", "relations") if rows else None,
+                    "counts": tot}
+        cats = {}
+        for gt, pred, st in done.values():
+            for kind, ref, hyp in video_pairs(gt, pred, st)[0]:
+                c = judge.category(kind, ref, hyp) or "not judged"
+                cats.setdefault(kind, {}).setdefault(c, 0)
+                cats[kind][c] += 1
+        rep["judge_categories"] = cats
+        report[ds] = rep
+    return report
+
+
+def write_report(report, path=RESULTS / "README.md"):
+    def cell(ds, metric, key="lenient@0.5"):
+        v = report.get(ds, {}).get("scores", {}).get(key, {}).get(metric)
+        return "–" if v is None else f"{v:.1f}"
+
+    ds = [d for d in DATASETS]
+    head = ("| | " + " | ".join(f"Triplet {d}" for d in ds) + " | " + " | ".join(f"Relation {d}" for d in ds)
+            + " | " + " | ".join(f"Object {d}" for d in ds) + " |")
+    sep = "|---" * (1 + 3 * len(ds)) + "|"
+    paper = "| TRASER, paper | " + " | ".join(str(PAPER[m][d]) for m in ("triplet", "relation", "object") for d in ds) + " |"
+    ours = "| **TRASER, ours** | " + " | ".join(cell(d, m) for m in ("triplet", "relation", "object") for d in ds) + " |"
+    L = ["# TRASER on PVSG, VidOR and SVG2test: regenerating Table 2", "",
+         "Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 128 frames, at most 40 objects, greedy), "
+         "float16 on Kaggle T4s. Lenient semantic criterion, temporal IoU ≥ 0.5; judge: Kimi K3 (NVIDIA NIM) instead of the paper's GPT-4o-mini.",
+         "", head, sep, paper, ours, "",
+         "## Coverage", "", "| | test videos | prepared | predicted | failed | answers not valid JSON (salvaged) |", "|---|---|---|---|---|---|"]
+    for d in ds:
+        r = report.get(d)
+        if r:
+            L.append(f"| {d} | {r['split_size']} | {r['videos_prepared']} | {r['videos_predicted']} | "
+                     f"{len(r['failed'])} | {r['json_invalid']} |")
+    L += ["", "## Other settings (same predictions)", "",
+          "| setting | " + " | ".join(f"{m} {d}" for m in ("Triplet", "Relation", "Object") for d in ds) + " |",
+          "|---" * (1 + 3 * len(ds)) + "|"]
+    for key, label in (("lenient@0.5", "lenient, tIoU 0.5 (main)"), ("lenient@0.1", "lenient, tIoU 0.1"),
+                       ("strict@0.5", "strict, tIoU 0.5"), ("strict@0.1", "strict, tIoU 0.1")):
+        L.append(f"| {label} | " + " | ".join(cell(d, m, key) for m in ("triplet", "relation", "object") for d in ds) + " |")
+    L.append("| lenient, tIoU 0.5, per-video average | " +
+             " | ".join(cell(d, f"macro_{m}") for m in ("triplet", "relation", "object") for d in ds) + " |")
+    L.append("| lenient, relation ignoring time | – | – | – | " + " | ".join(cell(d, "relation_any_time") for d in ds) + " | – | – | – |")
+    L += ["", "## Judge answers (lenient = everything but mismatch)", ""]
+    for d in ds:
+        if d in report:
+            L.append(f"- **{d}**: " + "; ".join(f"{kind}: " + ", ".join(f"{c} {n}" for c, n in sorted(v.items(), key=lambda x: -x[1]))
+                                              for kind, v in report[d]["judge_categories"].items()))
+    L += ["", "## How it is scored", "", "See the docstring of `tools/bench_eval.py`. Differences from the paper that we know of:",
+          "- judge: Kimi K3 with our prompt (the paper's GPT-4o-mini prompt is not released);",
+          "- float16 on a T4 instead of bfloat16 on an A100 (greedy decoding can change a few tokens);",
+          "- VidOR masks: SAM 2.1 from VidOR's boxes on the frames TRASER reads (the paper also used SAM 2, details not given);",
+          "- videos longer than 128 s are read at fewer than 1 frame per second (released code caps at 128 frames);",
+          "- pooled over all human items (the per-video average is also shown)."]
+    Path(path).write_text("\n".join(L) + "\n")
+    with open(Path(path).with_name("scores.json"), "w") as f:
+        json.dump(report, f, indent=1)
+    return "\n".join(L)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--datasets", nargs="*", default=DATASETS)
+    ap.add_argument("--no_judge", action="store_true", help="use cached judge answers only")
+    args = ap.parse_args()
+    print(write_report(evaluate(args.datasets, ask=not args.no_judge)))
+
+
+if __name__ == "__main__":
+    main()
