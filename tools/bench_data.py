@@ -33,6 +33,7 @@ import glob
 import io
 import json
 import os
+import shutil
 import subprocess
 import sys
 import zipfile
@@ -253,17 +254,58 @@ def svg2test_masks(root):
     return out
 
 
-def vipseg_to_mp4(frames_dir, out_mp4, fps=6, height=720):
-    """docs/DATA.md: VIPSeg frames (720p) re-encoded per video at 6 fps."""
+def vipseg_to_mp4(frames_dir, out_mp4, fps=6, height=720, sequence=None):
+    """docs/DATA.md: VIPSeg frames (720p) re-encoded per video at 6 fps. `sequence` (optional) is the
+    list of source frame files for every output frame, so a frame can be repeated (see align_frames)."""
     out_mp4 = Path(out_mp4)
-    if out_mp4.exists():
+    if out_mp4.exists() and sequence is None:
         return out_mp4
     out_mp4.parent.mkdir(parents=True, exist_ok=True)
-    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(fps), "-pattern_type", "glob",
-           "-i", os.path.join(str(frames_dir), "*.jpg"),
+    frames = sorted(Path(frames_dir).glob("*.jpg"))
+    seq = frames if sequence is None else [Path(f) for f in sequence]
+    tmp = out_mp4.parent / f"_{out_mp4.stem}_seq"
+    shutil.rmtree(tmp, ignore_errors=True)
+    tmp.mkdir(parents=True)
+    for j, f in enumerate(seq):
+        (tmp / f"{j:06d}.jpg").symlink_to(Path(f).resolve())
+    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(fps), "-i", str(tmp / "%06d.jpg"),
            "-vf", f"scale=trunc(oh*a/2)*2:{height}", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(out_mp4)]
     subprocess.run(cmd, check=True)
+    shutil.rmtree(tmp, ignore_errors=True)
     return out_mp4
+
+
+def align_frames(masks, n_src):
+    """Which source picture each mask frame belongs to, when the masks have more frames than there are
+    pictures (SVG2's VIPSeg videos show each VIPSeg picture ~3 times at 6 fps). Read from the masks
+    themselves: a new picture starts where the masks change most between consecutive frames
+    (the n_src - 1 biggest changes). Returns (mapping, contrast): contrast = mean change at the chosen
+    cuts / mean change elsewhere (large = clear repeats)."""
+    from pycocotools import mask as mu
+    m = len(masks)
+    if m == n_src:
+        return list(range(m)), None
+    change = [0.0]
+    for j in range(1, m):
+        ious = []
+        for a, b in zip(masks[j - 1], masks[j]):
+            ra = {"size": a["size"], "counts": a["counts"].encode() if isinstance(a["counts"], str) else a["counts"]}
+            rb = {"size": b["size"], "counts": b["counts"].encode() if isinstance(b["counts"], str) else b["counts"]}
+            if mu.area(ra) == 0 and mu.area(rb) == 0:
+                continue
+            ious.append(float(mu.iou([ra], [rb], [0])[0, 0]))
+        change.append(1 - (sum(ious) / len(ious)) if ious else 0.0)
+    if n_src > m:
+        return [round(j * (n_src - 1) / max(1, m - 1)) for j in range(m)], None
+    cuts = set(sorted(range(1, m), key=lambda j: -change[j])[: n_src - 1])
+    mapping, g = [], 0
+    for j in range(m):
+        g += j in cuts
+        mapping.append(g)
+    rest = [change[j] for j in range(1, m) if j not in cuts]
+    at = [change[j] for j in cuts]
+    contrast = (sum(at) / len(at)) / max(1e-6, sum(rest) / len(rest)) if at and rest else None
+    return mapping, contrast
 
 
 def extract_vipseg_frames(archive, video_ids, out_dir):
@@ -373,8 +415,18 @@ def prepare_svg2test(video_id, row, masks, video, bench, results):
              "spans": [[float(a), float(b) + 1] for a, b in r[3]]}
             for r in row["relationships"]]
     sampled, n_frames, video_fps = traser_frames(video)
+    alignment = None
+    if row["split"] == "vipseg" and n_frames != len(masks):
+        # rebuild the video so it has one frame per mask frame (each picture repeated as the masks show)
+        frames_dir = Path(video).parent.parent / "vipseg_frames" / video_id
+        frames = sorted(frames_dir.glob("*.jpg"))
+        mapping, contrast = align_frames(masks, len(frames))
+        vipseg_to_mp4(frames_dir, video, sequence=[frames[min(i, len(frames) - 1)] for i in mapping])
+        sampled, n_frames, video_fps = traser_frames(video)
+        alignment = {"pictures": len(frames), "mask_frames": len(masks),
+                     "contrast": None if contrast is None else round(contrast, 1)}
     gt = {"dataset": "svg2test", "video_id": video_id, "source": row["split"], "video": str(video),
           "fps": video_fps, "n_frames": n_frames, "mask_frames": len(masks), "time_unit": "index",
-          "objects_without_mask_column": bad,
+          "frame_alignment": alignment, "objects_without_mask_column": bad,
           "objects": [o for o in objects if o["col"] < n_cols], "relations": rels}
     return write_item(bench, results, gt, masks)
