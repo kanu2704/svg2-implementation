@@ -311,34 +311,50 @@ def sav_links(links_file):
     return links
 
 
-def fetch_sav_videos(links, video_ids, out_dir):
-    """Stream SA-V training shards and keep only the needed mp4s (nothing else is written to disk).
-    The shard holding sav_XXXYYY is guessed as sav_XXX.tar (about 1,000 videos per shard); its
-    neighbours are tried if a video is not there."""
+def fetch_sav_videos(links, video_ids, out_dir, fps=24):
+    """Get the SA-V videos SVG2test uses, streaming Meta's tar files (nothing else is written to disk).
+
+    SA-V's validation/test parts (sav_val.tar, sav_test.tar, ...) store each video as JPEG frames
+    (<split>/JPEGImages_24fps/<video_id>/*.jpg); those are tried first and re-encoded to a 24 fps mp4.
+    The training parts (sav_000.tar, ...) hold mp4s; sav_XXXYYY would be in sav_XXX.tar, tried last."""
+    import re
     import tarfile
     import urllib.request
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    frames_root = out_dir / "_frames"
     need = {v for v in video_ids if not (out_dir / f"{v}.mp4").exists()}
-    tried = set()
-    for rnd in (0, 1, -1, 2, -2):
-        shards = sorted({f"sav_{max(0, int(v.split('_')[1]) // 1000 + rnd):03d}.tar" for v in need})
-        for shard in shards:
-            if shard in tried or shard not in links or not need:
-                continue
-            tried.add(shard)
-            print(f"streaming {shard} for {len(need)} videos ...")
-            with urllib.request.urlopen(links[shard]) as resp, tarfile.open(fileobj=resp, mode="r|*") as tar:
-                for m in tar:
-                    stem = Path(m.name).stem
-                    if m.name.endswith(".mp4") and stem in need:
-                        (out_dir / f"{stem}.mp4").write_bytes(tar.extractfile(m).read())
-                        need.discard(stem)
-                        print("  got", stem)
-                        if not need:
-                            break
+    other = sorted(n for n in links if not re.fullmatch(r"sav_\d{3}\.tar", n))
+    train = sorted({f"sav_{int(v.split('_')[1]) // 1000:03d}.tar" for v in need} & set(links))
+    for shard in other + train:
         if not need:
             break
+        print(f"streaming {shard} for {len(need)} videos ...", flush=True)
+        got_frames = set()
+        with urllib.request.urlopen(links[shard]) as resp, tarfile.open(fileobj=resp, mode="r|*") as tar:
+            for m in tar:
+                if not m.isfile():
+                    continue
+                parts = m.name.split("/")
+                stem = Path(m.name).stem
+                if m.name.endswith(".mp4") and stem in need:
+                    (out_dir / f"{stem}.mp4").write_bytes(tar.extractfile(m).read())
+                    need.discard(stem)
+                    print("  got", stem, "(mp4)", flush=True)
+                elif (m.name.endswith(".jpg") and len(parts) >= 3 and parts[-2] in need
+                      and "JPEGImages_24fps" in parts):
+                    target = frames_root / parts[-2] / parts[-1]
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(tar.extractfile(m).read())
+                    got_frames.add(parts[-2])
+        for v in sorted(got_frames):
+            cmd = ["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(fps), "-pattern_type", "glob",
+                   "-i", str(frames_root / v / "*.jpg"), "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                   str(out_dir / f"{v}.mp4")]
+            subprocess.run(cmd, check=True)
+            need.discard(v)
+            print("  got", v, f"({len(list((frames_root / v).glob('*.jpg')))} frames)", flush=True)
+        print(f"  after {shard}: {len(need)} still missing", flush=True)
     return need
 
 
