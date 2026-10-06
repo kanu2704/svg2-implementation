@@ -266,19 +266,38 @@ def vipseg_to_mp4(frames_dir, out_mp4, fps=6, height=720):
     return out_mp4
 
 
-def extract_vipseg_frames(vipseg_zip, video_ids, out_dir):
-    """Copy only the needed videos' frames out of the VIPSeg zip (imgs/<video>/*.jpg)."""
+def extract_vipseg_frames(archive, video_ids, out_dir):
+    """Copy only the needed videos' frames (imgs/<video>/*.jpg) out of the VIPSeg download.
+    The download may be a zip or a tar (.tar, .tar.gz, ...); anything else raises a clear error."""
+    import tarfile
     wanted = set(video_ids)
     found = set()
-    with zipfile.ZipFile(vipseg_zip) as z:
-        for m in z.infolist():
-            parts = m.filename.split("/")
-            if len(parts) >= 3 and parts[-3] == "imgs" and parts[-2] in wanted and parts[-1].endswith(".jpg"):
-                target = Path(out_dir, parts[-2], parts[-1])
-                if not target.exists():
-                    target.parent.mkdir(parents=True, exist_ok=True)
-                    target.write_bytes(z.read(m))
-                found.add(parts[-2])
+
+    def keep(name, read):
+        parts = name.split("/")
+        if len(parts) >= 3 and parts[-3] == "imgs" and parts[-2] in wanted and parts[-1].endswith(".jpg"):
+            target = Path(out_dir, parts[-2], parts[-1])
+            if not target.exists():
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(read())
+            found.add(parts[-2])
+
+    if zipfile.is_zipfile(archive):
+        with zipfile.ZipFile(archive) as z:
+            for m in z.infolist():
+                keep(m.filename, lambda m=m: z.read(m))
+    elif tarfile.is_tarfile(archive):
+        with tarfile.open(archive, "r:*") as t:
+            for m in t:
+                if m.isfile():
+                    keep(m.name, lambda m=m: t.extractfile(m).read())
+    else:
+        head = open(archive, "rb").read(300)
+        size = os.path.getsize(archive)
+        if head.lstrip().startswith(b"<"):
+            raise RuntimeError(f"the VIPSeg download is a web page ({size} bytes), not the dataset: Google Drive "
+                               "refused (download limit). Delete it and download VIPSeg by hand (see the notebook).")
+        raise RuntimeError(f"unknown archive type for {archive} ({size} bytes), first bytes: {head[:16]!r}")
     return found
 
 
