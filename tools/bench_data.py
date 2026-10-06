@@ -279,12 +279,13 @@ def align_frames(masks, n_src):
     """Which source picture each mask frame belongs to, when the masks have more frames than there are
     pictures (SVG2's VIPSeg videos show each VIPSeg picture ~3 times at 6 fps). Read from the masks
     themselves: a new picture starts where the masks change most between consecutive frames
-    (the n_src - 1 biggest changes). Returns (mapping, contrast): contrast = mean change at the chosen
-    cuts / mean change elsewhere (large = clear repeats)."""
+    (the n_src - 1 biggest changes). If that is not clear (contrast < 3: mean change at the chosen cuts /
+    mean change elsewhere), the repeats are spaced evenly, as ffmpeg's frame-rate conversion does.
+    Returns (mapping, contrast, agreement of the detected cuts with even spacing)."""
     from pycocotools import mask as mu
     m = len(masks)
     if m == n_src:
-        return list(range(m)), None
+        return list(range(m)), None, None
     change = [0.0]
     for j in range(1, m):
         ious = []
@@ -296,7 +297,7 @@ def align_frames(masks, n_src):
             ious.append(float(mu.iou([ra], [rb], [0])[0, 0]))
         change.append(1 - (sum(ious) / len(ious)) if ious else 0.0)
     if n_src > m:
-        return [round(j * (n_src - 1) / max(1, m - 1)) for j in range(m)], None
+        return [round(j * (n_src - 1) / max(1, m - 1)) for j in range(m)], None, None
     cuts = set(sorted(range(1, m), key=lambda j: -change[j])[: n_src - 1])
     mapping, g = [], 0
     for j in range(m):
@@ -305,7 +306,12 @@ def align_frames(masks, n_src):
     rest = [change[j] for j in range(1, m) if j not in cuts]
     at = [change[j] for j in cuts]
     contrast = (sum(at) / len(at)) / max(1e-6, sum(rest) / len(rest)) if at and rest else None
-    return mapping, contrast
+    # ffmpeg's own frame-rate conversion spaces the repeats evenly; use that when the masks are not clear
+    uniform = [round(j * (n_src - 1) / max(1, m - 1)) for j in range(m)]
+    agree = sum(a == b for a, b in zip(mapping, uniform)) / m
+    if contrast is None or contrast < 3:
+        return uniform, contrast, agree
+    return mapping, contrast, agree
 
 
 def extract_vipseg_frames(archive, video_ids, out_dir):
@@ -416,15 +422,25 @@ def prepare_svg2test(video_id, row, masks, video, bench, results):
             for r in row["relationships"]]
     sampled, n_frames, video_fps = traser_frames(video)
     alignment = None
-    if row["split"] == "vipseg" and n_frames != len(masks):
+    frames_dir = Path(video).parent.parent / "vipseg_frames" / video_id
+    frames = sorted(frames_dir.glob("*.jpg")) if row["split"] == "vipseg" else []
+    if frames and len(frames) != len(masks):
         # rebuild the video so it has one frame per mask frame (each picture repeated as the masks show)
-        frames_dir = Path(video).parent.parent / "vipseg_frames" / video_id
-        frames = sorted(frames_dir.glob("*.jpg"))
-        mapping, contrast = align_frames(masks, len(frames))
+        mapping, contrast, agree = align_frames(masks, len(frames))
         vipseg_to_mp4(frames_dir, video, sequence=[frames[min(i, len(frames) - 1)] for i in mapping])
         sampled, n_frames, video_fps = traser_frames(video)
         alignment = {"pictures": len(frames), "mask_frames": len(masks),
-                     "contrast": None if contrast is None else round(contrast, 1)}
+                     "contrast": None if contrast is None else round(contrast, 1),
+                     "agreement_with_even_spacing": None if agree is None else round(agree, 3),
+                     "used": "detected" if contrast is not None and contrast >= 3 else "even"}
+    elif row["split"] == "sav" and n_frames > len(masks):
+        # the authors' copy is shorter: keep the first len(masks) frames so the timeline matches
+        tmp = Path(video).with_suffix(".trim.mp4")
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(video), "-frames:v", str(len(masks)),
+                        "-c:v", "libx264", "-pix_fmt", "yuv420p", str(tmp)], check=True)
+        tmp.replace(video)
+        alignment = {"trimmed_from": n_frames, "mask_frames": len(masks)}
+        sampled, n_frames, video_fps = traser_frames(video)
     gt = {"dataset": "svg2test", "video_id": video_id, "source": row["split"], "video": str(video),
           "fps": video_fps, "n_frames": n_frames, "mask_frames": len(masks), "time_unit": "index",
           "frame_alignment": alignment, "objects_without_mask_column": bad,
