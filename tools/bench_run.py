@@ -106,10 +106,6 @@ def main():
     if not items:
         raise SystemExit("nothing to run: give --items or --dataset with --videos")
 
-    import torch
-    import bench_data as B
-    from run_traser import infer, load_model
-
     os.makedirs(args.runs, exist_ok=True)
     name = f"{args.dataset}_{args.gpu_name}" if args.dataset and not args.items else args.gpu_name
     status_path = Path(args.runs, f"{name}.json")
@@ -123,7 +119,11 @@ def main():
         tmp.write_text(json.dumps(status, indent=1))
         tmp.replace(status_path)
 
-    save_status()
+    save_status()                      # before the slow imports, so the notebook sees the worker at once
+    import torch
+    import bench_data as B
+    from run_traser import infer, load_model
+
     prepare = Preparer(args)
     model = processor = tokenizer = None
     for dataset, video_id in todo:
