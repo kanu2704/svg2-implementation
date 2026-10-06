@@ -1,0 +1,430 @@
+{
+ "dataset": "svg2test",
+ "video_id": "2143_6OMR3X7IcZ0",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/2143_6OMR3X7IcZ0.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.6,
+  "agreement_with_even_spacing": 0.378,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "counter"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "microwave"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "food"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "bracelet"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "bracelet"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "top of a microwave"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "touch panel"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "door"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "glass tray"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "oven"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "front panel"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "ring"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "bracelet (duplicate of id )"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "arm"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "clothing, shirt"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     3.0
+    ],
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moves toward",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "holds",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "takes out",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "places back",
+   "obj": 3,
+   "spans": [
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moves toward",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moves away from",
+   "obj": 10,
+   "spans": [
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     4.0,
+     7.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "moves away from",
+   "obj": 9,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "moves toward",
+   "obj": 9,
+   "spans": [
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     5.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "worn by",
+   "obj": 14,
+   "spans": [
+    [
+     2.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "worn by",
+   "obj": 14,
+   "spans": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "inside",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "worn by",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "worn by",
+   "obj": 14,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

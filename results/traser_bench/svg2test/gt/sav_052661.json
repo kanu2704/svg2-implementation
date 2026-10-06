@@ -1,0 +1,834 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_052661",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_052661.mp4",
+ "fps": 24.0,
+ "n_frames": 450,
+ "mask_frames": 451,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "woman"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "woman"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "light"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "light"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "refrigerator"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "floor"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "ceiling"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "door frame"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "machine"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "table"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "bar stool"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "door"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wall"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "cabinet"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "loft or mezzanine"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "wall"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "fruit basket"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "cabinet"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "people"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "wall"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "wall"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "countertop"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "wall"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "photo wall"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "sweatshirt"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "pants"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "t-shirt"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "short"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "fruits"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "fruits"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "railing"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "bag"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "socket"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "supporting beam or soffit"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "light"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "light"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "wall"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "ceiling"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "wall"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "wall"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "photo"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "photo"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "photo"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "photo"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "photo"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "photo"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "photo"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "photo"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "photo"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "photo"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "photo"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     11.0,
+     14.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     4.5,
+     12.0
+    ],
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     4.5,
+     12.5
+    ],
+    [
+     13.5,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     12.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "dances with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves in front of",
+   "obj": 1,
+   "spans": [
+    [
+     13.0,
+     15.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performs dance with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 24,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     12.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     4.0,
+     11.0
+    ],
+    [
+     13.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     10.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     4.5,
+     12.0
+    ],
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touches",
+   "obj": 0,
+   "spans": [
+    [
+     3.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaches",
+   "obj": 0,
+   "spans": [
+    [
+     2.5,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves away from",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves left of",
+   "obj": 0,
+   "spans": [
+    [
+     4.5,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves right of",
+   "obj": 0,
+   "spans": [
+    [
+     10.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     10.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     4.0,
+     11.0
+    ],
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "beside",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "under",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     9.0,
+     10.0
+    ],
+    [
+     11.0,
+     15.0
+    ],
+    [
+     18.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "carries",
+   "obj": 31,
+   "spans": [
+    [
+     16.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     9.0,
+     10.0
+    ],
+    [
+     11.0,
+     13.0
+    ],
+    [
+     14.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ],
+    [
+     11.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  }
+ ]
+}

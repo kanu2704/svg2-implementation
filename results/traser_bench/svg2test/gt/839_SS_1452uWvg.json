@@ -1,0 +1,783 @@
+{
+ "dataset": "svg2test",
+ "video_id": "839_SS_1452uWvg",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/839_SS_1452uWvg.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 1.4,
+  "agreement_with_even_spacing": 0.022,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "building"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "building"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "building"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sky"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "building"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "pillar"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "pillar"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "arches"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "arches"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "window"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "window"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "window"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "window"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "pillar"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "pillar"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "pillar"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "pillar"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "pillar"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "pillar"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "pillar"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "pillar"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pillar"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "pillar"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "pillar"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "pillar"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "pillar"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "pillar"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "pillar"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "pillar"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "pillar"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "pillar"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "statue"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "statue"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "window"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "pillar"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "pillar"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "pillar"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "pillar"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "pillar"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "pillar"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "pillar"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "pillar"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "window"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "antenna"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "window"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "flower"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "wall"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "roof"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "building"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "door"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "window"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "door"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "pillar"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "pillar"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "pillar"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "pillar"
+  },
+  {
+   "col": 56,
+   "gt_id": 56,
+   "name": "pillar"
+  },
+  {
+   "col": 57,
+   "gt_id": 57,
+   "name": "pillar"
+  },
+  {
+   "col": 58,
+   "gt_id": 58,
+   "name": "pillar"
+  },
+  {
+   "col": 59,
+   "gt_id": 59,
+   "name": "doorway"
+  },
+  {
+   "col": 60,
+   "gt_id": 60,
+   "name": "window"
+  },
+  {
+   "col": 61,
+   "gt_id": 61,
+   "name": "pillar"
+  },
+  {
+   "col": 62,
+   "gt_id": 62,
+   "name": "pillar"
+  },
+  {
+   "col": 63,
+   "gt_id": 63,
+   "name": "pillar"
+  },
+  {
+   "col": 64,
+   "gt_id": 64,
+   "name": "pillar"
+  },
+  {
+   "col": 65,
+   "gt_id": 65,
+   "name": "window"
+  },
+  {
+   "col": 66,
+   "gt_id": 66,
+   "name": "arch"
+  },
+  {
+   "col": 67,
+   "gt_id": 67,
+   "name": "arch"
+  },
+  {
+   "col": 68,
+   "gt_id": 68,
+   "name": "frame"
+  },
+  {
+   "col": 69,
+   "gt_id": 69,
+   "name": "roof"
+  },
+  {
+   "col": 70,
+   "gt_id": 70,
+   "name": "arch"
+  },
+  {
+   "col": 71,
+   "gt_id": 71,
+   "name": "arch"
+  },
+  {
+   "col": 72,
+   "gt_id": 72,
+   "name": "door"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     11.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     11.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     13.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     13.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "above",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "above",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "in",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 43,
+   "pred": "on",
+   "obj": 47,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 44,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 45,
+   "pred": "on",
+   "obj": 46,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 47,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 69,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 70,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 70,
+   "pred": "above",
+   "obj": 72,
+   "spans": [
+    [
+     0.0,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 71,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 72,
+   "pred": "in",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  }
+ ]
+}

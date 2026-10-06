@@ -1,0 +1,359 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_025082",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_025082.mp4",
+ "fps": 24.0,
+ "n_frames": 355,
+ "mask_frames": 355,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "kitchen drawers"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "stove"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "plant"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "window"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "gas cyclinder"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "kitchen counter"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "rag"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "floor"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "kitchen counter"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "laundry machine"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "kitchen wall"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "person"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "mop stick"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "handle"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "handle"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "handle"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "handle"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "drawer"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "drawer"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "drawer"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "cabinet"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "drawer"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "counter top"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "burner of a cooker"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "foot mat"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "shelf"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "household item"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "cord"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "household item"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "household item"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "cloth"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "oven"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "oven door"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "control panel"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "plant"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "tray"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "wall"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "wall"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "wall"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "wall"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "wall"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "shorts"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "shirt"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "hand"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "broom handle"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "brush"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "legs"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "face"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 6,
+   "pred": "moves on",
+   "obj": 7,
+   "spans": [
+    [
+     4.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wear",
+   "obj": 42,
+   "spans": [
+    [
+     1.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "moves relative to",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     3.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wear",
+   "obj": 41,
+   "spans": [
+    [
+     1.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "clean",
+   "obj": 7,
+   "spans": [
+    [
+     2.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "sweep",
+   "obj": 7,
+   "spans": [
+    [
+     2.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "use",
+   "obj": 45,
+   "spans": [
+    [
+     10.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "hold",
+   "obj": 12,
+   "spans": [
+    [
+     1.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "moves on",
+   "obj": 7,
+   "spans": [
+    [
+     2.0,
+     15.0
+    ]
+   ]
+  }
+ ]
+}

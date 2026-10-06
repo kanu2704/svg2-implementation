@@ -1,0 +1,743 @@
+{
+ "dataset": "svg2test",
+ "video_id": "976_U19VojbI0h4",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/976_U19VojbI0h4.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.4,
+  "agreement_with_even_spacing": 0.222,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ground"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "painting"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "plant"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "decoration"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "fireplace"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "cabinet"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "door"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "wall"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "door"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "lamp"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "table"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "interior"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "shelf"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "interior"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "ceiling fan"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "ceiling and upper wall"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "closet"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "outlet"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "table"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "rug"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "vase"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "doorway"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "wall"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "wall"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "wall"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "lamp shade"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "lamp base"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "throw pillow"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "couch"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "cup"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "leaves"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "fireplace"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "fireplace face"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "ceiling area"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "fireplace frame"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "flower vase"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "vase"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "home decor"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "home decor"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "socket"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "flower"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "vase stand"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "tray"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "fan"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "cupboard handle"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "cupboard handle"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "flower vase"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "flower stand"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "vase"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "home decor"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "glass"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "fireplace"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "door"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "ground"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "door"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "shelf"
+  },
+  {
+   "col": 56,
+   "gt_id": 56,
+   "name": "shelf"
+  },
+  {
+   "col": 57,
+   "gt_id": 57,
+   "name": "shelf"
+  },
+  {
+   "col": 58,
+   "gt_id": 58,
+   "name": "household item"
+  },
+  {
+   "col": 59,
+   "gt_id": 59,
+   "name": "wall"
+  },
+  {
+   "col": 60,
+   "gt_id": 60,
+   "name": "light"
+  },
+  {
+   "col": 61,
+   "gt_id": 61,
+   "name": "door frame"
+  },
+  {
+   "col": 62,
+   "gt_id": 62,
+   "name": "top of a cupboard"
+  },
+  {
+   "col": 63,
+   "gt_id": 63,
+   "name": "door of cupboard"
+  },
+  {
+   "col": 64,
+   "gt_id": 64,
+   "name": "door of cupboard"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in",
+   "obj": 46,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "against",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "inside",
+   "obj": 61,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 61,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in",
+   "obj": 59,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "inside",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "behind",
+   "obj": 54,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "in",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "under",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "against",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 46,
+   "pred": "on",
+   "obj": 47,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 52,
+   "pred": "inside",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 53,
+   "pred": "inside",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "attached to",
+   "obj": 61,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "inside",
+   "obj": 61,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "in",
+   "obj": 59,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 55,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 56,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 57,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

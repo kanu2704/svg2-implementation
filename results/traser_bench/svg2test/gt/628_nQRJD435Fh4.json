@@ -1,0 +1,794 @@
+{
+ "dataset": "svg2test",
+ "video_id": "628_nQRJD435Fh4",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/628_nQRJD435Fh4.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 2.4,
+  "agreement_with_even_spacing": 0.051,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ground"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "pingpong ball holder"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "wall"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "door"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "door"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "door"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "door"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "dumpster"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "chair"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "board"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "ground"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "pingpong ball holder"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "wall"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "door"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "door"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "door"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "door"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "box"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "chair"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "fencing"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "table"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "table"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "water dispenser"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "shirt"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "shirt"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "shirt"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "shirt"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "clock"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "head"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "head"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "head"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "head"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "playing table tennis with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "competing with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wearing",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "near",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wearing",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "near",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "playing table tennis with",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "competing with",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "near",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "wearing",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "near",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "behind",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "behind",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "above",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "above",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "above",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "above",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "above",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "above",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,499 @@
+{
+ "dataset": "svg2test",
+ "video_id": "434_eOTP9yrATX8",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/434_eOTP9yrATX8.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.6,
+  "agreement_with_even_spacing": 0.356,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "forest"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "people"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "snow field or road"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "object (uncertain)"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "window"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "window"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "plate"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "wheel"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wheel"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "wheel"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "rear wing"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "light"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "light"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "moves away from",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "drives along",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moves along",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     7.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "above",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "above",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "part of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "above",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

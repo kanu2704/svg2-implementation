@@ -1,0 +1,474 @@
+{
+ "dataset": "svg2test",
+ "video_id": "766_m1Vdl-EMY1E",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/766_m1Vdl-EMY1E.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 2.4,
+  "agreement_with_even_spacing": 0.074,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "field"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "stadium"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sky"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "light"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "person"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "person"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "person"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "person"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "baseball bat"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "hat"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "pants"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "sign"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "foul line"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "display"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "antenna"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "wear",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "wear",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "move away from",
+   "obj": 12,
+   "spans": [
+    [
+     19.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "wield",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "drop",
+   "obj": 13,
+   "spans": [
+    [
+     19.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "move away from",
+   "obj": 12,
+   "spans": [
+    [
+     19.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "bat against",
+   "obj": 7,
+   "spans": [
+    [
+     15.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pitch to",
+   "obj": 5,
+   "spans": [
+    [
+     15.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "move toward",
+   "obj": 5,
+   "spans": [
+    [
+     15.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "move away from",
+   "obj": 5,
+   "spans": [
+    [
+     19.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "near",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  }
+ ]
+}

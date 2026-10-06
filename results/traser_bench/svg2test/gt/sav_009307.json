@@ -1,0 +1,914 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_009307",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_009307.mp4",
+ "fps": 24.0,
+ "n_frames": 373,
+ "mask_frames": 373,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ceiling"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "pillar"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "store"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sign"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "people"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "performers"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "pillar"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "pillar"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "pillar"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "christmas tree"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "speaker"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "speaker"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "sign"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "person"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "person"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "person"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "person"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "person"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "person"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "person"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "person"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "person"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "person"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "person"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "person"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "person"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "person"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "person"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "wheelchair"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "person"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "person"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "person"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "pillar"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "pillar"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "chair"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "chair"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "chair"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "chair"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "chair"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "chair"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "chair"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "chair"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "chair"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "trashcan"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "present"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "present"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "present"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "present"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "present"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "present"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "present"
+  },
+  {
+   "col": 56,
+   "gt_id": 56,
+   "name": "present"
+  },
+  {
+   "col": 57,
+   "gt_id": 57,
+   "name": "present"
+  },
+  {
+   "col": 58,
+   "gt_id": 58,
+   "name": "present"
+  },
+  {
+   "col": 59,
+   "gt_id": 59,
+   "name": "present"
+  },
+  {
+   "col": 60,
+   "gt_id": 60,
+   "name": "present"
+  },
+  {
+   "col": 61,
+   "gt_id": 61,
+   "name": "guitar"
+  },
+  {
+   "col": 62,
+   "gt_id": 62,
+   "name": "hat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "put on show for",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "perform for",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "sit on",
+   "obj": 46,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "sit on",
+   "obj": 45,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "sit on",
+   "obj": 40,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "sit on",
+   "obj": 41,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "sit on",
+   "obj": 42,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "walk past",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "play",
+   "obj": 61,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "under",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 45,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 46,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 47,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 47,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 48,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 49,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 49,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 50,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 51,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 52,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 52,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 53,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 55,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 56,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 57,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 58,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 59,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 60,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 61,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,535 @@
+{
+ "dataset": "svg2test",
+ "video_id": "2225_6acPX_00M9Q",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/2225_6acPX_00M9Q.mp4",
+ "fps": 6.0,
+ "n_frames": 90,
+ "mask_frames": 90,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 30,
+  "mask_frames": 90,
+  "contrast": 2.6,
+  "agreement_with_even_spacing": 0.111,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "rail signal"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "warning sign board"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "mountains"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ground"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "sky"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "mountain"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "train"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "ground"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "barrier wall"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "snow"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "ground"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "roof"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "sign board"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "sign board"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "sign board"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "light"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "light"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "light"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "window"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     4.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "attached to",
+   "obj": 8,
+   "spans": [
+    [
+     3.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     4.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "below",
+   "obj": 4,
+   "spans": [
+    [
+     3.5,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "approaches",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "passes",
+   "obj": 0,
+   "spans": [
+    [
+     9.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "clears",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moves through",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moves past",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "covers",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "above",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "above",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "above",
+   "obj": 15,
+   "spans": [
+    [
+     3.5,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  }
+ ]
+}

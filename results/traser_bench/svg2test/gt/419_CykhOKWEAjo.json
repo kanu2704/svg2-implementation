@@ -1,0 +1,621 @@
+{
+ "dataset": "svg2test",
+ "video_id": "419_CykhOKWEAjo",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/419_CykhOKWEAjo.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 2.2,
+  "agreement_with_even_spacing": 0.178,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "tree"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "tree"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "tree"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "tree"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tree"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "wood fence"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "sky"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "tree"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "grass"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wood"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "person"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "person"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "bag"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "mulch"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "trees"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "tree"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "tree"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "bags"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "wheel"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "porch"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "household material"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "plastic bucket"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "lumber"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "wire"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "wire"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "lumber"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "lumber"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "wood planks"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "t-shirt"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "diaper"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "fence"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "fence post"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "fence post"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "fence post"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "fence post"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "wood"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "t-shirt"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "head"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "head"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "wood plank"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "wood"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "saw"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "trouser"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "near",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "cutting",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     5.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "working on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 41,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "looking at",
+   "obj": 41,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "near",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ],
+    [
+     3.0,
+     5.0
+    ],
+    [
+     5.0,
+     6.5
+    ],
+    [
+     6.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     6.0,
+     7.5
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "moving on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     5.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

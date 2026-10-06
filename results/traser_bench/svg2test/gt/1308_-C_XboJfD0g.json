@@ -1,0 +1,273 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1308_-C_XboJfD0g",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1308_-C_XboJfD0g.mp4",
+ "fps": 6.0,
+ "n_frames": 61,
+ "mask_frames": 61,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 21,
+  "mask_frames": 61,
+  "contrast": 2.2,
+  "agreement_with_even_spacing": 0.131,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "shelf"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "hand"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "pricetag"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "floor"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "screen"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "phone"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "phone holder"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "phone"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "ipad"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "accessories"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "counter top"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "wood"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wood"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "metal base"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves along",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaches",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     4.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "beside",
+   "obj": 6,
+   "spans": [
+    [
+     4.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     2.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "beside",
+   "obj": 5,
+   "spans": [
+    [
+     5.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     5.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "below",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "inside",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  }
+ ]
+}

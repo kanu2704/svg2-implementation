@@ -1,0 +1,715 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_004550",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_004550.mp4",
+ "fps": 24.0,
+ "n_frames": 329,
+ "mask_frames": 330,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bridegroom"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bride"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "stone column"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "wall"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "archway"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "floor"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "railing"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "door"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "fence"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wall"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "flower"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "crowds"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "person"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "person"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "person"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "person"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "person"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "person"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "person"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "person"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "person"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "person"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "person"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "person"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "person"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "person"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "person"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "person"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "person"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "person"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "person"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "person"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "person"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "person"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "person"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "person"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "person"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "person"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "person"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "person"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "person"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "person"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "carpet"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "painting"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "window"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "light"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "walks with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves along",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 50,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "adjacent to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 49,
+   "spans": [
+    [
+     4.0,
+     5.5
+    ],
+    [
+     5.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 51,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     7.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "holds arm of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves with",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "walks down aisle with",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touching",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves along",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 50,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 51,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     5.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "adjacent to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 49,
+   "spans": [
+    [
+     3.0,
+     5.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "beside",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "looks at",
+   "obj": 1,
+   "spans": [
+    [
+     9.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "looks at",
+   "obj": 1,
+   "spans": [
+    [
+     11.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 48,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  }
+ ]
+}

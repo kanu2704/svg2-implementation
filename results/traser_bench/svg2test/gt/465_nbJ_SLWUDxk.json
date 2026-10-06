@@ -1,0 +1,489 @@
+{
+ "dataset": "svg2test",
+ "video_id": "465_nbJ_SLWUDxk",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/465_nbJ_SLWUDxk.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.9,
+  "agreement_with_even_spacing": 0.244,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "person"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "person"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "person"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "person"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "person"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "person"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "person"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "person"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "person"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "person"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "person"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "person"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "person"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "person"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "person"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "ground"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "buildings"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "sky"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "river"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "light"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "light"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "saxophone"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "shoes"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "hat"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "suit"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 38,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performs for",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "approaches",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "looks at",
+   "obj": 0,
+   "spans": [
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "dances with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wears",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "looks at",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "above",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "above",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "above",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.5
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

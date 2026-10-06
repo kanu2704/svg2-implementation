@@ -1,0 +1,432 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_015763",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_015763.mp4",
+ "fps": 24.0,
+ "n_frames": 497,
+ "mask_frames": 498,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "filling"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "pan"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "mat"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "flowers"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "hand"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "hand"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "dough"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "dough"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "chopstick"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "chopstick"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "bowl"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "bowl"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "oil"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     10.0,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.5
+    ],
+    [
+     8.5,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holds",
+   "obj": 7,
+   "spans": [
+    [
+     5.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "prepares",
+   "obj": 7,
+   "spans": [
+    [
+     1.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "wraps",
+   "obj": 7,
+   "spans": [
+    [
+     12.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "uses",
+   "obj": 9,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "stretches",
+   "obj": 8,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holds",
+   "obj": 7,
+   "spans": [
+    [
+     5.0,
+     8.0
+    ],
+    [
+     12.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wraps",
+   "obj": 7,
+   "spans": [
+    [
+     12.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "places",
+   "obj": 7,
+   "spans": [
+    [
+     18.5,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "transfers",
+   "obj": 7,
+   "spans": [
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "uses",
+   "obj": 10,
+   "spans": [
+    [
+     0.5,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "stretches",
+   "obj": 8,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     5.5,
+     19.5
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     1.0,
+     19.5
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "moves away from",
+   "obj": 12,
+   "spans": [
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     19.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     18.5,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "moves into",
+   "obj": 1,
+   "spans": [
+    [
+     18.5,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     1.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ],
+    [
+     14.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  }
+ ]
+}

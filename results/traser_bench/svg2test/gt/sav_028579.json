@@ -1,0 +1,616 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_028579",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_028579.mp4",
+ "fps": 24.0,
+ "n_frames": 458,
+ "mask_frames": 458,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cloth"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "cloth"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sneakers"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "sneakers"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "carpet"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "light"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "plates"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "picture frame"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "picture frame"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "door"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "camera"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "dining chair"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "door"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "hair"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "side of a wall"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "side of a wall"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "wine rack"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "walls"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "left hand"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "left hand"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "face"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "face"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "bottle"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "bottle"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "light"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "light"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "chair"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "chair"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "pants"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "boots"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "boots"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "teapot"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "teapot"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "jug"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "jug"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "cabinet"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "wall"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "picture frame"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "picture frames"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "chair covering"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "dining chair"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "dining table"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "chair"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "switch"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "box"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "bottles"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "bottles"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "wall"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "head"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moving on",
+   "obj": 5,
+   "spans": [
+    [
+     2.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "dancing on",
+   "obj": 5,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ],
+    [
+     4.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 41,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 42,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     7.0,
+     11.0
+    ],
+    [
+     10.5,
+     12.5
+    ],
+    [
+     12.5,
+     14.0
+    ],
+    [
+     14.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 42,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "mounted on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "set in",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "mounted on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "standing on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "against",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "mounted on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "mounted on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "in front of",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "in front of",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 44,
+   "pred": "on",
+   "obj": 48,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  }
+ ]
+}

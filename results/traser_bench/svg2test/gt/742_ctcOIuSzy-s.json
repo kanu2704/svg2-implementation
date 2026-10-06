@@ -1,0 +1,385 @@
+{
+ "dataset": "svg2test",
+ "video_id": "742_ctcOIuSzy-s",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/742_ctcOIuSzy-s.mp4",
+ "fps": 6.0,
+ "n_frames": 37,
+ "mask_frames": 37,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 13,
+  "mask_frames": 37,
+  "contrast": 2.3,
+  "agreement_with_even_spacing": 0.081,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "trees"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sky"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "grass"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ground"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tree"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "grass"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "man"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "trees"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "trees"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "trees"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "hat"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "gun"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "glasses"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hand"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "gloves"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "whistle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wears",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wears",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wears",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holds",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "smokes",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "near",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     6.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "near",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "below",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "near",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  }
+ ]
+}

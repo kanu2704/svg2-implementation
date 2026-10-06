@@ -1,0 +1,532 @@
+{
+ "dataset": "svg2test",
+ "video_id": "470_BiIqH60-A1M",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/470_BiIqH60-A1M.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.4,
+  "agreement_with_even_spacing": 0.067,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "kid"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "dad"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "floor"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "painting"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "wall"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "roof"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "pavement"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "shirt"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "cap"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "face"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hair"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "trouser"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "shoe"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "shoe"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "bag"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "bag"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "shirt"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "trouser"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "hand"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "hand"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "hair"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "shirt"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "hair"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "face"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "shirt"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "hand"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "face"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "trouser"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "cap"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "jacket"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "trouser"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "bag"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "face"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 31,
+   "spans": [
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "walks on",
+   "obj": 4,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "walks on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holds",
+   "obj": 2,
+   "spans": [
+    [
+     2.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "escorts",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wears",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "below",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

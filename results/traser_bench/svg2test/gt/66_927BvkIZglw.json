@@ -1,0 +1,430 @@
+{
+ "dataset": "svg2test",
+ "video_id": "66_927BvkIZglw",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/66_927BvkIZglw.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 2.2,
+  "agreement_with_even_spacing": 0.111,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "window"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "roof"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "light"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "television"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "indoor pool"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "wall"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "wall"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "wall"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "water"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "valve"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "valve"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "valve"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "valve"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "headrest"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "valve"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "headrest"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "window handle"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "glass"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "light"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "window frame"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "mounted on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "attached to",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "mounted on",
+   "obj": 7,
+   "spans": [
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "below",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "contains",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "has",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "has",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "has",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "inside",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "inside",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "around",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

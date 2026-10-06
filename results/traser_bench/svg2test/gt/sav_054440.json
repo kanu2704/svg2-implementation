@@ -1,0 +1,853 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_054440",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_054440.mp4",
+ "fps": 24.0,
+ "n_frames": 313,
+ "mask_frames": 313,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "tissue package"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sky"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "road"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tree"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "tree"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "tree"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "tree"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "tree"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "tree"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "tree"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "tree"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "tree"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "tree"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "sidewalk"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "signboard"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "signboard"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "sign"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "building"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "building"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "building"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "trees"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "buildings"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "power pole"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "light or pole"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "power pole"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "electric wire"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "electric wire"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "tree"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "wall"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "tree"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "tree"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "tree"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "wiper"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "mirror"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "speaker"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "garage door"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "car"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "sun"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "rolling shutter door"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "balcony"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "ac"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     6.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     6.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moving along",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "driving through",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "passing",
+   "obj": 15,
+   "spans": [
+    [
+     6.0,
+     8.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaching",
+   "obj": 16,
+   "spans": [
+    [
+     6.0,
+     9.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "passing by",
+   "obj": 11,
+   "spans": [
+    [
+     6.5,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "passing by",
+   "obj": 18,
+   "spans": [
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moving toward",
+   "obj": 21,
+   "spans": [
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "carrying",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     6.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beside",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "beside",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     4.0,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "beside",
+   "obj": 14,
+   "spans": [
+    [
+     2.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "beside",
+   "obj": 14,
+   "spans": [
+    [
+     3.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "beside",
+   "obj": 14,
+   "spans": [
+    [
+     4.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     11.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     9.5
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "mounted on",
+   "obj": 16,
+   "spans": [
+    [
+     6.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "in front of",
+   "obj": 21,
+   "spans": [
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "below",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "below",
+   "obj": 2,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.5
+    ],
+    [
+     3.5,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "connected to",
+   "obj": 25,
+   "spans": [
+    [
+     4.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     7.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "part of",
+   "obj": 19,
+   "spans": [
+    [
+     8.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     9.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "mounted on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     5.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "mounted on",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     7.5
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "mounted on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     5.5,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "part of",
+   "obj": 18,
+   "spans": [
+    [
+     8.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     7.5,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "above",
+   "obj": 22,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "part of",
+   "obj": 18,
+   "spans": [
+    [
+     8.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     8.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "below",
+   "obj": 40,
+   "spans": [
+    [
+     6.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "part of",
+   "obj": 18,
+   "spans": [
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     7.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "mounted on",
+   "obj": 1,
+   "spans": [
+    [
+     6.0,
+     10.5
+    ]
+   ]
+  }
+ ]
+}

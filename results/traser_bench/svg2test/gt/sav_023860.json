@@ -1,0 +1,1024 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_023860",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_023860.mp4",
+ "fps": 24.0,
+ "n_frames": 422,
+ "mask_frames": 422,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "person"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "person"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "person"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "treadmill"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "treadmill"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "treadmill"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "treadmill"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "ground"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "ceiling"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "treadmill"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "treadmill"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "treadmill"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "treadmill"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "treadmill"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "treadmill"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "treadmill"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "treadmill"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "treadmill"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "wall"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "tree"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "glass"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "tv"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "tv"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "tv"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "tv"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "tv"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "t-shirt"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "t-shirt"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "t-shirt"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "t-shirt"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "t-shirt"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "t-shirt"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "speaker"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "using",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wearing",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "using",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wearing",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "wearing",
+   "obj": 38,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "below",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  }
+ ]
+}

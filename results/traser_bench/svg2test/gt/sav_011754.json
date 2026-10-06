@@ -1,0 +1,827 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_011754",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_011754.mp4",
+ "fps": 24.0,
+ "n_frames": 511,
+ "mask_frames": 511,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "goose"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "goose"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "goose"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "goose"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "goose"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "water"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "goose"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "goose"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "goose"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "goose"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "bush"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "grass"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "tree"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "trees"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "tree"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "sky"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "crowd"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "plant"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "bank"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "leaf"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "bush"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pot"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "pot"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "wooden board"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "bank"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "bank"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "goose"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "goose"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "goose"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "goose"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "goose"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "goose"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "goose"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "goose"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "goose"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "goose"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "tree"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "tree"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "tree"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "grass"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "bush"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "bush"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "grass"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "bush"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "grass"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "grass"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "grass"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "grass"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "person"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "person"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "person"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "person"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "person"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     18.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ],
+    [
+     17.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     17.5,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ],
+    [
+     17.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "follows",
+   "obj": 0,
+   "spans": [
+    [
+     18.0,
+     22.0
+    ],
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "follows",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     7.5
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "above",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "above",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "adjacent to",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     18.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 24,
+   "spans": [
+    [
+     13.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 24,
+   "spans": [
+    [
+     13.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 24,
+   "spans": [
+    [
+     13.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "over",
+   "obj": 5,
+   "spans": [
+    [
+     14.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 24,
+   "spans": [
+    [
+     14.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "adjacent to",
+   "obj": 5,
+   "spans": [
+    [
+     14.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "adjacent to",
+   "obj": 5,
+   "spans": [
+    [
+     16.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     16.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     16.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     16.5,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 24,
+   "spans": [
+    [
+     14.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     6.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "follows",
+   "obj": 30,
+   "spans": [
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "swims in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     17.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 43,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     18.0,
+     22.0
+    ],
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  }
+ ]
+}

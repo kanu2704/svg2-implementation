@@ -1,0 +1,568 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_053005",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_053005.mp4",
+ "fps": 24.0,
+ "n_frames": 449,
+ "mask_frames": 449,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "carpet"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sofa"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "curtain"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "windows"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "lights"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "chair"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "wall panel"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "floor"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "pillars"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "fountain"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "desk"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "sofa"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "lights"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "background"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "screen"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "chandelier lights"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "door"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "oerson"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "pillar"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "reflected lights"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "bag"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "head"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "legs"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "entrance"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "balcony"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "bench"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "sign"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "poses with",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carries",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     9.0,
+     10.0
+    ],
+    [
+     11.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     12.0,
+     15.0
+    ],
+    [
+     18.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "below",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     10.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 20,
+   "spans": [
+    [
+     8.5,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     9.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     9.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     8.5,
+     10.5
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     8.5,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "moves with",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "near",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "above",
+   "obj": 24,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     9.5,
+     12.0
+    ]
+   ]
+  }
+ ]
+}

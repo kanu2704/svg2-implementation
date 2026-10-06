@@ -1,0 +1,82 @@
+{
+ "video": "/tmp/svg2test_videos/434_eOTP9yrATX8.mp4",
+ "task": "scene_graph",
+ "dtype": "float16",
+ "duration_s": 7.5,
+ "video_frames": 45,
+ "video_fps": 6.0,
+ "sampled_frames": 8,
+ "sampled_idx": [
+  0,
+  6,
+  12,
+  18,
+  25,
+  31,
+  37,
+  44
+ ],
+ "effective_fps": 1.067,
+ "grid_thw": [
+  4,
+  40,
+  74
+ ],
+ "raw_video_tokens": 2960,
+ "resized_hw": [
+  560,
+  1036
+ ],
+ "objects_requested": 14,
+ "objects": 14,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "tokens_per_object": [
+  840,
+  154,
+  4,
+  2244,
+  4,
+  27,
+  5,
+  2,
+  11,
+  11,
+  14,
+  3,
+  2,
+  2
+ ],
+ "tokens_selected_union": 2957,
+ "tokens_dropped_fraction": 0.001,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>"
+ ],
+ "prompt_tokens": 2994,
+ "arranged_tokens": 1547,
+ "arrange_s": 1.9,
+ "embeds_finite": true,
+ "generate_s": 68.3,
+ "new_tokens": 1007,
+ "peak_gpu_gb": 8.55,
+ "json_ok": true,
+ "out_objects": 14,
+ "out_relationships": 21,
+ "out_uncertain_labels": 0,
+ "total_s": 71.6
+}

@@ -1,0 +1,373 @@
+{
+ "dataset": "svg2test",
+ "video_id": "714_nooF6zlfzMI",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/714_nooF6zlfzMI.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 1.7,
+  "agreement_with_even_spacing": 0.125,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "fish"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sky"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "human"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "Fishing Rod"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "shore or ground"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "embankment"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "river or canal"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "shore"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "handle (grip)"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "reel"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "rod"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "hand"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "hand"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "attached to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "operating",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.166667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beside",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "fishing in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "beside",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "beside",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "standing on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "walking along",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "has",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "caught by",
+   "obj": 2,
+   "spans": [
+    [
+     1.666667,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "attached to",
+   "obj": 3,
+   "spans": [
+    [
+     1.666667,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 6,
+   "spans": [
+    [
+     1.666667,
+     23.666667
+    ]
+   ]
+  }
+ ]
+}

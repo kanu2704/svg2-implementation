@@ -1,0 +1,275 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_037370",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_037370.mp4",
+ "fps": 24.0,
+ "n_frames": 477,
+ "mask_frames": 477,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "guitarist"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "accordion player"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "stage backdrop panels"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "drummer"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "guitarist"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "people"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "stage curtain"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "lighting rig"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "stage floor"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "drum set"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "speakers"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "object"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "device"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "electric keyboard"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "piano"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "lights"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "accordion"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "guitar"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "phone"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "rig"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "playing",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carrying",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performing with",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performing with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     8.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performing with",
+   "obj": 4,
+   "spans": [
+    [
+     9.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "performing for",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "playing",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     8.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "carrying",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     8.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "performing with",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     8.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "playing",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "recording with",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watching",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  }
+ ]
+}

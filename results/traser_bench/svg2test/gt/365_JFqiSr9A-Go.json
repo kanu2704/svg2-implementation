@@ -1,0 +1,845 @@
+{
+ "dataset": "svg2test",
+ "video_id": "365_JFqiSr9A-Go",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/365_JFqiSr9A-Go.mp4",
+ "fps": 6.0,
+ "n_frames": 30,
+ "mask_frames": 30,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 10,
+  "mask_frames": 30,
+  "contrast": 2.7,
+  "agreement_with_even_spacing": 0.367,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "accessory shelf"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "accessory shelf"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "paper shredder"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "monitor"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "coffee maker"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "monitor stand"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "person"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "keyboard"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "mouse"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "chair"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "shelf"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "table"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wall"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "wall"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "lamp"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "cord"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "artwork"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "artwork"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "artwork"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "headset"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "charger"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "cable"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "charger"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "charger"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "wire"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "paper"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "file holder"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "holder"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "monitor screen"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "monitor stand"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "monitor stand"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "handle"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "coffee maker base"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "wood"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "wood"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "shirt"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "trouser"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "hair"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "face"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "hand"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "hand"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "arm rest"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "support"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "light"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "stand"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "ring"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "wood"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "wood"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "supported by",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "mounted on",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "sitting on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "typing on",
+   "obj": 7,
+   "spans": [
+    [
+     3.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "looking at",
+   "obj": 7,
+   "spans": [
+    [
+     3.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wearing",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wearing",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "wearing",
+   "obj": 45,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "working on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "looking at",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "using",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "below",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "below",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "hanging on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     3.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "below",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "inside",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "touching",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "touching",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "under",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 43,
+   "pred": "on",
+   "obj": 44,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 45,
+   "pred": "on",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  }
+ ]
+}

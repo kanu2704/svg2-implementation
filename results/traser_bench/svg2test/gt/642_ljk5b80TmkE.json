@@ -1,0 +1,412 @@
+{
+ "dataset": "svg2test",
+ "video_id": "642_ljk5b80TmkE",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/642_ljk5b80TmkE.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 2.0,
+  "agreement_with_even_spacing": 0.103,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "hand or glove"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "vehicle (uncertain)"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "vehicle (uncertain)"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "pole"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "snow field"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "sky"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "light"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "wheel"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "wheel"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wheel"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hood"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "light"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "light"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "light"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "engine"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "window"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "window"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "window"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "fender"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "door"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     17.166667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     17.166667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     17.166667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "under",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     17.333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "under",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     15.833333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "under",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     15.833333
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "near",
+   "obj": 0,
+   "spans": [
+    [
+     16.166667,
+     21.333333
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     16.166667,
+     21.333333
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     13.666667,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     21.333333
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     15.5
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "below",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     16.666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "near",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     17.833333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     15.833333,
+     20.166667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "near",
+   "obj": 5,
+   "spans": [
+    [
+     17.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.333333,
+     5.0
+    ]
+   ]
+  }
+ ]
+}

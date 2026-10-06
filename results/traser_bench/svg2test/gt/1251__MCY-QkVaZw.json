@@ -1,0 +1,207 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1251__MCY-QkVaZw",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1251__MCY-QkVaZw.mp4",
+ "fps": 6.0,
+ "n_frames": 61,
+ "mask_frames": 61,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 21,
+  "mask_frames": 61,
+  "contrast": 1.5,
+  "agreement_with_even_spacing": 0.115,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "swimmer"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "towel"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sky"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ocean"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "ship"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "boat"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "boat"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "bra"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "bikini bottoms"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "hair"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "face"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "band"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "holding",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "dipping",
+   "obj": 1,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lifting",
+   "obj": 1,
+   "spans": [
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "looking at",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ],
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "rinsing",
+   "obj": 1,
+   "spans": [
+    [
+     2.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "splashing",
+   "obj": 3,
+   "spans": [
+    [
+     3.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaching",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moving away from",
+   "obj": 3,
+   "spans": [
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  }
+ ]
+}

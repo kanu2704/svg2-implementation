@@ -1,0 +1,276 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1086_iywqpda7d8k",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1086_iywqpda7d8k.mp4",
+ "fps": 6.0,
+ "n_frames": 121,
+ "mask_frames": 121,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 41,
+  "mask_frames": 121,
+  "contrast": 2.0,
+  "agreement_with_even_spacing": 0.025,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "trees"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "trees"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "waterfall"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "plants"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "trees"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "trees"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "sky"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "tree"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "cliffside"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "flows down past",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "flows down past",
+   "obj": 8,
+   "spans": [
+    [
+     17.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     17.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     17.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     17.0,
+     21.0
+    ]
+   ]
+  }
+ ]
+}

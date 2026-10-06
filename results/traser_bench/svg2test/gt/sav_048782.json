@@ -1,0 +1,675 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_048782",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_048782.mp4",
+ "fps": 24.0,
+ "n_frames": 513,
+ "mask_frames": 513,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "bag"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "shopfront"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "shopfront"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "shopfront"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "ground"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "ceiling"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "shopfront"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "plant"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "bag"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "bag"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "window"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "window"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "window"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "door"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "glass display counter"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "poster"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "sign"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "lamp"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "lamp"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "lamp"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "lamp"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "lamp"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "stool"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "dragon decorative silhouette"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "dragon decorative silhouette"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "dragon decorative silhouette"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "bowl"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "sign"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "sign"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "wall"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "walking with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "walking with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "walking through",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carrying",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "walking along",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moving away from",
+   "obj": 11,
+   "spans": [
+    [
+     3.5,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moving away from",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "walking with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "walking through",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "carrying",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "walking along",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moving away from",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "walking along",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "opposite",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "below",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "inside",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     22.0
+    ]
+   ]
+  }
+ ]
+}

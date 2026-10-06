@@ -1,0 +1,257 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_026800",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_026800.mp4",
+ "fps": 24.0,
+ "n_frames": 393,
+ "mask_frames": 394,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "road"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "plants"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "signboard"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "truck"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "sky"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "building"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "car"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "car"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "car"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "person"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "floor"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "pole"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "truck"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "motorcycle"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "barrel"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "frame"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "has arm around",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     7.0,
+     13.5
+    ],
+    [
+     14.5,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "walks with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     7.0,
+     13.5
+    ],
+    [
+     14.5,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaches",
+   "obj": 9,
+   "spans": [
+    [
+     7.5,
+     13.0
+    ],
+    [
+     14.5,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "passes",
+   "obj": 15,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaches",
+   "obj": 15,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ],
+    [
+     7.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "walks with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     7.0,
+     13.5
+    ],
+    [
+     14.5,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches",
+   "obj": 9,
+   "spans": [
+    [
+     6.5,
+     13.0
+    ],
+    [
+     14.5,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "passes",
+   "obj": 15,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "attached to",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ]
+   ]
+  }
+ ]
+}

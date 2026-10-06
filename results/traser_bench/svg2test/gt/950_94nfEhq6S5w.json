@@ -1,0 +1,559 @@
+{
+ "dataset": "svg2test",
+ "video_id": "950_94nfEhq6S5w",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/950_94nfEhq6S5w.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.5,
+  "agreement_with_even_spacing": 0.244,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ceiling"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "floor"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "art"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "art"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "art"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "wall"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "opening"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wall"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "wall"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "roof"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "roof"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "roof"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "roof"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "roof"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "light"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "light"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "light"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "light"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "light"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "light"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "light"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "sloped wall"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "ceiling"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "ceiling"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "wall plate"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "ceiling"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "light"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "light"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "bag"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "jacket"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "trousers"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "trouser"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "shoe"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "shoe"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "hair"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "face"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "hand"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "hair"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "bag"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "trouser"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "hand"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "light"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "below",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "adjacent to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "adjacent to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wears",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "carries",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "looks at",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches and observes",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "hangs on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "hangs on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "hangs on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "carries",
+   "obj": 40,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "moves toward",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ],
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ],
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

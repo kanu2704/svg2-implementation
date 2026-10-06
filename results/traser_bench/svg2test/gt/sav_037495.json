@@ -1,0 +1,732 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_037495",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_037495.mp4",
+ "fps": 24.0,
+ "n_frames": 493,
+ "mask_frames": 493,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cloth"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "wall"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "wall design"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "mat"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "table"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "tv console"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "tv set"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "drawer"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "drawer"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wooden object"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "wall"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "wall"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "trouser"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hair"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "sweatpants"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "floor"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "door"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "pantry"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "ceiling"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "clothes"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "door"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "mat"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "cabinet"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "wall"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "tv"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "tv accessories"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "wall"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "wall"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "wall"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "table"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "clothing"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "clothing"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "door"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "door handle"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "glass"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "glass"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "glass"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     8.0,
+     11.0
+    ],
+    [
+     14.0,
+     16.0
+    ],
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "approaches",
+   "obj": 6,
+   "spans": [
+    [
+     4.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     8.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves away from",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     8.0,
+     12.5
+    ],
+    [
+     14.5,
+     17.5
+    ],
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     17.0
+    ],
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     17.0
+    ],
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     8.0,
+     11.0
+    ],
+    [
+     14.0,
+     16.0
+    ],
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "approaches",
+   "obj": 6,
+   "spans": [
+    [
+     6.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     8.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "moves away from",
+   "obj": 17,
+   "spans": [
+    [
+     19.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "moves away from",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "passes in front of",
+   "obj": 6,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     17.0
+    ],
+    [
+     17.5,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 16,
+   "spans": [
+    [
+     1.0,
+     4.5
+    ],
+    [
+     4.0,
+     15.0
+    ],
+    [
+     15.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     17.0
+    ],
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     17.0
+    ],
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     3.0,
+     5.0
+    ],
+    [
+     5.0,
+     15.5
+    ],
+    [
+     16.0,
+     18.0
+    ],
+    [
+     16.0,
+     19.0
+    ],
+    [
+     19.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     3.0,
+     19.0
+    ],
+    [
+     20.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     5.0,
+     11.5
+    ],
+    [
+     11.5,
+     15.5
+    ],
+    [
+     16.0,
+     17.0
+    ],
+    [
+     17.5,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     5.0,
+     6.0
+    ],
+    [
+     16.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     2.0,
+     4.0
+    ],
+    [
+     5.0,
+     12.0
+    ],
+    [
+     16.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     1.0,
+     4.0
+    ],
+    [
+     6.0,
+     12.0
+    ],
+    [
+     13.0,
+     15.0
+    ],
+    [
+     16.0,
+     21.0
+    ]
+   ]
+  }
+ ]
+}

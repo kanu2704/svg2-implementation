@@ -1,0 +1,324 @@
+{
+ "dataset": "svg2test",
+ "video_id": "339_j2gELsuQ3Cg",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/339_j2gELsuQ3Cg.mp4",
+ "fps": 6.0,
+ "n_frames": 30,
+ "mask_frames": 30,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 10,
+  "mask_frames": 30,
+  "contrast": 1.7,
+  "agreement_with_even_spacing": 0.267,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "clothes"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "clothes"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "clothes"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "closet"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "closet divider"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "closet divider"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "closet shelf"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "hair"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "face"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "hand"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "shoulder"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "shirt"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "plywood"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "looks at",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "touches",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves leftward",
+   "obj": 1,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "browses",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     1.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     3.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     3.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     4.5,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  }
+ ]
+}

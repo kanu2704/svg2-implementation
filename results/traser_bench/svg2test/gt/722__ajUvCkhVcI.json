@@ -1,0 +1,541 @@
+{
+ "dataset": "svg2test",
+ "video_id": "722__ajUvCkhVcI",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/722__ajUvCkhVcI.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 2.1,
+  "agreement_with_even_spacing": 0.088,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "baby"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "baby"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ball pit"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "side of a cage"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "side of a cage"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "rope"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "rope"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "shirt"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "head"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "short"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "shirt"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "top"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "skirt"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "trouser"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "legs"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "legs"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "legs"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "playing with",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "looking at",
+   "obj": 1,
+   "spans": [
+    [
+     8.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "looking at",
+   "obj": 2,
+   "spans": [
+    [
+     13.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "inside",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wearing",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wearing",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     8.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaching",
+   "obj": 5,
+   "spans": [
+    [
+     1.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "climbing",
+   "obj": 5,
+   "spans": [
+    [
+     8.5,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "looking at",
+   "obj": 5,
+   "spans": [
+    [
+     8.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "inside",
+   "obj": 3,
+   "spans": [
+    [
+     10.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "playing with",
+   "obj": 3,
+   "spans": [
+    [
+     12.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wearing",
+   "obj": 12,
+   "spans": [
+    [
+     12.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wearing",
+   "obj": 13,
+   "spans": [
+    [
+     12.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaching",
+   "obj": 4,
+   "spans": [
+    [
+     12.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "above",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "above",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "above",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     13.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     12.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "below",
+   "obj": 12,
+   "spans": [
+    [
+     12.5,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  }
+ ]
+}

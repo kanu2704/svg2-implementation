@@ -1,0 +1,282 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_016333",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_016333.mp4",
+ "fps": 24.0,
+ "n_frames": 513,
+ "mask_frames": 514,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "woman"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "woman"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "floor"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "man"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "game retail chain or shop"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "ceiling"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "woman"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "woman"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "girl"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "woman"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "man"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "man"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "boy"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "people"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "bag"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "bag"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "shelves"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "barrier or pillar"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "floor"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "floor"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "poster"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "poster"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "shelf"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "light"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "light"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "light"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "light"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "light"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "light"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "clothes"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "pants"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "clothes"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "pants"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "clothes"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "backpack"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "pants"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ],
+    [
+     4.0,
+     16.0
+    ],
+    [
+     15.0,
+     21.5
+    ],
+    [
+     20.5,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "carries",
+   "obj": 18,
+   "spans": [
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "passes",
+   "obj": 0,
+   "spans": [
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "approaches",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "approaches",
+   "obj": 20,
+   "spans": [
+    [
+     10.0,
+     15.0
+    ],
+    [
+     16.0,
+     17.0
+    ]
+   ]
+  }
+ ]
+}

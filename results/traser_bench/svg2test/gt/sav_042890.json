@@ -1,0 +1,483 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_042890",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_042890.mp4",
+ "fps": 24.0,
+ "n_frames": 393,
+ "mask_frames": 394,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "t-shirt"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "shorts"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "t-shirt"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "jeans"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "dresser"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "wall"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "ceiling"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "wall"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "object"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "plant"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "object"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "woman"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "dresser"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "coffee table"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "television"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "photo"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "plant"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "wall"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "ceiling"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "flooring"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "table"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "remote control"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "wall"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "wall"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "t-shirt"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "pants"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "shoe"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "shoe"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "hat"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "arm"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "hair"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "arm"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 24,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "moves away from",
+   "obj": 12,
+   "spans": [
+    [
+     1.5,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "moves away from",
+   "obj": 13,
+   "spans": [
+    [
+     2.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "dancing on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "mounted on",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "above",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     6.0,
+     7.0
+    ],
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     9.0,
+     12.0
+    ],
+    [
+     11.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     9.0,
+     12.0
+    ],
+    [
+     11.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "next to",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     9.0,
+     12.0
+    ],
+    [
+     11.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     17.0
+    ]
+   ]
+  }
+ ]
+}

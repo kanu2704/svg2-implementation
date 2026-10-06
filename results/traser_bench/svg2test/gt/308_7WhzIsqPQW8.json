@@ -1,0 +1,695 @@
+{
+ "dataset": "svg2test",
+ "video_id": "308_7WhzIsqPQW8",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/308_7WhzIsqPQW8.mp4",
+ "fps": 6.0,
+ "n_frames": 136,
+ "mask_frames": 136,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 46,
+  "mask_frames": 136,
+  "contrast": 2.4,
+  "agreement_with_even_spacing": 0.022,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "referee"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dancer"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dancer"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "dance floor"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "trash can"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "background floor"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "country logo"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "country logo"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "country logo"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "country logo"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "flower vase"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "country logo"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "flower vase"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "country logo"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "flower vase"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "bottle water"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "flower vase"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "logo"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "flower vase"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "flower vase"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "flower vase"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "bottle"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "cup"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "paper"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "paper"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "bottle water"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "bottle water"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "table"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "face"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "hair"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "skirt"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "hand"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "hand"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "leg"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "leg"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "shirt"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "head"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "jacket"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "shirt"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "trouser"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "head"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "shoes"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "dances with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "performs routine with",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "overlapping",
+   "obj": 2,
+   "spans": [
+    [
+     13.5,
+     16.0
+    ],
+    [
+     16.0,
+     20.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "follows",
+   "obj": 1,
+   "spans": [
+    [
+     19.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "holds",
+   "obj": 1,
+   "spans": [
+    [
+     12.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wears",
+   "obj": 38,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "wears",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ],
+    [
+     21.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     15.0
+    ],
+    [
+     20.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     8.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     23.0
+    ]
+   ]
+  }
+ ]
+}

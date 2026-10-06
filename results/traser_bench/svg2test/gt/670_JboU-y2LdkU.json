@@ -1,0 +1,573 @@
+{
+ "dataset": "svg2test",
+ "video_id": "670_JboU-y2LdkU",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/670_JboU-y2LdkU.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.6,
+  "agreement_with_even_spacing": 0.244,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "grass"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bush"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "tree"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "tree"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tree"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "tree"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "tree"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "tree"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "tree"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "tree"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "car"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "tree"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "person"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "forest"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "wheel"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "headlight"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "headlight"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "windshield"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "parked on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "has",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "has",
+   "obj": 22,
+   "spans": [
+    [
+     3.5,
+     5.5
+    ],
+    [
+     6.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "has",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     6.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "has",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     4.5,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "moves away from",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     7.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "in front of",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     5.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "under",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     5.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     7.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     4.0,
+     5.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     4.0,
+     5.0
+    ],
+    [
+     7.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "attached to",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     7.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

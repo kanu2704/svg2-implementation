@@ -1,0 +1,474 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_009687",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_009687.mp4",
+ "fps": 24.0,
+ "n_frames": 457,
+ "mask_frames": 458,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "picture"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "picture"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "picture"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "picture"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "chair"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "wall"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "cake"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "glasses"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "bookcase"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "ipad"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "tissue"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "light"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "stool"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "stool"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "door"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "ground"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "plant"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "picture"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "picture"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "picture"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "picture"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "picture"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "picture"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "picture"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "picture"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "scarf"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "statue"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "statue"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "jeans"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "shirt"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "sweater"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "blanket"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "candle"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "candle"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "book"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "book"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "book"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "book"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "book"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "book"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "book"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "book"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "book"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "book"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "book"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "book"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "book"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "book"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "wear",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wear",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "sit on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "look at",
+   "obj": 10,
+   "spans": [
+    [
+     3.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "set down",
+   "obj": 10,
+   "spans": [
+    [
+     2.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "move toward",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bring cake to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "give to",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "move away from",
+   "obj": 3,
+   "spans": [
+    [
+     5.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wear",
+   "obj": 32,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wear",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "move toward",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "move toward",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "rest on",
+   "obj": 3,
+   "spans": [
+    [
+     5.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "have",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "have",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "rest on",
+   "obj": 3,
+   "spans": [
+    [
+     7.0,
+     20.0
+    ]
+   ]
+  }
+ ]
+}

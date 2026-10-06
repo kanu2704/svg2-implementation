@@ -1,0 +1,468 @@
+{
+ "dataset": "svg2test",
+ "video_id": "744_1X6KvqPjk6I",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/744_1X6KvqPjk6I.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.8,
+  "agreement_with_even_spacing": 0.444,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "tree"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "plant"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "fence"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "grass"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "plants, soil"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "plant"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "hat"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "hair"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "tail"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "dog leg"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "dog leg"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "dog leg"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "head"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "barricade"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "barricade"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "stone"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "gardening glove"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "fence"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pillar"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "fence"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "fence"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "pillar"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "fence"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "wall"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "wall"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "pillar"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "pillar"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "fence"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "trouser"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "looking at",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "wearing",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "wearing",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pulling",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "looking at",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "weeding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "behind",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "part of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,436 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_036919",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_036919.mp4",
+ "fps": 24.0,
+ "n_frames": 428,
+ "mask_frames": 428,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "floor"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "hand"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "pot"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "firewood"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "zinc"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "water"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "brick"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "stick"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "stick"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "stick"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "stick"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "cooking stove"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "stick"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "handle"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "handle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "moves away from",
+   "obj": 2,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves toward",
+   "obj": 2,
+   "spans": [
+    [
+     4.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "rinses in",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touches",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     7.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "drips",
+   "obj": 5,
+   "spans": [
+    [
+     4.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "contains",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "under",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     18.0
+    ]
+   ]
+  }
+ ]
+}

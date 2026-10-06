@@ -1,0 +1,529 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_015587",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_015587.mp4",
+ "fps": 24.0,
+ "n_frames": 320,
+ "mask_frames": 321,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "cat"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "cat"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "cat"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "cat"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "cat"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "cat"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "mat"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "litter box"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "lamp"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "curtain"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "platform"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "humidifier"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "floor"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "power cable"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "tent support pole"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "edge of framing"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "pet bowl"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "curtain"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "tube"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pet bed"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "pet bowl"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "curtain"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "sign"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "light"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "flowers"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "cat basket"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "pole"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "pole"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "sign"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "cushion"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "toys"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "bowl"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "curtain"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "mat"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "ball"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "bowl"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "curtain"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "mat"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "ball"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves away from",
+   "obj": 1,
+   "spans": [
+    [
+     2.5,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "jumps over",
+   "obj": 9,
+   "spans": [
+    [
+     12.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "pounces on",
+   "obj": 0,
+   "spans": [
+    [
+     12.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "plays with",
+   "obj": 0,
+   "spans": [
+    [
+     12.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "looks at",
+   "obj": 0,
+   "spans": [
+    [
+     8.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "play fights with",
+   "obj": 0,
+   "spans": [
+    [
+     12.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "approaches",
+   "obj": 0,
+   "spans": [
+    [
+     11.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "behind",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,487 @@
+{
+ "dataset": "svg2test",
+ "video_id": "520_JbMXRRGOEkk",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/520_JbMXRRGOEkk.mp4",
+ "fps": 6.0,
+ "n_frames": 32,
+ "mask_frames": 32,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 11,
+  "mask_frames": 32,
+  "contrast": 1.2,
+  "agreement_with_even_spacing": 0.312,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "snow"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "shield"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "barricade"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "post"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "ski stick"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "legs"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "jersey"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "helmet"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "glove"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "glove"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hockey stick"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "helmet"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "jersey"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "glove"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "legs"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "hockey stick"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "headgear"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "shirt"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pants"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "hockey stick"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "hand"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 19,
+   "spans": [
+    [
+     0.5,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 20,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wears",
+   "obj": 21,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "holds",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "approaches",
+   "obj": 6,
+   "spans": [
+    [
+     1.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wears",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "holds",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "approaches",
+   "obj": 6,
+   "spans": [
+    [
+     1.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves away from",
+   "obj": 6,
+   "spans": [
+    [
+     3.5,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "attacks goal",
+   "obj": 6,
+   "spans": [
+    [
+     1.0,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "celebrates",
+   "obj": 6,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "chases",
+   "obj": 0,
+   "spans": [
+    [
+     1.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "below",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     1.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.5,
+     5.0
+    ]
+   ]
+  }
+ ]
+}

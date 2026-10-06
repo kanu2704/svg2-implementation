@@ -1,0 +1,803 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_032329",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_032329.mp4",
+ "fps": 24.0,
+ "n_frames": 297,
+ "mask_frames": 297,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "man"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "building"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "building"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "building"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "man"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "woman"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "man"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "horse"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "carriage"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "people"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "people"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "person"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "person"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "people"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "people"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "road"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "sidewalk"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "door mat"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "barrier"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "building"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "building"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "sky"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "carriage"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "light"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "light"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "crowd"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "door"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "display case or panel"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "clothes"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "pants"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "clothes"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "jeans"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "pants"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "shirts"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "pants"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "door"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "seat"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "canopy"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "curtain"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "curtain"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "clothes"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "shorts"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "t-shirt"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "shorts"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "clothes"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "clothes"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "shorts"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "window"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "t-shirt"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "walking along",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "driving",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     1.5,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "controlling",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pulling",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     1.5,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "approaching",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "behind",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "under",
+   "obj": 40,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "carrying",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     2.5
+    ],
+    [
+     1.5,
+     5.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "carrying",
+   "obj": 4,
+   "spans": [
+    [
+     4.0,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "carrying",
+   "obj": 5,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "passing by",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "approaching",
+   "obj": 29,
+   "spans": [
+    [
+     1.0,
+     2.5
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     8.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "walking along",
+   "obj": 19,
+   "spans": [
+    [
+     8.5,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "walking along",
+   "obj": 19,
+   "spans": [
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     9.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "next to",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     11.0
+    ],
+    [
+     11.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "in front of",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.5,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in front of",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "next to",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     5.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     5.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 22,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     9.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "moving along",
+   "obj": 18,
+   "spans": [
+    [
+     9.5,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "approaching",
+   "obj": 28,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "carrying",
+   "obj": 12,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 22,
+   "spans": [
+    [
+     11.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "in",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     7.5,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     4.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "attached to",
+   "obj": 8,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "attached to",
+   "obj": 8,
+   "spans": [
+    [
+     4.0,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "attached to",
+   "obj": 25,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "attached to",
+   "obj": 25,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 50,
+   "pred": "in",
+   "obj": 22,
+   "spans": [
+    [
+     11.0,
+     13.0
+    ]
+   ]
+  }
+ ]
+}

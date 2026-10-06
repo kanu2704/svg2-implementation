@@ -1,0 +1,387 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_054217",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_054217.mp4",
+ "fps": 24.0,
+ "n_frames": 469,
+ "mask_frames": 469,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "girl"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "screen"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "safety net or wall"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "trampoline"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "ceiling"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "frame"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "mat"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "padding"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "dress"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "floor"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "grass"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "water"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "sky"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hair"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "leg"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "leg"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "arm"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "arm"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "pad"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "pad"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "pad"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "pad"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "play game with",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "look at",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "jump on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "move up and down relative to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "under",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 8,
+   "spans": [
+    [
+     4.5,
+     13.5
+    ],
+    [
+     13.5,
+     17.5
+    ],
+    [
+     18.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wear",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "inside",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "around",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "inside",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "around",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     9.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "swing relative to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.0
+    ]
+   ]
+  }
+ ]
+}

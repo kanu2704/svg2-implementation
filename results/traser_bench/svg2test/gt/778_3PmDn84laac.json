@@ -1,0 +1,434 @@
+{
+ "dataset": "svg2test",
+ "video_id": "778_3PmDn84laac",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/778_3PmDn84laac.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.5,
+  "agreement_with_even_spacing": 0.2,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "smoke"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "tree"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "grass/trees/shrubs"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "train bridge"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "sky"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "grass/trees"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "train"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "train car"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "train car"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "train car"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "cell phone tower"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "train car"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "locomotive"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "trees"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "bushes"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "bushes"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "fence post"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "fence post"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "stick"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "pole"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "tree"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "trees"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "trees"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "trails behind",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "rises in",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moves past",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moves across",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "connected to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "connected to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "connected to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "connected to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "moves across",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "attached to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "connected to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,596 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_009146",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_009146.mp4",
+ "fps": 24.0,
+ "n_frames": 311,
+ "mask_frames": 312,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "basket"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "tree"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "building"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sidewalk"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "planter platform"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "bollard"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "bollard"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "bollard"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "light"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "tree top"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "tree"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "sky"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "people"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "bag"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "electric scooter"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "tree"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "building"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "mixer truck"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "road"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "tactile paving"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "line"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "wheel"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "wheel"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "wheel"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "drum"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "clothes"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "light"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "plate"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "window"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "top case"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "wheel"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "wheel"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     3.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     1.5
+    ],
+    [
+     2.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "above",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "above",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "ride",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "hold",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "wear",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "move toward",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "carry",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "has",
+   "obj": 29,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "move toward",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "move toward",
+   "obj": 7,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "below",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "below",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "below",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     1.5,
+     6.5
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     1.5,
+     6.5
+    ],
+    [
+     6.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "above",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 14,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "below",
+   "obj": 14,
+   "spans": [
+    [
+     1.0,
+     7.0
+    ]
+   ]
+  }
+ ]
+}

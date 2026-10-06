@@ -1,0 +1,746 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1936_gvKlIkjfP0Q",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1936_gvKlIkjfP0Q.mp4",
+ "fps": 6.0,
+ "n_frames": 16,
+ "mask_frames": 16,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 6,
+  "mask_frames": 16,
+  "contrast": 1.6,
+  "agreement_with_even_spacing": 0.75,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "tripod"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "clutter"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "garage wall"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "garage"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "door"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "power outlet"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "rod"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "door controller"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "rod"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "metal"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wall"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "bagpack"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "hoodie"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "hand"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "side mirror"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "car door handle"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "tyre"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "metal"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "window"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "windshield"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "bonnet"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "rear wing"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "windshield"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "headlight"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "bonnet area"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "front bumper"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "tyres"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "fender"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "metal"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "rod"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "door controller"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "gym equipment"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "bagpack"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "hoodie"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "hand"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "side mirror"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "car door handle"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "tyre"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "windshield"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "bonnet"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "side mirror"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "rear wing"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "windshield"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "car engine area"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "headlight"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "bonnet area"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "front bumper"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "tires"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "door glass"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "car door"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "fender"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "metal"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "car roof"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "step ladder"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 43,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 45,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 33,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "mounted on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "attached to",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "worn by",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "points at",
+   "obj": 45,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "moves toward",
+   "obj": 45,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "in",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     1.5
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "attached to",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "attached to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 45,
+   "pred": "inside",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 50,
+   "pred": "attached to",
+   "obj": 51,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 51,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 54,
+   "pred": "attached to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 55,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  }
+ ]
+}

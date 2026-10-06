@@ -1,0 +1,459 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_043183",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_043183.mp4",
+ "fps": 24.0,
+ "n_frames": 238,
+ "mask_frames": 238,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "swing frame"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ground"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tree"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "facilities"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "sky"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "head"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "head"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "chain"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "board"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "leg"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "feet"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "body"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "body"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "leg"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "sits on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves back and forth relative to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "swings on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "holds",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "holds",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "stands on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moves back and forth relative to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "swings on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "attached to",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "moves back and forth relative to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "moves back and forth relative to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "below",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  }
+ ]
+}

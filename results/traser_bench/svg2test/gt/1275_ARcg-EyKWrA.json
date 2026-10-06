@@ -1,0 +1,593 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1275_ARcg-EyKWrA",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1275_ARcg-EyKWrA.mp4",
+ "fps": 6.0,
+ "n_frames": 61,
+ "mask_frames": 61,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 21,
+  "mask_frames": 61,
+  "contrast": 2.5,
+  "agreement_with_even_spacing": 0.049,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cage"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "chest of drawers"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "floor"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "framed poster"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "jar"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "curtain"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "furniture"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "faucet"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "household material"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "household material"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "furniture"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "wall"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "curtain"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "socket"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "window"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "cat"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "shirt"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "shorts"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "face"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "hand"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "leg"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "leg"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "hand"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "legs"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "tail"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "head"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "leg"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "leg"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "cage toy"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "cage toy"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "toy, cross"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "cage toy"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "cage toy"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "cage toy"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "cage toy"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "frame"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "frame"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "frame"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "frame"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "frame"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "frame"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "frame"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "frame"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "frame"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "frame"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "jar cover"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "jar"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "jar handle"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "wall frame"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "window"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "wall"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "wall"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "wall"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "wall molding"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "household material"
+  },
+  {
+   "col": 56,
+   "gt_id": 56,
+   "name": "cage frame"
+  },
+  {
+   "col": 57,
+   "gt_id": 57,
+   "name": "lamp base"
+  },
+  {
+   "col": 58,
+   "gt_id": 58,
+   "name": "lamp shade"
+  },
+  {
+   "col": 59,
+   "gt_id": 59,
+   "name": "drawer handle"
+  },
+  {
+   "col": 60,
+   "gt_id": 60,
+   "name": "drawer handle"
+  },
+  {
+   "col": 61,
+   "gt_id": 61,
+   "name": "drawer handle"
+  },
+  {
+   "col": 62,
+   "gt_id": 62,
+   "name": "drawer handle"
+  },
+  {
+   "col": 63,
+   "gt_id": 63,
+   "name": "drawer handle"
+  },
+  {
+   "col": 64,
+   "gt_id": 64,
+   "name": "drawer handle"
+  },
+  {
+   "col": 65,
+   "gt_id": 65,
+   "name": "bag"
+  },
+  {
+   "col": 66,
+   "gt_id": 66,
+   "name": "cage base"
+  },
+  {
+   "col": 67,
+   "gt_id": 67,
+   "name": "baseboard"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "hold",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "look at",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "help climb cage",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "in",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "grip",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "climb",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "touching",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "look at",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "below",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "touching",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "touching",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "inside",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  }
+ ]
+}

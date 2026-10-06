@@ -1,0 +1,589 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_031935",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_031935.mp4",
+ "fps": 24.0,
+ "n_frames": 441,
+ "mask_frames": 441,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "wardrope"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "box"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "air purfier"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "man"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "wall"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "roof"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "fan"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "wardrope"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "household material"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "household material"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "household material"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "household material"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "household material"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "apple"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "cloth"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "compartment"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "compartment"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "compartment"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "compartment"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "compartment"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "glasses"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "face"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "hair"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "shirt"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "beard"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "hands"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "wristband"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "handle"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "handle"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "wood"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "wood"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "wood"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "wood"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "wood"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "handle"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "wood"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "against",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "has",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ],
+    [
+     6.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holding",
+   "obj": 13,
+   "spans": [
+    [
+     10.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "has",
+   "obj": 24,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "has",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "below",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "attached to",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "against",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "has",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in",
+   "obj": 25,
+   "spans": [
+    [
+     9.5,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     10.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "above",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "below",
+   "obj": 21,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     5.5
+    ],
+    [
+     7.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 30,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  }
+ ]
+}

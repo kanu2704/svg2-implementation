@@ -1,0 +1,304 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1261_wsHfWwHXgLs",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1261_wsHfWwHXgLs.mp4",
+ "fps": 6.0,
+ "n_frames": 61,
+ "mask_frames": 61,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 21,
+  "mask_frames": 61,
+  "contrast": 1.8,
+  "agreement_with_even_spacing": 0.213,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ocean"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sky"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dog"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "inflatable float"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "pinna"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "side of a float"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "blanket"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "side of a float"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "riding",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "resting on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "moving over",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "looking at",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "rafting across",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "carrying",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "drifting on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "attached to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "part of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "attached to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "part of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moving over",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "attached to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "part of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  }
+ ]
+}

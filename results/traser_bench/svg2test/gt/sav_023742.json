@@ -1,0 +1,203 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_023742",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_023742.mp4",
+ "fps": 24.0,
+ "n_frames": 513,
+ "mask_frames": 514,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dog"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "led"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "plastic mat"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "plastic mat"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "toy"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "toy"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "toy"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "toy"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "food bowl"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "sink"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "glass"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "pet care products"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "background"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "ceiling"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "light"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "vent"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "floor"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "plexiglass joint"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "background"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "water dispenser"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "trash can"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "cabinet"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "towel"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "leaning on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     14.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "jumping on",
+   "obj": 3,
+   "spans": [
+    [
+     3.0,
+     9.0
+    ],
+    [
+     14.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "standing on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ],
+    [
+     14.0,
+     22.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "standing on",
+   "obj": 4,
+   "spans": [
+    [
+     9.0,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "moving on",
+   "obj": 4,
+   "spans": [
+    [
+     9.0,
+     14.0
+    ]
+   ]
+  }
+ ]
+}

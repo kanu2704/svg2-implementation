@@ -1,0 +1,567 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_033373",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_033373.mp4",
+ "fps": 24.0,
+ "n_frames": 227,
+ "mask_frames": 227,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "person"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "person"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "person"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "person"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "pavement"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "road"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "car"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "car"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "sign"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "sign"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "plants"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "sky bridge"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "fence"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "cars"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "trees"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "building"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "fence"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "utility pole"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "trees"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "bushes"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "crowds"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "sewer"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "concrete wall"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "car"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "bike"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "bike"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "bag"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "box"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "head"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "plate"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "stone block"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "car"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     6.5,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carrying",
+   "obj": 28,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "rides",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     8.5
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     4.0,
+     7.0
+    ],
+    [
+     6.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "rides",
+   "obj": 27,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "follows",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     4.5,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holds",
+   "obj": 29,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "behind",
+   "obj": 12,
+   "spans": [
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     6.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 16,
+   "spans": [
+    [
+     1.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.5
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "above",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "above",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "behind",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     4.0,
+     6.5
+    ],
+    [
+     7.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "in",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     4.0
+    ],
+    [
+     3.0,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     4.0
+    ],
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  }
+ ]
+}

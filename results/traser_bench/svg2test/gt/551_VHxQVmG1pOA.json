@@ -1,0 +1,840 @@
+{
+ "dataset": "svg2test",
+ "video_id": "551_VHxQVmG1pOA",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/551_VHxQVmG1pOA.mp4",
+ "fps": 6.0,
+ "n_frames": 41,
+ "mask_frames": 41,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 14,
+  "mask_frames": 41,
+  "contrast": 1.6,
+  "agreement_with_even_spacing": 0.073,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "girl"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "man"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "man"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "man"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "man"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "glass dome or cover"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "glass dome or cover"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "glass dome or cover"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "woman"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "woman"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "ceiling"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "people"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "people"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "logo"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "wall"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "boxes"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "wall"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "boxes (uncertain)"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "boxes (uncertain)"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "light"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "light"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "doorway"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "wall"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "display counter"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "display counter"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "watch"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "glass"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "cake"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "cake"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "cake"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "cake"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "cake"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "cake"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "cake"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "countertop"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "pastries"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "pastries"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "pastries"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "countertop"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "t-shirt"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "clothes"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "hair clip"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "t-shirt"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "cake"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "cake"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "cake"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "cake"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 26,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "browsing at",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "looking at",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 41,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "covering",
+   "obj": 35,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "covering",
+   "obj": 36,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "covering",
+   "obj": 37,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "talking to",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "moved toward",
+   "obj": 0,
+   "spans": [
+    [
+     1.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "browsing at",
+   "obj": 23,
+   "spans": [
+    [
+     2.0,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "looking at",
+   "obj": 23,
+   "spans": [
+    [
+     1.5,
+     6.5
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "wearing",
+   "obj": 42,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "wearing",
+   "obj": 40,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "in",
+   "obj": 22,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "in front of",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "under",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 27,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 32,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "under",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "under",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "on",
+   "obj": 34,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 41,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 43,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 44,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 45,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 46,
+   "pred": "inside",
+   "obj": 23,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  }
+ ]
+}

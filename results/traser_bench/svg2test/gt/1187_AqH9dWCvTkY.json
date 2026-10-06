@@ -1,0 +1,246 @@
+{
+ "dataset": "svg2test",
+ "video_id": "1187_AqH9dWCvTkY",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/1187_AqH9dWCvTkY.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 1.2,
+  "agreement_with_even_spacing": 0.111,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "track"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "runner"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "runner"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "runner"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "runner"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "person"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "runner"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "person"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "person"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "person"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "person"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "bag"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "grass"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "hill"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "person"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "person"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "person"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "person"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "person"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "crowd"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "fence"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "screen"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "board"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "screen"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "sky"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "track"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "logo"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "logo"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "chair"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "chair"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "chair"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "chair"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "garbage can"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "person"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "person"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "person"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "runs on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "pulls away from",
+   "obj": 2,
+   "spans": [
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "runs on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "follows",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}

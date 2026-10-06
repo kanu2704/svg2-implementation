@@ -1,0 +1,676 @@
+{
+ "dataset": "svg2test",
+ "video_id": "sav_030325",
+ "source": "sav",
+ "video": "/tmp/svg2test_videos/sav_030325.mp4",
+ "fps": 24.0,
+ "n_frames": 365,
+ "mask_frames": 366,
+ "time_unit": "index",
+ "frame_alignment": null,
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "person"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "wall"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "floor"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "person"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "tennis racket"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "tennis racket"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "racquet ball"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "sportwear"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "short"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "cap"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "shoe"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "shoe"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "sport bra"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "joggers"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "shoe"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "shoe"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     3.0,
+     14.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     2.0
+    ],
+    [
+     5.0,
+     12.0
+    ],
+    [
+     14.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     3.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     4.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "moves away from",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.5
+    ],
+    [
+     10.5,
+     13.0
+    ],
+    [
+     14.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "playing with",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "competes against",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wearing",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "below",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     11.5,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 15,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ],
+    [
+     6.5,
+     8.5
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "falls onto",
+   "obj": 2,
+   "spans": [
+    [
+     14.5,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     11.0,
+     14.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     11.0,
+     14.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     3.0,
+     14.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     7.0,
+     10.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "approaches",
+   "obj": 3,
+   "spans": [
+    [
+     2.0,
+     4.0
+    ],
+    [
+     7.0,
+     8.5
+    ],
+    [
+     12.0,
+     13.5
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "moves away from",
+   "obj": 0,
+   "spans": [
+    [
+     1.0,
+     4.5
+    ],
+    [
+     5.5,
+     8.0
+    ],
+    [
+     10.5,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.0,
+     4.0
+    ],
+    [
+     5.0,
+     6.0
+    ],
+    [
+     7.0,
+     8.0
+    ],
+    [
+     10.0,
+     12.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     4.0
+    ],
+    [
+     5.0,
+     6.0
+    ],
+    [
+     7.0,
+     8.0
+    ],
+    [
+     10.0,
+     12.0
+    ],
+    [
+     15.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ],
+    [
+     5.0,
+     7.0
+    ],
+    [
+     9.0,
+     12.0
+    ],
+    [
+     14.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     12.0,
+     16.0
+    ]
+   ]
+  }
+ ]
+}

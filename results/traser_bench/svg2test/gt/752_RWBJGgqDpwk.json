@@ -1,0 +1,597 @@
+{
+ "dataset": "svg2test",
+ "video_id": "752_RWBJGgqDpwk",
+ "source": "vipseg",
+ "video": "/tmp/svg2test_videos/752_RWBJGgqDpwk.mp4",
+ "fps": 6.0,
+ "n_frames": 45,
+ "mask_frames": 45,
+ "time_unit": "index",
+ "frame_alignment": {
+  "pictures": 15,
+  "mask_frames": 45,
+  "contrast": 2.9,
+  "agreement_with_even_spacing": 0.133,
+  "used": "even"
+ },
+ "objects_without_mask_column": [],
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "plant"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "plant"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "bag"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "plant"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "plant"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "plant"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "plant"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "plant"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "plant"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "plant"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "plant bed"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "plant bed"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "plant bed"
+  },
+  {
+   "col": 13,
+   "gt_id": 13,
+   "name": "plant bed"
+  },
+  {
+   "col": 14,
+   "gt_id": 14,
+   "name": "plant bed"
+  },
+  {
+   "col": 15,
+   "gt_id": 15,
+   "name": "shovel"
+  },
+  {
+   "col": 16,
+   "gt_id": 16,
+   "name": "shovel"
+  },
+  {
+   "col": 17,
+   "gt_id": 17,
+   "name": "bucket"
+  },
+  {
+   "col": 18,
+   "gt_id": 18,
+   "name": "post"
+  },
+  {
+   "col": 19,
+   "gt_id": 19,
+   "name": "post"
+  },
+  {
+   "col": 20,
+   "gt_id": 20,
+   "name": "post"
+  },
+  {
+   "col": 21,
+   "gt_id": 21,
+   "name": "post"
+  },
+  {
+   "col": 22,
+   "gt_id": 22,
+   "name": "tree"
+  },
+  {
+   "col": 23,
+   "gt_id": 23,
+   "name": "stick"
+  },
+  {
+   "col": 24,
+   "gt_id": 24,
+   "name": "barricade"
+  },
+  {
+   "col": 25,
+   "gt_id": 25,
+   "name": "grass"
+  },
+  {
+   "col": 26,
+   "gt_id": 26,
+   "name": "shovel"
+  },
+  {
+   "col": 27,
+   "gt_id": 27,
+   "name": "plant"
+  },
+  {
+   "col": 28,
+   "gt_id": 28,
+   "name": "grass"
+  },
+  {
+   "col": 29,
+   "gt_id": 29,
+   "name": "plant"
+  },
+  {
+   "col": 30,
+   "gt_id": 30,
+   "name": "man"
+  },
+  {
+   "col": 31,
+   "gt_id": 31,
+   "name": "man"
+  },
+  {
+   "col": 32,
+   "gt_id": 32,
+   "name": "wood"
+  },
+  {
+   "col": 33,
+   "gt_id": 33,
+   "name": "wood"
+  },
+  {
+   "col": 34,
+   "gt_id": 34,
+   "name": "wood"
+  },
+  {
+   "col": 35,
+   "gt_id": 35,
+   "name": "wood"
+  },
+  {
+   "col": 36,
+   "gt_id": 36,
+   "name": "wood"
+  },
+  {
+   "col": 37,
+   "gt_id": 37,
+   "name": "wood"
+  },
+  {
+   "col": 38,
+   "gt_id": 38,
+   "name": "wood"
+  },
+  {
+   "col": 39,
+   "gt_id": 39,
+   "name": "wood"
+  },
+  {
+   "col": 40,
+   "gt_id": 40,
+   "name": "wood"
+  },
+  {
+   "col": 41,
+   "gt_id": 41,
+   "name": "wood"
+  },
+  {
+   "col": 42,
+   "gt_id": 42,
+   "name": "wood"
+  },
+  {
+   "col": 43,
+   "gt_id": 43,
+   "name": "wood"
+  },
+  {
+   "col": 44,
+   "gt_id": 44,
+   "name": "wood"
+  },
+  {
+   "col": 45,
+   "gt_id": 45,
+   "name": "wood"
+  },
+  {
+   "col": 46,
+   "gt_id": 46,
+   "name": "wood"
+  },
+  {
+   "col": 47,
+   "gt_id": 47,
+   "name": "face"
+  },
+  {
+   "col": 48,
+   "gt_id": 48,
+   "name": "shirt"
+  },
+  {
+   "col": 49,
+   "gt_id": 49,
+   "name": "hand"
+  },
+  {
+   "col": 50,
+   "gt_id": 50,
+   "name": "trouser"
+  },
+  {
+   "col": 51,
+   "gt_id": 51,
+   "name": "shoe"
+  },
+  {
+   "col": 52,
+   "gt_id": 52,
+   "name": "face"
+  },
+  {
+   "col": 53,
+   "gt_id": 53,
+   "name": "shirt"
+  },
+  {
+   "col": 54,
+   "gt_id": 54,
+   "name": "hand"
+  },
+  {
+   "col": 55,
+   "gt_id": 55,
+   "name": "hand"
+  },
+  {
+   "col": 56,
+   "gt_id": 56,
+   "name": "container"
+  },
+  {
+   "col": 57,
+   "gt_id": 57,
+   "name": "container"
+  },
+  {
+   "col": 58,
+   "gt_id": 58,
+   "name": "container"
+  },
+  {
+   "col": 59,
+   "gt_id": 59,
+   "name": "container"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "moves across",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "covering",
+   "obj": 39,
+   "spans": [
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "over",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "inside",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "inside",
+   "obj": 44,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "inside",
+   "obj": 43,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "behind",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "stuck in",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "holding",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "cooperates with",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "in front of",
+   "obj": 31,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "approaches",
+   "obj": 39,
+   "spans": [
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "covering bed with tarp",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "in front of",
+   "obj": 39,
+   "spans": [
+    [
+     4.5,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "holding",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "approaches",
+   "obj": 39,
+   "spans": [
+    [
+     3.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "covering bed with tarp",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "behind",
+   "obj": 39,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 44,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 56,
+   "pred": "inside",
+   "obj": 59,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 57,
+   "pred": "inside",
+   "obj": 59,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 58,
+   "pred": "inside",
+   "obj": 59,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 59,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     0.0,
+     8.0
+    ]
+   ]
+  }
+ ]
+}
