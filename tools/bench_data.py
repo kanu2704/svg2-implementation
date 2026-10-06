@@ -271,6 +271,9 @@ def extract_vipseg_frames(archive, video_ids, out_dir):
     The download may be a zip or a tar (.tar, .tar.gz, ...); anything else raises a clear error."""
     import tarfile
     wanted = set(video_ids)
+    already = {v for v in wanted if any(Path(out_dir, v).glob("*.jpg"))}
+    if already == wanted:                       # extracted in an earlier run of this session
+        return already
     found = set()
 
     def keep(name, read):
