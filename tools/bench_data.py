@@ -309,9 +309,11 @@ def align_frames(masks, n_src):
     # ffmpeg's own frame-rate conversion spaces the repeats evenly; use that when the masks are not clear
     uniform = [round(j * (n_src - 1) / max(1, m - 1)) for j in range(m)]
     agree = sum(a == b for a, b in zip(mapping, uniform)) / m
-    if contrast is None or contrast < 3:
-        return uniform, contrast, agree
-    return mapping, contrast, agree
+    # Measured on SVG2test: 63 of 67 videos show no clear repeats and the 4 "clear" ones disagree with
+    # even spacing (2-11 %), i.e. their cuts are scene changes, not repeats. With mask frames = 3n-2 for
+    # n pictures, the authors' 6 fps video spans exactly the pictures' 2 fps time line, so each mask
+    # frame gets the nearest picture (even spacing, at most 1/6 s away) for every video.
+    return uniform, contrast, agree
 
 
 def extract_vipseg_frames(archive, video_ids, out_dir):
@@ -432,7 +434,7 @@ def prepare_svg2test(video_id, row, masks, video, bench, results):
         alignment = {"pictures": len(frames), "mask_frames": len(masks),
                      "contrast": None if contrast is None else round(contrast, 1),
                      "agreement_with_even_spacing": None if agree is None else round(agree, 3),
-                     "used": "detected" if contrast is not None and contrast >= 3 else "even"}
+                     "used": "even"}
     elif row["split"] == "sav" and n_frames > len(masks):
         # the authors' copy is shorter: keep the first len(masks) frames so the timeline matches
         tmp = Path(video).with_suffix(".trim.mp4")
