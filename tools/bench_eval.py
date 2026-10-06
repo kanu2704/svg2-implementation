@@ -1,5 +1,5 @@
 """Score TRASER's predictions like Table 2 of the SVG2 paper: object accuracy, relation recall and
-triplet recall, lenient semantic criterion, temporal IoU >= 0.5.
+triplet recall, lenient semantic criterion, temporal IoU > 0.5.
 
 What the paper says (Sec. 5, "Evaluation Setup") and how it is done here:
   - Models get the human object trajectories, so TRASER's "object k" IS a human object (via the mask
@@ -12,7 +12,8 @@ What the paper says (Sec. 5, "Evaluation Setup") and how it is done here:
   - Object accuracy: a human object is right if the label TRASER gave it is not a mismatch.
   - Relation recall: a human relation is right if TRASER has a relation between the same two objects,
     in the same direction, whose predicate is not a mismatch and whose time spans overlap the human
-    ones with temporal IoU >= threshold (spans as unions of intervals; IoU of total lengths).
+    ones with temporal IoU > threshold (paper: "interval IoU > threshold"; spans as unions of intervals;
+    IoU of total lengths).
   - Triplet recall: the relation is right AND both objects' labels are right (the camera, id -1,
     counts as right).
   - Not stated in the paper, our choice (reported): pooled over all human objects/relations of a
@@ -244,7 +245,7 @@ def score_video(gt, pred, stats, judge, criterion="lenient", thr=0.5):
     for r in gt["relations"]:
         cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
         word_ok = [(p, sp) for p, sp in cands if ok("relation", r["pred"], p)]
-        timed = [1 for _, sp in word_ok if tiou(r["spans"], sp) >= thr]
+        timed = [1 for _, sp in word_ok if tiou(r["spans"], sp) > thr]
         out["relation_ok_any_time"] += bool(word_ok)
         if timed:
             out["relation_ok"] += 1
