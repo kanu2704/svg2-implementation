@@ -1,10 +1,11 @@
 """Benchmark data for regenerating the TRASER row of the SVG2 paper's Table 2 (PVSG, VidOR, SVG2test).
 
-Every test video becomes one folder ``<bench>/<dataset>/<video_id>/`` with
+Every test video becomes one self-contained folder ``<bench>/<dataset>/<video_id>/`` with
+  - ``video.mp4``:  the video TRASER reads (``gt["video"]`` is this path, relative to the folder)
   - ``masks.json``: TRASER's mask input (frames x objects, COCO RLE), one column per human object
   - ``gt.json``:    the human labels in one common format (below)
-and the video itself is referenced by path (``gt["video"]``). ``gt.json`` is also copied to
-``<results>/<dataset>/gt/`` so the evaluation can run later without the big data.
+so the whole bench folder can be packed into a Kaggle dataset and used offline. ``gt.json`` is also
+copied to ``<results>/<dataset>/gt/`` so the evaluation can run later without the big data.
 
 gt.json:
   {"dataset", "video_id", "video", "fps", "n_frames",
@@ -25,9 +26,11 @@ Sources:
            Masks: PNG per frame, pixel value = object id.
   VidOR    validation split (835 videos), Hugging Face shangxd/vidor. Labels are boxes; like the paper
            (Sec. 4.3) we turn them into masks with SAM 2 (box prompt on each sampled frame).
-  SVG2test 100 videos (67 VIPSeg + 33 SA-V), Hugging Face UWGZQ/Synthetic_Visual_Genome2
-           (data/SVG2_test + masks/SVG2_test). Videos: VIPSeg frames re-encoded at 6 fps and 720p
-           (docs/DATA.md); SA-V mp4s from Meta's download links.
+  SVG2test 100 videos (paper Sec. 3: "from SA-V and VSPW"), Hugging Face UWGZQ/Synthetic_Visual_Genome2
+           (data/SVG2_test + masks/SVG2_test; the release calls the VSPW part "vipseg"). Videos: the 67
+           VSPW videos are VSPW's frames at 6 fps (one frame per mask frame; the human relation times
+           end at frames / 6); the 33 SA-V videos are SA-V's 24 fps test frames (Meta's links).
+           VIPSeg keeps only every 3rd VSPW frame; it is kept as a fallback (pictures repeated).
 """
 import glob
 import io
@@ -65,11 +68,24 @@ def traser_frames(video):
     return [int(i) for i in T._frame_indices(n, n / fps)], n, fps
 
 
-def write_item(bench, results, gt, masks):
-    d = Path(bench, gt["dataset"], gt["video_id"])
+def item_dir(bench, dataset, video_id):
+    return Path(bench, dataset, video_id)
+
+
+def write_item(bench, results, gt, masks, video=None):
+    """Write one self-contained item. `video` (a path) is copied in as video.mp4; masks=None leaves
+    the masks for later (VidOR: SAM 2 needs a GPU)."""
+    d = item_dir(bench, gt["dataset"], gt["video_id"])
     d.mkdir(parents=True, exist_ok=True)
-    with open(d / "masks.json", "w") as f:
-        json.dump(masks, f)
+    if video is not None:
+        target = d / "video.mp4"
+        if Path(video).resolve() != target.resolve():
+            shutil.copyfile(video, target)
+        gt["video_source"] = str(video)
+        gt["video"] = "video.mp4"
+    if masks is not None:
+        with open(d / "masks.json", "w") as f:
+            json.dump(masks, f)
     for path in (d / "gt.json", Path(results, gt["dataset"], "gt", f"{gt['video_id']}.json")):
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, "w") as f:
@@ -77,13 +93,35 @@ def write_item(bench, results, gt, masks):
     return d
 
 
-def item_ready(bench, dataset, video_id):
-    d = Path(bench, dataset, video_id)
-    return (d / "masks.json").exists() and (d / "gt.json").exists()
+def item_video(bench, gt):
+    """Absolute path of an item's video (gt["video"] is relative to the item folder)."""
+    v = Path(gt["video"])
+    return v if v.is_absolute() else item_dir(bench, gt["dataset"], gt["video_id"]) / v
+
+
+def masks_path(bench, dataset, video_id, work=None):
+    """masks.json of an item: in the (writable) work folder if made there, else in the item."""
+    if work is not None and item_dir(work, dataset, video_id).joinpath("masks.json").exists():
+        return item_dir(work, dataset, video_id) / "masks.json"
+    return item_dir(bench, dataset, video_id) / "masks.json"
+
+
+def item_ready(bench, dataset, video_id, work=None):
+    return masks_path(bench, dataset, video_id, work).exists() and item_dir(bench, dataset, video_id).joinpath("gt.json").exists()
 
 
 def load_gt(bench, dataset, video_id):
-    return json.load(open(Path(bench, dataset, video_id, "gt.json")))
+    return json.load(open(item_dir(bench, dataset, video_id) / "gt.json"))
+
+
+def sparse_masks(masks, keep):
+    """Keep real masks only on the frames TRASER samples (`keep`); empty RLEs elsewhere (much smaller)."""
+    if not masks:
+        return masks
+    h, w = masks[0][0]["size"]
+    empty = rle(np.zeros((h, w), np.uint8))
+    keep = set(keep)
+    return [row if f in keep else [empty] * len(row) for f, row in enumerate(masks)]
 
 
 def clean_label(s):
@@ -128,7 +166,7 @@ def prepare_pvsg(pvsg_root, anno, video_id, bench, results):
           "objects": [{"col": k, "gt_id": o["object_id"], "name": clean_label(o["category"]),
                        "is_thing": o.get("is_thing")} for k, o in enumerate(objects)],
           "relations": rels}
-    return write_item(bench, results, gt, masks)
+    return write_item(bench, results, gt, masks, video=video)
 
 
 # ----------------------------------------------------------------------------- VidOR
@@ -164,28 +202,55 @@ def vidor_index(vidor):
 
 
 class BoxToMask:
-    """SAM 2.1 (hiera-large) image predictor: box prompts -> masks. Loaded once, on first use."""
-    def __init__(self, model_id="facebook/sam2.1-hiera-large"):
+    """SAM 2.1 (hiera-large) image predictor: box prompts -> masks. Loaded once, on first use.
+    checkpoint: a local sam2.1_hiera_large.pt (offline); else the weights come from the Hub."""
+    def __init__(self, model_id="facebook/sam2.1-hiera-large", checkpoint=None):
         import torch
         from sam2.sam2_image_predictor import SAM2ImagePredictor
         self.torch = torch
-        self.predictor = SAM2ImagePredictor.from_pretrained(model_id, device="cuda")
+        if checkpoint:
+            from sam2.build_sam import build_sam2
+            self.predictor = SAM2ImagePredictor(build_sam2("configs/sam2.1/sam2.1_hiera_l.yaml", str(checkpoint), device="cuda"))
+        else:
+            self.predictor = SAM2ImagePredictor.from_pretrained(model_id, device="cuda")
 
     def __call__(self, image_rgb, boxes):
         torch = self.torch
-        with torch.inference_mode(), torch.autocast("cuda", dtype=torch.float16):
+        dtype = torch.bfloat16 if torch.cuda.get_device_capability()[0] >= 8 else torch.float16
+        with torch.inference_mode(), torch.autocast("cuda", dtype=dtype):
             self.predictor.set_image(image_rgb)
             masks, _, _ = self.predictor.predict(box=np.asarray(boxes, dtype=np.float32), multimask_output=False)
         h, w = image_rgb.shape[:2]
         return np.asarray(masks).reshape(len(boxes), -1, h, w)[:, 0] > 0
 
 
-def prepare_vidor(ann_path, video, bench, results, box_to_mask):
-    from decord import VideoReader
+def prepare_vidor_item(ann_path, video, bench, results):
+    """CPU part: labels + video + annotation into the item (masks come later, from SAM 2 on a GPU)."""
     a = json.load(open(ann_path))
     video_id = str(a.get("video_id") or Path(ann_path).stem)
-    sampled, n_frames, video_fps = traser_frames(video)
+    _, n_frames, video_fps = traser_frames(video)
     fps = float(a.get("fps") or video_fps)
+    objects = sorted(a["subject/objects"], key=lambda o: o["tid"])
+    rels = [{"subj": r["subject_tid"], "pred": clean_label(r["predicate"]), "obj": r["object_tid"],
+             "spans": [[r["begin_fid"] / fps, r["end_fid"] / fps]]}           # VidOR's end_fid is exclusive
+            for r in a["relation_instances"]]
+    gt = {"dataset": "vidor", "video_id": video_id, "fps": fps, "n_frames": n_frames,
+          "video_fps": video_fps, "ann_frames": a.get("frame_count"), "time_unit": "seconds",
+          "objects": [{"col": k, "gt_id": o["tid"], "name": clean_label(o["category"])} for k, o in enumerate(objects)],
+          "relations": rels}
+    d = write_item(bench, results, gt, None, video=video)
+    shutil.copyfile(ann_path, d / "vidor_anno.json")
+    return d
+
+
+def make_vidor_masks(bench, video_id, box_to_mask, out=None):
+    """GPU part: SAM 2 masks from VidOR's boxes on the frames TRASER samples. Written to
+    <out or bench>/vidor/<video_id>/masks.json (out = a writable folder when bench is read-only)."""
+    from decord import VideoReader
+    d = item_dir(bench, "vidor", video_id)
+    a = json.load(open(d / "vidor_anno.json"))
+    video = d / "video.mp4"
+    sampled, n_frames, _ = traser_frames(video)
     objects = sorted(a["subject/objects"], key=lambda o: o["tid"])
     col = {o["tid"]: k for k, o in enumerate(objects)}
     vr = VideoReader(str(video))
@@ -205,15 +270,18 @@ def prepare_vidor(ann_path, video, bench, results, box_to_mask):
         for b, m in zip(boxes, box_to_mask(img, xyxy)):
             row[col[b["tid"]]] = rle(m)
         masks[f] = row
+    target = item_dir(out or bench, "vidor", video_id)
+    target.mkdir(parents=True, exist_ok=True)
+    with open(target / "masks.json", "w") as f:
+        json.dump(masks, f)
+    return target / "masks.json"
 
-    rels = [{"subj": r["subject_tid"], "pred": clean_label(r["predicate"]), "obj": r["object_tid"],
-             "spans": [[r["begin_fid"] / fps, r["end_fid"] / fps]]}           # VidOR's end_fid is exclusive
-            for r in a["relation_instances"]]
-    gt = {"dataset": "vidor", "video_id": video_id, "video": str(video), "fps": fps, "n_frames": n_frames,
-          "video_fps": video_fps, "ann_frames": a.get("frame_count"), "time_unit": "seconds",
-          "objects": [{"col": k, "gt_id": o["tid"], "name": clean_label(o["category"])} for k, o in enumerate(objects)],
-          "relations": rels}
-    return write_item(bench, results, gt, masks)
+
+def prepare_vidor(ann_path, video, bench, results, box_to_mask):
+    """Both parts at once (online use)."""
+    d = prepare_vidor_item(ann_path, video, bench, results)
+    make_vidor_masks(bench, d.name, box_to_mask)
+    return d
 
 
 # ----------------------------------------------------------------------------- SVG2test
@@ -354,6 +422,54 @@ def extract_vipseg_frames(archive, video_ids, out_dir):
     return found
 
 
+def extract_vspw_frames(archive, video_ids, out_dir):
+    """Copy only the needed videos' frames out of a VSPW download (zip or tar):
+    .../data/<video>/origin/*.jpg. Returns the set of videos found."""
+    import tarfile
+    wanted = set(video_ids)
+    already = {v for v in wanted if any(Path(out_dir, v).glob("*.jpg"))}
+    if already == wanted:
+        return already
+    found = set(already)
+
+    def keep(name, read):
+        parts = name.split("/")
+        if len(parts) >= 3 and parts[-2] == "origin" and parts[-3] in wanted and parts[-1].endswith(".jpg"):
+            target = Path(out_dir, parts[-3], parts[-1])
+            if not target.exists():
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(read())
+            found.add(parts[-3])
+
+    if zipfile.is_zipfile(archive):
+        with zipfile.ZipFile(archive) as z:
+            for m in z.infolist():
+                keep(m.filename, lambda m=m: z.read(m))
+    elif tarfile.is_tarfile(archive):
+        with tarfile.open(archive, "r:*") as t:
+            for m in t:
+                if m.isfile():
+                    keep(m.name, lambda m=m: t.extractfile(m).read())
+    else:
+        head = open(archive, "rb").read(300)
+        if head.lstrip().startswith(b"<"):
+            raise RuntimeError("the VSPW download is a web page, not the dataset: Google Drive refused (download "
+                               "limit). Download it by hand (see the notebook).")
+        raise RuntimeError(f"unknown archive type for {archive}: first bytes {head[:16]!r}")
+    return found
+
+
+def frames_to_mp4(frames_dir, out_mp4, fps=6, size=None):
+    """Encode a folder of JPEG frames (sorted by name) as an mp4; size=(width, height) to resize."""
+    out_mp4 = Path(out_mp4)
+    out_mp4.parent.mkdir(parents=True, exist_ok=True)
+    vf = ["-vf", f"scale={size[0]}:{size[1]}"] if size else ["-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2"]
+    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(fps), "-pattern_type", "glob",
+           "-i", os.path.join(str(frames_dir), "*.jpg"), *vf, "-c:v", "libx264", "-pix_fmt", "yuv420p", str(out_mp4)]
+    subprocess.run(cmd, check=True)
+    return out_mp4
+
+
 def sav_links(links_file):
     """Meta's SA-V download list: lines '<file_name>\\t<url>' -> {file_name: url}."""
     links = {}
@@ -411,7 +527,10 @@ def fetch_sav_videos(links, video_ids, out_dir, fps=24):
     return need
 
 
-def prepare_svg2test(video_id, row, masks, video, bench, results):
+def prepare_svg2test(video_id, row, masks, video, bench, results, vipseg_frames=None):
+    """One SVG2test video -> self-contained item. `video` is the finished mp4 (VSPW or SA-V). Only for the
+    VIPSeg fallback, pass `vipseg_frames` (that video's VIPSeg pictures): the mp4 is then rebuilt with one
+    frame per mask frame, each mask frame showing the nearest picture."""
     objects = []
     for o in row["objects"]:
         key = next(k for k in o if k.startswith("object_"))
@@ -424,17 +543,14 @@ def prepare_svg2test(video_id, row, masks, video, bench, results):
             for r in row["relationships"]]
     sampled, n_frames, video_fps = traser_frames(video)
     alignment = None
-    frames_dir = Path(video).parent.parent / "vipseg_frames" / video_id
-    frames = sorted(frames_dir.glob("*.jpg")) if row["split"] == "vipseg" else []
+    frames = sorted(Path(vipseg_frames).glob("*.jpg")) if vipseg_frames else []
     if frames and len(frames) != len(masks):
-        # rebuild the video so it has one frame per mask frame (each picture repeated as the masks show)
         mapping, contrast, agree = align_frames(masks, len(frames))
-        vipseg_to_mp4(frames_dir, video, sequence=[frames[min(i, len(frames) - 1)] for i in mapping])
+        vipseg_to_mp4(vipseg_frames, video, sequence=[frames[min(i, len(frames) - 1)] for i in mapping])
         sampled, n_frames, video_fps = traser_frames(video)
-        alignment = {"pictures": len(frames), "mask_frames": len(masks),
-                     "contrast": None if contrast is None else round(contrast, 1),
-                     "agreement_with_even_spacing": None if agree is None else round(agree, 3),
-                     "used": "even"}
+        alignment = {"source": "vipseg (every 3rd VSPW frame, repeated)", "pictures": len(frames),
+                     "mask_frames": len(masks), "contrast": None if contrast is None else round(contrast, 1),
+                     "agreement_with_even_spacing": None if agree is None else round(agree, 3), "used": "even"}
     elif row["split"] == "sav" and n_frames > len(masks):
         # the authors' copy is shorter: keep the first len(masks) frames so the timeline matches
         tmp = Path(video).with_suffix(".trim.mp4")
@@ -443,8 +559,8 @@ def prepare_svg2test(video_id, row, masks, video, bench, results):
         tmp.replace(video)
         alignment = {"trimmed_from": n_frames, "mask_frames": len(masks)}
         sampled, n_frames, video_fps = traser_frames(video)
-    gt = {"dataset": "svg2test", "video_id": video_id, "source": row["split"], "video": str(video),
+    gt = {"dataset": "svg2test", "video_id": video_id, "source": row["split"],
           "fps": video_fps, "n_frames": n_frames, "mask_frames": len(masks), "time_unit": "index",
           "frame_alignment": alignment, "objects_without_mask_column": bad,
           "objects": [o for o in objects if o["col"] < n_cols], "relations": rels}
-    return write_item(bench, results, gt, masks)
+    return write_item(bench, results, gt, sparse_masks(masks, sampled), video=video)

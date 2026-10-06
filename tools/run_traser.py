@@ -28,12 +28,36 @@ sys.path.insert(0, os.path.join(REPO, "third_party/SVG2/traser"))
 import inference as T  # noqa: E402  (their module: TRASER, select_tokens, rearrange_token, helpers, constants)
 
 
-def load_model(model_id=None, dtype="float16", device=None):
-    """Model, processor and tokenizer, as in their main (load once, reuse for many videos)."""
+def pick_dtype(dtype="auto"):
+    """bfloat16 (what the paper used) on GPUs that have it (compute capability >= 8), else float16."""
+    if dtype != "auto":
+        return dtype
+    if torch.cuda.is_available() and torch.cuda.get_device_capability()[0] >= 8:
+        return "bfloat16"
+    return "float16"
+
+
+def avoid_math_attention():
+    """On GPUs without FlashAttention (T4 = compute capability 7.5), transformers calls SDPA with
+    enable_gqa=True, which only the plain "math" kernel supports there: it builds the full
+    heads x L x L attention table (3-7 GB for long inputs) and runs out of memory. Repeating the
+    key/value heads instead (what transformers does when a mask is given) lets SDPA use its
+    memory-efficient kernel. Same result, linear memory."""
+    if torch.cuda.is_available() and torch.cuda.get_device_capability()[0] < 8:
+        import transformers.integrations.sdpa_attention as sdpa
+        sdpa.use_gqa_in_sdpa = lambda *args, **kwargs: False
+        return True
+    return False
+
+
+def load_model(model_id=None, dtype="auto", device=None, base_model=None):
+    """Model, processor and tokenizer, as in their main (load once, reuse for many videos).
+    model_id / base_model may be local folders (offline use)."""
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-    torch_dtype = getattr(torch, dtype)
+    torch_dtype = getattr(torch, pick_dtype(dtype))
+    avoid_math_attention()
     model = T.TRASER.from_pretrained(model_id or T.DEFAULT_MODEL, torch_dtype=torch_dtype).to(device).eval()
-    processor = T.AutoProcessor.from_pretrained(T.BASE_MODEL)
+    processor = T.AutoProcessor.from_pretrained(base_model or T.BASE_MODEL)
     tokenizer = T.AutoTokenizer.from_pretrained(model_id or T.DEFAULT_MODEL, use_fast=False)
     processor.tokenizer = tokenizer
     return model, processor, tokenizer
@@ -137,7 +161,7 @@ def main():
     ap.add_argument("--time_reduce", default="max", choices=["mean", "max", "min"])
     ap.add_argument("--temporal_window_length", type=int, default=4)
     ap.add_argument("--max_new_tokens", type=int, default=8192)
-    ap.add_argument("--dtype", default="float16", choices=["float16", "bfloat16", "float32"])
+    ap.add_argument("--dtype", default="auto", choices=["auto", "float16", "bfloat16", "float32"])
     ap.add_argument("--output", required=True)
     args = ap.parse_args()
 

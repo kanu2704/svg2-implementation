@@ -159,7 +159,7 @@ class Judge:
         todo = sorted({self.key(*p) for p in pairs if norm(p[1]) != norm(p[2])} - set(self.cache))
         if not todo:
             return
-        from pvsg_pipeline import ask, nim_client
+        from nim import ask, nim_client
         self.client = self.client or nim_client(timeout=180)
         for start in range(0, len(todo), chunk):
             part = todo[start:start + chunk]
