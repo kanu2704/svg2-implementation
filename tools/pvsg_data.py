@@ -55,8 +55,20 @@ def choose_videos(anno, source="vidor", split="val", n=4, min_frames=50, order="
     return [v for v in ids if v not in set(skip)][:n]
 
 
+VIDEO_EXT = (".mp4", ".mkv", ".avi", ".mov", ".webm")
+
+
 def _members_for(zf, video_id):
-    return [m for m in zf.infolist() if video_id in m.filename and not m.is_dir()]
+    """Files of one video: its own file (<id>.<ext>, <id>.zip) or files inside a folder named <id>.
+    Exact name parts, so ids that contain each other (P01_1 / P01_10) never mix."""
+    out = []
+    for m in zf.infolist():
+        if m.is_dir():
+            continue
+        parts = m.filename.replace("\\", "/").split("/")
+        if video_id in parts[:-1] or Path(parts[-1]).stem == video_id:
+            out.append(m)
+    return out
 
 
 def extract_videos(root, zips, anno, video_ids):
@@ -70,22 +82,23 @@ def extract_videos(root, zips, anno, video_ids):
         with zipfile.ZipFile(zips[f"{prefix}_videos.zip"]) as zv, zipfile.ZipFile(zips[f"{prefix}_masks.zip"]) as zm:
             for v in vids:
                 vdir = Path(root, source, "videos"); vdir.mkdir(parents=True, exist_ok=True)
-                mp4 = [m for m in _members_for(zv, v) if m.filename.endswith(".mp4")]
+                mp4 = [m for m in _members_for(zv, v) if m.filename.lower().endswith(VIDEO_EXT)]
                 if not mp4:
-                    raise FileNotFoundError(f"{v}.mp4 not found in {prefix}_videos.zip")
+                    sample = [m.filename for m in zv.infolist()[:8]]
+                    raise FileNotFoundError(f"no video file for {v} in {prefix}_videos.zip; first entries: {sample}")
                 (vdir / f"{v}.mp4").write_bytes(zv.read(mp4[0]))
 
                 mdir = Path(root, source, "masks", v); mdir.mkdir(parents=True, exist_ok=True)
                 members = _members_for(zm, v)
-                pngs = [m for m in members if m.filename.endswith(".png")]
-                nested = [m for m in members if m.filename.endswith(".zip")]
+                pngs = [m for m in members if m.filename.lower().endswith(".png")]
+                nested = [m for m in members if m.filename.lower().endswith(".zip")]
                 if pngs:
                     for m in pngs:
                         (mdir / os.path.basename(m.filename)).write_bytes(zm.read(m))
                 elif nested:                     # some releases pack one zip per video
                     with zipfile.ZipFile(io.BytesIO(zm.read(nested[0]))) as inner:
                         for m in inner.infolist():
-                            if m.filename.endswith(".png"):
+                            if m.filename.lower().endswith(".png"):
                                 (mdir / os.path.basename(m.filename)).write_bytes(inner.read(m))
                 else:
                     raise FileNotFoundError(f"no masks for {v} in {prefix}_masks.zip")
