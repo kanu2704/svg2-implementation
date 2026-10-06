@@ -422,6 +422,54 @@ def extract_vipseg_frames(archive, video_ids, out_dir):
     return found
 
 
+VSPW_DRIVE = {  # https://github.com/VSPW-dataset/VSPW-dataset-download
+    "full_file": "14yHWsGneoa1pVdULFk7cah3t-THl7yEz",      # one 43 GB tar
+    "full_parts": "1BpN3yLSCDf0kz6kP74mIrcTysI75sTwi",     # Drive folder: the same tar in 6 parts (VSPW_data.tar_a*)
+    "480p": "1rRujAmy3mzYqI0NjrdyVANDfrnFnBEp1",
+}
+
+
+def download_vspw(root, variant):
+    """Download VSPW from the authors' Google Drive. variant: "full_parts", "full_file" or "480p".
+    Returns a list of files (one archive, or the parts of the split tar in order)."""
+    import gdown
+    root = Path(root)
+    root.mkdir(parents=True, exist_ok=True)
+    if variant == "full_parts":
+        out = root / "VSPW_parts"
+        files = gdown.download_folder(id=VSPW_DRIVE["full_parts"], output=str(out), quiet=False)
+        if not files:
+            raise RuntimeError("Google Drive returned no files for the VSPW parts folder")
+        return sorted(str(f) for f in files)
+    target = root / f"VSPW_{variant}.archive"
+    if not target.exists():
+        gdown.download(id=VSPW_DRIVE[variant], output=str(target), quiet=False)
+    if not target.exists() or target.stat().st_size < 10 ** 8:
+        raise RuntimeError(f"VSPW {variant}: download failed or is not the dataset")
+    return [str(target)]
+
+
+class _Concat(io.RawIOBase):
+    """Read several files one after another as one stream (the parts of a split tar)."""
+    def __init__(self, paths):
+        self.paths, self.f = list(paths), None
+
+    def readable(self):
+        return True
+
+    def readinto(self, buf):
+        while True:
+            if self.f is None:
+                if not self.paths:
+                    return 0
+                self.f = open(self.paths.pop(0), "rb")
+            n = self.f.readinto(buf)
+            if n:
+                return n
+            self.f.close()
+            self.f = None
+
+
 def extract_vspw_frames(archive, video_ids, out_dir):
     """Copy only the needed videos' frames out of a VSPW download (zip or tar):
     .../data/<video>/origin/*.jpg. Returns the set of videos found."""
@@ -441,6 +489,14 @@ def extract_vspw_frames(archive, video_ids, out_dir):
                 target.write_bytes(read())
             found.add(parts[-3])
 
+    parts = [archive] if isinstance(archive, (str, Path)) else list(archive)
+    if len(parts) > 1:                      # split tar: stream the parts in order
+        with tarfile.open(fileobj=io.BufferedReader(_Concat(parts), 1 << 20), mode="r|*") as t:
+            for m in t:
+                if m.isfile():
+                    keep(m.name, lambda m=m: t.extractfile(m).read())
+        return found
+    archive = parts[0]
     if zipfile.is_zipfile(archive):
         with zipfile.ZipFile(archive) as z:
             for m in z.infolist():
