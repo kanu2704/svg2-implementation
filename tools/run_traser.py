@@ -63,15 +63,34 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     return model, processor, tokenizer
 
 
+def _token_counter(progress, t0, every=25):
+    """A stopping criterion that never stops: it only reports how many tokens have been generated."""
+    from transformers import StoppingCriteria, StoppingCriteriaList
+
+    class Count(StoppingCriteria):
+        n = 0
+
+        def __call__(self, input_ids, scores, **kwargs):
+            self.n += 1
+            if self.n % every == 0:
+                progress("generating answer", tokens=self.n, tokens_per_s=round(self.n / (time.time() - t0), 1))
+            return torch.zeros(input_ids.shape[0], dtype=torch.bool, device=input_ids.device)
+
+    return StoppingCriteriaList([Count()])
+
+
 def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
-          coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, max_new_tokens=8192):
+          coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, max_new_tokens=8192, progress=None):
     """One video: their preprocessing and generation step for step. Returns (text, stats).
-    stats["mask_columns"][k - 1] is the mask column the model calls "object k"."""
+    stats["mask_columns"][k - 1] is the mask column the model calls "object k".
+    progress(stage, **info), if given, is called at every step and every 25 generated tokens (live status)."""
+    progress = progress or (lambda stage, **info: None)
     device = model.device
     dtype = model.dtype
     stats = {"video": video, "task": task, "dtype": str(dtype).replace("torch.", "")}
 
     # ---- video: ~1 fps, 4..128 frames, Qwen resize ----
+    progress("reading video frames")
     pixel_values_videos, video_grid_thw, sampled_idx, _ = T.decode_video(video, processor.video_processor)
     t_grid, h_patch, w_patch = (int(x) for x in video_grid_thw)
     n_video_tokens = t_grid * h_patch * w_patch // T.SPATIAL_MERGE_SIZE ** 2
@@ -84,11 +103,13 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
                  grid_thw=[t_grid, h_patch, w_patch], raw_video_tokens=n_video_tokens,
                  resized_hw=[h_patch * T.PATCH_SIZE, w_patch * T.PATCH_SIZE])
     del vr
+    progress("video read", frames=len(sampled_idx), duration_s=stats["duration_s"], video_fps=stats["video_fps"])
 
     # ---- masks -> per-object visual tokens ----
     obj_ids = objects if objects is not None else list(range(len(mask_data[0])))
     obj_ids = sorted(obj_ids)[: max_objects]
     stats["objects_requested"] = len(objects) if objects is not None else len(mask_data[0])
+    progress("building object masks", objects=len(obj_ids))
     obj_masks, obj_ids = T.build_obj_masks(mask_data, obj_ids, sampled_idx,
                                            h_patch * T.PATCH_SIZE, w_patch * T.PATCH_SIZE)
     _, per_obj_idx, _ = T.select_tokens(
@@ -115,6 +136,7 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     if str(device).startswith("cuda"):
         torch.cuda.reset_peak_memory_stats()
     with torch.no_grad():
+        progress("encoding video + objects", objects=len(obj_ids), video_tokens=n_video_tokens)
         t1 = time.time()
         embeds, position_ids, mask, rope_deltas, _, _, _ = T.rearrange_token(
             model=model, input_ids=input_ids, attention_mask=attention_mask,
@@ -130,9 +152,11 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
             grids_per_temporal_window_per_batch=[grids_per_window])
         stats.update(arranged_tokens=int(embeds.shape[1]), arrange_s=round(time.time() - t1, 1),
                      embeds_finite=bool(torch.isfinite(embeds).all()))
+        progress("generating answer", tokens=0, input_tokens=int(embeds.shape[1]))
         t2 = time.time()
         generated = model.generate(inputs_embeds=embeds, position_ids=position_ids, attention_mask=mask.long(),
-                                   rope_deltas=rope_deltas, max_new_tokens=max_new_tokens, do_sample=False)
+                                   rope_deltas=rope_deltas, max_new_tokens=max_new_tokens, do_sample=False,
+                                   stopping_criteria=_token_counter(progress, t2))
         stats.update(generate_s=round(time.time() - t2, 1), new_tokens=int(generated.shape[1]))
     if str(device).startswith("cuda"):
         stats["peak_gpu_gb"] = round(torch.cuda.max_memory_allocated() / 2**30, 2)

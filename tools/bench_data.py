@@ -39,6 +39,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 import zipfile
 from pathlib import Path
 
@@ -411,7 +412,7 @@ def extract_vipseg_frames(archive, video_ids, out_dir):
         with tarfile.open(archive, "r:*") as t:
             for m in t:
                 if m.isfile():
-                    keep(m.name, lambda m=m: t.extractfile(m).read())
+                    keep(m.name, lambda m=m: t.extractfile(m).read(), m.offset)
     else:
         head = open(archive, "rb").read(300)
         size = os.path.getsize(archive)
@@ -437,10 +438,20 @@ def download_vspw(root, variant):
     root.mkdir(parents=True, exist_ok=True)
     if variant == "full_parts":
         out = root / "VSPW_parts"
-        files = gdown.download_folder(id=VSPW_DRIVE["full_parts"], output=str(out), quiet=False)
+        done = out / ".complete"
+        if done.exists():
+            return sorted(str(out / f) for f in done.read_text().split())
+        try:
+            files = gdown.download_folder(id=VSPW_DRIVE["full_parts"], output=str(out), quiet=False, resume=True)
+        except TypeError:                   # old gdown without resume
+            files = gdown.download_folder(id=VSPW_DRIVE["full_parts"], output=str(out), quiet=False)
         if not files:
             raise RuntimeError("Google Drive returned no files for the VSPW parts folder")
-        return sorted(str(f) for f in files)
+        files = sorted(str(f) for f in files)
+        if any(Path(f).stat().st_size < 10 ** 8 for f in files):
+            raise RuntimeError("a VSPW part is too small (Google Drive refused it): " + str(files))
+        done.write_text("\n".join(Path(f).name for f in files))
+        return files
     target = root / f"VSPW_{variant}.archive"
     if not target.exists():
         gdown.download(id=VSPW_DRIVE[variant], output=str(target), quiet=False)
@@ -470,32 +481,46 @@ class _Concat(io.RawIOBase):
             self.f = None
 
 
-def extract_vspw_frames(archive, video_ids, out_dir):
+def extract_vspw_frames(archive, video_ids, out_dir, log=None):
     """Copy only the needed videos' frames out of a VSPW download (zip or tar):
-    .../data/<video>/origin/*.jpg. Returns the set of videos found."""
+    .../data/<video>/origin/*.jpg. Returns the set of videos found. log(msg): progress messages."""
     import tarfile
+    log = log or (lambda msg: None)
     wanted = set(video_ids)
-    already = {v for v in wanted if any(Path(out_dir, v).glob("*.jpg"))}
-    if already == wanted:
-        return already
-    found = set(already)
+    marker = Path(out_dir, ".complete")
+    if marker.exists():
+        return set(marker.read_text().split()) & wanted
+    found, t0 = set(), time.time()
+    seen_gb = [0]
 
-    def keep(name, read):
+    def keep(name, read, offset=None):
+        if offset is not None and offset / 2**30 - seen_gb[0] >= 2:
+            seen_gb[0] = int(offset / 2**30)
+            log(f"  read {seen_gb[0]} GB of the archive, found {len(found)} of {len(wanted)} videos "
+                f"({time.time() - t0:.0f} s)")
         parts = name.split("/")
         if len(parts) >= 3 and parts[-2] == "origin" and parts[-3] in wanted and parts[-1].endswith(".jpg"):
             target = Path(out_dir, parts[-3], parts[-1])
             if not target.exists():
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(read())
-            found.add(parts[-3])
+            if parts[-3] not in found:
+                found.add(parts[-3])
+                log(f"  found {len(found)}/{len(wanted)}: {parts[-3]}")
+
+    def finish():
+        if found == wanted:
+            marker.parent.mkdir(parents=True, exist_ok=True)
+            marker.write_text("\n".join(sorted(found)))
+        return found
 
     parts = [archive] if isinstance(archive, (str, Path)) else list(archive)
     if len(parts) > 1:                      # split tar: stream the parts in order
         with tarfile.open(fileobj=io.BufferedReader(_Concat(parts), 1 << 20), mode="r|*") as t:
             for m in t:
                 if m.isfile():
-                    keep(m.name, lambda m=m: t.extractfile(m).read())
-        return found
+                    keep(m.name, lambda m=m: t.extractfile(m).read(), m.offset)
+        return finish()
     archive = parts[0]
     if zipfile.is_zipfile(archive):
         with zipfile.ZipFile(archive) as z:
@@ -512,7 +537,7 @@ def extract_vspw_frames(archive, video_ids, out_dir):
             raise RuntimeError("the VSPW download is a web page, not the dataset: Google Drive refused (download "
                                "limit). Download it by hand (see the notebook).")
         raise RuntimeError(f"unknown archive type for {archive}: first bytes {head[:16]!r}")
-    return found
+    return finish()
 
 
 def frames_to_mp4(frames_dir, out_mp4, fps=6, size=None):

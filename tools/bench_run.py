@@ -120,16 +120,44 @@ def main():
     status_path = Path(args.runs, f"{name}.json")
     todo = [(ds, v) for ds, v in items if not is_done(ds, v, args.results) and not timed_out(ds, v, args.results)]
     hung = [f"{ds}/{v}" for ds, v in items if not is_done(ds, v, args.results) and timed_out(ds, v, args.results)]
-    status = {"total": len(items), "done": len(items) - len(todo) - len(hung), "failed": hung, "current": None,
-              "state": "loading model", "started": time.strftime("%H:%M:%S")}
+    attempt = int(os.environ.get("BENCH_ATTEMPT", "1"))
 
-    def save_status(**kw):
+    def log(msg):
+        print(f"{time.strftime('%H:%M:%S')} [{args.gpu_name}] {msg}", flush=True)
+
+    # finished videos of this queue (also from earlier runs): time per video, for the notebook's ETA
+    recent = []
+    for ds, v in items:
+        st = pred_paths(ds, v, args.results)[1]
+        if st.exists():
+            try:
+                s_ = json.loads(st.read_text())
+                recent.append({"video": f"{ds}/{v}", "min": round(s_.get("total_s", 0) / 60, 1),
+                               "tokens": s_.get("new_tokens"), "objects": s_.get("objects"), "t": st.stat().st_mtime})
+            except (ValueError, OSError):
+                pass
+    recent.sort(key=lambda r: r.pop("t"))
+    status = {"total": len(items), "done": len(items) - len(todo) - len(hung), "failed": hung, "current": None,
+              "state": "starting (loading libraries)", "stage_since": time.time(), "video_since": None,
+              "attempt": attempt, "recent": recent[-5:],
+              "avg_min": round(sum(r["min"] for r in recent) / len(recent), 1) if recent else None,
+              "started": time.strftime("%H:%M:%S")}
+    last_write = [0.0]
+
+    def save_status(force=True, **kw):
+        if "state" in kw and kw["state"] != status.get("state"):
+            kw.setdefault("stage_since", time.time())
         status.update(kw, updated=time.strftime("%H:%M:%S"))
+        if not force and time.time() - last_write[0] < 3:
+            return
+        last_write[0] = time.time()
         tmp = status_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(status, indent=1))
         tmp.replace(status_path)
 
     save_status()                      # before the slow imports, so the notebook sees the worker at once
+    log(f"worker started (attempt {attempt}): {len(todo)} videos to run, {status['done']} already done, "
+        f"{len(hung)} skipped (timed out before)")
 
     # watchdog: a video that hangs (seen on a few long Epic-Kitchens videos) must not block the queue.
     # Record where it hung, then restart this worker; the restarted worker skips timed-out videos.
@@ -142,10 +170,12 @@ def main():
                 ds, v = started["item"]
                 err = pred_paths(ds, v, args.results)[2]
                 with open(err, "w") as f:
-                    f.write(f"Timeout: no answer after {args.timeout_min:g} min; stack at that moment:\n")
+                    f.write(f"Timeout: no answer after {args.timeout_min:g} min (last step: {status['state']}); "
+                            "stack at that moment:\n")
                     f.flush()
                     faulthandler.dump_traceback(file=f, all_threads=True)
-                print(f"[{ds}/{v}] FAILED: timeout after {args.timeout_min:g} min -> restarting worker", flush=True)
+                log(f"{ds}/{v} FAILED: timeout after {args.timeout_min:g} min (last step: {status['state']}) "
+                    "-> skipping it, restarting the worker")
                 os.execv(sys.executable, [sys.executable] + sys.argv)
 
     threading.Thread(target=watchdog, daemon=True).start()
@@ -155,12 +185,13 @@ def main():
 
     prepare = Preparer(args)
     model = processor = tokenizer = None
-    for dataset, video_id in todo:
+    oom = []
+    for i, (dataset, video_id) in enumerate(todo, 1):
+        item = f"{dataset}/{video_id}"
         out, stats_out, err_out = pred_paths(dataset, video_id, args.results)
         out.parent.mkdir(parents=True, exist_ok=True)
-        started.update(t=time.time(), item=(dataset, video_id))
         try:
-            save_status(current=f"{dataset}/{video_id}", state="preparing")
+            save_status(current=item, video_since=time.time(), state="preparing")
             prepare(dataset, video_id)
             gt_copy = Path(args.results, dataset, "gt", f"{video_id}.json")
             if not gt_copy.exists():
@@ -168,13 +199,37 @@ def main():
                 shutil.copyfile(B.item_dir(args.bench, dataset, video_id) / "gt.json", gt_copy)
             if model is None:
                 save_status(state="loading model")
+                log("loading the TRASER model ...")
+                t0 = time.time()
                 model, processor, tokenizer = load_model(args.model, dtype=args.dtype, base_model=args.base_model)
+                log(f"model loaded in {time.time() - t0:.0f} s ({getattr(model, 'dtype', '?')}, "
+                    f"{torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'})")
             gt = B.load_gt(args.bench, dataset, video_id)
             masks = json.load(open(B.masks_path(args.bench, dataset, video_id, args.work)))
-            save_status(state="running TRASER")
+            log(f"{item} ({i}/{len(todo)}): {len(gt['objects'])} objects")
+            started.update(t=time.time(), item=(dataset, video_id))
+            save_status(video_since=time.time())
+            last_logged = [0]
+
+            def progress(stage, **info):
+                if stage == "generating answer":
+                    n = info.get("tokens", 0)
+                    save_status(force=n == 0, state=f"generating answer: {n} tokens"
+                                + (f" ({info['tokens_per_s']}/s)" if info.get("tokens_per_s") else ""))
+                    if n == 0 or n - last_logged[0] >= 500:
+                        last_logged[0] = n
+                        log(f"{item}: generating answer, {n} tokens so far"
+                            + (f" ({info['tokens_per_s']} tokens/s)" if info.get("tokens_per_s") else
+                               f" (input: {info.get('input_tokens')} tokens)"))
+                else:
+                    extra = ", ".join(f"{k}={v}" for k, v in info.items())
+                    save_status(state=stage + (f" ({extra})" if extra else ""))
+                    log(f"{item}: {stage}" + (f" ({extra})" if extra else ""))
+
             t0 = time.time()
             text, stats = infer(model, processor, tokenizer, str(B.item_video(args.bench, gt)), masks,
-                                objects=[o["col"] for o in gt["objects"]], max_objects=args.max_objects)
+                                objects=[o["col"] for o in gt["objects"]], max_objects=args.max_objects,
+                                progress=progress)
             stats["total_s"] = round(time.time() - t0, 1)
             stats["gpu"] = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
             stats_out.write_text(json.dumps(stats, indent=1))
@@ -182,17 +237,32 @@ def main():
             if err_out.exists():
                 err_out.unlink()
             status["done"] += 1
+            status["recent"] = (status["recent"] + [{"video": item, "min": round(stats["total_s"] / 60, 1),
+                                                     "tokens": stats.get("new_tokens"),
+                                                     "objects": stats.get("objects")}])[-5:]
+            mins = [json.loads(pred_paths(d, v, args.results)[1].read_text()).get("total_s", 0) / 60
+                    for d, v in items if pred_paths(d, v, args.results)[1].exists()]
+            status["avg_min"] = round(sum(mins) / len(mins), 1) if mins else None
+            log(f"{item} DONE in {stats['total_s'] / 60:.1f} min: {stats.get('new_tokens')} tokens, "
+                f"{stats.get('objects')} objects, peak GPU memory {stats.get('peak_gpu_gb')} GB, "
+                f"valid JSON: {stats.get('json_ok')}  ({status['done']}/{status['total']} done)")
         except Exception as e:  # noqa: BLE001  (one bad video must not stop the queue)
             msg = f"{type(e).__name__}: {e}\n{traceback.format_exc()}"
             err_out.write_text(msg)
-            status["failed"].append(f"{dataset}/{video_id}")
-            print(f"[{dataset}/{video_id}] FAILED: {msg}", file=sys.stderr, flush=True)
+            status["failed"].append(item)
+            log(f"{item} FAILED: {type(e).__name__}: {str(e)[:300]}")
             if isinstance(e, torch.cuda.OutOfMemoryError):
+                oom.append(item)
                 torch.cuda.empty_cache()
         started.clear()
-        save_status()
-        print(f"[{dataset}/{video_id}] done ({status['done']}/{status['total']})", flush=True)
+        save_status(current=None, state="next video")
+    if oom and attempt == 1:
+        # out of memory can depend on what the previous videos left behind: retry once in a fresh process
+        save_status(state=f"retrying {len(oom)} out-of-memory videos in a fresh process")
+        log(f"queue done; retrying {len(oom)} out-of-memory video(s) once in a fresh process: {oom}")
+        os.execve(sys.executable, [sys.executable] + sys.argv, dict(os.environ, BENCH_ATTEMPT="2"))
     save_status(current=None, state="finished")
+    log(f"finished: {status['done']} of {status['total']} done, failed: {status['failed'] or 'none'}")
 
 
 if __name__ == "__main__":
