@@ -1,0 +1,110 @@
+{
+ "pvsg": {
+  "videos_prepared": 62,
+  "videos_predicted": 44,
+  "split_size": 62,
+  "failed": [
+   "1bfe5ac2-cbf8-4364-8a30-60d97dd395df_1",
+   "43b0205a-4e3c-46a7-9d1c-c04ead730180",
+   "8be918b2-c819-4a84-98dc-5fe24835a4ac",
+   "P05_05",
+   "P09_07",
+   "P14_06",
+   "P28_19",
+   "c2e6d807-d903-4b64-98e1-2c07ca700c78_2",
+   "d2222009-a717-4b16-91ce-6399c5bb798a"
+  ],
+  "json_invalid": 5,
+  "scores": {
+   "lenient@0.5": {
+    "object": 73.1,
+    "relation": 17.4,
+    "triplet": 14.3,
+    "relation_any_time": 31.1,
+    "macro_object": 73.0,
+    "macro_relation": 19.0,
+    "macro_triplet": 15.0,
+    "counts": {
+     "objects": 670,
+     "relations": 672,
+     "object_ok": 490,
+     "relation_ok": 117,
+     "triplet_ok": 96,
+     "relation_ok_any_time": 209,
+     "unjudged": 106
+    }
+   },
+   "lenient@0.1": {
+    "object": 73.1,
+    "relation": 25.3,
+    "triplet": 21.3,
+    "relation_any_time": 31.1,
+    "macro_object": 73.0,
+    "macro_relation": 26.8,
+    "macro_triplet": 22.1,
+    "counts": {
+     "objects": 670,
+     "relations": 672,
+     "object_ok": 490,
+     "relation_ok": 170,
+     "triplet_ok": 143,
+     "relation_ok_any_time": 209,
+     "unjudged": 106
+    }
+   },
+   "strict@0.5": {
+    "object": 33.3,
+    "relation": 12.4,
+    "triplet": 1.8,
+    "relation_any_time": 18.8,
+    "macro_object": 33.0,
+    "macro_relation": 13.3,
+    "macro_triplet": 1.9,
+    "counts": {
+     "objects": 670,
+     "relations": 672,
+     "object_ok": 223,
+     "relation_ok": 83,
+     "triplet_ok": 12,
+     "relation_ok_any_time": 126,
+     "unjudged": 106
+    }
+   },
+   "strict@0.1": {
+    "object": 33.3,
+    "relation": 16.4,
+    "triplet": 2.4,
+    "relation_any_time": 18.8,
+    "macro_object": 33.0,
+    "macro_relation": 17.0,
+    "macro_triplet": 2.4,
+    "counts": {
+     "objects": 670,
+     "relations": 672,
+     "object_ok": 223,
+     "relation_ok": 110,
+     "triplet_ok": 16,
+     "relation_ok_any_time": 126,
+     "unjudged": 106
+    }
+   }
+  },
+  "judge_categories": {
+   "object": {
+    "identical": 223,
+    "synonym": 18,
+    "mismatch": 150,
+    "semantic overlap": 88,
+    "hypernym/hyponym": 161
+   },
+   "relation": {
+    "mismatch": 366,
+    "identical": 150,
+    "not judged": 106,
+    "hypernym/hyponym": 77,
+    "semantic overlap": 40,
+    "synonym": 5
+   }
+  }
+ }
+}
