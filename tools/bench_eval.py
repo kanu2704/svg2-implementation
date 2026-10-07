@@ -25,6 +25,7 @@ sampled frame (duration / sampled frames; 1.0 for videos up to 128 s). SVG2test'
 the same index unit, so no scaling there.
 
     python tools/bench_eval.py                 # all datasets with predictions; writes results/traser_bench/README.md
+    python tools/bench_eval.py --compare       # <dataset>/COMPARE.md: human labels vs TRASER, video by video
 """
 import argparse
 import json
@@ -277,84 +278,146 @@ def _show_table(rows, title):
     print()
 
 
+def video_report(gt, pred, stats, judge, thr=0.5):
+    """Tables for one predicted video: human labels next to TRASER's (lenient, tIoU > thr).
+    A verdict the judge has not given yet is None ("?")."""
+    unit = gt.get("time_unit", "seconds")
+    _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
+    name_of = {**name, -1: "camera"}
+    mark = lambda x: "✓" if x else ("?" if x is None else "✗")
+    obj_ok, objects = {-1: True}, []
+    for o in gt["objects"]:
+        g, hyp = o["gt_id"], pred_name.get(o["gt_id"])
+        cat = judge.category("object", o["name"], hyp) if hyp is not None else "mismatch"
+        obj_ok[g] = None if cat is None else is_right(cat, "lenient")
+        objects.append({"id": g, "human label": o["name"], "TRASER label": hyp if hyp is not None else "-",
+                        "verdict": (cat or "not judged yet") if hyp is not None else "no label from TRASER",
+                        "right": mark(obj_ok[g])})
+    relations, n_rel, n_tri, n_unj = [], 0, 0, 0
+    for r in gt["relations"]:
+        cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
+        best = None
+        for p, sp in cands:
+            cat = judge.category("relation", r["pred"], p)
+            t = tiou(r["spans"], sp)
+            key = (is_right(cat, "lenient") and t > thr, cat is None and t > thr, is_right(cat, "lenient"), t)
+            if best is None or key > best[0]:
+                best = (key, p, sp, cat, t)
+        rel_ok = True if best and best[0][0] else (None if best and best[0][1] else False)
+        parts = [rel_ok, obj_ok.get(r["subj"], False), obj_ok.get(r["obj"], False)]
+        tri_ok = False if False in parts else (None if None in parts else True)
+        n_rel += rel_ok is True
+        n_tri += tri_ok is True
+        n_unj += rel_ok is None or tri_ok is None
+        relations.append({
+            "human: subject - predicate - object": f"{name_of.get(r['subj'], r['subj'])} - {r['pred']} - "
+                                                   f"{name_of.get(r['obj'], r['obj'])}",
+            "human time": _fmt_spans(r["spans"], unit),
+            "TRASER (same two objects)": (best[1] + (f" (+{len(cands) - 1} more)" if len(cands) > 1 else ""))
+                                         if best else "nothing for this pair",
+            "TRASER time": _fmt_spans(best[2], unit) if best else "-",
+            "word": (best[3] or "not judged yet") if best else "-",
+            "tIoU": f"{best[4]:.2f}" if best else "-",
+            "relation": mark(rel_ok), "triplet": mark(tri_ok)})
+    known = {(r["subj"], r["obj"]) for r in gt["relations"]}
+    extra = [f"{name_of.get(a, a)} - {p} - {name_of.get(b, b)} [{_fmt_spans(pred_spans(sp, gt, stats), unit)}]"
+             for (a, b), lst in by_pair.items() if (a, b) not in known for p, sp in lst]
+    n_obj = len(name)
+    return {
+        "header": f"{stats.get('duration_s')} s, {stats.get('sampled_frames')} frames read | human: {n_obj} objects, "
+                  f"{len(gt['relations'])} relations | TRASER: {len(pred['objects'])} objects, "
+                  f"{len(pred['relations'])} relations, "
+                  f"{'valid JSON' if pred['json_ok'] else 'cut-off answer (salvaged)'}, {stats.get('new_tokens')} tokens",
+        "objects": objects, "relations": relations, "extra": extra,
+        "counts": {"objects": n_obj, "object_ok": sum(obj_ok[g] is True for g in name),
+                   "object_unjudged": sum(obj_ok[g] is None for g in name), "relations": len(gt["relations"]),
+                   "relation_ok": n_rel, "triplet_ok": n_tri, "relation_unjudged": n_unj}}
+
+
+def _recent(dataset, last):
+    done = sorted((p for p in (RESULTS / dataset / "preds").glob("*.json") if not p.name.endswith(".stats.json")),
+                  key=lambda p: p.stat().st_mtime)
+    return [p.stem for p in (done if last is None else done[-last:])]
+
+
 def show(dataset, videos=None, last=3, ask_judge=False, thr=0.5, log=print):
     """Human labels next to TRASER's answer for a few videos: objects, relations, triplets.
     videos: list of video ids (default: the `last` most recently predicted). Verdicts come from the
     judge cache (or identical text); ask_judge=True asks Kimi K3 for the missing ones (needs the key)."""
-    preds = RESULTS / dataset / "preds"
-    if videos is None:
-        done = sorted((p for p in preds.glob("*.json") if not p.name.endswith(".stats.json")),
-                      key=lambda p: p.stat().st_mtime)
-        videos = [p.stem for p in done[-last:]]
+    videos = videos or _recent(dataset, last)
     judge = Judge()
     loaded = {v: load_video(dataset, v) for v in videos}
     if ask_judge:
         judge.ask_all([p for gt, pred, st in loaded.values() if pred is not None
                        for p in video_pairs(gt, pred, st)[0]], log=log)
-    verdict = lambda kind, ref, hyp: judge.category(kind, ref, hyp) or "not judged yet"
     for v, (gt, pred, stats) in loaded.items():
         print("=" * 100)
         if pred is None:
             print(f"{dataset}/{v}: no prediction yet\n")
             continue
-        unit = gt.get("time_unit", "seconds")
-        print(f"{dataset}/{v}   {stats.get('duration_s')} s, {stats.get('sampled_frames')} frames read   |   "
-              f"human: {len(gt['objects'])} objects, {len(gt['relations'])} relations   |   TRASER: "
-              f"{len(pred['objects'])} objects, {len(pred['relations'])} relations, "
-              f"{'valid JSON' if pred['json_ok'] else 'cut-off answer (salvaged)'}, {stats.get('new_tokens')} tokens")
-        _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
-        name_of = {**name, -1: "camera"}
-        obj_ok = {-1: True}                  # True / False / None (= not judged yet)
-        mark = lambda x: "✓" if x else ("?" if x is None else "✗")
-        rows = []
-        for o in gt["objects"]:
-            g = o["gt_id"]
-            hyp = pred_name.get(g)
-            c = verdict("object", o["name"], hyp) if hyp is not None else "no label (not given to TRASER or skipped)"
-            cat = judge.category("object", o["name"], hyp) if hyp is not None else "mismatch"
-            obj_ok[g] = None if cat is None else is_right(cat, "lenient")
-            rows.append({"id": g, "human label": o["name"], "TRASER label": hyp if hyp is not None else "-",
-                         "verdict": c, "right (lenient)": mark(obj_ok[g])})
-        unj = sum(obj_ok[g] is None for g in name)
-        _show_table(rows, f"OBJECTS: {sum(obj_ok[g] is True for g in name)}/{len(name)} right"
-                          + (f", {unj} not judged yet (?)" if unj else ""))
-        rows, n_rel, n_tri, n_unj = [], 0, 0, 0
-        for r in gt["relations"]:
-            cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
-            best = None
-            for p, sp in cands:
-                cat = judge.category("relation", r["pred"], p)
-                t = tiou(r["spans"], sp)
-                key = (is_right(cat, "lenient") and t > thr, cat is None and t > thr, is_right(cat, "lenient"), t)
-                if best is None or key > best[0]:
-                    best = (key, p, sp, cat, t)
-            rel_ok = True if best and best[0][0] else (None if best and best[0][1] else False)
-            parts = [rel_ok, obj_ok.get(r["subj"], False), obj_ok.get(r["obj"], False)]
-            tri_ok = False if False in parts else (None if None in parts else True)
-            n_rel += rel_ok is True
-            n_tri += tri_ok is True
-            n_unj += rel_ok is None or tri_ok is None
-            rows.append({
-                "human: subject - predicate - object": f"{name_of.get(r['subj'], r['subj'])} - {r['pred']} - "
-                                                       f"{name_of.get(r['obj'], r['obj'])}",
-                "human time": _fmt_spans(r["spans"], unit),
-                "TRASER (same two objects)": (f"{best[1]}" + (f"  (+{len(cands) - 1} more)" if len(cands) > 1 else ""))
-                                             if best else "nothing for this pair",
-                "TRASER time": _fmt_spans(best[2], unit) if best else "-",
-                "word": (best[3] or "not judged yet") if best else "-",
-                "tIoU": f"{best[4]:.2f}" if best else "-",
-                "relation": mark(rel_ok),
-                "triplet": mark(tri_ok)})
-        _show_table(rows, f"RELATIONS: {n_rel}/{len(gt['relations'])} right   |   "
-                          f"TRIPLETS: {n_tri}/{len(gt['relations'])} right   (lenient, tIoU > {thr})"
-                          + (f"   |   {n_unj} wait for the judge (?)" if n_unj else ""))
-        known = {(r["subj"], r["obj"]) for r in gt["relations"]}
-        extra = [(name_of.get(a, a), p, name_of.get(b, b), _fmt_spans(pred_spans(sp, gt, stats), unit))
-                 for a, p, b, sp in ((s_, p_, o_, sp_) for (s_, o_), lst in by_pair.items()
-                                     for p_, sp_ in lst) if (a, b) not in known]
-        if extra:
-            print(f"TRASER relations between pairs the humans did not annotate: {len(extra)}, e.g. "
-                  + "; ".join(f"{a} - {p} - {b} [{t}]" for a, p, b, t in extra[:5]) + "\n")
+        rep = video_report(gt, pred, stats, judge, thr)
+        c = rep["counts"]
+        print(f"{dataset}/{v}   {rep['header']}")
+        _show_table(rep["objects"], f"OBJECTS: {c['object_ok']}/{c['objects']} right"
+                                    + (f", {c['object_unjudged']} not judged yet (?)" if c["object_unjudged"] else ""))
+        _show_table(rep["relations"], f"RELATIONS: {c['relation_ok']}/{c['relations']} right   |   TRIPLETS: "
+                                      f"{c['triplet_ok']}/{c['relations']} right   (lenient, tIoU > {thr})"
+                                      + (f"   |   {c['relation_unjudged']} wait for the judge (?)"
+                                         if c["relation_unjudged"] else ""))
+        if rep["extra"]:
+            print(f"TRASER relations between pairs the humans did not annotate: {len(rep['extra'])}, e.g. "
+                  + "; ".join(rep["extra"][:5]) + "\n")
+
+
+def _md_table(rows):
+    if not rows:
+        return "(none)\n"
+    esc = lambda x: str(x).replace("|", "/").replace("\n", " ")
+    cols = list(rows[0])
+    return ("| " + " | ".join(cols) + " |\n|" + "---|" * len(cols) + "\n"
+            + "".join("| " + " | ".join(esc(r[c]) for c in cols) + " |\n" for r in rows))
+
+
+def write_compare(dataset, thr=0.5, path=None):
+    """results/traser_bench/<dataset>/COMPARE.md: every predicted video, human labels next to TRASER's
+    (objects, relations, triplets), readable on GitHub. Verdicts from the judge cache ("?" = not judged yet)."""
+    judge = Judge()
+    path = Path(path or RESULTS / dataset / "COMPARE.md")
+    videos = sorted(_recent(dataset, None))
+    overview, sections = [], []
+    for v in videos:
+        gt, pred, stats = load_video(dataset, v)
+        if pred is None or not (RESULTS / dataset / "gt" / f"{v}.json").exists():
+            continue
+        rep = video_report(gt, pred, stats, judge, thr)
+        c = rep["counts"]
+        overview.append({"video": f"[{v}](#{re.sub(r'[^a-z0-9_-]', '', v.lower())})",
+                         "objects right": f"{c['object_ok']}/{c['objects']}",
+                         "relations right": f"{c['relation_ok']}/{c['relations']}",
+                         "triplets right": f"{c['triplet_ok']}/{c['relations']}",
+                         "not judged yet (?)": c["object_unjudged"] + c["relation_unjudged"]})
+        sections.append(f"## {v}\n\n{rep['header']}\n\n**Objects: {c['object_ok']}/{c['objects']} right**\n\n"
+                        f"{_md_table(rep['objects'])}\n**Relations: {c['relation_ok']}/{c['relations']} right, "
+                        f"triplets: {c['triplet_ok']}/{c['relations']} right** (lenient, tIoU > {thr})\n\n"
+                        f"{_md_table(rep['relations'])}\n"
+                        + (f"TRASER relations between pairs the humans did not annotate ({len(rep['extra'])}): "
+                           + "; ".join(rep["extra"][:10]) + "\n\n" if rep["extra"] else ""))
+    tot = lambda k: sum(int(o[k].split("/")[0]) for o in overview)
+    den = lambda k: sum(int(o[k].split("/")[1]) for o in overview)
+    text = (f"# {dataset}: human labels vs TRASER, video by video\n\n"
+            f"{len(overview)} videos with a prediction. Lenient criterion, temporal IoU > {thr}. "
+            "✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet "
+            "(identical text counts as right without the judge). Relation = same two objects, predicate not a "
+            "mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by "
+            "`tools/bench_eval.py write_compare`.\n\n"
+            + (f"**So far: objects {tot('objects right')}/{den('objects right')}, relations "
+               f"{tot('relations right')}/{den('relations right')}, triplets "
+               f"{tot('triplets right')}/{den('triplets right')}** (before judging; final numbers in README.md)\n\n"
+               if overview else "")
+            + _md_table(overview) + "\n" + "\n".join(sections))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text)
+    return path
 
 
 # ----------------------------------------------------------------------------- whole run
@@ -458,7 +521,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--datasets", nargs="*", default=DATASETS)
     ap.add_argument("--no_judge", action="store_true", help="use cached judge answers only")
+    ap.add_argument("--compare", action="store_true",
+                    help="only write <dataset>/COMPARE.md (human vs TRASER per video, cached verdicts), no scoring")
     args = ap.parse_args()
+    if args.compare:
+        for ds in args.datasets:
+            if video_ids(ds):
+                print("wrote", write_compare(ds))
+        return
     print(write_report(evaluate(args.datasets, ask=not args.no_judge)))
 
 
