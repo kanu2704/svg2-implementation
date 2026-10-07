@@ -21,10 +21,12 @@ worker continues where it stopped. Offline: --model / --base_model / --sam2_ckpt
 Progress: <runs>/<gpu_name>.json.
 """
 import argparse
+import faulthandler
 import json
 import os
 import shutil
 import sys
+import threading
 import time
 import traceback
 from pathlib import Path
@@ -44,6 +46,11 @@ def pred_paths(dataset, video_id, results=None):
 
 def is_done(dataset, video_id, results=None):
     return pred_paths(dataset, video_id, results)[0].exists()
+
+
+def timed_out(dataset, video_id, results=None):
+    err = pred_paths(dataset, video_id, results)[2]
+    return err.exists() and err.read_text().startswith("Timeout")
 
 
 class Preparer:
@@ -98,6 +105,8 @@ def main():
     ap.add_argument("--vidor_root", default=None)
     ap.add_argument("--max_objects", type=int, default=40)
     ap.add_argument("--dtype", default="auto")
+    ap.add_argument("--timeout_min", type=float, default=20,
+                    help="a video taking longer is recorded as failed (with where it hung) and the worker restarts")
     args = ap.parse_args()
     args.work = args.work or args.bench
     items = [tuple(x.split("/", 1)) for x in (args.items or [])]
@@ -109,8 +118,9 @@ def main():
     os.makedirs(args.runs, exist_ok=True)
     name = f"{args.dataset}_{args.gpu_name}" if args.dataset and not args.items else args.gpu_name
     status_path = Path(args.runs, f"{name}.json")
-    todo = [(ds, v) for ds, v in items if not is_done(ds, v, args.results)]
-    status = {"total": len(items), "done": len(items) - len(todo), "failed": [], "current": None,
+    todo = [(ds, v) for ds, v in items if not is_done(ds, v, args.results) and not timed_out(ds, v, args.results)]
+    hung = [f"{ds}/{v}" for ds, v in items if not is_done(ds, v, args.results) and timed_out(ds, v, args.results)]
+    status = {"total": len(items), "done": len(items) - len(todo) - len(hung), "failed": hung, "current": None,
               "state": "loading model", "started": time.strftime("%H:%M:%S")}
 
     def save_status(**kw):
@@ -120,6 +130,25 @@ def main():
         tmp.replace(status_path)
 
     save_status()                      # before the slow imports, so the notebook sees the worker at once
+
+    # watchdog: a video that hangs (seen on a few long Epic-Kitchens videos) must not block the queue.
+    # Record where it hung, then restart this worker; the restarted worker skips timed-out videos.
+    started = {}
+
+    def watchdog():
+        while True:
+            time.sleep(10)
+            if started and time.time() - started["t"] > args.timeout_min * 60:
+                ds, v = started["item"]
+                err = pred_paths(ds, v, args.results)[2]
+                with open(err, "w") as f:
+                    f.write(f"Timeout: no answer after {args.timeout_min:g} min; stack at that moment:\n")
+                    f.flush()
+                    faulthandler.dump_traceback(file=f, all_threads=True)
+                print(f"[{ds}/{v}] FAILED: timeout after {args.timeout_min:g} min -> restarting worker", flush=True)
+                os.execv(sys.executable, [sys.executable] + sys.argv)
+
+    threading.Thread(target=watchdog, daemon=True).start()
     import torch
     import bench_data as B
     from run_traser import infer, load_model
@@ -129,6 +158,7 @@ def main():
     for dataset, video_id in todo:
         out, stats_out, err_out = pred_paths(dataset, video_id, args.results)
         out.parent.mkdir(parents=True, exist_ok=True)
+        started.update(t=time.time(), item=(dataset, video_id))
         try:
             save_status(current=f"{dataset}/{video_id}", state="preparing")
             prepare(dataset, video_id)
@@ -159,6 +189,7 @@ def main():
             print(f"[{dataset}/{video_id}] FAILED: {msg}", file=sys.stderr, flush=True)
             if isinstance(e, torch.cuda.OutOfMemoryError):
                 torch.cuda.empty_cache()
+        started.clear()
         save_status()
         print(f"[{dataset}/{video_id}] done ({status['done']}/{status['total']})", flush=True)
     save_status(current=None, state="finished")
