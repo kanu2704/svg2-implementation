@@ -79,6 +79,34 @@ def _token_counter(progress, t0, every=25):
     return StoppingCriteriaList([Count()])
 
 
+def select_object_tokens(mask_data, obj_ids, sampled_idx, grid_thw, coverage_thresh=0.5, time_reduce="max",
+                         progress=None):
+    """Their build_obj_masks + select_tokens, one object at a time. Same result (both work per object:
+    an object without any mask on the sampled frames is dropped, the others get their token indices), but
+    the float32 mask table (objects x frames x height x width) is never held for all objects at once:
+    for 40 objects on a long 1080p video that table and its copies need 15-25 GB of RAM, which killed
+    two workers on Kaggle (30 GB). Returns (kept object ids, per-object token indices)."""
+    t_grid, h_patch, w_patch = grid_thw
+    kept, per_obj_idx = [], []
+    for n, oid in enumerate(obj_ids, 1):
+        try:
+            masks, _ = T.build_obj_masks(mask_data, [oid], sampled_idx, h_patch * T.PATCH_SIZE, w_patch * T.PATCH_SIZE)
+        except SystemExit:               # no mask on any sampled frame: dropped, as in build_obj_masks
+            continue
+        _, idx, _ = T.select_tokens(
+            obj_masks=masks, grid_thw=(t_grid, h_patch, w_patch), patch_size=T.PATCH_SIZE,
+            spatial_merge_size=T.SPATIAL_MERGE_SIZE, temporal_patch_size=T.TEMPORAL_PATCH_SIZE,
+            coverage_thresh=coverage_thresh, time_reduce=time_reduce, device="cpu")
+        kept.append(oid)
+        per_obj_idx.append(idx[0])
+        del masks
+        if progress and n % 10 == 0:
+            progress("building object masks", done=f"{n}/{len(obj_ids)}")
+    if not kept:
+        raise SystemExit("None of the requested objects has a mask on the sampled frames.")
+    return kept, per_obj_idx
+
+
 def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, max_new_tokens=8192, progress=None):
     """One video: their preprocessing and generation step for step. Returns (text, stats).
@@ -110,12 +138,8 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     obj_ids = sorted(obj_ids)[: max_objects]
     stats["objects_requested"] = len(objects) if objects is not None else len(mask_data[0])
     progress("building object masks", objects=len(obj_ids))
-    obj_masks, obj_ids = T.build_obj_masks(mask_data, obj_ids, sampled_idx,
-                                           h_patch * T.PATCH_SIZE, w_patch * T.PATCH_SIZE)
-    _, per_obj_idx, _ = T.select_tokens(
-        obj_masks=obj_masks, grid_thw=(t_grid, h_patch, w_patch), patch_size=T.PATCH_SIZE,
-        spatial_merge_size=T.SPATIAL_MERGE_SIZE, temporal_patch_size=T.TEMPORAL_PATCH_SIZE,
-        coverage_thresh=coverage_thresh, time_reduce=time_reduce, device="cpu")
+    obj_ids, per_obj_idx = select_object_tokens(mask_data, obj_ids, sampled_idx, (t_grid, h_patch, w_patch),
+                                                coverage_thresh, time_reduce, progress)
     selected = [int(i.numel()) for i in per_obj_idx]
     union = int(torch.unique(torch.cat(per_obj_idx)).numel()) if per_obj_idx else 0
     stats.update(objects=len(obj_ids), mask_columns=[int(i) for i in obj_ids], tokens_per_object=selected,
