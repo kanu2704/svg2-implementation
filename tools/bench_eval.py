@@ -515,6 +515,9 @@ def write_report(report, path=RESULTS / "README.md"):
     Path(path).write_text("\n".join(L) + "\n")
     with open(Path(path).with_name("scores.json"), "w") as f:
         json.dump(report, f, indent=1)
+    for d in report:                     # the video-by-video pages, with the verdicts just judged
+        if video_ids(d):
+            write_compare(d)
     return "\n".join(L)
 
 
