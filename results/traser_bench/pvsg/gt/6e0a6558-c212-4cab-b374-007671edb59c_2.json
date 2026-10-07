@@ -1,0 +1,456 @@
+{
+ "dataset": "pvsg",
+ "video_id": "6e0a6558-c212-4cab-b374-007671edb59c_2",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 305,
+ "video_fps": 5.0,
+ "mask_pngs": 305,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "ceiling",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "rack",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "rag",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "bag",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "cup",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 17,
+   "pred": "opening",
+   "obj": 19,
+   "spans": [
+    [
+     0.4,
+     1.0
+    ],
+    [
+     38.8,
+     39.8
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "closing",
+   "obj": 19,
+   "spans": [
+    [
+     5.4,
+     8.0
+    ],
+    [
+     42.2,
+     43.8
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 40,
+   "spans": [
+    [
+     0.0,
+     50.2
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 38,
+   "spans": [
+    [
+     50.2,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "walking on",
+   "obj": 1,
+   "spans": [
+    [
+     11.2,
+     14.0
+    ],
+    [
+     25.6,
+     38.8
+    ],
+    [
+     46.2,
+     48.6
+    ],
+    [
+     56.4,
+     461.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "cleaning",
+   "obj": 40,
+   "spans": [
+    [
+     0.6,
+     10.2
+    ],
+    [
+     38.8,
+     45.2
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 23,
+   "spans": [
+    [
+     14.0,
+     22.4
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "pouring",
+   "obj": 23,
+   "spans": [
+    [
+     14.8,
+     21.2
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 25,
+   "spans": [
+    [
+     51.8,
+     55.6
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "beside",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  },
+  {
+   "subj": 31,
+   "pred": "beside",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     61.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/6e0a6558-c212-4cab-b374-007671edb59c_2.mp4"
+}

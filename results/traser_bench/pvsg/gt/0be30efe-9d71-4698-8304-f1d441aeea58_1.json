@@ -1,0 +1,238 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0be30efe-9d71-4698-8304-f1d441aeea58_1",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 470,
+ "video_fps": 5.0,
+ "mask_pngs": 470,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "brush",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "stairs",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "fence",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "stairs",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     94.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "walking on",
+   "obj": 6,
+   "spans": [
+    [
+     11.6,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "walking on",
+   "obj": 3,
+   "spans": [
+    [
+     13.0,
+     91.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "touching",
+   "obj": 7,
+   "spans": [
+    [
+     2.0,
+     9.4
+    ],
+    [
+     14.8,
+     15.6
+    ],
+    [
+     21.6,
+     22.6
+    ],
+    [
+     35.2,
+     36.8
+    ],
+    [
+     51.2,
+     52.8
+    ],
+    [
+     64.4,
+     71.0
+    ],
+    [
+     79.4,
+     81.4
+    ],
+    [
+     91.4,
+     94.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "carrying",
+   "obj": 10,
+   "spans": [
+    [
+     18.4,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "brushing",
+   "obj": 7,
+   "spans": [
+    [
+     23.4,
+     94.0
+    ],
+    [
+     0.0,
+     1.4
+    ],
+    [
+     3.0,
+     10.6
+    ],
+    [
+     14.8,
+     17.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "pulling",
+   "obj": 10,
+   "spans": [
+    [
+     18.4,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "getting down on",
+   "obj": 6,
+   "spans": [
+    [
+     9.0,
+     10.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "stepping on",
+   "obj": 6,
+   "spans": [
+    [
+     2.0,
+     10.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/0be30efe-9d71-4698-8304-f1d441aeea58_1.mp4"
+}

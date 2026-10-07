@@ -1,0 +1,233 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1100_9117425466",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 116,
+ "video_fps": 5.0,
+ "mask_pngs": 116,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "sky",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "child",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 5,
+   "pred": "walking on",
+   "obj": 3,
+   "spans": [
+    [
+     16.8,
+     21.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "lying on",
+   "obj": 3,
+   "spans": [
+    [
+     6.8,
+     11.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "standing on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "standing on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "picking",
+   "obj": 7,
+   "spans": [
+    [
+     3.4,
+     8.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "picking",
+   "obj": 7,
+   "spans": [
+    [
+     3.6,
+     5.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "kicking",
+   "obj": 7,
+   "spans": [
+    [
+     9.4,
+     10.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "toward",
+   "obj": 7,
+   "spans": [
+    [
+     14.6,
+     16.6
+    ],
+    [
+     19.8,
+     21.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     14.0,
+     15.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "picking",
+   "obj": 7,
+   "spans": [
+    [
+     15.4,
+     16.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "grabbing",
+   "obj": 7,
+   "spans": [
+    [
+     16.4,
+     17.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "kicking",
+   "obj": 7,
+   "spans": [
+    [
+     18.0,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "toward",
+   "obj": 7,
+   "spans": [
+    [
+     19.8,
+     21.4
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "playing with",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     21.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "playing with",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     21.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1100_9117425466.mp4"
+}

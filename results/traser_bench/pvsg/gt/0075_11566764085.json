@@ -1,0 +1,236 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0075_11566764085",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 294,
+ "video_fps": 5.0,
+ "mask_pngs": 294,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "scissor",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "toy",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "child",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "sitting on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     29.0
+    ],
+    [
+     51.0,
+     58.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     9.8,
+     17.8
+    ],
+    [
+     21.2,
+     26.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "opening",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     9.8,
+     17.8
+    ],
+    [
+     21.2,
+     26.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     38.4,
+     40.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "grabbing",
+   "obj": 9,
+   "spans": [
+    [
+     49.2,
+     51.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     49.8,
+     58.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "looking at",
+   "obj": 9,
+   "spans": [
+    [
+     49.2,
+     58.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     16.4,
+     19.6
+    ],
+    [
+     20.2,
+     24.4
+    ],
+    [
+     34.4,
+     51.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "opening",
+   "obj": 8,
+   "spans": [
+    [
+     27.2,
+     31.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "grabbing",
+   "obj": 9,
+   "spans": [
+    [
+     32.0,
+     42.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     42.4,
+     51.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "looking at",
+   "obj": 9,
+   "spans": [
+    [
+     42.2,
+     46.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0075_11566764085.mp4"
+}

@@ -1,0 +1,293 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0054_2612939953",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 371,
+ "video_fps": 5.0,
+ "mask_pngs": 371,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "sky",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "horse",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "horse",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "wearing",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     20.2
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "wearing",
+   "obj": 9,
+   "spans": [
+    [
+     20.6,
+     66.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "riding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     8.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "going down",
+   "obj": 5,
+   "spans": [
+    [
+     8.0,
+     11.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "riding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     20.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "looking at",
+   "obj": 4,
+   "spans": [
+    [
+     9.2,
+     11.6
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "riding",
+   "obj": 5,
+   "spans": [
+    [
+     18.2,
+     74.2
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "riding",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     74.2
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "riding",
+   "obj": 8,
+   "spans": [
+    [
+     15.4,
+     20.2
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "going down",
+   "obj": 8,
+   "spans": [
+    [
+     26.2,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "looking at",
+   "obj": 13,
+   "spans": [
+    [
+     26.2,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "riding",
+   "obj": 8,
+   "spans": [
+    [
+     42.4,
+     74.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "getting down on",
+   "obj": 5,
+   "spans": [
+    [
+     8.0,
+     11.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "pulling",
+   "obj": 13,
+   "spans": [
+    [
+     14.0,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pulling",
+   "obj": 15,
+   "spans": [
+    [
+     26.4,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "getting down on",
+   "obj": 5,
+   "spans": [
+    [
+     26.4,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "pulling",
+   "obj": 12,
+   "spans": [
+    [
+     37.4,
+     43.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0054_2612939953.mp4"
+}

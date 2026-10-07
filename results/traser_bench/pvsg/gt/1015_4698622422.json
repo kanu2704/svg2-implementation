@@ -1,0 +1,279 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1015_4698622422",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 210,
+ "video_fps": 5.0,
+ "mask_pngs": 210,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "bat",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "car",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     40.0,
+     41.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     41.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     41.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     36.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     10.4
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "hitting",
+   "obj": 8,
+   "spans": [
+    [
+     10.4,
+     12.6
+    ],
+    [
+     20.6,
+     21.8
+    ],
+    [
+     23.6,
+     24.6
+    ],
+    [
+     26.6,
+     27.6
+    ],
+    [
+     29.0,
+     29.8
+    ],
+    [
+     33.4,
+     34.4
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "throwing",
+   "obj": 7,
+   "spans": [
+    [
+     36.0,
+     36.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "chasing",
+   "obj": 8,
+   "spans": [
+    [
+     12.6,
+     39.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "kicking",
+   "obj": 8,
+   "spans": [
+    [
+     36.2,
+     39.2
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     18.8,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     40.0,
+     41.8
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "pulling",
+   "obj": 4,
+   "spans": [
+    [
+     40.6,
+     41.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     19.0,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "playing with",
+   "obj": 8,
+   "spans": [
+    [
+     6.6,
+     40.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "squatting on",
+   "obj": 2,
+   "spans": [
+    [
+     19.0,
+     41.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1015_4698622422.mp4"
+}

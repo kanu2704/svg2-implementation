@@ -1,0 +1,146 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0010_8610561401",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 180,
+ "video_fps": 5.0,
+ "mask_pngs": 180,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "sofa",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     24.2
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "sitting on",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     1.2
+    ],
+    [
+     32.8,
+     36.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "standing on",
+   "obj": 4,
+   "spans": [
+    [
+     1.2,
+     32.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "sitting on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     36.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "looking at",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     36.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "touching",
+   "obj": 4,
+   "spans": [
+    [
+     8.8,
+     10.2
+    ],
+    [
+     16.2,
+     19.2
+    ],
+    [
+     28.6,
+     30.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "looking at",
+   "obj": 3,
+   "spans": [
+    [
+     24.4,
+     36.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "caressing",
+   "obj": 3,
+   "spans": [
+    [
+     32.2,
+     36.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0010_8610561401.mp4"
+}

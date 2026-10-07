@@ -1,0 +1,450 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1025_4615486172",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 450,
+ "video_fps": 5.0,
+ "mask_pngs": 450,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "rock",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "ceiling",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "curtain",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "candle",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "cake",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "chair",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 22,
+   "pred": "hugging",
+   "obj": 19,
+   "spans": [
+    [
+     50.4,
+     81.2
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     13.4,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 14,
+   "spans": [
+    [
+     2.2,
+     29.2
+    ],
+    [
+     77.0,
+     90.0
+    ],
+    [
+     76.8,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 14,
+   "spans": [
+    [
+     2.8,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     27.6,
+     86.8
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 10,
+   "spans": [
+    [
+     12.8,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "picking",
+   "obj": 12,
+   "spans": [
+    [
+     31.6,
+     35.4
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "next to",
+   "obj": 19,
+   "spans": [
+    [
+     49.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "blowing",
+   "obj": 13,
+   "spans": [
+    [
+     58.8,
+     61.4
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "blowing",
+   "obj": 13,
+   "spans": [
+    [
+     58.8,
+     61.4
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     62.0,
+     83.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "touching",
+   "obj": 14,
+   "spans": [
+    [
+     75.4,
+     77.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "beside",
+   "obj": 27,
+   "spans": [
+    [
+     5.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     49.8,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "next to",
+   "obj": 12,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "beside",
+   "obj": 17,
+   "spans": [
+    [
+     4.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "next to",
+   "obj": 18,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 16,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 18,
+   "spans": [
+    [
+     4.2,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "entering",
+   "obj": 5,
+   "spans": [
+    [
+     3.4,
+     6.2
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "over",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "squatting on",
+   "obj": 2,
+   "spans": [
+    [
+     50.4,
+     90.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1025_4615486172.mp4"
+}

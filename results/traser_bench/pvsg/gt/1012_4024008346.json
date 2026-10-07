@@ -1,0 +1,178 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1012_4024008346",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 98,
+ "video_fps": 5.0,
+ "mask_pngs": 98,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "fence",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "ballon",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 10,
+   "pred": "sitting on",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "playing with",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     0.8
+    ],
+    [
+     6.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "playing with",
+   "obj": 11,
+   "spans": [
+    [
+     4.4,
+     5.0
+    ],
+    [
+     13.4,
+     16.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1012_4024008346.mp4"
+}

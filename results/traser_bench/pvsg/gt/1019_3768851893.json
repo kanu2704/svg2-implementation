@@ -1,0 +1,542 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1019_3768851893",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 293,
+ "video_fps": 5.0,
+ "mask_pngs": 293,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "tray",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "curtain",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "ballon",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "ballon",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 3,
+   "spans": [
+    [
+     23.0,
+     51.6
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "holding",
+   "obj": 17,
+   "spans": [
+    [
+     36.8,
+     38.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "holding",
+   "obj": 21,
+   "spans": [
+    [
+     41.6,
+     42.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "holding",
+   "obj": 24,
+   "spans": [
+    [
+     48.0,
+     50.4
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "holding",
+   "obj": 24,
+   "spans": [
+    [
+     49.8,
+     51.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     52.0
+    ],
+    [
+     58.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "beside",
+   "obj": 12,
+   "spans": [
+    [
+     9.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     9.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "beside",
+   "obj": 16,
+   "spans": [
+    [
+     9.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     9.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "beside",
+   "obj": 20,
+   "spans": [
+    [
+     10.4,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     9.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "beside",
+   "obj": 23,
+   "spans": [
+    [
+     12.4,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     10.4,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "beside",
+   "obj": 26,
+   "spans": [
+    [
+     14.0,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     13.4,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     13.4,
+     58.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     13.8,
+     15.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     15.0,
+     16.0
+    ],
+    [
+     19.2,
+     20.6
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 16,
+   "spans": [
+    [
+     20.4,
+     27.2
+    ],
+    [
+     37.8,
+     41.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     28.0,
+     32.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 12,
+   "spans": [
+    [
+     32.0,
+     38.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 20,
+   "spans": [
+    [
+     41.0,
+     47.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 23,
+   "spans": [
+    [
+     47.0,
+     52.2
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 26,
+   "spans": [
+    [
+     52.0,
+     57.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     26.8,
+     46.4
+    ],
+    [
+     48.4,
+     53.6
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     40.6,
+     46.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "shaking hand with",
+   "obj": 16,
+   "spans": [
+    [
+     39.6,
+     40.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "shaking hand with",
+   "obj": 23,
+   "spans": [
+    [
+     50.6,
+     52.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "shaking hand with",
+   "obj": 26,
+   "spans": [
+    [
+     55.6,
+     57.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1019_3768851893.mp4"
+}

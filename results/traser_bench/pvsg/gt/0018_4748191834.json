@@ -1,0 +1,291 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0018_4748191834",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 166,
+ "video_fps": 5.0,
+ "mask_pngs": 166,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "cookie",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "candle",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "cake",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "camera",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "chair",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 13,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.2
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     9.6,
+     19.0
+    ],
+    [
+     31.4,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "looking at",
+   "obj": 6,
+   "spans": [
+    [
+     6.8,
+     8.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "touching",
+   "obj": 7,
+   "spans": [
+    [
+     9.0,
+     22.6
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "sitting on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     32.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "looking at",
+   "obj": 11,
+   "spans": [
+    [
+     8.4,
+     32.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "beside",
+   "obj": 8,
+   "spans": [
+    [
+     9.0,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "beside",
+   "obj": 8,
+   "spans": [
+    [
+     11.0,
+     32.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "touching",
+   "obj": 10,
+   "spans": [
+    [
+     20.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "touching",
+   "obj": 11,
+   "spans": [
+    [
+     21.0,
+     22.4
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "blowing",
+   "obj": 10,
+   "spans": [
+    [
+     22.4,
+     26.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "touching",
+   "obj": 10,
+   "spans": [
+    [
+     25.8,
+     27.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "hugging",
+   "obj": 7,
+   "spans": [
+    [
+     7.6,
+     22.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0018_4748191834.mp4"
+}

@@ -1,0 +1,327 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1203_8316378691",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 301,
+ "video_fps": 5.0,
+ "mask_pngs": 301,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "book",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "bag",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "camera",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "camera",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "camera",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     45.2
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     48.6,
+     52.4
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "standing on",
+   "obj": 4,
+   "spans": [
+    [
+     58.2,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "opening",
+   "obj": 13,
+   "spans": [
+    [
+     13.8,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "standing on",
+   "obj": 4,
+   "spans": [
+    [
+     42.6,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ],
+    [
+     25.6,
+     55.2
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holding",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     14.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     16.8,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     7.4,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in",
+   "obj": 13,
+   "spans": [
+    [
+     0.0,
+     21.6
+    ],
+    [
+     59.8,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "holding",
+   "obj": 14,
+   "spans": [
+    [
+     0.0,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "holding",
+   "obj": 19,
+   "spans": [
+    [
+     0.0,
+     60.2
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "holding",
+   "obj": 16,
+   "spans": [
+    [
+     0.0,
+     60.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1203_8316378691.mp4"
+}

@@ -1,0 +1,277 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0004_11566980553",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 287,
+ "video_fps": 5.0,
+ "mask_pngs": 287,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "gift",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "tv",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "light",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "gift",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "cabinet",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 14,
+   "spans": [
+    [
+     24.6,
+     27.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "opening",
+   "obj": 14,
+   "spans": [
+    [
+     30.8,
+     44.8
+    ],
+    [
+     35.6,
+     44.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "walking on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.6
+    ],
+    [
+     4.2,
+     6.6
+    ],
+    [
+     20.0,
+     21.0
+    ],
+    [
+     24.4,
+     26.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "standing on",
+   "obj": 1,
+   "spans": [
+    [
+     6.6,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "sitting on",
+   "obj": 3,
+   "spans": [
+    [
+     27.4,
+     57.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     2.6,
+     6.2
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "sitting on",
+   "obj": 10,
+   "spans": [
+    [
+     4.8,
+     21.6
+    ],
+    [
+     22.6,
+     29.8
+    ],
+    [
+     34.0,
+     35.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "grabbing",
+   "obj": 4,
+   "spans": [
+    [
+     12.2,
+     13.2
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "looking at",
+   "obj": 13,
+   "spans": [
+    [
+     5.0,
+     7.0
+    ],
+    [
+     14.4,
+     20.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     44.4,
+     57.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "carrying",
+   "obj": 4,
+   "spans": [
+    [
+     3.4,
+     7.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     7.2,
+     14.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "carrying",
+   "obj": 14,
+   "spans": [
+    [
+     23.4,
+     27.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0004_11566980553.mp4"
+}

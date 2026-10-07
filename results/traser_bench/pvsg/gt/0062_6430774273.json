@@ -1,0 +1,243 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0062_6430774273",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 450,
+ "video_fps": 5.0,
+ "mask_pngs": 450,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "baby",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "bed",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "camera",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "touching",
+   "obj": 2,
+   "spans": [
+    [
+     1.8,
+     16.8
+    ],
+    [
+     32.4,
+     44.2
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touching",
+   "obj": 3,
+   "spans": [
+    [
+     81.0,
+     83.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "lying on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "sitting on",
+   "obj": 4,
+   "spans": [
+    [
+     5.0,
+     23.0
+    ],
+    [
+     34.0,
+     47.0
+    ],
+    [
+     50.0,
+     52.2
+    ],
+    [
+     60.0,
+     76.2
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "kissing",
+   "obj": 3,
+   "spans": [
+    [
+     24.0,
+     26.2
+    ],
+    [
+     48.0,
+     50.2
+    ],
+    [
+     52.0,
+     56.6
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "caressing",
+   "obj": 3,
+   "spans": [
+    [
+     27.0,
+     29.8
+    ],
+    [
+     76.8,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "touching",
+   "obj": 3,
+   "spans": [
+    [
+     30.6,
+     32.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "lying on",
+   "obj": 4,
+   "spans": [
+    [
+     76.8,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "looking at",
+   "obj": 3,
+   "spans": [
+    [
+     84.0,
+     85.6
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     28.4,
+     31.2
+    ],
+    [
+     49.6,
+     53.0
+    ],
+    [
+     58.6,
+     60.4
+    ],
+    [
+     67.0,
+     69.2
+    ],
+    [
+     78.6,
+     83.2
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caressing",
+   "obj": 2,
+   "spans": [
+    [
+     50.8,
+     52.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "carrying",
+   "obj": 2,
+   "spans": [
+    [
+     3.2,
+     4.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hugging",
+   "obj": 3,
+   "spans": [
+    [
+     26.8,
+     31.0
+    ],
+    [
+     76.8,
+     79.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0062_6430774273.mp4"
+}

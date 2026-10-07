@@ -1,0 +1,294 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P08_07",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 120,
+ "video_fps": 5.0,
+ "mask_pngs": 120,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "beverage",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "can",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "teapot",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "glove",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "book",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "towel",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "cabinet",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 19,
+   "spans": [
+    [
+     2.4,
+     3.6
+    ],
+    [
+     7.4,
+     17.8
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 13,
+   "spans": [
+    [
+     6.0,
+     7.8
+    ],
+    [
+     18.4,
+     21.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "opening",
+   "obj": 19,
+   "spans": [
+    [
+     8.6,
+     9.8
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "closing",
+   "obj": 19,
+   "spans": [
+    [
+     16.0,
+     17.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in",
+   "obj": 13,
+   "spans": [
+    [
+     12.6,
+     23.4
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     3.2,
+     8.4
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 3,
+   "spans": [
+    [
+     7.6,
+     18.6
+    ],
+    [
+     21.0,
+     24.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "hanging from",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     24.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "carrying",
+   "obj": 13,
+   "spans": [
+    [
+     18.8,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "over",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     24.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P08_07.mp4"
+}

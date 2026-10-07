@@ -1,0 +1,158 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1006_4580824633",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 203,
+ "video_fps": 5.0,
+ "mask_pngs": 203,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "running on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     29.6
+    ],
+    [
+     38.6,
+     40.6
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "running on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.2
+    ],
+    [
+     9.8,
+     28.6
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.4
+    ],
+    [
+     13.4,
+     26.4
+    ],
+    [
+     31.8,
+     38.4
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "chasing",
+   "obj": 3,
+   "spans": [
+    [
+     0.8,
+     12.2
+    ],
+    [
+     21.6,
+     28.8
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "chasing",
+   "obj": 4,
+   "spans": [
+    [
+     13.4,
+     20.2
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     29.6,
+     40.6
+    ],
+    [
+     11.8,
+     13.6
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     29.6,
+     38.4
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "kissing",
+   "obj": 4,
+   "spans": [
+    [
+     32.4,
+     36.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1006_4580824633.mp4"
+}
