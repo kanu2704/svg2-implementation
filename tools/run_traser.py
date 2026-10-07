@@ -87,6 +87,33 @@ def chunk_resamplers(model, max_tokens=32768):
         mod._chunked = True
 
 
+def chunk_vision(model, max_patches=32768):
+    """Qwen2.5-VL's vision encoder takes all frames at once (up to ~150k patches for 128 frames); its
+    per-layer tensors then do not fit a 15 GB T4 next to the model. Patches of different time steps never
+    meet in it (window and full attention are both limited to one time step, cu_seqlens per t), so running
+    a few time steps at a time and concatenating gives the same output."""
+    vis = getattr(getattr(model, "model", model), "visual", None) or getattr(model, "visual", None)
+    if vis is None or getattr(vis, "_chunked", False):
+        return
+    original = vis.forward
+
+    def forward(hidden_states, grid_thw, **kwargs):
+        if grid_thw.shape[0] != 1 or hidden_states.shape[0] <= max_patches:
+            return original(hidden_states, grid_thw, **kwargs)
+        t, h, w = (int(x) for x in grid_thw[0])
+        per_t, step = h * w, max(1, max_patches // (h * w))
+        out = []
+        for a in range(0, t, step):
+            b = min(t, a + step)
+            g = grid_thw.clone()
+            g[0, 0] = b - a
+            out.append(original(hidden_states[a * per_t:b * per_t], g, **kwargs))
+        return torch.cat(out)
+
+    vis.forward = forward
+    vis._chunked = True
+
+
 def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     """Model, processor and tokenizer, as in their main (load once, reuse for many videos).
     model_id / base_model may be local folders (offline use)."""
@@ -95,6 +122,7 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     avoid_math_attention()
     model = T.TRASER.from_pretrained(model_id or T.DEFAULT_MODEL, torch_dtype=torch_dtype).to(device).eval()
     chunk_resamplers(model)
+    chunk_vision(model)
     processor = T.AutoProcessor.from_pretrained(base_model or T.BASE_MODEL)
     tokenizer = T.AutoTokenizer.from_pretrained(model_id or T.DEFAULT_MODEL, use_fast=False)
     processor.tokenizer = tokenizer

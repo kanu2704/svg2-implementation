@@ -105,7 +105,7 @@ def main():
     ap.add_argument("--vidor_root", default=None)
     ap.add_argument("--max_objects", type=int, default=40)
     ap.add_argument("--dtype", default="auto")
-    ap.add_argument("--timeout_min", type=float, default=20,
+    ap.add_argument("--timeout_min", type=float, default=45,
                     help="a video taking longer is recorded as failed (with where it hung) and the worker restarts")
     args = ap.parse_args()
     args.work = args.work or args.bench
