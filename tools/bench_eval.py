@@ -283,7 +283,8 @@ def video_report(gt, pred, stats, judge, thr=0.5):
     A verdict the judge has not given yet is None ("?")."""
     unit = gt.get("time_unit", "seconds")
     _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
-    name_of = {**name, -1: "camera"}
+    name_of = {g: f"{n} #{g}" for g, n in name.items()}          # ids: a video often has two "adult"s
+    name_of[-1] = "camera"
     mark = lambda x: "✓" if x else ("?" if x is None else "✗")
     obj_ok, objects = {-1: True}, []
     for o in gt["objects"]:

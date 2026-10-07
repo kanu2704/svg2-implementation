@@ -50,6 +50,43 @@ def avoid_math_attention():
     return False
 
 
+def chunk_resamplers(model, max_tokens=32768):
+    """TRASER compresses every object's video tokens with two perceiver resamplers, all objects in one
+    batch padded to the longest object (token_arrangement.py). With 40 objects on a long video that batch
+    (and its float32 copy in the RMS norm) does not fit a 15 GB T4. Each object is resampled on its own
+    (attention per object, padded positions masked out), so running the objects in chunks, each padded only
+    to its own longest object, gives the same result in a fraction of the memory."""
+    for name in ("perceiver_resampler", "second_perceiver_resampler"):
+        mod = getattr(model, name, None)
+        if mod is None or getattr(mod, "_chunked", False):
+            continue
+        original = mod.forward
+
+        def forward(context, attention_mask, _original=original):
+            n, length = context.shape[:2]
+            if n * length <= max_tokens:
+                return _original(context, attention_mask=attention_mask)
+            lens = attention_mask.sum(1)
+            order = torch.argsort(lens).tolist()
+            out = [None] * n
+            i = 0
+            while i < n:
+                j = i + 1
+                while j < n and (j + 1 - i) * max(int(lens[order[j]]), 1) <= max_tokens:
+                    j += 1
+                idx = order[i:j]
+                cut = max(int(lens[idx].max()), 1)
+                sel = torch.tensor(idx, device=context.device)
+                y = _original(context[sel, :cut], attention_mask=attention_mask[sel, :cut])
+                for k, o in enumerate(idx):
+                    out[o] = y[k]
+                i = j
+            return torch.stack(out)
+
+        mod.forward = forward
+        mod._chunked = True
+
+
 def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     """Model, processor and tokenizer, as in their main (load once, reuse for many videos).
     model_id / base_model may be local folders (offline use)."""
@@ -57,6 +94,7 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     torch_dtype = getattr(torch, pick_dtype(dtype))
     avoid_math_attention()
     model = T.TRASER.from_pretrained(model_id or T.DEFAULT_MODEL, torch_dtype=torch_dtype).to(device).eval()
+    chunk_resamplers(model)
     processor = T.AutoProcessor.from_pretrained(base_model or T.BASE_MODEL)
     tokenizer = T.AutoTokenizer.from_pretrained(model_id or T.DEFAULT_MODEL, use_fast=False)
     processor.tokenizer = tokenizer
