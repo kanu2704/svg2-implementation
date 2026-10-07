@@ -1,6 +1,6 @@
 # TRASER on PVSG, VidOR and SVG2test: regenerating Table 2
 
-Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 128 frames, at most 40 objects, greedy), float16 on Kaggle T4s. Lenient semantic criterion, temporal IoU ≥ 0.5; judge: Kimi K3 (NVIDIA NIM) instead of the paper's GPT-4o-mini.
+Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 128 frames, at most 40 objects, greedy), float16 on Kaggle T4s. Lenient semantic criterion, temporal IoU > 0.5; scores over the videos with a prediction (see Coverage); judge: Kimi K3 (NVIDIA NIM) instead of the paper's GPT-4o-mini.
 
 | | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
 |---|---|---|---|---|---|---|---|---|---|

@@ -413,7 +413,7 @@ def write_compare(dataset, thr=0.5, path=None):
             "`tools/bench_eval.py write_compare`.\n\n"
             + (f"**So far: objects {tot('objects right')}/{den('objects right')}, relations "
                f"{tot('relations right')}/{den('relations right')}, triplets "
-               f"{tot('triplets right')}/{den('triplets right')}** (before judging; final numbers in README.md)\n\n"
+               f"{tot('triplets right')}/{den('triplets right')}** (unjudged pairs count as not right; scores in README.md)\n\n"
                if overview else "")
             + _md_table(overview) + "\n" + "\n".join(sections))
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -484,7 +484,7 @@ def write_report(report, path=RESULTS / "README.md"):
     ours = "| **TRASER, ours** | " + " | ".join(cell(d, m) for m in ("triplet", "relation", "object") for d in ds) + " |"
     L = ["# TRASER on PVSG, VidOR and SVG2test: regenerating Table 2", "",
          "Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 128 frames, at most 40 objects, greedy), "
-         "float16 on Kaggle T4s. Lenient semantic criterion, temporal IoU ≥ 0.5; judge: Kimi K3 (NVIDIA NIM) instead of the paper's GPT-4o-mini.",
+         "float16 on Kaggle T4s. Lenient semantic criterion, temporal IoU > 0.5; scores over the videos with a prediction (see Coverage); judge: Kimi K3 (NVIDIA NIM) instead of the paper's GPT-4o-mini.",
          "", head, sep, paper, ours, "",
          "## Coverage", "", "| | test videos | prepared | predicted | failed | answers not valid JSON (salvaged) |", "|---|---|---|---|---|---|"]
     for d in ds:

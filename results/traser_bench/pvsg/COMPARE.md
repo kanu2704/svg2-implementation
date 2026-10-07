@@ -2,7 +2,7 @@
 
 44 videos with a prediction. Lenient criterion, temporal IoU > 0.5. ✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet (identical text counts as right without the judge). Relation = same two objects, predicate not a mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by `tools/bench_eval.py write_compare`.
 
-**So far: objects 490/670, relations 117/672, triplets 96/672** (before judging; final numbers in README.md)
+**So far: objects 490/670, relations 117/672, triplets 96/672** (unjudged pairs count as not right; scores in README.md)
 
 | video | objects right | relations right | triplets right | not judged yet (?) |
 |---|---|---|---|---|
