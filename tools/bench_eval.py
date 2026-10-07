@@ -163,23 +163,34 @@ class Judge:
             return
         from nim import ask, nim_client
         self.client = self.client or nim_client(timeout=180)
-        for start in range(0, len(todo), chunk):
-            part = todo[start:start + chunk]
+        parts = [todo[i:i + chunk] for i in range(0, len(todo), chunk)]
+        done = 0
+        while parts:
+            part = parts.pop(0)
             items = [{"i": n, "type": k.split("\t")[0], "reference": k.split("\t")[1], "predicted": k.split("\t")[2]}
                      for n, k in enumerate(part)]
             try:
                 reply = ask(self.client, self.model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(items)}],
                             dict(temperature=0.0), max_tokens=4096)
-            except RuntimeError as e:
-                log(f"  judge call failed ({e}); these {len(part)} pairs stay unjudged for now")
-                continue
-            got = {int(x.get("i", -1)): str(x.get("category", "")).lower()
-                   for x in reply.get("results", []) if isinstance(x, dict)}
+                got = {int(x.get("i", -1)): str(x.get("category", "")).lower()
+                       for x in reply.get("results", []) if isinstance(x, dict)}
+            except (RuntimeError, ValueError, TypeError) as e:
+                got, err = {}, e
+            new = 0
             for n, k in enumerate(part):
                 if got.get(n) in CATEGORIES:
                     self.cache[k] = got[n]
+                    new += 1
             self.save()
-            log(f"  judged {min(start + chunk, len(todo))}/{len(todo)} new pairs")
+            left = [k for k in part if k not in self.cache]
+            done += new
+            if left and len(left) > 5:          # a failed or partial answer: ask again in smaller pieces
+                log(f"  {len(left)} pairs without an answer ({'call failed' if not got else 'partial answer'}); "
+                    "asking again in smaller groups")
+                parts = [left[:len(left) // 2], left[len(left) // 2:]] + parts
+            elif left:
+                log(f"  {len(left)} pairs stay unjudged for now: {[k.replace(chr(9), ' | ') for k in left]}")
+            log(f"  judged {done}/{len(todo)} new pairs")
 
     def category(self, kind, ref, pred):
         if norm(ref) == norm(pred):
