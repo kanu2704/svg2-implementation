@@ -1,16 +1,16 @@
 # pvsg: human labels vs TRASER, video by video
 
-44 videos with a prediction. Lenient criterion, temporal IoU > 0.5. ✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet (identical text counts as right without the judge). Relation = same two objects, predicate not a mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by `tools/bench_eval.py write_compare`.
+52 videos with a prediction. Lenient criterion, temporal IoU > 0.5. ✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet (identical text counts as right without the judge). Relation = same two objects, predicate not a mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by `tools/bench_eval.py write_compare`.
 
-**So far: objects 490/670, relations 117/672, triplets 96/672** (unjudged pairs count as not right; scores in README.md)
+**So far: objects 599/877, relations 130/768, triplets 99/768** (unjudged pairs count as not right; scores in README.md)
 
 | video | objects right | relations right | triplets right | not judged yet (?) |
 |---|---|---|---|---|
 | [0004_11566980553](#0004_11566980553) | 10/15 | 1/13 | 1/13 | 0 |
-| [0010_8610561401](#0010_8610561401) | 4/5 | 1/8 | 1/8 | 1 |
+| [0010_8610561401](#0010_8610561401) | 4/5 | 1/8 | 1/8 | 0 |
 | [0018_4748191834](#0018_4748191834) | 10/14 | 4/17 | 4/17 | 0 |
-| [0027_4571353789](#0027_4571353789) | 10/16 | 2/17 | 1/17 | 2 |
-| [0028_4021064662](#0028_4021064662) | 6/10 | 5/18 | 4/18 | 1 |
+| [0027_4571353789](#0027_4571353789) | 10/16 | 4/17 | 1/17 | 0 |
+| [0028_4021064662](#0028_4021064662) | 6/10 | 5/18 | 4/18 | 0 |
 | [0039_6951351121](#0039_6951351121) | 12/17 | 2/13 | 2/13 | 0 |
 | [0046_11919433184](#0046_11919433184) | 12/16 | 1/17 | 1/17 | 0 |
 | [0051_3702633786](#0051_3702633786) | 7/12 | 0/15 | 0/15 | 0 |
@@ -19,7 +19,7 @@
 | [0057_7001078933](#0057_7001078933) | 13/15 | 4/18 | 4/18 | 0 |
 | [0062_6430774273](#0062_6430774273) | 4/6 | 2/13 | 2/13 | 0 |
 | [0069_2740320945](#0069_2740320945) | 16/20 | 0/16 | 0/16 | 0 |
-| [0075_11566764085](#0075_11566764085) | 9/10 | 2/12 | 2/12 | 1 |
+| [0075_11566764085](#0075_11566764085) | 9/10 | 3/12 | 3/12 | 0 |
 | [0096_5296138427](#0096_5296138427) | 10/11 | 2/12 | 2/12 | 0 |
 | [0be30efe-9d71-4698-8304-f1d441aeea58_1](#0be30efe-9d71-4698-8304-f1d441aeea58_1) | 5/12 | 1/10 | 1/10 | 0 |
 | [1000_6828150903](#1000_6828150903) | 10/15 | 4/13 | 3/13 | 0 |
@@ -27,29 +27,37 @@
 | [1002_5280626374](#1002_5280626374) | 9/13 | 2/12 | 2/12 | 0 |
 | [1005_4760962392](#1005_4760962392) | 13/17 | 0/20 | 0/20 | 0 |
 | [1005_7031128593](#1005_7031128593) | 3/9 | 2/7 | 1/7 | 0 |
-| [1005_7401573420](#1005_7401573420) | 14/20 | 3/23 | 3/23 | 3 |
+| [1005_7401573420](#1005_7401573420) | 14/20 | 4/23 | 4/23 | 0 |
 | [1006_4580824633](#1006_4580824633) | 3/5 | 1/8 | 1/8 | 0 |
-| [1007_6631583821](#1007_6631583821) | 8/10 | 4/12 | 4/12 | 2 |
+| [1007_6631583821](#1007_6631583821) | 8/10 | 5/12 | 5/12 | 0 |
 | [1011_4633647136](#1011_4633647136) | 12/14 | 0/20 | 0/20 | 0 |
 | [1012_4024008346](#1012_4024008346) | 10/11 | 5/8 | 4/8 | 0 |
 | [1015_4698622422](#1015_4698622422) | 10/13 | 3/15 | 3/15 | 0 |
 | [1017_3056841458](#1017_3056841458) | 11/14 | 4/16 | 3/16 | 0 |
-| [1019_3768851893](#1019_3768851893) | 18/30 | 6/30 | 0/30 | 1 |
+| [1019_3768851893](#1019_3768851893) | 18/30 | 6/30 | 0/30 | 0 |
 | [1020_2471845614](#1020_2471845614) | 21/22 | 9/27 | 9/27 | 0 |
 | [1021_3478653250](#1021_3478653250) | 13/13 | 1/23 | 1/23 | 0 |
 | [1021_4278168115](#1021_4278168115) | 11/11 | 9/21 | 9/21 | 0 |
 | [1025_4615486172](#1025_4615486172) | 21/27 | 0/24 | 0/24 | 0 |
 | [1025_6244382586](#1025_6244382586) | 11/11 | 7/12 | 7/12 | 0 |
 | [1052_8530515192](#1052_8530515192) | 15/15 | 5/28 | 5/28 | 0 |
-| [1100_9117425466](#1100_9117425466) | 8/8 | 1/15 | 1/15 | 1 |
+| [1100_9117425466](#1100_9117425466) | 8/8 | 1/15 | 1/15 | 0 |
 | [1122_3393449055](#1122_3393449055) | 7/9 | 5/11 | 5/11 | 0 |
 | [1124_9861436503](#1124_9861436503) | 8/13 | 2/11 | 0/11 | 0 |
 | [1161_5895320023](#1161_5895320023) | 25/30 | 0/9 | 0/9 | 0 |
-| [1164_6895784766](#1164_6895784766) | 11/16 | 0/14 | 0/14 | 1 |
+| [1164_6895784766](#1164_6895784766) | 11/16 | 0/14 | 0/14 | 0 |
 | [1203_8316378691](#1203_8316378691) | 16/23 | 5/15 | 5/15 | 0 |
+| [1bfe5ac2-cbf8-4364-8a30-60d97dd395df_1](#1bfe5ac2-cbf8-4364-8a30-60d97dd395df_1) | 9/19 | 0/14 | 0/14 | 0 |
 | [22cc4d54-34be-4580-983a-9e710e831c16](#22cc4d54-34be-4580-983a-9e710e831c16) | 0/10 | 0/18 | 0/18 | 0 |
 | [6e0a6558-c212-4cab-b374-007671edb59c_2](#6e0a6558-c212-4cab-b374-007671edb59c_2) | 25/40 | 4/16 | 0/16 | 0 |
 | [P02_10](#p02_10) | 17/28 | 3/5 | 0/5 | 0 |
+| [P08_07](#p08_07) | 19/26 | 2/10 | 0/10 | 0 |
+| [P09_07](#p09_07) | 15/29 | 1/15 | 0/15 | 0 |
+| [P11_11](#p11_11) | 20/44 | 2/15 | 0/15 | 0 |
+| [P14_06](#p14_06) | 24/34 | 0/10 | 0/10 | 0 |
+| [P28_19](#p28_19) | 10/28 | 3/10 | 0/10 | 17 |
+| [c20407ac-83d6-4c84-88cb-63bced9d456b](#c20407ac-83d6-4c84-88cb-63bced9d456b) | 6/11 | 0/12 | 0/12 | 0 |
+| [eed8d8d7-6773-493b-af21-880f0acb063a](#eed8d8d7-6773-493b-af21-880f0acb063a) | 6/16 | 0/10 | 0/10 | 0 |
 
 ## 0004_11566980553
 
@@ -80,7 +88,7 @@
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
 | child #9 - holding - gift #14 | 24.6-27.6s | holds (+4 more) | 23.1614-58.407s | identical | 0.09 | ✗ | ✗ |
-| child #9 - opening - gift #14 | 30.8-44.8s | holds (+4 more) | 23.1614-58.407s | not judged yet | 0.40 | ✗ | ✗ |
+| child #9 - opening - gift #14 | 30.8-44.8s | opens (+4 more) | 23.1614-27.1895s | identical | 0.00 | ✗ | ✗ |
 | child #9 - walking on - floor #1 | 0-2.6s, 4.2-6.6s, 20-21s, 24.4-26.6s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #9 - standing on - floor #1 | 6.6-20s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #9 - sitting on - carpet #3 | 27.4-57.4s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -114,7 +122,7 @@ TRASER relations between pairs the humans did not annotate (17): child #9 - appr
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
-| adult #2 - next to - dog #3 | 0-24.2s | petting (+1 more) | 0-37s | not judged yet | 0.65 | ? | ? |
+| adult #2 - next to - dog #3 | 0-24.2s | petting (+1 more) | 0-37s | mismatch | 0.65 | ✗ | ✗ |
 | dog #3 - sitting on - sofa #5 | 0-1.2s, 32.8-36s | standing on (+1 more) | 0-37s | semantic overlap | 0.12 | ✗ | ✗ |
 | dog #3 - standing on - sofa #4 | 1.2-32.8s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #2 - sitting on - sofa #4 | 0-36s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -199,7 +207,7 @@ TRASER relations between pairs the humans did not annotate (22): child #7 - hold
 | 15 | adult | arm | mismatch | ✗ |
 | 16 | adult | person | hypernym/hyponym | ✓ |
 
-**Relations: 2/17 right, triplets: 1/17 right** (lenient, tIoU > 0.5)
+**Relations: 4/17 right, triplets: 1/17 right** (lenient, tIoU > 0.5)
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
@@ -216,8 +224,8 @@ TRASER relations between pairs the humans did not annotate (22): child #7 - hold
 | table #6 - beside - light #7 | 0-19s | under | 0-11s, 16-20s | mismatch | 0.70 | ✗ | ✗ |
 | table #6 - in front of - wall #4 | 0-19s | in front of | 0-11s, 16-20s | identical | 0.70 | ✓ | ✗ |
 | adult #11 - holding - camera #9 | 17.6-18.6s | nothing for this pair | - | - | - | ✗ | ✗ |
-| light #7 - over - wall #4 | 0-19s | above | 0-20s | not judged yet | 0.95 | ? | ✗ |
-| light #12 - over - wall #4 | 0-19s | above | 0-20s | not judged yet | 0.95 | ? | ✗ |
+| light #7 - over - wall #4 | 0-19s | above | 0-20s | synonym | 0.95 | ✓ | ✗ |
+| light #12 - over - wall #4 | 0-19s | above | 0-20s | synonym | 0.95 | ✓ | ✗ |
 | adult #14 - hugging - adult #11 | 8-12s | looking at (+2 more) | 0-11s | mismatch | 0.25 | ✗ | ✗ |
 | adult #16 - holding - camera #13 | 17.2-19s | nothing for this pair | - | - | - | ✗ | ✗ |
 
@@ -263,7 +271,7 @@ TRASER relations between pairs the humans did not annotate (24): adult #11 - hol
 | child #4 - in front of - adult #3 | 7.6-8s | near (+3 more) | 0-19s | hypernym/hyponym | 0.02 | ✗ | ✗ |
 | adult #3 - throwing - ball #8 | 9.6-10.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #4 - catching - ball #8 | 9.8-11.4s | wearing | 0-19s | mismatch | 0.08 | ✗ | ✗ |
-| child #4 - playing with - adult #3 | 12.6-18.6s | moving away from (+3 more) | 11-19s | not judged yet | 0.75 | ? | ? |
+| child #4 - playing with - adult #3 | 12.6-18.6s | moving away from (+3 more) | 11-19s | mismatch | 0.75 | ✗ | ✗ |
 | adult #3 - hugging - child #4 | 12.4-15.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (14): adult #3 - wearing - hat #6 [0-19s]; child #4 - approaching - bottle #5 [10-13s]; child #4 - moving away from - bottle #5 [13-19s]; ball #8 - on - grass #2 [0-19s]; ground #1 - in front of - grass #2 [0-19s]; adult #3 - behind - ground #1 [0-19s]; child #4 - behind - ground #1 [0-19s]; bottle #5 - behind - ground #1 [0-19s]; bag #7 - behind - ground #1 [0-9s]; ball #8 - behind - ground #1 [0-19s]
@@ -349,11 +357,11 @@ TRASER relations between pairs the humans did not annotate (33): adult #16 - wea
 | child #9 - standing on - grass #3 | 0-1.6s, 4.4-7.8s | on | 0-110.607s | hypernym/hyponym | 0.05 | ✗ | ✗ |
 | child #9 - kicking - ball #10 | 1.6-4.4s, 49.6-54.2s, 61.8-72s, 78-78.8s, 85.2-86s, 100-105.2s | playing with (+4 more) | 0-2.98938s, 3.98584-12.954s, 13.9504-14.9469s, 15.9434-16.9398s, 17.9363-20.9257s, 21.9221-22.9186s, 23.915-24.9115s, 25.908-26.9044s, 27.9009-30.8903s, 31.8867-32.8832s, 33.8796-34.8761s, 35.8726-36.869s, 37.8655-38.8619s, 39.8584-40.8549s, 41.8513-42.8478s, 43.8442-44.8407s, 45.8372-46.8336s, 47.8301-48.8265s, 49.823-50.8195s, 51.8159-52.8124s, 53.8088-54.8053s, 55.8018-56.7982s, 57.7947-58.7912s, 59.7876-60.7841s, 61.7805-62.777s, 63.7735-64.7699s, 65.7664-66.7628s, 67.7593-68.7558s, 69.7522-70.7487s, 71.7451-72.7416s, 73.7381-74.7345s, 75.731-76.7274s, 77.7239-78.7204s, 79.7168-80.7133s, 81.7097-82.7062s, 83.7027-84.6991s, 85.6956-86.692s, 87.6885-88.685s, 89.6814-90.6779s, 91.6743-92.6708s, 93.6673-94.6637s, 95.6602-96.6566s, 97.6531-98.6496s, 99.646-100.642s, 101.639-102.635s, 103.632-104.628s, 105.625-106.621s, 107.618-108.614s, 109.611-110.607s | mismatch | 0.18 | ✗ | ✗ |
 | child #9 - toward - ball #10 | 7.8-10s, 21-29.8s, 47.4-49.6s | approaching (+4 more) | 9.9646-11.9575s | synonym | 0.00 | ✗ | ✗ |
-| child #9 - picking - ball #10 | 10-11.2s, 93.6-95s | approaching (+4 more) | 9.9646-11.9575s | not judged yet | 0.35 | ✗ | ✗ |
+| child #9 - picking - ball #10 | 10-11.2s, 93.6-95s | holding (+4 more) | 10.9611-12.954s, 13.9504-14.9469s, 15.9434-16.9398s, 17.9363-20.9257s, 21.9221-22.9186s, 23.915-24.9115s, 25.908-26.9044s, 27.9009-30.8903s, 31.8867-32.8832s, 33.8796-34.8761s, 35.8726-36.869s, 37.8655-38.8619s, 39.8584-40.8549s, 41.8513-42.8478s, 43.8442-44.8407s, 45.8372-46.8336s, 47.8301-48.8265s, 49.823-50.8195s, 51.8159-52.8124s, 53.8088-54.8053s, 55.8018-56.7982s, 57.7947-58.7912s, 59.7876-60.7841s, 61.7805-62.777s, 63.7735-64.7699s, 65.7664-66.7628s, 67.7593-68.7558s, 69.7522-70.7487s, 71.7451-72.7416s, 73.7381-74.7345s, 75.731-76.7274s, 77.7239-78.7204s, 79.7168-80.7133s, 81.7097-82.7062s, 83.7027-84.6991s, 85.6956-86.692s, 87.6885-88.685s, 89.6814-90.6779s, 91.6743-92.6708s, 93.6673-94.6637s, 95.6602-96.6566s, 97.6531-98.6496s, 99.646-100.642s, 101.639-102.635s, 103.632-104.628s, 105.625-106.621s, 107.618-108.614s, 109.611-110.607s | semantic overlap | 0.02 | ✗ | ✗ |
 | child #9 - toward - adult #8 | 11.2-14s | playing with | 0-2.98938s, 3.98584-10.9611s | mismatch | 0.00 | ✗ | ✗ |
 | adult #8 - standing on - grass #3 | 0-19s | on | 0-47.8301s, 55.8018-64.7699s, 69.7522-70.7487s, 75.731-88.685s, 103.632-108.614s | hypernym/hyponym | 0.25 | ✗ | ✗ |
-| adult #8 - picking - ball #10 | 19-20.4s, 41.6-43.6s | holding | 0-2.98938s, 3.98584-10.9611s | not judged yet | 0.00 | ✗ | ✗ |
-| child #9 - next to - adult #8 | 12.8-47.6s, 57.8-64.6s | playing with | 0-2.98938s, 3.98584-10.9611s | not judged yet | 0.00 | ✗ | ✗ |
+| adult #8 - picking - ball #10 | 19-20.4s, 41.6-43.6s | holding | 0-2.98938s, 3.98584-10.9611s | semantic overlap | 0.00 | ✗ | ✗ |
+| child #9 - next to - adult #8 | 12.8-47.6s, 57.8-64.6s | playing with | 0-2.98938s, 3.98584-10.9611s | mismatch | 0.00 | ✗ | ✗ |
 | adult #8 - pulling - child #9 | 60.6-62s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #9 - picking - ball #13 | 73.2-76s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #9 - chasing - ball #13 | 78.8-85s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -655,19 +663,19 @@ TRASER relations between pairs the humans did not annotate (15): adult #10 - in 
 | 9 | toy | toy car | hypernym/hyponym | ✓ |
 | 10 | child | - | no label from TRASER | ✗ |
 
-**Relations: 2/12 right, triplets: 2/12 right** (lenient, tIoU > 0.5)
+**Relations: 3/12 right, triplets: 3/12 right** (lenient, tIoU > 0.5)
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
 | adult #4 - sitting on - sofa #6 | 0-29s, 51-58.8s | touching (+1 more) | 50.8271-59.7966s | semantic overlap | 0.21 | ✗ | ✗ |
 | adult #4 - holding - scissor #3 | 0-9s, 9.8-17.8s, 21.2-26.8s | holding | 0-1.99322s, 2.98983-16.9424s, 17.939-27.9051s | identical | 0.75 | ✓ | ✓ |
-| adult #4 - opening - box #8 | 0-9s, 9.8-17.8s, 21.2-26.8s | cutting open (+3 more) | 0-27.9051s | not judged yet | 0.81 | ? | ? |
+| adult #4 - opening - box #8 | 0-9s, 9.8-17.8s, 21.2-26.8s | cutting open (+3 more) | 0-27.9051s | semantic overlap | 0.81 | ✓ | ✓ |
 | adult #4 - walking on - carpet #2 | 38.4-40.8s | above | 0-27.9051s, 33.8847-43.8508s, 50.8271-59.7966s | mismatch | 0.05 | ✗ | ✗ |
 | adult #4 - grabbing - toy #9 | 49.2-51.2s | holding (+3 more) | 29.8983-33.8847s | hypernym/hyponym | 0.00 | ✗ | ✗ |
 | adult #4 - holding - toy #9 | 49.8-58.8s | holding (+3 more) | 29.8983-33.8847s | identical | 0.00 | ✗ | ✗ |
 | adult #4 - looking at - toy #9 | 49.2-58.8s | holding (+3 more) | 29.8983-33.8847s | mismatch | 0.00 | ✗ | ✗ |
 | child #5 - standing on - carpet #2 | 16.4-19.6s, 20.2-24.4s, 34.4-51.4s | above | 0-7.97288s, 17.939-27.9051s, 29.8983-52.8203s | hypernym/hyponym | 0.54 | ✓ | ✓ |
-| child #5 - opening - box #8 | 27.2-31.2s | holding (+1 more) | 17.939-27.9051s | not judged yet | 0.05 | ✗ | ✗ |
+| child #5 - opening - box #8 | 27.2-31.2s | holding (+1 more) | 17.939-27.9051s | mismatch | 0.05 | ✗ | ✗ |
 | child #5 - grabbing - toy #9 | 32-42.4s | touching (+1 more) | 29.8983-36.8746s | hypernym/hyponym | 0.39 | ✗ | ✗ |
 | child #5 - holding - toy #9 | 42.4-51.2s | holding (+1 more) | 29.8983-33.8847s | identical | 0.00 | ✗ | ✗ |
 | child #5 - looking at - toy #9 | 42.2-46.2s | holding (+1 more) | 29.8983-33.8847s | mismatch | 0.00 | ✗ | ✗ |
@@ -700,7 +708,7 @@ TRASER relations between pairs the humans did not annotate (15): toy #9 - moving
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
 | adult #4 - standing on - floor #2 | 0-19.4s | nothing for this pair | - | - | - | ✗ | ✗ |
-| adult #4 - pulling - chair #6 | 4.8-6.4s | sitting on (+1 more) | 0-20.4211s | not judged yet | 0.08 | ✗ | ✗ |
+| adult #4 - pulling - chair #6 | 4.8-6.4s | sitting on (+1 more) | 0-20.4211s | mismatch | 0.08 | ✗ | ✗ |
 | adult #4 - pushing - chair #6 | 6.2-14.8s | sitting on (+1 more) | 0-20.4211s | mismatch | 0.42 | ✗ | ✗ |
 | adult #4 - holding - towel #7 | 16.8-19.4s | holding | 17.3579-20.4211s | identical | 0.56 | ✓ | ✓ |
 | adult #4 - touching - chair #9 | 18.6-19.4s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -747,7 +755,7 @@ TRASER relations between pairs the humans did not annotate (16): adult #8 - sitt
 | adult #8 - touching - fence #7 | 2-9.4s, 14.8-15.6s, 21.6-22.6s, 35.2-36.8s, 51.2-52.8s, 64.4-71s, 79.4-81.4s, 91.4-94s | holding (+4 more) | 0-95s | hypernym/hyponym | 0.25 | ✗ | ✗ |
 | adult #8 - carrying - chair #10 | 18.4-19.8s | sanding (+2 more) | 14-54s, 55-67s, 85-95s | mismatch | 0.02 | ✗ | ✗ |
 | adult #8 - brushing - fence #7 | 0-1.4s, 3-10.6s, 14.8-17.6s, 23.4-94s | sanding (+4 more) | 0-95s | semantic overlap | 0.87 | ✓ | ✓ |
-| adult #8 - pulling - chair #10 | 18.4-19.8s | sanding (+2 more) | 14-54s, 55-67s, 85-95s | not judged yet | 0.02 | ✗ | ✗ |
+| adult #8 - pulling - chair #10 | 18.4-19.8s | moving along (+2 more) | 14-54s, 55-67s, 85-95s | semantic overlap | 0.02 | ✗ | ✗ |
 | adult #8 - getting down on - stairs #6 | 9-10.6s | holding (+4 more) | 0-17s, 85-95s | mismatch | 0.06 | ✗ | ✗ |
 | adult #8 - stepping on - stairs #6 | 2-10.4s | holding (+4 more) | 0-17s, 85-95s | mismatch | 0.31 | ✗ | ✗ |
 
@@ -877,7 +885,7 @@ TRASER relations between pairs the humans did not annotate (46): adult #9 - wear
 | adult #9 - holding - glasses #3 | 1.4-18.6s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #5 - holding - book #2 | 20.4-35.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #5 - next to - adult #9 | 0-35.2s | nothing for this pair | - | - | - | ✗ | ✗ |
-| adult #5 - next to - child #6 | 0-35.2s | looking at | 0-15.0857s | not judged yet | 0.43 | ✗ | ✗ |
+| adult #5 - next to - child #6 | 0-35.2s | looking at | 0-15.0857s | mismatch | 0.43 | ✗ | ✗ |
 | child #6 - standing on - table #7 | 0-35.2s | on | 0-35.2s | hypernym/hyponym | 1.00 | ✓ | ✓ |
 | child #6 - in - toy #8 | 4.4-35.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #6 - holding - microphone #4 | 13-35.2s | holding (+2 more) | 15.0857-35.2s | identical | 0.91 | ✓ | ✓ |
@@ -1005,7 +1013,7 @@ TRASER relations between pairs the humans did not annotate (16): adult #4 - pett
 | 19 | chair | arm | mismatch | ✗ |
 | 20 | chair | chair | identical | ✓ |
 
-**Relations: 3/23 right, triplets: 3/23 right** (lenient, tIoU > 0.5)
+**Relations: 4/23 right, triplets: 4/23 right** (lenient, tIoU > 0.5)
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
@@ -1025,11 +1033,11 @@ TRASER relations between pairs the humans did not annotate (16): adult #4 - pett
 | cat #8 - standing on - floor #1 | 14.6-17.4s, 22.6-30.2s, 39.2-44s | on | 0-85s | hypernym/hyponym | 0.18 | ✗ | ✗ |
 | cat #8 - lying on - floor #1 | 76.6-84.2s | on | 0-85s | hypernym/hyponym | 0.09 | ✗ | ✗ |
 | adult #6 - playing with - cat #8 | 17-84.2s | playing with (+2 more) | 64-85s | identical | 0.30 | ✗ | ✗ |
-| child #7 - playing with - cat #8 | 14.6-85s | near | 0-85s | not judged yet | 0.83 | ? | ? |
+| child #7 - playing with - cat #8 | 14.6-85s | near | 0-85s | mismatch | 0.83 | ✗ | ✗ |
 | child #7 - looking at - cat #8 | 14.6-85s | near | 0-85s | mismatch | 0.83 | ✗ | ✗ |
-| child #7 - next to - adult #6 | 14.6-85s | in front of (+3 more) | 10-85s | not judged yet | 0.94 | ? | ? |
+| child #7 - next to - adult #6 | 14.6-85s | in front of (+3 more) | 10-85s | mismatch | 0.94 | ✗ | ✗ |
 | child #7 - in front of - adult #6 | 14.6-85s | in front of (+3 more) | 10-85s | identical | 0.94 | ✓ | ✓ |
-| child #7 - next to - cat #8 | 14.6-85s | near | 0-85s | not judged yet | 0.83 | ? | ? |
+| child #7 - next to - cat #8 | 14.6-85s | near | 0-85s | hypernym/hyponym | 0.83 | ✓ | ✓ |
 | child #7 - squatting on - floor #1 | 17.6-20.2s, 24.4-26.6s | on | 0-85s | hypernym/hyponym | 0.06 | ✗ | ✗ |
 | child #7 - walking on - floor #1 | 45.4-49.6s, 76.6-79s | on | 0-85s | hypernym/hyponym | 0.08 | ✗ | ✗ |
 
@@ -1085,7 +1093,7 @@ TRASER relations between pairs the humans did not annotate (5): adult #3 - in fr
 | 9 | child | person | hypernym/hyponym | ✓ |
 | 10 | child | shoe | mismatch | ✗ |
 
-**Relations: 4/12 right, triplets: 4/12 right** (lenient, tIoU > 0.5)
+**Relations: 5/12 right, triplets: 5/12 right** (lenient, tIoU > 0.5)
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
@@ -1099,8 +1107,8 @@ TRASER relations between pairs the humans did not annotate (5): adult #3 - in fr
 | child #5 - catching - ball #7 | 3.6-4.8s, 10.2-11s, 18.6-19.6s, 27.2-28.2s | holding (+1 more) | 0-28.8s | semantic overlap | 0.14 | ✗ | ✗ |
 | adult #4 - holding - ball #7 | 7.4-9s | looking at | 0-28.8s | mismatch | 0.06 | ✗ | ✗ |
 | child #5 - holding - ball #7 | 10.4-13.2s, 28-28.8s | holding (+1 more) | 0-28.8s | identical | 0.12 | ✗ | ✗ |
-| child #5 - playing with - ball #7 | 0-28.8s | holding (+1 more) | 0-28.8s | not judged yet | 1.00 | ? | ? |
-| adult #4 - playing with - ball #7 | 0-28.8s | looking at | 0-28.8s | not judged yet | 1.00 | ? | ? |
+| child #5 - playing with - ball #7 | 0-28.8s | holding (+1 more) | 0-28.8s | semantic overlap | 1.00 | ✓ | ✓ |
+| adult #4 - playing with - ball #7 | 0-28.8s | looking at | 0-28.8s | mismatch | 1.00 | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (24): adult #4 - wearing - child #10 [0-28.8s]; ball #7 - moving toward - adult #4 [15.8897-18.869s]; ball #7 - moving away from - adult #4 [18.869-28.8s]; child #10 - on - ground #1 [0-28.8s]; ball #7 - above - ground #1 [0-28.8s]; adult #4 - in front of - wall #2 [0-28.8s]; child #5 - in front of - wall #2 [0-28.8s]; baby #6 - in front of - wall #2 [0-28.8s]; child #9 - in front of - wall #2 [0-28.8s]; child #10 - in front of - wall #2 [0-28.8s]
 
@@ -1144,7 +1152,7 @@ TRASER relations between pairs the humans did not annotate (24): adult #4 - wear
 | adult #10 - beside - table #6 | 6.2-49.2s | approaching (+5 more) | 5.95556-10.9185s | mismatch | 0.11 | ✗ | ✗ |
 | adult #10 - beside - adult #4 | 8.4-45.8s | approaching (+9 more) | 5.95556-10.9185s | mismatch | 0.06 | ✗ | ✗ |
 | adult #10 - holding - chair #11 | 7.6-29.4s | approaching (+15 more) | 5.95556-10.9185s | mismatch | 0.14 | ✗ | ✗ |
-| adult #4 - picking - child #5 | 27.8-30.2s | holding (+1 more) | 0-53.6s | not judged yet | 0.04 | ✗ | ✗ |
+| adult #4 - picking - child #5 | 27.8-30.2s | holding (+1 more) | 0-53.6s | semantic overlap | 0.04 | ✗ | ✗ |
 | adult #10 - touching - cake #9 | 30.6-33.8s | approaching (+5 more) | 5.95556-10.9185s | mismatch | 0.00 | ✗ | ✗ |
 | adult #12 - touching - cake #9 | 30-33.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #4 - holding - candle #8 | 40.2-48.4s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -1185,7 +1193,7 @@ TRASER relations between pairs the humans did not annotate (85): adult #12 - hol
 | child #6 - on - floor #1 | 0-19.6s | on | 0-19.6s | identical | 1.00 | ✓ | ✓ |
 | adult #5 - on - floor #1 | 0-19.6s | on | 0-8.82s, 11.76-16.66s | identical | 0.70 | ✓ | ✓ |
 | ballon #11 - on - floor #1 | 0-19.6s | on | 0-16.66s | identical | 0.85 | ✓ | ✗ |
-| child #6 - playing with - ballon #11 | 0-0.8s, 6-13s | approaching (+1 more) | 9.8-12.74s | not judged yet | 0.38 | ✗ | ✗ |
+| child #6 - playing with - ballon #11 | 0-0.8s, 6-13s | approaching (+1 more) | 9.8-12.74s | mismatch | 0.38 | ✗ | ✗ |
 | adult #5 - playing with - ballon #11 | 4.4-5s, 13.4-16s | nothing for this pair | - | - | - | ✗ | ✗ |
 | sofa #7 - on - floor #1 | 0-19.6s | on | 0-12.74s, 15.68-19.6s | identical | 0.85 | ✓ | ✓ |
 
@@ -1332,7 +1340,7 @@ TRASER relations between pairs the humans did not annotate (23): hat #11 - movin
 | adult #11 - holding - paper #21 | 41.6-42.8s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #11 - holding - paper #24 | 48-50.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #23 - holding - paper #24 | 49.8-51.6s | nothing for this pair | - | - | - | ✗ | ✗ |
-| curtain #4 - on - wall #2 | 0-52s, 58-58.6s | behind | 7.94576-55.6203s | not judged yet | 0.78 | ? | ✗ |
+| curtain #4 - on - wall #2 | 0-52s, 58-58.6s | behind | 7.94576-55.6203s | mismatch | 0.78 | ✗ | ✗ |
 | child #6 - beside - child #12 | 9-58.6s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #6 - in front of - wall #2 | 9-58.6s | in front of | 9.9322-40.722s | identical | 0.62 | ✓ | ✗ |
 | child #12 - beside - child #16 | 9-58.6s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -1465,13 +1473,13 @@ TRASER relations between pairs the humans did not annotate (97): adult #21 - hol
 | ball #11 - on - grass #3 | 0-49.8s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #7 - holding - bat #8 | 0-62.6s | holding | 0-65.8s | identical | 0.95 | ✓ | ✓ |
 | child #7 - hitting - ball #9 | 2-5s | hitting (+3 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 45.8606-46.8576s, 47.8545-48.8515s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | identical | 0.00 | ✗ | ✗ |
-| child #7 - picking - ball #10 | 8.8-14s | hitting (+3 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | not judged yet | 0.03 | ✗ | ✗ |
+| child #7 - picking - ball #10 | 8.8-14s | hitting (+3 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | mismatch | 0.03 | ✗ | ✗ |
 | ball #10 - on - stand #5 | 14.2-18.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #7 - hitting - ball #10 | 17.2-18.6s | hitting (+3 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | identical | 0.03 | ✗ | ✗ |
-| child #7 - picking - ball #13 | 26.8-28.8s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | not judged yet | 0.04 | ✗ | ✗ |
+| child #7 - picking - ball #13 | 26.8-28.8s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | mismatch | 0.04 | ✗ | ✗ |
 | ball #13 - on - stand #5 | 28.4-42.6s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #7 - hitting - ball #13 | 40.4-43.2s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | identical | 0.06 | ✗ | ✗ |
-| child #7 - picking - ball #11 | 49.6-52.4s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | not judged yet | 0.06 | ✗ | ✗ |
+| child #7 - picking - ball #11 | 49.6-52.4s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | mismatch | 0.06 | ✗ | ✗ |
 | ball #11 - on - stand #5 | 52.2-57.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #7 - hitting - ball #11 | 55.8-57.4s | hitting (+4 more) | 0.99697-1.99394s, 12.9606-13.9576s, 14.9545-15.9515s, 16.9485-17.9455s, 19.9394-20.9364s, 21.9333-22.9303s, 23.9273-24.9242s, 25.9212-26.9182s, 27.9152-28.9121s, 29.9091-30.9061s, 31.903-32.9s, 33.897-34.8939s, 35.8909-36.8879s, 37.8848-38.8818s, 39.8788-40.8758s, 41.8727-42.8697s, 43.8667-44.8636s, 49.8485-50.8455s, 51.8424-52.8394s, 53.8364-54.8333s, 55.8303-56.8273s, 57.8242-58.8212s, 59.8182-60.8152s, 61.8121-62.8091s, 63.8061-64.803s | identical | 0.04 | ✗ | ✗ |
 | child #7 - picking - stand #5 | 60-61.4s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -1575,7 +1583,7 @@ TRASER relations between pairs the humans did not annotate (18): child #7 - in f
 | candle #13 - on - cake #14 | 2.8-90s | nothing for this pair | - | - | - | ✗ | ✗ |
 | cake #14 - on - table #11 | 27.6-86.8s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #19 - holding - child #10 | 12.8-90s | photographing (+9 more) | 73-90s | mismatch | 0.22 | ✗ | ✗ |
-| adult #19 - picking - chair #12 | 31.6-35.4s | photographing (+8 more) | 73-90s | not judged yet | 0.00 | ✗ | ✗ |
+| adult #19 - picking - chair #12 | 31.6-35.4s | photographing (+8 more) | 73-90s | mismatch | 0.00 | ✗ | ✗ |
 | adult #22 - next to - adult #19 | 49.2-90s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #19 - blowing - candle #13 | 58.8-61.4s | looking at (+10 more) | 22-90s | mismatch | 0.04 | ✗ | ✗ |
 | adult #22 - blowing - candle #13 | 58.8-61.4s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -1670,7 +1678,7 @@ TRASER relations between pairs the humans did not annotate (17): child #5 - movi
 | child #15 - beside - child #2 | 39-72.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #2 - sitting on - chair #4 | 0-72.4s | sitting on (+1 more) | 0-72.4s | identical | 1.00 | ✓ | ✓ |
 | cake #6 - on - table #3 | 0-72.4s | on | 0-72.4s | identical | 1.00 | ✓ | ✓ |
-| candle #5 - on - cake #6 | 0-72.4s | on (+1 more) | 0-72.4s | identical | 1.00 | ✓ | ✓ |
+| candle #5 - on - cake #6 | 0-72.4s | attached to (+1 more) | 0-72.4s | semantic overlap | 1.00 | ✓ | ✓ |
 | child #2 - beside - table #3 | 0-72.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #8 - sitting on - chair #9 | 0-72.4s | sitting on (+1 more) | 0-72.4s | identical | 1.00 | ✓ | ✓ |
 | cake #11 - on - table #3 | 0-72.4s | on | 0-72.4s | identical | 1.00 | ✓ | ✓ |
@@ -1722,8 +1730,8 @@ TRASER relations between pairs the humans did not annotate (21): adult #1 - hold
 | child #8 - lying on - ground #3 | 6.8-11.8s | on | 0-22.1913s | hypernym/hyponym | 0.23 | ✗ | ✗ |
 | child #6 - standing on - ground #3 | 0-2.6s | on | 0-22.1913s | hypernym/hyponym | 0.12 | ✗ | ✗ |
 | child #8 - standing on - ground #3 | 0-2.6s | on | 0-22.1913s | hypernym/hyponym | 0.12 | ✗ | ✗ |
-| child #6 - picking - ball #7 | 3.4-8.8s | dribbles | 0-2.01739s, 3.02609-11.0957s | not judged yet | 0.54 | ? | ? |
-| child #8 - picking - ball #7 | 3.6-5.6s | dribbles | 11.0957-20.1739s | not judged yet | 0.00 | ✗ | ✗ |
+| child #6 - picking - ball #7 | 3.4-8.8s | dribbles | 0-2.01739s, 3.02609-11.0957s | mismatch | 0.54 | ✗ | ✗ |
+| child #8 - picking - ball #7 | 3.6-5.6s | dribbles | 11.0957-20.1739s | mismatch | 0.00 | ✗ | ✗ |
 | child #6 - kicking - ball #7 | 9.4-10.6s | dribbles | 0-2.01739s, 3.02609-11.0957s | mismatch | 0.12 | ✗ | ✗ |
 | child #8 - toward - ball #7 | 14.6-16.6s, 19.8-21.8s | dribbles | 11.0957-20.1739s | mismatch | 0.22 | ✗ | ✗ |
 | adult #5 - running on - ground #3 | 14-15.4s | on | 13.113-22.1913s | hypernym/hyponym | 0.15 | ✗ | ✗ |
@@ -1731,8 +1739,8 @@ TRASER relations between pairs the humans did not annotate (21): adult #1 - hold
 | child #8 - grabbing - ball #7 | 16.4-17.8s | dribbles | 11.0957-20.1739s | mismatch | 0.15 | ✗ | ✗ |
 | child #8 - kicking - ball #7 | 18-19.8s | dribbles | 11.0957-20.1739s | mismatch | 0.20 | ✗ | ✗ |
 | child #6 - toward - ball #7 | 19.8-21.4s | dribbles | 0-2.01739s, 3.02609-11.0957s | mismatch | 0.00 | ✗ | ✗ |
-| child #6 - playing with - ball #7 | 0-21.4s | dribbles | 0-2.01739s, 3.02609-11.0957s | not judged yet | 0.47 | ✗ | ✗ |
-| child #8 - playing with - ball #7 | 0-21.4s | dribbles | 11.0957-20.1739s | not judged yet | 0.42 | ✗ | ✗ |
+| child #6 - playing with - ball #7 | 0-21.4s | dribbles | 0-2.01739s, 3.02609-11.0957s | hypernym/hyponym | 0.47 | ✗ | ✗ |
+| child #8 - playing with - ball #7 | 0-21.4s | dribbles | 11.0957-20.1739s | hypernym/hyponym | 0.42 | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (21): child #6 - approaches - child #8 [10.087-13.113s]; child #6 - moves away from - child #8 [13.113-20.1739s]; child #6 - plays with - child #8 [0-20.1739s]; child #6 - near - child #8 [0-20.1739s]; ball #7 - moves across - ground #3 [0-2.01739s, 3.02609-23.2s]; ball #7 - on - ground #3 [0-2.01739s, 3.02609-23.2s]; child #6 - in front of - tree #2 [0-22.1913s]; child #8 - in front of - tree #2 [0-22.1913s]; ball #7 - in front of - tree #2 [0-2.01739s, 3.02609-22.1913s]; adult #5 - in front of - tree #2 [13.113-22.1913s]
 
@@ -1864,7 +1872,7 @@ TRASER relations between pairs the humans did not annotate (27): child #7 - move
 | adult #28 - sitting on - sofa #20 | 27.2-49.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | dog #9 - chasing - ball #14 | 0-49.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #18 - picking - ball #14 | 16.8-19s | nothing for this pair | - | - | - | ✗ | ✗ |
-| adult #25 - picking - ball #14 | 27.2-29.4s, 30.4-32.4s, 33.2-34.4s, 36-37.2s, 39-40.4s | holding (+2 more) | 28.2286-42.3429s | not judged yet | 0.46 | ✗ | ✗ |
+| adult #25 - picking - ball #14 | 27.2-29.4s, 30.4-32.4s, 33.2-34.4s, 36-37.2s, 39-40.4s | holding (+2 more) | 28.2286-42.3429s | semantic overlap | 0.46 | ✗ | ✗ |
 | dog #9 - playing with - ball #14 | 0-49.4s | nothing for this pair | - | - | - | ✗ | ✗ |
 | dog #9 - jumping from - floor #1 | 26.4-27.4s, 29.4-30.4s, 32-33.4s, 34.2-35.2s, 37.2-38.2s, 40.4-41.6s, 42.6-44.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 
@@ -1901,7 +1909,7 @@ TRASER relations between pairs the humans did not annotate (37): adult #8 - hold
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
 | adult #7 - kicking - ball #16 | 26.6-27.8s | nothing for this pair | - | - | - | ✗ | ✗ |
-| basket #6 - next to - shelf #5 | 0-44.6s | in front of | 0-11.8933s, 16.8489-45.5911s | not judged yet | 0.87 | ? | ? |
+| basket #6 - next to - shelf #5 | 0-44.6s | in front of | 0-11.8933s, 16.8489-45.5911s | mismatch | 0.87 | ✗ | ✗ |
 | child #8 - holding - ball #12 | 0-0.8s, 17.4-44.6s | holding (+1 more) | 0-1.98222s, 2.97333-4.95556s, 9.91111-10.9022s, 11.8933-12.8844s, 13.8756-14.8667s, 15.8578-16.8489s, 17.84-18.8311s, 19.8222-20.8133s, 21.8044-22.7956s, 23.7867-24.7778s, 25.7689-26.76s, 27.7511-28.7422s, 29.7333-30.7244s, 31.7156-32.7067s, 33.6978-34.6889s | identical | 0.28 | ✗ | ✗ |
 | child #8 - standing on - floor #1 | 0-34.8s | nothing for this pair | - | - | - | ✗ | ✗ |
 | child #15 - standing on - floor #1 | 0-44.6s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -1959,9 +1967,9 @@ TRASER relations between pairs the humans did not annotate (16): child #8 - play
 | child #7 - standing on - carpet #4 | 58.2-60.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #6 - opening - box #13 | 13.8-17s | opening (+3 more) | 10.0333-17.0567s | identical | 0.46 | ✗ | ✗ |
 | adult #22 - standing on - carpet #4 | 42.6-60.2s | nothing for this pair | - | - | - | ✗ | ✗ |
-| adult #15 - on - sofa #9 | 0-60.2s | on (+1 more) | 0-45.15s, 52.1733-60.2s | identical | 0.88 | ✓ | ✓ |
-| adult #17 - on - sofa #9 | 0-60.2s | on (+1 more) | 0-45.15s, 52.1733-60.2s | identical | 0.88 | ✓ | ✓ |
-| child #7 - on - sofa #9 | 0-12s, 25.6-55.2s | on (+1 more) | 0-45.15s, 52.1733-60.2s | identical | 0.57 | ✓ | ✓ |
+| adult #15 - on - sofa #9 | 0-60.2s | sitting on (+1 more) | 0-45.15s, 52.1733-60.2s | hypernym/hyponym | 0.88 | ✓ | ✓ |
+| adult #17 - on - sofa #9 | 0-60.2s | sitting on (+1 more) | 0-45.15s, 52.1733-60.2s | hypernym/hyponym | 0.88 | ✓ | ✓ |
+| child #7 - on - sofa #9 | 0-12s, 25.6-55.2s | sitting on (+1 more) | 0-45.15s, 52.1733-60.2s | hypernym/hyponym | 0.57 | ✓ | ✓ |
 | adult #6 - holding - box #13 | 0-14.2s | holding (+3 more) | 0-25.0833s | identical | 0.57 | ✓ | ✓ |
 | child #7 - holding - dog #8 | 16.8-60.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 | box #13 - on - table #10 | 7.4-60.2s | on (+1 more) | 0-45.15s, 52.1733-60.2s | identical | 0.76 | ✓ | ✓ |
@@ -1971,6 +1979,56 @@ TRASER relations between pairs the humans did not annotate (16): child #8 - play
 | adult #22 - holding - camera #16 | 0-60.2s | nothing for this pair | - | - | - | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (30): adult #6 - holding - cup #11 [25.0833-27.09s]; adult #6 - holding - camera #14 [27.09-30.1s]; adult #6 - holding - camera #16 [27.09-30.1s]; adult #6 - holding - camera #19 [27.09-30.1s]; adult #6 - holding - bag #12 [47.1567-52.1733s]; adult #6 - looking at - bag #12 [47.1567-52.1733s]; adult #6 - holding - dog #8 [55.1833-60.2s]; adult #6 - looking at - dog #8 [55.1833-60.2s]; table #10 - in front of - sofa #9 [0-45.15s, 52.1733-60.2s]; box #13 - in front of - sofa #9 [0-45.15s, 52.1733-60.2s]
+
+
+## 1bfe5ac2-cbf8-4364-8a30-60d97dd395df_1
+
+84.0 s, 84 frames read | human: 19 objects, 14 relations | TRASER: 18 objects, 37 relations, valid JSON, 2696 tokens
+
+**Objects: 9/19 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | bottle | mismatch | ✗ |
+| 2 | wall | wall | identical | ✓ |
+| 3 | others | device (uncertain) | mismatch | ✗ |
+| 4 | rag | glove | mismatch | ✗ |
+| 5 | pillow | chair leg (uncertain) | mismatch | ✗ |
+| 6 | bucket | bucket | identical | ✓ |
+| 7 | cabinet | refrigerator door | semantic overlap | ✓ |
+| 8 | towel | - | no label from TRASER | ✗ |
+| 9 | adult | arm | mismatch | ✗ |
+| 10 | sofa | sofa | identical | ✓ |
+| 11 | table | table | identical | ✓ |
+| 12 | chair | chair | identical | ✓ |
+| 13 | bag | chair | mismatch | ✗ |
+| 14 | others | cable | mismatch | ✗ |
+| 15 | table | chair leg (uncertain) | mismatch | ✗ |
+| 16 | chair | chair | identical | ✓ |
+| 17 | table | chair | mismatch | ✗ |
+| 18 | chair | chair | identical | ✓ |
+| 19 | chair | chair leg (uncertain) | semantic overlap | ✓ |
+
+**Relations: 0/14 right, triplets: 0/14 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #9 - holding - rag #4 | 0-23.2s, 25.6-78.2s | wearing | 0-2s, 3-17s, 18-22s, 23-32s, 33-45s, 46-60s, 61-74s, 75-82s | mismatch | 0.84 | ✗ | ✗ |
+| adult #9 - cleaning - floor #1 | 1.8-22s, 32.6-47.2s, 58.6-78.2s | holding | 1-2s, 3-17s | mismatch | 0.26 | ✗ | ✗ |
+| adult #9 - touching - floor #1 | 3.4-8.6s, 11.2-18.2s, 19.6-21.8s, 35.8-38.4s, 66.6-75.4s | holding | 1-2s, 3-17s | hypernym/hyponym | 0.37 | ✗ | ✗ |
+| adult #9 - touching - bucket #6 | 22-23.2s | holding (+1 more) | 23-32s, 46-60s, 76-82s | hypernym/hyponym | 0.01 | ✗ | ✗ |
+| rag #4 - in - bucket #6 | 22.4-26.4s, 47.8-51.2s, 78.8-84s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #9 - touching - others #14 | 9-11.2s | holding (+1 more) | 8-13s | hypernym/hyponym | 0.44 | ✗ | ✗ |
+| adult #9 - pushing - chair #12 | 23.2-25.6s, 81.6-83.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #9 - holding - table #11 | 38.6-42.2s | holding (+1 more) | 1-2s, 3-17s | identical | 0.00 | ✗ | ✗ |
+| adult #9 - holding - bucket #6 | 45.6-51s, 78.2-80.8s | holding (+1 more) | 23-32s, 46-60s, 76-82s | identical | 0.26 | ✗ | ✗ |
+| adult #9 - walking on - floor #1 | 56.2-57.6s, 81-84s | holding | 1-2s, 3-17s | mismatch | 0.00 | ✗ | ✗ |
+| adult #9 - holding - others #3 | 59.6-66s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #9 - touching - table #17 | 75.8-76.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #9 - cleaning - rag #4 | 22.4-26.4s, 47.8-51.2s | wearing | 0-2s, 3-17s, 18-22s, 23-32s, 33-45s, 46-60s, 61-74s, 75-82s | mismatch | 0.09 | ✗ | ✗ |
+| bag #13 - hanging from - chair #18 | 0-84s | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (29): adult #9 - in front of - wall #2 [0-2s, 3-17s, 25-32s, 33-45s, 46-60s, 61-74s, 75-76s, 77-78s, 80-82s]; rag #4 - on - adult #9 [0-2s, 3-17s, 18-22s, 23-32s, 33-45s, 46-60s, 61-74s, 75-82s]; bucket #6 - in front of - wall #2 [25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; others #14 - in front of - wall #2 [3-13s]; table #11 - in front of - wall #2 [0-2s, 3-17s, 25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; sofa #10 - in front of - wall #2 [0-2s, 3-17s, 25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; chair #12 - in front of - wall #2 [0-2s, 3-17s, 25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; chair #16 - in front of - wall #2 [25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; table #17 - in front of - wall #2 [25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]; chair #18 - in front of - wall #2 [25-32s, 33-45s, 46-60s, 61-74s, 77-78s, 80-82s]
 
 
 ## 22cc4d54-34be-4580-983a-9e710e831c16
@@ -2076,7 +2134,7 @@ TRASER relations between pairs the humans did not annotate (30): adult #6 - hold
 | adult #17 - walking on - floor #1 | 11.2-14s, 25.6-38.8s, 46.2-48.6s, 56.4-461s | nothing for this pair | - | - | - | ✗ | ✗ |
 | adult #17 - cleaning - cup #40 | 0.6-10.2s, 38.8-45.2s | washing (+5 more) | 0-11s, 12-23s, 36-46s | synonym | 0.50 | ✓ | ✗ |
 | adult #17 - holding - bottle #23 | 14-22.4s | holding (+5 more) | 12-23s, 48-52s | identical | 0.56 | ✓ | ✗ |
-| adult #17 - pouring - bottle #23 | 14.8-21.2s | holding (+5 more) | 12-23s, 48-52s | not judged yet | 0.43 | ✗ | ✗ |
+| adult #17 - pouring - bottle #23 | 14.8-21.2s | holding (+5 more) | 12-23s, 48-52s | semantic overlap | 0.43 | ✗ | ✗ |
 | adult #17 - holding - paper #25 | 51.8-55.6s | holding (+5 more) | 52-56s | identical | 0.86 | ✓ | ✗ |
 | paper #25 - on - table #20 | 0-61s | nothing for this pair | - | - | - | ✗ | ✗ |
 | paper #33 - on - table #20 | 0-61s | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -2137,4 +2195,393 @@ TRASER relations between pairs the humans did not annotate (46): adult #17 - hol
 | adult #19 - stirring - simmering #4 | 6-43.2s | stirring (+1 more) | 4.97959-45.8122s | identical | 0.91 | ✓ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (24): pan #15 - moving away from - stove #14 [44.8163-46.8082s]; pan #15 - on - stove #14 [3.98367-45.8122s]; stove #14 - on - countertop #3 [0-46.8082s]; simmering #4 - in - pan #15 [4.97959-45.8122s]; spatula #6 - in - pan #15 [4.97959-45.8122s]; spatula #6 - above - pan #15 [4.97959-45.8122s]; cover #9 - on - countertop #3 [0-46.8082s]; glove #10 - on - countertop #3 [0-4.97959s, 5.97551-10.9551s, 11.951-12.9469s, 13.9429-14.9388s, 15.9347-16.9306s, 17.9265-20.9143s, 21.9102-22.9061s, 23.902-24.898s, 25.8939-26.8898s, 27.8857-28.8816s, 29.8776-30.8735s, 31.8694-32.8653s, 33.8612-34.8571s, 35.8531-36.849s, 37.8449-38.8408s, 39.8367-40.8327s, 41.8286-42.8245s, 43.8204-44.8163s, 45.8122-46.8082s]; plate #23 - on - countertop #3 [0-46.8082s]; cover #25 - on - countertop #3 [4.97959-5.97551s, 15.9347-46.8082s]
+
+
+## P08_07
+
+24.0 s, 24 frames read | human: 26 objects, 10 relations | TRASER: 25 objects, 38 relations, valid JSON, 2216 tokens
+
+**Objects: 19/26 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | floor | identical | ✓ |
+| 2 | wall | wall | identical | ✓ |
+| 3 | countertop | stove top | semantic overlap | ✓ |
+| 4 | beverage | cup | semantic overlap | ✓ |
+| 5 | can | bowl (uncertain) | mismatch | ✗ |
+| 6 | teapot | faucet | mismatch | ✗ |
+| 7 | board | - | no label from TRASER | ✗ |
+| 8 | glove | towel | mismatch | ✗ |
+| 9 | dustbin | trash can | synonym | ✓ |
+| 10 | oven | oven | identical | ✓ |
+| 11 | stove | stove | identical | ✓ |
+| 12 | cabinet | countertop | semantic overlap | ✓ |
+| 13 | glass | glass cup | hypernym/hyponym | ✓ |
+| 14 | book | paper (uncertain) | semantic overlap | ✓ |
+| 15 | towel | towel | identical | ✓ |
+| 16 | adult | hands | mismatch | ✗ |
+| 17 | sink | sink | identical | ✓ |
+| 18 | faucet | faucet | identical | ✓ |
+| 19 | bottle | bottle | identical | ✓ |
+| 20 | cellphone | cellular telephone (uncertain) | synonym | ✓ |
+| 21 | dustbin | trash can (uncertain) | synonym | ✓ |
+| 22 | stove | knob (uncertain) | mismatch | ✗ |
+| 23 | cabinet | cabinet door | semantic overlap | ✓ |
+| 24 | cabinet | cabinet door | semantic overlap | ✓ |
+| 25 | cabinet | sink | mismatch | ✗ |
+| 26 | cabinet | cabinet door | semantic overlap | ✓ |
+
+**Relations: 2/10 right, triplets: 0/10 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #16 - holding - bottle #19 | 2.4-3.6s, 7.4-17.8s | hold | 3-17s | identical | 0.66 | ✓ | ✗ |
+| adult #16 - holding - glass #13 | 6-7.8s, 18.4-21.4s | hold (+3 more) | 8-16s | identical | 0.00 | ✗ | ✗ |
+| adult #16 - opening - bottle #19 | 8.6-9.8s | hold | 3-17s | mismatch | 0.09 | ✗ | ✗ |
+| adult #16 - closing - bottle #19 | 16-17.6s | hold | 3-17s | mismatch | 0.07 | ✗ | ✗ |
+| beverage #4 - in - glass #13 | 12.6-23.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| bottle #19 - on - countertop #3 | 3.2-8.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| glass #13 - on - countertop #3 | 7.6-18.6s, 21-24s | nothing for this pair | - | - | - | ✗ | ✗ |
+| towel #15 - hanging from - oven #10 | 0-24s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #16 - carrying - glass #13 | 18.8-21s | hold (+3 more) | 8-16s | hypernym/hyponym | 0.00 | ✗ | ✗ |
+| teapot #6 - over - stove #11 | 0-24s | above | 0-24s | synonym | 1.00 | ✓ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (32): adult #16 - hold - beverage #4 [16-18s]; adult #16 - place - beverage #4 [16-18s]; adult #16 - hold - towel #15 [19-22s]; adult #16 - wipe - stove #11 [19-22s]; adult #16 - clean stove - stove #11 [19-22s]; adult #16 - above - stove #11 [3-24s]; adult #16 - wipe - countertop #3 [22-24s]; adult #16 - clean countertop - countertop #3 [22-24s]; adult #16 - above - countertop #3 [3-24s]; countertop #3 - on - stove #11 [0-24s]
+
+
+## P09_07
+
+55.2 s, 55 frames read | human: 29 objects, 15 relations | TRASER: 27 objects, 72 relations, valid JSON, 7106 tokens
+
+**Objects: 15/29 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | hand | mismatch | ✗ |
+| 2 | wall | wall | identical | ✓ |
+| 3 | countertop | table | semantic overlap | ✓ |
+| 4 | microwave | cabinet door | semantic overlap | ✓ |
+| 5 | pot | bottle | mismatch | ✗ |
+| 6 | cover | lid (uncertain) | synonym | ✓ |
+| 7 | stove | handle (uncertain) | mismatch | ✗ |
+| 8 | shelf | bottle | mismatch | ✗ |
+| 9 | cabinet | drawer | semantic overlap | ✓ |
+| 10 | spoon | scissors | mismatch | ✗ |
+| 11 | scissor | scissors | identical | ✓ |
+| 12 | adult | hand | mismatch | ✗ |
+| 13 | sink | bowl | mismatch | ✗ |
+| 14 | knife | knife | identical | ✓ |
+| 15 | bottle | cup | semantic overlap | ✓ |
+| 16 | paper | paper (uncertain) | identical | ✓ |
+| 17 | box | paper (uncertain) | mismatch | ✗ |
+| 18 | cover | bowl | mismatch | ✗ |
+| 19 | cabinet | drawer | semantic overlap | ✓ |
+| 20 | spoon | lid (uncertain) | mismatch | ✗ |
+| 21 | knife | knife | identical | ✓ |
+| 22 | bottle | - | no label from TRASER | ✗ |
+| 23 | powder | cup | mismatch | ✗ |
+| 24 | cover | bowl | mismatch | ✗ |
+| 25 | cabinet | shelf (uncertain) | semantic overlap | ✓ |
+| 26 | spoon | - | no label from TRASER | ✗ |
+| 27 | bottle | cup | semantic overlap | ✓ |
+| 28 | cover | lid (uncertain) | synonym | ✓ |
+| 29 | bottle | lid (uncertain) | semantic overlap | ✓ |
+
+**Relations: 1/15 right, triplets: 0/15 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #12 - holding - bottle #15 | 1.6-5s, 48.6-53.4s | holding (+2 more) | 51.1855-55.2s | identical | 0.22 | ✗ | ✗ |
+| adult #12 - opening - bottle #15 | 2.4-4.2s | holding (+2 more) | 16.0582-27.0982s, 33.12-45.1636s | mismatch | 0.00 | ✗ | ✗ |
+| adult #12 - holding - cover #6 | 4.2-5s, 48-52.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - opening - cabinet #9 | 5.8-7s, 44.6-45.6s | in front of | 0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s | mismatch | 0.02 | ✗ | ✗ |
+| adult #12 - holding - bottle #27 | 7.6-9.8s, 12.4-30.2s | holding (+3 more) | 16.0582-27.0982s, 33.12-45.1636s | identical | 0.34 | ✗ | ✗ |
+| adult #12 - holding - bottle #29 | 10.6-12.2s, 32.2-46.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - opening - bottle #27 | 12.4-15.2s | holding (+3 more) | 16.0582-27.0982s, 33.12-45.1636s | mismatch | 0.00 | ✗ | ✗ |
+| adult #12 - holding - cover #18 | 14.6-25.4s | holding | 16.0582-27.0982s | identical | 0.75 | ✓ | ✗ |
+| adult #12 - holding - spoon #20 | 16.4-25.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - closing - bottle #27 | 25.6-27.6s | holding (+3 more) | 16.0582-27.0982s, 33.12-45.1636s | mismatch | 0.06 | ✗ | ✗ |
+| adult #12 - closing - cabinet #9 | 30.6-31.8s, 46.4-47.2s | in front of | 0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s | mismatch | 0.03 | ✗ | ✗ |
+| adult #12 - opening - bottle #29 | 32.4-34.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - holding - cover #28 | 33.8-34.6s, 39.4-40.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - closing - bottle #29 | 40.2-43.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #12 - closing - bottle #15 | 48-52.6s | holding (+2 more) | 51.1855-55.2s | mismatch | 0.20 | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (63): adult #12 - holding - spoon #10 [35.1273-45.1636s]; adult #12 - cutting - spoon #10 [35.1273-45.1636s]; adult #12 - in front of - spoon #10 [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]; adult #12 - holding - powder #23 [16.0582-27.0982s]; adult #12 - holding - cover #24 [16.0582-27.0982s]; adult #12 - holding - knife #14 [51.1855-55.2s]; adult #12 - in front of - knife #14 [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]; adult #12 - in front of - knife #14 [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]; adult #12 - above - countertop #3 [0-55.2s]; floor #1 - above - countertop #3 [0-2.00727s, 4.01455-11.04s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]
+
+
+## P11_11
+
+66.4 s, 66 frames read | human: 44 objects, 15 relations | TRASER: 35 objects, 26 relations, valid JSON, 3815 tokens
+
+**Objects: 20/44 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | - | no label from TRASER | ✗ |
+| 2 | wall | cabinet door | mismatch | ✗ |
+| 3 | mat | countertop | mismatch | ✗ |
+| 4 | others | kettle | mismatch | ✗ |
+| 5 | countertop | countertop | identical | ✓ |
+| 6 | pizza | pizza | identical | ✓ |
+| 7 | microwave | microwave oven | synonym | ✓ |
+| 8 | rack | oven | mismatch | ✗ |
+| 9 | can | - | no label from TRASER | ✗ |
+| 10 | pot | - | no label from TRASER | ✗ |
+| 11 | brush | hose | mismatch | ✗ |
+| 12 | rag | handle (uncertain) | mismatch | ✗ |
+| 13 | glove | - | no label from TRASER | ✗ |
+| 14 | dustbin | cup | mismatch | ✗ |
+| 15 | washer | washing machine | synonym | ✓ |
+| 16 | oven | oven | identical | ✓ |
+| 17 | stove | stove top | hypernym/hyponym | ✓ |
+| 18 | sponge | sponge | identical | ✓ |
+| 19 | window | cabinet door | mismatch | ✗ |
+| 20 | cabinet | cabinet door | semantic overlap | ✓ |
+| 21 | fridge | dishwasher rack | mismatch | ✗ |
+| 22 | scissor | scissors | identical | ✓ |
+| 23 | towel | towel | identical | ✓ |
+| 24 | adult | arm | mismatch | ✗ |
+| 25 | sink | sink | identical | ✓ |
+| 26 | faucet | faucet | identical | ✓ |
+| 27 | sofa | cabinet door | mismatch | ✗ |
+| 28 | table | cabinet door | mismatch | ✗ |
+| 29 | chair | - | no label from TRASER | ✗ |
+| 30 | plate | plate | identical | ✓ |
+| 31 | bowl | bowl | identical | ✓ |
+| 32 | cup | cup | identical | ✓ |
+| 33 | paper | handle (uncertain) | mismatch | ✗ |
+| 34 | box | box | identical | ✓ |
+| 35 | countertop | sink | semantic overlap | ✓ |
+| 36 | cabinet | cabinet door | semantic overlap | ✓ |
+| 37 | plate | plates | identical | ✓ |
+| 38 | bowl | bowl | identical | ✓ |
+| 39 | cup | plate | mismatch | ✗ |
+| 40 | box | cup | mismatch | ✗ |
+| 41 | cabinet | - | no label from TRASER | ✗ |
+| 42 | plate | - | no label from TRASER | ✗ |
+| 43 | box | - | no label from TRASER | ✗ |
+| 44 | cabinet | - | no label from TRASER | ✗ |
+
+**Relations: 2/15 right, triplets: 0/15 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #24 - opening - cabinet #44 | 2.6-5.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - holding - plate #30 | 5.6-9s | holding | 26.1576-42.2545s | identical | 0.00 | ✗ | ✗ |
+| adult #24 - opening - oven #16 | 10-11s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - holding - towel #23 | 10-21s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - holding - rack #8 | 13.4-18.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - closing - oven #16 | 18.4-19.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - holding - scissor #22 | 22.6-60.6s | holding | 26.1576-60.3636s | identical | 0.90 | ✓ | ✗ |
+| adult #24 - cutting - pizza #6 | 26.4-39.4s | cutting (+3 more) | 26.1576-42.2545s | identical | 0.81 | ✓ | ✗ |
+| adult #24 - closing - cabinet #44 | 42.6-43.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - touching - faucet #26 | 44-47.6s, 51.6-52.2s, 55.2-55.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #24 - cleaning - scissor #22 | 44.4-56.6s | holding | 26.1576-60.3636s | mismatch | 0.36 | ✗ | ✗ |
+| adult #24 - holding - sponge #18 | 47.6-51.8s | holding | 56.3394-60.3636s | identical | 0.00 | ✗ | ✗ |
+| pizza #6 - on - rack #8 | 13.4-16s | nothing for this pair | - | - | - | ✗ | ✗ |
+| pizza #6 - on - plate #30 | 15.6-66.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| towel #23 - hanging from - oven #16 | 0-10.6s, 20.4-66.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (19): pizza #6 - moving toward - sink #25 [41.2485-43.2606s]; adult #24 - holding - cup #32 [56.3394-60.3636s]; adult #24 - holding - bowl #31 [56.3394-60.3636s]; adult #24 - washing dishes - sink #25 [56.3394-60.3636s]; mat #3 - in front of - countertop #5 [0-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]; sink #25 - in - mat #3 [0-5.0303s, 6.03636-7.04242s, 8.04848-9.05455s, 10.0606-11.0667s, 12.0727-13.0788s, 14.0848-15.0909s, 16.097-17.103s, 18.1091-19.1152s, 20.1212-21.1273s, 22.1333-23.1394s, 24.1455-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]; faucet #26 - above - sink #25 [0-5.0303s, 6.03636-7.04242s, 8.04848-9.05455s, 10.0606-11.0667s, 12.0727-13.0788s, 14.0848-15.0909s, 16.097-17.103s, 18.1091-19.1152s, 20.1212-21.1273s, 22.1333-23.1394s, 24.1455-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]; stove #17 - on - countertop #5 [0-5.0303s, 6.03636-7.04242s, 8.04848-9.05455s, 10.0606-11.0667s, 12.0727-13.0788s, 14.0848-15.0909s, 16.097-17.103s, 18.1091-19.1152s, 20.1212-21.1273s, 22.1333-23.1394s, 24.1455-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]; faucet #26 - attached to - stove #17 [0-5.0303s, 6.03636-7.04242s, 8.04848-9.05455s, 10.0606-11.0667s, 12.0727-13.0788s, 14.0848-15.0909s, 16.097-17.103s, 18.1091-19.1152s, 20.1212-21.1273s, 22.1333-23.1394s, 24.1455-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]; faucet #26 - above - stove #17 [0-5.0303s, 6.03636-7.04242s, 8.04848-9.05455s, 10.0606-11.0667s, 12.0727-13.0788s, 14.0848-15.0909s, 16.097-17.103s, 18.1091-19.1152s, 20.1212-21.1273s, 22.1333-23.1394s, 24.1455-25.1515s, 26.1576-42.2545s, 43.2606-60.3636s, 61.3697-67.4061s]
+
+
+## P14_06
+
+64.6 s, 65 frames read | human: 34 objects, 10 relations | TRASER: 34 objects, 203 relations, cut-off answer (salvaged), 8192 tokens
+
+**Objects: 24/34 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | person | mismatch | ✗ |
+| 2 | wall | wall | identical | ✓ |
+| 3 | countertop | countertop | identical | ✓ |
+| 4 | grain | bowl | mismatch | ✗ |
+| 5 | beverage | box | mismatch | ✗ |
+| 6 | rack | dish rack | hypernym/hyponym | ✓ |
+| 7 | cover | plate (uncertain) | semantic overlap | ✓ |
+| 8 | carpet | doormat | hypernym/hyponym | ✓ |
+| 9 | dustbin | plastic bag | mismatch | ✗ |
+| 10 | stairs | drawer front (uncertain) | mismatch | ✗ |
+| 11 | sponge | sponge | identical | ✓ |
+| 12 | shelf | shelf | identical | ✓ |
+| 13 | window | pipe (uncertain) | mismatch | ✗ |
+| 14 | cabinet | sink | mismatch | ✗ |
+| 15 | door | cabinet door | hypernym/hyponym | ✓ |
+| 16 | fridge | refrigerator | synonym | ✓ |
+| 17 | spoon | knife | mismatch | ✗ |
+| 18 | scissor | scissors | identical | ✓ |
+| 19 | adult | arm | mismatch | ✗ |
+| 20 | sink | sink | identical | ✓ |
+| 21 | faucet | faucet | identical | ✓ |
+| 22 | table | countertop | semantic overlap | ✓ |
+| 23 | knife | knife | identical | ✓ |
+| 24 | plate | plate | identical | ✓ |
+| 25 | bowl | plate | semantic overlap | ✓ |
+| 26 | cup | cup | identical | ✓ |
+| 27 | paper | paper (uncertain) | identical | ✓ |
+| 28 | box | box | identical | ✓ |
+| 29 | beverage | bowl | mismatch | ✗ |
+| 30 | cabinet | cabinet door | semantic overlap | ✓ |
+| 31 | door | cabinet door | hypernym/hyponym | ✓ |
+| 32 | plate | plate | identical | ✓ |
+| 33 | bowl | bowl | identical | ✓ |
+| 34 | bowl | plate | semantic overlap | ✓ |
+
+**Relations: 0/10 right, triplets: 0/10 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #19 - holding - bowl #33 | 4.2-9s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - opening - fridge #16 | 10.4-12s, 35.8-38.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - holding - beverage #5 | 13.2-40.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - closing - fridge #16 | 13.8-15.2s, 41.6-43s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - opening - beverage #5 | 17.8-19.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - touching - bowl #33 | 21-21.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - holding - box #28 | 45.6-57.4s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #19 - holding - spoon #17 | 60.2-64.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| beverage #5 - on - table #22 | 17.8-19.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| bowl #33 - on - table #22 | 9-64.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (203): floor #1 - holding - beverage #5 [17.8892-36.7723s]; floor #1 - placing - beverage #5 [35.7785-37.7662s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - in front of - beverage #5 [17.8892-36.7723s]; floor #1 - holding - box #28 [46.7108-57.6431s]; floor #1 - placing - box #28 [57.6431-61.6185s]
+
+
+## P28_19
+
+90.0 s, 90 frames read | human: 28 objects, 10 relations | TRASER: 27 objects, 18 relations, valid JSON, 1872 tokens
+
+**Objects: 10/28 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | chopping board | not judged yet | ? |
+| 2 | wall | countertop | not judged yet | ? |
+| 3 | egg | tomato | not judged yet | ? |
+| 4 | others | tortilla (uncertain) | not judged yet | ? |
+| 5 | countertop | countertop | identical | ✓ |
+| 6 | spatula | spatula | identical | ✓ |
+| 7 | board | chopping board | hypernym/hyponym | ✓ |
+| 8 | rag | chair | not judged yet | ? |
+| 9 | dustbin | pot | not judged yet | ? |
+| 10 | oven | cabinet door | not judged yet | ? |
+| 11 | stove | stove top | hypernym/hyponym | ✓ |
+| 12 | pan | frying pan | not judged yet | ? |
+| 13 | window | tray | not judged yet | ? |
+| 14 | cabinet | drawer front | not judged yet | ? |
+| 15 | door | cabinet door | hypernym/hyponym | ✓ |
+| 16 | adult | arm | mismatch | ✗ |
+| 17 | sink | sink | identical | ✓ |
+| 18 | knife | spoon | not judged yet | ? |
+| 19 | plate | tray | not judged yet | ? |
+| 20 | bottle | bottle | identical | ✓ |
+| 21 | bag | aluminum foil | not judged yet | ? |
+| 22 | box | box | identical | ✓ |
+| 23 | countertop | countertop | identical | ✓ |
+| 24 | window | - | no label from TRASER | ✗ |
+| 25 | cabinet | cabinet door | semantic overlap | ✓ |
+| 26 | vegetable | onions | not judged yet | ? |
+| 27 | bag | napkin | not judged yet | ? |
+| 28 | box | bag | not judged yet | ? |
+
+**Relations: 3/10 right, triplets: 0/10 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #16 - holding - knife #18 | 1.4-43.2s | holding | 41-43s | identical | 0.05 | ✗ | ✗ |
+| adult #16 - holding - vegetable #26 | 1.4-42s | cutting (+1 more) | 3-43s | not judged yet | 0.94 | ? | ✗ |
+| adult #16 - cutting - vegetable #26 | 2.8-39.6s | cutting (+1 more) | 3-43s | identical | 0.91 | ✓ | ✗ |
+| adult #16 - holding - bottle #20 | 43-52.4s | holding (+1 more) | 44-51s | identical | 0.74 | ✓ | ✗ |
+| adult #16 - opening - bottle #20 | 45-46.2s | holding (+1 more) | 44-51s | mismatch | 0.17 | ✗ | ✗ |
+| adult #16 - holding - box #22 | 53.2-59.2s | holding (+1 more) | 52-57s | identical | 0.53 | ✓ | ✗ |
+| adult #16 - touching - stove #11 | 60.4-70.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #16 - swinging - pan #12 | 71.2-79.4s | stirring (+6 more) | 72-89s | not judged yet | 0.42 | ✗ | ✗ |
+| adult #16 - holding - pan #12 | 82.6-83.8s | holding (+6 more) | 45-51s, 72-89s | identical | 0.05 | ✗ | ✗ |
+| adult #16 - over - pan #12 | 84.2-88s | stirring (+6 more) | 72-89s | not judged yet | 0.22 | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (4): adult #16 - holding - spatula #6 [41-43s]; adult #16 - holding - box #28 [89-91s]; adult #16 - holding - box #28 [89-91s]; adult #16 - holding - window #13 [52-57s]
+
+
+## c20407ac-83d6-4c84-88cb-63bced9d456b
+
+52.8 s, 53 frames read | human: 11 objects, 12 relations | TRASER: 11 objects, 23 relations, valid JSON, 953 tokens
+
+**Objects: 6/11 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | sky | soccer ball | mismatch | ✗ |
+| 2 | grass | soccer ball | mismatch | ✗ |
+| 3 | adult | person | hypernym/hyponym | ✓ |
+| 4 | ball | sports ball (uncertain) | hypernym/hyponym | ✓ |
+| 5 | adult | person | hypernym/hyponym | ✓ |
+| 6 | adult | person | hypernym/hyponym | ✓ |
+| 7 | adult | shoe | mismatch | ✗ |
+| 8 | adult | person | hypernym/hyponym | ✓ |
+| 9 | adult | person | hypernym/hyponym | ✓ |
+| 10 | adult | sports ball (uncertain) | mismatch | ✗ |
+| 11 | adult | sports ball (uncertain) | mismatch | ✗ |
+
+**Relations: 0/12 right, triplets: 0/12 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| adult #3 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #5 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #6 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #7 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #8 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #9 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #10 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #11 - running on - grass #2 | 0-52.8s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #3 - kicking - ball #4 | 0-1.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #7 - kicking - ball #4 | 4.4-5.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #8 - kicking - ball #4 | 15.6-16.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #6 - kicking - ball #4 | 15.8-20.8s, 24.4-25s | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (23): adult #5 - approaches - adult #6 [0.996226-3.98491s]; adult #5 - moves away from - adult #6 [2.98868-4.98113s]; adult #5 - in front of - adult #6 [0.996226-4.98113s, 13.9472-16.9358s]; adult #5 - approaches - adult #8 [13.9472-15.9396s]; adult #5 - moves away from - adult #8 [14.9434-16.9358s]; adult #5 - in front of - adult #8 [13.9472-16.9358s]; adult #3 - approaches - adult #5 [21.917-23.9094s]; adult #3 - moves away from - adult #5 [22.9132-24.9057s]; adult #3 - in front of - adult #5 [21.917-23.9094s]; adult #3 - approaches - adult #8 [23.9094-25.9019s]
+
+
+## eed8d8d7-6773-493b-af21-880f0acb063a
+
+68.6 s, 69 frames read | human: 16 objects, 10 relations | TRASER: 16 objects, 28 relations, valid JSON, 1488 tokens
+
+**Objects: 6/16 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 1 | floor | person | mismatch | ✗ |
+| 2 | wall | wall | identical | ✓ |
+| 3 | cloth | blanket (uncertain) | semantic overlap | ✓ |
+| 4 | iron | blanket | mismatch | ✗ |
+| 5 | board | doormat | mismatch | ✗ |
+| 6 | cabinet | cabinet | identical | ✓ |
+| 7 | tv | vent (uncertain) | mismatch | ✗ |
+| 8 | door | drawer (uncertain) | mismatch | ✗ |
+| 9 | stand | chair | mismatch | ✗ |
+| 10 | adult | person | hypernym/hyponym | ✓ |
+| 11 | sofa | sofa | identical | ✓ |
+| 12 | bottle | box | mismatch | ✗ |
+| 13 | cup | pillow | mismatch | ✗ |
+| 14 | bag | pillow | mismatch | ✗ |
+| 15 | cloth | blanket | semantic overlap | ✓ |
+| 16 | door | chair | mismatch | ✗ |
+
+**Relations: 0/10 right, triplets: 0/10 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| sofa #11 - on - floor #1 | 0-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| cabinet #6 - on - floor #1 | 0-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| tv #7 - on - cabinet #6 | 0-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #10 - holding - iron #4 | 5-20.2s, 22.6-36s, 44.2-55.2s, 56.8-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| iron #4 - on - cloth #3 | 5.6-19s, 23.2-34.6s, 44.8-53.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| iron #4 - on - board #5 | 19.8-23.2s, 35.8-45s, 54.6-67s | moving on (+1 more) | 0-67.6058s | hypernym/hyponym | 0.37 | ✗ | ✗ |
+| adult #10 - holding - cup #13 | 59-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #10 - holding - cloth #3 | 0-1.6s | nothing for this pair | - | - | - | ✗ | ✗ |
+| cloth #3 - on - board #5 | 1.4-67s | nothing for this pair | - | - | - | ✗ | ✗ |
+| adult #10 - watering - iron #4 | 61.2-66.2s | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (26): floor #1 - holding - iron #4 [0-67.6058s]; floor #1 - wiping - board #5 [0-67.6058s]; floor #1 - cleaning - board #5 [0-67.6058s]; floor #1 - on - board #5 [0-67.6058s]; floor #1 - in front of - wall #2 [0-67.6058s]; board #5 - in front of - wall #2 [0-67.6058s]; cabinet #6 - against - wall #2 [0-67.6058s]; sofa #11 - against - wall #2 [0-67.6058s]; stand #9 - in front of - wall #2 [0-67.6058s]; cup #13 - on - stand #9 [0-67.6058s]
 

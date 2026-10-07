@@ -1,109 +1,108 @@
 {
  "pvsg": {
   "videos_prepared": 62,
-  "videos_predicted": 44,
+  "videos_predicted": 51,
   "split_size": 62,
   "failed": [
-   "1bfe5ac2-cbf8-4364-8a30-60d97dd395df_1",
    "43b0205a-4e3c-46a7-9d1c-c04ead730180",
    "8be918b2-c819-4a84-98dc-5fe24835a4ac",
+   "P03_06",
+   "P04_27",
    "P05_05",
-   "P09_07",
-   "P14_06",
-   "P28_19",
+   "P19_06",
    "c2e6d807-d903-4b64-98e1-2c07ca700c78_2",
+   "d1d4a1b3-a651-4eb8-bb7f-8d66982854fa",
    "d2222009-a717-4b16-91ce-6399c5bb798a"
   ],
-  "json_invalid": 5,
+  "json_invalid": 6,
   "scores": {
    "lenient@0.5": {
-    "object": 73.1,
-    "relation": 17.4,
-    "triplet": 14.3,
-    "relation_any_time": 31.1,
-    "macro_object": 73.0,
-    "macro_relation": 19.0,
-    "macro_triplet": 15.0,
+    "object": 69.4,
+    "relation": 16.8,
+    "triplet": 13.1,
+    "relation_any_time": 31.7,
+    "macro_object": 70.5,
+    "macro_relation": 17.8,
+    "macro_triplet": 13.3,
     "counts": {
-     "objects": 670,
-     "relations": 672,
-     "object_ok": 490,
-     "relation_ok": 117,
-     "triplet_ok": 96,
-     "relation_ok_any_time": 209,
-     "unjudged": 106
+     "objects": 849,
+     "relations": 758,
+     "object_ok": 589,
+     "relation_ok": 127,
+     "triplet_ok": 99,
+     "relation_ok_any_time": 240,
+     "unjudged": 0
     }
    },
    "lenient@0.1": {
-    "object": 73.1,
-    "relation": 25.3,
-    "triplet": 21.3,
-    "relation_any_time": 31.1,
-    "macro_object": 73.0,
-    "macro_relation": 26.8,
-    "macro_triplet": 22.1,
+    "object": 69.4,
+    "relation": 25.1,
+    "triplet": 19.7,
+    "relation_any_time": 31.7,
+    "macro_object": 70.5,
+    "macro_relation": 26.0,
+    "macro_triplet": 19.9,
     "counts": {
-     "objects": 670,
-     "relations": 672,
-     "object_ok": 490,
-     "relation_ok": 170,
-     "triplet_ok": 143,
-     "relation_ok_any_time": 209,
-     "unjudged": 106
+     "objects": 849,
+     "relations": 758,
+     "object_ok": 589,
+     "relation_ok": 190,
+     "triplet_ok": 149,
+     "relation_ok_any_time": 240,
+     "unjudged": 0
     }
    },
    "strict@0.5": {
-    "object": 33.3,
-    "relation": 12.4,
-    "triplet": 1.8,
-    "relation_any_time": 18.8,
-    "macro_object": 33.0,
-    "macro_relation": 13.3,
-    "macro_triplet": 1.9,
+    "object": 32.3,
+    "relation": 11.5,
+    "triplet": 1.6,
+    "relation_any_time": 18.3,
+    "macro_object": 31.9,
+    "macro_relation": 12.1,
+    "macro_triplet": 1.7,
     "counts": {
-     "objects": 670,
-     "relations": 672,
-     "object_ok": 223,
-     "relation_ok": 83,
+     "objects": 849,
+     "relations": 758,
+     "object_ok": 274,
+     "relation_ok": 87,
      "triplet_ok": 12,
-     "relation_ok_any_time": 126,
-     "unjudged": 106
+     "relation_ok_any_time": 139,
+     "unjudged": 0
     }
    },
    "strict@0.1": {
-    "object": 33.3,
-    "relation": 16.4,
-    "triplet": 2.4,
-    "relation_any_time": 18.8,
-    "macro_object": 33.0,
-    "macro_relation": 17.0,
-    "macro_triplet": 2.4,
+    "object": 32.3,
+    "relation": 15.6,
+    "triplet": 2.1,
+    "relation_any_time": 18.3,
+    "macro_object": 31.9,
+    "macro_relation": 15.9,
+    "macro_triplet": 2.1,
     "counts": {
-     "objects": 670,
-     "relations": 672,
-     "object_ok": 223,
-     "relation_ok": 110,
+     "objects": 849,
+     "relations": 758,
+     "object_ok": 274,
+     "relation_ok": 118,
      "triplet_ok": 16,
-     "relation_ok_any_time": 126,
-     "unjudged": 106
+     "relation_ok_any_time": 139,
+     "unjudged": 0
     }
    }
   },
   "judge_categories": {
    "object": {
-    "identical": 223,
-    "synonym": 18,
-    "mismatch": 150,
-    "semantic overlap": 88,
-    "hypernym/hyponym": 161
+    "identical": 274,
+    "synonym": 26,
+    "mismatch": 217,
+    "semantic overlap": 115,
+    "hypernym/hyponym": 174
    },
    "relation": {
-    "mismatch": 366,
-    "identical": 150,
-    "not judged": 106,
-    "hypernym/hyponym": 77,
-    "semantic overlap": 40,
-    "synonym": 5
+    "mismatch": 484,
+    "identical": 165,
+    "hypernym/hyponym": 89,
+    "semantic overlap": 57,
+    "synonym": 8
    }
   }
  }

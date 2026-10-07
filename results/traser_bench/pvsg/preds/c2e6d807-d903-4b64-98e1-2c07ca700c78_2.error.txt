@@ -7,7 +7,7 @@ Traceback (most recent call last):
                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                         progress=progress)
                         ^^^^^^^^^^^^^^^^^^
-  File "/kaggle/working/svg2-implementation/tools/run_traser.py", line 141, in infer
+  File "/kaggle/working/svg2-implementation/tools/run_traser.py", line 203, in infer
     embeds, position_ids, mask, rope_deltas, _, _, _ = T.rearrange_token(
                                                        ~~~~~~~~~~~~~~~~~^
         model=model, input_ids=input_ids, attention_mask=attention_mask,
