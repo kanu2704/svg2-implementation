@@ -253,6 +253,110 @@ def score_video(gt, pred, stats, judge, criterion="lenient", thr=0.5):
     return out
 
 
+# ----------------------------------------------------------------------------- looking at videos
+def _fmt_spans(spans, unit):
+    u = "s" if unit == "seconds" else ""
+    return ", ".join(f"{a:g}-{b:g}{u}" for a, b in merge(spans)) or "-"
+
+
+def _show_table(rows, title):
+    print(title)
+    if not rows:
+        print("   (none)\n")
+        return
+    try:
+        import pandas as pd
+        from IPython.display import display
+        display(pd.DataFrame(rows).style.hide(axis="index").set_properties(**{"text-align": "left"}))
+    except Exception:  # noqa: BLE001  (plain text outside a notebook)
+        cols = list(rows[0])
+        width = {c: min(40, max(len(c), *(len(str(r[c])) for r in rows))) for c in cols}
+        print("   " + "  ".join(c.ljust(width[c]) for c in cols))
+        for r in rows:
+            print("   " + "  ".join(str(r[c])[:40].ljust(width[c]) for c in cols))
+    print()
+
+
+def show(dataset, videos=None, last=3, ask_judge=False, thr=0.5, log=print):
+    """Human labels next to TRASER's answer for a few videos: objects, relations, triplets.
+    videos: list of video ids (default: the `last` most recently predicted). Verdicts come from the
+    judge cache (or identical text); ask_judge=True asks Kimi K3 for the missing ones (needs the key)."""
+    preds = RESULTS / dataset / "preds"
+    if videos is None:
+        done = sorted((p for p in preds.glob("*.json") if not p.name.endswith(".stats.json")),
+                      key=lambda p: p.stat().st_mtime)
+        videos = [p.stem for p in done[-last:]]
+    judge = Judge()
+    loaded = {v: load_video(dataset, v) for v in videos}
+    if ask_judge:
+        judge.ask_all([p for gt, pred, st in loaded.values() if pred is not None
+                       for p in video_pairs(gt, pred, st)[0]], log=log)
+    verdict = lambda kind, ref, hyp: judge.category(kind, ref, hyp) or "not judged yet"
+    for v, (gt, pred, stats) in loaded.items():
+        print("=" * 100)
+        if pred is None:
+            print(f"{dataset}/{v}: no prediction yet\n")
+            continue
+        unit = gt.get("time_unit", "seconds")
+        print(f"{dataset}/{v}   {stats.get('duration_s')} s, {stats.get('sampled_frames')} frames read   |   "
+              f"human: {len(gt['objects'])} objects, {len(gt['relations'])} relations   |   TRASER: "
+              f"{len(pred['objects'])} objects, {len(pred['relations'])} relations, "
+              f"{'valid JSON' if pred['json_ok'] else 'cut-off answer (salvaged)'}, {stats.get('new_tokens')} tokens")
+        _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
+        name_of = {**name, -1: "camera"}
+        obj_ok = {-1: True}                  # True / False / None (= not judged yet)
+        mark = lambda x: "✓" if x else ("?" if x is None else "✗")
+        rows = []
+        for o in gt["objects"]:
+            g = o["gt_id"]
+            hyp = pred_name.get(g)
+            c = verdict("object", o["name"], hyp) if hyp is not None else "no label (not given to TRASER or skipped)"
+            cat = judge.category("object", o["name"], hyp) if hyp is not None else "mismatch"
+            obj_ok[g] = None if cat is None else is_right(cat, "lenient")
+            rows.append({"id": g, "human label": o["name"], "TRASER label": hyp if hyp is not None else "-",
+                         "verdict": c, "right (lenient)": mark(obj_ok[g])})
+        unj = sum(obj_ok[g] is None for g in name)
+        _show_table(rows, f"OBJECTS: {sum(obj_ok[g] is True for g in name)}/{len(name)} right"
+                          + (f", {unj} not judged yet (?)" if unj else ""))
+        rows, n_rel, n_tri, n_unj = [], 0, 0, 0
+        for r in gt["relations"]:
+            cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
+            best = None
+            for p, sp in cands:
+                cat = judge.category("relation", r["pred"], p)
+                t = tiou(r["spans"], sp)
+                key = (is_right(cat, "lenient") and t > thr, cat is None and t > thr, is_right(cat, "lenient"), t)
+                if best is None or key > best[0]:
+                    best = (key, p, sp, cat, t)
+            rel_ok = True if best and best[0][0] else (None if best and best[0][1] else False)
+            parts = [rel_ok, obj_ok.get(r["subj"], False), obj_ok.get(r["obj"], False)]
+            tri_ok = False if False in parts else (None if None in parts else True)
+            n_rel += rel_ok is True
+            n_tri += tri_ok is True
+            n_unj += rel_ok is None or tri_ok is None
+            rows.append({
+                "human: subject - predicate - object": f"{name_of.get(r['subj'], r['subj'])} - {r['pred']} - "
+                                                       f"{name_of.get(r['obj'], r['obj'])}",
+                "human time": _fmt_spans(r["spans"], unit),
+                "TRASER (same two objects)": (f"{best[1]}" + (f"  (+{len(cands) - 1} more)" if len(cands) > 1 else ""))
+                                             if best else "nothing for this pair",
+                "TRASER time": _fmt_spans(best[2], unit) if best else "-",
+                "word": (best[3] or "not judged yet") if best else "-",
+                "tIoU": f"{best[4]:.2f}" if best else "-",
+                "relation": mark(rel_ok),
+                "triplet": mark(tri_ok)})
+        _show_table(rows, f"RELATIONS: {n_rel}/{len(gt['relations'])} right   |   "
+                          f"TRIPLETS: {n_tri}/{len(gt['relations'])} right   (lenient, tIoU > {thr})"
+                          + (f"   |   {n_unj} wait for the judge (?)" if n_unj else ""))
+        known = {(r["subj"], r["obj"]) for r in gt["relations"]}
+        extra = [(name_of.get(a, a), p, name_of.get(b, b), _fmt_spans(pred_spans(sp, gt, stats), unit))
+                 for a, p, b, sp in ((s_, p_, o_, sp_) for (s_, o_), lst in by_pair.items()
+                                     for p_, sp_ in lst) if (a, b) not in known]
+        if extra:
+            print(f"TRASER relations between pairs the humans did not annotate: {len(extra)}, e.g. "
+                  + "; ".join(f"{a} - {p} - {b} [{t}]" for a, p, b, t in extra[:5]) + "\n")
+
+
 # ----------------------------------------------------------------------------- whole run
 def video_ids(dataset):
     d = RESULTS / dataset / "gt"
