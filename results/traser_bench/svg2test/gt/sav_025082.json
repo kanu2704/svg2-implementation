@@ -2,12 +2,14 @@
  "dataset": "svg2test",
  "video_id": "sav_025082",
  "source": "sav",
- "video": "/tmp/svg2test_videos/sav_025082.mp4",
  "fps": 24.0,
  "n_frames": 355,
  "mask_frames": 355,
  "time_unit": "index",
- "frame_alignment": null,
+ "frame_alignment": {
+  "trimmed_from": 457,
+  "mask_frames": 355
+ },
  "objects_without_mask_column": [],
  "objects": [
   {
@@ -355,5 +357,7 @@
     ]
    ]
   }
- ]
+ ],
+ "video_source": "/tmp/svg2test_videos/sav_025082.mp4",
+ "video": "video.mp4"
 }

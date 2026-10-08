@@ -2,18 +2,11 @@
  "dataset": "svg2test",
  "video_id": "359_4ZPKJtcNGZE",
  "source": "vipseg",
- "video": "/tmp/svg2test_videos/359_4ZPKJtcNGZE.mp4",
  "fps": 6.0,
  "n_frames": 136,
  "mask_frames": 136,
  "time_unit": "index",
- "frame_alignment": {
-  "pictures": 46,
-  "mask_frames": 136,
-  "contrast": 3.3,
-  "agreement_with_even_spacing": 0.022,
-  "used": "even"
- },
+ "frame_alignment": null,
  "objects_without_mask_column": [],
  "objects": [
   {
@@ -377,5 +370,7 @@
     ]
    ]
   }
- ]
+ ],
+ "video_source": "/tmp/svg2test_videos/359_4ZPKJtcNGZE.mp4",
+ "video": "video.mp4"
 }

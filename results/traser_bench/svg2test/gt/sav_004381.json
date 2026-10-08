@@ -2,7 +2,6 @@
  "dataset": "svg2test",
  "video_id": "sav_004381",
  "source": "sav",
- "video": "/tmp/svg2test_videos/sav_004381.mp4",
  "fps": 24.0,
  "n_frames": 500,
  "mask_frames": 500,
@@ -342,5 +341,7 @@
     ]
    ]
   }
- ]
+ ],
+ "video_source": "/tmp/svg2test_videos/sav_004381.mp4",
+ "video": "video.mp4"
 }
