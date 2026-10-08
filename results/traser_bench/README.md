@@ -5,28 +5,28 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 | | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
 |---|---|---|---|---|---|---|---|---|---|
 | TRASER, paper | 16.1 | 22.9 | 16.7 | 16.9 | 25.0 | 18.7 | 72.7 | 91.4 | 79.0 |
-| **TRASER, ours** | 13.1 | – | – | 16.8 | – | – | 69.4 | – | – |
+| **TRASER, ours** | 10.2 | – | – | 13.6 | – | – | 60.1 | – | – |
 
 ## Coverage
 
 | | test videos | prepared | predicted | failed | answers not valid JSON (salvaged) |
 |---|---|---|---|---|---|
-| pvsg | 62 | 62 | 51 | 9 | 6 |
+| pvsg | 62 | 62 | 62 | 0 | 14 |
 
 ## Other settings (same predictions)
 
 | setting | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
 |---|---|---|---|---|---|---|---|---|---|
-| lenient, tIoU 0.5 (main) | 13.1 | – | – | 16.8 | – | – | 69.4 | – | – |
-| lenient, tIoU 0.1 | 19.7 | – | – | 25.1 | – | – | 69.4 | – | – |
-| strict, tIoU 0.5 | 1.6 | – | – | 11.5 | – | – | 32.3 | – | – |
-| strict, tIoU 0.1 | 2.1 | – | – | 15.6 | – | – | 32.3 | – | – |
-| lenient, tIoU 0.5, per-video average | 13.3 | – | – | 17.8 | – | – | 70.5 | – | – |
-| lenient, relation ignoring time | – | – | – | 31.7 | – | – | – | – | – |
+| lenient, tIoU 0.5 (main) | 10.2 | – | – | 13.6 | – | – | 60.1 | – | – |
+| lenient, tIoU 0.1 | 15.5 | – | – | 20.5 | – | – | 60.1 | – | – |
+| strict, tIoU 0.5 | 1.2 | – | – | 9.5 | – | – | 26.9 | – | – |
+| strict, tIoU 0.1 | 1.7 | – | – | 12.9 | – | – | 26.9 | – | – |
+| lenient, tIoU 0.5, per-video average | 11.0 | – | – | 15.3 | – | – | 66.0 | – | – |
+| lenient, relation ignoring time | – | – | – | 26.3 | – | – | – | – | – |
 
 ## Judge answers (lenient = everything but mismatch)
 
-- **pvsg**: object: identical 274, mismatch 217, hypernym/hyponym 174, semantic overlap 115, synonym 26; relation: mismatch 484, identical 165, hypernym/hyponym 89, semantic overlap 57, synonym 8
+- **pvsg**: object: mismatch 347, identical 345, hypernym/hyponym 226, semantic overlap 167, synonym 32; relation: mismatch 544, identical 360, hypernym/hyponym 121, semantic overlap 94, synonym 8
 
 ## How it is scored
 
