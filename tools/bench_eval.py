@@ -399,13 +399,17 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
     human = {}
     for r in gt["relations"]:
         human.setdefault((r["subj"], r["obj"]), []).append((r["pred"], r["spans"]))
-    rows, counts = [], {"both": 0, "missed": 0, "reversed": 0, "extra": 0}
+    given = {o["gt_id"] for o in gt["objects"] if o["col"] in set(stats.get("mask_columns", []))} | {-1}
+    rows, counts = [], {"both": 0, "missed": 0, "reversed": 0, "extra": 0, "not_given": 0}
     for pair in sorted(set(human) | set(by_pair), key=lambda p: (p not in human, p)):
         h = human.get(pair, [])
         t = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get(pair, [])]
         if h and t:
             status = "✓ TRASER has this pair"
             counts["both"] += 1
+        elif h and not set(pair) <= given:
+            status = "⊘ an object was not given to TRASER (40-object cap / no mask on its frames)"
+            counts["not_given"] += 1
         elif h and (pair[1], pair[0]) in by_pair:
             status = "↔ TRASER has it reversed"
             counts["reversed"] += 1
@@ -447,27 +451,31 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
         anchor = re.sub(r"[^a-z0-9_-]", "", v.lower())
         overview.append({"video": f"[{v}](#{anchor})", "human pairs": c["human_pairs"], "TRASER pairs": c["traser_pairs"],
                          "pairs in both": c["both"], "missed by TRASER": c["missed"], "reversed": c["reversed"],
-                         "only TRASER": c["extra"]})
+                         "object not given": c["not_given"], "only TRASER": c["extra"]})
         sections.append(
             f"## {v}\n\n{stats.get('duration_s')} s video; humans: {len(gt['objects'])} objects, {c['human_relations']} "
             f"relations on {c['human_pairs']} pairs; TRASER: {c['traser_relations']} relations on {c['traser_pairs']} pairs"
             f"{'' if pred['json_ok'] else ' (answer cut off at the token limit, read up to there)'}.\n\n"
             f"**Pairs:** {c['both']} in both, {c['missed']} missed by TRASER, {c['reversed']} reversed, "
+            f"{c['not_given']} with an object TRASER was not given, "
             f"{c['extra']} only TRASER\n\n<details><summary>objects (human label vs TRASER label)</summary>\n\n"
             f"{_md_table(objects)}\n</details>\n\n{_md_table(rows)}\n")
     tot = {k: sum(o[k] for o in overview) for k in ("human pairs", "TRASER pairs", "pairs in both", "missed by TRASER",
-                                                    "reversed", "only TRASER")}
+                                                    "reversed", "object not given", "only TRASER")}
     text = (f"# {dataset}: which object pairs TRASER talks about ({len(overview)} random videos, seed {seed})\n\n"
             "TRASER is given the human objects (masks) and writes its own list of relations; it is not told which "
             "pairs to describe. Each row is one ordered pair (subject → object) that the humans or TRASER mention.\n\n"
             "- **✓ TRASER has this pair**: TRASER wrote at least one relation for the same two objects, same direction\n"
             "- **✗ TRASER missed this pair**: humans annotated it, TRASER said nothing about these two objects\n"
             "- **↔ reversed**: TRASER only has the other direction (object → subject); scored as missed\n"
+            "- **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, "
+            "so it could not answer; scored as missed, as in the paper's setup\n"
             "- **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)\n"
             "- last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, "
             "? the judge has not compared the words yet\n\n"
             f"**Total over these videos:** {tot['human pairs']} human pairs, {tot['TRASER pairs']} TRASER pairs; "
             f"{tot['pairs in both']} in both, {tot['missed by TRASER']} missed, {tot['reversed']} reversed, "
+            f"{tot['object not given']} with an object not given, "
             f"{tot['only TRASER']} only TRASER.\n\n" + _md_table(overview) + "\n" + "\n".join(sections))
     path.write_text(text)
     return path

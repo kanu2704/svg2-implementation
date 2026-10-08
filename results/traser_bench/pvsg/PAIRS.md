@@ -5,29 +5,30 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 - **✓ TRASER has this pair**: TRASER wrote at least one relation for the same two objects, same direction
 - **✗ TRASER missed this pair**: humans annotated it, TRASER said nothing about these two objects
 - **↔ reversed**: TRASER only has the other direction (object → subject); scored as missed
+- **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, so it could not answer; scored as missed, as in the paper's setup
 - **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)
 - last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, ? the judge has not compared the words yet
 
-**Total over these videos:** 156 human pairs, 254 TRASER pairs; 60 in both, 90 missed, 6 reversed, 194 only TRASER.
+**Total over these videos:** 129 human pairs, 230 TRASER pairs; 60 in both, 60 missed, 4 reversed, 5 with an object not given, 170 only TRASER.
 
-| video | human pairs | TRASER pairs | pairs in both | missed by TRASER | reversed | only TRASER |
-|---|---|---|---|---|---|---|
-| [0018_4748191834](#0018_4748191834) | 15 | 26 | 5 | 9 | 1 | 21 |
-| [1000_6828150903](#1000_6828150903) | 11 | 32 | 11 | 0 | 0 | 21 |
-| [1005_4760962392](#1005_4760962392) | 19 | 12 | 5 | 12 | 2 | 7 |
-| [1011_4633647136](#1011_4633647136) | 15 | 16 | 6 | 9 | 0 | 10 |
-| [1012_4024008346](#1012_4024008346) | 8 | 26 | 6 | 1 | 1 | 20 |
-| [1015_4698622422](#1015_4698622422) | 9 | 13 | 2 | 6 | 1 | 11 |
-| [1021_4278168115](#1021_4278168115) | 19 | 32 | 14 | 5 | 0 | 18 |
-| [1025_6244382586](#1025_6244382586) | 11 | 22 | 7 | 3 | 1 | 15 |
-| [P09_07](#p09_07) | 8 | 58 | 4 | 4 | 0 | 54 |
-| [d1d4a1b3-a651-4eb8-bb7f-8d66982854fa](#d1d4a1b3-a651-4eb8-bb7f-8d66982854fa) | 41 | 17 | 0 | 41 | 0 | 17 |
+| video | human pairs | TRASER pairs | pairs in both | missed by TRASER | reversed | object not given | only TRASER |
+|---|---|---|---|---|---|---|---|
+| [0018_4748191834](#0018_4748191834) | 15 | 26 | 5 | 9 | 1 | 0 | 21 |
+| [1000_6828150903](#1000_6828150903) | 11 | 32 | 11 | 0 | 0 | 0 | 21 |
+| [1011_4633647136](#1011_4633647136) | 15 | 16 | 6 | 9 | 0 | 0 | 10 |
+| [1012_4024008346](#1012_4024008346) | 8 | 26 | 6 | 1 | 1 | 0 | 20 |
+| [1015_4698622422](#1015_4698622422) | 9 | 13 | 2 | 6 | 1 | 0 | 11 |
+| [1021_4278168115](#1021_4278168115) | 19 | 32 | 14 | 5 | 0 | 0 | 18 |
+| [1025_4615486172](#1025_4615486172) | 23 | 25 | 3 | 19 | 1 | 0 | 22 |
+| [P03_06](#p03_06) | 16 | 23 | 8 | 3 | 0 | 5 | 15 |
+| [P14_06](#p14_06) | 7 | 29 | 0 | 7 | 0 | 0 | 29 |
+| [P28_19](#p28_19) | 6 | 8 | 5 | 1 | 0 | 0 | 3 |
 
 ## 0018_4748191834
 
 33.2 s video; humans: 14 objects, 17 relations on 15 pairs; TRASER: 29 relations on 26 pairs.
 
-**Pairs:** 5 in both, 9 missed by TRASER, 1 reversed, 21 only TRASER
+**Pairs:** 5 in both, 9 missed by TRASER, 1 reversed, 0 with an object TRASER was not given, 21 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -94,7 +95,7 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 68.0 s video; humans: 15 objects, 13 relations on 11 pairs; TRASER: 38 relations on 32 pairs.
 
-**Pairs:** 11 in both, 0 missed by TRASER, 0 reversed, 21 only TRASER
+**Pairs:** 11 in both, 0 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 21 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -154,71 +155,11 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 | door #15 → floor #2 | - | above [16-17s, 50-69s] | + only TRASER | - |
 
 
-## 1005_4760962392
-
-90.0 s video; humans: 17 objects, 20 relations on 19 pairs; TRASER: 14 relations on 12 pairs.
-
-**Pairs:** 5 in both, 12 missed by TRASER, 2 reversed, 7 only TRASER
-
-<details><summary>objects (human label vs TRASER label)</summary>
-
-| id | human label | TRASER label |
-|---|---|---|
-| 1 | ground | fabric |
-| 2 | wall | wall |
-| 3 | spoon | candle |
-| 4 | adult | person |
-| 5 | child | girl |
-| 6 | table | tablecloth |
-| 7 | knife | knife |
-| 8 | candle | candle |
-| 9 | plate | napkin |
-| 10 | cake | cake |
-| 11 | adult | person |
-| 12 | child | child |
-| 13 | knife | bowl |
-| 14 | candle | candle |
-| 15 | plate | plate |
-| 16 | adult | person |
-| 17 | child | child |
-
-</details>
-
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| adult #4 → wall #2 | in front of [0-90s] | - | ✗ TRASER missed this pair | - |
-| adult #4 → spoon #3 | holding [86.6-90s] | - | ✗ TRASER missed this pair | - |
-| adult #4 → knife #7 | holding [11.6-22.6s] | holding [0-17s, 41-46s] | ✓ TRASER has this pair | ✗ |
-| adult #4 → cake #10 | looking at [5-8.2s]; cutting [36-75.2s] | cutting [0-17s, 41-46s]; preparing cake [0-90s] | ✓ TRASER has this pair | ✗ ✗ |
-| adult #4 → knife #13 | holding [34-80.2s] | holding [28-38s] | ✓ TRASER has this pair | ✗ |
-| adult #4 → plate #15 | holding [84.6-90s] | serving [84-90s] | ✓ TRASER has this pair | ✗ |
-| adult #4 → child #17 | holding [0-5.2s] | serving [66-72s] | ✓ TRASER has this pair | ✗ |
-| child #5 → adult #4 | beside [0-90s] | - | ↔ TRASER has it reversed | - |
-| child #5 → child #17 | beside [0-14.2s] | - | ✗ TRASER missed this pair | - |
-| candle #8 → cake #10 | on [0-23.2s] | - | ✗ TRASER missed this pair | - |
-| cake #10 → table #6 | on [0-90s] | - | ✗ TRASER missed this pair | - |
-| child #12 → adult #4 | beside [0-90s] | - | ↔ TRASER has it reversed | - |
-| child #12 → child #17 | beside [0-20.2s] | - | ✗ TRASER missed this pair | - |
-| candle #14 → cake #10 | on [0-23.2s] | - | ✗ TRASER missed this pair | - |
-| adult #16 → candle #8 | picking [23-26.2s] | - | ✗ TRASER missed this pair | - |
-| adult #16 → candle #14 | picking [23-26.2s] | - | ✗ TRASER missed this pair | - |
-| child #17 → table #6 | beside [39-90s] | - | ✗ TRASER missed this pair | - |
-| child #17 → candle #8 | blowing [5.4-9.2s] | - | ✗ TRASER missed this pair | - |
-| child #17 → plate #9 | holding [39.6-90s] | - | ✗ TRASER missed this pair | - |
-| adult #4 → child #5 | - | serving [55-64s] | + only TRASER | - |
-| adult #4 → child #12 | - | serving [28-38s] | + only TRASER | - |
-| child #5 → cake #10 | - | looking at [55-64s] | + only TRASER | - |
-| child #12 → cake #10 | - | looking at [28-38s] | + only TRASER | - |
-| child #12 → knife #13 | - | eating from [28-38s] | + only TRASER | - |
-| child #17 → cake #10 | - | looking at [0-17s, 41-46s]; looking at [66-72s] | + only TRASER | - |
-| child #17 → plate #15 | - | looking at [84-90s] | + only TRASER | - |
-
-
 ## 1011_4633647136
 
 53.6 s video; humans: 14 objects, 20 relations on 15 pairs; TRASER: 356 relations on 16 pairs (answer cut off at the token limit, read up to there).
 
-**Pairs:** 6 in both, 9 missed by TRASER, 0 reversed, 10 only TRASER
+**Pairs:** 6 in both, 9 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 10 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -274,7 +215,7 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 19.6 s video; humans: 11 objects, 8 relations on 8 pairs; TRASER: 31 relations on 26 pairs.
 
-**Pairs:** 6 in both, 1 missed by TRASER, 1 reversed, 20 only TRASER
+**Pairs:** 6 in both, 1 missed by TRASER, 1 reversed, 0 with an object TRASER was not given, 20 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -330,7 +271,7 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 42.0 s video; humans: 13 objects, 15 relations on 9 pairs; TRASER: 18 relations on 13 pairs.
 
-**Pairs:** 2 in both, 6 missed by TRASER, 1 reversed, 11 only TRASER
+**Pairs:** 2 in both, 6 missed by TRASER, 1 reversed, 0 with an object TRASER was not given, 11 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -380,7 +321,7 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 79.8 s video; humans: 11 objects, 21 relations on 19 pairs; TRASER: 40 relations on 32 pairs.
 
-**Pairs:** 14 in both, 5 missed by TRASER, 0 reversed, 18 only TRASER
+**Pairs:** 14 in both, 5 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 18 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
@@ -441,283 +382,345 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 | book #11 → curtain #4 | - | in front of [41.895-80.7975s] | + only TRASER | - |
 
 
-## 1025_6244382586
+## 1025_4615486172
 
-20.6 s video; humans: 11 objects, 12 relations on 11 pairs; TRASER: 28 relations on 22 pairs.
+90.0 s video; humans: 27 objects, 24 relations on 23 pairs; TRASER: 320 relations on 25 pairs (answer cut off at the token limit, read up to there).
 
-**Pairs:** 7 in both, 3 missed by TRASER, 1 reversed, 15 only TRASER
+**Pairs:** 3 in both, 19 missed by TRASER, 1 reversed, 0 with an object TRASER was not given, 22 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
 | id | human label | TRASER label |
 |---|---|---|
-| 1 | ground | sand |
-| 2 | ceiling | ceiling |
-| 3 | wall | fence |
-| 4 | adult | person |
-| 5 | child | person |
-| 6 | horse | horse |
-| 7 | hat | helmet |
-| 8 | box | box |
-| 9 | child | person |
-| 10 | horse | horse |
-| 11 | hat | helmet |
+| 1 | rock | chair |
+| 2 | floor | chair leg (uncertain) |
+| 3 | ceiling | ceiling fan |
+| 4 | wall | wall |
+| 5 | door | door |
+| 6 | curtain | door frame (uncertain) |
+| 7 | shelf | bookshelf |
+| 8 | window | curtain |
+| 9 | adult | person |
+| 10 | child | child |
+| 11 | table | tablecloth |
+| 12 | chair | table |
+| 13 | candle | cake |
+| 14 | cake | cake |
+| 15 | cellphone | cell phone |
+| 16 | ballon | balloon |
+| 17 | chair | chair |
+| 18 | ballon | balloon |
+| 19 | adult | person |
+| 20 | chair | chair |
+| 21 | ballon | balloon |
+| 22 | adult | person |
+| 23 | chair | chair |
+| 24 | ballon | chair |
+| 25 | adult | person |
+| 26 | chair | chair |
+| 27 | chair | person |
 
 </details>
 
 | pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
 |---|---|---|---|---|
-| adult #4 → ground #1 | walking on [5-8s] | - | ✗ TRASER missed this pair | - |
-| adult #4 → child #5 | looking at [5-8s]; guiding [0-20.6s] | - | ✗ TRASER missed this pair | - - |
-| adult #4 → child #9 | guiding [0-20.6s] | - | ✗ TRASER missed this pair | - |
-| child #5 → horse #6 | riding [0-20.6s] | riding [0-20.6s]; riding horse [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| child #5 → hat #7 | wearing [0-20.6s] | wearing [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| horse #6 → ground #1 | walking on [0-20.6s] | moving across [0-20.6s]; on [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| box #8 → ground #1 | on [0-5.2s] | on [0-5.88571s] | ✓ TRASER has this pair | ✓ |
-| child #9 → child #5 | looking at [0-5.2s] | - | ↔ TRASER has it reversed | - |
-| child #9 → horse #10 | riding [0-5.4s, 10.8-20.6s] | riding [0-20.6s]; riding horse [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| child #9 → hat #11 | wearing [0-5.4s, 10.8-20.6s] | wearing [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| horse #10 → ground #1 | walking on [0-5.4s, 10.8-20.6s] | moving across [0-20.6s]; on [0-20.6s] | ✓ TRASER has this pair | ✓ |
-| ceiling #2 → ground #1 | - | above [0-20.6s] | + only TRASER | - |
-| ceiling #2 → wall #3 | - | above [0-20.6s] | + only TRASER | - |
-| child #5 → ground #1 | - | moving across [0-20.6s] | + only TRASER | - |
-| child #5 → wall #3 | - | in front of [0-20.6s] | + only TRASER | - |
-| child #5 → child #9 | - | moving with [0-20.6s]; next to [0-20.6s] | + only TRASER | - |
-| horse #6 → wall #3 | - | in front of [0-20.6s] | + only TRASER | - |
-| horse #6 → horse #10 | - | moving with [0-20.6s]; next to [0-20.6s] | + only TRASER | - |
-| hat #7 → child #5 | - | on [0-20.6s] | + only TRASER | - |
-| box #8 → wall #3 | - | in front of [0-5.88571s] | + only TRASER | - |
-| box #8 → horse #6 | - | in front of [0-5.88571s] | + only TRASER | - |
-| box #8 → horse #10 | - | in front of [0-5.88571s] | + only TRASER | - |
-| child #9 → ground #1 | - | moving across [0-20.6s] | + only TRASER | - |
-| child #9 → wall #3 | - | in front of [0-20.6s] | + only TRASER | - |
-| horse #10 → wall #3 | - | in front of [0-20.6s] | + only TRASER | - |
-| hat #11 → child #9 | - | on [0-20.6s] | + only TRASER | - |
+| adult #9 → door #5 | entering [3.4-6.2s] | - | ✗ TRASER missed this pair | - |
+| adult #9 → cake #14 | holding [2.2-29.2s, 76.8-90s] | - | ✗ TRASER missed this pair | - |
+| child #10 → cake #14 | touching [75.4-77s] | - | ✗ TRASER missed this pair | - |
+| child #10 → chair #27 | beside [5.2-90s] | - | ✗ TRASER missed this pair | - |
+| chair #12 → ballon #16 | in front of [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| chair #12 → ballon #18 | in front of [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| candle #13 → cake #14 | on [2.8-90s] | - | ✗ TRASER missed this pair | - |
+| cake #14 → table #11 | on [27.6-86.8s] | - | ✗ TRASER missed this pair | - |
+| ballon #16 → wall #4 | on [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| ballon #16 → ballon #18 | next to [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| chair #17 → chair #12 | next to [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| ballon #18 → wall #4 | on [4.2-90s] | - | ✗ TRASER missed this pair | - |
+| adult #19 → child #10 | holding [12.8-90s] | photographing [73-90s]; looking at [15-22s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | ✓ TRASER has this pair | ✗ |
+| adult #19 → chair #12 | picking [31.6-35.4s] | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | ✓ TRASER has this pair | ✗ |
+| adult #19 → candle #13 | blowing [58.8-61.4s] | photographing [73-90s]; looking at [22-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | ✓ TRASER has this pair | ✗ |
+| chair #20 → chair #17 | beside [4-90s] | - | ✗ TRASER missed this pair | - |
+| ballon #21 → ceiling #3 | on [13.4-20s] | - | ✗ TRASER missed this pair | - |
+| ballon #21 → table #11 | over [0-90s] | - | ✗ TRASER missed this pair | - |
+| adult #22 → floor #2 | squatting on [50.4-90s] | - | ✗ TRASER missed this pair | - |
+| adult #22 → child #10 | looking at [62-83s] | - | ✗ TRASER missed this pair | - |
+| adult #22 → chair #12 | in front of [49.8-90s] | - | ✗ TRASER missed this pair | - |
+| adult #22 → candle #13 | blowing [58.8-61.4s] | - | ✗ TRASER missed this pair | - |
+| adult #22 → adult #19 | hugging [50.4-81.2s]; next to [49.2-90s] | - | ↔ TRASER has it reversed | - - |
+| adult #19 → rock #1 | - | sitting on [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s]; photographing [77-90s] | + only TRASER | - |
+| adult #19 → floor #2 | - | photographing [0-1s]; photographing [0-1s]; photographing [0-1s]; photographing [0-1s]; photographing [0-1s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s]; photographing [2-3s] | + only TRASER | - |
+| adult #19 → ceiling #3 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
+| adult #19 → wall #4 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → door #5 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
+| adult #19 → shelf #7 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
+| adult #19 → window #8 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
+| adult #19 → adult #9 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → table #11 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → cake #14 | - | photographing [73-90s]; looking at [22-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → cellphone #15 | - | holding [73-90s]; looking at [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → ballon #16 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → chair #17 | - | sitting on [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [22-23s] | + only TRASER | - |
+| adult #19 → ballon #18 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → chair #20 | - | sitting on [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [22-23s] | + only TRASER | - |
+| adult #19 → ballon #21 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → adult #22 | - | photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s]; photographing [73-90s] | + only TRASER | - |
+| adult #19 → chair #23 | - | sitting on [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [22-23s]; photographing [15-22s] | + only TRASER | - |
+| adult #19 → ballon #24 | - | photographing [15-22s]; photographing [15-22s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s]; photographing [22-23s]; photographing [26-27s] | + only TRASER | - |
+| adult #19 → adult #25 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
+| adult #19 → chair #26 | - | sitting on [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [15-22s]; photographing [22-23s]; photographing [15-22s] | + only TRASER | - |
+| adult #19 → chair #27 | - | photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s]; photographing [11-15s] | + only TRASER | - |
 
 
-## P09_07
+## P03_06
 
-55.2 s video; humans: 29 objects, 15 relations on 8 pairs; TRASER: 72 relations on 58 pairs.
+109.2 s video; humans: 65 objects, 20 relations on 16 pairs; TRASER: 276 relations on 23 pairs (answer cut off at the token limit, read up to there).
 
-**Pairs:** 4 in both, 4 missed by TRASER, 0 reversed, 54 only TRASER
+**Pairs:** 8 in both, 3 missed by TRASER, 0 reversed, 5 with an object TRASER was not given, 15 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
 | id | human label | TRASER label |
 |---|---|---|
-| 1 | floor | hand |
+| 1 | floor | stove burner |
 | 2 | wall | wall |
-| 3 | countertop | table |
-| 4 | microwave | cabinet door |
-| 5 | pot | bottle |
-| 6 | cover | lid (uncertain) |
-| 7 | stove | handle (uncertain) |
-| 8 | shelf | bottle |
-| 9 | cabinet | drawer |
-| 10 | spoon | scissors |
-| 11 | scissor | scissors |
-| 12 | adult | hand |
-| 13 | sink | bowl |
-| 14 | knife | knife |
-| 15 | bottle | cup |
-| 16 | paper | paper (uncertain) |
-| 17 | box | paper (uncertain) |
-| 18 | cover | bowl |
-| 19 | cabinet | drawer |
-| 20 | spoon | lid (uncertain) |
-| 21 | knife | knife |
-| 22 | bottle | - (not given to TRASER) |
-| 23 | powder | cup |
-| 24 | cover | bowl |
-| 25 | cabinet | shelf (uncertain) |
-| 26 | spoon | - (not given to TRASER) |
-| 27 | bottle | cup |
-| 28 | cover | lid (uncertain) |
-| 29 | bottle | lid (uncertain) |
+| 3 | cloth | handle (uncertain) |
+| 4 | mat | chopping board |
+| 5 | countertop | stove top |
+| 6 | grain | spatula |
+| 7 | simmering | pot |
+| 8 | rack | countertop |
+| 9 | spatula | spatula |
+| 10 | chopstick | - (not given to TRASER) |
+| 11 | teapot | kettle |
+| 12 | pot | pot |
+| 13 | board | chopping board |
+| 14 | cover | stove burner |
+| 15 | brush | bottle |
+| 16 | rag | handle (uncertain) |
+| 17 | dustbin | spoon |
+| 18 | washer | handle (uncertain) |
+| 19 | drawer | handle (uncertain) |
+| 20 | oven | stove burner |
+| 21 | stove | stove burner |
+| 22 | sponge | cup |
+| 23 | cabinet | stove burner |
+| 24 | door | wall |
+| 25 | glass | glass cup |
+| 26 | spoon | spoon |
+| 27 | towel | handle (uncertain) |
+| 28 | basket | pot |
+| 29 | adult | hand |
+| 30 | sink | sink |
+| 31 | faucet | faucet |
+| 32 | table | handle (uncertain) |
+| 33 | knife | knife |
+| 34 | fork | handle (uncertain) |
+| 35 | plate | lid (uncertain) |
+| 36 | bowl | bowl |
+| 37 | bottle | cup |
+| 38 | box | handle (uncertain) |
+| 39 | mat | chopping board |
+| 40 | grain | rice |
+| 41 | simmering | - (not given to TRASER) |
+| 42 | rack | - (not given to TRASER) |
+| 43 | pot | - (not given to TRASER) |
+| 44 | cover | - (not given to TRASER) |
+| 45 | oven | - (not given to TRASER) |
+| 46 | cabinet | - (not given to TRASER) |
+| 47 | glass | - (not given to TRASER) |
+| 48 | spoon | - (not given to TRASER) |
+| 49 | basket | - (not given to TRASER) |
+| 50 | knife | - (not given to TRASER) |
+| 51 | plate | - (not given to TRASER) |
+| 52 | bowl | - (not given to TRASER) |
+| 53 | bottle | - (not given to TRASER) |
+| 54 | cup | - (not given to TRASER) |
+| 55 | paper | - (not given to TRASER) |
+| 56 | grain | - (not given to TRASER) |
+| 57 | simmering | - (not given to TRASER) |
+| 58 | pot | - (not given to TRASER) |
+| 59 | basket | - (not given to TRASER) |
+| 60 | knife | - (not given to TRASER) |
+| 61 | plate | - (not given to TRASER) |
+| 62 | bottle | - (not given to TRASER) |
+| 63 | pot | - (not given to TRASER) |
+| 64 | plate | - (not given to TRASER) |
+| 65 | plate | - (not given to TRASER) |
 
 </details>
 
 | pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
 |---|---|---|---|---|
-| adult #12 → cover #6 | holding [4.2-5s, 48-52.6s] | - | ✗ TRASER missed this pair | - |
-| adult #12 → cabinet #9 | opening [5.8-7s, 44.6-45.6s]; closing [30.6-31.8s, 46.4-47.2s] | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | ✓ TRASER has this pair | ✗ ✗ |
-| adult #12 → bottle #15 | holding [1.6-5s, 48.6-53.4s]; opening [2.4-4.2s]; closing [48-52.6s] | holding [16.0582-27.0982s, 33.12-45.1636s]; holding [51.1855-55.2s]; preparing drink in [51.1855-55.2s] | ✓ TRASER has this pair | ✗ ✗ ✗ |
-| adult #12 → cover #18 | holding [14.6-25.4s] | holding [16.0582-27.0982s] | ✓ TRASER has this pair | ✓ |
-| adult #12 → spoon #20 | holding [16.4-25.2s] | - | ✗ TRASER missed this pair | - |
-| adult #12 → bottle #27 | holding [7.6-9.8s, 12.4-30.2s]; opening [12.4-15.2s]; closing [25.6-27.6s] | holding [16.0582-27.0982s, 33.12-45.1636s]; pouring into [16.0582-27.0982s, 33.12-45.1636s]; holding [51.1855-55.2s]; preparing drink in [16.0582-27.0982s, 33.12-45.1636s] | ✓ TRASER has this pair | ✗ ✗ ✗ |
-| adult #12 → cover #28 | holding [33.8-34.6s, 39.4-40.4s] | - | ✗ TRASER missed this pair | - |
-| adult #12 → bottle #29 | holding [10.6-12.2s, 32.2-46.4s]; opening [32.4-34.6s]; closing [40.2-43.8s] | - | ✗ TRASER missed this pair | - - - |
-| floor #1 → countertop #3 | - | above [0-2.00727s, 4.01455-11.04s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| spoon #10 → countertop #3 | - | on [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| spoon #10 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| spoon #10 → cabinet #9 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| spoon #10 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| scissor #11 → countertop #3 | - | on [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| scissor #11 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| scissor #11 → cabinet #9 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| scissor #11 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → wall #2 | - | in front of [0-2.00727s]; in front of [0-2.00727s] | + only TRASER | - |
-| adult #12 → countertop #3 | - | above [0-55.2s] | + only TRASER | - |
-| adult #12 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → pot #5 | - | in front of [0-2.00727s]; in front of [0-2.00727s] | + only TRASER | - |
-| adult #12 → shelf #8 | - | in front of [0-2.00727s]; in front of [0-2.00727s] | + only TRASER | - |
-| adult #12 → spoon #10 | - | holding [35.1273-45.1636s]; cutting [35.1273-45.1636s]; in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → scissor #11 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]; in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → sink #13 | - | in front of [0-2.00727s]; in front of [0-2.00727s] | + only TRASER | - |
-| adult #12 → knife #14 | - | holding [51.1855-55.2s]; in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s]; in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → knife #21 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| adult #12 → powder #23 | - | holding [16.0582-27.0982s] | + only TRASER | - |
-| adult #12 → cover #24 | - | holding [16.0582-27.0982s] | + only TRASER | - |
-| sink #13 → countertop #3 | - | on [0-2.00727s] | + only TRASER | - |
-| sink #13 → microwave #4 | - | in front of [0-2.00727s] | + only TRASER | - |
-| sink #13 → cabinet #9 | - | in front of [0-2.00727s] | + only TRASER | - |
-| sink #13 → cabinet #19 | - | in front of [0-2.00727s] | + only TRASER | - |
-| knife #14 → countertop #3 | - | on [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #14 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #14 → cabinet #9 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #14 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| bottle #15 → countertop #3 | - | on [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| bottle #15 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| bottle #15 → cabinet #9 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| bottle #15 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| cover #18 → countertop #3 | - | on [16.0582-27.0982s] | + only TRASER | - |
-| cover #18 → microwave #4 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| cover #18 → cabinet #9 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| cover #18 → cabinet #19 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| knife #21 → countertop #3 | - | on [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #21 → microwave #4 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #21 → cabinet #9 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| knife #21 → cabinet #19 | - | in front of [0-2.00727s, 3.01091-4.01455s, 5.01818-6.02182s, 7.02545-8.02909s, 10.0364-11.04s, 12.0436-13.0473s, 14.0509-15.0545s, 16.0582-17.0618s, 18.0655-27.0982s, 28.1018-29.1055s, 30.1091-31.1127s, 32.1164-33.12s, 34.1236-35.1273s, 36.1309-37.1345s, 38.1382-45.1636s, 46.1673-47.1709s, 48.1745-49.1782s, 50.1818-51.1855s, 52.1891-55.2s] | + only TRASER | - |
-| powder #23 → countertop #3 | - | on [16.0582-27.0982s] | + only TRASER | - |
-| powder #23 → microwave #4 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| powder #23 → cabinet #9 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| powder #23 → cabinet #19 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| cover #24 → countertop #3 | - | on [16.0582-27.0982s] | + only TRASER | - |
-| cover #24 → microwave #4 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| cover #24 → cabinet #9 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| cover #24 → cabinet #19 | - | in front of [16.0582-27.0982s] | + only TRASER | - |
-| bottle #27 → countertop #3 | - | on [16.0582-27.0982s, 33.12-45.1636s] | + only TRASER | - |
-| bottle #27 → microwave #4 | - | in front of [16.0582-27.0982s, 33.12-45.1636s] | + only TRASER | - |
-| bottle #27 → cabinet #9 | - | in front of [16.0582-27.0982s, 33.12-45.1636s] | + only TRASER | - |
-| bottle #27 → cabinet #19 | - | in front of [16.0582-27.0982s, 33.12-45.1636s] | + only TRASER | - |
+| rag #16 → oven #20 | hanging from [0-109.2s] | - | ✗ TRASER missed this pair | - |
+| adult #29 → grain #6 | stirring [28.2-35.6s] | holding [30.055-65.1193s] | ✓ TRASER has this pair | ? |
+| adult #29 → simmering #7 | stirring [3.8-42.8s] | stirring [30.055-65.1193s]; pouring into [71.1303-92.1688s] | ✓ TRASER has this pair | ? |
+| adult #29 → spatula #9 | holding [2.8-9s, 66-69s] | holding [28.0514-31.0569s] | ✓ TRASER has this pair | ✗ |
+| adult #29 → pot #12 | touching [3.4-8.8s]; holding [69.4-99.6s] | holding [71.1303-92.1688s] | ✓ TRASER has this pair | ✗ ✓ |
+| adult #29 → drawer #19 | opening [24.6-26.6s, 101-101.8s]; pulling [25.2-26.4s, 101-102.4s] | - | ✗ TRASER missed this pair | - - |
+| adult #29 → stove #21 | touching [9.2-10s] | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | ✓ TRASER has this pair | ✗ |
+| adult #29 → glass #25 | holding [13.4-13.8s] | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | ✓ TRASER has this pair | ✗ |
+| adult #29 → spoon #26 | holding [26.4-97.2s] | holding [30.055-65.1193s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | ✓ TRASER has this pair | ✗ |
+| adult #29 → knife #33 | holding [102.2-109.2s] | holding [66.1211-71.1303s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | ✓ TRASER has this pair | ✓ |
+| adult #29 → fork #34 | holding [103-109.2s] | - | ✗ TRASER missed this pair | - |
+| adult #29 → pot #43 | touching [10.2-12.6s]; holding [20.8-23.2s, 28-62.8s] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - |
+| adult #29 → cover #44 | holding [10.2-12.2s] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
+| adult #29 → cabinet #46 | opening [14.2-15s] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
+| adult #29 → plate #64 | holding [15-19.6s] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
+| adult #29 → plate #65 | holding [15.4-19.4s]; touching [63-64.8s] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - |
+| adult #29 → floor #1 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → mat #4 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → teapot #11 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → board #13 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → cover #14 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → brush #15 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → dustbin #17 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → oven #20 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → sponge #22 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → sink #30 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → faucet #31 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → bowl #36 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → bottle #37 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → mat #39 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
+| adult #29 → grain #40 | - | holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s]; holding [104.191-109.2s] | + only TRASER | - |
 
 
-## d1d4a1b3-a651-4eb8-bb7f-8d66982854fa
+## P14_06
 
-183.8 s video; humans: 44 objects, 41 relations on 41 pairs; TRASER: 17 relations on 17 pairs.
+64.6 s video; humans: 34 objects, 10 relations on 7 pairs; TRASER: 203 relations on 29 pairs (answer cut off at the token limit, read up to there).
 
-**Pairs:** 0 in both, 41 missed by TRASER, 0 reversed, 17 only TRASER
+**Pairs:** 0 in both, 7 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 29 only TRASER
 
 <details><summary>objects (human label vs TRASER label)</summary>
 
 | id | human label | TRASER label |
 |---|---|---|
-| 1 | wall | table |
-| 2 | mat | hand |
-| 3 | others | cell phone (uncertain) |
-| 4 | card | playing card |
-| 5 | adult | hand |
-| 6 | table | hand |
-| 7 | box | table |
-| 8 | cellphone | hand |
-| 9 | card | playing card |
-| 10 | adult | hand |
-| 11 | box | hand |
-| 12 | cellphone | hand |
-| 13 | card | playing card |
-| 14 | card | playing card |
-| 15 | card | hand |
-| 16 | card | hand |
-| 17 | card | hand |
-| 18 | card | playing card |
-| 19 | card | playing card |
-| 20 | card | hand |
-| 21 | card | hand |
-| 22 | card | playing card |
-| 23 | card | playing card |
-| 24 | card | playing card |
-| 25 | card | playing card |
-| 26 | card | playing card |
-| 27 | card | playing card |
-| 28 | card | playing card |
-| 29 | card | playing card |
-| 30 | card | playing card |
-| 31 | card | playing card |
-| 32 | card | playing card |
-| 33 | card | playing card |
-| 34 | card | playing card |
-| 35 | card | playing card |
-| 36 | card | playing card |
-| 37 | card | playing card |
-| 38 | card | playing card |
-| 39 | card | playing card |
-| 40 | card | hand |
-| 41 | card | - (not given to TRASER) |
-| 42 | card | - (not given to TRASER) |
-| 43 | card | - (not given to TRASER) |
-| 44 | card | - (not given to TRASER) |
+| 1 | floor | person |
+| 2 | wall | wall |
+| 3 | countertop | countertop |
+| 4 | grain | bowl |
+| 5 | beverage | box |
+| 6 | rack | dish rack |
+| 7 | cover | plate (uncertain) |
+| 8 | carpet | doormat |
+| 9 | dustbin | plastic bag |
+| 10 | stairs | drawer front (uncertain) |
+| 11 | sponge | sponge |
+| 12 | shelf | shelf |
+| 13 | window | pipe (uncertain) |
+| 14 | cabinet | sink |
+| 15 | door | cabinet door |
+| 16 | fridge | refrigerator |
+| 17 | spoon | knife |
+| 18 | scissor | scissors |
+| 19 | adult | arm |
+| 20 | sink | sink |
+| 21 | faucet | faucet |
+| 22 | table | countertop |
+| 23 | knife | knife |
+| 24 | plate | plate |
+| 25 | bowl | plate |
+| 26 | cup | cup |
+| 27 | paper | paper (uncertain) |
+| 28 | box | box |
+| 29 | beverage | bowl |
+| 30 | cabinet | cabinet door |
+| 31 | door | cabinet door |
+| 32 | plate | plate |
+| 33 | bowl | bowl |
+| 34 | bowl | plate |
 
 </details>
 
 | pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
 |---|---|---|---|---|
-| card #4 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #18 | holding [6.6-14.4s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #19 | holding [18.4-21.2s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #20 | holding [23.2-27.8s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #23 | picking [59.4-65.6s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #24 | holding [40.6-44s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #25 | holding [45.4-48.4s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #26 | holding [72.8-79.6s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #30 | holding [92-99s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #36 | holding [125-130.2s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #38 | holding [139.8-142.6s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #40 | holding [149-152s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #42 | holding [155.8-158.6s] | - | ✗ TRASER missed this pair | - |
-| adult #5 → card #44 | holding [167.6-173.2s] | - | ✗ TRASER missed this pair | - |
-| card #9 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #17 | holding [8.8-14.4s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #21 | holding [29-31s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #22 | holding [32.6-35.2s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #23 | holding [36-39.8s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #28 | holding [83.8-86.8s] | - | ✗ TRASER missed this pair | - |
-| adult #10 → card #37 | holding [132.4-137.4s] | - | ✗ TRASER missed this pair | - |
-| card #13 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #14 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #15 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #16 → table #6 | on [0-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #19 → card #13 | on [20.4-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #20 → table #6 | on [27.6-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #21 → table #6 | on [30.8-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #23 → table #6 | on [39.8-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #23 → card #25 | on [65-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #24 → card #4 | on [43.8-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #25 → card #22 | on [48.4-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #26 → card #20 | on [79.2-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #28 → card #9 | on [86.6-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #30 → card #26 | on [98.8-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #36 → card #30 | on [65-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #37 → card #35 | on [137.2-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #38 → card #36 | on [142.2-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #40 → card #38 | on [152-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #42 → card #40 | on [158.4-175.4s] | - | ✗ TRASER missed this pair | - |
-| card #44 → card #21 | on [173-175.4s] | - | ✗ TRASER missed this pair | - |
-| mat #2 → wall #1 | - | deals cards to [0-175.184s] | + only TRASER | - |
-| mat #2 → card #4 | - | manipulates [0-2.87188s, 4.30781-18.6672s] | + only TRASER | - |
-| mat #2 → card #13 | - | manipulates [18.6672-24.4109s] | + only TRASER | - |
-| mat #2 → card #14 | - | manipulates [24.4109-31.5906s] | + only TRASER | - |
-| mat #2 → card #19 | - | manipulates [31.5906-38.7703s] | + only TRASER | - |
-| mat #2 → card #22 | - | manipulates [38.7703-45.95s] | + only TRASER | - |
-| mat #2 → card #23 | - | manipulates [45.95-53.1297s] | + only TRASER | - |
-| mat #2 → card #25 | - | manipulates [53.1297-60.3094s] | + only TRASER | - |
-| mat #2 → card #26 | - | manipulates [60.3094-67.4891s] | + only TRASER | - |
-| mat #2 → card #27 | - | manipulates [67.4891-74.6688s] | + only TRASER | - |
-| mat #2 → card #28 | - | manipulates [74.6688-81.8484s] | + only TRASER | - |
-| mat #2 → card #30 | - | manipulates [81.8484-89.0281s] | + only TRASER | - |
-| mat #2 → card #31 | - | manipulates [160.825-168.005s] | + only TRASER | - |
-| mat #2 → card #33 | - | manipulates [168.005-175.184s] | + only TRASER | - |
-| mat #2 → card #34 | - | manipulates [89.0281-96.2078s] | + only TRASER | - |
-| mat #2 → card #36 | - | manipulates [96.2078-103.388s] | + only TRASER | - |
-| mat #2 → card #38 | - | manipulates [103.388-110.567s] | + only TRASER | - |
+| beverage #5 → table #22 | on [17.8-19.6s] | - | ✗ TRASER missed this pair | - |
+| adult #19 → beverage #5 | holding [13.2-40.8s]; opening [17.8-19.8s] | - | ✗ TRASER missed this pair | - - |
+| adult #19 → fridge #16 | opening [10.4-12s, 35.8-38.2s]; closing [13.8-15.2s, 41.6-43s] | - | ✗ TRASER missed this pair | - - |
+| adult #19 → spoon #17 | holding [60.2-64.6s] | - | ✗ TRASER missed this pair | - |
+| adult #19 → box #28 | holding [45.6-57.4s] | - | ✗ TRASER missed this pair | - |
+| adult #19 → bowl #33 | holding [4.2-9s]; touching [21-21.6s] | - | ✗ TRASER missed this pair | - - |
+| bowl #33 → table #22 | on [9-64.6s] | - | ✗ TRASER missed this pair | - |
+| floor #1 → floor #1 | - | placing [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → wall #2 | - | placing [61.6185-63.6062s]; in front of [0-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → grain #4 | - | holding [57.6431-61.6185s]; placing [57.6431-61.6185s]; in front of [57.6431-63.6062s]; in front of [57.6431-63.6062s]; in front of [57.6431-63.6062s]; in front of [57.6431-63.6062s]; in front of [57.6431-63.6062s]; in front of [57.6431-63.6062s] | + only TRASER | - |
+| floor #1 → beverage #5 | - | holding [17.8892-36.7723s]; placing [35.7785-37.7662s]; in front of [17.8892-36.7723s]; in front of [17.8892-36.7723s]; in front of [17.8892-36.7723s]; in front of [17.8892-36.7723s]; in front of [17.8892-36.7723s]; in front of [17.8892-36.7723s] | + only TRASER | - |
+| floor #1 → rack #6 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → carpet #8 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → dustbin #9 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → sponge #11 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → shelf #12 | - | placing [61.6185-63.6062s]; in front of [3.97538-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → cabinet #14 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → door #15 | - | placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → fridge #16 | - | placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-15.9015s, 16.8954-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-15.9015s, 16.8954-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → spoon #17 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → scissor #18 | - | placing [61.6185-63.6062s]; in front of [5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → adult #19 | - | in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → sink #20 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → faucet #21 | - | placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → table #22 | - | in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → knife #23 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → plate #24 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → bowl #25 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → cup #26 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; packing groceries into [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → box #28 | - | holding [46.7108-57.6431s]; placing [57.6431-61.6185s]; packing groceries into [46.7108-57.6431s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → beverage #29 | - | holding [46.7108-57.6431s]; placing [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s]; in front of [46.7108-57.6431s] | + only TRASER | - |
+| floor #1 → cabinet #30 | - | placing [61.6185-63.6062s]; in front of [7.95077-11.9262s, 32.7969-35.7785s, 61.6185-63.6062s]; in front of [7.95077-11.9262s, 32.7969-35.7785s, 61.6185-63.6062s]; in front of [7.95077-11.9262s, 32.7969-35.7785s, 61.6185-63.6062s]; in front of [7.95077-11.9262s, 32.7969-35.7785s, 61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → door #31 | - | placing [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s] | + only TRASER | - |
+| floor #1 → plate #32 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → bowl #33 | - | in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s]; in front of [0-3.97538s, 5.96308-7.95077s, 15.9015-35.7785s, 39.7538-45.7169s, 46.7108-57.6431s, 58.6369-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+| floor #1 → bowl #34 | - | placing [61.6185-63.6062s]; placing [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s]; in front of [61.6185-63.6062s] | + only TRASER | - |
+
+
+## P28_19
+
+90.0 s video; humans: 28 objects, 10 relations on 6 pairs; TRASER: 18 relations on 8 pairs.
+
+**Pairs:** 5 in both, 1 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 3 only TRASER
+
+<details><summary>objects (human label vs TRASER label)</summary>
+
+| id | human label | TRASER label |
+|---|---|---|
+| 1 | floor | chopping board |
+| 2 | wall | countertop |
+| 3 | egg | tomato |
+| 4 | others | tortilla (uncertain) |
+| 5 | countertop | countertop |
+| 6 | spatula | spatula |
+| 7 | board | chopping board |
+| 8 | rag | chair |
+| 9 | dustbin | pot |
+| 10 | oven | cabinet door |
+| 11 | stove | stove top |
+| 12 | pan | frying pan |
+| 13 | window | tray |
+| 14 | cabinet | drawer front |
+| 15 | door | cabinet door |
+| 16 | adult | arm |
+| 17 | sink | sink |
+| 18 | knife | spoon |
+| 19 | plate | tray |
+| 20 | bottle | bottle |
+| 21 | bag | aluminum foil |
+| 22 | box | box |
+| 23 | countertop | countertop |
+| 24 | window | - (not given to TRASER) |
+| 25 | cabinet | cabinet door |
+| 26 | vegetable | onions |
+| 27 | bag | napkin |
+| 28 | box | bag |
+
+</details>
+
+| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
+|---|---|---|---|---|
+| adult #16 → stove #11 | touching [60.4-70.8s] | - | ✗ TRASER missed this pair | - |
+| adult #16 → pan #12 | swinging [71.2-79.4s]; holding [82.6-83.8s]; over [84.2-88s] | pouring into [45-51s]; holding [45-51s, 72-89s]; stirring [72-89s]; cooking with [72-89s]; transferring to [45-51s]; adding to [45-51s]; serving onto [72-89s] | ✓ TRASER has this pair | ✗ ✗ ✗ |
+| adult #16 → knife #18 | holding [1.4-43.2s] | holding [41-43s] | ✓ TRASER has this pair | ✗ |
+| adult #16 → bottle #20 | holding [43-52.4s]; opening [45-46.2s] | holding [44-51s]; holding [44-51s] | ✓ TRASER has this pair | ✓ ✗ |
+| adult #16 → box #22 | holding [53.2-59.2s] | holding [52-57s]; holding [52-57s] | ✓ TRASER has this pair | ✓ |
+| adult #16 → vegetable #26 | holding [1.4-42s]; cutting [2.8-39.6s] | cutting [3-43s]; preparing food [3-43s] | ✓ TRASER has this pair | ✗ ✓ |
+| adult #16 → spatula #6 | - | holding [41-43s] | + only TRASER | - |
+| adult #16 → window #13 | - | holding [52-57s] | + only TRASER | - |
+| adult #16 → box #28 | - | holding [89-91s]; holding [89-91s] | + only TRASER | - |
 
