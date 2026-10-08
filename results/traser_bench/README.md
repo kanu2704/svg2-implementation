@@ -13,6 +13,14 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 |---|---|---|---|---|---|
 | pvsg | 62 | 62 | 62 | 0 | 11 |
 
+## pvsg by video source (lenient, tIoU > 0.5)
+
+| source | videos | avg length | answers cut off | Triplet | Relation | Object |
+|---|---|---|---|---|---|---|
+| ego4d | 11 | 122 s | 3 | 1.0 | 3.1 | 53.7 |
+| epic_kitchen | 11 | 97 s | 4 | 0.0 | 9.7 | 48.4 |
+| vidor | 40 | 53 s | 4 | 15.7 | 18.3 | 76.4 |
+
 ## Other settings (same predictions)
 
 | setting | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
@@ -28,11 +36,16 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 
 - **pvsg**: object: mismatch 369, identical 355, hypernym/hyponym 236, semantic overlap 173, synonym 33; relation: mismatch 513, identical 225, hypernym/hyponym 102, semantic overlap 92, synonym 12
 
+## Notes on these predictions
+
+- **pvsg**: 11 of 62 answers were cut off at the 8192-token limit (read up to the cut); 19 of 969 human relations (2.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for 5 of 62 videos, float16 for the rest (`pvsg/preds_fp16_vision/` has the answers that were re-run).
+- Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`.
+
 ## How it is scored
 
 See the docstring of `tools/bench_eval.py`. Differences from the paper that we know of:
 - judge: Kimi K3 with our prompt (the paper's GPT-4o-mini prompt is not released);
-- float16 on a T4 instead of bfloat16 on an A100 (greedy decoding can change a few tokens);
+- language model in float16 on a T4 instead of bfloat16 on H100s (greedy decoding can change tokens on long answers);
 - VidOR masks: SAM 2.1 from VidOR's boxes on the frames TRASER reads (the paper also used SAM 2, details not given);
 - videos longer than 128 s are read at fewer than 1 frame per second (released code caps at 128 frames);
 - pooled over all human items (the per-video average is also shown).

@@ -455,8 +455,13 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
     for v in videos:
         gt, pred, stats = load_video(dataset, v)
         objects, rows, c = pair_report(gt, pred, stats, judge, thr)
+        sc = score_video(gt, pred, stats, judge, "lenient", thr)
         anchor = re.sub(r"[^a-z0-9_-]", "", v.lower())
-        overview.append({"video": f"[{v}](#{anchor})", "human pairs": c["human_pairs"], "TRASER pairs": c["traser_pairs"],
+        overview.append({"video": f"[{v}](#{anchor})", "source": gt.get("source", "-"),
+                         "objects right": f"{sc['object_ok']}/{sc['objects']}",
+                         "relations right": f"{sc['relation_ok']}/{sc['relations']}",
+                         "triplets right": f"{sc['triplet_ok']}/{sc['relations']}",
+                         "human pairs": c["human_pairs"], "TRASER pairs": c["traser_pairs"],
                          "pairs in both": c["both"], "missed by TRASER": c["missed"], "reversed": c["reversed"],
                          "object not given": c["not_given"], "only TRASER": c["extra"]})
         sections.append(
@@ -569,6 +574,28 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
                     "macro_relation": macro("relation_ok", "relations") if rows else None,
                     "macro_triplet": macro("triplet_ok", "relations") if rows else None,
                     "counts": tot}
+        groups = {}
+        for gt, pred, st in done.values():
+            g = groups.setdefault(gt.get("source") or "all", {"videos": 0, "seconds": 0.0, "cut_off": 0, "rows": []})
+            g["videos"] += 1
+            g["seconds"] += st.get("duration_s", 0) or 0
+            g["cut_off"] += not pred["json_ok"]
+            g["rows"].append(score_video(gt, pred, st, judge, "lenient", 0.5))
+        rep["by_source"] = {}
+        for src, g in sorted(groups.items()):
+            t = {k: sum(r[k] for r in g["rows"]) for k in g["rows"][0]}
+            pct = lambda a, b: round(100 * a / b, 1) if b else None  # noqa: E731
+            rep["by_source"][src] = {"videos": g["videos"], "avg_seconds": round(g["seconds"] / g["videos"]),
+                                     "cut_off": g["cut_off"], "triplet": pct(t["triplet_ok"], t["relations"]),
+                                     "relation": pct(t["relation_ok"], t["relations"]),
+                                     "object": pct(t["object_ok"], t["objects"])}
+        unreachable = total_rel = 0
+        for gt, pred, st in done.values():
+            given = {o["gt_id"] for o in gt["objects"] if o["col"] in set(st.get("mask_columns", []))} | {-1}
+            unreachable += sum(1 for r in gt["relations"] if r["subj"] not in given or r["obj"] not in given)
+            total_rel += len(gt["relations"])
+        rep["relations_with_object_not_given"] = [unreachable, total_rel]
+        rep["vision_float32"] = sum(1 for _, _, st in done.values() if st.get("vision_dtype") == "float32")
         cats = {}
         for gt, pred, st in done.values():
             for kind, ref, hyp in video_pairs(gt, pred, st)[0]:
@@ -601,6 +628,13 @@ def write_report(report, path=RESULTS / "README.md"):
         if r:
             L.append(f"| {d} | {r['split_size']} | {r['videos_prepared']} | {r['videos_predicted']} | "
                      f"{len(r['failed'])} | {r['json_invalid']} |")
+    for d in ds:
+        r = report.get(d)
+        if r and len(r.get("by_source", {})) > 1:
+            L += ["", f"## {d} by video source (lenient, tIoU > 0.5)", "",
+                  "| source | videos | avg length | answers cut off | Triplet | Relation | Object |", "|---|---|---|---|---|---|---|"]
+            for src, b in r["by_source"].items():
+                L.append(f"| {src} | {b['videos']} | {b['avg_seconds']} s | {b['cut_off']} | {b['triplet']} | {b['relation']} | {b['object']} |")
     L += ["", "## Other settings (same predictions)", "",
           "| setting | " + " | ".join(f"{m} {d}" for m in ("Triplet", "Relation", "Object") for d in ds) + " |",
           "|---" * (1 + 3 * len(ds)) + "|"]
@@ -615,9 +649,20 @@ def write_report(report, path=RESULTS / "README.md"):
         if d in report:
             L.append(f"- **{d}**: " + "; ".join(f"{kind}: " + ", ".join(f"{c} {n}" for c, n in sorted(v.items(), key=lambda x: -x[1]))
                                               for kind, v in report[d]["judge_categories"].items()))
+    L += ["", "## Notes on these predictions", ""]
+    for d in ds:
+        r = report.get(d)
+        if r:
+            u, t = r.get("relations_with_object_not_given", [0, 0])
+            L.append(f"- **{d}**: {r['json_invalid']} of {r['videos_predicted']} answers were cut off at the 8192-token limit "
+                     f"(read up to the cut); {u} of {t} human relations ({100 * u / max(1, t):.1f}%) involve an object TRASER "
+                     f"was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 "
+                     f"for {r.get('vision_float32', 0)} of {r['videos_predicted']} videos, float16 for the rest "
+                     f"(`{d}/preds_fp16_vision/` has the answers that were re-run).")
+    L += ["- Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`."]
     L += ["", "## How it is scored", "", "See the docstring of `tools/bench_eval.py`. Differences from the paper that we know of:",
           "- judge: Kimi K3 with our prompt (the paper's GPT-4o-mini prompt is not released);",
-          "- float16 on a T4 instead of bfloat16 on an A100 (greedy decoding can change a few tokens);",
+          "- language model in float16 on a T4 instead of bfloat16 on H100s (greedy decoding can change tokens on long answers);",
           "- VidOR masks: SAM 2.1 from VidOR's boxes on the frames TRASER reads (the paper also used SAM 2, details not given);",
           "- videos longer than 128 s are read at fewer than 1 frame per second (released code caps at 128 frames);",
           "- pooled over all human items (the per-video average is also shown)."]

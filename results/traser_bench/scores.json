@@ -79,6 +79,37 @@
     }
    }
   },
+  "by_source": {
+   "ego4d": {
+    "videos": 11,
+    "avg_seconds": 122,
+    "cut_off": 3,
+    "triplet": 1.0,
+    "relation": 3.1,
+    "object": 53.7
+   },
+   "epic_kitchen": {
+    "videos": 11,
+    "avg_seconds": 97,
+    "cut_off": 4,
+    "triplet": 0.0,
+    "relation": 9.7,
+    "object": 48.4
+   },
+   "vidor": {
+    "videos": 40,
+    "avg_seconds": 53,
+    "cut_off": 4,
+    "triplet": 15.7,
+    "relation": 18.3,
+    "object": 76.4
+   }
+  },
+  "relations_with_object_not_given": [
+   19,
+   969
+  ],
+  "vision_float32": 5,
   "judge_categories": {
    "object": {
     "identical": 355,
