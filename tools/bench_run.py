@@ -202,7 +202,7 @@ def main():
                 log("loading the TRASER model ...")
                 t0 = time.time()
                 model, processor, tokenizer = load_model(args.model, dtype=args.dtype, base_model=args.base_model)
-                log(f"model loaded in {time.time() - t0:.0f} s ({getattr(model, 'dtype', '?')}, "
+                log(f"model loaded in {time.time() - t0:.0f} s ({getattr(getattr(getattr(model, 'lm_head', None), 'weight', None), 'dtype', '?')}, "
                     f"{torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'})")
             gt = B.load_gt(args.bench, dataset, video_id)
             masks = json.load(open(B.masks_path(args.bench, dataset, video_id, args.work)))

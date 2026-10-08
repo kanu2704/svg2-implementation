@@ -390,6 +390,89 @@ def _md_table(rows):
             + "".join("| " + " | ".join(esc(r[c]) for c in cols) + " |\n" for r in rows))
 
 
+def pair_report(gt, pred, stats, judge, thr=0.5):
+    """Object pairs of one video: which pairs the humans annotated, which TRASER talked about, and what each
+    said. A pair is (subject, object) in that direction; TRASER's "object k" is the human object it was given."""
+    unit = gt.get("time_unit", "seconds")
+    _, name, pred_name, by_pair = video_pairs(gt, pred, stats)
+    tag = lambda g: "camera" if g == -1 else f"{name.get(g, '?')} #{g}"
+    human = {}
+    for r in gt["relations"]:
+        human.setdefault((r["subj"], r["obj"]), []).append((r["pred"], r["spans"]))
+    rows, counts = [], {"both": 0, "missed": 0, "reversed": 0, "extra": 0}
+    for pair in sorted(set(human) | set(by_pair), key=lambda p: (p not in human, p)):
+        h = human.get(pair, [])
+        t = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get(pair, [])]
+        if h and t:
+            status = "✓ TRASER has this pair"
+            counts["both"] += 1
+        elif h and (pair[1], pair[0]) in by_pair:
+            status = "↔ TRASER has it reversed"
+            counts["reversed"] += 1
+        elif h:
+            status = "✗ TRASER missed this pair"
+            counts["missed"] += 1
+        else:
+            status = "+ only TRASER"
+            counts["extra"] += 1
+        right = []
+        for p, sp in h:                  # is one of TRASER's relations right for this human relation?
+            ok = [is_right(judge.category("relation", p, q), "lenient") and tiou(sp, qs) > thr for q, qs in t]
+            und = [judge.category("relation", p, q) is None for q, _ in t]
+            right.append("✓" if any(ok) else ("?" if any(und) else ("✗" if t else "-")))
+        rows.append({"pair (subject → object)": f"{tag(pair[0])} → {tag(pair[1])}",
+                     "human said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in h) or "-",
+                     "TRASER said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in t) or "-",
+                     "pair": status,
+                     "relation right? (lenient, tIoU > 0.5)": " ".join(right) if h else "-"})
+    objects = [{"id": o["gt_id"], "human label": o["name"], "TRASER label": pred_name.get(o["gt_id"], "- (not given to TRASER)")}
+               for o in gt["objects"]]
+    counts.update(human_pairs=len(human), traser_pairs=len(by_pair),
+                  human_relations=len(gt["relations"]), traser_relations=len(pred["relations"]))
+    return objects, rows, counts
+
+
+def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
+    """<dataset>/PAIRS.md: for n random videos (fixed seed), every object pair the humans or TRASER mention,
+    side by side, so one can see which pairs TRASER covers, misses, reverses or adds."""
+    import random
+    judge = Judge()
+    done = [v for v in video_ids(dataset) if (RESULTS / dataset / "preds" / f"{v}.json").exists()]
+    videos = videos or sorted(random.Random(seed).sample(done, min(n, len(done))))
+    path = Path(path or RESULTS / dataset / "PAIRS.md")
+    overview, sections = [], []
+    for v in videos:
+        gt, pred, stats = load_video(dataset, v)
+        objects, rows, c = pair_report(gt, pred, stats, judge, thr)
+        anchor = re.sub(r"[^a-z0-9_-]", "", v.lower())
+        overview.append({"video": f"[{v}](#{anchor})", "human pairs": c["human_pairs"], "TRASER pairs": c["traser_pairs"],
+                         "pairs in both": c["both"], "missed by TRASER": c["missed"], "reversed": c["reversed"],
+                         "only TRASER": c["extra"]})
+        sections.append(
+            f"## {v}\n\n{stats.get('duration_s')} s video; humans: {len(gt['objects'])} objects, {c['human_relations']} "
+            f"relations on {c['human_pairs']} pairs; TRASER: {c['traser_relations']} relations on {c['traser_pairs']} pairs"
+            f"{'' if pred['json_ok'] else ' (answer cut off at the token limit, read up to there)'}.\n\n"
+            f"**Pairs:** {c['both']} in both, {c['missed']} missed by TRASER, {c['reversed']} reversed, "
+            f"{c['extra']} only TRASER\n\n<details><summary>objects (human label vs TRASER label)</summary>\n\n"
+            f"{_md_table(objects)}\n</details>\n\n{_md_table(rows)}\n")
+    tot = {k: sum(o[k] for o in overview) for k in ("human pairs", "TRASER pairs", "pairs in both", "missed by TRASER",
+                                                    "reversed", "only TRASER")}
+    text = (f"# {dataset}: which object pairs TRASER talks about ({len(overview)} random videos, seed {seed})\n\n"
+            "TRASER is given the human objects (masks) and writes its own list of relations; it is not told which "
+            "pairs to describe. Each row is one ordered pair (subject → object) that the humans or TRASER mention.\n\n"
+            "- **✓ TRASER has this pair**: TRASER wrote at least one relation for the same two objects, same direction\n"
+            "- **✗ TRASER missed this pair**: humans annotated it, TRASER said nothing about these two objects\n"
+            "- **↔ reversed**: TRASER only has the other direction (object → subject); scored as missed\n"
+            "- **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)\n"
+            "- last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, "
+            "? the judge has not compared the words yet\n\n"
+            f"**Total over these videos:** {tot['human pairs']} human pairs, {tot['TRASER pairs']} TRASER pairs; "
+            f"{tot['pairs in both']} in both, {tot['missed by TRASER']} missed, {tot['reversed']} reversed, "
+            f"{tot['only TRASER']} only TRASER.\n\n" + _md_table(overview) + "\n" + "\n".join(sections))
+    path.write_text(text)
+    return path
+
+
 def write_compare(dataset, thr=0.5, path=None):
     """results/traser_bench/<dataset>/COMPARE.md: every predicted video, human labels next to TRASER's
     (objects, relations, triplets), readable on GitHub. Verdicts from the judge cache ("?" = not judged yet)."""
@@ -536,9 +619,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--datasets", nargs="*", default=DATASETS)
     ap.add_argument("--no_judge", action="store_true", help="use cached judge answers only")
+    ap.add_argument("--pairs", type=int, default=0, help="only write <dataset>/PAIRS.md for this many random videos")
     ap.add_argument("--compare", action="store_true",
                     help="only write <dataset>/COMPARE.md (human vs TRASER per video, cached verdicts), no scoring")
     args = ap.parse_args()
+    if args.pairs:
+        for ds in args.datasets:
+            if video_ids(ds):
+                print("wrote", write_pairs(ds, n=args.pairs))
+        return
     if args.compare:
         for ds in args.datasets:
             if video_ids(ds):

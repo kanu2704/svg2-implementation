@@ -170,6 +170,17 @@ def chunk_vision(model, max_patches=32768):
     vis._chunked = True
 
 
+def vision_in_float32(model):
+    """float16 (T4) only: run the vision encoder and both resamplers in float32. In float16 their activations
+    overflowed on some videos (PVSG 22cc4d54 and P03_06, SVG2test sav_009146): the language model then got
+    inf/NaN inputs and wrote "!!!!..." (token 0) 8192 times. Their outputs end in an RMS norm, so the values
+    handed to the float16 language model are small. Costs ~2 GB more GPU memory."""
+    for part in (model.model.visual, getattr(model, "perceiver_resampler", None),
+                 getattr(model, "second_perceiver_resampler", None)):
+        if part is not None:
+            part.float()
+
+
 def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     """Model, processor and tokenizer, as in their main (load once, reuse for many videos).
     model_id / base_model may be local folders (offline use)."""
@@ -177,6 +188,8 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     torch_dtype = getattr(torch, pick_dtype(dtype))
     avoid_math_attention()
     model = T.TRASER.from_pretrained(model_id or T.DEFAULT_MODEL, torch_dtype=torch_dtype).to(device).eval()
+    if torch_dtype == torch.float16:
+        vision_in_float32(model)
     lazy_padding()
     chunk_resamplers(model)
     chunk_vision(model)
@@ -238,8 +251,9 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     progress(stage, **info), if given, is called at every step and every 25 generated tokens (live status)."""
     progress = progress or (lambda stage, **info: None)
     device = model.device
-    dtype = model.dtype
-    stats = {"video": video, "task": task, "dtype": str(dtype).replace("torch.", "")}
+    dtype = model.lm_head.weight.dtype                 # the language model's dtype (vision may be float32)
+    stats = {"video": video, "task": task, "dtype": str(dtype).replace("torch.", ""),
+             "vision_dtype": str(model.model.visual.dtype).replace("torch.", "")}
 
     # ---- video: ~1 fps, 4..128 frames, Qwen resize ----
     progress("reading video frames")
@@ -288,7 +302,7 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
         t1 = time.time()
         embeds, position_ids, mask, rope_deltas, _, _, _ = T.rearrange_token(
             model=model, input_ids=input_ids, attention_mask=attention_mask,
-            pixel_values_videos=pixel_values_videos.to(device, dtype=dtype),
+            pixel_values_videos=pixel_values_videos.to(device, dtype=model.model.visual.dtype),
             video_grid_thw=video_grid_thw[None].to(device),
             image_grid_thw=None, pixel_values=None,
             second_per_grid_ts=None,
