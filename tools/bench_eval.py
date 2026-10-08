@@ -429,8 +429,15 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
                      "TRASER said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in t) or "-",
                      "pair": status,
                      "relation right? (lenient, tIoU > 0.5)": " ".join(right) if h else "-"})
-    objects = [{"id": o["gt_id"], "human label": o["name"], "TRASER label": pred_name.get(o["gt_id"], "- (not given to TRASER)")}
-               for o in gt["objects"]]
+    objects = []
+    for o in gt["objects"]:
+        hyp = pred_name.get(o["gt_id"])
+        cat = judge.category("object", o["name"], hyp) if hyp is not None else None
+        objects.append({"id": o["gt_id"], "human label": o["name"],
+                        "TRASER label": hyp if hyp is not None else "- (not given to TRASER)",
+                        "verdict": (cat or "not judged yet") if hyp is not None else "-",
+                        "right (lenient)": ("✓" if is_right(cat, "lenient") else ("?" if cat is None else "✗"))
+                        if hyp is not None else "✗"})
     counts.update(human_pairs=len(human), traser_pairs=len(by_pair),
                   human_relations=len(gt["relations"]), traser_relations=len(pred["relations"]))
     return objects, rows, counts
@@ -458,8 +465,8 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
             f"{'' if pred['json_ok'] else ' (answer cut off at the token limit, read up to there)'}.\n\n"
             f"**Pairs:** {c['both']} in both, {c['missed']} missed by TRASER, {c['reversed']} reversed, "
             f"{c['not_given']} with an object TRASER was not given, "
-            f"{c['extra']} only TRASER\n\n<details><summary>objects (human label vs TRASER label)</summary>\n\n"
-            f"{_md_table(objects)}\n</details>\n\n{_md_table(rows)}\n")
+            f"{c['extra']} only TRASER\n\n**Objects: {sum(o['right (lenient)'] == '✓' for o in objects)}/{len(objects)} right**"
+            f"\n\n{_md_table(objects)}\n**Relations, pair by pair**\n\n{_md_table(rows)}\n")
     tot = {k: sum(o[k] for o in overview) for k in ("human pairs", "TRASER pairs", "pairs in both", "missed by TRASER",
                                                     "reversed", "object not given", "only TRASER")}
     text = (f"# {dataset}: which object pairs TRASER talks about ({len(overview)} random videos, seed {seed})\n\n"

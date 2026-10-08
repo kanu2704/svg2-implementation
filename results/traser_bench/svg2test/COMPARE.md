@@ -1,8 +1,8 @@
 # svg2test: human labels vs TRASER, video by video
 
-57 videos with a prediction. Lenient criterion, temporal IoU > 0.5. ✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet (identical text counts as right without the judge). Relation = same two objects, predicate not a mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by `tools/bench_eval.py write_compare`.
+70 videos with a prediction. Lenient criterion, temporal IoU > 0.5. ✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet (identical text counts as right without the judge). Relation = same two objects, predicate not a mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by `tools/bench_eval.py write_compare`.
 
-**So far: objects 628/1851, relations 387/1882, triplets 161/1882** (unjudged pairs count as not right; scores in README.md)
+**So far: objects 816/2306, relations 472/2283, triplets 192/2283** (unjudged pairs count as not right; scores in README.md)
 
 | video | objects right | relations right | triplets right | not judged yet (?) |
 |---|---|---|---|---|
@@ -34,10 +34,10 @@
 | [226_n7YpGfnTqoY](#226_n7ypgfntqoy) | 11/20 | 16/51 | 9/51 | 26 |
 | [241_oEkly9vzEGQ](#241_oekly9vzegq) | 17/26 | 9/31 | 8/31 | 7 |
 | [246_QcRqBBAiC4o](#246_qcrqbbaic4o) | 8/56 | 5/36 | 0/36 | 41 |
-| [254_-7d3nOFx1V8](#254_-7d3nofx1v8) | 12/30 | 7/25 | 2/25 | 28 |
+| [254_-7d3nOFx1V8](#254_-7d3nofx1v8) | 12/30 | 7/25 | 2/25 | 27 |
 | [276_3HgBHBOnpbg](#276_3hgbhbonpbg) | 4/40 | 0/55 | 0/55 | 6 |
 | [279_qw5ySRNNfNM](#279_qw5ysrnnfnm) | 17/89 | 2/47 | 0/47 | 29 |
-| [285_EP_blwEf2K8](#285_ep_blwef2k8) | 14/58 | 1/50 | 0/50 | 30 |
+| [285_EP_blwEf2K8](#285_ep_blwef2k8) | 14/58 | 6/50 | 0/50 | 29 |
 | [308_7WhzIsqPQW8](#308_7whzisqpqw8) | 6/42 | 2/41 | 0/41 | 40 |
 | [339_j2gELsuQ3Cg](#339_j2gelsuq3cg) | 7/14 | 0/20 | 0/20 | 10 |
 | [359_4ZPKJtcNGZE](#359_4zpkjtcngze) | 2/27 | 2/20 | 0/20 | 22 |
@@ -60,9 +60,22 @@
 | [722__ajUvCkhVcI](#722__ajuvckhvci) | 5/18 | 4/39 | 0/39 | 24 |
 | [742_ctcOIuSzy-s](#742_ctcoiuszy-s) | 8/16 | 10/25 | 5/25 | 17 |
 | [744_1X6KvqPjk6I](#744_1x6kvqpjk6i) | 15/32 | 4/26 | 3/26 | 21 |
+| [752_RWBJGgqDpwk](#752_rwbjggqdpwk) | 9/60 | 4/25 | 0/25 | 39 |
 | [754_TYUV8DYWe8k](#754_tyuv8dywe8k) | 9/28 | 1/26 | 1/26 | 22 |
+| [761_liWqb_am68c](#761_liwqb_am68c) | 4/13 | 2/27 | 2/27 | 8 |
 | [766_m1Vdl-EMY1E](#766_m1vdl-emy1e) | 14/20 | 9/32 | 3/32 | 13 |
+| [778_3PmDn84laac](#778_3pmdn84laac) | 15/23 | 7/27 | 2/27 | 16 |
 | [839_SS_1452uWvg](#839_ss_1452uwvg) | 9/73 | 11/36 | 3/36 | 49 |
+| [856_coe8HkbRIk4](#856_coe8hkbrik4) | 15/25 | 15/33 | 5/33 | 19 |
+| [888_BS3hab7EtAg](#888_bs3hab7etag) | 9/26 | 18/39 | 5/39 | 32 |
+| [914_f4HgijyAEYs](#914_f4hgijyaeys) | 7/19 | 8/21 | 5/21 | 11 |
+| [950_94nfEhq6S5w](#950_94nfehq6s5w) | 21/44 | 6/27 | 4/27 | 25 |
+| [973_ceJ5D6wluX0](#973_cej5d6wlux0) | 1/7 | 0/18 | 0/18 | 15 |
+| [976_U19VojbI0h4](#976_u19vojbi0h4) | 21/65 | 7/36 | 2/36 | 18 |
+| [987_g0mln-jiQTw](#987_g0mln-jiqtw) | 3/11 | 2/17 | 0/17 | 14 |
+| [sav_002789](#sav_002789) | 19/47 | 1/41 | 0/41 | 22 |
+| [sav_004550](#sav_004550) | 29/52 | 9/37 | 6/37 | 5 |
+| [sav_009307](#sav_009307) | 35/63 | 1/53 | 0/53 | 14 |
 
 ## 1016_8J41CsGYhNI
 
@@ -2320,7 +2333,7 @@ TRASER relations between pairs the humans did not annotate (35): person #12 - lo
 | vase planter #14 - hold - plant #15 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
 | vase planter #14 - in front of - wall #5 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
 | vase planter #14 - below - window #7 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
-| plant #15 - in - vase planter #14 | 0-23 | above | 0-24 | not judged yet | 0.96 | ? | ? |
+| plant #15 - in - vase planter #14 | 0-23 | above | 0-24 | mismatch | 0.96 | ✗ | ✗ |
 | glass #16 - in - window #7 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
 | glass #21 - in - window #0 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
 | glass #22 - in - window #0 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -2660,32 +2673,32 @@ TRASER relations between pairs the humans did not annotate (154): golf extract #
 | 56 | shirt | - | no label from TRASER | ✗ |
 | 57 | short | - | no label from TRASER | ✗ |
 
-**Relations: 1/50 right, triplets: 0/50 right** (lenient, tIoU > 0.5)
+**Relations: 6/50 right, triplets: 0/50 right** (lenient, tIoU > 0.5)
 
 | human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
 |---|---|---|---|---|---|---|---|
 | boat #0 - moving on - pool #8 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | boat #0 - in - pool #8 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | boat #0 - in front of - wall #13 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ? |
-| bucket #1 - in - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ✗ |
+| bucket #1 - in - boat #0 | 0-8 | inside | 0-9 | synonym | 0.89 | ✓ | ✗ |
 | bucket #3 - in - boat #0 | 3-5, 6-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #4 - wearing - life jacket #48 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #4 - aboard - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
-| person #4 - in - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #4 - in - boat #0 | 0-8 | inside | 0-9 | synonym | 0.89 | ✓ | ? |
 | person #4 - holding - bucket #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #5 - wearing - life jacket #49 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #5 - aboard - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
-| person #5 - in - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #5 - in - boat #0 | 0-8 | inside | 0-9 | synonym | 0.89 | ✓ | ? |
 | person #5 - splashing with - bucket #2 | 1-3 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #5 - holding - bucket #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #6 - holding - bucket #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #6 - splashing with - bucket #3 | 4.5-7 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #6 - wearing - life jacket #51 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #6 - aboard - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
-| person #6 - in - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #6 - in - boat #0 | 0-8 | inside | 0-9 | synonym | 0.89 | ✓ | ? |
 | person #7 - wearing - life jacket #50 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #7 - aboard - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
-| person #7 - in - boat #0 | 0-8 | inside | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #7 - in - boat #0 | 0-8 | inside | 0-9 | synonym | 0.89 | ✓ | ? |
 | person #9 - holding - bucket #11 | 0-1, 2-8 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #9 - splashing with - bucket #11 | 2-5 | nothing for this pair | - | - | - | ✗ | ✗ |
 | person #9 - wearing - life jacket #53 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
@@ -4496,6 +4509,108 @@ TRASER relations between pairs the humans did not annotate (19): man #6 - wearin
 TRASER relations between pairs the humans did not annotate (26): dog #0 - has - tail #11 [0-9]; dog #0 - has - dog leg #12 [0-9]; dog #0 - has - dog leg #13 [0-9]; dog #0 - has - dog leg #14 [0-9]; head #15 - on - grass #4 [0-9]; dog #0 - in front of - fence #3 [0-9]; head #15 - in front of - fence #3 [0-9]; person #7 - in front of - fence #3 [0-9]; plant #2 - in front of - fence #3 [0-9]; plant #6 - in front of - fence #3 [0-9]
 
 
+## 752_RWBJGgqDpwk
+
+7.5 s, 8 frames read | human: 60 objects, 25 relations | TRASER: 40 objects, 45 relations, valid JSON, 3070 tokens
+
+**Objects: 9/60 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | plant | plant | identical | ✓ |
+| 1 | plant | flowerpot | not judged yet | ? |
+| 2 | bag | tarp | mismatch | ✗ |
+| 3 | plant | soil bed | not judged yet | ? |
+| 4 | plant | soil bed | not judged yet | ? |
+| 5 | plant | plant | identical | ✓ |
+| 6 | plant | soil bed | not judged yet | ? |
+| 7 | plant | flowerpot | not judged yet | ? |
+| 8 | plant | flowerpot | not judged yet | ? |
+| 9 | plant | flowerpot | not judged yet | ? |
+| 10 | plant bed | flowerpot | not judged yet | ? |
+| 11 | plant bed | flowerpot | not judged yet | ? |
+| 12 | plant bed | flowerpot | not judged yet | ? |
+| 13 | plant bed | flowerpot | not judged yet | ? |
+| 14 | plant bed | flowerpot | not judged yet | ? |
+| 15 | shovel | flowerpot | not judged yet | ? |
+| 16 | shovel | shovel | identical | ✓ |
+| 17 | bucket | shovel | mismatch | ✗ |
+| 18 | post | pole | not judged yet | ? |
+| 19 | post | pole | not judged yet | ? |
+| 20 | post | pole | not judged yet | ? |
+| 21 | post | pole | not judged yet | ? |
+| 22 | tree | tree trunk | not judged yet | ? |
+| 23 | stick | tree trunk | not judged yet | ? |
+| 24 | barricade | fence | synonym | ✓ |
+| 25 | grass | lawn | synonym | ✓ |
+| 26 | shovel | shovel | identical | ✓ |
+| 27 | plant | flowerpot | not judged yet | ? |
+| 28 | grass | field | semantic overlap | ✓ |
+| 29 | plant | stone block | not judged yet | ? |
+| 30 | man | person | hypernym/hyponym | ✓ |
+| 31 | man | person | hypernym/hyponym | ✓ |
+| 32 | wood | flowerpot | not judged yet | ? |
+| 33 | wood | flowerpot | not judged yet | ? |
+| 34 | wood | flowerpot | not judged yet | ? |
+| 35 | wood | soil bed | not judged yet | ? |
+| 36 | wood | flowerpot | not judged yet | ? |
+| 37 | wood | flowerpot | not judged yet | ? |
+| 38 | wood | flowerpot | not judged yet | ? |
+| 39 | wood | flowerpot | not judged yet | ? |
+| 40 | wood | - | no label from TRASER | ✗ |
+| 41 | wood | - | no label from TRASER | ✗ |
+| 42 | wood | - | no label from TRASER | ✗ |
+| 43 | wood | - | no label from TRASER | ✗ |
+| 44 | wood | - | no label from TRASER | ✗ |
+| 45 | wood | - | no label from TRASER | ✗ |
+| 46 | wood | - | no label from TRASER | ✗ |
+| 47 | face | - | no label from TRASER | ✗ |
+| 48 | shirt | - | no label from TRASER | ✗ |
+| 49 | hand | - | no label from TRASER | ✗ |
+| 50 | trouser | - | no label from TRASER | ✗ |
+| 51 | shoe | - | no label from TRASER | ✗ |
+| 52 | face | - | no label from TRASER | ✗ |
+| 53 | shirt | - | no label from TRASER | ✗ |
+| 54 | hand | - | no label from TRASER | ✗ |
+| 55 | hand | - | no label from TRASER | ✗ |
+| 56 | container | - | no label from TRASER | ✗ |
+| 57 | container | - | no label from TRASER | ✗ |
+| 58 | container | - | no label from TRASER | ✗ |
+| 59 | container | - | no label from TRASER | ✗ |
+
+**Relations: 4/25 right, triplets: 0/25 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| bag #2 - moves across - wood #39 | 0-8 | on | 0-6 | not judged yet | 0.75 | ? | ✗ |
+| bag #2 - covering - wood #39 | 3-8 | on | 0-6 | not judged yet | 0.38 | ✗ | ✗ |
+| bag #2 - over - plant #3 | 0-8 | covering (+2 more) | 0-6 | not judged yet | 0.75 | ? | ✗ |
+| plant #3 - inside - wood #39 | 0-8 | inside | 0-8 | identical | 1.00 | ✓ | ? |
+| plant bed #10 - inside - wood #44 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bucket #17 - inside - wood #43 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| barricade #24 - behind - plant #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shovel #26 - stuck in - grass #25 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #30 - holding - bag #2 | 0-8 | holding (+2 more) | 0-8 | identical | 1.00 | ✓ | ✗ |
+| man #30 - cooperates with - man #31 | 0-8 | cooperating with | 0-8 | not judged yet | 1.00 | ? | ? |
+| man #30 - in front of - man #31 | 0-8 | cooperating with | 0-8 | not judged yet | 1.00 | ? | ? |
+| man #30 - approaches - wood #39 | 3-8 | in front of | 0-8 | not judged yet | 0.62 | ? | ? |
+| man #30 - covering bed with tarp - wood #39 | 0-8 | in front of | 0-8 | not judged yet | 1.00 | ? | ? |
+| man #30 - in front of - wood #39 | 4.5-8 | in front of | 0-8 | identical | 0.44 | ✗ | ✗ |
+| man #31 - holding - bag #2 | 0-8 | holding (+2 more) | 0-8 | identical | 1.00 | ✓ | ✗ |
+| man #31 - approaches - wood #39 | 3-8 | behind | 0-8 | not judged yet | 0.62 | ? | ? |
+| man #31 - covering bed with tarp - wood #39 | 0-8 | behind | 0-8 | not judged yet | 1.00 | ? | ? |
+| man #31 - behind - wood #39 | 0-8 | behind | 0-8 | identical | 1.00 | ✓ | ? |
+| wood #36 - on - grass #25 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| wood #39 - on - grass #25 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| wood #44 - on - grass #25 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| container #56 - inside - container #59 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| container #57 - inside - container #59 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| container #58 - inside - container #59 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| container #59 - on - grass #25 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (31): man #30 - uncovering - plant #3 [5-8]; man #31 - uncovering - plant #3 [5-8]; barricade #24 - behind - wood #39 [0-8]; tree #22 - behind - wood #39 [0-8]; stick #23 - behind - wood #39 [0-8]; shovel #26 - behind - wood #39 [0-8]; plant #29 - behind - wood #39 [0-8]; plant #0 - in - plant #27 [0-8]; plant #5 - in - wood #32 [0-8]; shovel #16 - next to - bucket #17 [0-8]
+
+
 ## 754_TYUV8DYWe8k
 
 22.67 s, 23 frames read | human: 28 objects, 26 relations | TRASER: 28 objects, 47 relations, valid JSON, 2196 tokens
@@ -4567,6 +4682,63 @@ TRASER relations between pairs the humans did not annotate (26): dog #0 - has - 
 TRASER relations between pairs the humans did not annotate (40): building #0 - moving left relative to - building #4 [0-23]; storage #20 - moving left relative to - building #4 [0-23]; storage #21 - moving left relative to - building #4 [0-23]; storage #22 - moving left relative to - building #4 [0-23]; building #0 - moving with - storage #20 [0-23]; building #0 - moving with - storage #21 [0-23]; building #0 - moving with - storage #22 [0-23]; storage #20 - on - grass #6 [0-23]; storage #21 - on - grass #6 [0-23]; storage #22 - on - grass #6 [0-23]
 
 
+## 761_liWqb_am68c
+
+7.5 s, 8 frames read | human: 13 objects, 27 relations | TRASER: 13 objects, 19 relations, valid JSON, 1066 tokens
+
+**Objects: 4/13 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | person | person | identical | ✓ |
+| 1 | plants | leaves (uncertain) | not judged yet | ? |
+| 2 | structure | wooden plank (uncertain) | not judged yet | ? |
+| 3 | plants | leaves (uncertain) | not judged yet | ? |
+| 4 | trees | tree | not judged yet | ? |
+| 5 | baricade | fence | not judged yet | ? |
+| 6 | floor | leaves (uncertain) | mismatch | ✗ |
+| 7 | hair | hat (uncertain) | mismatch | ✗ |
+| 8 | face | hat (uncertain) | mismatch | ✗ |
+| 9 | hand | glove | semantic overlap | ✓ |
+| 10 | hand | glove | semantic overlap | ✓ |
+| 11 | shirt | shirt | identical | ✓ |
+| 12 | trouser | jeans (uncertain) | not judged yet | ? |
+
+**Relations: 2/27 right, triplets: 2/27 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| person #0 - wearing - shirt #11 | 0-8 | wearing | 0-8 | identical | 1.00 | ✓ | ✓ |
+| person #0 - wearing - trouser #12 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - approaching - plants #1 | 1-4 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - touching - plants #1 | 3-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - behind - plants #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - in front of - plants #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #1 - attached to - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #1 - in front of - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #1 - in front of - baricade #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #1 - in front of - plants #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| structure #2 - in front of - baricade #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #3 - attached to - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #3 - behind - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plants #3 - in front of - baricade #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| baricade #5 - behind - person #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| baricade #5 - in front of - trees #4 | 0-5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hair #7 - attached to - person #0 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hair #7 - above - face #8 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| face #8 - attached to - person #0 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hand #9 - attached to - person #0 | 0-8 | on | 0-8 | not judged yet | 1.00 | ? | ? |
+| hand #9 - above - plants #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hand #9 - in front of - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hand #10 - attached to - person #0 | 0-8 | on | 0-8 | not judged yet | 1.00 | ? | ? |
+| hand #10 - above - plants #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| hand #10 - in front of - structure #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shirt #11 - on - person #0 | 0-8 | on | 0-8 | identical | 1.00 | ✓ | ✓ |
+| trouser #12 - on - person #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (15): person #0 - wearing - hand #9 [0-8]; person #0 - wearing - hand #10 [0-8]; person #0 - handling - trees #4 [0-3]; person #0 - moving away from - trees #4 [2-4]; person #0 - in front of - trees #4 [0-4]; person #0 - in front of - baricade #5 [0-8]; hand #9 - below - shirt #11 [0-8]; hand #10 - below - shirt #11 [0-8]; hand #9 - near - hand #10 [0-8]; hand #9 - in front of - baricade #5 [0-8]
+
+
 ## 766_m1Vdl-EMY1E
 
 22.67 s, 23 frames read | human: 20 objects, 32 relations | TRASER: 20 objects, 32 relations, valid JSON, 1545 tokens
@@ -4634,6 +4806,73 @@ TRASER relations between pairs the humans did not annotate (40): building #0 - m
 | antenna #19 - above - stadium #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (20): person #4 - holding - baseball bat #13 [0-24]; person #4 - looking at - person #5 [0-24]; person #4 - approaching - person #5 [0-11]; person #4 - moving away from - person #5 [11-24]; person #4 - coordinating with - person #5 [0-24]; person #4 - in front of - person #5 [0-24]; person #5 - looking at - person #4 [0-24]; baseball bat #13 - near - person #4 [0-24]; baseball bat #13 - in front of - stadium #1 [0-24]; foul line #17 - in front of - stadium #1 [0-24]
+
+
+## 778_3PmDn84laac
+
+7.5 s, 8 frames read | human: 23 objects, 27 relations | TRASER: 23 objects, 32 relations, valid JSON, 1786 tokens
+
+**Objects: 15/23 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | smoke | smoke | identical | ✓ |
+| 1 | tree | mountain | not judged yet | ? |
+| 2 | grass/trees/shrubs | bush | hypernym/hyponym | ✓ |
+| 3 | train bridge | bridge | not judged yet | ? |
+| 4 | sky | cloud | semantic overlap | ✓ |
+| 5 | grass/trees | hill | semantic overlap | ✓ |
+| 6 | train | train | identical | ✓ |
+| 7 | train car | train car | identical | ✓ |
+| 8 | train car | train car | identical | ✓ |
+| 9 | train car | train car | identical | ✓ |
+| 10 | cell phone tower | telephone pole | semantic overlap | ✓ |
+| 11 | train car | train car | identical | ✓ |
+| 12 | locomotive | locomotive | identical | ✓ |
+| 13 | trees | tree | not judged yet | ? |
+| 14 | bushes | bush | identical | ✓ |
+| 15 | bushes | bush | identical | ✓ |
+| 16 | fence post | plant | mismatch | ✗ |
+| 17 | fence post | pole | synonym | ✓ |
+| 18 | stick | pole | not judged yet | ? |
+| 19 | pole | pole | identical | ✓ |
+| 20 | tree | pole | mismatch | ✗ |
+| 21 | trees | plant | not judged yet | ? |
+| 22 | trees | hill | not judged yet | ? |
+
+**Relations: 7/27 right, triplets: 2/27 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| smoke #0 - above - train bridge #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| smoke #0 - trails behind - train #6 | 0-8 | above | 0-8 | not judged yet | 1.00 | ? | ? |
+| smoke #0 - above - train #6 | 0-8 | above | 0-8 | identical | 1.00 | ✓ | ✓ |
+| smoke #0 - rises in - sky #4 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| smoke #0 - in front of - sky #4 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train bridge #3 - in front of - tree #1 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| train bridge #3 - above - bushes #14 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #4 - above - tree #1 | 0-8 | above | 0-8 | identical | 1.00 | ✓ | ? |
+| train #6 - moves past - tree #1 | 0-8 | in front of | 0-8 | not judged yet | 1.00 | ? | ? |
+| train #6 - in front of - tree #1 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| train #6 - moves across - train bridge #3 | 0-8 | moving along (+3 more) | 0-8 | not judged yet | 1.00 | ? | ? |
+| train #6 - on - train bridge #3 | 0-8 | on (+3 more) | 0-8 | identical | 1.00 | ✓ | ? |
+| train #6 - above - grass/trees/shrubs #2 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train #6 - in front of - trees #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #7 - attached to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #7 - connected to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #8 - attached to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #8 - connected to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #9 - attached to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #9 - connected to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cell phone tower #10 - in front of - sky #4 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #11 - attached to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #11 - connected to - train #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train car #11 - moves across - train bridge #3 | 0-8 | on | 0-8 | not judged yet | 1.00 | ? | ? |
+| locomotive #12 - attached to - train #6 | 0-7 | attached to | 0-8 | identical | 0.88 | ✓ | ✓ |
+| locomotive #12 - connected to - train #6 | 0-7 | attached to | 0-8 | not judged yet | 0.88 | ? | ? |
+| bushes #14 - in front of - train bridge #3 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+
+TRASER relations between pairs the humans did not annotate (21): locomotive #12 - moving along - train bridge #3 [0-8]; locomotive #12 - on - train bridge #3 [0-8]; smoke #0 - rising from - locomotive #12 [0-8]; smoke #0 - above - locomotive #12 [0-8]; smoke #0 - in front of - tree #1 [0-8]; grass/trees #5 - in front of - tree #1 [0-8]; trees #22 - in front of - tree #1 [0-8]; cell phone tower #10 - on - grass/trees #5 [0-8]; trees #13 - in front of - train bridge #3 [0-8]; grass/trees/shrubs #2 - in front of - train bridge #3 [0-8]
 
 
 ## 839_SS_1452uWvg
@@ -4760,4 +4999,855 @@ TRASER relations between pairs the humans did not annotate (20): person #4 - hol
 | door #72 - in - building #2 | 0-2 | nothing for this pair | - | - | - | ✗ | ✗ |
 
 TRASER relations between pairs the humans did not annotate (73): pillar #19 - attached to - building #0 [0-12]; pillar #19 - in front of - building #0 [0-12]; pillar #20 - attached to - building #0 [0-12]; pillar #20 - in front of - building #0 [0-12]; window #9 - built into - building #0 [0-24]; window #9 - on - building #0 [0-24]; window #12 - built into - building #0 [0-24]; window #12 - on - building #0 [0-24]; pillar #13 - built into - building #0 [0-24]; pillar #13 - on - building #0 [0-24]
+
+
+## 856_coe8HkbRIk4
+
+20.17 s, 20 frames read | human: 25 objects, 33 relations | TRASER: 25 objects, 64 relations, valid JSON, 2483 tokens
+
+**Objects: 15/25 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | golf club | golf club | identical | ✓ |
+| 1 | golf | golf ball | mismatch | ✗ |
+| 2 | fountain | water fountain | synonym | ✓ |
+| 3 | ground | sand mound | semantic overlap | ✓ |
+| 4 | trees | trees | identical | ✓ |
+| 5 | house | building | hypernym/hyponym | ✓ |
+| 6 | grass | golf course | semantic overlap | ✓ |
+| 7 | ground | sand | semantic overlap | ✓ |
+| 8 | person | person | identical | ✓ |
+| 9 | street light | bush | not judged yet | ? |
+| 10 | street light | tree trunk | not judged yet | ? |
+| 11 | street light | tree trunk | not judged yet | ? |
+| 12 | sky | clouds | not judged yet | ? |
+| 13 | ground | tree | not judged yet | ? |
+| 14 | road | car | not judged yet | ? |
+| 15 | cap | baseball cap | hypernym/hyponym | ✓ |
+| 16 | sweater | sweatshirt | not judged yet | ? |
+| 17 | jean | pair of light blue jeans | identical | ✓ |
+| 18 | shoe | shoe | identical | ✓ |
+| 19 | shoe | shoe | identical | ✓ |
+| 20 | hand | glove | semantic overlap | ✓ |
+| 21 | hand | hand | identical | ✓ |
+| 22 | face | face | identical | ✓ |
+| 23 | head | golf club | mismatch | ✗ |
+| 24 | stick | golf club | not judged yet | ? |
+
+**Relations: 15/33 right, triplets: 5/33 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| person #8 - holding - golf club #0 | 0.166667-21.1667 | holding (+1 more) | 0-20 | identical | 0.94 | ✓ | ✓ |
+| person #8 - near - golf #1 | 0.166667-21.1667 | looking at | 0-20 | not judged yet | 0.94 | ? | ✗ |
+| person #8 - prepares to hit - golf #1 | 0.166667-21.1667 | looking at | 0-20 | not judged yet | 0.94 | ? | ✗ |
+| person #8 - looking at - golf #1 | 1.83333-8.66667, 12.6667-21.1667 | looking at | 0-20 | identical | 0.67 | ✓ | ✗ |
+| person #8 - moves toward - golf #1 | 16-21.1667 | looking at | 0-20 | not judged yet | 0.19 | ✗ | ✗ |
+| person #8 - standing on - grass #6 | 0.166667-21.1667 | on | 0-20 | hypernym/hyponym | 0.94 | ✓ | ✓ |
+| golf club #0 - near - golf #1 | 0.166667-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| golf #1 - in front of - person #8 | 0.166667-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| golf #1 - on - grass #6 | 0.166667-21.1667 | on | 0-20 | identical | 0.94 | ✓ | ✗ |
+| cap #15 - worn by - person #8 | 0.166667-21.1667 | on | 0-20 | not judged yet | 0.94 | ? | ? |
+| person #8 - facing - trees #4 | 7.66667-13.6667 | in front of | 0-20 | not judged yet | 0.30 | ✗ | ✗ |
+| sky #12 - above - house #5 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| sky #12 - above - trees #4 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| sky #12 - above - golf #1 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #12 - above - person #8 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| sky #12 - above - ground #7 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| sky #12 - above - fountain #2 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| person #8 - wearing - sweater #16 | 0-21.1667 | wearing (+1 more) | 0-20 | identical | 0.94 | ✓ | ? |
+| person #8 - wearing - jean #17 | 0-21.1667 | wearing (+1 more) | 0-20 | identical | 0.94 | ✓ | ✓ |
+| person #8 - wearing - shoe #18 | 0-21.1667 | wearing (+1 more) | 0-20 | identical | 0.94 | ✓ | ✓ |
+| person #8 - wearing - shoe #19 | 0-21.1667 | wearing (+1 more) | 0-20 | identical | 0.94 | ✓ | ✓ |
+| sky #12 - above - ground #13 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| sky #12 - above - grass #6 | 0-21.1667 | above | 0-20 | identical | 0.94 | ✓ | ? |
+| house #5 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #4 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fountain #2 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| ground #3 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| road #14 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| ground #13 - behind - person #8 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| stick #24 - part of - golf club #0 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fountain #2 - in front of - trees #4 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| house #5 - in front of - trees #4 | 0-21.1667 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #8 - moving - hand #20 | 16.5-21.1667 | wearing (+1 more) | 0-20 | not judged yet | 0.17 | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (40): person #8 - wearing - cap #15 [0-20]; person #8 - wearing - cap #15 [0-20]; person #8 - holding - head #23 [0-20]; person #8 - swinging - head #23 [0-20]; person #8 - holding - stick #24 [0-20]; person #8 - swinging - stick #24 [0-20]; fountain #2 - on - grass #6 [0-20]; ground #3 - on - grass #6 [0-20]; ground #7 - on - grass #6 [0-20]; trees #4 - on - grass #6 [0-20]
+
+
+## 888_BS3hab7EtAg
+
+7.5 s, 8 frames read | human: 26 objects, 39 relations | TRASER: 26 objects, 66 relations, valid JSON, 2580 tokens
+
+**Objects: 9/26 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | barricade | fence | synonym | ✓ |
+| 1 | trunk | pole | not judged yet | ? |
+| 2 | building | house | hypernym/hyponym | ✓ |
+| 3 | trees | tree | not judged yet | ? |
+| 4 | trees | tree | not judged yet | ? |
+| 5 | trees | tree | not judged yet | ? |
+| 6 | grass | grass | identical | ✓ |
+| 7 | grass | bush | semantic overlap | ✓ |
+| 8 | grass | grass | identical | ✓ |
+| 9 | people | car | not judged yet | ? |
+| 10 | tiger | tiger | identical | ✓ |
+| 11 | cow | bull | synonym | ✓ |
+| 12 | trunk | pole | not judged yet | ? |
+| 13 | trunk | tree trunk | not judged yet | ? |
+| 14 | trunk | tree trunk | not judged yet | ? |
+| 15 | trunk | tree trunk | not judged yet | ? |
+| 16 | trunk | tree trunk | not judged yet | ? |
+| 17 | trunk | tree trunk | not judged yet | ? |
+| 18 | trunk | tree trunk | not judged yet | ? |
+| 19 | trunk | pole | not judged yet | ? |
+| 20 | trunk | pole | not judged yet | ? |
+| 21 | legs | leg | identical | ✓ |
+| 22 | legs | tail | mismatch | ✗ |
+| 23 | tail | tail | identical | ✓ |
+| 24 | tiger head | tiger | not judged yet | ? |
+| 25 | ram head | cow's ear | not judged yet | ? |
+
+**Relations: 18/39 right, triplets: 5/39 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| trees #3 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #3 - in front of - people #9 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #4 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #4 - in front of - people #9 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #5 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #5 - in front of - people #9 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| grass #7 - on - grass #6 | 0-5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| grass #8 - on - grass #6 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| people #9 - behind - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| tiger #10 - on - grass #6 | 0-8 | on (+1 more) | 0-8 | identical | 1.00 | ✓ | ✓ |
+| tiger #10 - in front of - trees #3 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| tiger #10 - in front of - trees #4 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| tiger #10 - in front of - trees #5 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| tiger #10 - in front of - barricade #0 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ✓ |
+| tiger #10 - in front of - people #9 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| tiger #10 - looking at - cow #11 | 0-8 | near (+3 more) | 0-8 | mismatch | 1.00 | ✗ | ✗ |
+| tiger #10 - approaching - cow #11 | 0-8 | near (+3 more) | 0-8 | not judged yet | 1.00 | ? | ? |
+| tiger #10 - in front of - trunk #14 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| tiger #10 - in front of - trunk #17 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - on - grass #6 | 0-8 | on (+1 more) | 0-8 | identical | 1.00 | ✓ | ✓ |
+| cow #11 - in front of - trees #3 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - in front of - trees #4 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - in front of - trees #5 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - in front of - barricade #0 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ✓ |
+| cow #11 - in front of - people #9 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - looking at - tiger #10 | 2-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cow #11 - moving away from - tiger #10 | 2-5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cow #11 - approaching - tiger #10 | 5-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cow #11 - in front of - trunk #14 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| cow #11 - in front of - trunk #17 | 0-8 | in front of | 0-8 | identical | 1.00 | ✓ | ? |
+| trunk #14 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trunk #16 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trunk #17 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trunk #18 - in front of - barricade #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| legs #21 - under - cow #11 | 0-8 | attached to | 0-8 | not judged yet | 1.00 | ? | ? |
+| legs #22 - under - tiger #10 | 0-8 | attached to | 0-8 | not judged yet | 1.00 | ? | ✗ |
+| tail #23 - attached to - tiger #10 | 0-8 | attached to | 0-8 | identical | 1.00 | ✓ | ✓ |
+| tiger head #24 - attached to - tiger #10 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| ram head #25 - attached to - cow #11 | 0-8 | attached to | 0-8 | identical | 1.00 | ✓ | ? |
+
+TRASER relations between pairs the humans did not annotate (40): tiger head #24 - on - grass #6 [0-8]; tiger head #24 - in front of - barricade #0 [0-8]; tiger #10 - in front of - building #2 [0-8]; cow #11 - in front of - building #2 [0-8]; tiger head #24 - in front of - building #2 [0-8]; tiger head #24 - in front of - people #9 [0-8]; tiger head #24 - in front of - trees #3 [0-8]; tiger head #24 - in front of - trees #4 [0-8]; tiger head #24 - in front of - trees #5 [0-8]; tiger #10 - in front of - trunk #13 [0-5]
+
+
+## 914_f4HgijyAEYs
+
+7.5 s, 8 frames read | human: 19 objects, 21 relations | TRASER: 19 objects, 43 relations, valid JSON, 1882 tokens
+
+**Objects: 7/19 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | person | person | identical | ✓ |
+| 1 | cotton candy | cloud-like object (uncertain) | semantic overlap | ✓ |
+| 2 | seat | signboard | not judged yet | ? |
+| 3 | ride | carousel | not judged yet | ? |
+| 4 | landing | table | not judged yet | ? |
+| 5 | building | pole | mismatch | ✗ |
+| 6 | circus | carousel | mismatch | ✗ |
+| 7 | circus | carousel | mismatch | ✗ |
+| 8 | circus | string of lights | mismatch | ✗ |
+| 9 | sky | awning | not judged yet | ? |
+| 10 | seat | signboard | not judged yet | ? |
+| 11 | ground | table | not judged yet | ? |
+| 12 | light | light source (uncertain) | not judged yet | ? |
+| 13 | light | light source (uncertain) | not judged yet | ? |
+| 14 | glasses | spectacles | synonym | ✓ |
+| 15 | hair | hair | identical | ✓ |
+| 16 | jacket | jacket | identical | ✓ |
+| 17 | hand | hand | identical | ✓ |
+| 18 | hand | hand | identical | ✓ |
+
+**Relations: 8/21 right, triplets: 5/21 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| person #0 - holding - cotton candy #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - eating - cotton candy #1 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - snacking on - cotton candy #1 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #0 - wearing - glasses #14 | 0-4, 5-8 | wearing | 0-9 | identical | 0.78 | ✓ | ✓ |
+| person #0 - wearing - jacket #16 | 0-8 | wearing | 0-9 | identical | 0.89 | ✓ | ✓ |
+| person #0 - in front of - ride #3 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ? |
+| person #0 - in front of - landing #4 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ? |
+| person #0 - in front of - building #5 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ✗ |
+| person #0 - under - sky #9 | 0-8 | in front of | 0-9 | not judged yet | 0.89 | ? | ? |
+| cotton candy #1 - in front of - person #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cotton candy #1 - in front of - ride #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cotton candy #1 - in front of - building #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cotton candy #1 - below - sky #9 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cotton candy #1 - above - light #12 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cotton candy #1 - above - light #13 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| seat #2 - in front of - ride #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| light #12 - on - ride #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| light #13 - on - ride #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| glasses #14 - on - person #0 | 0-4, 5-8 | on | 0-9 | identical | 0.78 | ✓ | ✓ |
+| hair #15 - on - person #0 | 0-8 | on | 0-9 | identical | 0.89 | ✓ | ✓ |
+| jacket #16 - on - person #0 | 0-8 | on | 0-9 | identical | 0.89 | ✓ | ✓ |
+
+TRASER relations between pairs the humans did not annotate (34): person #0 - has - hair #15 [0-9]; person #0 - holding - hand #17 [0-9]; person #0 - looking at - hand #17 [0-9]; person #0 - holding - hand #18 [0-9]; person #0 - looking at - hand #18 [0-9]; person #0 - in front of - circus #6 [0-9]; person #0 - in front of - circus #7 [0-9]; person #0 - in front of - seat #10 [0-9]; person #0 - in front of - ground #11 [0-9]; person #0 - in front of - seat #2 [0-9]
+
+
+## 950_94nfEhq6S5w
+
+7.5 s, 8 frames read | human: 44 objects, 27 relations | TRASER: 40 objects, 46 relations, valid JSON, 2924 tokens
+
+**Objects: 21/44 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | ceiling | ceiling | identical | ✓ |
+| 1 | floor | floor | identical | ✓ |
+| 2 | person | person | identical | ✓ |
+| 3 | art | structure (uncertain) | not judged yet | ? |
+| 4 | art | person | mismatch | ✗ |
+| 5 | art | painting | hypernym/hyponym | ✓ |
+| 6 | wall | wall | identical | ✓ |
+| 7 | opening | door (uncertain) | semantic overlap | ✓ |
+| 8 | person | person | identical | ✓ |
+| 9 | wall | wall panel | not judged yet | ? |
+| 10 | wall | wall | identical | ✓ |
+| 11 | roof | light fixture (uncertain) | not judged yet | ? |
+| 12 | roof | vent (uncertain) | not judged yet | ? |
+| 13 | roof | light fixture (uncertain) | not judged yet | ? |
+| 14 | roof | vent (uncertain) | not judged yet | ? |
+| 15 | roof | light fixture (uncertain) | not judged yet | ? |
+| 16 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 17 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 18 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 19 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 20 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 21 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 22 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 23 | sloped wall | light fixture (uncertain) | not judged yet | ? |
+| 24 | ceiling | vent (uncertain) | not judged yet | ? |
+| 25 | ceiling | vent (uncertain) | not judged yet | ? |
+| 26 | wall plate | light fixture (uncertain) | not judged yet | ? |
+| 27 | ceiling | ceiling tile (uncertain) | semantic overlap | ✓ |
+| 28 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 29 | light | light fixture (uncertain) | hypernym/hyponym | ✓ |
+| 30 | bag | handbag | hypernym/hyponym | ✓ |
+| 31 | jacket | dress | not judged yet | ? |
+| 32 | trousers | foot | not judged yet | ? |
+| 33 | trouser | foot | not judged yet | ? |
+| 34 | shoe | foot | not judged yet | ? |
+| 35 | shoe | foot | not judged yet | ? |
+| 36 | hair | hair | identical | ✓ |
+| 37 | face | person | hypernym/hyponym | ✓ |
+| 38 | hand | handbag | mismatch | ✗ |
+| 39 | hair | person | mismatch | ✗ |
+| 40 | bag | - | no label from TRASER | ✗ |
+| 41 | trouser | - | no label from TRASER | ✗ |
+| 42 | hand | - | no label from TRASER | ✗ |
+| 43 | light | - | no label from TRASER | ✗ |
+
+**Relations: 6/27 right, triplets: 4/27 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| floor #1 - below - ceiling #0 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| floor #1 - adjacent to - wall #10 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| floor #1 - adjacent to - wall #9 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #2 - wears - jacket #31 | 0-8 | wearing | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #2 - carries - bag #30 | 0-8 | carrying | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #2 - approaches - art #3 | 0-6 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #2 - looks at - art #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #2 - approaches and observes - art #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #2 - in front of - art #3 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #2 - on - floor #1 | 0-8 | on (+1 more) | 0-9 | identical | 0.89 | ✓ | ✓ |
+| person #2 - in front of - wall #10 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ✓ |
+| art #3 - hangs on - wall #10 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| art #3 - attached to - wall #10 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| art #3 - on - floor #1 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| art #4 - hangs on - wall #10 | 0-8 | in front of | 0-9 | not judged yet | 0.89 | ? | ✗ |
+| art #4 - attached to - wall #10 | 0-8 | in front of | 0-9 | not judged yet | 0.89 | ? | ✗ |
+| art #5 - hangs on - wall #9 | 0-8 | on | 0-9 | not judged yet | 0.89 | ? | ? |
+| art #5 - attached to - wall #9 | 0-8 | on | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #8 - carries - bag #40 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #8 - moves toward - wall #9 | 0-8 | in front of | 0-9 | not judged yet | 0.89 | ? | ? |
+| person #8 - in front of - wall #9 | 0-8 | in front of | 0-9 | identical | 0.89 | ✓ | ? |
+| person #8 - on - floor #1 | 0-8 | on | 0-9 | identical | 0.89 | ✓ | ✓ |
+| person #8 - in front of - art #5 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| wall plate #26 - on - wall #10 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bag #30 - on - person #2 | 1-8 | on | 0-9 | identical | 0.78 | ✓ | ✓ |
+| jacket #31 - on - person #2 | 0-8 | on | 0-9 | identical | 0.89 | ✓ | ? |
+| bag #40 - on - person #8 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (35): person #2 - has - hair #36 [0-9]; person #2 - approaching - art #5 [0-9]; person #2 - in front of - art #5 [0-9]; person #2 - approaching - art #4 [0-9]; person #2 - approaching - person #8 [0-9]; person #2 - moving away from - wall #9 [0-9]; person #2 - in front of - wall #9 [0-9]; art #4 - on - floor #1 [0-9]; face #37 - on - floor #1 [0-9]; hair #39 - on - floor #1 [0-9]
+
+
+## 973_ceJ5D6wluX0
+
+22.67 s, 23 frames read | human: 7 objects, 18 relations | TRASER: 7 objects, 8 relations, valid JSON, 544 tokens
+
+**Objects: 1/7 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | smoke | smoke | identical | ✓ |
+| 1 | train | train car | not judged yet | ? |
+| 2 | railway bridge | bridge | not judged yet | ? |
+| 3 | trees | hill | not judged yet | ? |
+| 4 | sky | tree | mismatch | ✗ |
+| 5 | train cars | train car | not judged yet | ? |
+| 6 | locomotive | steam locomotive | not judged yet | ? |
+
+**Relations: 0/18 right, triplets: 0/18 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| smoke #0 - follows - locomotive #6 | 0-23 | rising from | 0-24 | not judged yet | 0.96 | ? | ? |
+| smoke #0 - above - locomotive #6 | 0-23 | rising from | 0-24 | not judged yet | 0.96 | ? | ? |
+| smoke #0 - rises toward - sky #4 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| smoke #0 - above - train #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| smoke #0 - above - railway bridge #2 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train #1 - moves along - railway bridge #2 | 0-23 | moving along | 0-24 | not judged yet | 0.96 | ? | ? |
+| train #1 - crosses - railway bridge #2 | 0-23 | moving along | 0-24 | not judged yet | 0.96 | ? | ? |
+| train #1 - on - railway bridge #2 | 0-23 | moving along | 0-24 | not judged yet | 0.96 | ? | ? |
+| railway bridge #2 - carries - train #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #4 - above - trees #3 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #4 - above - railway bridge #2 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #4 - above - train #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train cars #5 - attached to - locomotive #6 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| train cars #5 - on - railway bridge #2 | 0-23 | moving along | 0-24 | not judged yet | 0.96 | ? | ? |
+| locomotive #6 - leads - train cars #5 | 0-23 | attached to | 0-24 | not judged yet | 0.96 | ? | ? |
+| locomotive #6 - pulls - train cars #5 | 0-23 | attached to | 0-24 | not judged yet | 0.96 | ? | ? |
+| locomotive #6 - in front of - train cars #5 | 0-23 | attached to | 0-24 | not judged yet | 0.96 | ? | ? |
+| locomotive #6 - on - railway bridge #2 | 0-23 | moving along (+1 more) | 0-24 | not judged yet | 0.96 | ? | ? |
+
+TRASER relations between pairs the humans did not annotate (2): locomotive #6 - attached to - train #1 [0-24]; train #1 - attached to - train cars #5 [0-24]
+
+
+## 976_U19VojbI0h4
+
+7.5 s, 8 frames read | human: 65 objects, 36 relations | TRASER: 40 objects, 49 relations, valid JSON, 3175 tokens
+
+**Objects: 21/65 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | ground | floor | synonym | ✓ |
+| 1 | painting | painting | identical | ✓ |
+| 2 | plant | flower arrangement | not judged yet | ? |
+| 3 | decoration | basket | mismatch | ✗ |
+| 4 | fireplace | fireplace | identical | ✓ |
+| 5 | cabinet | fireplace | mismatch | ✗ |
+| 6 | door | door | identical | ✓ |
+| 7 | wall | wall | identical | ✓ |
+| 8 | door | door frame (uncertain) | semantic overlap | ✓ |
+| 9 | lamp | lamp | identical | ✓ |
+| 10 | table | coffee table | hypernym/hyponym | ✓ |
+| 11 | interior | shelf | not judged yet | ? |
+| 12 | shelf | shelf | identical | ✓ |
+| 13 | interior | plant | not judged yet | ? |
+| 14 | ceiling fan | ceiling tile (uncertain) | not judged yet | ? |
+| 15 | ceiling and upper wall | ceiling beam (uncertain) | semantic overlap | ✓ |
+| 16 | closet | door | mismatch | ✗ |
+| 17 | outlet | door handle | not judged yet | ? |
+| 18 | table | coffee table | hypernym/hyponym | ✓ |
+| 19 | rug | coffee table | not judged yet | ? |
+| 20 | vase | flowerpot | not judged yet | ? |
+| 21 | doorway | door | not judged yet | ? |
+| 22 | wall | wall | identical | ✓ |
+| 23 | wall | shelf | not judged yet | ? |
+| 24 | wall | wall | identical | ✓ |
+| 25 | lamp shade | lampshade | identical | ✓ |
+| 26 | lamp base | lamp | semantic overlap | ✓ |
+| 27 | throw pillow | table | not judged yet | ? |
+| 28 | couch | coffee table | mismatch | ✗ |
+| 29 | cup | flowerpot | mismatch | ✗ |
+| 30 | leaves | flowerpot | not judged yet | ? |
+| 31 | fireplace | fireplace | identical | ✓ |
+| 32 | fireplace face | fireplace | hypernym/hyponym | ✓ |
+| 33 | ceiling area | beam (uncertain) | not judged yet | ? |
+| 34 | fireplace frame | door frame (uncertain) | semantic overlap | ✓ |
+| 35 | flower vase | flowerpot | synonym | ✓ |
+| 36 | vase | flowerpot | not judged yet | ? |
+| 37 | home decor | flowerpot | hypernym/hyponym | ✓ |
+| 38 | home decor | flowerpot | hypernym/hyponym | ✓ |
+| 39 | socket | flowerpot | not judged yet | ? |
+| 40 | flower | - | no label from TRASER | ✗ |
+| 41 | vase stand | - | no label from TRASER | ✗ |
+| 42 | tray | - | no label from TRASER | ✗ |
+| 43 | fan | - | no label from TRASER | ✗ |
+| 44 | cupboard handle | - | no label from TRASER | ✗ |
+| 45 | cupboard handle | - | no label from TRASER | ✗ |
+| 46 | flower vase | - | no label from TRASER | ✗ |
+| 47 | flower stand | - | no label from TRASER | ✗ |
+| 48 | vase | - | no label from TRASER | ✗ |
+| 49 | home decor | - | no label from TRASER | ✗ |
+| 50 | glass | - | no label from TRASER | ✗ |
+| 51 | fireplace | - | no label from TRASER | ✗ |
+| 52 | door | - | no label from TRASER | ✗ |
+| 53 | ground | - | no label from TRASER | ✗ |
+| 54 | door | - | no label from TRASER | ✗ |
+| 55 | shelf | - | no label from TRASER | ✗ |
+| 56 | shelf | - | no label from TRASER | ✗ |
+| 57 | shelf | - | no label from TRASER | ✗ |
+| 58 | household item | - | no label from TRASER | ✗ |
+| 59 | wall | - | no label from TRASER | ✗ |
+| 60 | light | - | no label from TRASER | ✗ |
+| 61 | door frame | - | no label from TRASER | ✗ |
+| 62 | top of a cupboard | - | no label from TRASER | ✗ |
+| 63 | door of cupboard | - | no label from TRASER | ✗ |
+| 64 | door of cupboard | - | no label from TRASER | ✗ |
+
+**Relations: 7/36 right, triplets: 2/36 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| painting #1 - on - fireplace face #32 | 0-8 | above | 0-8 | semantic overlap | 1.00 | ✓ | ✓ |
+| painting #1 - in front of - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| painting #1 - above - fireplace #4 | 0-8 | above | 0-8 | identical | 1.00 | ✓ | ✓ |
+| plant #2 - on - fireplace face #32 | 0-8 | above | 0-8 | semantic overlap | 1.00 | ✓ | ? |
+| plant #2 - in - flower vase #46 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plant #2 - in front of - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| plant #2 - above - fireplace #4 | 0-8 | above | 0-8 | identical | 1.00 | ✓ | ? |
+| decoration #3 - on - fireplace face #32 | 0-5.5 | above | 0-6 | semantic overlap | 0.92 | ✓ | ✗ |
+| decoration #3 - in front of - wall #22 | 0-5.5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fireplace #4 - in - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fireplace #4 - against - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| cabinet #5 - on - ground #0 | 0-4 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #6 - attached to - closet #16 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #6 - inside - door frame #61 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #6 - attached to - door frame #61 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #6 - in - wall #59 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #8 - inside - wall #7 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| lamp #9 - on - table #10 | 0-1 | on (+1 more) | 0-2 | identical | 0.50 | ✗ | ✗ |
+| closet #16 - behind - door #54 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| table #18 - on - ground #0 | 0-7 | on | 0-2 | identical | 0.29 | ✗ | ✗ |
+| rug #19 - on - ground #0 | 0-2 | on | 0-2 | identical | 1.00 | ✓ | ? |
+| vase #20 - on - table #18 | 0-2 | on | 0-2 | identical | 1.00 | ✓ | ? |
+| doorway #21 - in - fireplace frame #34 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| doorway #21 - in - fireplace frame #34 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fireplace #31 - in - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fireplace #31 - under - fireplace face #32 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| fireplace face #32 - against - wall #22 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| flower vase #46 - on - flower stand #47 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #52 - inside - doorway #21 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| ground #53 - inside - doorway #21 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #54 - attached to - door frame #61 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #54 - inside - door frame #61 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| door #54 - in - wall #59 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shelf #55 - in - closet #16 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shelf #56 - in - closet #16 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shelf #57 - in - closet #16 | 0-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (39): outlet #17 - attached to - doorway #21 [0-8]; outlet #17 - on - doorway #21 [0-8]; painting #1 - mounted on - wall #7 [0-8]; plant #2 - mounted on - wall #7 [0-8]; decoration #3 - mounted on - wall #7 [0-6]; interior #11 - mounted on - wall #24 [0-4]; shelf #12 - mounted on - wall #24 [0-4]; wall #23 - mounted on - wall #24 [0-4]; interior #13 - in - flower vase #35 [0-4]; interior #13 - above - flower vase #35 [0-4]
+
+
+## 987_g0mln-jiQTw
+
+22.67 s, 23 frames read | human: 11 objects, 17 relations | TRASER: 11 objects, 22 relations, valid JSON, 958 tokens
+
+**Objects: 3/11 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | waterfalls | waterfall | not judged yet | ? |
+| 1 | trees | foliage (uncertain) | not judged yet | ? |
+| 2 | trees | foliage | not judged yet | ? |
+| 3 | sky | cloud | semantic overlap | ✓ |
+| 4 | person | person | identical | ✓ |
+| 5 | head | person | mismatch | ✗ |
+| 6 | shirt | person | not judged yet | ? |
+| 7 | rock | bush | not judged yet | ? |
+| 8 | rock | waterfall | not judged yet | ? |
+| 9 | rock | rock | identical | ✓ |
+| 10 | rock | rock formation | not judged yet | ? |
+
+**Relations: 2/17 right, triplets: 0/17 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| waterfalls #0 - flows over - rock #8 | 0-23 | overlapping | 0-24 | not judged yet | 0.96 | ? | ? |
+| waterfalls #0 - on - rock #8 | 0-23 | overlapping | 0-24 | not judged yet | 0.96 | ? | ? |
+| waterfalls #0 - flows past - trees #2 | 0-23 | flows past | 0-24 | identical | 0.96 | ✓ | ? |
+| waterfalls #0 - in front of - trees #2 | 0-23 | flows past | 0-24 | not judged yet | 0.96 | ? | ? |
+| waterfalls #0 - flows beside - rock #9 | 0-23 | flows over (+1 more) | 0-24 | not judged yet | 0.96 | ? | ? |
+| waterfalls #0 - on - rock #9 | 0-23 | above (+1 more) | 0-24 | semantic overlap | 0.96 | ✓ | ? |
+| waterfalls #0 - below - rock #10 | 0-23 | flows past (+1 more) | 0-24 | not judged yet | 0.96 | ? | ? |
+| waterfalls #0 - in front of - trees #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #3 - above - trees #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #3 - above - trees #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #4 - wears - shirt #6 | 18.5-20 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #4 - in front of - trees #1 | 19-20 | nothing for this pair | - | - | - | ✗ | ✗ |
+| head #5 - in front of - trees #1 | 18-19 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shirt #6 - on - person #4 | 19-20 | nothing for this pair | - | - | - | ✗ | ✗ |
+| rock #7 - in front of - trees #2 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| rock #8 - in front of - trees #1 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+| rock #8 - in front of - trees #2 | 0-23 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (16): waterfalls #0 - flows past - rock #7 [0-24]; rock #8 - in front of - rock #10 [0-24]; rock #9 - in front of - rock #10 [0-24]; trees #2 - in front of - rock #10 [0-24]; rock #7 - in front of - rock #10 [0-24]; rock #8 - above - rock #9 [0-24]; trees #2 - overlapping - rock #7 [0-24]; sky #3 - above - rock #10 [0-24]; sky #3 - above - waterfalls #0 [0-24]; sky #3 - above - rock #8 [0-24]
+
+
+## sav_002789
+
+13.25 s, 13 frames read | human: 47 objects, 41 relations | TRASER: 40 objects, 46 relations, valid JSON, 2878 tokens
+
+**Objects: 19/47 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | man | person | hypernym/hyponym | ✓ |
+| 1 | woman | person | not judged yet | ? |
+| 2 | man | person | hypernym/hyponym | ✓ |
+| 3 | object | person | not judged yet | ? |
+| 4 | road | person | not judged yet | ? |
+| 5 | man | jersey (uncertain) | not judged yet | ? |
+| 6 | suitcase | suitcase | identical | ✓ |
+| 7 | people | person | hypernym/hyponym | ✓ |
+| 8 | light | streetlight | hypernym/hyponym | ✓ |
+| 9 | light | streetlight | hypernym/hyponym | ✓ |
+| 10 | light | streetlight | hypernym/hyponym | ✓ |
+| 11 | people | person | hypernym/hyponym | ✓ |
+| 12 | light | streetlight | hypernym/hyponym | ✓ |
+| 13 | light | streetlight | hypernym/hyponym | ✓ |
+| 14 | light | streetlight | hypernym/hyponym | ✓ |
+| 15 | building | building | identical | ✓ |
+| 16 | sidewalk | car | not judged yet | ? |
+| 17 | sky | streetlight | not judged yet | ? |
+| 18 | trees | tree | not judged yet | ? |
+| 19 | people | person | hypernym/hyponym | ✓ |
+| 20 | t-shirt | jersey (uncertain) | not judged yet | ? |
+| 21 | t-shirt | jersey (uncertain) | not judged yet | ? |
+| 22 | pants | trousers (uncertain) | synonym | ✓ |
+| 23 | pants | trousers (uncertain) | synonym | ✓ |
+| 24 | t-shirt | jersey (uncertain) | not judged yet | ? |
+| 25 | shorts | shorts (uncertain) | identical | ✓ |
+| 26 | shoe | shoe | identical | ✓ |
+| 27 | shoe | shoe | identical | ✓ |
+| 28 | shirt | jacket | not judged yet | ? |
+| 29 | pants | trousers (uncertain) | synonym | ✓ |
+| 30 | t-shirt | jersey (uncertain) | not judged yet | ? |
+| 31 | shorts | jersey (uncertain) | not judged yet | ? |
+| 32 | window | signboard | not judged yet | ? |
+| 33 | window | signboard | not judged yet | ? |
+| 34 | window | signboard | not judged yet | ? |
+| 35 | window | signboard | not judged yet | ? |
+| 36 | window | signboard | not judged yet | ? |
+| 37 | window | signboard | not judged yet | ? |
+| 38 | window | signboard | not judged yet | ? |
+| 39 | window | signboard | not judged yet | ? |
+| 40 | window | - | no label from TRASER | ✗ |
+| 41 | window | - | no label from TRASER | ✗ |
+| 42 | window | - | no label from TRASER | ✗ |
+| 43 | window | - | no label from TRASER | ✗ |
+| 44 | window | - | no label from TRASER | ✗ |
+| 45 | shadow | - | no label from TRASER | ✗ |
+| 46 | shadow | - | no label from TRASER | ✗ |
+
+**Relations: 1/41 right, triplets: 0/41 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| man #0 - walking along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #0 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #0 - wearing - t-shirt #21 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #0 - wearing - pants #22 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #0 - in front of - man #2 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #0 - in front of - man #5 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - walking along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - wearing - t-shirt #20 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - wearing - pants #23 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - in front of - man #2 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| woman #1 - in front of - man #5 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #2 - moving with - man #5 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #2 - walking along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #2 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #2 - wearing - t-shirt #24 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #2 - wearing - shorts #25 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| object #3 - walking along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| object #3 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| object #3 - wearing - shirt #28 | 0-14 | wearing | 0-13 | identical | 0.93 | ✓ | ? |
+| object #3 - wearing - pants #29 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| object #3 - in front of - man #2 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| object #3 - in front of - man #5 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - pulling - suitcase #6 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - transporting - suitcase #6 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - walking along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - on - road #4 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - wearing - t-shirt #30 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| man #5 - wearing - shorts #31 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| suitcase #6 - moving with - man #5 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| suitcase #6 - rolling along - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| suitcase #6 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| suitcase #6 - in front of - object #3 | 1-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| light #8 - above - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| light #8 - above - man #0 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| building #15 - alongside - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sidewalk #16 - alongside - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #17 - above - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| sky #17 - above - trees #18 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trees #18 - alongside - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| shadow #45 - on - road #4 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (45): man #2 - pulling - suitcase #6 [0-13]; man #2 - walking with - suitcase #6 [0-13]; man #2 - near - suitcase #6 [0-13]; man #2 - wearing - shoe #26 [0-13]; man #2 - wearing - shoe #27 [0-13]; suitcase #6 - moving with - man #2 [0-13]; man #2 - in front of - sidewalk #16 [0-13]; object #3 - in front of - sidewalk #16 [0-13]; suitcase #6 - in front of - sidewalk #16 [0-13]; man #2 - in front of - trees #18 [0-13]
+
+
+## sav_004550
+
+13.71 s, 14 frames read | human: 52 objects, 37 relations | TRASER: 38 objects, 27 relations, valid JSON, 2165 tokens
+
+**Objects: 29/52 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | bridegroom | person | hypernym/hyponym | ✓ |
+| 1 | bride | bride | identical | ✓ |
+| 2 | stone column | column (uncertain) | not judged yet | ? |
+| 3 | wall | painting | mismatch | ✗ |
+| 4 | archway | painting | mismatch | ✗ |
+| 5 | floor | carpet | semantic overlap | ✓ |
+| 6 | railing | chair | not judged yet | ? |
+| 7 | door | door | identical | ✓ |
+| 8 | fence | gate | semantic overlap | ✓ |
+| 9 | wall | painting | mismatch | ✗ |
+| 10 | flower | flower arrangement | hypernym/hyponym | ✓ |
+| 11 | crowds | person | hypernym/hyponym | ✓ |
+| 12 | person | person | identical | ✓ |
+| 13 | person | person | identical | ✓ |
+| 14 | person | person | identical | ✓ |
+| 15 | person | person | identical | ✓ |
+| 16 | person | person | identical | ✓ |
+| 17 | person | person | identical | ✓ |
+| 18 | person | - | no label from TRASER | ✗ |
+| 19 | person | person | identical | ✓ |
+| 20 | person | person | identical | ✓ |
+| 21 | person | dress | mismatch | ✗ |
+| 22 | person | person | identical | ✓ |
+| 23 | person | person | identical | ✓ |
+| 24 | person | person | identical | ✓ |
+| 25 | person | - | no label from TRASER | ✗ |
+| 26 | person | person | identical | ✓ |
+| 27 | person | person | identical | ✓ |
+| 28 | person | dress | mismatch | ✗ |
+| 29 | person | person | identical | ✓ |
+| 30 | person | person | identical | ✓ |
+| 31 | person | dress | mismatch | ✗ |
+| 32 | person | dress | mismatch | ✗ |
+| 33 | person | person | identical | ✓ |
+| 34 | person | person | identical | ✓ |
+| 35 | person | person | identical | ✓ |
+| 36 | person | person | identical | ✓ |
+| 37 | person | person | identical | ✓ |
+| 38 | person | person | identical | ✓ |
+| 39 | person | person | identical | ✓ |
+| 40 | person | - | no label from TRASER | ✗ |
+| 41 | person | - | no label from TRASER | ✗ |
+| 42 | person | - | no label from TRASER | ✗ |
+| 43 | person | - | no label from TRASER | ✗ |
+| 44 | person | - | no label from TRASER | ✗ |
+| 45 | person | - | no label from TRASER | ✗ |
+| 46 | person | - | no label from TRASER | ✗ |
+| 47 | person | - | no label from TRASER | ✗ |
+| 48 | carpet | - | no label from TRASER | ✗ |
+| 49 | painting | - | no label from TRASER | ✗ |
+| 50 | window | - | no label from TRASER | ✗ |
+| 51 | light | - | no label from TRASER | ✗ |
+
+**Relations: 9/37 right, triplets: 6/37 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| bridegroom #0 - walks with - bride #1 | 0-14 | next to (+3 more) | 0-15 | not judged yet | 0.93 | ? | ? |
+| bridegroom #0 - moves along - carpet #48 | 0-5, 7-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - on - carpet #48 | 0-5, 7-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - in front of - stone column #2 | 0-5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - in front of - window #50 | 0-4 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - in front of - door #7 | 4-6 | in front of | 5-15 | identical | 0.09 | ✗ | ✗ |
+| bridegroom #0 - adjacent to - railing #6 | 0-14 | in front of | 0-15 | not judged yet | 0.93 | ? | ? |
+| bridegroom #0 - in front of - archway #4 | 6-14 | in front of | 5-15 | identical | 0.80 | ✓ | ✗ |
+| bridegroom #0 - in front of - painting #49 | 4-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - below - light #51 | 0-4.5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bridegroom #0 - in front of - wall #3 | 0-4.5 | in front of | 0-15 | identical | 0.30 | ✗ | ✗ |
+| bridegroom #0 - in front of - wall #9 | 0-5.5 | in front of | 0-15 | identical | 0.37 | ✗ | ✗ |
+| bridegroom #0 - on - floor #5 | 0-5, 6-14 | on | 0-15 | identical | 0.87 | ✓ | ✓ |
+| bridegroom #0 - in front of - crowds #11 | 0-7.5 | in front of (+1 more) | 0-15 | identical | 0.50 | ✗ | ✗ |
+| bridegroom #0 - in front of - fence #8 | 0-4 | in front of | 0-4 | identical | 1.00 | ✓ | ✓ |
+| bride #1 - holds arm of - bridegroom #0 | 0-14 | approaching (+2 more) | 7-11 | not judged yet | 0.29 | ✗ | ✗ |
+| bride #1 - moves with - bridegroom #0 | 0-14 | approaching (+2 more) | 7-11 | not judged yet | 0.29 | ✗ | ✗ |
+| bride #1 - walks down aisle with - bridegroom #0 | 0-14 | approaching (+2 more) | 7-11 | not judged yet | 0.29 | ✗ | ✗ |
+| bride #1 - touching - bridegroom #0 | 0-14 | approaching (+2 more) | 7-11 | mismatch | 0.29 | ✗ | ✗ |
+| bride #1 - moves along - carpet #48 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - on - carpet #48 | 0-5, 7-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - in front of - fence #8 | 0-3.5 | in front of | 0-4 | identical | 0.88 | ✓ | ✓ |
+| bride #1 - in front of - stone column #2 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - in front of - window #50 | 0-3 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - below - light #51 | 0-4.5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - in front of - door #7 | 5-14 | in front of | 5-15 | identical | 0.90 | ✓ | ✓ |
+| bride #1 - adjacent to - railing #6 | 0-14 | in front of | 0-15 | not judged yet | 0.93 | ? | ? |
+| bride #1 - in front of - archway #4 | 7-14 | in front of | 5-15 | identical | 0.70 | ✓ | ✗ |
+| bride #1 - in front of - painting #49 | 3-5, 6-8 | nothing for this pair | - | - | - | ✗ | ✗ |
+| bride #1 - in front of - wall #3 | 0-4 | in front of | 0-15 | identical | 0.27 | ✗ | ✗ |
+| bride #1 - in front of - wall #9 | 0-14 | in front of | 0-15 | identical | 0.93 | ✓ | ✗ |
+| bride #1 - on - floor #5 | 0-5, 6-14 | on | 0-15 | identical | 0.87 | ✓ | ✓ |
+| bride #1 - in front of - crowds #11 | 0-14 | in front of (+1 more) | 0-15 | identical | 0.93 | ✓ | ✓ |
+| railing #6 - beside - carpet #48 | 0-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #30 - looks at - bride #1 | 9-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #31 - looks at - bride #1 | 11-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+| carpet #48 - on - floor #5 | 0-5, 7-14 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (2): bridegroom #0 - in front of - flower #10 [13-15]; bride #1 - in front of - flower #10 [13-15]
+
+
+## sav_009307
+
+15.54 s, 16 frames read | human: 63 objects, 53 relations | TRASER: 40 objects, 58 relations, valid JSON, 2944 tokens
+
+**Objects: 35/63 right**
+
+| id | human label | TRASER label | verdict | right |
+|---|---|---|---|---|
+| 0 | ceiling | ceiling | identical | ✓ |
+| 1 | pillar | pillar | identical | ✓ |
+| 2 | store | storefront | not judged yet | ? |
+| 3 | sign | signboard | not judged yet | ? |
+| 4 | people | person | hypernym/hyponym | ✓ |
+| 5 | performers | bow (uncertain) | not judged yet | ? |
+| 6 | pillar | pillar | identical | ✓ |
+| 7 | pillar | pillar | identical | ✓ |
+| 8 | pillar | pillar | identical | ✓ |
+| 9 | christmas tree | Christmas tree | identical | ✓ |
+| 10 | speaker | speaker | identical | ✓ |
+| 11 | speaker | speaker | identical | ✓ |
+| 12 | sign | signboard | not judged yet | ? |
+| 13 | person | person | identical | ✓ |
+| 14 | person | person | identical | ✓ |
+| 15 | person | person | identical | ✓ |
+| 16 | person | person | identical | ✓ |
+| 17 | person | person | identical | ✓ |
+| 18 | person | person | identical | ✓ |
+| 19 | person | person | identical | ✓ |
+| 20 | person | person | identical | ✓ |
+| 21 | person | person | identical | ✓ |
+| 22 | person | person | identical | ✓ |
+| 23 | person | person | identical | ✓ |
+| 24 | person | person | identical | ✓ |
+| 25 | person | person | identical | ✓ |
+| 26 | person | person | identical | ✓ |
+| 27 | person | person | identical | ✓ |
+| 28 | person | person | identical | ✓ |
+| 29 | person | person | identical | ✓ |
+| 30 | person | person | identical | ✓ |
+| 31 | person | person | identical | ✓ |
+| 32 | person | person | identical | ✓ |
+| 33 | wheelchair | person | not judged yet | ? |
+| 34 | person | person | identical | ✓ |
+| 35 | person | person | identical | ✓ |
+| 36 | person | person | identical | ✓ |
+| 37 | pillar | pillar | identical | ✓ |
+| 38 | pillar | pillar | identical | ✓ |
+| 39 | chair | chair | identical | ✓ |
+| 40 | chair | - | no label from TRASER | ✗ |
+| 41 | chair | - | no label from TRASER | ✗ |
+| 42 | chair | - | no label from TRASER | ✗ |
+| 43 | chair | - | no label from TRASER | ✗ |
+| 44 | chair | - | no label from TRASER | ✗ |
+| 45 | chair | - | no label from TRASER | ✗ |
+| 46 | chair | - | no label from TRASER | ✗ |
+| 47 | chair | - | no label from TRASER | ✗ |
+| 48 | trashcan | - | no label from TRASER | ✗ |
+| 49 | present | - | no label from TRASER | ✗ |
+| 50 | present | - | no label from TRASER | ✗ |
+| 51 | present | - | no label from TRASER | ✗ |
+| 52 | present | - | no label from TRASER | ✗ |
+| 53 | present | - | no label from TRASER | ✗ |
+| 54 | present | - | no label from TRASER | ✗ |
+| 55 | present | - | no label from TRASER | ✗ |
+| 56 | present | - | no label from TRASER | ✗ |
+| 57 | present | - | no label from TRASER | ✗ |
+| 58 | present | - | no label from TRASER | ✗ |
+| 59 | present | - | no label from TRASER | ✗ |
+| 60 | present | - | no label from TRASER | ✗ |
+| 61 | guitar | - | no label from TRASER | ✗ |
+| 62 | hat | - | no label from TRASER | ✗ |
+
+**Relations: 1/53 right, triplets: 0/53 right** (lenient, tIoU > 0.5)
+
+| human: subject - predicate - object | human time | TRASER (same two objects) | TRASER time | word | tIoU | relation | triplet |
+|---|---|---|---|---|---|---|---|
+| pillar #1 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| store #2 - under - ceiling #0 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| people #4 - watch - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| people #4 - in front of - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - in front of - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - in front of - sign #12 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - under - ceiling #0 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - put on show for - people #4 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - perform for - people #4 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| performers #5 - in front of - store #2 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| pillar #6 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| pillar #7 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| pillar #8 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| christmas tree #9 - in front of - sign #12 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| christmas tree #9 - in front of - sign #3 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| christmas tree #9 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| speaker #10 - in front of - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| speaker #11 - in front of - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #14 - sit on - chair #46 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #15 - sit on - chair #45 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #19 - sit on - chair #40 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #24 - sit on - chair #41 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #25 - sit on - chair #42 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #29 - walk past - christmas tree #9 | 0-9 | approaches (+2 more) | 0-7 | not judged yet | 0.78 | ? | ? |
+| wheelchair #33 - in front of - performers #5 | 0-10.5 | nothing for this pair | - | - | - | ✗ | ✗ |
+| person #35 - play - guitar #61 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| pillar #37 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| pillar #38 - under - ceiling #0 | 0-16 | below | 0-15 | not judged yet | 0.94 | ? | ? |
+| chair #39 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #39 - in front of - store #2 | 0-16 | in front of | 0-15 | identical | 0.94 | ✓ | ? |
+| chair #40 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #41 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #45 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #46 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #47 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| chair #47 - in front of - store #2 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| trashcan #48 - in front of - performers #5 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #49 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #49 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #50 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #51 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #52 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #52 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #53 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #54 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #54 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #55 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #56 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #57 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #58 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #59 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| present #60 - attached to - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+| guitar #61 - in front of - christmas tree #9 | 0-16 | nothing for this pair | - | - | - | ✗ | ✗ |
+
+TRASER relations between pairs the humans did not annotate (47): person #29 - approaches - speaker #10 [0-7]; person #29 - moves away from - speaker #10 [7-15]; person #29 - passes by - speaker #10 [5-8]; person #29 - approaches - store #2 [0-7]; person #29 - moves away from - store #2 [7-15]; person #29 - passes by - store #2 [5-8]; person #29 - in front of - store #2 [0-15]; christmas tree #9 - in front of - store #2 [0-15]; speaker #10 - in front of - store #2 [0-15]; speaker #11 - in front of - store #2 [0-15]
 
