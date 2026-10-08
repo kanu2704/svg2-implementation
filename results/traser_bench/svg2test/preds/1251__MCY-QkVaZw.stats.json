@@ -1,0 +1,83 @@
+{
+ "video": "/tmp/traser_bench/svg2test/1251__MCY-QkVaZw/video.mp4",
+ "task": "scene_graph",
+ "dtype": "float16",
+ "vision_dtype": "float32",
+ "duration_s": 10.17,
+ "video_frames": 61,
+ "video_fps": 6.0,
+ "sampled_frames": 10,
+ "sampled_idx": [
+  0,
+  6,
+  13,
+  20,
+  26,
+  33,
+  40,
+  46,
+  53,
+  60
+ ],
+ "effective_fps": 0.984,
+ "grid_thw": [
+  5,
+  40,
+  72
+ ],
+ "raw_video_tokens": 3600,
+ "resized_hw": [
+  560,
+  1008
+ ],
+ "objects_requested": 12,
+ "objects": 12,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "tokens_per_object": [
+  198,
+  109,
+  72,
+  3457,
+  3,
+  3,
+  1,
+  3,
+  8,
+  20,
+  5,
+  1
+ ],
+ "tokens_selected_union": 3598,
+ "tokens_dropped_fraction": 0.001,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>",
+  "<8 - 12 sec>"
+ ],
+ "prompt_tokens": 3634,
+ "arranged_tokens": 1509,
+ "arrange_s": 6.4,
+ "embeds_finite": true,
+ "generate_s": 44.3,
+ "new_tokens": 892,
+ "peak_gpu_gb": 10.9,
+ "json_ok": true,
+ "out_objects": 12,
+ "out_relationships": 26,
+ "out_uncertain_labels": 0,
+ "total_s": 51.7,
+ "gpu": "Tesla T4"
+}
