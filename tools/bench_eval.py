@@ -31,6 +31,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -169,6 +170,8 @@ class Judge:
             part = parts.pop(0)
             items = [{"i": n, "type": k.split("\t")[0], "reference": k.split("\t")[1], "predicted": k.split("\t")[2]}
                      for n, k in enumerate(part)]
+            log(f"  asking {self.model} about {len(part)} pairs ({done} of {len(todo)} judged so far) ...")
+            t0 = time.time()
             try:
                 reply = ask(self.client, self.model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(items)}],
                             dict(temperature=0.0), max_tokens=4096)
@@ -190,7 +193,7 @@ class Judge:
                 parts = [left[:len(left) // 2], left[len(left) // 2:]] + parts
             elif left:
                 log(f"  {len(left)} pairs stay unjudged for now: {[k.replace(chr(9), ' | ') for k in left]}")
-            log(f"  judged {done}/{len(todo)} new pairs")
+            log(f"  judged {done}/{len(todo)} new pairs (that request: {time.time() - t0:.0f} s)")
 
     def category(self, kind, ref, pred):
         if norm(ref) == norm(pred):
@@ -547,7 +550,8 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
     if ask:
         pairs = [p for ds in loaded for gt, pred, st in loaded[ds].values() if pred is not None
                  for p in video_pairs(gt, pred, st)[0]]
-        log(f"{len(pairs)} label pairs to judge ({len(set(Judge.key(*p) for p in pairs))} distinct)")
+        log(f"{len(pairs)} label pairs in the predictions ({len(set(Judge.key(*p) for p in pairs))} distinct); "
+            f"asking the judge only about those not judged before")
         judge.ask_all(pairs, log=log)
     report = {}
     for ds, vids in loaded.items():
