@@ -50,6 +50,35 @@ def avoid_math_attention():
     return False
 
 
+class _Padded:
+    """Stands in for pad_sequence(seqs) inside rearrange_token: the [objects, longest, 2048] tensor is never
+    built for all objects at once (several GB on long videos); the resampler pads each chunk itself."""
+    def __init__(self, seqs, batch_first=True):
+        self.seqs = list(seqs)
+        self.shape = (len(self.seqs), max((len(x) for x in self.seqs), default=0), self.seqs[0].shape[-1])
+
+    def size(self, dim=None):
+        return self.shape if dim is None else self.shape[dim]
+
+
+def lazy_padding():
+    """rearrange_token with its two pad_sequence calls (TWR and OTR inputs) replaced by _Padded. Nothing else
+    in the function changes; the resamplers (chunk_resamplers) pad each chunk exactly as pad_sequence would."""
+    import inspect
+    import traser_train.train.token_arrangement as TA
+    if getattr(TA, "_lazy_padding", False):
+        return
+    src = inspect.getsource(TA.rearrange_token)
+    for a in ("torch.nn.utils.rnn.pad_sequence(seqs2, batch_first=True)",
+              "torch.nn.utils.rnn.pad_sequence(seqs, batch_first=True)"):
+        assert src.count(a) == 1, f"token_arrangement.py changed, cannot patch: {a}"
+        src = src.replace(a, "_Padded(" + a.split("(", 1)[1])
+    namespace = dict(vars(TA), _Padded=_Padded)
+    exec(compile(src, TA.__file__, "exec"), namespace)
+    TA.rearrange_token = T.rearrange_token = namespace["rearrange_token"]
+    TA._lazy_padding = True
+
+
 def chunk_resamplers(model, max_tokens=32768):
     """TRASER compresses every object's video tokens with two perceiver resamplers, all objects in one
     batch padded to the longest object (token_arrangement.py). With 40 objects on a long video that batch
@@ -63,8 +92,9 @@ def chunk_resamplers(model, max_tokens=32768):
         original = mod.forward
 
         def forward(context, attention_mask, _original=original):
-            n, length = context.shape[:2]
-            if n * length <= max_tokens:
+            n, length = context.shape[0], context.shape[1]
+            lazy = isinstance(context, _Padded)
+            if not lazy and n * length <= max_tokens:
                 return _original(context, attention_mask=attention_mask)
             lens = attention_mask.sum(1)
             order = torch.argsort(lens).tolist()
@@ -76,15 +106,41 @@ def chunk_resamplers(model, max_tokens=32768):
                     j += 1
                 idx = order[i:j]
                 cut = max(int(lens[idx].max()), 1)
-                sel = torch.tensor(idx, device=context.device)
-                y = _original(context[sel, :cut], attention_mask=attention_mask[sel, :cut])
+                sel = torch.tensor(idx, device=attention_mask.device)
+                if lazy:                      # pad this chunk only (zeros, like pad_sequence)
+                    first = context.seqs[idx[0]]
+                    x = torch.zeros(len(idx), cut, first.shape[-1], dtype=first.dtype, device=first.device)
+                    for k, o in enumerate(idx):
+                        x[k, :len(context.seqs[o])] = context.seqs[o]
+                else:
+                    x = context[sel, :cut]
+                y = _original(x, attention_mask=attention_mask[sel, :cut])
                 for k, o in enumerate(idx):
                     out[o] = y[k]
+                del x
                 i = j
             return torch.stack(out)
 
         mod.forward = forward
         mod._chunked = True
+
+
+def last_logits_only(model):
+    """TRASER's forward (modeling_traser.py) applies the output layer to every position of the prompt:
+    [1, ~25k tokens, 151936 words] = 6-7 GB on long videos, of which generate() only reads the last row.
+    Here the prompt pass computes that last row only (same values; decoding steps have one position anyway)."""
+    head = model.lm_head
+    if getattr(head, "_last_only", False):
+        return
+    original = head.forward
+
+    def forward(hidden_states):
+        if hidden_states.dim() == 3 and hidden_states.shape[1] > 1 and not torch.is_grad_enabled():
+            hidden_states = hidden_states[:, -1:, :]
+        return original(hidden_states)
+
+    head.forward = forward
+    head._last_only = True
 
 
 def chunk_vision(model, max_patches=32768):
@@ -121,8 +177,10 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     torch_dtype = getattr(torch, pick_dtype(dtype))
     avoid_math_attention()
     model = T.TRASER.from_pretrained(model_id or T.DEFAULT_MODEL, torch_dtype=torch_dtype).to(device).eval()
+    lazy_padding()
     chunk_resamplers(model)
     chunk_vision(model)
+    last_logits_only(model)
     processor = T.AutoProcessor.from_pretrained(base_model or T.BASE_MODEL)
     tokenizer = T.AutoTokenizer.from_pretrained(model_id or T.DEFAULT_MODEL, use_fast=False)
     processor.tokenizer = tokenizer
