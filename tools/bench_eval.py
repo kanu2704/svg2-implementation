@@ -248,6 +248,17 @@ def video_pairs(gt, pred, stats):
     return pairs, name, pred_name, by_pair
 
 
+def mask_status(gt, stats, max_objects=40):
+    """gt_id -> did TRASER get this object's mask? "yes (object k)" with the number TRASER calls it, or why not.
+    The run gives the first `max_objects` mask columns (by number) and drops those with no mask on the frames read."""
+    k_of = {c: k + 1 for k, c in enumerate(stats.get("mask_columns", []))}
+    requested = set(sorted(o["col"] for o in gt["objects"])[:stats.get("max_objects", max_objects)])
+    return {o["gt_id"]: f"yes (object {k_of[o['col']]})" if o["col"] in k_of
+            else "no: no mask on the frames TRASER reads" if o["col"] in requested
+            else f"no: after the first {stats.get('max_objects', max_objects)}"
+            for o in gt["objects"]}
+
+
 def given_objects(gt, stats):
     """Human object ids TRASER received (at most 40 mask columns); -1 is always there."""
     cols = set(stats.get("mask_columns", []))
@@ -319,12 +330,14 @@ def video_report(gt, pred, stats, judge, thr=0.5):
     name_of = {g: f"{n} #{g}" for g, n in name.items()}          # ids: a video often has two "adult"s
     name_of[-1] = "camera"
     mark = lambda x: "✓" if x else ("?" if x is None else "✗")
+    given = mask_status(gt, stats)
     obj_ok, objects = {-1: True}, []
     for o in gt["objects"]:
         g, hyp = o["gt_id"], pred_name.get(o["gt_id"])
         cat = judge.category("object", o["name"], hyp) if hyp is not None else "mismatch"
         obj_ok[g] = None if cat is None else is_right(cat, "lenient")
-        objects.append({"id": g, "human label": o["name"], "TRASER label": hyp if hyp is not None else "-",
+        objects.append({"id": g, "human label": o["name"], "mask given to TRASER?": given[g],
+                        "TRASER label": hyp if hyp is not None else "-",
                         "verdict": (cat or "not judged yet") if hyp is not None else "no label from TRASER",
                         "right": mark(obj_ok[g])})
     relations, n_rel, n_tri, n_unj = [], 0, 0, 0
@@ -451,12 +464,14 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
                      "TRASER said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in t) or "-",
                      "pair": status,
                      "relation right? (lenient, tIoU > 0.5)": " ".join(right) if h else "-"})
-    objects = []
+    objects, status_of = [], mask_status(gt, stats)
     for o in gt["objects"]:
         hyp = pred_name.get(o["gt_id"])
         cat = judge.category("object", o["name"], hyp) if hyp is not None else None
-        objects.append({"id": o["gt_id"], "human label": o["name"],
-                        "TRASER label": hyp if hyp is not None else "- (not given to TRASER)",
+        st = status_of[o["gt_id"]]
+        objects.append({"id": o["gt_id"], "human label": o["name"], "mask given to TRASER?": st,
+                        "TRASER label": hyp if hyp is not None else ("- (TRASER wrote no label)" if st.startswith("yes")
+                                                                     else "- (never shown to TRASER)"),
                         "verdict": (cat or "not judged yet") if hyp is not None else "-",
                         "right (lenient)": ("✓" if is_right(cat, "lenient") else ("?" if cat is None else "✗"))
                         if hyp is not None else "✗"})
@@ -479,7 +494,9 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
         objects, rows, c = pair_report(gt, pred, stats, judge, thr)
         sc = score_video(gt, pred, stats, judge, "lenient", thr)
         anchor = re.sub(r"[^a-z0-9_-]", "", v.lower())
+        n_given = sum(o["mask given to TRASER?"].startswith("yes") for o in objects)
         overview.append({"video": f"[{v}](#{anchor})", "source": gt.get("source", "-"),
+                         "masks given to TRASER": f"{n_given}/{len(objects)}",
                          "objects right": f"{sc['object_ok']}/{sc['objects']}",
                          "relations right": f"{sc['relation_ok']}/{sc['relations']}",
                          "triplets right": f"{sc['triplet_ok']}/{sc['relations']}",
@@ -490,6 +507,11 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
             f"## {v}\n\n{stats.get('duration_s')} s video; humans: {len(gt['objects'])} objects, {c['human_relations']} "
             f"relations on {c['human_pairs']} pairs; TRASER: {c['traser_relations']} relations on {c['traser_pairs']} pairs"
             f"{'' if pred['json_ok'] else ' (answer cut off at the token limit, read up to there)'}.\n\n"
+            f"**Masks given to TRASER:** {n_given} of {len(objects)} objects"
+            + ("" if n_given == len(objects) else
+               f" ({sum('after the first' in o['mask given to TRASER?'] for o in objects)} after the first 40, "
+               f"{sum('no mask on the frames' in o['mask given to TRASER?'] for o in objects)} with no mask on the frames "
+               "TRASER reads)") + "\n\n"
             f"**Pairs:** {c['both']} in both, {c['missed']} missed by TRASER, {c['reversed']} reversed, "
             f"{c['not_given']} with an object TRASER was not given, "
             f"{c['extra']} only TRASER\n\n**Objects: {sum(o['right (lenient)'] == '✓' for o in objects)}/{len(objects)} right**"
@@ -503,7 +525,11 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
             "- **✗ TRASER missed this pair**: humans annotated it, TRASER said nothing about these two objects\n"
             "- **↔ reversed**: TRASER only has the other direction (object → subject); scored as missed\n"
             "- **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, "
-            "so it could not answer; scored as missed, as in the paper's setup\n"
+            "so it could not answer; scored as missed in the main score (README.md also shows a score that leaves "
+            "these out)\n"
+            "- **mask given to TRASER?** (objects table): yes, with the number TRASER calls it (\"object k\"); or no, "
+            "because the run gives only the first 40 objects by number, or because the object has no mask on the "
+            "frames TRASER reads (about 1 per second)\n"
             "- **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)\n"
             "- last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, "
             "? the judge has not compared the words yet\n\n"

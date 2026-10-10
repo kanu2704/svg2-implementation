@@ -5,53 +5,56 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 - **✓ TRASER has this pair**: TRASER wrote at least one relation for the same two objects, same direction
 - **✗ TRASER missed this pair**: humans annotated it, TRASER said nothing about these two objects
 - **↔ reversed**: TRASER only has the other direction (object → subject); scored as missed
-- **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, so it could not answer; scored as missed, as in the paper's setup
+- **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, so it could not answer; scored as missed in the main score (README.md also shows a score that leaves these out)
+- **mask given to TRASER?** (objects table): yes, with the number TRASER calls it ("object k"); or no, because the run gives only the first 40 objects by number, or because the object has no mask on the frames TRASER reads (about 1 per second)
 - **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)
 - last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, ? the judge has not compared the words yet
 
 **Total over these videos:** 285 human pairs, 373 TRASER pairs; 94 in both, 166 missed, 13 reversed, 12 with an object not given, 279 only TRASER.
 
-| video | source | objects right | relations right | triplets right | human pairs | TRASER pairs | pairs in both | missed by TRASER | reversed | object not given | only TRASER |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [1190_UmpN6eLjN8w](#1190_umpn6eljn8w) | vipseg | 7/18 | 7/44 | 7/44 | 40 | 26 | 7 | 31 | 2 | 0 | 19 |
-| [339_j2gELsuQ3Cg](#339_j2gelsuq3cg) | vipseg | 12/14 | 1/20 | 1/20 | 17 | 14 | 3 | 14 | 0 | 0 | 11 |
-| [465_nbJ_SLWUDxk](#465_nbj_slwudxk) | vipseg | 34/39 | 7/24 | 6/24 | 21 | 47 | 8 | 10 | 3 | 0 | 39 |
-| [700_zkhPzSZcRtQ](#700_zkhpzszcrtq) | vipseg | 13/24 | 8/41 | 6/41 | 39 | 41 | 9 | 28 | 2 | 0 | 32 |
-| [722__ajUvCkhVcI](#722__ajuvckhvci) | vipseg | 12/18 | 7/39 | 7/39 | 32 | 30 | 9 | 21 | 2 | 0 | 21 |
-| [744_1X6KvqPjk6I](#744_1x6kvqpjk6i) | vipseg | 20/32 | 9/26 | 9/26 | 23 | 36 | 10 | 11 | 2 | 0 | 26 |
-| [888_BS3hab7EtAg](#888_bs3hab7etag) | vipseg | 23/26 | 18/39 | 15/39 | 36 | 61 | 21 | 13 | 2 | 0 | 40 |
-| [914_f4HgijyAEYs](#914_f4hgijyaeys) | vipseg | 10/19 | 8/21 | 6/21 | 19 | 41 | 9 | 10 | 0 | 0 | 32 |
-| [976_U19VojbI0h4](#976_u19vojbi0h4) | vipseg | 28/65 | 7/36 | 5/36 | 32 | 43 | 9 | 11 | 0 | 12 | 34 |
-| [sav_053005](#sav_053005) | sav | 17/29 | 10/29 | 10/29 | 26 | 34 | 9 | 17 | 0 | 0 | 25 |
+| video | source | masks given to TRASER | objects right | relations right | triplets right | human pairs | TRASER pairs | pairs in both | missed by TRASER | reversed | object not given | only TRASER |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [1190_UmpN6eLjN8w](#1190_umpn6eljn8w) | vipseg | 18/18 | 7/18 | 7/44 | 7/44 | 40 | 26 | 7 | 31 | 2 | 0 | 19 |
+| [339_j2gELsuQ3Cg](#339_j2gelsuq3cg) | vipseg | 14/14 | 12/14 | 1/20 | 1/20 | 17 | 14 | 3 | 14 | 0 | 0 | 11 |
+| [465_nbJ_SLWUDxk](#465_nbj_slwudxk) | vipseg | 39/39 | 34/39 | 7/24 | 6/24 | 21 | 47 | 8 | 10 | 3 | 0 | 39 |
+| [700_zkhPzSZcRtQ](#700_zkhpzszcrtq) | vipseg | 24/24 | 13/24 | 8/41 | 6/41 | 39 | 41 | 9 | 28 | 2 | 0 | 32 |
+| [722__ajUvCkhVcI](#722__ajuvckhvci) | vipseg | 18/18 | 12/18 | 7/39 | 7/39 | 32 | 30 | 9 | 21 | 2 | 0 | 21 |
+| [744_1X6KvqPjk6I](#744_1x6kvqpjk6i) | vipseg | 32/32 | 20/32 | 9/26 | 9/26 | 23 | 36 | 10 | 11 | 2 | 0 | 26 |
+| [888_BS3hab7EtAg](#888_bs3hab7etag) | vipseg | 26/26 | 23/26 | 18/39 | 15/39 | 36 | 61 | 21 | 13 | 2 | 0 | 40 |
+| [914_f4HgijyAEYs](#914_f4hgijyaeys) | vipseg | 19/19 | 10/19 | 8/21 | 6/21 | 19 | 41 | 9 | 10 | 0 | 0 | 32 |
+| [976_U19VojbI0h4](#976_u19vojbi0h4) | vipseg | 40/65 | 28/65 | 7/36 | 5/36 | 32 | 43 | 9 | 11 | 0 | 12 | 34 |
+| [sav_053005](#sav_053005) | sav | 29/29 | 17/29 | 10/29 | 10/29 | 26 | 34 | 9 | 17 | 0 | 0 | 25 |
 
 ## 1190_UmpN6eLjN8w
 
 10.17 s video; humans: 18 objects, 44 relations on 40 pairs; TRASER: 28 relations on 26 pairs.
 
+**Masks given to TRASER:** 18 of 18 objects
+
 **Pairs:** 7 in both, 31 missed by TRASER, 2 reversed, 0 with an object TRASER was not given, 19 only TRASER
 
 **Objects: 7/18 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | plane | airplane | synonym | ✓ |
-| 1 | person | person | identical | ✓ |
-| 2 | person | hat (uncertain) | mismatch | ✗ |
-| 3 | ocean | water | hypernym/hyponym | ✓ |
-| 4 | person | person | identical | ✓ |
-| 5 | sky | airplane | mismatch | ✗ |
-| 6 | hair | hair | identical | ✓ |
-| 7 | face | person | hypernym/hyponym | ✓ |
-| 8 | cap | hat (uncertain) | hypernym/hyponym | ✓ |
-| 9 | neck | person | mismatch | ✗ |
-| 10 | hair | person | mismatch | ✗ |
-| 11 | shirt | hat (uncertain) | mismatch | ✗ |
-| 12 | wing | airplane | mismatch | ✗ |
-| 13 | wing | airplane | mismatch | ✗ |
-| 14 | tyres | airplane | mismatch | ✗ |
-| 15 | tyres | airplane | mismatch | ✗ |
-| 16 | nose | airplane | mismatch | ✗ |
-| 17 | hair | person | mismatch | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | plane | yes (object 1) | airplane | synonym | ✓ |
+| 1 | person | yes (object 2) | person | identical | ✓ |
+| 2 | person | yes (object 3) | hat (uncertain) | mismatch | ✗ |
+| 3 | ocean | yes (object 4) | water | hypernym/hyponym | ✓ |
+| 4 | person | yes (object 5) | person | identical | ✓ |
+| 5 | sky | yes (object 6) | airplane | mismatch | ✗ |
+| 6 | hair | yes (object 7) | hair | identical | ✓ |
+| 7 | face | yes (object 8) | person | hypernym/hyponym | ✓ |
+| 8 | cap | yes (object 9) | hat (uncertain) | hypernym/hyponym | ✓ |
+| 9 | neck | yes (object 10) | person | mismatch | ✗ |
+| 10 | hair | yes (object 11) | person | mismatch | ✗ |
+| 11 | shirt | yes (object 12) | hat (uncertain) | mismatch | ✗ |
+| 12 | wing | yes (object 13) | airplane | mismatch | ✗ |
+| 13 | wing | yes (object 14) | airplane | mismatch | ✗ |
+| 14 | tyres | yes (object 15) | airplane | mismatch | ✗ |
+| 15 | tyres | yes (object 16) | airplane | mismatch | ✗ |
+| 16 | nose | yes (object 17) | airplane | mismatch | ✗ |
+| 17 | hair | yes (object 18) | person | mismatch | ✗ |
 
 **Relations, pair by pair**
 
@@ -122,26 +125,28 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 5.0 s video; humans: 14 objects, 20 relations on 17 pairs; TRASER: 19 relations on 14 pairs.
 
+**Masks given to TRASER:** 14 of 14 objects
+
 **Pairs:** 3 in both, 14 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 11 only TRASER
 
 **Objects: 12/14 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | person | person | identical | ✓ |
-| 1 | clothes | garment (uncertain) | synonym | ✓ |
-| 2 | clothes | garment (uncertain) | synonym | ✓ |
-| 3 | clothes | garment (uncertain) | synonym | ✓ |
-| 4 | closet | door frame (uncertain) | semantic overlap | ✓ |
-| 5 | closet divider | pole (uncertain) | semantic overlap | ✓ |
-| 6 | closet divider | door frame (uncertain) | semantic overlap | ✓ |
-| 7 | closet shelf | drawer (uncertain) | semantic overlap | ✓ |
-| 8 | hair | hair | identical | ✓ |
-| 9 | face | person | hypernym/hyponym | ✓ |
-| 10 | hand | arm | semantic overlap | ✓ |
-| 11 | shoulder | tank top | mismatch | ✗ |
-| 12 | shirt | tank top | hypernym/hyponym | ✓ |
-| 13 | plywood | fabric (uncertain) | mismatch | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | person | yes (object 1) | person | identical | ✓ |
+| 1 | clothes | yes (object 2) | garment (uncertain) | synonym | ✓ |
+| 2 | clothes | yes (object 3) | garment (uncertain) | synonym | ✓ |
+| 3 | clothes | yes (object 4) | garment (uncertain) | synonym | ✓ |
+| 4 | closet | yes (object 5) | door frame (uncertain) | semantic overlap | ✓ |
+| 5 | closet divider | yes (object 6) | pole (uncertain) | semantic overlap | ✓ |
+| 6 | closet divider | yes (object 7) | door frame (uncertain) | semantic overlap | ✓ |
+| 7 | closet shelf | yes (object 8) | drawer (uncertain) | semantic overlap | ✓ |
+| 8 | hair | yes (object 9) | hair | identical | ✓ |
+| 9 | face | yes (object 10) | person | hypernym/hyponym | ✓ |
+| 10 | hand | yes (object 11) | arm | semantic overlap | ✓ |
+| 11 | shoulder | yes (object 12) | tank top | mismatch | ✗ |
+| 12 | shirt | yes (object 13) | tank top | hypernym/hyponym | ✓ |
+| 13 | plywood | yes (object 14) | fabric (uncertain) | mismatch | ✗ |
 
 **Relations, pair by pair**
 
@@ -181,51 +186,53 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 7.5 s video; humans: 39 objects, 24 relations on 21 pairs; TRASER: 52 relations on 47 pairs.
 
+**Masks given to TRASER:** 39 of 39 objects
+
 **Pairs:** 8 in both, 10 missed by TRASER, 3 reversed, 0 with an object TRASER was not given, 39 only TRASER
 
 **Objects: 34/39 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | person | person | identical | ✓ |
-| 1 | person | person | identical | ✓ |
-| 2 | person | person | identical | ✓ |
-| 3 | person | person | identical | ✓ |
-| 4 | person | person | identical | ✓ |
-| 5 | person | person | identical | ✓ |
-| 6 | person | person | identical | ✓ |
-| 7 | person | child | hypernym/hyponym | ✓ |
-| 8 | person | person | identical | ✓ |
-| 9 | person | child | hypernym/hyponym | ✓ |
-| 10 | person | person | identical | ✓ |
-| 11 | person | person | identical | ✓ |
-| 12 | person | person | identical | ✓ |
-| 13 | person | person | identical | ✓ |
-| 14 | person | jersey (uncertain) | mismatch | ✗ |
-| 15 | person | person | identical | ✓ |
-| 16 | person | person | identical | ✓ |
-| 17 | person | person | identical | ✓ |
-| 18 | person | person | identical | ✓ |
-| 19 | person | person | identical | ✓ |
-| 20 | person | person | identical | ✓ |
-| 21 | person | person | identical | ✓ |
-| 22 | person | person | identical | ✓ |
-| 23 | person | person | identical | ✓ |
-| 24 | person | person | identical | ✓ |
-| 25 | person | person | identical | ✓ |
-| 26 | person | person | identical | ✓ |
-| 27 | person | person | identical | ✓ |
-| 28 | person | person | identical | ✓ |
-| 29 | ground | person | mismatch | ✗ |
-| 30 | buildings | hill | mismatch | ✗ |
-| 31 | sky | streetlight | mismatch | ✗ |
-| 32 | river | boat | mismatch | ✗ |
-| 33 | light | streetlight | hypernym/hyponym | ✓ |
-| 34 | light | streetlight | hypernym/hyponym | ✓ |
-| 35 | saxophone | saxophone | identical | ✓ |
-| 36 | shoes | roller skates | semantic overlap | ✓ |
-| 37 | hat | hat | identical | ✓ |
-| 38 | suit | suit jacket | hypernym/hyponym | ✓ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | person | yes (object 1) | person | identical | ✓ |
+| 1 | person | yes (object 2) | person | identical | ✓ |
+| 2 | person | yes (object 3) | person | identical | ✓ |
+| 3 | person | yes (object 4) | person | identical | ✓ |
+| 4 | person | yes (object 5) | person | identical | ✓ |
+| 5 | person | yes (object 6) | person | identical | ✓ |
+| 6 | person | yes (object 7) | person | identical | ✓ |
+| 7 | person | yes (object 8) | child | hypernym/hyponym | ✓ |
+| 8 | person | yes (object 9) | person | identical | ✓ |
+| 9 | person | yes (object 10) | child | hypernym/hyponym | ✓ |
+| 10 | person | yes (object 11) | person | identical | ✓ |
+| 11 | person | yes (object 12) | person | identical | ✓ |
+| 12 | person | yes (object 13) | person | identical | ✓ |
+| 13 | person | yes (object 14) | person | identical | ✓ |
+| 14 | person | yes (object 15) | jersey (uncertain) | mismatch | ✗ |
+| 15 | person | yes (object 16) | person | identical | ✓ |
+| 16 | person | yes (object 17) | person | identical | ✓ |
+| 17 | person | yes (object 18) | person | identical | ✓ |
+| 18 | person | yes (object 19) | person | identical | ✓ |
+| 19 | person | yes (object 20) | person | identical | ✓ |
+| 20 | person | yes (object 21) | person | identical | ✓ |
+| 21 | person | yes (object 22) | person | identical | ✓ |
+| 22 | person | yes (object 23) | person | identical | ✓ |
+| 23 | person | yes (object 24) | person | identical | ✓ |
+| 24 | person | yes (object 25) | person | identical | ✓ |
+| 25 | person | yes (object 26) | person | identical | ✓ |
+| 26 | person | yes (object 27) | person | identical | ✓ |
+| 27 | person | yes (object 28) | person | identical | ✓ |
+| 28 | person | yes (object 29) | person | identical | ✓ |
+| 29 | ground | yes (object 30) | person | mismatch | ✗ |
+| 30 | buildings | yes (object 31) | hill | mismatch | ✗ |
+| 31 | sky | yes (object 32) | streetlight | mismatch | ✗ |
+| 32 | river | yes (object 33) | boat | mismatch | ✗ |
+| 33 | light | yes (object 34) | streetlight | hypernym/hyponym | ✓ |
+| 34 | light | yes (object 35) | streetlight | hypernym/hyponym | ✓ |
+| 35 | saxophone | yes (object 36) | saxophone | identical | ✓ |
+| 36 | shoes | yes (object 37) | roller skates | semantic overlap | ✓ |
+| 37 | hat | yes (object 38) | hat | identical | ✓ |
+| 38 | suit | yes (object 39) | suit jacket | hypernym/hyponym | ✓ |
 
 **Relations, pair by pair**
 
@@ -297,36 +304,38 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 22.67 s video; humans: 24 objects, 41 relations on 39 pairs; TRASER: 116 relations on 41 pairs.
 
+**Masks given to TRASER:** 24 of 24 objects
+
 **Pairs:** 9 in both, 28 missed by TRASER, 2 reversed, 0 with an object TRASER was not given, 32 only TRASER
 
 **Objects: 13/24 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | mat | mat | identical | ✓ |
-| 1 | mat | crossbar (uncertain) | mismatch | ✗ |
-| 2 | floor | person | mismatch | ✗ |
-| 3 | pole | pole | identical | ✓ |
-| 4 | man | person | hypernym/hyponym | ✓ |
-| 5 | bat | handbag | mismatch | ✗ |
-| 6 | wall | net | mismatch | ✗ |
-| 7 | ball cart | shopping cart | semantic overlap | ✓ |
-| 8 | stripe or mat | mat | identical | ✓ |
-| 9 | stripe | mat | mismatch | ✗ |
-| 10 | stripe | tape measure (uncertain) | mismatch | ✗ |
-| 11 | wall poster | vent (uncertain) | mismatch | ✗ |
-| 12 | wall poster | vent (uncertain) | mismatch | ✗ |
-| 13 | wall poster | vent (uncertain) | mismatch | ✗ |
-| 14 | wall poster | vent (uncertain) | mismatch | ✗ |
-| 15 | strip | tape measure | semantic overlap | ✓ |
-| 16 | posters | basketball backboard | mismatch | ✗ |
-| 17 | shoe | shoe | identical | ✓ |
-| 18 | shoe | shoe | identical | ✓ |
-| 19 | hat | baseball cap | hypernym/hyponym | ✓ |
-| 20 | hoodie | jacket | hypernym/hyponym | ✓ |
-| 21 | pants | trousers (uncertain) | synonym | ✓ |
-| 22 | ball cart | shopping cart | semantic overlap | ✓ |
-| 23 | poster | banner | semantic overlap | ✓ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | mat | yes (object 1) | mat | identical | ✓ |
+| 1 | mat | yes (object 2) | crossbar (uncertain) | mismatch | ✗ |
+| 2 | floor | yes (object 3) | person | mismatch | ✗ |
+| 3 | pole | yes (object 4) | pole | identical | ✓ |
+| 4 | man | yes (object 5) | person | hypernym/hyponym | ✓ |
+| 5 | bat | yes (object 6) | handbag | mismatch | ✗ |
+| 6 | wall | yes (object 7) | net | mismatch | ✗ |
+| 7 | ball cart | yes (object 8) | shopping cart | semantic overlap | ✓ |
+| 8 | stripe or mat | yes (object 9) | mat | identical | ✓ |
+| 9 | stripe | yes (object 10) | mat | mismatch | ✗ |
+| 10 | stripe | yes (object 11) | tape measure (uncertain) | mismatch | ✗ |
+| 11 | wall poster | yes (object 12) | vent (uncertain) | mismatch | ✗ |
+| 12 | wall poster | yes (object 13) | vent (uncertain) | mismatch | ✗ |
+| 13 | wall poster | yes (object 14) | vent (uncertain) | mismatch | ✗ |
+| 14 | wall poster | yes (object 15) | vent (uncertain) | mismatch | ✗ |
+| 15 | strip | yes (object 16) | tape measure | semantic overlap | ✓ |
+| 16 | posters | yes (object 17) | basketball backboard | mismatch | ✗ |
+| 17 | shoe | yes (object 18) | shoe | identical | ✓ |
+| 18 | shoe | yes (object 19) | shoe | identical | ✓ |
+| 19 | hat | yes (object 20) | baseball cap | hypernym/hyponym | ✓ |
+| 20 | hoodie | yes (object 21) | jacket | hypernym/hyponym | ✓ |
+| 21 | pants | yes (object 22) | trousers (uncertain) | synonym | ✓ |
+| 22 | ball cart | yes (object 23) | shopping cart | semantic overlap | ✓ |
+| 23 | poster | yes (object 24) | banner | semantic overlap | ✓ |
 
 **Relations, pair by pair**
 
@@ -409,30 +418,32 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 22.67 s video; humans: 18 objects, 39 relations on 32 pairs; TRASER: 38 relations on 30 pairs.
 
+**Masks given to TRASER:** 18 of 18 objects
+
 **Pairs:** 9 in both, 21 missed by TRASER, 2 reversed, 0 with an object TRASER was not given, 21 only TRASER
 
 **Objects: 12/18 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | baby | child | hypernym/hyponym | ✓ |
-| 1 | baby | child | hypernym/hyponym | ✓ |
-| 2 | baby | person | hypernym/hyponym | ✓ |
-| 3 | ball pit | ball pit | identical | ✓ |
-| 4 | side of a cage | net | semantic overlap | ✓ |
-| 5 | side of a cage | net | semantic overlap | ✓ |
-| 6 | rope | pole (uncertain) | mismatch | ✗ |
-| 7 | rope | pole (uncertain) | mismatch | ✗ |
-| 8 | shirt | jersey (uncertain) | hypernym/hyponym | ✓ |
-| 9 | head | child | mismatch | ✗ |
-| 10 | short | shorts (uncertain) | identical | ✓ |
-| 11 | shirt | jersey (uncertain) | hypernym/hyponym | ✓ |
-| 12 | top | jersey (uncertain) | hypernym/hyponym | ✓ |
-| 13 | skirt | skirt | identical | ✓ |
-| 14 | trouser | trousers | identical | ✓ |
-| 15 | legs | sock (uncertain) | mismatch | ✗ |
-| 16 | legs | shoe | mismatch | ✗ |
-| 17 | legs | ball | mismatch | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | baby | yes (object 1) | child | hypernym/hyponym | ✓ |
+| 1 | baby | yes (object 2) | child | hypernym/hyponym | ✓ |
+| 2 | baby | yes (object 3) | person | hypernym/hyponym | ✓ |
+| 3 | ball pit | yes (object 4) | ball pit | identical | ✓ |
+| 4 | side of a cage | yes (object 5) | net | semantic overlap | ✓ |
+| 5 | side of a cage | yes (object 6) | net | semantic overlap | ✓ |
+| 6 | rope | yes (object 7) | pole (uncertain) | mismatch | ✗ |
+| 7 | rope | yes (object 8) | pole (uncertain) | mismatch | ✗ |
+| 8 | shirt | yes (object 9) | jersey (uncertain) | hypernym/hyponym | ✓ |
+| 9 | head | yes (object 10) | child | mismatch | ✗ |
+| 10 | short | yes (object 11) | shorts (uncertain) | identical | ✓ |
+| 11 | shirt | yes (object 12) | jersey (uncertain) | hypernym/hyponym | ✓ |
+| 12 | top | yes (object 13) | jersey (uncertain) | hypernym/hyponym | ✓ |
+| 13 | skirt | yes (object 14) | skirt | identical | ✓ |
+| 14 | trouser | yes (object 15) | trousers | identical | ✓ |
+| 15 | legs | yes (object 16) | sock (uncertain) | mismatch | ✗ |
+| 16 | legs | yes (object 17) | shoe | mismatch | ✗ |
+| 17 | legs | yes (object 18) | ball | mismatch | ✗ |
 
 **Relations, pair by pair**
 
@@ -497,44 +508,46 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 7.5 s video; humans: 32 objects, 26 relations on 23 pairs; TRASER: 38 relations on 36 pairs.
 
+**Masks given to TRASER:** 32 of 32 objects
+
 **Pairs:** 10 in both, 11 missed by TRASER, 2 reversed, 0 with an object TRASER was not given, 26 only TRASER
 
 **Objects: 20/32 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | dog | dog | identical | ✓ |
-| 1 | tree | tree | identical | ✓ |
-| 2 | plant | plant | identical | ✓ |
-| 3 | fence | fence | identical | ✓ |
-| 4 | grass | grass | identical | ✓ |
-| 5 | plants, soil | soil | semantic overlap | ✓ |
-| 6 | plant | plant | identical | ✓ |
-| 7 | person | person | identical | ✓ |
-| 8 | person | pole | mismatch | ✗ |
-| 9 | hat | hat | identical | ✓ |
-| 10 | hair | hair | identical | ✓ |
-| 11 | tail | tail | identical | ✓ |
-| 12 | dog leg | leg | hypernym/hyponym | ✓ |
-| 13 | dog leg | dog's leg | identical | ✓ |
-| 14 | dog leg | dog's leg | identical | ✓ |
-| 15 | head | dog | mismatch | ✗ |
-| 16 | barricade | wooden plank | mismatch | ✗ |
-| 17 | barricade | wooden plank | mismatch | ✗ |
-| 18 | stone | wooden block | mismatch | ✗ |
-| 19 | gardening glove | flowerpot | mismatch | ✗ |
-| 20 | fence | roof | mismatch | ✗ |
-| 21 | pillar | pole | synonym | ✓ |
-| 22 | fence | pole | mismatch | ✗ |
-| 23 | fence | fence | identical | ✓ |
-| 24 | pillar | pole | synonym | ✓ |
-| 25 | fence | fence | identical | ✓ |
-| 26 | wall | pole | mismatch | ✗ |
-| 27 | wall | stick | mismatch | ✗ |
-| 28 | pillar | pole | synonym | ✓ |
-| 29 | pillar | pole | synonym | ✓ |
-| 30 | fence | pole | mismatch | ✗ |
-| 31 | trouser | wooden plank | mismatch | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | dog | yes (object 1) | dog | identical | ✓ |
+| 1 | tree | yes (object 2) | tree | identical | ✓ |
+| 2 | plant | yes (object 3) | plant | identical | ✓ |
+| 3 | fence | yes (object 4) | fence | identical | ✓ |
+| 4 | grass | yes (object 5) | grass | identical | ✓ |
+| 5 | plants, soil | yes (object 6) | soil | semantic overlap | ✓ |
+| 6 | plant | yes (object 7) | plant | identical | ✓ |
+| 7 | person | yes (object 8) | person | identical | ✓ |
+| 8 | person | yes (object 9) | pole | mismatch | ✗ |
+| 9 | hat | yes (object 10) | hat | identical | ✓ |
+| 10 | hair | yes (object 11) | hair | identical | ✓ |
+| 11 | tail | yes (object 12) | tail | identical | ✓ |
+| 12 | dog leg | yes (object 13) | leg | hypernym/hyponym | ✓ |
+| 13 | dog leg | yes (object 14) | dog's leg | identical | ✓ |
+| 14 | dog leg | yes (object 15) | dog's leg | identical | ✓ |
+| 15 | head | yes (object 16) | dog | mismatch | ✗ |
+| 16 | barricade | yes (object 17) | wooden plank | mismatch | ✗ |
+| 17 | barricade | yes (object 18) | wooden plank | mismatch | ✗ |
+| 18 | stone | yes (object 19) | wooden block | mismatch | ✗ |
+| 19 | gardening glove | yes (object 20) | flowerpot | mismatch | ✗ |
+| 20 | fence | yes (object 21) | roof | mismatch | ✗ |
+| 21 | pillar | yes (object 22) | pole | synonym | ✓ |
+| 22 | fence | yes (object 23) | pole | mismatch | ✗ |
+| 23 | fence | yes (object 24) | fence | identical | ✓ |
+| 24 | pillar | yes (object 25) | pole | synonym | ✓ |
+| 25 | fence | yes (object 26) | fence | identical | ✓ |
+| 26 | wall | yes (object 27) | pole | mismatch | ✗ |
+| 27 | wall | yes (object 28) | stick | mismatch | ✗ |
+| 28 | pillar | yes (object 29) | pole | synonym | ✓ |
+| 29 | pillar | yes (object 30) | pole | synonym | ✓ |
+| 30 | fence | yes (object 31) | pole | mismatch | ✗ |
+| 31 | trouser | yes (object 32) | wooden plank | mismatch | ✗ |
 
 **Relations, pair by pair**
 
@@ -595,38 +608,40 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 7.5 s video; humans: 26 objects, 39 relations on 36 pairs; TRASER: 66 relations on 61 pairs.
 
+**Masks given to TRASER:** 26 of 26 objects
+
 **Pairs:** 21 in both, 13 missed by TRASER, 2 reversed, 0 with an object TRASER was not given, 40 only TRASER
 
 **Objects: 23/26 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | barricade | fence | synonym | ✓ |
-| 1 | trunk | pole | semantic overlap | ✓ |
-| 2 | building | house | hypernym/hyponym | ✓ |
-| 3 | trees | tree | identical | ✓ |
-| 4 | trees | tree | identical | ✓ |
-| 5 | trees | tree | identical | ✓ |
-| 6 | grass | grass | identical | ✓ |
-| 7 | grass | bush | semantic overlap | ✓ |
-| 8 | grass | grass | identical | ✓ |
-| 9 | people | car | mismatch | ✗ |
-| 10 | tiger | tiger | identical | ✓ |
-| 11 | cow | bull | synonym | ✓ |
-| 12 | trunk | pole | semantic overlap | ✓ |
-| 13 | trunk | tree trunk | identical | ✓ |
-| 14 | trunk | tree trunk | identical | ✓ |
-| 15 | trunk | tree trunk | identical | ✓ |
-| 16 | trunk | tree trunk | identical | ✓ |
-| 17 | trunk | tree trunk | identical | ✓ |
-| 18 | trunk | tree trunk | identical | ✓ |
-| 19 | trunk | pole | semantic overlap | ✓ |
-| 20 | trunk | pole | semantic overlap | ✓ |
-| 21 | legs | leg | identical | ✓ |
-| 22 | legs | tail | mismatch | ✗ |
-| 23 | tail | tail | identical | ✓ |
-| 24 | tiger head | tiger | semantic overlap | ✓ |
-| 25 | ram head | cow's ear | mismatch | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | barricade | yes (object 1) | fence | synonym | ✓ |
+| 1 | trunk | yes (object 2) | pole | semantic overlap | ✓ |
+| 2 | building | yes (object 3) | house | hypernym/hyponym | ✓ |
+| 3 | trees | yes (object 4) | tree | identical | ✓ |
+| 4 | trees | yes (object 5) | tree | identical | ✓ |
+| 5 | trees | yes (object 6) | tree | identical | ✓ |
+| 6 | grass | yes (object 7) | grass | identical | ✓ |
+| 7 | grass | yes (object 8) | bush | semantic overlap | ✓ |
+| 8 | grass | yes (object 9) | grass | identical | ✓ |
+| 9 | people | yes (object 10) | car | mismatch | ✗ |
+| 10 | tiger | yes (object 11) | tiger | identical | ✓ |
+| 11 | cow | yes (object 12) | bull | synonym | ✓ |
+| 12 | trunk | yes (object 13) | pole | semantic overlap | ✓ |
+| 13 | trunk | yes (object 14) | tree trunk | identical | ✓ |
+| 14 | trunk | yes (object 15) | tree trunk | identical | ✓ |
+| 15 | trunk | yes (object 16) | tree trunk | identical | ✓ |
+| 16 | trunk | yes (object 17) | tree trunk | identical | ✓ |
+| 17 | trunk | yes (object 18) | tree trunk | identical | ✓ |
+| 18 | trunk | yes (object 19) | tree trunk | identical | ✓ |
+| 19 | trunk | yes (object 20) | pole | semantic overlap | ✓ |
+| 20 | trunk | yes (object 21) | pole | semantic overlap | ✓ |
+| 21 | legs | yes (object 22) | leg | identical | ✓ |
+| 22 | legs | yes (object 23) | tail | mismatch | ✗ |
+| 23 | tail | yes (object 24) | tail | identical | ✓ |
+| 24 | tiger head | yes (object 25) | tiger | semantic overlap | ✓ |
+| 25 | ram head | yes (object 26) | cow's ear | mismatch | ✗ |
 
 **Relations, pair by pair**
 
@@ -714,31 +729,33 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 7.5 s video; humans: 19 objects, 21 relations on 19 pairs; TRASER: 43 relations on 41 pairs.
 
+**Masks given to TRASER:** 19 of 19 objects
+
 **Pairs:** 9 in both, 10 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 32 only TRASER
 
 **Objects: 10/19 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | person | person | identical | ✓ |
-| 1 | cotton candy | cloud-like object (uncertain) | semantic overlap | ✓ |
-| 2 | seat | signboard | mismatch | ✗ |
-| 3 | ride | carousel | hypernym/hyponym | ✓ |
-| 4 | landing | table | mismatch | ✗ |
-| 5 | building | pole | mismatch | ✗ |
-| 6 | circus | carousel | mismatch | ✗ |
-| 7 | circus | carousel | mismatch | ✗ |
-| 8 | circus | string of lights | mismatch | ✗ |
-| 9 | sky | awning | mismatch | ✗ |
-| 10 | seat | signboard | mismatch | ✗ |
-| 11 | ground | table | mismatch | ✗ |
-| 12 | light | light source (uncertain) | synonym | ✓ |
-| 13 | light | light source (uncertain) | synonym | ✓ |
-| 14 | glasses | spectacles | synonym | ✓ |
-| 15 | hair | hair | identical | ✓ |
-| 16 | jacket | jacket | identical | ✓ |
-| 17 | hand | hand | identical | ✓ |
-| 18 | hand | hand | identical | ✓ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | person | yes (object 1) | person | identical | ✓ |
+| 1 | cotton candy | yes (object 2) | cloud-like object (uncertain) | semantic overlap | ✓ |
+| 2 | seat | yes (object 3) | signboard | mismatch | ✗ |
+| 3 | ride | yes (object 4) | carousel | hypernym/hyponym | ✓ |
+| 4 | landing | yes (object 5) | table | mismatch | ✗ |
+| 5 | building | yes (object 6) | pole | mismatch | ✗ |
+| 6 | circus | yes (object 7) | carousel | mismatch | ✗ |
+| 7 | circus | yes (object 8) | carousel | mismatch | ✗ |
+| 8 | circus | yes (object 9) | string of lights | mismatch | ✗ |
+| 9 | sky | yes (object 10) | awning | mismatch | ✗ |
+| 10 | seat | yes (object 11) | signboard | mismatch | ✗ |
+| 11 | ground | yes (object 12) | table | mismatch | ✗ |
+| 12 | light | yes (object 13) | light source (uncertain) | synonym | ✓ |
+| 13 | light | yes (object 14) | light source (uncertain) | synonym | ✓ |
+| 14 | glasses | yes (object 15) | spectacles | synonym | ✓ |
+| 15 | hair | yes (object 16) | hair | identical | ✓ |
+| 16 | jacket | yes (object 17) | jacket | identical | ✓ |
+| 17 | hand | yes (object 18) | hand | identical | ✓ |
+| 18 | hand | yes (object 19) | hand | identical | ✓ |
 
 **Relations, pair by pair**
 
@@ -801,77 +818,79 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 7.5 s video; humans: 65 objects, 36 relations on 32 pairs; TRASER: 49 relations on 43 pairs.
 
+**Masks given to TRASER:** 40 of 65 objects (25 after the first 40, 0 with no mask on the frames TRASER reads)
+
 **Pairs:** 9 in both, 11 missed by TRASER, 0 reversed, 12 with an object TRASER was not given, 34 only TRASER
 
 **Objects: 28/65 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | ground | floor | synonym | ✓ |
-| 1 | painting | painting | identical | ✓ |
-| 2 | plant | flower arrangement | hypernym/hyponym | ✓ |
-| 3 | decoration | basket | mismatch | ✗ |
-| 4 | fireplace | fireplace | identical | ✓ |
-| 5 | cabinet | fireplace | mismatch | ✗ |
-| 6 | door | door | identical | ✓ |
-| 7 | wall | wall | identical | ✓ |
-| 8 | door | door frame (uncertain) | semantic overlap | ✓ |
-| 9 | lamp | lamp | identical | ✓ |
-| 10 | table | coffee table | hypernym/hyponym | ✓ |
-| 11 | interior | shelf | semantic overlap | ✓ |
-| 12 | shelf | shelf | identical | ✓ |
-| 13 | interior | plant | mismatch | ✗ |
-| 14 | ceiling fan | ceiling tile (uncertain) | semantic overlap | ✓ |
-| 15 | ceiling and upper wall | ceiling beam (uncertain) | semantic overlap | ✓ |
-| 16 | closet | door | mismatch | ✗ |
-| 17 | outlet | door handle | mismatch | ✗ |
-| 18 | table | coffee table | hypernym/hyponym | ✓ |
-| 19 | rug | coffee table | mismatch | ✗ |
-| 20 | vase | flowerpot | synonym | ✓ |
-| 21 | doorway | door | semantic overlap | ✓ |
-| 22 | wall | wall | identical | ✓ |
-| 23 | wall | shelf | mismatch | ✗ |
-| 24 | wall | wall | identical | ✓ |
-| 25 | lamp shade | lampshade | identical | ✓ |
-| 26 | lamp base | lamp | semantic overlap | ✓ |
-| 27 | throw pillow | table | mismatch | ✗ |
-| 28 | couch | coffee table | mismatch | ✗ |
-| 29 | cup | flowerpot | mismatch | ✗ |
-| 30 | leaves | flowerpot | mismatch | ✗ |
-| 31 | fireplace | fireplace | identical | ✓ |
-| 32 | fireplace face | fireplace | hypernym/hyponym | ✓ |
-| 33 | ceiling area | beam (uncertain) | hypernym/hyponym | ✓ |
-| 34 | fireplace frame | door frame (uncertain) | semantic overlap | ✓ |
-| 35 | flower vase | flowerpot | synonym | ✓ |
-| 36 | vase | flowerpot | synonym | ✓ |
-| 37 | home decor | flowerpot | hypernym/hyponym | ✓ |
-| 38 | home decor | flowerpot | hypernym/hyponym | ✓ |
-| 39 | socket | flowerpot | mismatch | ✗ |
-| 40 | flower | - (not given to TRASER) | - | ✗ |
-| 41 | vase stand | - (not given to TRASER) | - | ✗ |
-| 42 | tray | - (not given to TRASER) | - | ✗ |
-| 43 | fan | - (not given to TRASER) | - | ✗ |
-| 44 | cupboard handle | - (not given to TRASER) | - | ✗ |
-| 45 | cupboard handle | - (not given to TRASER) | - | ✗ |
-| 46 | flower vase | - (not given to TRASER) | - | ✗ |
-| 47 | flower stand | - (not given to TRASER) | - | ✗ |
-| 48 | vase | - (not given to TRASER) | - | ✗ |
-| 49 | home decor | - (not given to TRASER) | - | ✗ |
-| 50 | glass | - (not given to TRASER) | - | ✗ |
-| 51 | fireplace | - (not given to TRASER) | - | ✗ |
-| 52 | door | - (not given to TRASER) | - | ✗ |
-| 53 | ground | - (not given to TRASER) | - | ✗ |
-| 54 | door | - (not given to TRASER) | - | ✗ |
-| 55 | shelf | - (not given to TRASER) | - | ✗ |
-| 56 | shelf | - (not given to TRASER) | - | ✗ |
-| 57 | shelf | - (not given to TRASER) | - | ✗ |
-| 58 | household item | - (not given to TRASER) | - | ✗ |
-| 59 | wall | - (not given to TRASER) | - | ✗ |
-| 60 | light | - (not given to TRASER) | - | ✗ |
-| 61 | door frame | - (not given to TRASER) | - | ✗ |
-| 62 | top of a cupboard | - (not given to TRASER) | - | ✗ |
-| 63 | door of cupboard | - (not given to TRASER) | - | ✗ |
-| 64 | door of cupboard | - (not given to TRASER) | - | ✗ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | ground | yes (object 1) | floor | synonym | ✓ |
+| 1 | painting | yes (object 2) | painting | identical | ✓ |
+| 2 | plant | yes (object 3) | flower arrangement | hypernym/hyponym | ✓ |
+| 3 | decoration | yes (object 4) | basket | mismatch | ✗ |
+| 4 | fireplace | yes (object 5) | fireplace | identical | ✓ |
+| 5 | cabinet | yes (object 6) | fireplace | mismatch | ✗ |
+| 6 | door | yes (object 7) | door | identical | ✓ |
+| 7 | wall | yes (object 8) | wall | identical | ✓ |
+| 8 | door | yes (object 9) | door frame (uncertain) | semantic overlap | ✓ |
+| 9 | lamp | yes (object 10) | lamp | identical | ✓ |
+| 10 | table | yes (object 11) | coffee table | hypernym/hyponym | ✓ |
+| 11 | interior | yes (object 12) | shelf | semantic overlap | ✓ |
+| 12 | shelf | yes (object 13) | shelf | identical | ✓ |
+| 13 | interior | yes (object 14) | plant | mismatch | ✗ |
+| 14 | ceiling fan | yes (object 15) | ceiling tile (uncertain) | semantic overlap | ✓ |
+| 15 | ceiling and upper wall | yes (object 16) | ceiling beam (uncertain) | semantic overlap | ✓ |
+| 16 | closet | yes (object 17) | door | mismatch | ✗ |
+| 17 | outlet | yes (object 18) | door handle | mismatch | ✗ |
+| 18 | table | yes (object 19) | coffee table | hypernym/hyponym | ✓ |
+| 19 | rug | yes (object 20) | coffee table | mismatch | ✗ |
+| 20 | vase | yes (object 21) | flowerpot | synonym | ✓ |
+| 21 | doorway | yes (object 22) | door | semantic overlap | ✓ |
+| 22 | wall | yes (object 23) | wall | identical | ✓ |
+| 23 | wall | yes (object 24) | shelf | mismatch | ✗ |
+| 24 | wall | yes (object 25) | wall | identical | ✓ |
+| 25 | lamp shade | yes (object 26) | lampshade | identical | ✓ |
+| 26 | lamp base | yes (object 27) | lamp | semantic overlap | ✓ |
+| 27 | throw pillow | yes (object 28) | table | mismatch | ✗ |
+| 28 | couch | yes (object 29) | coffee table | mismatch | ✗ |
+| 29 | cup | yes (object 30) | flowerpot | mismatch | ✗ |
+| 30 | leaves | yes (object 31) | flowerpot | mismatch | ✗ |
+| 31 | fireplace | yes (object 32) | fireplace | identical | ✓ |
+| 32 | fireplace face | yes (object 33) | fireplace | hypernym/hyponym | ✓ |
+| 33 | ceiling area | yes (object 34) | beam (uncertain) | hypernym/hyponym | ✓ |
+| 34 | fireplace frame | yes (object 35) | door frame (uncertain) | semantic overlap | ✓ |
+| 35 | flower vase | yes (object 36) | flowerpot | synonym | ✓ |
+| 36 | vase | yes (object 37) | flowerpot | synonym | ✓ |
+| 37 | home decor | yes (object 38) | flowerpot | hypernym/hyponym | ✓ |
+| 38 | home decor | yes (object 39) | flowerpot | hypernym/hyponym | ✓ |
+| 39 | socket | yes (object 40) | flowerpot | mismatch | ✗ |
+| 40 | flower | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 41 | vase stand | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 42 | tray | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 43 | fan | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 44 | cupboard handle | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 45 | cupboard handle | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 46 | flower vase | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 47 | flower stand | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 48 | vase | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 49 | home decor | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 50 | glass | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 51 | fireplace | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 52 | door | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 53 | ground | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 54 | door | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 55 | shelf | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 56 | shelf | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 57 | shelf | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 58 | household item | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 59 | wall | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 60 | light | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 61 | door frame | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 62 | top of a cupboard | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 63 | door of cupboard | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
+| 64 | door of cupboard | no: after the first 40 | - (never shown to TRASER) | - | ✗ |
 
 **Relations, pair by pair**
 
@@ -949,41 +968,43 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 18.71 s video; humans: 29 objects, 29 relations on 26 pairs; TRASER: 37 relations on 34 pairs.
 
+**Masks given to TRASER:** 29 of 29 objects
+
 **Pairs:** 9 in both, 17 missed by TRASER, 0 reversed, 0 with an object TRASER was not given, 25 only TRASER
 
 **Objects: 17/29 right**
 
-| id | human label | TRASER label | verdict | right (lenient) |
-|---|---|---|---|---|
-| 0 | person | person | identical | ✓ |
-| 1 | carpet | rug | synonym | ✓ |
-| 2 | sofa | cushion | semantic overlap | ✓ |
-| 3 | table | ottoman | semantic overlap | ✓ |
-| 4 | curtain | curtain | identical | ✓ |
-| 5 | windows | window | identical | ✓ |
-| 6 | lights | curtain | mismatch | ✗ |
-| 7 | chair | sofa | semantic overlap | ✓ |
-| 8 | wall panel | baseboard (uncertain) | semantic overlap | ✓ |
-| 9 | floor | rug | semantic overlap | ✓ |
-| 10 | pillars | wall panel | mismatch | ✗ |
-| 11 | fountain | runner carpet | mismatch | ✗ |
-| 12 | desk | television set | mismatch | ✗ |
-| 13 | sofa | chair leg (uncertain) | mismatch | ✗ |
-| 14 | lights | signboard | mismatch | ✗ |
-| 15 | background | pillar | mismatch | ✗ |
-| 16 | screen | television | semantic overlap | ✓ |
-| 17 | chandelier lights | hand | mismatch | ✗ |
-| 18 | door | door | identical | ✓ |
-| 19 | oerson | person | identical | ✓ |
-| 20 | pillar | pillar | identical | ✓ |
-| 21 | reflected lights | curtain | mismatch | ✗ |
-| 22 | bag | handbag | hypernym/hyponym | ✓ |
-| 23 | head | hair | semantic overlap | ✓ |
-| 24 | legs | legs | identical | ✓ |
-| 25 | entrance | signboard | mismatch | ✗ |
-| 26 | balcony | pillar | mismatch | ✗ |
-| 27 | bench | runner carpet | mismatch | ✗ |
-| 28 | sign | signboard | synonym | ✓ |
+| id | human label | mask given to TRASER? | TRASER label | verdict | right (lenient) |
+|---|---|---|---|---|---|
+| 0 | person | yes (object 1) | person | identical | ✓ |
+| 1 | carpet | yes (object 2) | rug | synonym | ✓ |
+| 2 | sofa | yes (object 3) | cushion | semantic overlap | ✓ |
+| 3 | table | yes (object 4) | ottoman | semantic overlap | ✓ |
+| 4 | curtain | yes (object 5) | curtain | identical | ✓ |
+| 5 | windows | yes (object 6) | window | identical | ✓ |
+| 6 | lights | yes (object 7) | curtain | mismatch | ✗ |
+| 7 | chair | yes (object 8) | sofa | semantic overlap | ✓ |
+| 8 | wall panel | yes (object 9) | baseboard (uncertain) | semantic overlap | ✓ |
+| 9 | floor | yes (object 10) | rug | semantic overlap | ✓ |
+| 10 | pillars | yes (object 11) | wall panel | mismatch | ✗ |
+| 11 | fountain | yes (object 12) | runner carpet | mismatch | ✗ |
+| 12 | desk | yes (object 13) | television set | mismatch | ✗ |
+| 13 | sofa | yes (object 14) | chair leg (uncertain) | mismatch | ✗ |
+| 14 | lights | yes (object 15) | signboard | mismatch | ✗ |
+| 15 | background | yes (object 16) | pillar | mismatch | ✗ |
+| 16 | screen | yes (object 17) | television | semantic overlap | ✓ |
+| 17 | chandelier lights | yes (object 18) | hand | mismatch | ✗ |
+| 18 | door | yes (object 19) | door | identical | ✓ |
+| 19 | oerson | yes (object 20) | person | identical | ✓ |
+| 20 | pillar | yes (object 21) | pillar | identical | ✓ |
+| 21 | reflected lights | yes (object 22) | curtain | mismatch | ✗ |
+| 22 | bag | yes (object 23) | handbag | hypernym/hyponym | ✓ |
+| 23 | head | yes (object 24) | hair | semantic overlap | ✓ |
+| 24 | legs | yes (object 25) | legs | identical | ✓ |
+| 25 | entrance | yes (object 26) | signboard | mismatch | ✗ |
+| 26 | balcony | yes (object 27) | pillar | mismatch | ✗ |
+| 27 | bench | yes (object 28) | runner carpet | mismatch | ✗ |
+| 28 | sign | yes (object 29) | signboard | synonym | ✓ |
 
 **Relations, pair by pair**
 
