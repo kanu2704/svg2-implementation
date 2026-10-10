@@ -18,6 +18,9 @@ What the paper says (Sec. 5, "Evaluation Setup") and how it is done here:
     counts as right).
   - Not stated in the paper, our choice (reported): pooled over all human objects/relations of a
     dataset ("micro"); the per-video average ("macro") is reported next to it.
+  - Human objects TRASER was not given (beyond the 40-object cap, or no mask on the sampled frames) count
+    as wrong, and so do relations involving them; a second row scores only the objects it was given and
+    the relations between them.
 
 Time units: TRASER answers in indices of its ~1 fps sampled frames ("seconds"); [a, b] inclusive
 becomes [a, b + 1). For PVSG and VidOR (human spans in seconds) this is scaled by the real seconds per
@@ -240,8 +243,19 @@ def video_pairs(gt, pred, stats):
     return pairs, name, pred_name, by_pair
 
 
-def score_video(gt, pred, stats, judge, criterion="lenient", thr=0.5):
-    """Counts for one video. pred=None (no prediction) scores every human item as wrong."""
+def given_objects(gt, stats):
+    """Human object ids TRASER received (at most 40 mask columns); -1 is always there."""
+    cols = set(stats.get("mask_columns", []))
+    return {o["gt_id"] for o in gt["objects"] if o["col"] in cols} | {-1}
+
+
+def score_video(gt, pred, stats, judge, criterion="lenient", thr=0.5, given_only=False):
+    """Counts for one video. pred=None (no prediction) scores every human item as wrong.
+    given_only: count only the human objects TRASER received, and the relations between them."""
+    if given_only and pred is not None:
+        given = given_objects(gt, stats)
+        gt = dict(gt, objects=[o for o in gt["objects"] if o["gt_id"] in given],
+                  relations=[r for r in gt["relations"] if r["subj"] in given and r["obj"] in given])
     n_obj, n_rel = len(gt["objects"]), len(gt["relations"])
     out = {"objects": n_obj, "relations": n_rel, "object_ok": 0, "relation_ok": 0, "triplet_ok": 0,
            "relation_ok_any_time": 0, "unjudged": 0}
@@ -563,21 +577,21 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
         rep = {"videos_prepared": len(vids), "videos_predicted": len(done), "split_size": SPLIT_SIZE[ds],
                "failed": [v for v in failed if v not in done],
                "json_invalid": sum(not x[1]["json_ok"] for x in done.values()), "scores": {}}
-        for criterion in ("lenient", "strict"):
-            for thr in (0.5, 0.1):
-                rows = [score_video(*x, judge, criterion, thr) for x in done.values()]
-                tot = {k: sum(r[k] for r in rows) for k in rows[0]} if rows else {}
-                pct = lambda a, b: round(100 * a / b, 1) if b else None  # noqa: E731
-                macro = lambda k, d: round(100 * sum(r[k] / r[d] for r in rows if r[d]) / max(1, sum(1 for r in rows if r[d])), 1)  # noqa: E731
-                rep["scores"][f"{criterion}@{thr}"] = {
-                    "object": pct(tot.get("object_ok", 0), tot.get("objects", 0)),
-                    "relation": pct(tot.get("relation_ok", 0), tot.get("relations", 0)),
-                    "triplet": pct(tot.get("triplet_ok", 0), tot.get("relations", 0)),
-                    "relation_any_time": pct(tot.get("relation_ok_any_time", 0), tot.get("relations", 0)),
-                    "macro_object": macro("object_ok", "objects") if rows else None,
-                    "macro_relation": macro("relation_ok", "relations") if rows else None,
-                    "macro_triplet": macro("triplet_ok", "relations") if rows else None,
-                    "counts": tot}
+        for criterion, thr, given_only in (("lenient", 0.5, False), ("lenient", 0.1, False), ("strict", 0.5, False),
+                                       ("strict", 0.1, False), ("lenient", 0.5, True)):
+            rows = [score_video(*x, judge, criterion, thr, given_only) for x in done.values()]
+            tot = {k: sum(r[k] for r in rows) for k in rows[0]} if rows else {}
+            pct = lambda a, b: round(100 * a / b, 1) if b else None  # noqa: E731
+            macro = lambda k, d: round(100 * sum(r[k] / r[d] for r in rows if r[d]) / max(1, sum(1 for r in rows if r[d])), 1)  # noqa: E731
+            rep["scores"][f"{criterion}@{thr}" + ("_given" if given_only else "")] = {
+                "object": pct(tot.get("object_ok", 0), tot.get("objects", 0)),
+                "relation": pct(tot.get("relation_ok", 0), tot.get("relations", 0)),
+                "triplet": pct(tot.get("triplet_ok", 0), tot.get("relations", 0)),
+                "relation_any_time": pct(tot.get("relation_ok_any_time", 0), tot.get("relations", 0)),
+                "macro_object": macro("object_ok", "objects") if rows else None,
+                "macro_relation": macro("relation_ok", "relations") if rows else None,
+                "macro_triplet": macro("triplet_ok", "relations") if rows else None,
+                "counts": tot}
         groups = {}
         for gt, pred, st in done.values():
             g = groups.setdefault(gt.get("source") or "all", {"videos": 0, "seconds": 0.0, "cut_off": 0, "rows": []})
@@ -595,7 +609,7 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
                                      "object": pct(t["object_ok"], t["objects"])}
         unreachable = total_rel = 0
         for gt, pred, st in done.values():
-            given = {o["gt_id"] for o in gt["objects"] if o["col"] in set(st.get("mask_columns", []))} | {-1}
+            given = given_objects(gt, st)
             unreachable += sum(1 for r in gt["relations"] if r["subj"] not in given or r["obj"] not in given)
             total_rel += len(gt["relations"])
         rep["relations_with_object_not_given"] = [unreachable, total_rel]
@@ -643,7 +657,8 @@ def write_report(report, path=RESULTS / "README.md"):
           "| setting | " + " | ".join(f"{m} {d}" for m in ("Triplet", "Relation", "Object") for d in ds) + " |",
           "|---" * (1 + 3 * len(ds)) + "|"]
     for key, label in (("lenient@0.5", "lenient, tIoU 0.5 (main)"), ("lenient@0.1", "lenient, tIoU 0.1"),
-                       ("strict@0.5", "strict, tIoU 0.5"), ("strict@0.1", "strict, tIoU 0.1")):
+                       ("strict@0.5", "strict, tIoU 0.5"), ("strict@0.1", "strict, tIoU 0.1"),
+                       ("lenient@0.5_given", "lenient, tIoU 0.5, only the objects TRASER was given (≤ 40) and relations between them")):
         L.append(f"| {label} | " + " | ".join(cell(d, m, key) for m in ("triplet", "relation", "object") for d in ds) + " |")
     L.append("| lenient, tIoU 0.5, per-video average | " +
              " | ".join(cell(d, f"macro_{m}") for m in ("triplet", "relation", "object") for d in ds) + " |")

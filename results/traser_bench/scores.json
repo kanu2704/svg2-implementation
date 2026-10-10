@@ -77,6 +77,24 @@
      "relation_ok_any_time": 156,
      "unjudged": 0
     }
+   },
+   "lenient@0.5_given": {
+    "object": 68.4,
+    "relation": 14.2,
+    "triplet": 10.5,
+    "relation_any_time": 28.2,
+    "macro_object": 70.9,
+    "macro_relation": 15.6,
+    "macro_triplet": 11.1,
+    "counts": {
+     "objects": 1166,
+     "relations": 950,
+     "object_ok": 797,
+     "relation_ok": 135,
+     "triplet_ok": 100,
+     "relation_ok_any_time": 268,
+     "unjudged": 0
+    }
    }
   },
   "by_source": {
@@ -203,6 +221,24 @@
      "relation_ok": 703,
      "triplet_ok": 149,
      "relation_ok_any_time": 706,
+     "unjudged": 0
+    }
+   },
+   "lenient@0.5_given": {
+    "object": 67.7,
+    "relation": 29.1,
+    "triplet": 22.8,
+    "relation_any_time": 32.2,
+    "macro_object": 68.7,
+    "macro_relation": 29.4,
+    "macro_triplet": 23.4,
+    "counts": {
+     "objects": 2849,
+     "relations": 2964,
+     "object_ok": 1930,
+     "relation_ok": 864,
+     "triplet_ok": 676,
+     "relation_ok_any_time": 953,
      "unjudged": 0
     }
    }

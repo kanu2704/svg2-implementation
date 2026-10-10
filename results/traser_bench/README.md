@@ -37,6 +37,7 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 | lenient, tIoU 0.1 | 15.6 | – | 23.2 | 21.2 | – | 29.8 | 62.2 | – | 58.4 |
 | strict, tIoU 0.5 | 1.2 | – | 4.5 | 9.8 | – | 20.6 | 27.7 | – | 26.4 |
 | strict, tIoU 0.1 | 1.7 | – | 4.7 | 13.3 | – | 22.1 | 27.7 | – | 26.4 |
+| lenient, tIoU 0.5, only the objects TRASER was given (≤ 40) and relations between them | 10.5 | – | 22.8 | 14.2 | – | 29.1 | 68.4 | – | 67.7 |
 | lenient, tIoU 0.5, per-video average | 11.1 | – | 21.9 | 15.5 | – | 27.6 | 67.7 | – | 63.7 |
 | lenient, relation ignoring time | – | – | – | 27.7 | – | 29.9 | – | – | – |
 
