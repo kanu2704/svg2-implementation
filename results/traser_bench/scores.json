@@ -95,6 +95,42 @@
      "relation_ok_any_time": 268,
      "unjudged": 0
     }
+   },
+   "lenient@0.1_given": {
+    "object": 68.4,
+    "relation": 21.6,
+    "triplet": 15.9,
+    "relation_any_time": 28.2,
+    "macro_object": 70.9,
+    "macro_relation": 23.2,
+    "macro_triplet": 16.6,
+    "counts": {
+     "objects": 1166,
+     "relations": 950,
+     "object_ok": 797,
+     "relation_ok": 205,
+     "triplet_ok": 151,
+     "relation_ok_any_time": 268,
+     "unjudged": 0
+    }
+   },
+   "strict@0.5_given": {
+    "object": 30.4,
+    "relation": 10.0,
+    "triplet": 1.3,
+    "relation_any_time": 16.4,
+    "macro_object": 31.2,
+    "macro_relation": 10.9,
+    "macro_triplet": 1.4,
+    "counts": {
+     "objects": 1166,
+     "relations": 950,
+     "object_ok": 355,
+     "relation_ok": 95,
+     "triplet_ok": 12,
+     "relation_ok_any_time": 156,
+     "unjudged": 0
+    }
    }
   },
   "by_source": {
@@ -239,6 +275,42 @@
      "relation_ok": 864,
      "triplet_ok": 676,
      "relation_ok_any_time": 953,
+     "unjudged": 0
+    }
+   },
+   "lenient@0.1_given": {
+    "object": 67.7,
+    "relation": 32.0,
+    "triplet": 25.0,
+    "relation_any_time": 32.2,
+    "macro_object": 68.7,
+    "macro_relation": 32.6,
+    "macro_triplet": 25.7,
+    "counts": {
+     "objects": 2849,
+     "relations": 2964,
+     "object_ok": 1930,
+     "relation_ok": 949,
+     "triplet_ok": 740,
+     "relation_ok_any_time": 953,
+     "unjudged": 0
+    }
+   },
+   "strict@0.5_given": {
+    "object": 30.7,
+    "relation": 22.1,
+    "triplet": 4.8,
+    "relation_any_time": 23.8,
+    "macro_object": 30.4,
+    "macro_relation": 21.5,
+    "macro_triplet": 4.7,
+    "counts": {
+     "objects": 2849,
+     "relations": 2964,
+     "object_ok": 874,
+     "relation_ok": 655,
+     "triplet_ok": 143,
+     "relation_ok_any_time": 706,
      "unjudged": 0
     }
    }

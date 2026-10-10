@@ -29,6 +29,25 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 | sav | 33 | 17 s | 2 | 16.7 | 22.7 | 64.5 |
 | vipseg | 67 | 12 s | 2 | 23.4 | 29.2 | 55.1 |
 
+## Comparison with the paper
+
+Two ways of counting the human objects TRASER was not given (after the first 40, or no mask on the frames it reads): **all** counts them, and the relations involving them, as wrong; **given only** leaves them out. The number right is the same both ways (those items can never be right); only the number we divide by changes.
+
+| dataset | paper table | metric | setting | right | all human items | items TRASER was given | ours, all | ours, given only | paper | ours − paper (all) | ours − paper (given only) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| pvsg | Table 2 | Triplet | lenient, tIoU 0.5 | 100 | 969 | 950 | 10.3 | 10.5 | 16.1 | -5.8 | -5.6 |
+| pvsg | Table 2 | Relation | lenient, tIoU 0.5 | 135 | 969 | 950 | 13.9 | 14.2 | 16.9 | -3.0 | -2.7 |
+| pvsg | Table 2 | Object | lenient | 797 | 1282 | 1166 | 62.2 | 68.4 | 72.7 | -10.5 | -4.3 |
+| pvsg | Table 9 | Triplet | lenient, tIoU 0.1 | 151 | 969 | 950 | 15.6 | 15.9 | 23.8 | -8.2 | -7.9 |
+| pvsg | Table 9 | Relation | lenient, tIoU 0.1 | 205 | 969 | 950 | 21.2 | 21.6 | 25.4 | -4.2 | -3.8 |
+| pvsg | Table 9 | Object | strict (exact words) | 355 | 1282 | 1166 | 27.7 | 30.4 | 29.5 | -1.8 | +0.9 |
+| svg2test | Table 2 | Triplet | lenient, tIoU 0.5 | 676 | 3187 | 2964 | 21.2 | 22.8 | 16.7 | +4.5 | +6.1 |
+| svg2test | Table 2 | Relation | lenient, tIoU 0.5 | 864 | 3187 | 2964 | 27.1 | 29.1 | 18.7 | +8.4 | +10.4 |
+| svg2test | Table 2 | Object | lenient | 1930 | 3305 | 2849 | 58.4 | 67.7 | 79.0 | -20.6 | -11.3 |
+| svg2test | Table 9 | Triplet | lenient, tIoU 0.1 | 740 | 3187 | 2964 | 23.2 | 25.0 | 18.5 | +4.7 | +6.5 |
+| svg2test | Table 9 | Relation | lenient, tIoU 0.1 | 949 | 3187 | 2964 | 29.8 | 32.0 | 20.8 | +9.0 | +11.2 |
+| svg2test | Table 9 | Object | strict (exact words) | 874 | 3305 | 2849 | 26.4 | 30.7 | 28.8 | -2.4 | +1.9 |
+
 ## Other settings (same predictions)
 
 | setting | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |

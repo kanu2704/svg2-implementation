@@ -46,6 +46,11 @@ PAPER = {  # Table 2, TRASER row (lenient, tIoU 0.5)
     "relation": {"pvsg": 16.9, "vidor": 25.0, "svg2test": 18.7},
     "object": {"pvsg": 72.7, "vidor": 91.4, "svg2test": 79.0},
 }
+PAPER_T9 = {  # Table 9, TRASER row: triplet and relation lenient at tIoU 0.1, object strict (exact string)
+    "triplet": {"pvsg": 23.8, "vidor": 32.7, "svg2test": 18.5},
+    "relation": {"pvsg": 25.4, "vidor": 36.0, "svg2test": 20.8},
+    "object": {"pvsg": 29.5, "vidor": 31.7, "svg2test": 28.8},
+}
 SPLIT_SIZE = {"pvsg": 62, "vidor": 835, "svg2test": 100}
 CATEGORIES = ["identical", "synonym", "hypernym/hyponym", "semantic overlap", "mismatch"]
 
@@ -578,7 +583,8 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
                "failed": [v for v in failed if v not in done],
                "json_invalid": sum(not x[1]["json_ok"] for x in done.values()), "scores": {}}
         for criterion, thr, given_only in (("lenient", 0.5, False), ("lenient", 0.1, False), ("strict", 0.5, False),
-                                       ("strict", 0.1, False), ("lenient", 0.5, True)):
+                                       ("strict", 0.1, False), ("lenient", 0.5, True), ("lenient", 0.1, True),
+                                       ("strict", 0.5, True)):
             rows = [score_video(*x, judge, criterion, thr, given_only) for x in done.values()]
             tot = {k: sum(r[k] for r in rows) for k in rows[0]} if rows else {}
             pct = lambda a, b: round(100 * a / b, 1) if b else None  # noqa: E731
@@ -625,6 +631,36 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
     return report
 
 
+def _paper_comparison(report, ds):
+    """README section: our two ways of counting next to the paper's Table 2 and Table 9, with the counts."""
+    rows = [("Table 2", "Triplet", "lenient, tIoU 0.5", "lenient@0.5", "triplet", "relations", PAPER),
+            ("Table 2", "Relation", "lenient, tIoU 0.5", "lenient@0.5", "relation", "relations", PAPER),
+            ("Table 2", "Object", "lenient", "lenient@0.5", "object", "objects", PAPER),
+            ("Table 9", "Triplet", "lenient, tIoU 0.1", "lenient@0.1", "triplet", "relations", PAPER_T9),
+            ("Table 9", "Relation", "lenient, tIoU 0.1", "lenient@0.1", "relation", "relations", PAPER_T9),
+            ("Table 9", "Object", "strict (exact words)", "strict@0.5", "object", "objects", PAPER_T9)]
+    L = ["", "## Comparison with the paper", "",
+         "Two ways of counting the human objects TRASER was not given (after the first 40, or no mask on the frames "
+         "it reads): **all** counts them, and the relations involving them, as wrong; **given only** leaves them out. "
+         "The number right is the same both ways (those items can never be right); only the number we divide by changes.",
+         "", "| dataset | paper table | metric | setting | right | all human items | items TRASER was given | "
+         "ours, all | ours, given only | paper | ours − paper (all) | ours − paper (given only) |",
+         "|---" * 12 + "|"]
+    for d in ds:
+        r = report.get(d)
+        if not r or "lenient@0.5_given" not in r["scores"]:
+            continue
+        for table, metric, setting, key, m, unit, paper in rows:
+            a, g = r["scores"][key], r["scores"].get(key + "_given")
+            if not g or a.get(m) is None:
+                continue
+            ok = a["counts"][f"{m}_ok"]
+            p = paper[m][d]
+            L.append(f"| {d} | {table} | {metric} | {setting} | {ok} | {a['counts'][unit]} | {g['counts'][unit]} | "
+                     f"{a[m]:.1f} | {g[m]:.1f} | {p} | {a[m] - p:+.1f} | {g[m] - p:+.1f} |")
+    return L
+
+
 def write_report(report, path=RESULTS / "README.md"):
     def cell(ds, metric, key="lenient@0.5"):
         v = report.get(ds, {}).get("scores", {}).get(key, {}).get(metric)
@@ -653,6 +689,7 @@ def write_report(report, path=RESULTS / "README.md"):
                   "| source | videos | avg length | answers cut off | Triplet | Relation | Object |", "|---|---|---|---|---|---|---|"]
             for src, b in r["by_source"].items():
                 L.append(f"| {src} | {b['videos']} | {b['avg_seconds']} s | {b['cut_off']} | {b['triplet']} | {b['relation']} | {b['object']} |")
+    L += _paper_comparison(report, ds)
     L += ["", "## Other settings (same predictions)", "",
           "| setting | " + " | ".join(f"{m} {d}" for m in ("Triplet", "Relation", "Object") for d in ds) + " |",
           "|---" * (1 + 3 * len(ds)) + "|"]
