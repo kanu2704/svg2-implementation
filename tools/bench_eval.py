@@ -661,8 +661,9 @@ def write_report(report, path=RESULTS / "README.md"):
             L.append(f"- **{d}**: {r['json_invalid']} of {r['videos_predicted']} answers were cut off at the 8192-token limit "
                      f"(read up to the cut); {u} of {t} human relations ({100 * u / max(1, t):.1f}%) involve an object TRASER "
                      f"was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 "
-                     f"for {r.get('vision_float32', 0)} of {r['videos_predicted']} videos, float16 for the rest "
-                     f"(`{d}/preds_fp16_vision/` has the answers that were re-run).")
+                     + (f"for all {n} videos " if r.get("vision_float32", 0) == (n := r["videos_predicted"])
+                        else f"for {r.get('vision_float32', 0)} of {n} videos, float16 for the rest ")
+                     + f"(`{d}/preds_fp16_vision/` has older float16 answers that were re-run).")
     L += ["- Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`."]
     L += ["", "## How it is scored", "", "See the docstring of `tools/bench_eval.py`. Differences from the paper that we know of:",
           "- judge: Kimi K3 with our prompt (the paper's GPT-4o-mini prompt is not released);",

@@ -47,8 +47,8 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 
 ## Notes on these predictions
 
-- **pvsg**: 11 of 62 answers were cut off at the 8192-token limit (read up to the cut); 19 of 969 human relations (2.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for 5 of 62 videos, float16 for the rest (`pvsg/preds_fp16_vision/` has the answers that were re-run).
-- **svg2test**: 4 of 100 answers were cut off at the 8192-token limit (read up to the cut); 223 of 3187 human relations (7.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for 100 of 100 videos, float16 for the rest (`svg2test/preds_fp16_vision/` has the answers that were re-run).
+- **pvsg**: 11 of 62 answers were cut off at the 8192-token limit (read up to the cut); 19 of 969 human relations (2.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for 5 of 62 videos, float16 for the rest (`pvsg/preds_fp16_vision/` has older float16 answers that were re-run).
+- **svg2test**: 4 of 100 answers were cut off at the 8192-token limit (read up to the cut); 223 of 3187 human relations (7.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for all 100 videos (`svg2test/preds_fp16_vision/` has older float16 answers that were re-run).
 - Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`.
 
 ## How it is scored
