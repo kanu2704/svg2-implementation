@@ -126,5 +126,125 @@
     "synonym": 12
    }
   }
+ },
+ "svg2test": {
+  "videos_prepared": 100,
+  "videos_predicted": 100,
+  "split_size": 100,
+  "failed": [],
+  "json_invalid": 4,
+  "scores": {
+   "lenient@0.5": {
+    "object": 58.4,
+    "relation": 27.1,
+    "triplet": 21.2,
+    "relation_any_time": 29.9,
+    "macro_object": 63.7,
+    "macro_relation": 27.6,
+    "macro_triplet": 21.9,
+    "counts": {
+     "objects": 3305,
+     "relations": 3187,
+     "object_ok": 1930,
+     "relation_ok": 864,
+     "triplet_ok": 676,
+     "relation_ok_any_time": 953,
+     "unjudged": 0
+    }
+   },
+   "lenient@0.1": {
+    "object": 58.4,
+    "relation": 29.8,
+    "triplet": 23.2,
+    "relation_any_time": 29.9,
+    "macro_object": 63.7,
+    "macro_relation": 30.5,
+    "macro_triplet": 24.0,
+    "counts": {
+     "objects": 3305,
+     "relations": 3187,
+     "object_ok": 1930,
+     "relation_ok": 949,
+     "triplet_ok": 740,
+     "relation_ok_any_time": 953,
+     "unjudged": 0
+    }
+   },
+   "strict@0.5": {
+    "object": 26.4,
+    "relation": 20.6,
+    "triplet": 4.5,
+    "relation_any_time": 22.2,
+    "macro_object": 28.0,
+    "macro_relation": 20.5,
+    "macro_triplet": 4.6,
+    "counts": {
+     "objects": 3305,
+     "relations": 3187,
+     "object_ok": 874,
+     "relation_ok": 655,
+     "triplet_ok": 143,
+     "relation_ok_any_time": 706,
+     "unjudged": 0
+    }
+   },
+   "strict@0.1": {
+    "object": 26.4,
+    "relation": 22.1,
+    "triplet": 4.7,
+    "relation_any_time": 22.2,
+    "macro_object": 28.0,
+    "macro_relation": 21.9,
+    "macro_triplet": 4.8,
+    "counts": {
+     "objects": 3305,
+     "relations": 3187,
+     "object_ok": 874,
+     "relation_ok": 703,
+     "triplet_ok": 149,
+     "relation_ok_any_time": 706,
+     "unjudged": 0
+    }
+   }
+  },
+  "by_source": {
+   "sav": {
+    "videos": 33,
+    "avg_seconds": 17,
+    "cut_off": 2,
+    "triplet": 16.7,
+    "relation": 22.7,
+    "object": 64.5
+   },
+   "vipseg": {
+    "videos": 67,
+    "avg_seconds": 12,
+    "cut_off": 2,
+    "triplet": 23.4,
+    "relation": 29.2,
+    "object": 55.1
+   }
+  },
+  "relations_with_object_not_given": [
+   223,
+   3187
+  ],
+  "vision_float32": 100,
+  "judge_categories": {
+   "object": {
+    "hypernym/hyponym": 469,
+    "identical": 874,
+    "mismatch": 890,
+    "semantic overlap": 454,
+    "synonym": 133
+   },
+   "relation": {
+    "identical": 803,
+    "mismatch": 605,
+    "semantic overlap": 157,
+    "hypernym/hyponym": 130,
+    "synonym": 57
+   }
+  }
  }
 }
