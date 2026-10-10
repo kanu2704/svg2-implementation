@@ -8,7 +8,10 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 - **⊘ object not given**: one of the two objects was not among the (at most 40) objects TRASER received, so it could not answer; scored as missed in the main score (README.md also shows a score that leaves these out)
 - **mask given to TRASER?** (objects table): yes, with the number TRASER calls it ("object k"); or no, because the run gives only the first 40 objects by number, or because the object has no mask on the frames TRASER reads (about 1 per second)
 - **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)
-- last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, ? the judge has not compared the words yet
+- **both masks given?**: ✓ if TRASER got the masks of both objects of the pair in its input (the camera always counts as given), ✗ and which object was missing otherwise
+- **both objects named right?**: ✓ if TRASER's labels for both objects are right (lenient: not a mismatch), ✗ and which one is wrong (named wrong, or not given so never named)
+- **relation right?**, one mark per human relation of the pair: ✓ same two objects, relation word right and tIoU > 0.5; ✗ not; - TRASER wrote nothing for this pair; ? the judge has not compared the words yet. The object names do not matter here (paper's definition)
+- **triplet right?**, one mark per human relation: ✓ only if the relation is right AND both objects are named right
 
 **Total over these videos:** 285 human pairs, 373 TRASER pairs; 94 in both, 166 missed, 13 reversed, 12 with an object not given, 279 only TRASER.
 
@@ -58,67 +61,67 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| plane #0 → person #1 | above [0-11]; approaches [0-11] | above [0-11] | ✓ TRASER has this pair | ✓ ✗ |
-| plane #0 → person #2 | approaches [0-3, 6-8]; above [0-3, 6-8] | - | ✗ TRASER missed this pair | - - |
-| plane #0 → ocean #3 | above [0-11] | moving left relative to [0-11]; flying over [0-11]; above [0-11] | ✓ TRASER has this pair | ✓ |
-| plane #0 → person #4 | approaches [3-11]; above [2.5-11] | above [0-1, 3-11] | ✓ TRASER has this pair | ✗ ✓ |
-| plane #0 → sky #5 | moves across [0-11]; in front of [0-11] | - | ✗ TRASER missed this pair | - - |
-| plane #0 → wing #12 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| plane #0 → wing #13 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| plane #0 → tyres #14 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| plane #0 → tyres #15 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| plane #0 → nose #16 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| person #1 → plane #0 | looking at [2.5-5, 6.5-10] | looking at [0-11] | ✓ TRASER has this pair | ✓ |
-| person #1 → ocean #3 | in front of [0-11] | in front of [0-11] | ✓ TRASER has this pair | ✓ |
-| person #1 → sky #5 | in front of [0-11] | - | ✗ TRASER missed this pair | - |
-| person #1 → hair #6 | has [0-11] | - | ↔ TRASER has it reversed | - |
-| person #1 → face #7 | has [0-11] | - | ✗ TRASER missed this pair | - |
-| person #2 → plane #0 | looking at [0-3, 6-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → ocean #3 | in front of [0-3, 6-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → sky #5 | in front of [0-3, 6-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → cap #8 | wears [0-2, 6-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → shirt #11 | wears [0-3, 6-8] | - | ✗ TRASER missed this pair | - |
-| ocean #3 → sky #5 | in front of [0-11] | - | ✗ TRASER missed this pair | - |
-| person #4 → plane #0 | looking at [3-11] | - | ↔ TRASER has it reversed | - |
-| person #4 → ocean #3 | in front of [3-11] | in front of [0-1, 3-11] | ✓ TRASER has this pair | ✓ |
-| person #4 → sky #5 | in front of [3-11] | - | ✗ TRASER missed this pair | - |
-| sky #5 → ocean #3 | above [0-11] | - | ✗ TRASER missed this pair | - |
-| hair #6 → person #1 | on [0-11] | on [0-11] | ✓ TRASER has this pair | ✓ |
-| hair #6 → face #7 | above [0-11] | - | ✗ TRASER missed this pair | - |
-| face #7 → person #1 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| cap #8 → person #2 | on [0-2, 6-7] | - | ✗ TRASER missed this pair | - |
-| neck #9 → person #2 | on [0-2, 6-8] | - | ✗ TRASER missed this pair | - |
-| hair #10 → person #2 | on [0-2.5, 6-8] | - | ✗ TRASER missed this pair | - |
-| shirt #11 → person #2 | on [0-2, 6-7] | - | ✗ TRASER missed this pair | - |
-| wing #12 → plane #0 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| wing #13 → plane #0 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| tyres #14 → plane #0 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| tyres #14 → wing #12 | below [0-11] | - | ✗ TRASER missed this pair | - |
-| tyres #15 → plane #0 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| tyres #15 → wing #12 | below [0-11] | - | ✗ TRASER missed this pair | - |
-| nose #16 → plane #0 | on [0-11] | - | ✗ TRASER missed this pair | - |
-| hair #17 → person #4 | on [3-11] | - | ✗ TRASER missed this pair | - |
-| plane #0 → hair #6 | - | above [0-11] | + only TRASER | - |
-| plane #0 → face #7 | - | above [0-11] | + only TRASER | - |
-| plane #0 → neck #9 | - | above [0-1] | + only TRASER | - |
-| plane #0 → hair #10 | - | above [0-1] | + only TRASER | - |
-| plane #0 → hair #17 | - | above [0-1, 3-11] | + only TRASER | - |
-| face #7 → ocean #3 | - | in front of [0-11] | + only TRASER | - |
-| neck #9 → ocean #3 | - | in front of [0-1] | + only TRASER | - |
-| hair #10 → ocean #3 | - | in front of [0-1] | + only TRASER | - |
-| wing #12 → person #1 | - | above [0-11] | + only TRASER | - |
-| wing #12 → ocean #3 | - | above [0-11] | + only TRASER | - |
-| wing #13 → person #1 | - | above [0-11] | + only TRASER | - |
-| wing #13 → ocean #3 | - | above [0-11] | + only TRASER | - |
-| tyres #14 → person #1 | - | above [0-11] | + only TRASER | - |
-| tyres #14 → ocean #3 | - | above [0-11] | + only TRASER | - |
-| tyres #15 → person #1 | - | above [0-11] | + only TRASER | - |
-| tyres #15 → ocean #3 | - | above [0-11] | + only TRASER | - |
-| nose #16 → person #1 | - | above [0-11] | + only TRASER | - |
-| nose #16 → ocean #3 | - | above [0-11] | + only TRASER | - |
-| hair #17 → ocean #3 | - | in front of [0-1, 3-11] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| plane #0 → person #1 | ✓ | ✓ | above [0-11]; approaches [0-11] | above [0-11] | ✓ TRASER has this pair | ✓ ✗ | ✓ ✗ |
+| plane #0 → person #2 | ✓ | ✗ (person #2 named wrong) | approaches [0-3, 6-8]; above [0-3, 6-8] | - | ✗ TRASER missed this pair | - - | - - |
+| plane #0 → ocean #3 | ✓ | ✓ | above [0-11] | moving left relative to [0-11]; flying over [0-11]; above [0-11] | ✓ TRASER has this pair | ✓ | ✓ |
+| plane #0 → person #4 | ✓ | ✓ | approaches [3-11]; above [2.5-11] | above [0-1, 3-11] | ✓ TRASER has this pair | ✗ ✓ | ✗ ✓ |
+| plane #0 → sky #5 | ✓ | ✗ (sky #5 named wrong) | moves across [0-11]; in front of [0-11] | - | ✗ TRASER missed this pair | - - | - - |
+| plane #0 → wing #12 | ✓ | ✗ (wing #12 named wrong) | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| plane #0 → wing #13 | ✓ | ✗ (wing #13 named wrong) | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| plane #0 → tyres #14 | ✓ | ✗ (tyres #14 named wrong) | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| plane #0 → tyres #15 | ✓ | ✗ (tyres #15 named wrong) | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| plane #0 → nose #16 | ✓ | ✗ (nose #16 named wrong) | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| person #1 → plane #0 | ✓ | ✓ | looking at [2.5-5, 6.5-10] | looking at [0-11] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #1 → ocean #3 | ✓ | ✓ | in front of [0-11] | in front of [0-11] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #1 → sky #5 | ✓ | ✗ (sky #5 named wrong) | in front of [0-11] | - | ✗ TRASER missed this pair | - | - |
+| person #1 → hair #6 | ✓ | ✓ | has [0-11] | - | ↔ TRASER has it reversed | - | - |
+| person #1 → face #7 | ✓ | ✓ | has [0-11] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → plane #0 | ✓ | ✗ (person #2 named wrong) | looking at [0-3, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → ocean #3 | ✓ | ✗ (person #2 named wrong) | in front of [0-3, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → sky #5 | ✓ | ✗ (person #2 named wrong, sky #5 named wrong) | in front of [0-3, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → cap #8 | ✓ | ✗ (person #2 named wrong) | wears [0-2, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → shirt #11 | ✓ | ✗ (person #2 named wrong, shirt #11 named wrong) | wears [0-3, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| ocean #3 → sky #5 | ✓ | ✗ (sky #5 named wrong) | in front of [0-11] | - | ✗ TRASER missed this pair | - | - |
+| person #4 → plane #0 | ✓ | ✓ | looking at [3-11] | - | ↔ TRASER has it reversed | - | - |
+| person #4 → ocean #3 | ✓ | ✓ | in front of [3-11] | in front of [0-1, 3-11] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #4 → sky #5 | ✓ | ✗ (sky #5 named wrong) | in front of [3-11] | - | ✗ TRASER missed this pair | - | - |
+| sky #5 → ocean #3 | ✓ | ✗ (sky #5 named wrong) | above [0-11] | - | ✗ TRASER missed this pair | - | - |
+| hair #6 → person #1 | ✓ | ✓ | on [0-11] | on [0-11] | ✓ TRASER has this pair | ✓ | ✓ |
+| hair #6 → face #7 | ✓ | ✓ | above [0-11] | - | ✗ TRASER missed this pair | - | - |
+| face #7 → person #1 | ✓ | ✓ | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| cap #8 → person #2 | ✓ | ✗ (person #2 named wrong) | on [0-2, 6-7] | - | ✗ TRASER missed this pair | - | - |
+| neck #9 → person #2 | ✓ | ✗ (neck #9 named wrong, person #2 named wrong) | on [0-2, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| hair #10 → person #2 | ✓ | ✗ (hair #10 named wrong, person #2 named wrong) | on [0-2.5, 6-8] | - | ✗ TRASER missed this pair | - | - |
+| shirt #11 → person #2 | ✓ | ✗ (shirt #11 named wrong, person #2 named wrong) | on [0-2, 6-7] | - | ✗ TRASER missed this pair | - | - |
+| wing #12 → plane #0 | ✓ | ✗ (wing #12 named wrong) | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| wing #13 → plane #0 | ✓ | ✗ (wing #13 named wrong) | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| tyres #14 → plane #0 | ✓ | ✗ (tyres #14 named wrong) | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| tyres #14 → wing #12 | ✓ | ✗ (tyres #14 named wrong, wing #12 named wrong) | below [0-11] | - | ✗ TRASER missed this pair | - | - |
+| tyres #15 → plane #0 | ✓ | ✗ (tyres #15 named wrong) | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| tyres #15 → wing #12 | ✓ | ✗ (tyres #15 named wrong, wing #12 named wrong) | below [0-11] | - | ✗ TRASER missed this pair | - | - |
+| nose #16 → plane #0 | ✓ | ✗ (nose #16 named wrong) | on [0-11] | - | ✗ TRASER missed this pair | - | - |
+| hair #17 → person #4 | ✓ | ✗ (hair #17 named wrong) | on [3-11] | - | ✗ TRASER missed this pair | - | - |
+| plane #0 → hair #6 | ✓ | ✓ | - | above [0-11] | + only TRASER | - | - |
+| plane #0 → face #7 | ✓ | ✓ | - | above [0-11] | + only TRASER | - | - |
+| plane #0 → neck #9 | ✓ | ✗ (neck #9 named wrong) | - | above [0-1] | + only TRASER | - | - |
+| plane #0 → hair #10 | ✓ | ✗ (hair #10 named wrong) | - | above [0-1] | + only TRASER | - | - |
+| plane #0 → hair #17 | ✓ | ✗ (hair #17 named wrong) | - | above [0-1, 3-11] | + only TRASER | - | - |
+| face #7 → ocean #3 | ✓ | ✓ | - | in front of [0-11] | + only TRASER | - | - |
+| neck #9 → ocean #3 | ✓ | ✗ (neck #9 named wrong) | - | in front of [0-1] | + only TRASER | - | - |
+| hair #10 → ocean #3 | ✓ | ✗ (hair #10 named wrong) | - | in front of [0-1] | + only TRASER | - | - |
+| wing #12 → person #1 | ✓ | ✗ (wing #12 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| wing #12 → ocean #3 | ✓ | ✗ (wing #12 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| wing #13 → person #1 | ✓ | ✗ (wing #13 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| wing #13 → ocean #3 | ✓ | ✗ (wing #13 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| tyres #14 → person #1 | ✓ | ✗ (tyres #14 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| tyres #14 → ocean #3 | ✓ | ✗ (tyres #14 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| tyres #15 → person #1 | ✓ | ✗ (tyres #15 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| tyres #15 → ocean #3 | ✓ | ✗ (tyres #15 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| nose #16 → person #1 | ✓ | ✗ (nose #16 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| nose #16 → ocean #3 | ✓ | ✗ (nose #16 named wrong) | - | above [0-11] | + only TRASER | - | - |
+| hair #17 → ocean #3 | ✓ | ✗ (hair #17 named wrong) | - | in front of [0-1, 3-11] | + only TRASER | - | - |
 
 
 ## 339_j2gELsuQ3Cg
@@ -150,36 +153,36 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| person #0 → clothes #1 | looks at [0-6]; touches [0-3]; moves leftward [2-5] | - | ✗ TRASER missed this pair | - - - |
-| person #0 → closet #4 | in front of [0-5]; browses [0-6] | - | ✗ TRASER missed this pair | - - |
-| person #0 → shirt #12 | wears [0-5] | wearing [0-6]; in front of [0-6] | ✓ TRASER has this pair | ✓ |
-| clothes #1 → person #0 | behind [0-6] | - | ✗ TRASER missed this pair | - |
-| clothes #1 → closet #4 | in [0-6] | - | ✗ TRASER missed this pair | - |
-| clothes #2 → person #0 | behind [0-5.5] | - | ✗ TRASER missed this pair | - |
-| clothes #3 → person #0 | behind [0-5] | - | ✗ TRASER missed this pair | - |
-| closet divider #5 → person #0 | behind [1.5-3.5] | - | ✗ TRASER missed this pair | - |
-| closet divider #6 → person #0 | behind [0-5] | - | ✗ TRASER missed this pair | - |
-| closet shelf #7 → closet divider #6 | below [0-5] | - | ✗ TRASER missed this pair | - |
-| hair #8 → closet #4 | in front of [0-6] | - | ✗ TRASER missed this pair | - |
-| face #9 → closet #4 | in front of [0-5] | - | ✗ TRASER missed this pair | - |
-| hand #10 → clothes #1 | in front of [0-5] | - | ✗ TRASER missed this pair | - |
-| hand #10 → closet #4 | in front of [0-2.5, 3-5] | - | ✗ TRASER missed this pair | - |
-| hand #10 → face #9 | below [0-2.5, 4.5-6] | - | ✗ TRASER missed this pair | - |
-| shoulder #11 → face #9 | below [0-5] | overlapping [0-6] | ✓ TRASER has this pair | ✗ |
-| shirt #12 → face #9 | below [0-5] | overlapping [0-6] | ✓ TRASER has this pair | ✗ |
-| person #0 → hair #8 | - | has [0-6]; in front of [0-6] | + only TRASER | - |
-| person #0 → face #9 | - | looking at [0-6]; in front of [0-6] | + only TRASER | - |
-| person #0 → hand #10 | - | has [0-6]; in front of [0-6] | + only TRASER | - |
-| person #0 → shoulder #11 | - | wearing [0-6]; in front of [0-6] | + only TRASER | - |
-| hair #8 → face #9 | - | overlapping [0-6] | + only TRASER | - |
-| hair #8 → shoulder #11 | - | overlapping [0-6] | + only TRASER | - |
-| hair #8 → shirt #12 | - | overlapping [0-6] | + only TRASER | - |
-| hand #10 → hair #8 | - | overlapping [0-6] | + only TRASER | - |
-| hand #10 → shoulder #11 | - | overlapping [0-6] | + only TRASER | - |
-| hand #10 → shirt #12 | - | overlapping [0-6] | + only TRASER | - |
-| shoulder #11 → shirt #12 | - | overlapping [0-6] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| person #0 → clothes #1 | ✓ | ✓ | looks at [0-6]; touches [0-3]; moves leftward [2-5] | - | ✗ TRASER missed this pair | - - - | - - - |
+| person #0 → closet #4 | ✓ | ✓ | in front of [0-5]; browses [0-6] | - | ✗ TRASER missed this pair | - - | - - |
+| person #0 → shirt #12 | ✓ | ✓ | wears [0-5] | wearing [0-6]; in front of [0-6] | ✓ TRASER has this pair | ✓ | ✓ |
+| clothes #1 → person #0 | ✓ | ✓ | behind [0-6] | - | ✗ TRASER missed this pair | - | - |
+| clothes #1 → closet #4 | ✓ | ✓ | in [0-6] | - | ✗ TRASER missed this pair | - | - |
+| clothes #2 → person #0 | ✓ | ✓ | behind [0-5.5] | - | ✗ TRASER missed this pair | - | - |
+| clothes #3 → person #0 | ✓ | ✓ | behind [0-5] | - | ✗ TRASER missed this pair | - | - |
+| closet divider #5 → person #0 | ✓ | ✓ | behind [1.5-3.5] | - | ✗ TRASER missed this pair | - | - |
+| closet divider #6 → person #0 | ✓ | ✓ | behind [0-5] | - | ✗ TRASER missed this pair | - | - |
+| closet shelf #7 → closet divider #6 | ✓ | ✓ | below [0-5] | - | ✗ TRASER missed this pair | - | - |
+| hair #8 → closet #4 | ✓ | ✓ | in front of [0-6] | - | ✗ TRASER missed this pair | - | - |
+| face #9 → closet #4 | ✓ | ✓ | in front of [0-5] | - | ✗ TRASER missed this pair | - | - |
+| hand #10 → clothes #1 | ✓ | ✓ | in front of [0-5] | - | ✗ TRASER missed this pair | - | - |
+| hand #10 → closet #4 | ✓ | ✓ | in front of [0-2.5, 3-5] | - | ✗ TRASER missed this pair | - | - |
+| hand #10 → face #9 | ✓ | ✓ | below [0-2.5, 4.5-6] | - | ✗ TRASER missed this pair | - | - |
+| shoulder #11 → face #9 | ✓ | ✗ (shoulder #11 named wrong) | below [0-5] | overlapping [0-6] | ✓ TRASER has this pair | ✗ | ✗ |
+| shirt #12 → face #9 | ✓ | ✓ | below [0-5] | overlapping [0-6] | ✓ TRASER has this pair | ✗ | ✗ |
+| person #0 → hair #8 | ✓ | ✓ | - | has [0-6]; in front of [0-6] | + only TRASER | - | - |
+| person #0 → face #9 | ✓ | ✓ | - | looking at [0-6]; in front of [0-6] | + only TRASER | - | - |
+| person #0 → hand #10 | ✓ | ✓ | - | has [0-6]; in front of [0-6] | + only TRASER | - | - |
+| person #0 → shoulder #11 | ✓ | ✗ (shoulder #11 named wrong) | - | wearing [0-6]; in front of [0-6] | + only TRASER | - | - |
+| hair #8 → face #9 | ✓ | ✓ | - | overlapping [0-6] | + only TRASER | - | - |
+| hair #8 → shoulder #11 | ✓ | ✗ (shoulder #11 named wrong) | - | overlapping [0-6] | + only TRASER | - | - |
+| hair #8 → shirt #12 | ✓ | ✓ | - | overlapping [0-6] | + only TRASER | - | - |
+| hand #10 → hair #8 | ✓ | ✓ | - | overlapping [0-6] | + only TRASER | - | - |
+| hand #10 → shoulder #11 | ✓ | ✗ (shoulder #11 named wrong) | - | overlapping [0-6] | + only TRASER | - | - |
+| hand #10 → shirt #12 | ✓ | ✓ | - | overlapping [0-6] | + only TRASER | - | - |
+| shoulder #11 → shirt #12 | ✓ | ✗ (shoulder #11 named wrong) | - | overlapping [0-6] | + only TRASER | - | - |
 
 
 ## 465_nbJ_SLWUDxk
@@ -236,68 +239,68 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| person #0 → person #1 | performs for [0-8]; approaches [0-5] | in front of [0-9] | ✓ TRASER has this pair | ✓ ✗ |
-| person #0 → person #7 | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → ground #29 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| person #0 → buildings #30 | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → hat #37 | wears [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → suit #38 | wears [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ |
-| person #1 → person #0 | in front of [0-8]; looks at [5-8] | - | ↔ TRASER has it reversed | - - |
-| person #1 → person #2 | dances with [0-8]; in front of [0-8] | - | ✗ TRASER missed this pair | - - |
-| person #1 → ground #29 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| person #1 → buildings #30 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → ground #29 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → buildings #30 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| person #2 → shoes #36 | wears [0-6] | - | ✗ TRASER missed this pair | - |
-| person #24 → person #0 | looks at [0-8] | - | ↔ TRASER has it reversed | - |
-| sky #31 → buildings #30 | above [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✗ |
-| river #32 → person #0 | behind [0-8] | - | ↔ TRASER has it reversed | - |
-| light #33 → ground #29 | above [0-8] | - | ✗ TRASER missed this pair | - |
-| light #34 → ground #29 | above [0-8] | - | ✗ TRASER missed this pair | - |
-| shoes #36 → person #2 | on [0-6.5] | - | ✗ TRASER missed this pair | - |
-| hat #37 → person #0 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| suit #38 → person #0 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → person #2 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #3 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #4 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #5 | - | in front of [0-4] | + only TRASER | - |
-| person #0 → person #6 | - | in front of [0-4] | + only TRASER | - |
-| person #0 → person #8 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #9 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #10 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #11 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #12 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #13 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #15 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #16 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #17 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #18 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #19 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #20 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #21 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #22 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #23 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #24 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #25 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #26 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #27 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → person #28 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → sky #31 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → river #32 | - | in front of [0-9]; in front of [0-9] | + only TRASER | - |
-| person #0 → light #33 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → light #34 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → saxophone #35 | - | holding [0-9]; playing [0-9]; looking at [0-9]; performing with [0-9] | + only TRASER | - |
-| river #32 → buildings #30 | - | in front of [0-9] | + only TRASER | - |
-| light #33 → buildings #30 | - | in front of [0-9] | + only TRASER | - |
-| light #34 → buildings #30 | - | in front of [0-9] | + only TRASER | - |
-| saxophone #35 → person #0 | - | in front of [0-9]; below [0-9] | + only TRASER | - |
-| saxophone #35 → buildings #30 | - | in front of [0-9] | + only TRASER | - |
-| saxophone #35 → river #32 | - | in front of [0-9] | + only TRASER | - |
-| shoes #36 → person #0 | - | below [0-9] | + only TRASER | - |
-| shoes #36 → saxophone #35 | - | below [0-9] | + only TRASER | - |
-| hat #37 → suit #38 | - | above [0-9] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| person #0 → person #1 | ✓ | ✓ | performs for [0-8]; approaches [0-5] | in front of [0-9] | ✓ TRASER has this pair | ✓ ✗ | ✓ ✗ |
+| person #0 → person #7 | ✓ | ✓ | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → ground #29 | ✓ | ✗ (ground #29 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #0 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ | ✗ |
+| person #0 → hat #37 | ✓ | ✓ | wears [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → suit #38 | ✓ | ✓ | wears [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #1 → person #0 | ✓ | ✓ | in front of [0-8]; looks at [5-8] | - | ↔ TRASER has it reversed | - - | - - |
+| person #1 → person #2 | ✓ | ✓ | dances with [0-8]; in front of [0-8] | - | ✗ TRASER missed this pair | - - | - - |
+| person #1 → ground #29 | ✓ | ✗ (ground #29 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #1 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → ground #29 | ✓ | ✗ (ground #29 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #2 → shoes #36 | ✓ | ✓ | wears [0-6] | - | ✗ TRASER missed this pair | - | - |
+| person #24 → person #0 | ✓ | ✓ | looks at [0-8] | - | ↔ TRASER has it reversed | - | - |
+| sky #31 → buildings #30 | ✓ | ✗ (sky #31 named wrong, buildings #30 named wrong) | above [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✗ | ✗ |
+| river #32 → person #0 | ✓ | ✗ (river #32 named wrong) | behind [0-8] | - | ↔ TRASER has it reversed | - | - |
+| light #33 → ground #29 | ✓ | ✗ (ground #29 named wrong) | above [0-8] | - | ✗ TRASER missed this pair | - | - |
+| light #34 → ground #29 | ✓ | ✗ (ground #29 named wrong) | above [0-8] | - | ✗ TRASER missed this pair | - | - |
+| shoes #36 → person #2 | ✓ | ✓ | on [0-6.5] | - | ✗ TRASER missed this pair | - | - |
+| hat #37 → person #0 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| suit #38 → person #0 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → person #2 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #4 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #5 | ✓ | ✓ | - | in front of [0-4] | + only TRASER | - | - |
+| person #0 → person #6 | ✓ | ✓ | - | in front of [0-4] | + only TRASER | - | - |
+| person #0 → person #8 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #9 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #10 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #11 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #12 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #13 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #15 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #16 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #17 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #18 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #19 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #20 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #21 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #22 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #23 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #24 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #25 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #26 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #27 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → person #28 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → sky #31 | ✓ | ✗ (sky #31 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → river #32 | ✓ | ✗ (river #32 named wrong) | - | in front of [0-9]; in front of [0-9] | + only TRASER | - | - |
+| person #0 → light #33 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → light #34 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → saxophone #35 | ✓ | ✓ | - | holding [0-9]; playing [0-9]; looking at [0-9]; performing with [0-9] | + only TRASER | - | - |
+| river #32 → buildings #30 | ✓ | ✗ (river #32 named wrong, buildings #30 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| light #33 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| light #34 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| saxophone #35 → person #0 | ✓ | ✓ | - | in front of [0-9]; below [0-9] | + only TRASER | - | - |
+| saxophone #35 → buildings #30 | ✓ | ✗ (buildings #30 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| saxophone #35 → river #32 | ✓ | ✗ (river #32 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| shoes #36 → person #0 | ✓ | ✓ | - | below [0-9] | + only TRASER | - | - |
+| shoes #36 → saxophone #35 | ✓ | ✓ | - | below [0-9] | + only TRASER | - | - |
+| hat #37 → suit #38 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
 
 
 ## 700_zkhPzSZcRtQ
@@ -339,79 +342,79 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| mat #0 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| mat #0 → wall #6 | in front of [0-23] | - | ✗ TRASER missed this pair | - |
-| mat #1 → mat #0 | behind [0-23] | - | ✗ TRASER missed this pair | - |
-| mat #1 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| pole #3 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| pole #3 → wall #6 | in front of [0-23] | - | ✗ TRASER missed this pair | - |
-| man #4 → mat #0 | approaching [18-21]; moving away from [20-23] | moving relative to [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✗ ✗ |
-| man #4 → floor #2 | on [0-23]; walking on [18-23] | - | ✗ TRASER missed this pair | - - |
-| man #4 → bat #5 | holding [0-23] | holding [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → wall #6 | in front of [0-23] | in front of [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → ball cart #7 | in front of [0-23] | moving relative to [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → shoe #17 | wearing [0-23] | wearing [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → shoe #18 | wearing [0-23] | wearing [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → hat #19 | wearing [0-23] | wearing [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → hoodie #20 | wearing [0-23] | wearing [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ |
-| man #4 → pants #21 | wearing [0-23] | - | ✗ TRASER missed this pair | - |
-| bat #5 → floor #2 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| bat #5 → wall #6 | in front of [0-23] | - | ✗ TRASER missed this pair | - |
-| ball cart #7 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| ball cart #7 → wall #6 | in front of [0-23] | - | ✗ TRASER missed this pair | - |
-| stripe or mat #8 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| stripe #9 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| stripe #10 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| wall poster #11 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| wall poster #12 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| wall poster #13 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| wall poster #14 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| posters #16 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| shoe #17 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| shoe #18 → floor #2 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| hat #19 → man #4 | on [0-23] | - | ↔ TRASER has it reversed | - |
-| hat #19 → hoodie #20 | above [0-23] | above [0-24] | ✓ TRASER has this pair | ✓ |
-| hoodie #20 → man #4 | on [0-23] | - | ↔ TRASER has it reversed | - |
-| hoodie #20 → pants #21 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| pants #21 → man #4 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| pants #21 → shoe #17 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| pants #21 → shoe #18 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| poster #23 → wall #6 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| poster #23 → ball cart #7 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| man #4 → pole #3 | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - |
-| man #4 → stripe or mat #8 | - | in front of [0-24] | + only TRASER | - |
-| man #4 → stripe #9 | - | in front of [0-24] | + only TRASER | - |
-| man #4 → strip #15 | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - |
-| man #4 → posters #16 | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - |
-| man #4 → ball cart #22 | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - |
-| man #4 → poster #23 | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - |
-| bat #5 → man #4 | - | overlapping [0-24] | + only TRASER | - |
-| shoe #17 → mat #0 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → mat #1 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → pole #3 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → ball cart #7 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → stripe or mat #8 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → stripe #9 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → strip #15 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → posters #16 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → ball cart #22 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #17 → poster #23 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → mat #0 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → mat #1 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → pole #3 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → ball cart #7 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → stripe or mat #8 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → stripe #9 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → strip #15 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → posters #16 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → ball cart #22 | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| shoe #18 → poster #23 | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - |
-| hat #19 → shoe #17 | - | above [0-24] | + only TRASER | - |
-| hat #19 → shoe #18 | - | above [0-24] | + only TRASER | - |
-| hoodie #20 → shoe #17 | - | above [0-24] | + only TRASER | - |
-| hoodie #20 → shoe #18 | - | above [0-24] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| mat #0 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| mat #0 → wall #6 | ✓ | ✗ (wall #6 named wrong) | in front of [0-23] | - | ✗ TRASER missed this pair | - | - |
+| mat #1 → mat #0 | ✓ | ✗ (mat #1 named wrong) | behind [0-23] | - | ✗ TRASER missed this pair | - | - |
+| mat #1 → floor #2 | ✓ | ✗ (mat #1 named wrong, floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| pole #3 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| pole #3 → wall #6 | ✓ | ✗ (wall #6 named wrong) | in front of [0-23] | - | ✗ TRASER missed this pair | - | - |
+| man #4 → mat #0 | ✓ | ✓ | approaching [18-21]; moving away from [20-23] | moving relative to [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✗ ✗ | ✗ ✗ |
+| man #4 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23]; walking on [18-23] | - | ✗ TRASER missed this pair | - - | - - |
+| man #4 → bat #5 | ✓ | ✗ (bat #5 named wrong) | holding [0-23] | holding [0-24] | ✓ TRASER has this pair | ✓ | ✗ |
+| man #4 → wall #6 | ✓ | ✗ (wall #6 named wrong) | in front of [0-23] | in front of [0-24] | ✓ TRASER has this pair | ✓ | ✗ |
+| man #4 → ball cart #7 | ✓ | ✓ | in front of [0-23] | moving relative to [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| man #4 → shoe #17 | ✓ | ✓ | wearing [0-23] | wearing [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| man #4 → shoe #18 | ✓ | ✓ | wearing [0-23] | wearing [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| man #4 → hat #19 | ✓ | ✓ | wearing [0-23] | wearing [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| man #4 → hoodie #20 | ✓ | ✓ | wearing [0-23] | wearing [0-24]; in front of [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| man #4 → pants #21 | ✓ | ✓ | wearing [0-23] | - | ✗ TRASER missed this pair | - | - |
+| bat #5 → floor #2 | ✓ | ✗ (bat #5 named wrong, floor #2 named wrong) | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| bat #5 → wall #6 | ✓ | ✗ (bat #5 named wrong, wall #6 named wrong) | in front of [0-23] | - | ✗ TRASER missed this pair | - | - |
+| ball cart #7 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| ball cart #7 → wall #6 | ✓ | ✗ (wall #6 named wrong) | in front of [0-23] | - | ✗ TRASER missed this pair | - | - |
+| stripe or mat #8 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| stripe #9 → floor #2 | ✓ | ✗ (stripe #9 named wrong, floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| stripe #10 → floor #2 | ✓ | ✗ (stripe #10 named wrong, floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| wall poster #11 → wall #6 | ✓ | ✗ (wall poster #11 named wrong, wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| wall poster #12 → wall #6 | ✓ | ✗ (wall poster #12 named wrong, wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| wall poster #13 → wall #6 | ✓ | ✗ (wall poster #13 named wrong, wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| wall poster #14 → wall #6 | ✓ | ✗ (wall poster #14 named wrong, wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| posters #16 → wall #6 | ✓ | ✗ (posters #16 named wrong, wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| shoe #17 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| shoe #18 → floor #2 | ✓ | ✗ (floor #2 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| hat #19 → man #4 | ✓ | ✓ | on [0-23] | - | ↔ TRASER has it reversed | - | - |
+| hat #19 → hoodie #20 | ✓ | ✓ | above [0-23] | above [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| hoodie #20 → man #4 | ✓ | ✓ | on [0-23] | - | ↔ TRASER has it reversed | - | - |
+| hoodie #20 → pants #21 | ✓ | ✓ | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| pants #21 → man #4 | ✓ | ✓ | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| pants #21 → shoe #17 | ✓ | ✓ | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| pants #21 → shoe #18 | ✓ | ✓ | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| poster #23 → wall #6 | ✓ | ✗ (wall #6 named wrong) | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| poster #23 → ball cart #7 | ✓ | ✓ | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| man #4 → pole #3 | ✓ | ✓ | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - | - |
+| man #4 → stripe or mat #8 | ✓ | ✓ | - | in front of [0-24] | + only TRASER | - | - |
+| man #4 → stripe #9 | ✓ | ✗ (stripe #9 named wrong) | - | in front of [0-24] | + only TRASER | - | - |
+| man #4 → strip #15 | ✓ | ✓ | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - | - |
+| man #4 → posters #16 | ✓ | ✗ (posters #16 named wrong) | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - | - |
+| man #4 → ball cart #22 | ✓ | ✓ | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - | - |
+| man #4 → poster #23 | ✓ | ✓ | - | moving relative to [0-24]; in front of [0-24] | + only TRASER | - | - |
+| bat #5 → man #4 | ✓ | ✗ (bat #5 named wrong) | - | overlapping [0-24] | + only TRASER | - | - |
+| shoe #17 → mat #0 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → mat #1 | ✓ | ✗ (mat #1 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → pole #3 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → ball cart #7 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → stripe or mat #8 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → stripe #9 | ✓ | ✗ (stripe #9 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → strip #15 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → posters #16 | ✓ | ✗ (posters #16 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → ball cart #22 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #17 → poster #23 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → mat #0 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → mat #1 | ✓ | ✗ (mat #1 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → pole #3 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → ball cart #7 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → stripe or mat #8 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → stripe #9 | ✓ | ✗ (stripe #9 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → strip #15 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → posters #16 | ✓ | ✗ (posters #16 named wrong) | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → ball cart #22 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| shoe #18 → poster #23 | ✓ | ✓ | - | in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24]; in front of [0-24] | + only TRASER | - | - |
+| hat #19 → shoe #17 | ✓ | ✓ | - | above [0-24] | + only TRASER | - | - |
+| hat #19 → shoe #18 | ✓ | ✓ | - | above [0-24] | + only TRASER | - | - |
+| hoodie #20 → shoe #17 | ✓ | ✓ | - | above [0-24] | + only TRASER | - | - |
+| hoodie #20 → shoe #18 | ✓ | ✓ | - | above [0-24] | + only TRASER | - | - |
 
 
 ## 722__ajUvCkhVcI
@@ -447,61 +450,61 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| baby #0 → baby #1 | looking at [8-11]; in front of [0-23] | next to [0-24] | ✓ TRASER has this pair | ✗ ✓ |
-| baby #0 → baby #2 | looking at [13-23] | - | ↔ TRASER has it reversed | - |
-| baby #0 → ball pit #3 | inside [0-23]; playing with [0-23] | in [0-24] | ✓ TRASER has this pair | ✓ ✗ |
-| baby #0 → side of a cage #4 | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ |
-| baby #0 → side of a cage #5 | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ |
-| baby #0 → shirt #8 | wearing [0-23] | - | ✗ TRASER missed this pair | - |
-| baby #0 → short #10 | wearing [0-23] | - | ✗ TRASER missed this pair | - |
-| baby #1 → ball pit #3 | inside [0-23] | in [0-24] | ✓ TRASER has this pair | ✓ |
-| baby #1 → side of a cage #4 | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ |
-| baby #1 → side of a cage #5 | holding [8-23]; approaching [1-9]; climbing [8.5-23]; looking at [8-23]; in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✗ ✗ ✗ ✗ ✓ |
-| baby #1 → shirt #11 | wearing [0-23] | - | ✗ TRASER missed this pair | - |
-| baby #1 → trouser #14 | wearing [0-23] | - | ↔ TRASER has it reversed | - |
-| baby #2 → ball pit #3 | inside [10-19]; playing with [12-20] | behind [11-24] | ✓ TRASER has this pair | ✗ ✗ |
-| baby #2 → side of a cage #4 | approaching [12-18] | - | ✗ TRASER missed this pair | - |
-| baby #2 → top #12 | wearing [12-21] | - | ✗ TRASER missed this pair | - |
-| baby #2 → skirt #13 | wearing [12-23] | - | ✗ TRASER missed this pair | - |
-| rope #6 → baby #0 | in front of [0-9] | - | ✗ TRASER missed this pair | - |
-| rope #6 → ball pit #3 | in front of [0-9] | - | ✗ TRASER missed this pair | - |
-| rope #7 → baby #0 | in front of [0-11] | - | ✗ TRASER missed this pair | - |
-| rope #7 → baby #1 | in front of [0-11.5] | - | ✗ TRASER missed this pair | - |
-| rope #7 → ball pit #3 | in front of [0-11] | - | ✗ TRASER missed this pair | - |
-| shirt #8 → baby #0 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| head #9 → shirt #8 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| head #9 → short #10 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| short #10 → baby #0 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| short #10 → shirt #8 | below [0-23] | - | ✗ TRASER missed this pair | - |
-| shirt #11 → baby #1 | on [0-23] | - | ✗ TRASER missed this pair | - |
-| shirt #11 → trouser #14 | above [0-23] | - | ✗ TRASER missed this pair | - |
-| top #12 → baby #2 | on [13-21] | - | ✗ TRASER missed this pair | - |
-| skirt #13 → baby #2 | on [12-23] | - | ✗ TRASER missed this pair | - |
-| skirt #13 → top #12 | below [12.5-22] | - | ✗ TRASER missed this pair | - |
-| trouser #14 → baby #1 | on [0-23] | behind [0-24] | ✓ TRASER has this pair | ✗ |
-| baby #0 → head #9 | - | next to [0-24] | + only TRASER | - |
-| baby #1 → head #9 | - | next to [0-24] | + only TRASER | - |
-| baby #2 → baby #0 | - | behind [11-24] | + only TRASER | - |
-| baby #2 → baby #1 | - | behind [11-24] | + only TRASER | - |
-| baby #2 → head #9 | - | behind [11-24] | + only TRASER | - |
-| head #9 → ball pit #3 | - | in [0-24] | + only TRASER | - |
-| head #9 → side of a cage #4 | - | in front of [0-24]; below [0-24] | + only TRASER | - |
-| head #9 → side of a cage #5 | - | in front of [0-24]; below [0-24] | + only TRASER | - |
-| trouser #14 → baby #0 | - | behind [0-24] | + only TRASER | - |
-| trouser #14 → ball pit #3 | - | behind [0-24] | + only TRASER | - |
-| trouser #14 → head #9 | - | behind [0-24] | + only TRASER | - |
-| legs #16 → baby #0 | - | behind [15-24] | + only TRASER | - |
-| legs #16 → baby #1 | - | behind [15-24] | + only TRASER | - |
-| legs #16 → ball pit #3 | - | behind [15-24] | + only TRASER | - |
-| legs #16 → head #9 | - | behind [15-24] | + only TRASER | - |
-| legs #17 → baby #0 | - | near [15-24] | + only TRASER | - |
-| legs #17 → baby #1 | - | near [15-24] | + only TRASER | - |
-| legs #17 → ball pit #3 | - | in [15-24] | + only TRASER | - |
-| legs #17 → side of a cage #4 | - | in front of [15-24]; below [15-24] | + only TRASER | - |
-| legs #17 → side of a cage #5 | - | in front of [15-24]; below [15-24] | + only TRASER | - |
-| legs #17 → head #9 | - | near [15-24] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| baby #0 → baby #1 | ✓ | ✓ | looking at [8-11]; in front of [0-23] | next to [0-24] | ✓ TRASER has this pair | ✗ ✓ | ✗ ✓ |
+| baby #0 → baby #2 | ✓ | ✓ | looking at [13-23] | - | ↔ TRASER has it reversed | - | - |
+| baby #0 → ball pit #3 | ✓ | ✓ | inside [0-23]; playing with [0-23] | in [0-24] | ✓ TRASER has this pair | ✓ ✗ | ✓ ✗ |
+| baby #0 → side of a cage #4 | ✓ | ✓ | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| baby #0 → side of a cage #5 | ✓ | ✓ | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| baby #0 → shirt #8 | ✓ | ✓ | wearing [0-23] | - | ✗ TRASER missed this pair | - | - |
+| baby #0 → short #10 | ✓ | ✓ | wearing [0-23] | - | ✗ TRASER missed this pair | - | - |
+| baby #1 → ball pit #3 | ✓ | ✓ | inside [0-23] | in [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| baby #1 → side of a cage #4 | ✓ | ✓ | in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✓ | ✓ |
+| baby #1 → side of a cage #5 | ✓ | ✓ | holding [8-23]; approaching [1-9]; climbing [8.5-23]; looking at [8-23]; in front of [0-23] | in front of [0-24]; below [0-24] | ✓ TRASER has this pair | ✗ ✗ ✗ ✗ ✓ | ✗ ✗ ✗ ✗ ✓ |
+| baby #1 → shirt #11 | ✓ | ✓ | wearing [0-23] | - | ✗ TRASER missed this pair | - | - |
+| baby #1 → trouser #14 | ✓ | ✓ | wearing [0-23] | - | ↔ TRASER has it reversed | - | - |
+| baby #2 → ball pit #3 | ✓ | ✓ | inside [10-19]; playing with [12-20] | behind [11-24] | ✓ TRASER has this pair | ✗ ✗ | ✗ ✗ |
+| baby #2 → side of a cage #4 | ✓ | ✓ | approaching [12-18] | - | ✗ TRASER missed this pair | - | - |
+| baby #2 → top #12 | ✓ | ✓ | wearing [12-21] | - | ✗ TRASER missed this pair | - | - |
+| baby #2 → skirt #13 | ✓ | ✓ | wearing [12-23] | - | ✗ TRASER missed this pair | - | - |
+| rope #6 → baby #0 | ✓ | ✗ (rope #6 named wrong) | in front of [0-9] | - | ✗ TRASER missed this pair | - | - |
+| rope #6 → ball pit #3 | ✓ | ✗ (rope #6 named wrong) | in front of [0-9] | - | ✗ TRASER missed this pair | - | - |
+| rope #7 → baby #0 | ✓ | ✗ (rope #7 named wrong) | in front of [0-11] | - | ✗ TRASER missed this pair | - | - |
+| rope #7 → baby #1 | ✓ | ✗ (rope #7 named wrong) | in front of [0-11.5] | - | ✗ TRASER missed this pair | - | - |
+| rope #7 → ball pit #3 | ✓ | ✗ (rope #7 named wrong) | in front of [0-11] | - | ✗ TRASER missed this pair | - | - |
+| shirt #8 → baby #0 | ✓ | ✓ | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| head #9 → shirt #8 | ✓ | ✗ (head #9 named wrong) | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| head #9 → short #10 | ✓ | ✗ (head #9 named wrong) | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| short #10 → baby #0 | ✓ | ✓ | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| short #10 → shirt #8 | ✓ | ✓ | below [0-23] | - | ✗ TRASER missed this pair | - | - |
+| shirt #11 → baby #1 | ✓ | ✓ | on [0-23] | - | ✗ TRASER missed this pair | - | - |
+| shirt #11 → trouser #14 | ✓ | ✓ | above [0-23] | - | ✗ TRASER missed this pair | - | - |
+| top #12 → baby #2 | ✓ | ✓ | on [13-21] | - | ✗ TRASER missed this pair | - | - |
+| skirt #13 → baby #2 | ✓ | ✓ | on [12-23] | - | ✗ TRASER missed this pair | - | - |
+| skirt #13 → top #12 | ✓ | ✓ | below [12.5-22] | - | ✗ TRASER missed this pair | - | - |
+| trouser #14 → baby #1 | ✓ | ✓ | on [0-23] | behind [0-24] | ✓ TRASER has this pair | ✗ | ✗ |
+| baby #0 → head #9 | ✓ | ✗ (head #9 named wrong) | - | next to [0-24] | + only TRASER | - | - |
+| baby #1 → head #9 | ✓ | ✗ (head #9 named wrong) | - | next to [0-24] | + only TRASER | - | - |
+| baby #2 → baby #0 | ✓ | ✓ | - | behind [11-24] | + only TRASER | - | - |
+| baby #2 → baby #1 | ✓ | ✓ | - | behind [11-24] | + only TRASER | - | - |
+| baby #2 → head #9 | ✓ | ✗ (head #9 named wrong) | - | behind [11-24] | + only TRASER | - | - |
+| head #9 → ball pit #3 | ✓ | ✗ (head #9 named wrong) | - | in [0-24] | + only TRASER | - | - |
+| head #9 → side of a cage #4 | ✓ | ✗ (head #9 named wrong) | - | in front of [0-24]; below [0-24] | + only TRASER | - | - |
+| head #9 → side of a cage #5 | ✓ | ✗ (head #9 named wrong) | - | in front of [0-24]; below [0-24] | + only TRASER | - | - |
+| trouser #14 → baby #0 | ✓ | ✓ | - | behind [0-24] | + only TRASER | - | - |
+| trouser #14 → ball pit #3 | ✓ | ✓ | - | behind [0-24] | + only TRASER | - | - |
+| trouser #14 → head #9 | ✓ | ✗ (head #9 named wrong) | - | behind [0-24] | + only TRASER | - | - |
+| legs #16 → baby #0 | ✓ | ✗ (legs #16 named wrong) | - | behind [15-24] | + only TRASER | - | - |
+| legs #16 → baby #1 | ✓ | ✗ (legs #16 named wrong) | - | behind [15-24] | + only TRASER | - | - |
+| legs #16 → ball pit #3 | ✓ | ✗ (legs #16 named wrong) | - | behind [15-24] | + only TRASER | - | - |
+| legs #16 → head #9 | ✓ | ✗ (legs #16 named wrong, head #9 named wrong) | - | behind [15-24] | + only TRASER | - | - |
+| legs #17 → baby #0 | ✓ | ✗ (legs #17 named wrong) | - | near [15-24] | + only TRASER | - | - |
+| legs #17 → baby #1 | ✓ | ✗ (legs #17 named wrong) | - | near [15-24] | + only TRASER | - | - |
+| legs #17 → ball pit #3 | ✓ | ✗ (legs #17 named wrong) | - | in [15-24] | + only TRASER | - | - |
+| legs #17 → side of a cage #4 | ✓ | ✗ (legs #17 named wrong) | - | in front of [15-24]; below [15-24] | + only TRASER | - | - |
+| legs #17 → side of a cage #5 | ✓ | ✗ (legs #17 named wrong) | - | in front of [15-24]; below [15-24] | + only TRASER | - | - |
+| legs #17 → head #9 | ✓ | ✗ (legs #17 named wrong, head #9 named wrong) | - | near [15-24] | + only TRASER | - | - |
 
 
 ## 744_1X6KvqPjk6I
@@ -551,57 +554,57 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| dog #0 → grass #4 | looking at [0-8] | on [0-9] | ✓ TRASER has this pair | ✗ |
-| dog #0 → barricade #17 | behind [0-8] | - | ✗ TRASER missed this pair | - |
-| dog #0 → wall #27 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| grass #4 → barricade #17 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| plants, soil #5 → person #7 | in front of [0-8] | - | ↔ TRASER has it reversed | - |
-| plants, soil #5 → barricade #17 | in front of [0-8] | - | ↔ TRASER has it reversed | - |
-| person #7 → plants, soil #5 | pulling [0-8]; looking at [0-8]; weeding [0-8]; holding [0-8] | digging [0-9]; looking at [0-9]; gardening [0-9] | ✓ TRASER has this pair | ✗ ✓ ✓ ✗ |
-| person #7 → hat #9 | wearing [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ |
-| person #7 → barricade #17 | behind [0-8] | - | ✗ TRASER missed this pair | - |
-| person #7 → wall #27 | in front of [0-8] | holding [0-9] | ✓ TRASER has this pair | ✗ |
-| person #7 → trouser #31 | wearing [0-8] | - | ✗ TRASER missed this pair | - |
-| hat #9 → person #7 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| hair #10 → person #7 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| hair #10 → hat #9 | below [0-8] | - | ✗ TRASER missed this pair | - |
-| tail #11 → dog #0 | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ |
-| dog leg #12 → dog #0 | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ |
-| dog leg #13 → dog #0 | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ |
-| dog leg #14 → dog #0 | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ |
-| head #15 → dog #0 | part of [0-8] | - | ✗ TRASER missed this pair | - |
-| barricade #16 → person #7 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| stone #18 → barricade #16 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| gardening glove #19 → barricade #17 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| trouser #31 → person #7 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| dog #0 → tree #1 | - | in front of [0-9] | + only TRASER | - |
-| dog #0 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| dog #0 → tail #11 | - | has [0-9] | + only TRASER | - |
-| dog #0 → dog leg #12 | - | has [0-9] | + only TRASER | - |
-| dog #0 → dog leg #13 | - | has [0-9] | + only TRASER | - |
-| dog #0 → dog leg #14 | - | has [0-9] | + only TRASER | - |
-| tree #1 → fence #3 | - | behind [0-9] | + only TRASER | - |
-| plant #2 → dog #0 | - | in front of [0-9] | + only TRASER | - |
-| plant #2 → tree #1 | - | in front of [0-9] | + only TRASER | - |
-| plant #2 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| grass #4 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| plant #6 → tree #1 | - | in front of [0-9] | + only TRASER | - |
-| plant #6 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| plant #6 → person #7 | - | in front of [0-9] | + only TRASER | - |
-| person #7 → tree #1 | - | in front of [0-9] | + only TRASER | - |
-| person #7 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| head #15 → tree #1 | - | in front of [0-9] | + only TRASER | - |
-| head #15 → fence #3 | - | in front of [0-9] | + only TRASER | - |
-| head #15 → grass #4 | - | on [0-9] | + only TRASER | - |
-| barricade #16 → plants, soil #5 | - | above [0-9] | + only TRASER | - |
-| barricade #17 → plants, soil #5 | - | above [0-9] | + only TRASER | - |
-| stone #18 → plants, soil #5 | - | on [0-9] | + only TRASER | - |
-| gardening glove #19 → plants, soil #5 | - | on [0-9] | + only TRASER | - |
-| fence #20 → fence #3 | - | above [0-9] | + only TRASER | - |
-| wall #27 → plants, soil #5 | - | on [0-9] | + only TRASER | - |
-| trouser #31 → plants, soil #5 | - | above [0-9] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| dog #0 → grass #4 | ✓ | ✓ | looking at [0-8] | on [0-9] | ✓ TRASER has this pair | ✗ | ✗ |
+| dog #0 → barricade #17 | ✓ | ✗ (barricade #17 named wrong) | behind [0-8] | - | ✗ TRASER missed this pair | - | - |
+| dog #0 → wall #27 | ✓ | ✗ (wall #27 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| grass #4 → barricade #17 | ✓ | ✗ (barricade #17 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| plants, soil #5 → person #7 | ✓ | ✓ | in front of [0-8] | - | ↔ TRASER has it reversed | - | - |
+| plants, soil #5 → barricade #17 | ✓ | ✗ (barricade #17 named wrong) | in front of [0-8] | - | ↔ TRASER has it reversed | - | - |
+| person #7 → plants, soil #5 | ✓ | ✓ | pulling [0-8]; looking at [0-8]; weeding [0-8]; holding [0-8] | digging [0-9]; looking at [0-9]; gardening [0-9] | ✓ TRASER has this pair | ✗ ✓ ✓ ✗ | ✗ ✓ ✓ ✗ |
+| person #7 → hat #9 | ✓ | ✓ | wearing [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #7 → barricade #17 | ✓ | ✗ (barricade #17 named wrong) | behind [0-8] | - | ✗ TRASER missed this pair | - | - |
+| person #7 → wall #27 | ✓ | ✗ (wall #27 named wrong) | in front of [0-8] | holding [0-9] | ✓ TRASER has this pair | ✗ | ✗ |
+| person #7 → trouser #31 | ✓ | ✗ (trouser #31 named wrong) | wearing [0-8] | - | ✗ TRASER missed this pair | - | - |
+| hat #9 → person #7 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| hair #10 → person #7 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| hair #10 → hat #9 | ✓ | ✓ | below [0-8] | - | ✗ TRASER missed this pair | - | - |
+| tail #11 → dog #0 | ✓ | ✓ | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| dog leg #12 → dog #0 | ✓ | ✓ | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| dog leg #13 → dog #0 | ✓ | ✓ | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| dog leg #14 → dog #0 | ✓ | ✓ | part of [0-8] | attached to [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| head #15 → dog #0 | ✓ | ✗ (head #15 named wrong) | part of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| barricade #16 → person #7 | ✓ | ✗ (barricade #16 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| stone #18 → barricade #16 | ✓ | ✗ (stone #18 named wrong, barricade #16 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| gardening glove #19 → barricade #17 | ✓ | ✗ (gardening glove #19 named wrong, barricade #17 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trouser #31 → person #7 | ✓ | ✗ (trouser #31 named wrong) | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| dog #0 → tree #1 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| dog #0 → fence #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| dog #0 → tail #11 | ✓ | ✓ | - | has [0-9] | + only TRASER | - | - |
+| dog #0 → dog leg #12 | ✓ | ✓ | - | has [0-9] | + only TRASER | - | - |
+| dog #0 → dog leg #13 | ✓ | ✓ | - | has [0-9] | + only TRASER | - | - |
+| dog #0 → dog leg #14 | ✓ | ✓ | - | has [0-9] | + only TRASER | - | - |
+| tree #1 → fence #3 | ✓ | ✓ | - | behind [0-9] | + only TRASER | - | - |
+| plant #2 → dog #0 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| plant #2 → tree #1 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| plant #2 → fence #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| grass #4 → fence #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| plant #6 → tree #1 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| plant #6 → fence #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| plant #6 → person #7 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #7 → tree #1 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| person #7 → fence #3 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| head #15 → tree #1 | ✓ | ✗ (head #15 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| head #15 → fence #3 | ✓ | ✗ (head #15 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| head #15 → grass #4 | ✓ | ✗ (head #15 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| barricade #16 → plants, soil #5 | ✓ | ✗ (barricade #16 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| barricade #17 → plants, soil #5 | ✓ | ✗ (barricade #17 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| stone #18 → plants, soil #5 | ✓ | ✗ (stone #18 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| gardening glove #19 → plants, soil #5 | ✓ | ✗ (gardening glove #19 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| fence #20 → fence #3 | ✓ | ✗ (fence #20 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| wall #27 → plants, soil #5 | ✓ | ✗ (wall #27 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| trouser #31 → plants, soil #5 | ✓ | ✗ (trouser #31 named wrong) | - | above [0-9] | + only TRASER | - | - |
 
 
 ## 888_BS3hab7EtAg
@@ -645,84 +648,84 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| trees #3 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trees #3 → people #9 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trees #4 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trees #4 → people #9 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trees #5 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trees #5 → people #9 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| grass #7 → grass #6 | on [0-5] | - | ✗ TRASER missed this pair | - |
-| grass #8 → grass #6 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| people #9 → barricade #0 | behind [0-8] | - | ✗ TRASER missed this pair | - |
-| tiger #10 → barricade #0 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → trees #3 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → trees #4 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → trees #5 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → grass #6 | on [0-8] | moves across [0-8]; on [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → people #9 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → cow #11 | looking at [0-8]; approaching [0-8] | approaches [0-4]; moves away from [4-8]; passes by [2-5]; near [0-8] | ✓ TRASER has this pair | ✗ ✗ |
-| tiger #10 → trunk #14 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → trunk #17 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → barricade #0 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → trees #3 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → trees #4 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → trees #5 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → grass #6 | on [0-8] | moves across [0-8]; on [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → people #9 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → tiger #10 | looking at [2-8]; moving away from [2-5]; approaching [5-8] | - | ↔ TRASER has it reversed | - - - |
-| cow #11 → trunk #14 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| cow #11 → trunk #17 | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ |
-| trunk #14 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trunk #16 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trunk #17 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| trunk #18 → barricade #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| legs #21 → cow #11 | under [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✗ |
-| legs #22 → tiger #10 | under [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✗ |
-| tail #23 → tiger #10 | attached to [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger head #24 → tiger #10 | attached to [0-8] | - | ↔ TRASER has it reversed | - |
-| ram head #25 → cow #11 | attached to [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✓ |
-| tiger #10 → trunk #1 | - | in front of [0-3] | + only TRASER | - |
-| tiger #10 → building #2 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → grass #7 | - | in front of [0-6] | + only TRASER | - |
-| tiger #10 → trunk #12 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → trunk #13 | - | in front of [0-5] | + only TRASER | - |
-| tiger #10 → trunk #15 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → trunk #16 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → trunk #18 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → trunk #19 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → trunk #20 | - | in front of [0-8] | + only TRASER | - |
-| tiger #10 → tiger head #24 | - | near [0-8] | + only TRASER | - |
-| cow #11 → trunk #1 | - | in front of [0-3] | + only TRASER | - |
-| cow #11 → building #2 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → grass #7 | - | in front of [0-6] | + only TRASER | - |
-| cow #11 → trunk #12 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → trunk #13 | - | in front of [0-5] | + only TRASER | - |
-| cow #11 → trunk #15 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → trunk #16 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → trunk #18 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → trunk #19 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → trunk #20 | - | in front of [0-8] | + only TRASER | - |
-| cow #11 → tiger head #24 | - | near [0-8] | + only TRASER | - |
-| tiger head #24 → barricade #0 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #1 | - | in front of [0-3] | + only TRASER | - |
-| tiger head #24 → building #2 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trees #3 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trees #4 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trees #5 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → grass #6 | - | on [0-8] | + only TRASER | - |
-| tiger head #24 → grass #7 | - | in front of [0-6] | + only TRASER | - |
-| tiger head #24 → people #9 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #12 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #13 | - | in front of [0-5] | + only TRASER | - |
-| tiger head #24 → trunk #14 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #15 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #16 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #17 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #18 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #19 | - | in front of [0-8] | + only TRASER | - |
-| tiger head #24 → trunk #20 | - | in front of [0-8] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| trees #3 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trees #3 → people #9 | ✓ | ✗ (people #9 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trees #4 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trees #4 → people #9 | ✓ | ✗ (people #9 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trees #5 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trees #5 → people #9 | ✓ | ✗ (people #9 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| grass #7 → grass #6 | ✓ | ✓ | on [0-5] | - | ✗ TRASER missed this pair | - | - |
+| grass #8 → grass #6 | ✓ | ✓ | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| people #9 → barricade #0 | ✓ | ✗ (people #9 named wrong) | behind [0-8] | - | ✗ TRASER missed this pair | - | - |
+| tiger #10 → barricade #0 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → trees #3 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → trees #4 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → trees #5 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → grass #6 | ✓ | ✓ | on [0-8] | moves across [0-8]; on [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → people #9 | ✓ | ✗ (people #9 named wrong) | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✗ |
+| tiger #10 → cow #11 | ✓ | ✓ | looking at [0-8]; approaching [0-8] | approaches [0-4]; moves away from [4-8]; passes by [2-5]; near [0-8] | ✓ TRASER has this pair | ✗ ✗ | ✗ ✗ |
+| tiger #10 → trunk #14 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger #10 → trunk #17 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → barricade #0 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → trees #3 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → trees #4 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → trees #5 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → grass #6 | ✓ | ✓ | on [0-8] | moves across [0-8]; on [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → people #9 | ✓ | ✗ (people #9 named wrong) | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✗ |
+| cow #11 → tiger #10 | ✓ | ✓ | looking at [2-8]; moving away from [2-5]; approaching [5-8] | - | ↔ TRASER has it reversed | - - - | - - - |
+| cow #11 → trunk #14 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| cow #11 → trunk #17 | ✓ | ✓ | in front of [0-8] | in front of [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| trunk #14 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trunk #16 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trunk #17 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| trunk #18 → barricade #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| legs #21 → cow #11 | ✓ | ✓ | under [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✗ | ✗ |
+| legs #22 → tiger #10 | ✓ | ✗ (legs #22 named wrong) | under [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✗ | ✗ |
+| tail #23 → tiger #10 | ✓ | ✓ | attached to [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| tiger head #24 → tiger #10 | ✓ | ✓ | attached to [0-8] | - | ↔ TRASER has it reversed | - | - |
+| ram head #25 → cow #11 | ✓ | ✗ (ram head #25 named wrong) | attached to [0-8] | attached to [0-8] | ✓ TRASER has this pair | ✓ | ✗ |
+| tiger #10 → trunk #1 | ✓ | ✓ | - | in front of [0-3] | + only TRASER | - | - |
+| tiger #10 → building #2 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → grass #7 | ✓ | ✓ | - | in front of [0-6] | + only TRASER | - | - |
+| tiger #10 → trunk #12 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → trunk #13 | ✓ | ✓ | - | in front of [0-5] | + only TRASER | - | - |
+| tiger #10 → trunk #15 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → trunk #16 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → trunk #18 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → trunk #19 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → trunk #20 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger #10 → tiger head #24 | ✓ | ✓ | - | near [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #1 | ✓ | ✓ | - | in front of [0-3] | + only TRASER | - | - |
+| cow #11 → building #2 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → grass #7 | ✓ | ✓ | - | in front of [0-6] | + only TRASER | - | - |
+| cow #11 → trunk #12 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #13 | ✓ | ✓ | - | in front of [0-5] | + only TRASER | - | - |
+| cow #11 → trunk #15 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #16 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #18 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #19 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → trunk #20 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| cow #11 → tiger head #24 | ✓ | ✓ | - | near [0-8] | + only TRASER | - | - |
+| tiger head #24 → barricade #0 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #1 | ✓ | ✓ | - | in front of [0-3] | + only TRASER | - | - |
+| tiger head #24 → building #2 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trees #3 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trees #4 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trees #5 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → grass #6 | ✓ | ✓ | - | on [0-8] | + only TRASER | - | - |
+| tiger head #24 → grass #7 | ✓ | ✓ | - | in front of [0-6] | + only TRASER | - | - |
+| tiger head #24 → people #9 | ✓ | ✗ (people #9 named wrong) | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #12 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #13 | ✓ | ✓ | - | in front of [0-5] | + only TRASER | - | - |
+| tiger head #24 → trunk #14 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #15 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #16 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #17 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #18 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #19 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
+| tiger head #24 → trunk #20 | ✓ | ✓ | - | in front of [0-8] | + only TRASER | - | - |
 
 
 ## 914_f4HgijyAEYs
@@ -759,59 +762,59 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| person #0 → cotton candy #1 | holding [0-8]; eating [0-3]; snacking on [0-3] | - | ✗ TRASER missed this pair | - - - |
-| person #0 → ride #3 | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → landing #4 | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → building #5 | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → sky #9 | under [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✗ |
-| person #0 → glasses #14 | wearing [0-4, 5-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → jacket #16 | wearing [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ |
-| cotton candy #1 → person #0 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| cotton candy #1 → ride #3 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| cotton candy #1 → building #5 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| cotton candy #1 → sky #9 | below [0-8] | - | ✗ TRASER missed this pair | - |
-| cotton candy #1 → light #12 | above [0-8] | - | ✗ TRASER missed this pair | - |
-| cotton candy #1 → light #13 | above [0-8] | - | ✗ TRASER missed this pair | - |
-| seat #2 → ride #3 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| light #12 → ride #3 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| light #13 → ride #3 | on [0-8] | - | ✗ TRASER missed this pair | - |
-| glasses #14 → person #0 | on [0-4, 5-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| hair #15 → person #0 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| jacket #16 → person #0 | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ |
-| person #0 → seat #2 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → circus #6 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → circus #7 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → circus #8 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → seat #10 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → ground #11 | - | in front of [0-9] | + only TRASER | - |
-| person #0 → hair #15 | - | has [0-9] | + only TRASER | - |
-| person #0 → hand #17 | - | holding [0-9]; looking at [0-9] | + only TRASER | - |
-| person #0 → hand #18 | - | holding [0-9]; looking at [0-9] | + only TRASER | - |
-| circus #8 → person #0 | - | above [0-9] | + only TRASER | - |
-| circus #8 → ride #3 | - | above [0-9] | + only TRASER | - |
-| circus #8 → building #5 | - | above [0-9] | + only TRASER | - |
-| circus #8 → circus #6 | - | above [0-9] | + only TRASER | - |
-| circus #8 → circus #7 | - | above [0-9] | + only TRASER | - |
-| sky #9 → landing #4 | - | above [0-9] | + only TRASER | - |
-| sky #9 → ground #11 | - | above [0-9] | + only TRASER | - |
-| seat #10 → landing #4 | - | on [0-9] | + only TRASER | - |
-| seat #10 → ground #11 | - | on [0-9] | + only TRASER | - |
-| glasses #14 → sky #9 | - | in front of [0-9] | + only TRASER | - |
-| glasses #14 → jacket #16 | - | above [0-9] | + only TRASER | - |
-| glasses #14 → hand #17 | - | above [0-9] | + only TRASER | - |
-| glasses #14 → hand #18 | - | above [0-9] | + only TRASER | - |
-| hair #15 → sky #9 | - | in front of [0-9] | + only TRASER | - |
-| hair #15 → jacket #16 | - | above [0-9] | + only TRASER | - |
-| jacket #16 → sky #9 | - | in front of [0-9] | + only TRASER | - |
-| hand #17 → person #0 | - | attached to [0-9] | + only TRASER | - |
-| hand #17 → sky #9 | - | in front of [0-9] | + only TRASER | - |
-| hand #17 → jacket #16 | - | in front of [0-9] | + only TRASER | - |
-| hand #17 → hand #18 | - | above [0-9] | + only TRASER | - |
-| hand #18 → person #0 | - | attached to [0-9] | + only TRASER | - |
-| hand #18 → sky #9 | - | in front of [0-9] | + only TRASER | - |
-| hand #18 → jacket #16 | - | in front of [0-9] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| person #0 → cotton candy #1 | ✓ | ✓ | holding [0-8]; eating [0-3]; snacking on [0-3] | - | ✗ TRASER missed this pair | - - - | - - - |
+| person #0 → ride #3 | ✓ | ✓ | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → landing #4 | ✓ | ✗ (landing #4 named wrong) | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ | ✗ |
+| person #0 → building #5 | ✓ | ✗ (building #5 named wrong) | in front of [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✓ | ✗ |
+| person #0 → sky #9 | ✓ | ✗ (sky #9 named wrong) | under [0-8] | in front of [0-9] | ✓ TRASER has this pair | ✗ | ✗ |
+| person #0 → glasses #14 | ✓ | ✓ | wearing [0-4, 5-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → jacket #16 | ✓ | ✓ | wearing [0-8] | wearing [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| cotton candy #1 → person #0 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| cotton candy #1 → ride #3 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| cotton candy #1 → building #5 | ✓ | ✗ (building #5 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| cotton candy #1 → sky #9 | ✓ | ✗ (sky #9 named wrong) | below [0-8] | - | ✗ TRASER missed this pair | - | - |
+| cotton candy #1 → light #12 | ✓ | ✓ | above [0-8] | - | ✗ TRASER missed this pair | - | - |
+| cotton candy #1 → light #13 | ✓ | ✓ | above [0-8] | - | ✗ TRASER missed this pair | - | - |
+| seat #2 → ride #3 | ✓ | ✗ (seat #2 named wrong) | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| light #12 → ride #3 | ✓ | ✓ | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| light #13 → ride #3 | ✓ | ✓ | on [0-8] | - | ✗ TRASER missed this pair | - | - |
+| glasses #14 → person #0 | ✓ | ✓ | on [0-4, 5-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| hair #15 → person #0 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| jacket #16 → person #0 | ✓ | ✓ | on [0-8] | on [0-9] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → seat #2 | ✓ | ✗ (seat #2 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → circus #6 | ✓ | ✗ (circus #6 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → circus #7 | ✓ | ✗ (circus #7 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → circus #8 | ✓ | ✗ (circus #8 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → seat #10 | ✓ | ✗ (seat #10 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → ground #11 | ✓ | ✗ (ground #11 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| person #0 → hair #15 | ✓ | ✓ | - | has [0-9] | + only TRASER | - | - |
+| person #0 → hand #17 | ✓ | ✓ | - | holding [0-9]; looking at [0-9] | + only TRASER | - | - |
+| person #0 → hand #18 | ✓ | ✓ | - | holding [0-9]; looking at [0-9] | + only TRASER | - | - |
+| circus #8 → person #0 | ✓ | ✗ (circus #8 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| circus #8 → ride #3 | ✓ | ✗ (circus #8 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| circus #8 → building #5 | ✓ | ✗ (circus #8 named wrong, building #5 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| circus #8 → circus #6 | ✓ | ✗ (circus #8 named wrong, circus #6 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| circus #8 → circus #7 | ✓ | ✗ (circus #8 named wrong, circus #7 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| sky #9 → landing #4 | ✓ | ✗ (sky #9 named wrong, landing #4 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| sky #9 → ground #11 | ✓ | ✗ (sky #9 named wrong, ground #11 named wrong) | - | above [0-9] | + only TRASER | - | - |
+| seat #10 → landing #4 | ✓ | ✗ (seat #10 named wrong, landing #4 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| seat #10 → ground #11 | ✓ | ✗ (seat #10 named wrong, ground #11 named wrong) | - | on [0-9] | + only TRASER | - | - |
+| glasses #14 → sky #9 | ✓ | ✗ (sky #9 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| glasses #14 → jacket #16 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
+| glasses #14 → hand #17 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
+| glasses #14 → hand #18 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
+| hair #15 → sky #9 | ✓ | ✗ (sky #9 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| hair #15 → jacket #16 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
+| jacket #16 → sky #9 | ✓ | ✗ (sky #9 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| hand #17 → person #0 | ✓ | ✓ | - | attached to [0-9] | + only TRASER | - | - |
+| hand #17 → sky #9 | ✓ | ✗ (sky #9 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| hand #17 → jacket #16 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
+| hand #17 → hand #18 | ✓ | ✓ | - | above [0-9] | + only TRASER | - | - |
+| hand #18 → person #0 | ✓ | ✓ | - | attached to [0-9] | + only TRASER | - | - |
+| hand #18 → sky #9 | ✓ | ✗ (sky #9 named wrong) | - | in front of [0-9] | + only TRASER | - | - |
+| hand #18 → jacket #16 | ✓ | ✓ | - | in front of [0-9] | + only TRASER | - | - |
 
 
 ## 976_U19VojbI0h4
@@ -894,74 +897,74 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| painting #1 → fireplace #4 | above [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ |
-| painting #1 → wall #22 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| painting #1 → fireplace face #32 | on [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ |
-| plant #2 → fireplace #4 | above [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ |
-| plant #2 → wall #22 | in front of [0-8] | - | ✗ TRASER missed this pair | - |
-| plant #2 → fireplace face #32 | on [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ |
-| plant #2 → flower vase #46 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| decoration #3 → wall #22 | in front of [0-5.5] | - | ✗ TRASER missed this pair | - |
-| decoration #3 → fireplace face #32 | on [0-5.5] | above [0-6] | ✓ TRASER has this pair | ✓ |
-| fireplace #4 → wall #22 | in [0-8]; against [0-8] | - | ✗ TRASER missed this pair | - - |
-| cabinet #5 → ground #0 | on [0-4] | - | ✗ TRASER missed this pair | - |
-| door #6 → closet #16 | attached to [0-8] | - | ✗ TRASER missed this pair | - |
-| door #6 → wall #59 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| door #6 → door frame #61 | inside [0-8]; attached to [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - |
-| door #8 → wall #7 | inside [0-8] | - | ✗ TRASER missed this pair | - |
-| lamp #9 → table #10 | on [0-1] | on [0-2]; above [0-2] | ✓ TRASER has this pair | ✗ |
-| closet #16 → door #54 | behind [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| table #18 → ground #0 | on [0-7] | on [0-2] | ✓ TRASER has this pair | ✗ |
-| rug #19 → ground #0 | on [0-2] | on [0-2] | ✓ TRASER has this pair | ✓ |
-| vase #20 → table #18 | on [0-2] | on [0-2] | ✓ TRASER has this pair | ✓ |
-| doorway #21 → fireplace frame #34 | in [0-8]; in [0-8] | - | ✗ TRASER missed this pair | - - |
-| fireplace #31 → wall #22 | in [0-8] | - | ✗ TRASER missed this pair | - |
-| fireplace #31 → fireplace face #32 | under [0-8] | - | ✗ TRASER missed this pair | - |
-| fireplace face #32 → wall #22 | against [0-8] | - | ✗ TRASER missed this pair | - |
-| flower vase #46 → flower stand #47 | on [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| door #52 → doorway #21 | inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| ground #53 → doorway #21 | inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| door #54 → wall #59 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| door #54 → door frame #61 | attached to [0-8]; inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - |
-| shelf #55 → closet #16 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| shelf #56 → closet #16 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| shelf #57 → closet #16 | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - |
-| ground #0 → fireplace #4 | - | below [0-8] | + only TRASER | - |
-| ground #0 → door #6 | - | below [0-8] | + only TRASER | - |
-| ground #0 → closet #16 | - | below [0-8] | + only TRASER | - |
-| ground #0 → doorway #21 | - | below [0-8] | + only TRASER | - |
-| painting #1 → wall #7 | - | mounted on [0-8] | + only TRASER | - |
-| painting #1 → fireplace #31 | - | above [0-8] | + only TRASER | - |
-| plant #2 → wall #7 | - | mounted on [0-8] | + only TRASER | - |
-| plant #2 → fireplace #31 | - | above [0-8] | + only TRASER | - |
-| decoration #3 → fireplace #4 | - | above [0-6] | + only TRASER | - |
-| decoration #3 → wall #7 | - | mounted on [0-6] | + only TRASER | - |
-| decoration #3 → fireplace #31 | - | above [0-6] | + only TRASER | - |
-| door #6 → wall #7 | - | in [0-8] | + only TRASER | - |
-| table #10 → ground #0 | - | on [0-2] | + only TRASER | - |
-| interior #11 → shelf #12 | - | above [0-4] | + only TRASER | - |
-| interior #11 → wall #24 | - | mounted on [0-4] | + only TRASER | - |
-| shelf #12 → wall #23 | - | above [0-4] | + only TRASER | - |
-| shelf #12 → wall #24 | - | mounted on [0-4] | + only TRASER | - |
-| interior #13 → flower vase #35 | - | in [0-4]; above [0-4] | + only TRASER | - |
-| interior #13 → socket #39 | - | in [0-4]; above [0-4] | + only TRASER | - |
-| closet #16 → wall #7 | - | in [0-8] | + only TRASER | - |
-| outlet #17 → doorway #21 | - | attached to [0-8]; on [0-8] | + only TRASER | - |
-| doorway #21 → wall #7 | - | in [0-8] | + only TRASER | - |
-| wall #23 → interior #11 | - | above [0-4] | + only TRASER | - |
-| wall #23 → wall #24 | - | mounted on [0-4] | + only TRASER | - |
-| lamp shade #25 → lamp #9 | - | on [0-2]; above [0-2] | + only TRASER | - |
-| lamp base #26 → throw pillow #27 | - | on [0-2]; above [0-2] | + only TRASER | - |
-| throw pillow #27 → ground #0 | - | on [0-2] | + only TRASER | - |
-| couch #28 → ground #0 | - | on [0-2] | + only TRASER | - |
-| leaves #30 → table #18 | - | on [0-2] | + only TRASER | - |
-| flower vase #35 → leaves #30 | - | above [0-2] | + only TRASER | - |
-| vase #36 → home decor #37 | - | above [0-3] | + only TRASER | - |
-| home decor #37 → home decor #38 | - | above [0-3] | + only TRASER | - |
-| home decor #38 → vase #36 | - | above [0-3] | + only TRASER | - |
-| socket #39 → leaves #30 | - | above [0-2] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| painting #1 → fireplace #4 | ✓ | ✓ | above [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| painting #1 → wall #22 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| painting #1 → fireplace face #32 | ✓ | ✓ | on [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| plant #2 → fireplace #4 | ✓ | ✓ | above [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| plant #2 → wall #22 | ✓ | ✓ | in front of [0-8] | - | ✗ TRASER missed this pair | - | - |
+| plant #2 → fireplace face #32 | ✓ | ✓ | on [0-8] | above [0-8] | ✓ TRASER has this pair | ✓ | ✓ |
+| plant #2 → flower vase #46 | ✗ (flower vase #46 not given) | ✗ (flower vase #46 not given) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| decoration #3 → wall #22 | ✓ | ✗ (decoration #3 named wrong) | in front of [0-5.5] | - | ✗ TRASER missed this pair | - | - |
+| decoration #3 → fireplace face #32 | ✓ | ✗ (decoration #3 named wrong) | on [0-5.5] | above [0-6] | ✓ TRASER has this pair | ✓ | ✗ |
+| fireplace #4 → wall #22 | ✓ | ✓ | in [0-8]; against [0-8] | - | ✗ TRASER missed this pair | - - | - - |
+| cabinet #5 → ground #0 | ✓ | ✗ (cabinet #5 named wrong) | on [0-4] | - | ✗ TRASER missed this pair | - | - |
+| door #6 → closet #16 | ✓ | ✗ (closet #16 named wrong) | attached to [0-8] | - | ✗ TRASER missed this pair | - | - |
+| door #6 → wall #59 | ✗ (wall #59 not given) | ✗ (wall #59 not given) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| door #6 → door frame #61 | ✗ (door frame #61 not given) | ✗ (door frame #61 not given) | inside [0-8]; attached to [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - | - - |
+| door #8 → wall #7 | ✓ | ✓ | inside [0-8] | - | ✗ TRASER missed this pair | - | - |
+| lamp #9 → table #10 | ✓ | ✓ | on [0-1] | on [0-2]; above [0-2] | ✓ TRASER has this pair | ✗ | ✗ |
+| closet #16 → door #54 | ✗ (door #54 not given) | ✗ (closet #16 named wrong, door #54 not given) | behind [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| table #18 → ground #0 | ✓ | ✓ | on [0-7] | on [0-2] | ✓ TRASER has this pair | ✗ | ✗ |
+| rug #19 → ground #0 | ✓ | ✗ (rug #19 named wrong) | on [0-2] | on [0-2] | ✓ TRASER has this pair | ✓ | ✗ |
+| vase #20 → table #18 | ✓ | ✓ | on [0-2] | on [0-2] | ✓ TRASER has this pair | ✓ | ✓ |
+| doorway #21 → fireplace frame #34 | ✓ | ✓ | in [0-8]; in [0-8] | - | ✗ TRASER missed this pair | - - | - - |
+| fireplace #31 → wall #22 | ✓ | ✓ | in [0-8] | - | ✗ TRASER missed this pair | - | - |
+| fireplace #31 → fireplace face #32 | ✓ | ✓ | under [0-8] | - | ✗ TRASER missed this pair | - | - |
+| fireplace face #32 → wall #22 | ✓ | ✓ | against [0-8] | - | ✗ TRASER missed this pair | - | - |
+| flower vase #46 → flower stand #47 | ✗ (flower vase #46, flower stand #47 not given) | ✗ (flower vase #46 not given, flower stand #47 not given) | on [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| door #52 → doorway #21 | ✗ (door #52 not given) | ✗ (door #52 not given) | inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| ground #53 → doorway #21 | ✗ (ground #53 not given) | ✗ (ground #53 not given) | inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| door #54 → wall #59 | ✗ (door #54, wall #59 not given) | ✗ (door #54 not given, wall #59 not given) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| door #54 → door frame #61 | ✗ (door #54, door frame #61 not given) | ✗ (door #54 not given, door frame #61 not given) | attached to [0-8]; inside [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - - | - - |
+| shelf #55 → closet #16 | ✗ (shelf #55 not given) | ✗ (shelf #55 not given, closet #16 named wrong) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| shelf #56 → closet #16 | ✗ (shelf #56 not given) | ✗ (shelf #56 not given, closet #16 named wrong) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| shelf #57 → closet #16 | ✗ (shelf #57 not given) | ✗ (shelf #57 not given, closet #16 named wrong) | in [0-8] | - | ⊘ an object was not given to TRASER (40-object cap / no mask on its frames) | - | - |
+| ground #0 → fireplace #4 | ✓ | ✓ | - | below [0-8] | + only TRASER | - | - |
+| ground #0 → door #6 | ✓ | ✓ | - | below [0-8] | + only TRASER | - | - |
+| ground #0 → closet #16 | ✓ | ✗ (closet #16 named wrong) | - | below [0-8] | + only TRASER | - | - |
+| ground #0 → doorway #21 | ✓ | ✓ | - | below [0-8] | + only TRASER | - | - |
+| painting #1 → wall #7 | ✓ | ✓ | - | mounted on [0-8] | + only TRASER | - | - |
+| painting #1 → fireplace #31 | ✓ | ✓ | - | above [0-8] | + only TRASER | - | - |
+| plant #2 → wall #7 | ✓ | ✓ | - | mounted on [0-8] | + only TRASER | - | - |
+| plant #2 → fireplace #31 | ✓ | ✓ | - | above [0-8] | + only TRASER | - | - |
+| decoration #3 → fireplace #4 | ✓ | ✗ (decoration #3 named wrong) | - | above [0-6] | + only TRASER | - | - |
+| decoration #3 → wall #7 | ✓ | ✗ (decoration #3 named wrong) | - | mounted on [0-6] | + only TRASER | - | - |
+| decoration #3 → fireplace #31 | ✓ | ✗ (decoration #3 named wrong) | - | above [0-6] | + only TRASER | - | - |
+| door #6 → wall #7 | ✓ | ✓ | - | in [0-8] | + only TRASER | - | - |
+| table #10 → ground #0 | ✓ | ✓ | - | on [0-2] | + only TRASER | - | - |
+| interior #11 → shelf #12 | ✓ | ✓ | - | above [0-4] | + only TRASER | - | - |
+| interior #11 → wall #24 | ✓ | ✓ | - | mounted on [0-4] | + only TRASER | - | - |
+| shelf #12 → wall #23 | ✓ | ✗ (wall #23 named wrong) | - | above [0-4] | + only TRASER | - | - |
+| shelf #12 → wall #24 | ✓ | ✓ | - | mounted on [0-4] | + only TRASER | - | - |
+| interior #13 → flower vase #35 | ✓ | ✗ (interior #13 named wrong) | - | in [0-4]; above [0-4] | + only TRASER | - | - |
+| interior #13 → socket #39 | ✓ | ✗ (interior #13 named wrong, socket #39 named wrong) | - | in [0-4]; above [0-4] | + only TRASER | - | - |
+| closet #16 → wall #7 | ✓ | ✗ (closet #16 named wrong) | - | in [0-8] | + only TRASER | - | - |
+| outlet #17 → doorway #21 | ✓ | ✗ (outlet #17 named wrong) | - | attached to [0-8]; on [0-8] | + only TRASER | - | - |
+| doorway #21 → wall #7 | ✓ | ✓ | - | in [0-8] | + only TRASER | - | - |
+| wall #23 → interior #11 | ✓ | ✗ (wall #23 named wrong) | - | above [0-4] | + only TRASER | - | - |
+| wall #23 → wall #24 | ✓ | ✗ (wall #23 named wrong) | - | mounted on [0-4] | + only TRASER | - | - |
+| lamp shade #25 → lamp #9 | ✓ | ✓ | - | on [0-2]; above [0-2] | + only TRASER | - | - |
+| lamp base #26 → throw pillow #27 | ✓ | ✗ (throw pillow #27 named wrong) | - | on [0-2]; above [0-2] | + only TRASER | - | - |
+| throw pillow #27 → ground #0 | ✓ | ✗ (throw pillow #27 named wrong) | - | on [0-2] | + only TRASER | - | - |
+| couch #28 → ground #0 | ✓ | ✗ (couch #28 named wrong) | - | on [0-2] | + only TRASER | - | - |
+| leaves #30 → table #18 | ✓ | ✗ (leaves #30 named wrong) | - | on [0-2] | + only TRASER | - | - |
+| flower vase #35 → leaves #30 | ✓ | ✗ (leaves #30 named wrong) | - | above [0-2] | + only TRASER | - | - |
+| vase #36 → home decor #37 | ✓ | ✓ | - | above [0-3] | + only TRASER | - | - |
+| home decor #37 → home decor #38 | ✓ | ✓ | - | above [0-3] | + only TRASER | - | - |
+| home decor #38 → vase #36 | ✓ | ✓ | - | above [0-3] | + only TRASER | - | - |
+| socket #39 → leaves #30 | ✓ | ✗ (socket #39 named wrong, leaves #30 named wrong) | - | above [0-2] | + only TRASER | - | - |
 
 
 ## sav_053005
@@ -1008,57 +1011,57 @@ TRASER is given the human objects (masks) and writes its own list of relations; 
 
 **Relations, pair by pair**
 
-| pair (subject → object) | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) |
-|---|---|---|---|---|
-| person #0 → carpet #1 | moves on [0-9, 11-19]; on [0-9, 11-19] | on [0-19] | ✓ TRASER has this pair | ✓ ✓ |
-| person #0 → table #3 | in front of [0-9, 11-19] | approaching [0-11]; moving away from [11-19] | ✓ TRASER has this pair | ✗ |
-| person #0 → curtain #4 | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ |
-| person #0 → windows #5 | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ |
-| person #0 → chair #7 | in front of [0-9, 11-19] | moving away from [0-11]; approaching [11-19]; in front of [0-19] | ✓ TRASER has this pair | ✓ |
-| person #0 → wall panel #8 | in front of [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| person #0 → bag #22 | poses with [0-9, 11-19]; carries [0-9, 11-19] | carrying [0-19] | ✓ TRASER has this pair | ✗ ✓ |
-| carpet #1 → floor #9 | on [0-5, 9-10, 11-12] | - | ✗ TRASER missed this pair | - |
-| sofa #2 → carpet #1 | on [0-8, 12-15, 18-19] | - | ✗ TRASER missed this pair | - |
-| table #3 → carpet #1 | on [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| table #3 → chair #7 | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ |
-| curtain #4 → windows #5 | in front of [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| chair #7 → carpet #1 | on [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| wall panel #8 → curtain #4 | below [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| pillars #10 → floor #9 | on [9-11] | - | ✗ TRASER missed this pair | - |
-| fountain #11 → floor #9 | on [10-12] | - | ✗ TRASER missed this pair | - |
-| desk #12 → floor #9 | on [9-10] | - | ✗ TRASER missed this pair | - |
-| desk #12 → pillar #20 | in front of [8.5-10.5] | - | ✗ TRASER missed this pair | - |
-| sofa #13 → carpet #1 | on [9-10] | - | ✗ TRASER missed this pair | - |
-| lights #14 → desk #12 | above [8.5-10.5] | - | ✗ TRASER missed this pair | - |
-| door #18 → floor #9 | above [8.5-11] | - | ✗ TRASER missed this pair | - |
-| bag #22 → person #0 | moves with [0-9, 11-19]; near [0-9, 11-19] | beside [0-19] | ✓ TRASER has this pair | ✓ ✓ |
-| head #23 → legs #24 | above [0-9, 11-19] | - | ✗ TRASER missed this pair | - |
-| legs #24 → carpet #1 | on [0-9, 11-19] | above [0-19] | ✓ TRASER has this pair | ✓ |
-| entrance #25 → floor #9 | above [9-11] | - | ✗ TRASER missed this pair | - |
-| bench #27 → floor #9 | on [9.5-12] | - | ✗ TRASER missed this pair | - |
-| person #0 → pillars #10 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → fountain #11 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → desk #12 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → lights #14 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → background #15 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → screen #16 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → door #18 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → oerson #19 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → pillar #20 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → head #23 | - | wearing [0-19] | + only TRASER | - |
-| person #0 → legs #24 | - | wearing [0-19] | + only TRASER | - |
-| person #0 → entrance #25 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → balcony #26 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → bench #27 | - | in front of [9-12] | + only TRASER | - |
-| person #0 → sign #28 | - | in front of [9-12] | + only TRASER | - |
-| sofa #2 → curtain #4 | - | in front of [0-8, 13-15] | + only TRASER | - |
-| sofa #2 → windows #5 | - | in front of [0-8, 13-15] | + only TRASER | - |
-| table #3 → curtain #4 | - | in front of [0-19] | + only TRASER | - |
-| table #3 → windows #5 | - | in front of [0-19] | + only TRASER | - |
-| chair #7 → curtain #4 | - | in front of [0-19] | + only TRASER | - |
-| chair #7 → windows #5 | - | in front of [0-19] | + only TRASER | - |
-| bag #22 → carpet #1 | - | above [0-19] | + only TRASER | - |
-| head #23 → person #0 | - | on [0-19] | + only TRASER | - |
-| head #23 → carpet #1 | - | above [0-19] | + only TRASER | - |
-| legs #24 → person #0 | - | on [0-19] | + only TRASER | - |
+| pair (subject → object) | both masks given? | both objects named right? | human said | TRASER said | pair | relation right? (lenient, tIoU > 0.5) | triplet right? |
+|---|---|---|---|---|---|---|---|
+| person #0 → carpet #1 | ✓ | ✓ | moves on [0-9, 11-19]; on [0-9, 11-19] | on [0-19] | ✓ TRASER has this pair | ✓ ✓ | ✓ ✓ |
+| person #0 → table #3 | ✓ | ✓ | in front of [0-9, 11-19] | approaching [0-11]; moving away from [11-19] | ✓ TRASER has this pair | ✗ | ✗ |
+| person #0 → curtain #4 | ✓ | ✓ | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → windows #5 | ✓ | ✓ | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → chair #7 | ✓ | ✓ | in front of [0-9, 11-19] | moving away from [0-11]; approaching [11-19]; in front of [0-19] | ✓ TRASER has this pair | ✓ | ✓ |
+| person #0 → wall panel #8 | ✓ | ✓ | in front of [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| person #0 → bag #22 | ✓ | ✓ | poses with [0-9, 11-19]; carries [0-9, 11-19] | carrying [0-19] | ✓ TRASER has this pair | ✗ ✓ | ✗ ✓ |
+| carpet #1 → floor #9 | ✓ | ✓ | on [0-5, 9-10, 11-12] | - | ✗ TRASER missed this pair | - | - |
+| sofa #2 → carpet #1 | ✓ | ✓ | on [0-8, 12-15, 18-19] | - | ✗ TRASER missed this pair | - | - |
+| table #3 → carpet #1 | ✓ | ✓ | on [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| table #3 → chair #7 | ✓ | ✓ | in front of [0-9, 11-19] | in front of [0-19] | ✓ TRASER has this pair | ✓ | ✓ |
+| curtain #4 → windows #5 | ✓ | ✓ | in front of [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| chair #7 → carpet #1 | ✓ | ✓ | on [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| wall panel #8 → curtain #4 | ✓ | ✓ | below [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| pillars #10 → floor #9 | ✓ | ✗ (pillars #10 named wrong) | on [9-11] | - | ✗ TRASER missed this pair | - | - |
+| fountain #11 → floor #9 | ✓ | ✗ (fountain #11 named wrong) | on [10-12] | - | ✗ TRASER missed this pair | - | - |
+| desk #12 → floor #9 | ✓ | ✗ (desk #12 named wrong) | on [9-10] | - | ✗ TRASER missed this pair | - | - |
+| desk #12 → pillar #20 | ✓ | ✗ (desk #12 named wrong) | in front of [8.5-10.5] | - | ✗ TRASER missed this pair | - | - |
+| sofa #13 → carpet #1 | ✓ | ✗ (sofa #13 named wrong) | on [9-10] | - | ✗ TRASER missed this pair | - | - |
+| lights #14 → desk #12 | ✓ | ✗ (lights #14 named wrong, desk #12 named wrong) | above [8.5-10.5] | - | ✗ TRASER missed this pair | - | - |
+| door #18 → floor #9 | ✓ | ✓ | above [8.5-11] | - | ✗ TRASER missed this pair | - | - |
+| bag #22 → person #0 | ✓ | ✓ | moves with [0-9, 11-19]; near [0-9, 11-19] | beside [0-19] | ✓ TRASER has this pair | ✓ ✓ | ✓ ✓ |
+| head #23 → legs #24 | ✓ | ✓ | above [0-9, 11-19] | - | ✗ TRASER missed this pair | - | - |
+| legs #24 → carpet #1 | ✓ | ✓ | on [0-9, 11-19] | above [0-19] | ✓ TRASER has this pair | ✓ | ✓ |
+| entrance #25 → floor #9 | ✓ | ✗ (entrance #25 named wrong) | above [9-11] | - | ✗ TRASER missed this pair | - | - |
+| bench #27 → floor #9 | ✓ | ✗ (bench #27 named wrong) | on [9.5-12] | - | ✗ TRASER missed this pair | - | - |
+| person #0 → pillars #10 | ✓ | ✗ (pillars #10 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → fountain #11 | ✓ | ✗ (fountain #11 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → desk #12 | ✓ | ✗ (desk #12 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → lights #14 | ✓ | ✗ (lights #14 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → background #15 | ✓ | ✗ (background #15 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → screen #16 | ✓ | ✓ | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → door #18 | ✓ | ✓ | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → oerson #19 | ✓ | ✓ | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → pillar #20 | ✓ | ✓ | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → head #23 | ✓ | ✓ | - | wearing [0-19] | + only TRASER | - | - |
+| person #0 → legs #24 | ✓ | ✓ | - | wearing [0-19] | + only TRASER | - | - |
+| person #0 → entrance #25 | ✓ | ✗ (entrance #25 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → balcony #26 | ✓ | ✗ (balcony #26 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → bench #27 | ✓ | ✗ (bench #27 named wrong) | - | in front of [9-12] | + only TRASER | - | - |
+| person #0 → sign #28 | ✓ | ✓ | - | in front of [9-12] | + only TRASER | - | - |
+| sofa #2 → curtain #4 | ✓ | ✓ | - | in front of [0-8, 13-15] | + only TRASER | - | - |
+| sofa #2 → windows #5 | ✓ | ✓ | - | in front of [0-8, 13-15] | + only TRASER | - | - |
+| table #3 → curtain #4 | ✓ | ✓ | - | in front of [0-19] | + only TRASER | - | - |
+| table #3 → windows #5 | ✓ | ✓ | - | in front of [0-19] | + only TRASER | - | - |
+| chair #7 → curtain #4 | ✓ | ✓ | - | in front of [0-19] | + only TRASER | - | - |
+| chair #7 → windows #5 | ✓ | ✓ | - | in front of [0-19] | + only TRASER | - | - |
+| bag #22 → carpet #1 | ✓ | ✓ | - | above [0-19] | + only TRASER | - | - |
+| head #23 → person #0 | ✓ | ✓ | - | on [0-19] | + only TRASER | - | - |
+| head #23 → carpet #1 | ✓ | ✓ | - | above [0-19] | + only TRASER | - | - |
+| legs #24 → person #0 | ✓ | ✓ | - | on [0-19] | + only TRASER | - | - |
 

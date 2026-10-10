@@ -340,6 +340,15 @@ def video_report(gt, pred, stats, judge, thr=0.5):
                         "TRASER label": hyp if hyp is not None else "-",
                         "verdict": (cat or "not judged yet") if hyp is not None else "no label from TRASER",
                         "right": mark(obj_ok[g])})
+    given_ids = given_objects(gt, stats)
+    both_given = lambda a, b: "✓" if a in given_ids and b in given_ids else \
+        "✗ (" + ", ".join(name_of.get(x, x) for x in (a, b) if x not in given_ids) + " not given)"
+
+    def both_named(a, b):
+        """✓ if TRASER named both objects right (lenient), ✗ with which one and why, ? if not judged yet."""
+        bad = [f"{name_of.get(x, x)} " + ("not given" if x not in given_ids else "named wrong")
+               for x in (a, b) if obj_ok.get(x, False) is False]
+        return f"✗ ({', '.join(bad)})" if bad else ("?" if None in (obj_ok.get(a), obj_ok.get(b)) else "✓")
     relations, n_rel, n_tri, n_unj = [], 0, 0, 0
     for r in gt["relations"]:
         cands = [(p, pred_spans(sp, gt, stats)) for p, sp in by_pair.get((r["subj"], r["obj"]), [])]
@@ -359,6 +368,8 @@ def video_report(gt, pred, stats, judge, thr=0.5):
         relations.append({
             "human: subject - predicate - object": f"{name_of.get(r['subj'], r['subj'])} - {r['pred']} - "
                                                    f"{name_of.get(r['obj'], r['obj'])}",
+            "both masks given?": both_given(r["subj"], r["obj"]),
+            "both objects named right?": both_named(r["subj"], r["obj"]),
             "human time": _fmt_spans(r["spans"], unit),
             "TRASER (same two objects)": (best[1] + (f" (+{len(cands) - 1} more)" if len(cands) > 1 else ""))
                                          if best else "nothing for this pair",
@@ -435,6 +446,15 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
     for r in gt["relations"]:
         human.setdefault((r["subj"], r["obj"]), []).append((r["pred"], r["spans"]))
     given = {o["gt_id"] for o in gt["objects"] if o["col"] in set(stats.get("mask_columns", []))} | {-1}
+
+    def label_ok(g):                     # True / False / None (judge has not compared the words yet)
+        if g == -1:
+            return True
+        if pred_name.get(g) is None:
+            return False
+        cat = judge.category("object", name[g], pred_name[g])
+        return None if cat is None else is_right(cat, "lenient")
+
     rows, counts = [], {"both": 0, "missed": 0, "reversed": 0, "extra": 0, "not_given": 0}
     for pair in sorted(set(human) | set(by_pair), key=lambda p: (p not in human, p)):
         h = human.get(pair, [])
@@ -459,11 +479,19 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
             ok = [is_right(judge.category("relation", p, q), "lenient") and tiou(sp, qs) > thr for q, qs in t]
             und = [judge.category("relation", p, q) is None for q, _ in t]
             right.append("✓" if any(ok) else ("?" if any(und) else ("✗" if t else "-")))
+        missing = [tag(x) for x in pair if x not in given]
+        bad = [f"{tag(x)} " + ("not given" if x not in given else "named wrong") for x in pair if label_ok(x) is False]
+        named = f"✗ ({', '.join(bad)})" if bad else ("?" if None in (label_ok(pair[0]), label_ok(pair[1])) else "✓")
+        tri = ["✓" if m == "✓" and named == "✓" else (m if m in ("-", "✗") else ("✗" if named.startswith("✗") else "?"))
+               for m in right]
         rows.append({"pair (subject → object)": f"{tag(pair[0])} → {tag(pair[1])}",
+                     "both masks given?": "✓" if not missing else f"✗ ({', '.join(missing)} not given)",
+                     "both objects named right?": named,
                      "human said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in h) or "-",
                      "TRASER said": "; ".join(f"{p} [{_fmt_spans(sp, unit)}]" for p, sp in t) or "-",
                      "pair": status,
-                     "relation right? (lenient, tIoU > 0.5)": " ".join(right) if h else "-"})
+                     "relation right? (lenient, tIoU > 0.5)": " ".join(right) if h else "-",
+                     "triplet right?": " ".join(tri) if h else "-"})
     objects, status_of = [], mask_status(gt, stats)
     for o in gt["objects"]:
         hyp = pred_name.get(o["gt_id"])
@@ -531,8 +559,15 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
             "because the run gives only the first 40 objects by number, or because the object has no mask on the "
             "frames TRASER reads (about 1 per second)\n"
             "- **+ only TRASER**: TRASER describes a pair the humans did not annotate (ignored by the scores)\n"
-            "- last column, one mark per human relation of the pair: ✓ word right and tIoU > 0.5, ✗ not, "
-            "? the judge has not compared the words yet\n\n"
+            "- **both masks given?**: ✓ if TRASER got the masks of both objects of the pair in its input (the camera "
+            "always counts as given), ✗ and which object was missing otherwise\n"
+            "- **both objects named right?**: ✓ if TRASER's labels for both objects are right (lenient: not a "
+            "mismatch), ✗ and which one is wrong (named wrong, or not given so never named)\n"
+            "- **relation right?**, one mark per human relation of the pair: ✓ same two objects, relation word right "
+            "and tIoU > 0.5; ✗ not; - TRASER wrote nothing for this pair; ? the judge has not compared the words yet. "
+            "The object names do not matter here (paper's definition)\n"
+            "- **triplet right?**, one mark per human relation: ✓ only if the relation is right AND both objects are "
+            "named right\n\n"
             f"**Total over these videos:** {tot['human pairs']} human pairs, {tot['TRASER pairs']} TRASER pairs; "
             f"{tot['pairs in both']} in both, {tot['missed by TRASER']} missed, {tot['reversed']} reversed, "
             f"{tot['object not given']} with an object not given, "
@@ -571,7 +606,10 @@ def write_compare(dataset, thr=0.5, path=None):
             f"{len(overview)} videos with a prediction. Lenient criterion, temporal IoU > {thr}. "
             "✓ right, ✗ wrong, ? = the judge (Kimi K3) has not compared these two labels yet "
             "(identical text counts as right without the judge). Relation = same two objects, predicate not a "
-            "mismatch, tIoU > 0.5; triplet = relation right and both object labels right. Made by "
+            "mismatch, tIoU > 0.5; triplet = relation right and both object labels right. \"mask given to TRASER?\" "
+            "(objects) and \"both masks given?\" (relations) say whether those masks were in TRASER's input (the run "
+            "gives the first 40 objects by number, minus those with no mask on the frames it reads); \"both objects "
+            "named right?\" says whether TRASER's labels for both objects are right. Made by "
             "`tools/bench_eval.py write_compare`.\n\n"
             + (f"**So far: objects {tot('objects right')}/{den('objects right')}, relations "
                f"{tot('relations right')}/{den('relations right')}, triplets "
