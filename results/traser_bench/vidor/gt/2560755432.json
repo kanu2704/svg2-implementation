@@ -1,0 +1,80 @@
+{
+ "dataset": "vidor",
+ "video_id": "2560755432",
+ "fps": 29.96969696969697,
+ "n_frames": 514,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 514,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sofa"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0030333670374114
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020222446916076,
+     17.017189079878666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.0030333670374114
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.0020222446916076,
+     5.005055611729019
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     4.004044489383215,
+     17.017189079878666
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1122/2560755432.mp4",
+ "video": "video.mp4"
+}

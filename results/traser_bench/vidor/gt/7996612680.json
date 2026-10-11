@@ -1,0 +1,173 @@
+{
+ "dataset": "vidor",
+ "video_id": "7996612680",
+ "fps": 29.97002997002997,
+ "n_frames": 172,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 172,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     3.1031,
+     4.037366666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "pull",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     1.2012,
+     2.6693333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     5.005,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     2.0020000000000002,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     2.0020000000000002,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.739066666666667
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1001/7996612680.mp4",
+ "video": "video.mp4"
+}

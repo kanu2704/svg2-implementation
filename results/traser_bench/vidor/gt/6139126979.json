@@ -1,0 +1,63 @@
+{
+ "dataset": "vidor",
+ "video_id": "6139126979",
+ "fps": 23.976023976023978,
+ "n_frames": 245,
+ "video_fps": 23.976023976023978,
+ "ann_frames": 245,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "horse"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.218541666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.218541666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.218541666666665
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0081/6139126979.mp4",
+ "video": "video.mp4"
+}

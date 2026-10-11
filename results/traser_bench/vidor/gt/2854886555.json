@@ -1,0 +1,102 @@
+{
+ "dataset": "vidor",
+ "video_id": "2854886555",
+ "fps": 29.97002997002997,
+ "n_frames": 480,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 480,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "fruits"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.2729333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     10.110100000000001,
+     12.045366666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     15.348666666666666,
+     15.782433333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.016000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.016000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.016000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     2.0020000000000002,
+     5.005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1000/2854886555.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,118 @@
+{
+ "dataset": "vidor",
+ "video_id": "3102155856",
+ "fps": 29.97002997002997,
+ "n_frames": 183,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 183,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bicycle"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "backpack"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carry",
+   "obj": 2,
+   "spans": [
+    [
+     1.3680333333333334,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     1.3680333333333334,
+     6.072733333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     1.3680333333333334,
+     6.072733333333334
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     1.3680333333333334,
+     6.072733333333334
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     1.3680333333333334,
+     6.072733333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1005/3102155856.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,63 @@
+{
+ "dataset": "vidor",
+ "video_id": "3784543730",
+ "fps": 29.97002997002997,
+ "n_frames": 852,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 852,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bicycle"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     10.643966666666667,
+     28.4284
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     10.643966666666667,
+     28.395033333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     10.643966666666667,
+     28.395033333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1017/3784543730.mp4",
+ "video": "video.mp4"
+}

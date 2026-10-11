@@ -1,0 +1,286 @@
+{
+ "dataset": "vidor",
+ "video_id": "6037747123",
+ "fps": 29.97002997002997,
+ "n_frames": 919,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 919,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "bat"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "bat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "hold",
+   "obj": 7,
+   "spans": [
+    [
+     25.2252,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "hold",
+   "obj": 6,
+   "spans": [
+    [
+     19.953266666666668,
+     27.5275
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     18.018,
+     20.520500000000002
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     18.018,
+     20.520500000000002
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     18.018,
+     20.520500000000002
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     18.018,
+     20.887533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     18.5185,
+     20.887533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     18.018,
+     20.887533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     26.292933333333334,
+     30.6306
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "towards",
+   "obj": 3,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 7,
+   "spans": [
+    [
+     25.2252,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 4,
+   "spans": [
+    [
+     18.5185,
+     20.987633333333335
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     28.028000000000002,
+     30.663966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     20.02,
+     27.027
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     20.02,
+     27.027
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     26.292933333333334,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     25.2252,
+     28.8288
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1105/6037747123.mp4",
+ "video": "video.mp4"
+}

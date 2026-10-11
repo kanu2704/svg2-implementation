@@ -1,0 +1,370 @@
+{
+ "dataset": "vidor",
+ "video_id": "3865816121",
+ "fps": 25.0,
+ "n_frames": 216,
+ "video_fps": 25.0,
+ "ann_frames": 216,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "toy"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "motorcycle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     0.96,
+     2.92
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 3,
+   "spans": [
+    [
+     1.16,
+     6.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     1.16,
+     3.32
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "drive",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.64
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     1.16,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     1.16,
+     6.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.64
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     6.48
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     1.08,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     1.08,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     0.96,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     2.0,
+     4.24
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     1.16,
+     2.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.64
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1000/3865816121.mp4",
+ "video": "video.mp4"
+}

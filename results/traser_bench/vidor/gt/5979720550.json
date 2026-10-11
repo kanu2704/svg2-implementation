@@ -1,0 +1,112 @@
+{
+ "dataset": "vidor",
+ "video_id": "5979720550",
+ "fps": 29.97002997002997,
+ "n_frames": 201,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 201,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bus/truck"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "motorcycle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1051/5979720550.mp4",
+ "video": "video.mp4"
+}

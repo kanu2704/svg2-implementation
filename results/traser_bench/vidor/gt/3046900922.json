@@ -1,0 +1,135 @@
+{
+ "dataset": "vidor",
+ "video_id": "3046900922",
+ "fps": 29.97002997002997,
+ "n_frames": 539,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 539,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "wave",
+   "obj": 1,
+   "spans": [
+    [
+     3.7704333333333335,
+     11.845166666666668
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.2699333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     3.7704333333333335,
+     12.7127
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "release",
+   "obj": 1,
+   "spans": [
+    [
+     12.679333333333334,
+     13.380033333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     12.245566666666667,
+     13.079733333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     4.0040000000000004,
+     14.581233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     14.581233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     12.012,
+     14.581233333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1162/3046900922.mp4",
+ "video": "video.mp4"
+}

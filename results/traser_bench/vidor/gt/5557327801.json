@@ -1,0 +1,52 @@
+{
+ "dataset": "vidor",
+ "video_id": "5557327801",
+ "fps": 29.97002997002997,
+ "n_frames": 306,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 306,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cattle/cow"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cattle/cow"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "cattle/cow"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     2.7027,
+     6.5732333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.7027,
+     6.5732333333333335
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1008/5557327801.mp4",
+ "video": "video.mp4"
+}

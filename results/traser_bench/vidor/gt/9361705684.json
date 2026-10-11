@@ -1,0 +1,166 @@
+{
+ "dataset": "vidor",
+ "video_id": "9361705684",
+ "fps": 23.976,
+ "n_frames": 243,
+ "video_fps": 23.976,
+ "ann_frames": 243,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "car"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "cellphone"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "cellphone"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     3.545211878545212,
+     4.421087754421088
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "use",
+   "obj": 4,
+   "spans": [
+    [
+     3.545211878545212,
+     4.421087754421088
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     4.546212879546213,
+     4.963296629963297
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "use",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     4.587921254587921
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     4.587921254587921
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     4.546212879546213,
+     4.838171504838171
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.963296629963297
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.963296629963297
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     4.587921254587921
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.587921254587921
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.587921254587921
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1100/9361705684.mp4",
+ "video": "video.mp4"
+}

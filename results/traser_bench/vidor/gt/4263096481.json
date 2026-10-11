@@ -1,0 +1,151 @@
+{
+ "dataset": "vidor",
+ "video_id": "4263096481",
+ "fps": 29.97002997002997,
+ "n_frames": 637,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 637,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "fish"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "table"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.6723333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     7.540866666666667,
+     21.254566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     15.982633333333334,
+     21.254566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "cut",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.7057
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "cut",
+   "obj": 1,
+   "spans": [
+    [
+     7.540866666666667,
+     21.254566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     21.021
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1015/4263096481.mp4",
+ "video": "video.mp4"
+}

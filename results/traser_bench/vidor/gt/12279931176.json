@@ -1,0 +1,74 @@
+{
+ "dataset": "vidor",
+ "video_id": "12279931176",
+ "fps": 29.97002997002997,
+ "n_frames": 166,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 166,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "ski"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.9009,
+     1.8351666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     3.2032000000000003,
+     5.538866666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     3.2032000000000003,
+     5.5055000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     3.2032000000000003,
+     5.5055000000000005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1028/12279931176.mp4",
+ "video": "video.mp4"
+}

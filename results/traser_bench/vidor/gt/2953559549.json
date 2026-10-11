@@ -1,0 +1,69 @@
+{
+ "dataset": "vidor",
+ "video_id": "2953559549",
+ "fps": 29.97002997002997,
+ "n_frames": 319,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 319,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "rabbit"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "rabbit"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     9.009
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     8.008000000000001,
+     10.643966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.643966666666667
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1022/2953559549.mp4",
+ "video": "video.mp4"
+}

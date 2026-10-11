@@ -1,0 +1,107 @@
+{
+ "dataset": "vidor",
+ "video_id": "5875242364",
+ "fps": 29.97002997002997,
+ "n_frames": 427,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 427,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dog"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.26693333333333336,
+     12.879533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.26693333333333336,
+     12.879533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     10.01,
+     12.879533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.8008000000000001,
+     13.179833333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     12.012,
+     13.179833333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.8008000000000001,
+     12.879533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.8008000000000001,
+     13.179833333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0091/5875242364.mp4",
+ "video": "video.mp4"
+}

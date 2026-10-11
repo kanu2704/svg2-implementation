@@ -1,0 +1,96 @@
+{
+ "dataset": "vidor",
+ "video_id": "8801611750",
+ "fps": 29.97,
+ "n_frames": 347,
+ "video_fps": 29.97,
+ "ann_frames": 347,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "cup"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.074741408074741
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.074741408074741
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1000/8801611750.mp4",
+ "video": "video.mp4"
+}

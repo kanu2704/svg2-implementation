@@ -1,0 +1,63 @@
+{
+ "dataset": "vidor",
+ "video_id": "7059877301",
+ "fps": 29.97002997002997,
+ "n_frames": 918,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 918,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dog"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dog"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     13.413400000000001,
+     13.8138
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     28.628600000000002,
+     30.597233333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     28.628600000000002,
+     30.597233333333335
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1025/7059877301.mp4",
+ "video": "video.mp4"
+}

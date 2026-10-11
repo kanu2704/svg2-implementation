@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "4925211209",
+ "fps": 24.0,
+ "n_frames": 768,
+ "video_fps": 24.0,
+ "ann_frames": 768,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bus/truck"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.875
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     14.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "inside",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     17.75
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1000/4925211209.mp4",
+ "video": "video.mp4"
+}

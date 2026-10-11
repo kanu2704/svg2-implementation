@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "3063380173",
+ "fps": 29.96969696969697,
+ "n_frames": 515,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 515,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     17.1840242669363
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     3.470171890798787,
+     7.407482305358949
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     9.943377148634985,
+     10.644084934277048
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     14.080889787664308,
+     17.1840242669363
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     17.017189079878666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     17.017189079878666
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1025/3063380173.mp4",
+ "video": "video.mp4"
+}

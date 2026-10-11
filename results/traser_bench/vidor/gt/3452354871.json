@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "3452354871",
+ "fps": 29.97002997002997,
+ "n_frames": 511,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 511,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bird"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     6.006,
+     17.017
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     17.017
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1015/3452354871.mp4",
+ "video": "video.mp4"
+}

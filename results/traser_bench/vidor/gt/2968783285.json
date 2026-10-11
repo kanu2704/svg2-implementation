@@ -1,0 +1,123 @@
+{
+ "dataset": "vidor",
+ "video_id": "2968783285",
+ "fps": 29.96969696969697,
+ "n_frames": 120,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 120,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "chair"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "chair"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "cup"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.0030333670374114
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0030333670374114
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.603640040444894
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.8038422649140546
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.603640040444894
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.603640040444894
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.8038422649140546
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.603640040444894
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0073/2968783285.mp4",
+ "video": "video.mp4"
+}

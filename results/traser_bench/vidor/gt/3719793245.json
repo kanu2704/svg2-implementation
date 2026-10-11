@@ -1,0 +1,216 @@
+{
+ "dataset": "vidor",
+ "video_id": "3719793245",
+ "fps": 29.97002997002997,
+ "n_frames": 342,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 342,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "car"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "car"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.9079
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 2,
+   "spans": [
+    [
+     9.209200000000001,
+     11.4114
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     1.5015,
+     2.4024
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "ride",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.4114
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     2.3356666666666666,
+     6.6066
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     9.509500000000001,
+     10.176833333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.9079
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     9.209200000000001,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.9079
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     9.209200000000001,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.9079
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     9.209200000000001,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "inside",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.011000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.9079
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     9.209200000000001,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.011000000000001
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1023/3719793245.mp4",
+ "video": "video.mp4"
+}

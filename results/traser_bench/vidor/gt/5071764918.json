@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "5071764918",
+ "fps": 25.0,
+ "n_frames": 2250,
+ "video_fps": 25.0,
+ "ann_frames": 2250,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "piano"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1023/5071764918.mp4",
+ "video": "video.mp4"
+}

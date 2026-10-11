@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "5141164851",
+ "fps": 29.97002997002997,
+ "n_frames": 2159,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 2159,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "refrigerator"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     30.597233333333335,
+     31.5315
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     61.061
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     62.062,
+     65.065
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     66.066,
+     69.069
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     70.07000000000001,
+     72.03863333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     72.03863333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1161/5141164851.mp4",
+ "video": "video.mp4"
+}

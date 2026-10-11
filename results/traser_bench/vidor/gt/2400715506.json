@@ -1,0 +1,80 @@
+{
+ "dataset": "vidor",
+ "video_id": "2400715506",
+ "fps": 29.97002997002997,
+ "n_frames": 414,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 414,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "hamster/rat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.8138
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.009
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     10.01,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     8.008000000000001,
+     11.011000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     12.012,
+     13.8138
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1002/2400715506.mp4",
+ "video": "video.mp4"
+}

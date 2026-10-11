@@ -1,0 +1,47 @@
+{
+ "dataset": "vidor",
+ "video_id": "3113970118",
+ "fps": 29.97002997002997,
+ "n_frames": 114,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 114,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.8038
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     3.8038
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1027/3113970118.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,217 @@
+{
+ "dataset": "vidor",
+ "video_id": "8457210773",
+ "fps": 25.0,
+ "n_frames": 1976,
+ "video_fps": 25.0,
+ "ann_frames": 1976,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dog"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dog"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     9.92,
+     10.8
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     19.28,
+     19.92
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     21.52,
+     22.44
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     65.88,
+     66.04
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     68.4,
+     69.2
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     28.0,
+     67.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     68.0,
+     69.56
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     70.2,
+     70.8
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     4.0,
+     29.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     66.0,
+     69.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     27.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     38.0,
+     55.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     64.0,
+     69.56
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     70.2,
+     70.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     26.0,
+     39.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     54.0,
+     65.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1008/8457210773.mp4",
+ "video": "video.mp4"
+}

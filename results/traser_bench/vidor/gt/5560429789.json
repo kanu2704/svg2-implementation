@@ -1,0 +1,90 @@
+{
+ "dataset": "vidor",
+ "video_id": "5560429789",
+ "fps": 29.97002997002997,
+ "n_frames": 278,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 278,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dog"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     8.5085,
+     9.275933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     8.241566666666667,
+     9.275933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     1.0343666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.0020000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.0020000000000002
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1015/5560429789.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,146 @@
+{
+ "dataset": "vidor",
+ "video_id": "4761953886",
+ "fps": 24.0,
+ "n_frames": 797,
+ "video_fps": 24.0,
+ "ann_frames": 797,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     10.875,
+     12.125
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     31.083333333333332,
+     31.75
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     6.125,
+     6.75
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     12.541666666666666,
+     13.041666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     14.75,
+     15.166666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     6.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     8.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     6.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1005/4761953886.mp4",
+ "video": "video.mp4"
+}

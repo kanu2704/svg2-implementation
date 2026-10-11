@@ -1,0 +1,47 @@
+{
+ "dataset": "vidor",
+ "video_id": "5467727317",
+ "fps": 29.97002997002997,
+ "n_frames": 1230,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1230,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "elephant"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "elephant"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1010/5467727317.mp4",
+ "video": "video.mp4"
+}

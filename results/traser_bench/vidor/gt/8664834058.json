@@ -1,0 +1,74 @@
+{
+ "dataset": "vidor",
+ "video_id": "8664834058",
+ "fps": 24.0,
+ "n_frames": 240,
+ "video_fps": 24.0,
+ "ann_frames": 240,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "backpack"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "carry",
+   "obj": 2,
+   "spans": [
+    [
+     1.0833333333333333,
+     2.375
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.375
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.375
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.375
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1007/8664834058.mp4",
+ "video": "video.mp4"
+}

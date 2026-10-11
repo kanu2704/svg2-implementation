@@ -1,0 +1,41 @@
+{
+ "dataset": "vidor",
+ "video_id": "2463423442",
+ "fps": 29.97002997002997,
+ "n_frames": 274,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 274,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "chase",
+   "obj": 0,
+   "spans": [
+    [
+     2.1021,
+     3.2365666666666666
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0041/2463423442.mp4",
+ "video": "video.mp4"
+}

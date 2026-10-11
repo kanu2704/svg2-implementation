@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "2401167740",
+ "fps": 29.96969696969697,
+ "n_frames": 390,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 390,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cup"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     6.573306370070779,
+     11.811931243680485
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     6.573306370070779,
+     11.811931243680485
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     6.573306370070779,
+     11.811931243680485
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1013/2401167740.mp4",
+ "video": "video.mp4"
+}

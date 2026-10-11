@@ -1,0 +1,80 @@
+{
+ "dataset": "vidor",
+ "video_id": "2712662377",
+ "fps": 29.97002997002997,
+ "n_frames": 1048,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1048,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "turtle"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "turtle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.4084,
+     13.6136
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     16.983633333333334,
+     32.999633333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     32.032000000000004,
+     34.968266666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     8.4084,
+     13.6136
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     16.983633333333334,
+     34.9349
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1202/2712662377.mp4",
+ "video": "video.mp4"
+}

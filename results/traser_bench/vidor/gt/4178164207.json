@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "4178164207",
+ "fps": 29.97002997002997,
+ "n_frames": 221,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 221,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     5.438766666666667,
+     5.9059
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     7.140466666666667,
+     7.374033333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     4.170833333333333,
+     6.639966666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.6026000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.6026000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.6026000000000002
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1110/4178164207.mp4",
+ "video": "video.mp4"
+}

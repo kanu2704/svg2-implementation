@@ -1,0 +1,69 @@
+{
+ "dataset": "vidor",
+ "video_id": "7295075568",
+ "fps": 29.97002997002997,
+ "n_frames": 524,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 524,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "guitar"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "play(instrument)",
+   "obj": 0,
+   "spans": [
+    [
+     0.46713333333333334,
+     15.582233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.5672333333333334,
+     15.582233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     17.017
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     17.017
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1008/7295075568.mp4",
+ "video": "video.mp4"
+}

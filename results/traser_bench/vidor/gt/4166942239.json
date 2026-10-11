@@ -1,0 +1,124 @@
+{
+ "dataset": "vidor",
+ "video_id": "4166942239",
+ "fps": 29.97002997002997,
+ "n_frames": 590,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 590,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     14.781433333333334,
+     19.686333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     1.0677333333333334,
+     11.144466666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     13.880533333333334,
+     19.686333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     6.773433333333333,
+     7.2072
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     11.044366666666667,
+     11.945266666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     15.281933333333333,
+     15.682333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     2.8361666666666667,
+     7.2072
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.686333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     19.686333333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1024/4166942239.mp4",
+ "video": "video.mp4"
+}

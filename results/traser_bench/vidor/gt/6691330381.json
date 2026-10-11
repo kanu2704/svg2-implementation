@@ -1,0 +1,173 @@
+{
+ "dataset": "vidor",
+ "video_id": "6691330381",
+ "fps": 29.97002997002997,
+ "n_frames": 1239,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1239,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "electric fan"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold hand of",
+   "obj": 1,
+   "spans": [
+    [
+     1.1011,
+     41.341300000000004
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lift",
+   "obj": 1,
+   "spans": [
+    [
+     18.051366666666667,
+     21.254566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.8675333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     2.435766666666667,
+     7.440766666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     10.01,
+     39.67296666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "kick",
+   "obj": 0,
+   "spans": [
+    [
+     27.093733333333333,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     2.0020000000000002,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     41.041000000000004
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1105/6691330381.mp4",
+ "video": "video.mp4"
+}

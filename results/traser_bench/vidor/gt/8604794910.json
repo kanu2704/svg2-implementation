@@ -1,0 +1,249 @@
+{
+ "dataset": "vidor",
+ "video_id": "8604794910",
+ "fps": 29.97002997002997,
+ "n_frames": 405,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 405,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "racket"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "racket"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "ball/sports ball"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.5135
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     3.7704333333333335,
+     4.6046000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     10.3103,
+     11.8118
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     13.5135
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     3.7704333333333335,
+     4.6046000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     10.3103,
+     11.044366666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "wave",
+   "obj": 3,
+   "spans": [
+    [
+     11.4114,
+     12.545866666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wave",
+   "obj": 2,
+   "spans": [
+    [
+     2.9362666666666666,
+     6.072733333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wave",
+   "obj": 2,
+   "spans": [
+    [
+     9.809800000000001,
+     12.178833333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hit",
+   "obj": 4,
+   "spans": [
+    [
+     4.237566666666667,
+     4.437766666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     8.008000000000001,
+     13.013
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     9.009
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.013
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1103/8604794910.mp4",
+ "video": "video.mp4"
+}

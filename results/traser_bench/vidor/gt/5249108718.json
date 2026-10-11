@@ -1,0 +1,24 @@
+{
+ "dataset": "vidor",
+ "video_id": "5249108718",
+ "fps": 29.97002997002997,
+ "n_frames": 466,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 466,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  }
+ ],
+ "relations": [],
+ "video_source": "/tmp/vidor/videos/video/1014/5249108718.mp4",
+ "video": "video.mp4"
+}

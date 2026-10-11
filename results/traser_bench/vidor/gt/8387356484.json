@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "8387356484",
+ "fps": 24.0,
+ "n_frames": 1022,
+ "video_fps": 24.0,
+ "ann_frames": 1022,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "baby seat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     42.583333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     42.583333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     42.583333333333336
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1110/8387356484.mp4",
+ "video": "video.mp4"
+}

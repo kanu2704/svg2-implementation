@@ -1,0 +1,133 @@
+{
+ "dataset": "vidor",
+ "video_id": "2434859163",
+ "fps": 29.96969696969697,
+ "n_frames": 615,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 615,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "camera"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "bear"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "bear"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     0.7007077856420627
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "use",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     0.7007077856420627
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     1.5682507583417593
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     0.5338725985844287
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.5682507583417593
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     2.302325581395349
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "away",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     2.302325581395349
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.302325581395349
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0015/2434859163.mp4",
+ "video": "video.mp4"
+}

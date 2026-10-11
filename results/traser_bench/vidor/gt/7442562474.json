@@ -1,0 +1,113 @@
+{
+ "dataset": "vidor",
+ "video_id": "7442562474",
+ "fps": 29.97002997002997,
+ "n_frames": 598,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 598,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     12.7127,
+     13.546866666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     15.248566666666667,
+     17.250566666666668
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "kick",
+   "obj": 1,
+   "spans": [
+    [
+     9.442766666666667,
+     11.4114
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     15.648966666666666,
+     17.017
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     3.4034,
+     4.4044
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     8.7087,
+     13.6136
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.953266666666668
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     19.953266666666668
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1020/7442562474.mp4",
+ "video": "video.mp4"
+}

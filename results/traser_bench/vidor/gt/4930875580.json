@@ -1,0 +1,107 @@
+{
+ "dataset": "vidor",
+ "video_id": "4930875580",
+ "fps": 25.0,
+ "n_frames": 449,
+ "video_fps": 25.0,
+ "ann_frames": 449,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "squirrel"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "squirrel"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "squirrel"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     9.84,
+     10.32
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     9.52,
+     10.04
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     15.4,
+     15.68
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.28,
+     10.88
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     16.0,
+     17.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     15.4,
+     16.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     16.0,
+     17.96
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0015/4930875580.mp4",
+ "video": "video.mp4"
+}

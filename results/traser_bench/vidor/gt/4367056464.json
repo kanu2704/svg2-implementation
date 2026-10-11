@@ -1,0 +1,177 @@
+{
+ "dataset": "vidor",
+ "video_id": "4367056464",
+ "fps": 29.97002997002997,
+ "n_frames": 1162,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1162,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "chicken"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "cup"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     12.946266666666666,
+     13.6136
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hold",
+   "obj": 5,
+   "spans": [
+    [
+     8.775433333333334,
+     10.543866666666666
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hold",
+   "obj": 5,
+   "spans": [
+    [
+     12.4124,
+     13.246566666666666
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     17.684333333333335,
+     17.984633333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.842166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     12.946266666666666,
+     14.9149
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     18.018,
+     37.037
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.842166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     12.946266666666666,
+     14.9149
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     18.018,
+     37.037
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     8.775433333333334,
+     10.543866666666666
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     8.775433333333334,
+     10.543866666666666
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1000/4367056464.mp4",
+ "video": "video.mp4"
+}

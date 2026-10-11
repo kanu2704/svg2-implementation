@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "5260001300",
+ "fps": 29.97002997002997,
+ "n_frames": 1819,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1819,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     60.69396666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     60.69396666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     60.69396666666667
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1052/5260001300.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "4103088549",
+ "fps": 29.97002997002997,
+ "n_frames": 485,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 485,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "surfboard"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     3.9706333333333332,
+     13.980633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     4.0040000000000004,
+     13.980633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     13.980633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1002/4103088549.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,231 @@
+{
+ "dataset": "vidor",
+ "video_id": "4984331176",
+ "fps": 29.97002997002997,
+ "n_frames": 300,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 300,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "adult"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "hold hand of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.1011
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold hand of",
+   "obj": 2,
+   "spans": [
+    [
+     1.9686333333333335,
+     2.769433333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 6,
+   "spans": [
+    [
+     7.6409666666666665,
+     8.942266666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 7,
+   "spans": [
+    [
+     6.439766666666666,
+     7.540866666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.3003
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hold hand of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.1011
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hold hand of",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     2.769433333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.3003
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     3.4367666666666667,
+     5.1051
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     3.2699333333333334,
+     4.170833333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.769433333333333
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     3.2699333333333334,
+     4.871533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     3.2699333333333334,
+     4.871533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     3.4367666666666667,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "away",
+   "obj": 6,
+   "spans": [
+    [
+     3.4367666666666667,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     3.4367666666666667,
+     4.971633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1007/4984331176.mp4",
+ "video": "video.mp4"
+}

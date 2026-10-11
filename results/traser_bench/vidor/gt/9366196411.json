@@ -1,0 +1,167 @@
+{
+ "dataset": "vidor",
+ "video_id": "9366196411",
+ "fps": 29.97,
+ "n_frames": 351,
+ "video_fps": 29.97,
+ "ann_frames": 351,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "watercraft"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.444778111444778
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.711711711711713
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     2.002002002002002,
+     5.005005005005005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.444778111444778
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.711711711711713
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.444778111444778
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     11.444778111444778
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     7.007007007007007
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.711711711711713
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     11.444778111444778
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1006/9366196411.mp4",
+ "video": "video.mp4"
+}

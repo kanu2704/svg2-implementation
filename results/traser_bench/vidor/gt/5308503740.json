@@ -1,0 +1,168 @@
+{
+ "dataset": "vidor",
+ "video_id": "5308503740",
+ "fps": 29.97002997002997,
+ "n_frames": 1609,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1609,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "rabbit"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "rabbit"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     15.048366666666666,
+     18.985633333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     15.048366666666666,
+     18.985633333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     18.018,
+     21.021
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     20.02,
+     23.990633333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     40.04,
+     43.043
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     42.042,
+     43.6436
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     44.8448,
+     45.011633333333336
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     16.016000000000002,
+     19.019000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     18.018,
+     23.990633333333335
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     20.02,
+     23.023
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     26.3263,
+     30.964266666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     40.04,
+     43.6436
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     44.8448,
+     45.011633333333336
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0059/5308503740.mp4",
+ "video": "video.mp4"
+}

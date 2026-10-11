@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "9576671750",
+ "fps": 29.97,
+ "n_frames": 825,
+ "video_fps": 29.97,
+ "ann_frames": 825,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cellphone"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     24.391057724391057
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     24.391057724391057
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     24.391057724391057
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1105/9576671750.mp4",
+ "video": "video.mp4"
+}

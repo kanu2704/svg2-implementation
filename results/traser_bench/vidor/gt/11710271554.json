@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "11710271554",
+ "fps": 24.0,
+ "n_frames": 749,
+ "video_fps": 24.0,
+ "ann_frames": 749,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.2083333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     7.416666666666667,
+     8.75
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "clean",
+   "obj": 0,
+   "spans": [
+    [
+     24.041666666666668,
+     31.208333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     17.166666666666668,
+     20.541666666666668
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touch",
+   "obj": 0,
+   "spans": [
+    [
+     11.375,
+     12.125
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     31.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1099/11710271554.mp4",
+ "video": "video.mp4"
+}

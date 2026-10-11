@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "8990144134",
+ "fps": 29.97,
+ "n_frames": 457,
+ "video_fps": 29.97,
+ "ann_frames": 457,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bird"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     4.2042042042042045,
+     7.907907907907909
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     11.11111111111111,
+     15.248581915248582
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hit",
+   "obj": 1,
+   "spans": [
+    [
+     5.271938605271939,
+     5.739072405739073
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     15.015015015015015
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005005005005005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     4.004004004004004,
+     15.015015015015015
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1111/8990144134.mp4",
+ "video": "video.mp4"
+}

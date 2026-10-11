@@ -1,0 +1,68 @@
+{
+ "dataset": "vidor",
+ "video_id": "5208551363",
+ "fps": 29.97002997002997,
+ "n_frames": 220,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 220,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "stool"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "refrigerator"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.5682333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 2,
+   "spans": [
+    [
+     4.7047,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 3,
+   "spans": [
+    [
+     5.271933333333333,
+     6.973633333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0070/5208551363.mp4",
+ "video": "video.mp4"
+}

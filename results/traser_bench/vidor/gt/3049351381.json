@@ -1,0 +1,69 @@
+{
+ "dataset": "vidor",
+ "video_id": "3049351381",
+ "fps": 29.97002997002997,
+ "n_frames": 1542,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1542,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     51.4514
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     51.4514
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     51.051
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     51.051
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1101/3049351381.mp4",
+ "video": "video.mp4"
+}

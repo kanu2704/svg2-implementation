@@ -1,0 +1,430 @@
+{
+ "dataset": "vidor",
+ "video_id": "5018581116",
+ "fps": 15.0,
+ "n_frames": 576,
+ "video_fps": 15.0,
+ "ann_frames": 576,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 5,
+   "pred": "point to",
+   "obj": 0,
+   "spans": [
+    [
+     14.533333333333333,
+     17.4
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.533333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     15.4,
+     34.46666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     34.53333333333333,
+     38.333333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     16.0,
+     25.6
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     26.6,
+     33.6
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.533333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     15.4,
+     34.46666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     16.0,
+     25.6
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     26.6,
+     33.6
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     15.4,
+     18.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     15.4,
+     18.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     34.53333333333333,
+     38.333333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     16.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     16.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     26.6,
+     28.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     26.6,
+     28.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     28.0,
+     33.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     26.6,
+     33.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     26.6,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     26.6,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     14.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     15.4,
+     16.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     15.4,
+     18.933333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     24.866666666666667,
+     28.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 4,
+   "spans": [
+    [
+     26.6,
+     28.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0085/5018581116.mp4",
+ "video": "video.mp4"
+}

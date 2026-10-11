@@ -1,0 +1,80 @@
+{
+ "dataset": "vidor",
+ "video_id": "4013751996",
+ "fps": 23.976023976023978,
+ "n_frames": 764,
+ "video_fps": 23.976023976023978,
+ "ann_frames": 764,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.045708333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "get off",
+   "obj": 1,
+   "spans": [
+    [
+     4.25425,
+     6.005999999999999
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     4.004,
+     6.381374999999999
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1021/4013751996.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,134 @@
+{
+ "dataset": "vidor",
+ "video_id": "5840177726",
+ "fps": 29.97002997002997,
+ "n_frames": 377,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 377,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bicycle"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "bicycle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.4044
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 3,
+   "spans": [
+    [
+     5.271933333333333,
+     7.040366666666666
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 3,
+   "spans": [
+    [
+     7.374033333333333,
+     8.742066666666666
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 3,
+   "spans": [
+    [
+     9.275933333333333,
+     9.509500000000001
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 3,
+   "spans": [
+    [
+     9.676333333333334,
+     11.044366666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.4044
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.4044
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     5.271933333333333,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     5.271933333333333,
+     6.973633333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/0028/5840177726.mp4",
+ "video": "video.mp4"
+}

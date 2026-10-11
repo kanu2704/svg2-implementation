@@ -1,0 +1,322 @@
+{
+ "dataset": "vidor",
+ "video_id": "5907839036",
+ "fps": 29.97002997002997,
+ "n_frames": 2697,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 2697,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "adult"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "adult"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "adult"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "adult"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "watercraft"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "watercraft"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "camera"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 9,
+   "spans": [
+    [
+     60.39366666666667,
+     61.7617
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     6.2062,
+     6.5065
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     17.1171,
+     17.6176
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 10,
+   "spans": [
+    [
+     28.028000000000002,
+     28.161466666666666
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "watch",
+   "obj": 8,
+   "spans": [
+    [
+     35.869166666666665,
+     36.169466666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 12,
+   "spans": [
+    [
+     2.5692333333333335,
+     7.674333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 12,
+   "spans": [
+    [
+     2.5692333333333335,
+     7.674333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     4.371033333333333,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     60.06,
+     68.7687
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     60.06,
+     68.7687
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 12,
+   "spans": [
+    [
+     2.5692333333333335,
+     7.674333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     4.371033333333333,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     60.06,
+     68.7687
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     79.34593333333333,
+     81.64823333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     60.06,
+     68.7687
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     18.018,
+     24.724700000000002
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 10,
+   "spans": [
+    [
+     26.026,
+     28.161466666666666
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     58.8588,
+     63.02963333333334
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     72.40566666666666,
+     74.4744
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     18.018,
+     24.724700000000002
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     26.026,
+     28.161466666666666
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.5692333333333335,
+     7.674333333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1019/5907839036.mp4",
+ "video": "video.mp4"
+}

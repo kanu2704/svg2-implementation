@@ -1,0 +1,79 @@
+{
+ "dataset": "vidor",
+ "video_id": "4644717465",
+ "fps": 24.0,
+ "n_frames": 228,
+ "video_fps": 24.0,
+ "ann_frames": 228,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "faucet"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "cup"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sink"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1014/4644717465.mp4",
+ "video": "video.mp4"
+}

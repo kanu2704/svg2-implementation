@@ -1,0 +1,57 @@
+{
+ "dataset": "vidor",
+ "video_id": "3263908208",
+ "fps": 24.0,
+ "n_frames": 300,
+ "video_fps": 24.0,
+ "ann_frames": 300,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "watercraft"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "watercraft"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "watercraft"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "watercraft"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     12.5
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     12.5
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1001/3263908208.mp4",
+ "video": "video.mp4"
+}

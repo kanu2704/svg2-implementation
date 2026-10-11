@@ -1,0 +1,339 @@
+{
+ "dataset": "vidor",
+ "video_id": "7999756100",
+ "fps": 29.97002997002997,
+ "n_frames": 618,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 618,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "adult"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "adult"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "backpack"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "backpack"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "backpack"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "cellphone"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.10010000000000001,
+     0.8341666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     18.251566666666665,
+     18.718700000000002
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "watch",
+   "obj": 11,
+   "spans": [
+    [
+     10.710700000000001,
+     12.1121
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "hold",
+   "obj": 11,
+   "spans": [
+    [
+     10.5105,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carry",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     1.8018
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0687333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.0687333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     1.8018
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.0687333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.003
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     18.251566666666665,
+     20.587233333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     2.0020000000000002,
+     4.7047
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     18.251566666666665,
+     20.587233333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     2.8361666666666667,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 9,
+   "spans": [
+    [
+     2.8361666666666667,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 10,
+   "spans": [
+    [
+     6.006,
+     8.274933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "next to",
+   "obj": 11,
+   "spans": [
+    [
+     10.5105,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.8018
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.8018
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     2.769433333333333,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     2.8361666666666667,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     6.006,
+     8.274933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     10.5105,
+     12.479133333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/vidor/videos/video/1007/7999756100.mp4",
+ "video": "video.mp4"
+}
