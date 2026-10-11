@@ -1,0 +1,64 @@
+{
+ "video": "/tmp/traser_bench/vidor/9441605497/video.mp4",
+ "task": "scene_graph",
+ "dtype": "float16",
+ "vision_dtype": "float32",
+ "max_objects": 40,
+ "duration_s": 6.94,
+ "video_frames": 208,
+ "video_fps": 29.97,
+ "sampled_frames": 7,
+ "sampled_idx": [
+  0,
+  34,
+  69,
+  103,
+  138,
+  172,
+  207
+ ],
+ "effective_fps": 1.009,
+ "grid_thw": [
+  4,
+  34,
+  20
+ ],
+ "raw_video_tokens": 680,
+ "resized_hw": [
+  476,
+  280
+ ],
+ "objects_requested": 4,
+ "objects": 3,
+ "mask_columns": [
+  0,
+  1,
+  2
+ ],
+ "tokens_per_object": [
+  117,
+  20,
+  26
+ ],
+ "tokens_selected_union": 158,
+ "tokens_dropped_fraction": 0.768,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>"
+ ],
+ "prompt_tokens": 714,
+ "arranged_tokens": 389,
+ "arrange_s": 1.4,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "generate_s": 16.7,
+ "new_tokens": 315,
+ "engine": "hf",
+ "peak_gpu_gb": 10.69,
+ "json_ok": true,
+ "out_objects": 3,
+ "out_relationships": 10,
+ "out_uncertain_labels": 0,
+ "total_s": 18.3,
+ "gpu": "Tesla T4"
+}
