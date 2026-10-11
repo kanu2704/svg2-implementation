@@ -5,13 +5,14 @@ Released checkpoint `UWGZQ/TRASER`, official inference settings (1 fps, at most 
 | | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
 |---|---|---|---|---|---|---|---|---|---|
 | TRASER, paper | 16.1 | 22.9 | 16.7 | 16.9 | 25.0 | 18.7 | 72.7 | 91.4 | 79.0 |
-| **TRASER, ours** | 10.3 | – | 21.2 | 13.9 | – | 27.1 | 62.2 | – | 58.4 |
+| **TRASER, ours** | 10.3 | 5.6 | 21.2 | 13.9 | 6.4 | 27.1 | 62.2 | 86.2 | 58.4 |
 
 ## Coverage
 
 | | test videos | prepared | predicted | failed | answers not valid JSON (salvaged) |
 |---|---|---|---|---|---|
 | pvsg | 62 | 62 | 62 | 0 | 11 |
+| vidor | 835 | 835 | 835 | 0 | 0 |
 | svg2test | 100 | 100 | 100 | 0 | 4 |
 
 ## pvsg by video source (lenient, tIoU > 0.5)
@@ -41,6 +42,12 @@ Two ways of counting the human objects TRASER was not given (after the first 40,
 | pvsg | Table 9 | Triplet | lenient, tIoU 0.1 | 151 | 969 | 950 | 15.6 | 15.9 | 23.8 | -8.2 | -7.9 |
 | pvsg | Table 9 | Relation | lenient, tIoU 0.1 | 205 | 969 | 950 | 21.2 | 21.6 | 25.4 | -4.2 | -3.8 |
 | pvsg | Table 9 | Object | strict (exact words) | 355 | 1282 | 1166 | 27.7 | 30.4 | 29.5 | -1.8 | +0.9 |
+| vidor | Table 2 | Triplet | lenient, tIoU 0.5 | 1683 | 30142 | 30134 | 5.6 | 5.6 | 22.9 | -17.3 | -17.3 |
+| vidor | Table 2 | Relation | lenient, tIoU 0.5 | 1931 | 30142 | 30134 | 6.4 | 6.4 | 25.0 | -18.6 | -18.6 |
+| vidor | Table 2 | Object | lenient | 3453 | 4004 | 3973 | 86.2 | 86.9 | 91.4 | -5.2 | -4.5 |
+| vidor | Table 9 | Triplet | lenient, tIoU 0.1 | 3907 | 30142 | 30134 | 13.0 | 13.0 | 32.7 | -19.7 | -19.7 |
+| vidor | Table 9 | Relation | lenient, tIoU 0.1 | 4525 | 30142 | 30134 | 15.0 | 15.0 | 36.0 | -21.0 | -21.0 |
+| vidor | Table 9 | Object | strict (exact words) | 1378 | 4004 | 3973 | 34.4 | 34.7 | 31.7 | +2.7 | +3.0 |
 | svg2test | Table 2 | Triplet | lenient, tIoU 0.5 | 676 | 3187 | 2964 | 21.2 | 22.8 | 16.7 | +4.5 | +6.1 |
 | svg2test | Table 2 | Relation | lenient, tIoU 0.5 | 864 | 3187 | 2964 | 27.1 | 29.1 | 18.7 | +8.4 | +10.4 |
 | svg2test | Table 2 | Object | lenient | 1930 | 3305 | 2849 | 58.4 | 67.7 | 79.0 | -20.6 | -11.3 |
@@ -52,24 +59,31 @@ Two ways of counting the human objects TRASER was not given (after the first 40,
 
 | setting | Triplet pvsg | Triplet vidor | Triplet svg2test | Relation pvsg | Relation vidor | Relation svg2test | Object pvsg | Object vidor | Object svg2test |
 |---|---|---|---|---|---|---|---|---|---|
-| lenient, tIoU 0.5 (main) | 10.3 | – | 21.2 | 13.9 | – | 27.1 | 62.2 | – | 58.4 |
-| lenient, tIoU 0.1 | 15.6 | – | 23.2 | 21.2 | – | 29.8 | 62.2 | – | 58.4 |
-| strict, tIoU 0.5 | 1.2 | – | 4.5 | 9.8 | – | 20.6 | 27.7 | – | 26.4 |
-| strict, tIoU 0.1 | 1.7 | – | 4.7 | 13.3 | – | 22.1 | 27.7 | – | 26.4 |
-| lenient, tIoU 0.5, only the objects TRASER was given (≤ 40) and relations between them | 10.5 | – | 22.8 | 14.2 | – | 29.1 | 68.4 | – | 67.7 |
-| lenient, tIoU 0.5, per-video average | 11.1 | – | 21.9 | 15.5 | – | 27.6 | 67.7 | – | 63.7 |
-| lenient, relation ignoring time | – | – | – | 27.7 | – | 29.9 | – | – | – |
+| lenient, tIoU 0.5 (main) | 10.3 | 5.6 | 21.2 | 13.9 | 6.4 | 27.1 | 62.2 | 86.2 | 58.4 |
+| lenient, tIoU 0.1 | 15.6 | 13.0 | 23.2 | 21.2 | 15.0 | 29.8 | 62.2 | 86.2 | 58.4 |
+| strict, tIoU 0.5 | 1.2 | 0.6 | 4.5 | 9.8 | 3.4 | 20.6 | 27.7 | 34.4 | 26.4 |
+| strict, tIoU 0.1 | 1.7 | 1.3 | 4.7 | 13.3 | 7.6 | 22.1 | 27.7 | 34.4 | 26.4 |
+| lenient, tIoU 0.5, only the objects TRASER was given (≤ 40) and relations between them | 10.5 | 5.6 | 22.8 | 14.2 | 6.4 | 29.1 | 68.4 | 86.9 | 67.7 |
+| lenient, tIoU 0.5, per-video average | 11.1 | 12.2 | 21.9 | 15.5 | 13.8 | 27.6 | 67.7 | 87.7 | 63.7 |
+| lenient, relation ignoring time | – | – | – | 27.7 | 23.6 | 29.9 | – | – | – |
 
 ## Judge answers (lenient = everything but mismatch)
 
 - **pvsg**: object: mismatch 369, identical 355, hypernym/hyponym 236, semantic overlap 173, synonym 33; relation: mismatch 513, identical 225, hypernym/hyponym 102, semantic overlap 92, synonym 12
+- **vidor**: object: hypernym/hyponym 1823, identical 1378, mismatch 520, semantic overlap 211, synonym 41; relation: mismatch 23043, identical 3131, semantic overlap 2012, hypernym/hyponym 1809, synonym 1412
 - **svg2test**: object: mismatch 890, identical 874, hypernym/hyponym 469, semantic overlap 454, synonym 133; relation: identical 803, mismatch 605, semantic overlap 157, hypernym/hyponym 130, synonym 57
 
 ## Notes on these predictions
 
 - **pvsg**: 11 of 62 answers were cut off at the 8192-token limit (read up to the cut); 19 of 969 human relations (2.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for 5 of 62 videos, float16 for the rest (`pvsg/preds_fp16_vision/` has older float16 answers that were re-run).
+- **vidor**: 0 of 835 answers were cut off at the 8192-token limit (read up to the cut); 8 of 30142 human relations (0.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for all 835 videos (`vidor/preds_fp16_vision/` has older float16 answers that were re-run).
 - **svg2test**: 4 of 100 answers were cut off at the 8192-token limit (read up to the cut); 223 of 3187 human relations (7.0%) involve an object TRASER was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 for all 100 videos (`svg2test/preds_fp16_vision/` has older float16 answers that were re-run).
+- **vidor**: answers written by vLLM for 835 videos (same checkpoint and input; vLLM gets the language model's input sequence, see the check below).
 - Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`.
+
+## vLLM check: the same 10 vidor videos answered by Hugging Face and by vLLM
+
+8 of 10 answers identical. Right (Hugging Face / vLLM): objects 39 / 39 of 49, relations 23 / 24 of 254, triplets 14 / 14 of 254. Per video: `hf_check/CHECK.md`.
 
 ## How it is scored
 
