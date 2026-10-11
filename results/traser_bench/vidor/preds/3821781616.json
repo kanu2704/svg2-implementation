@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["black t-shirt", "graphic design on front", "short, dark hair"]}, {"object 2": "television set", "attributes": ["boxy", "rectangular", "slightly curved screen", "muted gray frame", "vintage appearance"]}], "relationships": [[1, "in front of", 2, [[0, 24]]], [1, "occludes", 2, [[0, 24]]]]}

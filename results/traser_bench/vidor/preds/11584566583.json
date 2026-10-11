@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["long, dark hair", "green sweater", "white collared shirt"]}, {"object 2": "person", "attributes": ["long, straight brown hair", "light-colored top", "pink nails"]}], "relationships": [[2, "approaches", 1, [[4, 6]]], [2, "moves away from", 1, [[7, 10]]], [1, "in front of", 2, [[4, 10]]]]}

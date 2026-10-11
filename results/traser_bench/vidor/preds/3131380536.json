@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child", "attributes": ["young", "vibrant red and green striped shirt"]}, {"object 2": "chair", "attributes": ["smooth", "dark brown", "slightly curved backrest", "soft", "cushioned seat", "subtle sheen", "well-maintained fabric", "rounded edges", "sleek", "modern"]}], "relationships": [[1, "sitting on", 2, [[0, 67]]], [1, "on", 2, [[0, 67]]]]}

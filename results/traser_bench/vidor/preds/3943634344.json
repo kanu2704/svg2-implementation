@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child", "attributes": ["young", "light-colored", "patterned", "soft", "comfortable"]}, {"object 2": "person", "attributes": ["light gray shirt", "dark pants", "relaxed posture", "slightly tilted head"]}], "relationships": [[1, "approaches", 2, [[0, 3]]], [1, "moves away from", 2, [[16, 21]]], [1, "in front of", 2, [[0, 21]]], [1, "near", 2, [[0, 21]]]]}

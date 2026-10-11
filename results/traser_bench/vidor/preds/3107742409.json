@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["dark-colored shirt"]}, {"object 2": "baby", "attributes": ["small", "light-colored", "striped", "soft", "comfortable"]}], "relationships": [[1, "holding", 2, [[0, 54]]], [1, "carrying", 2, [[0, 54]]], [1, "playing with", 2, [[0, 54]]], [1, "touching", 2, [[0, 54]]], [1, "overlapping", 2, [[0, 54]]]]}
