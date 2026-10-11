@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["dark purple shirt", "blue jeans", "brown shoes"]}, {"object 2": "person", "attributes": ["light-colored t-shirt", "short-sleeved", "fitted blue jeans", "casual sneakers"]}], "relationships": [[1, "dancing with", 2, [[0, 7]]], [1, "moving in sync with", 2, [[0, 7]]], [1, "next to", 2, [[0, 7]]], [1, "overlapping", 2, [[0, 7]]]]}

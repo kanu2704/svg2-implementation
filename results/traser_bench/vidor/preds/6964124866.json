@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child", "attributes": ["young", "light brown hair", "neatly combed", "small", "delicate", "white", "polka-dotted", "soft fabric"]}, {"object 2": "person", "attributes": ["dark-colored", "long-sleeved", "loose-fitting", "slightly wrinkled", "relaxed posture"]}], "relationships": [[1, "in front of", 2, [[0, 16]]], [1, "near", 2, [[0, 16]]]]}

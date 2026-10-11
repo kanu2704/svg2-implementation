@@ -1,0 +1,77 @@
+{
+ "video": "/tmp/traser_bench/vidor/5557327801/video.mp4",
+ "task": "scene_graph",
+ "dtype": "float16",
+ "vision_dtype": "float32",
+ "max_objects": 40,
+ "duration_s": 10.21,
+ "video_frames": 306,
+ "video_fps": 29.97,
+ "sampled_frames": 10,
+ "sampled_idx": [
+  0,
+  33,
+  67,
+  101,
+  135,
+  169,
+  203,
+  237,
+  271,
+  305
+ ],
+ "effective_fps": 0.979,
+ "grid_thw": [
+  5,
+  34,
+  46
+ ],
+ "raw_video_tokens": 1955,
+ "resized_hw": [
+  476,
+  644
+ ],
+ "objects_requested": 3,
+ "objects": 3,
+ "mask_columns": [
+  0,
+  1,
+  2
+ ],
+ "tokens_per_object": [
+  10,
+  3,
+  18
+ ],
+ "tokens_selected_union": 30,
+ "tokens_dropped_fraction": 0.985,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>",
+  "<8 - 12 sec>"
+ ],
+ "prompt_tokens": 1989,
+ "arranged_tokens": 389,
+ "arrange_s": 3.7,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "total_s": 6.9,
+ "encode_s": 4.0,
+ "embeds_dtype": "float16",
+ "gpu": "Tesla T4",
+ "encode_peak_gpu_gb": 10.98,
+ "dataset": "vidor",
+ "video_id": "5557327801",
+ "engine": "vllm",
+ "vllm_version": "0.31.0",
+ "new_tokens": 271,
+ "finish_reason": "stop",
+ "generate_batch": 32,
+ "generate_batch_s": 92.2,
+ "repetition_penalty": 1.05,
+ "generate_gpu": "Tesla T4",
+ "json_ok": true,
+ "out_objects": 3,
+ "out_relationships": 6,
+ "out_uncertain_labels": 0
+}

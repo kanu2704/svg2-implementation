@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child", "attributes": ["young", "blue jacket", "black shirt", "short dark hair", "slightly tousled hair", "focused expression"]}, {"object 2": "child", "attributes": ["young", "dark hair", "neatly styled", "red and black jacket", "visible collar", "visible cuffs"]}], "relationships": [[1, "in front of", 2, [[0, 31]]], [1, "overlapping", 2, [[0, 31]]]]}

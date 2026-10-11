@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["light-colored shirt", "dark pants"]}, {"object 2": "baseball bat", "attributes": ["slender", "elongated", "smooth", "cylindrical", "tapered", "rounded end", "polished surface", "reflective sheen"]}], "relationships": [[1, "holding", 2, [[0, 5]]], [1, "swinging", 2, [[0, 5]]], [1, "touching", 2, [[0, 5]]]]}

@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "backpack", "attributes": ["orange", "gray", "two-tone", "durable", "fabric-like", "rounded", "bulging", "padded", "adjustable", "zippered", "stitched"]}, {"object 2": "person", "attributes": ["blue", "gray", "red", "backpack-wearing", "forward-leaning"]}], "relationships": [[2, "wearing", 1, [[0, 27]]], [1, "on", 2, [[0, 27]]]]}

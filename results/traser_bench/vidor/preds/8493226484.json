@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["blue-shirted", "green-skirted"]}, {"object 2": "child (uncertain)", "attributes": ["white", "dark", "short", "neatly trimmed", "slightly tilted"]}, {"object 3": "person", "attributes": ["light-colored", "long-sleeved", "soft", "slightly loose"]}], "relationships": [[1, "in front of", 3, [[17, 19], [29, 30]]]]}

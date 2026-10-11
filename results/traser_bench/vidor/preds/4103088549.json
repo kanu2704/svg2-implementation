@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "surfer", "attributes": ["dark wetsuit"]}, {"object 2": "surfboard", "attributes": ["sleek", "elongated", "vibrant red and white hues", "streamlined shape", "pointed nose", "slightly wider tail"]}], "relationships": [[1, "riding", 2, [[0, 14]]], [1, "moving with", 2, [[0, 14]]], [1, "on", 2, [[0, 14]]]]}

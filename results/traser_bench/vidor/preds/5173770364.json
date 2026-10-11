@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "baby", "attributes": ["white", "soft", "delicate", "patterned", "purple", "pink", "small", "rounded", "curled"]}, {"object 2": "arm", "attributes": ["smooth", "slightly tanned", "elongated", "curved", "skin-like", "glossy"]}], "relationships": [[2, "holding", 1, [[0, 79]]], [2, "touching", 1, [[0, 79]]], [2, "in front of", 1, [[0, 79]]]]}

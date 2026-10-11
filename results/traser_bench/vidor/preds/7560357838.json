@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "baby", "attributes": ["soft", "yellow", "pajama top", "black and white striped socks"]}, {"object 2": "socks", "attributes": ["black color", "white stripes", "soft fabric", "slightly elastic material", "snug fit", "contoured shape"]}], "relationships": [[1, "wearing", 2, [[0, 36]]], [2, "on", 1, [[0, 36]]]]}

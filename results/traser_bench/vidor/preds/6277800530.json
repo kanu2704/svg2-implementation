@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["dark-colored", "protective", "helmeted", "goggled", "forward-leaning"]}, {"object 2": "ATV", "attributes": ["dark", "rugged", "angular", "sturdy", "large", "heavy-duty", "prominent", "elevated", "visible"]}], "relationships": [[1, "driving", 2, [[6, 25]]], [1, "riding", 2, [[6, 25]]], [1, "on", 2, [[6, 25]]]]}

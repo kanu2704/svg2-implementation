@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "person", "attributes": ["bright yellow life jacket", "dark pants"]}, {"object 2": "boat", "attributes": ["sleek", "elongated", "dark hull", "streamlined design", "pointed bow", "slightly raised stern"]}], "relationships": [[1, "riding", 2, [[0, 18]]], [2, "carrying", 1, [[0, 18]]], [1, "boating", 2, [[0, 18]]], [1, "in", 2, [[0, 18]]]]}
