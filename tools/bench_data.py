@@ -51,6 +51,18 @@ sys.path.insert(0, str(REPO / "third_party/SVG2/traser"))
 
 SVG2_REPO = "UWGZQ/Synthetic_Visual_Genome2"
 VIDOR_REPO = "shangxd/vidor"
+# Result datasets that reuse another dataset's items with a different masks file:
+# vidor_sam3 = the VidOR items with masks made by SAM 3 instead of SAM 2.1 (mask-model comparison).
+ALIASES = {"vidor_sam3": ("vidor", "masks_sam3.json")}
+
+
+def base_dataset(dataset):
+    """The dataset whose item folders a (possibly aliased) result dataset uses."""
+    return ALIASES.get(dataset, (dataset, "masks.json"))[0]
+
+
+def masks_name(dataset):
+    return ALIASES.get(dataset, (dataset, "masks.json"))[1]
 
 
 # ----------------------------------------------------------------------------- shared helpers
@@ -60,13 +72,24 @@ def rle(mask):
     return {"size": [int(r["size"][0]), int(r["size"][1])], "counts": r["counts"].decode()}
 
 
+def frame_indices(total_frames, video_length, base_interval=1, min_frames=4, max_frames=128):
+    """Copy of TRASER's inference._frame_indices (BASE_INTERVAL 1 s, 4..128 frames), for environments
+    where its module cannot be imported (the SAM 3 environment has transformers 5)."""
+    target = min(max(round(video_length / base_interval), min_frames), max_frames)
+    return np.unique(np.linspace(0, total_frames - 1, target, dtype=int))
+
+
 def traser_frames(video):
     """(sampled frame indices, number of frames, fps) exactly as TRASER's decode_video computes them."""
-    import inference as T
     from decord import VideoReader
+    try:
+        import inference as T
+        pick = T._frame_indices
+    except Exception:  # noqa: BLE001  (TRASER's code needs transformers 4.x; the copy above is identical)
+        pick = frame_indices
     vr = VideoReader(str(video))
     n, fps = len(vr), vr.get_avg_fps()
-    return [int(i) for i in T._frame_indices(n, n / fps)], n, fps
+    return [int(i) for i in pick(n, n / fps)], n, fps
 
 
 def item_dir(bench, dataset, video_id):
@@ -101,18 +124,21 @@ def item_video(bench, gt):
 
 
 def masks_path(bench, dataset, video_id, work=None):
-    """masks.json of an item: in the (writable) work folder if made there, else in the item."""
-    if work is not None and item_dir(work, dataset, video_id).joinpath("masks.json").exists():
-        return item_dir(work, dataset, video_id) / "masks.json"
-    return item_dir(bench, dataset, video_id) / "masks.json"
+    """The masks file of an item (masks.json; masks_sam3.json for vidor_sam3): in the (writable) work
+    folder if made there, else in the item."""
+    base, name = base_dataset(dataset), masks_name(dataset)
+    if work is not None and item_dir(work, base, video_id).joinpath(name).exists():
+        return item_dir(work, base, video_id) / name
+    return item_dir(bench, base, video_id) / name
 
 
 def item_ready(bench, dataset, video_id, work=None):
-    return masks_path(bench, dataset, video_id, work).exists() and item_dir(bench, dataset, video_id).joinpath("gt.json").exists()
+    return (masks_path(bench, dataset, video_id, work).exists()
+            and item_dir(bench, base_dataset(dataset), video_id).joinpath("gt.json").exists())
 
 
 def load_gt(bench, dataset, video_id):
-    return json.load(open(item_dir(bench, dataset, video_id) / "gt.json"))
+    return json.load(open(item_dir(bench, base_dataset(dataset), video_id) / "gt.json"))
 
 
 def sparse_masks(masks, keep):
@@ -225,6 +251,31 @@ class BoxToMask:
         return np.asarray(masks).reshape(len(boxes), -1, h, w)[:, 0] > 0
 
 
+class Sam3BoxToMask:
+    """SAM 3 (facebook/sam3, gated: request access on Hugging Face) with box prompts -> masks, through
+    transformers' Sam3Tracker (same interface as SAM 2's interactive segmentation). Needs transformers >= 5,
+    so it runs in its own environment (tools/sam3_masks.py). float32 by default (T4: no bfloat16)."""
+    def __init__(self, model_id="facebook/sam3", dtype="float32", device="cuda"):
+        import torch
+        from transformers import Sam3TrackerModel, Sam3TrackerProcessor
+        self.torch, self.device = torch, device
+        self.processor = Sam3TrackerProcessor.from_pretrained(model_id)
+        self.model = Sam3TrackerModel.from_pretrained(model_id, torch_dtype=getattr(torch, dtype)).to(device).eval()
+
+    def __call__(self, image_rgb, boxes):
+        from PIL import Image
+        torch = self.torch
+        inputs = self.processor(images=Image.fromarray(image_rgb), input_boxes=[[list(map(float, b)) for b in boxes]],
+                                return_tensors="pt").to(self.device)
+        if "pixel_values" in inputs:
+            inputs["pixel_values"] = inputs["pixel_values"].to(self.model.dtype)
+        with torch.inference_mode():
+            out = self.model(**inputs, multimask_output=False)
+        masks = self.processor.post_process_masks(out.pred_masks.cpu(), inputs["original_sizes"])[0]
+        h, w = image_rgb.shape[:2]
+        return np.asarray(masks).reshape(len(boxes), -1, h, w)[:, 0] > 0
+
+
 def prepare_vidor_item(ann_path, video, bench, results):
     """CPU part: labels + video + annotation into the item (masks come later, from SAM 2 on a GPU)."""
     a = json.load(open(ann_path))
@@ -244,9 +295,10 @@ def prepare_vidor_item(ann_path, video, bench, results):
     return d
 
 
-def make_vidor_masks(bench, video_id, box_to_mask, out=None):
-    """GPU part: SAM 2 masks from VidOR's boxes on the frames TRASER samples. Written to
-    <out or bench>/vidor/<video_id>/masks.json (out = a writable folder when bench is read-only)."""
+def make_vidor_masks(bench, video_id, box_to_mask, out=None, name="masks.json"):
+    """GPU part: masks from VidOR's boxes on the frames TRASER samples (SAM 2.1; SAM 3 for the comparison,
+    name="masks_sam3.json"). Written to <out or bench>/vidor/<video_id>/<name> (out = a writable folder when
+    bench is read-only)."""
     from decord import VideoReader
     d = item_dir(bench, "vidor", video_id)
     a = json.load(open(d / "vidor_anno.json"))
@@ -273,9 +325,10 @@ def make_vidor_masks(bench, video_id, box_to_mask, out=None):
         masks[f] = row
     target = item_dir(out or bench, "vidor", video_id)
     target.mkdir(parents=True, exist_ok=True)
-    with open(target / "masks.json", "w") as f:
+    with open(target / (name + ".part"), "w") as f:
         json.dump(masks, f)
-    return target / "masks.json"
+    os.replace(target / (name + ".part"), target / name)          # never leave a half-written masks file
+    return target / name
 
 
 def prepare_vidor(ann_path, video, bench, results, box_to_mask):

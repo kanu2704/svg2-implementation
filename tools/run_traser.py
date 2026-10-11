@@ -13,6 +13,10 @@ using its own functions. Two things differ:
         --masks traser/examples/example/2401075277_rle.json --output experiments/phase2/2401075277.json
 
 `load_model` + `infer` are also used by tools/bench_run.py to run many videos with one model load.
+`infer` = `encode` (video, masks -> the arranged input sequence the language model reads) + Hugging Face
+`generate`. `encode` alone is used to hand that sequence to vLLM (tools/vllm_generate.py): TRASER gives its
+language model plain 1D positions 0..L-1 (token_arrangement.py), so the language model is an ordinary
+Qwen2 decoder over those embeddings.
 """
 import argparse
 import json
@@ -26,6 +30,8 @@ import torch
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO, "third_party/SVG2/traser"))
 import inference as T  # noqa: E402  (their module: TRASER, select_tokens, rearrange_token, helpers, constants)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from answers import answer_stats  # noqa: E402  (shared with tools/vllm_generate.py)
 
 
 def pick_dtype(dtype="auto"):
@@ -250,10 +256,40 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     stats["mask_columns"][k - 1] is the mask column the model calls "object k".
     progress(stage, **info), if given, is called at every step and every 25 generated tokens (live status)."""
     progress = progress or (lambda stage, **info: None)
+    embeds, position_ids, mask, rope_deltas, stats = encode(
+        model, processor, tokenizer, video, mask_data, objects=objects, max_objects=max_objects, task=task,
+        coverage_thresh=coverage_thresh, time_reduce=time_reduce, temporal_window_length=temporal_window_length,
+        progress=progress)
+    with torch.no_grad():
+        progress("generating answer", tokens=0, input_tokens=int(embeds.shape[1]))
+        t2 = time.time()
+        generated = model.generate(inputs_embeds=embeds, position_ids=position_ids, attention_mask=mask.long(),
+                                   rope_deltas=rope_deltas, max_new_tokens=max_new_tokens, do_sample=False,
+                                   stopping_criteria=_token_counter(progress, t2))
+        stats.update(generate_s=round(time.time() - t2, 1), new_tokens=int(generated.shape[1]), engine="hf")
+    if str(model.device).startswith("cuda"):
+        stats["peak_gpu_gb"] = round(torch.cuda.max_memory_allocated() / 2**30, 2)
+    text = tokenizer.decode(generated[0], skip_special_tokens=True)
+    stats.update(answer_stats(text))
+    return text, stats
+
+
+def linear_positions(position_ids, rope_deltas):
+    """True if the arranged sequence uses plain positions 0..L-1 on all three RoPE rows (what vLLM assumes)."""
+    L = position_ids.shape[-1]
+    ref = torch.arange(L, device=position_ids.device, dtype=position_ids.dtype)
+    return bool((position_ids.reshape(-1, L) == ref).all()) and int(rope_deltas.reshape(-1)[0]) == 0
+
+
+def encode(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
+           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, progress=None):
+    """Everything before the answer is written: frames, masks -> object tokens, vision encoder, resamplers,
+    trajectory-aligned arrangement. Returns (embeds [1, L, D], position_ids, attention mask, rope_deltas, stats)."""
+    progress = progress or (lambda stage, **info: None)
     device = model.device
     dtype = model.lm_head.weight.dtype                 # the language model's dtype (vision may be float32)
     stats = {"video": video, "task": task, "dtype": str(dtype).replace("torch.", ""),
-             "vision_dtype": str(model.model.visual.dtype).replace("torch.", "")}
+             "vision_dtype": str(model.model.visual.dtype).replace("torch.", ""), "max_objects": max_objects}
 
     # ---- video: ~1 fps, 4..128 frames, Qwen resize ----
     progress("reading video frames")
@@ -313,25 +349,9 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
             timestamp_token_ids_per_batch=[[torch.tensor(x, dtype=torch.long) for x in window_ids]],
             grids_per_temporal_window_per_batch=[grids_per_window])
         stats.update(arranged_tokens=int(embeds.shape[1]), arrange_s=round(time.time() - t1, 1),
-                     embeds_finite=bool(torch.isfinite(embeds).all()))
-        progress("generating answer", tokens=0, input_tokens=int(embeds.shape[1]))
-        t2 = time.time()
-        generated = model.generate(inputs_embeds=embeds, position_ids=position_ids, attention_mask=mask.long(),
-                                   rope_deltas=rope_deltas, max_new_tokens=max_new_tokens, do_sample=False,
-                                   stopping_criteria=_token_counter(progress, t2))
-        stats.update(generate_s=round(time.time() - t2, 1), new_tokens=int(generated.shape[1]))
-    if str(device).startswith("cuda"):
-        stats["peak_gpu_gb"] = round(torch.cuda.max_memory_allocated() / 2**30, 2)
-
-    text = tokenizer.decode(generated[0], skip_special_tokens=True)
-    try:
-        graph = json.loads(text)
-        stats.update(json_ok=True, out_objects=len(graph.get("objects", [])),
-                     out_relationships=len(graph.get("relationships", [])),
-                     out_uncertain_labels=sum("uncertain" in json.dumps(o) for o in graph.get("objects", [])))
-    except json.JSONDecodeError as e:
-        stats.update(json_ok=False, json_error=str(e)[:200])
-    return text, stats
+                     embeds_finite=bool(torch.isfinite(embeds).all()),
+                     linear_positions=linear_positions(position_ids, rope_deltas))
+    return embeds, position_ids, mask, rope_deltas, stats
 
 
 def main():

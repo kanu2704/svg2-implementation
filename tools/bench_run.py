@@ -19,6 +19,13 @@ For each item: make its masks if missing (VidOR), then run TRASER with the offic
 <results> defaults to results/traser_bench in the repo. Items with a prediction are skipped, so a restarted
 worker continues where it stopped. Offline: --model / --base_model / --sam2_ckpt point at local copies.
 Progress: <runs>/<gpu_name>.json.
+
+--mode encode stops before the answer: it saves the sequence TRASER's language model reads,
+<embeds>/<dataset>/<video_id>.pt ({"embeds": [L, D] tensor, "stats": JSON text}) + .stats.json, for
+tools/vllm_generate.py to write the answers with vLLM. Same steps as above up to that point.
+
+Datasets: pvsg, vidor, svg2test, and vidor_sam3 (the VidOR items with SAM 3 masks, masks_sam3.json,
+made beforehand by tools/sam3_masks.py; see bench_data.ALIASES).
 """
 import argparse
 import faulthandler
@@ -48,6 +55,11 @@ def is_done(dataset, video_id, results=None):
     return pred_paths(dataset, video_id, results)[0].exists()
 
 
+def embeds_paths(embeds, dataset, video_id):
+    d = Path(embeds) / dataset
+    return d / f"{video_id}.pt", d / f"{video_id}.stats.json"
+
+
 def timed_out(dataset, video_id, results=None):
     err = pred_paths(dataset, video_id, results)[2]
     return err.exists() and err.read_text().startswith("Timeout")
@@ -71,6 +83,9 @@ class Preparer:
         if B.item_ready(a.bench, dataset, video_id, a.work):
             return
         item = B.item_dir(a.bench, dataset, video_id)
+        if dataset in B.ALIASES:
+            raise FileNotFoundError(f"{dataset}/{video_id}: {B.masks_name(dataset)} is missing "
+                                    "(made by tools/sam3_masks.py, the SAM 3 cell)")
         if dataset == "vidor" and (item / "vidor_anno.json").exists():
             B.make_vidor_masks(a.bench, video_id, self.sam2(), out=a.work)
         elif dataset == "pvsg" and a.pvsg_root:
@@ -92,7 +107,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--bench", required=True, help="folder with <dataset>/<video_id>/ items (may be read-only)")
     ap.add_argument("--items", nargs="*", default=None, help="dataset/video_id ...")
-    ap.add_argument("--dataset", choices=["pvsg", "vidor", "svg2test"], default=None)
+    ap.add_argument("--dataset", choices=["pvsg", "vidor", "svg2test", "vidor_sam3"], default=None)
+    ap.add_argument("--mode", choices=["hf", "encode"], default="hf",
+                    help="hf: whole TRASER with Hugging Face generate; encode: stop before the answer (for vLLM)")
+    ap.add_argument("--embeds", default=None, help="--mode encode: where the input sequences go")
+    ap.add_argument("--name", default=None, help="progress file name prefix (default: the dataset)")
     ap.add_argument("--videos", nargs="*", default=None)
     ap.add_argument("--work", default=None, help="writable folder for masks made here (default: --bench)")
     ap.add_argument("--results", default=str(RESULTS))
@@ -115,25 +134,37 @@ def main():
     if not items:
         raise SystemExit("nothing to run: give --items or --dataset with --videos")
 
+    encode_mode = args.mode == "encode"
+    if encode_mode and not args.embeds:
+        raise SystemExit("--mode encode needs --embeds")
+
+    def done(ds, v):
+        return is_done(ds, v, args.results) or (encode_mode and embeds_paths(args.embeds, ds, v)[0].exists())
+
     os.makedirs(args.runs, exist_ok=True)
-    name = f"{args.dataset}_{args.gpu_name}" if args.dataset and not args.items else args.gpu_name
+    name = (f"{args.name}_{args.gpu_name}" if args.name else
+            f"{args.dataset}_{args.gpu_name}" if args.dataset and not args.items else args.gpu_name)
     status_path = Path(args.runs, f"{name}.json")
-    todo = [(ds, v) for ds, v in items if not is_done(ds, v, args.results) and not timed_out(ds, v, args.results)]
-    hung = [f"{ds}/{v}" for ds, v in items if not is_done(ds, v, args.results) and timed_out(ds, v, args.results)]
+    todo = [(ds, v) for ds, v in items if not done(ds, v) and not timed_out(ds, v, args.results)]
+    hung = [f"{ds}/{v}" for ds, v in items if not done(ds, v) and timed_out(ds, v, args.results)]
     attempt = int(os.environ.get("BENCH_ATTEMPT", "1"))
 
     def log(msg):
         print(f"{time.strftime('%H:%M:%S')} [{args.gpu_name}] {msg}", flush=True)
 
     # finished videos of this queue (also from earlier runs): time per video, for the notebook's ETA
+    def stats_file(ds, v):
+        return embeds_paths(args.embeds, ds, v)[1] if encode_mode else pred_paths(ds, v, args.results)[1]
+
     recent = []
     for ds, v in items:
-        st = pred_paths(ds, v, args.results)[1]
+        st = stats_file(ds, v)
         if st.exists():
             try:
                 s_ = json.loads(st.read_text())
                 recent.append({"video": f"{ds}/{v}", "min": round(s_.get("total_s", 0) / 60, 1),
-                               "tokens": s_.get("new_tokens"), "objects": s_.get("objects"), "t": st.stat().st_mtime})
+                               "tokens": s_.get("arranged_tokens") if encode_mode else s_.get("new_tokens"),
+                               "objects": s_.get("objects"), "t": st.stat().st_mtime})
             except (ValueError, OSError):
                 pass
     recent.sort(key=lambda r: r.pop("t"))
@@ -181,7 +212,7 @@ def main():
     threading.Thread(target=watchdog, daemon=True).start()
     import torch
     import bench_data as B
-    from run_traser import infer, load_model
+    from run_traser import encode, infer, load_model
 
     prepare = Preparer(args)
     model = processor = tokenizer = None
@@ -196,7 +227,7 @@ def main():
             gt_copy = Path(args.results, dataset, "gt", f"{video_id}.json")
             if not gt_copy.exists():
                 gt_copy.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(B.item_dir(args.bench, dataset, video_id) / "gt.json", gt_copy)
+                shutil.copyfile(B.item_dir(args.bench, B.base_dataset(dataset), video_id) / "gt.json", gt_copy)
             if model is None:
                 save_status(state="loading model")
                 log("loading the TRASER model ...")
@@ -227,25 +258,54 @@ def main():
                     log(f"{item}: {stage}" + (f" ({extra})" if extra else ""))
 
             t0 = time.time()
-            text, stats = infer(model, processor, tokenizer, str(B.item_video(args.bench, gt)), masks,
-                                objects=[o["col"] for o in gt["objects"]], max_objects=args.max_objects,
-                                progress=progress)
-            stats["total_s"] = round(time.time() - t0, 1)
-            stats["gpu"] = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
-            stats_out.write_text(json.dumps(stats, indent=1))
-            out.write_text(text)
+            video = str(B.item_video(args.bench, gt))
+            objects = [o["col"] for o in gt["objects"]]
+            if encode_mode:
+                emb, pos, am, rd, stats = encode(model, processor, tokenizer, video, masks, objects=objects,
+                                                 max_objects=args.max_objects, progress=progress)
+                if not stats["linear_positions"] or not bool(am.all()):
+                    raise RuntimeError("the arranged sequence does not use plain positions 0..L-1 without padding; "
+                                       "it cannot be handed to vLLM as is")
+                if not stats["embeds_finite"]:
+                    raise RuntimeError("the arranged sequence has inf/NaN values")
+                stats["total_s"] = round(time.time() - t0, 1)
+                stats["encode_s"] = stats["total_s"]
+                stats["embeds_dtype"] = str(emb.dtype).replace("torch.", "")
+                stats["gpu"] = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
+                if torch.cuda.is_available():
+                    stats["encode_peak_gpu_gb"] = round(torch.cuda.max_memory_allocated() / 2**30, 2)
+                stats["dataset"], stats["video_id"] = dataset, video_id
+                pt, pt_stats = embeds_paths(args.embeds, dataset, video_id)
+                pt.parent.mkdir(parents=True, exist_ok=True)
+                # stats as JSON text: loads with torch.load's safe default (weights_only) in vLLM's PyTorch too
+                torch.save({"embeds": emb[0].detach().cpu().contiguous(), "stats": json.dumps(stats)}, str(pt) + ".part")
+                os.replace(str(pt) + ".part", pt)
+                pt_stats.write_text(json.dumps(stats, indent=1))
+                del emb, pos, am, rd
+            else:
+                text, stats = infer(model, processor, tokenizer, video, masks, objects=objects,
+                                    max_objects=args.max_objects, progress=progress)
+                stats["total_s"] = round(time.time() - t0, 1)
+                stats["gpu"] = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
+                stats_out.write_text(json.dumps(stats, indent=1))
+                out.write_text(text)
             if err_out.exists():
                 err_out.unlink()
             status["done"] += 1
             status["recent"] = (status["recent"] + [{"video": item, "min": round(stats["total_s"] / 60, 1),
-                                                     "tokens": stats.get("new_tokens"),
+                                                     "tokens": stats.get("arranged_tokens" if encode_mode else "new_tokens"),
                                                      "objects": stats.get("objects")}])[-5:]
-            mins = [json.loads(pred_paths(d, v, args.results)[1].read_text()).get("total_s", 0) / 60
-                    for d, v in items if pred_paths(d, v, args.results)[1].exists()]
+            mins = [json.loads(stats_file(d, v).read_text()).get("total_s", 0) / 60
+                    for d, v in items if stats_file(d, v).exists()]
             status["avg_min"] = round(sum(mins) / len(mins), 1) if mins else None
-            log(f"{item} DONE in {stats['total_s'] / 60:.1f} min: {stats.get('new_tokens')} tokens, "
-                f"{stats.get('objects')} objects, peak GPU memory {stats.get('peak_gpu_gb')} GB, "
-                f"valid JSON: {stats.get('json_ok')}  ({status['done']}/{status['total']} done)")
+            if encode_mode:
+                log(f"{item} ENCODED in {stats['total_s'] / 60:.1f} min: {stats.get('arranged_tokens')} input tokens, "
+                    f"{stats.get('objects')} objects, peak GPU memory {stats.get('encode_peak_gpu_gb')} GB  "
+                    f"({status['done']}/{status['total']} done)")
+            else:
+                log(f"{item} DONE in {stats['total_s'] / 60:.1f} min: {stats.get('new_tokens')} tokens, "
+                    f"{stats.get('objects')} objects, peak GPU memory {stats.get('peak_gpu_gb')} GB, "
+                    f"valid JSON: {stats.get('json_ok')}  ({status['done']}/{status['total']} done)")
         except Exception as e:  # noqa: BLE001  (one bad video must not stop the queue)
             msg = f"{type(e).__name__}: {e}\n{traceback.format_exc()}"
             err_out.write_text(msg)

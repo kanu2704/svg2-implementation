@@ -51,7 +51,9 @@ PAPER_T9 = {  # Table 9, TRASER row: triplet and relation lenient at tIoU 0.1, o
     "relation": {"pvsg": 25.4, "vidor": 36.0, "svg2test": 20.8},
     "object": {"pvsg": 29.5, "vidor": 31.7, "svg2test": 28.8},
 }
-SPLIT_SIZE = {"pvsg": 62, "vidor": 835, "svg2test": 100}
+SPLIT_SIZE = {"pvsg": 62, "vidor": 835, "svg2test": 100, "vidor_sam3": 100}
+EXTRA = ["vidor_sam3"]       # VidOR with SAM 3 masks: compared with the SAM 2.1 run, not a Table 2 column
+HF_CHECK = REPO / "results" / "traser_bench" / "hf_check"   # Hugging Face answers for the vLLM check
 CATEGORIES = ["identical", "synonym", "hypernym/hyponym", "semantic overlap", "mismatch"]
 
 JUDGE_PROMPT = """You are a strict lexical matcher for evaluating video scene graphs. For each item you get a
@@ -222,12 +224,13 @@ def is_right(category, criterion):
 
 
 # ----------------------------------------------------------------------------- one video
-def load_video(dataset, video_id):
-    gt = json.load(open(RESULTS / dataset / "gt" / f"{video_id}.json"))
-    p = RESULTS / dataset / "preds" / f"{video_id}.json"
+def load_video(dataset, video_id, root=None):
+    root = Path(root or RESULTS)
+    gt = json.load(open(root / dataset / "gt" / f"{video_id}.json"))
+    p = root / dataset / "preds" / f"{video_id}.json"
     if not p.exists():
         return gt, None, None
-    stats = json.load(open(RESULTS / dataset / "preds" / f"{video_id}.stats.json"))
+    stats = json.load(open(root / dataset / "preds" / f"{video_id}.stats.json"))
     return gt, parse_prediction(p.read_text()), stats
 
 
@@ -629,7 +632,8 @@ def video_ids(dataset):
 
 def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
     judge = judge or Judge()
-    loaded = {ds: {v: load_video(ds, v) for v in video_ids(ds)} for ds in datasets}
+    extra = [d for d in EXTRA if d not in datasets and video_ids(d)]
+    loaded = {ds: {v: load_video(ds, v) for v in video_ids(ds)} for ds in list(datasets) + extra}
     if ask:
         pairs = [p for ds in loaded for gt, pred, st in loaded[ds].values() if pred is not None
                  for p in video_pairs(gt, pred, st)[0]]
@@ -637,7 +641,8 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
             f"asking the judge only about those not judged before")
         judge.ask_all(pairs, log=log)
     report = {}
-    for ds, vids in loaded.items():
+    for ds in datasets:
+        vids = loaded[ds]
         if not vids:
             continue
         done = {v: x for v, x in vids.items() if x[1] is not None}
@@ -684,6 +689,9 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
             total_rel += len(gt["relations"])
         rep["relations_with_object_not_given"] = [unreachable, total_rel]
         rep["vision_float32"] = sum(1 for _, _, st in done.values() if st.get("vision_dtype") == "float32")
+        rep["engines"] = {}
+        for _, _, st in done.values():
+            rep["engines"][st.get("engine", "hf")] = rep["engines"].get(st.get("engine", "hf"), 0) + 1
         cats = {}
         for gt, pred, st in done.values():
             for kind, ref, hyp in video_pairs(gt, pred, st)[0]:
@@ -692,7 +700,34 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
                 cats[kind][c] += 1
         rep["judge_categories"] = cats
         report[ds] = rep
+    masks = mask_model_comparison(loaded, judge)
+    if masks:
+        report["_masks"] = masks
+    if (HF_CHECK / "check.json").exists():
+        report["_vllm_check"] = json.load(open(HF_CHECK / "check.json"))
     return report
+
+
+def mask_model_comparison(loaded, judge):
+    """VidOR scored on the videos that have both a SAM 2.1-mask answer (vidor) and a SAM 3-mask answer
+    (vidor_sam3), plus the mask agreement from tools/mask_compare.py."""
+    a, b = loaded.get("vidor", {}), loaded.get("vidor_sam3", {})
+    common = sorted(v for v in b if b[v][1] is not None and v in a and a[v][1] is not None)
+    if not common:
+        return None
+    pct = lambda x, y: round(100 * x / y, 1) if y else None  # noqa: E731
+    out = {"videos": len(common)}
+    for name, data in (("sam2.1", a), ("sam3", b)):
+        for given in (False, True):
+            rows = [score_video(*data[v], judge, "lenient", 0.5, given) for v in common]
+            t = {k: sum(r[k] for r in rows) for k in rows[0]}
+            out[name + ("_given" if given else "")] = {
+                "triplet": pct(t["triplet_ok"], t["relations"]), "relation": pct(t["relation_ok"], t["relations"]),
+                "object": pct(t["object_ok"], t["objects"]), "counts": t}
+    mc = RESULTS / "vidor_sam3" / "masks_compare.json"
+    if mc.exists():
+        out["masks"] = json.load(open(mc))["summary"]
+    return out
 
 
 def _paper_comparison(report, ds):
@@ -723,6 +758,47 @@ def _paper_comparison(report, ds):
             L.append(f"| {d} | {table} | {metric} | {setting} | {ok} | {a['counts'][unit]} | {g['counts'][unit]} | "
                      f"{a[m]:.1f} | {g[m]:.1f} | {p} | {a[m] - p:+.1f} | {g[m] - p:+.1f} |")
     return L
+
+
+def _masks_section(report):
+    m = report.get("_masks")
+    if not m:
+        return []
+    f = lambda x: "–" if x is None else f"{x:.1f}"  # noqa: E731
+    L = ["", f"## VidOR masks: SAM 2.1 vs SAM 3 (the same {m['videos']} videos)", "",
+         "VidOR has boxes, not masks; a segmentation model turns each box into a mask on the frames TRASER reads. "
+         "The main VidOR run uses SAM 2.1 (as the paper, which used SAM 2); here the same videos are run again with "
+         "masks from SAM 3. Lenient, tIoU > 0.5, pooled over these videos.", "",
+         "| masks | Triplet | Relation | Object | Triplet, given only | Relation, given only | Object, given only |",
+         "|---|---|---|---|---|---|---|"]
+    for name, label in (("sam2.1", "SAM 2.1 (main run)"), ("sam3", "SAM 3")):
+        a, g = m[name], m[name + "_given"]
+        L.append(f"| {label} | {f(a['triplet'])} | {f(a['relation'])} | {f(a['object'])} | {f(g['triplet'])} | "
+                 f"{f(g['relation'])} | {f(g['object'])} |")
+    d = lambda k, given="": f"{m['sam3' + given][k] - m['sam2.1' + given][k]:+.1f}" \
+        if m["sam3" + given][k] is not None and m["sam2.1" + given][k] is not None else "–"  # noqa: E731
+    L.append(f"| SAM 3 − SAM 2.1 | {d('triplet')} | {d('relation')} | {d('object')} | {d('triplet', '_given')} | "
+             f"{d('relation', '_given')} | {d('object', '_given')} |")
+    s = m.get("masks")
+    if s:
+        pc = lambda x: "–" if x is None else f"{100 * x:.0f}%"  # noqa: E731
+        L += ["", f"Masks ({s['mask_pairs']} object-frame pairs): mean IoU {s['mean_iou']} (median {s['median_iou']}), "
+                  f"IoU ≥ 0.9 for {pc(s['iou_ge_0.9'])}. What TRASER reads (image patches at least half covered): mean "
+                  f"overlap {s['mean_patch_jaccard']}, identical for {pc(s['objects_same_patches'])} of "
+                  f"{s['objects_compared']} objects. Per video: `vidor_sam3/MASKS.md`."]
+    return L
+
+
+def _vllm_check_section(report):
+    c = report.get("_vllm_check")
+    if not c:
+        return []
+    s = c["summary"]
+    h, w = s["hf"], s["vllm"]
+    return ["", f"## vLLM check: the same {s['videos']} {c['dataset']} videos answered by Hugging Face and by vLLM", "",
+            f"{s['identical']} of {s['videos']} answers identical. Right (Hugging Face / vLLM): objects {h['object_ok']} / "
+            f"{w['object_ok']} of {h['objects']}, relations {h['relation_ok']} / {w['relation_ok']} of {h['relations']}, "
+            f"triplets {h['triplet_ok']} / {w['triplet_ok']} of {h['relations']}. Per video: `hf_check/CHECK.md`."]
 
 
 def write_report(report, path=RESULTS / "README.md"):
@@ -780,7 +856,14 @@ def write_report(report, path=RESULTS / "README.md"):
                      + (f"for all {n} videos " if r.get("vision_float32", 0) == (n := r["videos_predicted"])
                         else f"for {r.get('vision_float32', 0)} of {n} videos, float16 for the rest ")
                      + f"(`{d}/preds_fp16_vision/` has older float16 answers that were re-run).")
+    for d in ds:
+        eng = report.get(d, {}).get("engines", {})
+        if eng.get("vllm"):
+            L.append(f"- **{d}**: answers written by vLLM for {eng['vllm']} videos"
+                     + (f", by Hugging Face `generate` for {eng.get('hf')}" if eng.get("hf") else "")
+                     + " (same checkpoint and input; vLLM gets the language model's input sequence, see the check below).")
     L += ["- Video by video: `<dataset>/COMPARE.md`; pair by pair for 10 random videos: `<dataset>/PAIRS.md`."]
+    L += _masks_section(report) + _vllm_check_section(report)
     L += ["", "## How it is scored", "", "See the docstring of `tools/bench_eval.py`. Differences from the paper that we know of:",
           "- judge: Kimi K3 with our prompt (the paper's GPT-4o-mini prompt is not released);",
           "- language model in float16 on a T4 instead of bfloat16 on H100s (greedy decoding can change tokens on long answers);",
@@ -791,7 +874,7 @@ def write_report(report, path=RESULTS / "README.md"):
     with open(Path(path).with_name("scores.json"), "w") as f:
         json.dump(report, f, indent=1)
     for d in report:                     # the video-by-video and pair-by-pair pages, with the verdicts just judged
-        if video_ids(d):
+        if not d.startswith("_") and video_ids(d):
             write_compare(d)
             write_pairs(d, n=10, seed=0)
     return "\n".join(L)

@@ -164,6 +164,9 @@
    969
   ],
   "vision_float32": 5,
+  "engines": {
+   "hf": 62
+  },
   "judge_categories": {
    "object": {
     "identical": 355,
@@ -338,6 +341,9 @@
    3187
   ],
   "vision_float32": 100,
+  "engines": {
+   "hf": 100
+  },
   "judge_categories": {
    "object": {
     "hypernym/hyponym": 469,
