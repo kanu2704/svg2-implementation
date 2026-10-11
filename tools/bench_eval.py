@@ -27,6 +27,11 @@ becomes [a, b + 1). For PVSG and VidOR (human spans in seconds) this is scaled b
 sampled frame (duration / sampled frames; 1.0 for videos up to 128 s). SVG2test's human spans are in
 the same index unit, so no scaling there.
 
+VidOR lists every occurrence of a relation on its own ("adult push baby" at 1.7-2.1 s, again at 3.9-5.0 s, ...);
+PVSG, SVG2test and TRASER give each subject-predicate-object once, with all its time spans. So VidOR's
+occurrences of the same subject-predicate-object are merged into one relation with all their spans
+(merge_occurrences); the README also shows the score with each occurrence counted on its own.
+
     python tools/bench_eval.py                 # all datasets with predictions; writes results/traser_bench/README.md
     python tools/bench_eval.py --compare       # <dataset>/COMPARE.md: human labels vs TRASER, video by video
 """
@@ -224,9 +229,21 @@ def is_right(category, criterion):
 
 
 # ----------------------------------------------------------------------------- one video
+def merge_occurrences(gt):
+    """VidOR: the occurrences of the same (subject, predicate, object) -> one relation with all their spans
+    (the PVSG/SVG2test/TRASER format). The occurrences stay in gt["occurrences"]."""
+    if gt.get("dataset") != "vidor" or "occurrences" in gt:
+        return gt
+    rels = {}
+    for r in gt["relations"]:
+        rels.setdefault((r["subj"], r["pred"], r["obj"]), []).extend(r["spans"])
+    return dict(gt, occurrences=gt["relations"],
+                relations=[{"subj": s, "pred": p, "obj": o, "spans": merge(sp)} for (s, p, o), sp in rels.items()])
+
+
 def load_video(dataset, video_id, root=None):
     root = Path(root or RESULTS)
-    gt = json.load(open(root / dataset / "gt" / f"{video_id}.json"))
+    gt = merge_occurrences(json.load(open(root / dataset / "gt" / f"{video_id}.json")))
     p = root / dataset / "preds" / f"{video_id}.json"
     if not p.exists():
         return gt, None, None
@@ -667,6 +684,16 @@ def evaluate(datasets=DATASETS, judge=None, ask=True, log=print):
                 "macro_relation": macro("relation_ok", "relations") if rows else None,
                 "macro_triplet": macro("triplet_ok", "relations") if rows else None,
                 "counts": tot}
+        occ = [(dict(gt, relations=gt["occurrences"]), pred, st) for gt, pred, st in done.values() if "occurrences" in gt]
+        if occ:
+            rows = [score_video(*x, judge, "lenient", 0.5) for x in occ]
+            tot = {k: sum(r[k] for r in rows) for k in rows[0]}
+            rep["occurrences"] = [tot["relations"], sum(len(gt["relations"]) for gt, _, _ in done.values() if "occurrences" in gt)]
+            rep["scores"]["lenient@0.5_occurrences"] = {
+                "object": round(100 * tot["object_ok"] / tot["objects"], 1) if tot["objects"] else None,
+                "relation": round(100 * tot["relation_ok"] / tot["relations"], 1) if tot["relations"] else None,
+                "triplet": round(100 * tot["triplet_ok"] / tot["relations"], 1) if tot["relations"] else None,
+                "counts": tot}
         groups = {}
         for gt, pred, st in done.values():
             g = groups.setdefault(gt.get("source") or "all", {"videos": 0, "seconds": 0.0, "cut_off": 0, "rows": []})
@@ -840,6 +867,9 @@ def write_report(report, path=RESULTS / "README.md"):
     L.append("| lenient, tIoU 0.5, per-video average | " +
              " | ".join(cell(d, f"macro_{m}") for m in ("triplet", "relation", "object") for d in ds) + " |")
     L.append("| lenient, relation ignoring time | – | – | – | " + " | ".join(cell(d, "relation_any_time") for d in ds) + " | – | – | – |")
+    if any("lenient@0.5_occurrences" in report.get(d, {}).get("scores", {}) for d in ds):
+        L.append("| lenient, tIoU 0.5, VidOR: each occurrence of a relation counted on its own (not merged) | "
+                 + " | ".join(cell(d, m, "lenient@0.5_occurrences") for m in ("triplet", "relation", "object") for d in ds) + " |")
     L += ["", "## Judge answers (lenient = everything but mismatch)", ""]
     for d in ds:
         if d in report:
@@ -853,9 +883,16 @@ def write_report(report, path=RESULTS / "README.md"):
             L.append(f"- **{d}**: {r['json_invalid']} of {r['videos_predicted']} answers were cut off at the 8192-token limit "
                      f"(read up to the cut); {u} of {t} human relations ({100 * u / max(1, t):.1f}%) involve an object TRASER "
                      f"was not given (40-object cap, or no mask on the sampled frames); vision encoder + resamplers in float32 "
-                     + (f"for all {n} videos " if r.get("vision_float32", 0) == (n := r["videos_predicted"])
-                        else f"for {r.get('vision_float32', 0)} of {n} videos, float16 for the rest ")
-                     + f"(`{d}/preds_fp16_vision/` has older float16 answers that were re-run).")
+                     + (f"for all {n} videos" if r.get("vision_float32", 0) == (n := r["videos_predicted"])
+                        else f"for {r.get('vision_float32', 0)} of {n} videos, float16 for the rest")
+                     + (f" (`{d}/preds_fp16_vision/` has older float16 answers that were re-run)."
+                        if (RESULTS / d / "preds_fp16_vision").exists() else "."))
+        if r and r.get("occurrences"):
+            n_occ, n_rel = r["occurrences"]
+            L.append(f"- **{d}**: VidOR lists every occurrence of a relation on its own ({n_occ} occurrences); occurrences "
+                     f"of the same subject–predicate–object are merged into one relation with all their time spans "
+                     f"({n_rel} relations), as in PVSG, SVG2test and TRASER's answers. Counting each occurrence on its "
+                     "own is the last row of \"Other settings\".")
     for d in ds:
         eng = report.get(d, {}).get("engines", {})
         if eng.get("vllm"):
