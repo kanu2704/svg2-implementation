@@ -24,7 +24,7 @@ REPO = Path(__file__).resolve().parents[2]
 RESULTS = REPO / "results" / "traser_bench"
 OUT = RESULTS / "interp"                         # pushed to GitHub: per-video JSON, probe results, report
 DATASETS = ["svg2test", "pvsg", "vidor"]
-DEFAULT_N = {"svg2test": 60, "pvsg": 30, "vidor": 80}
+DEFAULT_N = {"svg2test": 40, "pvsg": 25, "vidor": 60}
 WINDOW_S = 4                                     # TRASER's temporal window (seconds of its ~1 fps sample)
 
 REL_RE = re.compile(r'\[\s*(-?\d+)\s*,\s*"((?:[^"\\]|\\.)*)"\s*,\s*(-?\d+)\s*,\s*(\[\s*(?:\[[^\[\]]*\]\s*,?\s*)*\])\s*\]')
