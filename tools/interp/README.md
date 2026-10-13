@@ -18,7 +18,12 @@ machine). Every step skips what is already done, so it can be stopped and run ag
 Notebook `notebooks/traser_eval.ipynb`: run 0a-0d, prepare the videos (1a+1b PVSG, 2a-2d SVG2test, 3a VidOR), then
 **block 6** (one cell). It uses every GPU and pushes the results while it runs.
 
-## On another GPU machine
+## On your own GPU server (SSH)
+Easiest: the same notebook. Open it from a clone on the server (VS Code Remote-SSH, kernel = a Python
+environment with torch), set `BIG_DIR` in cell 0a to a folder with ~150 GB free and `GPUS` in block 6 to the GPUs you
+may use, then run 0a-0d, the preparation cells, and block 6. Only block 6 uses the GPU.
+
+## On another GPU machine, from a terminal
 ```bash
 git clone -b claude/traser-implementation-guide-xlshit https://github.com/kanu2704/svg2-implementation && cd svg2-implementation
 bash setup_kaggle.sh                      # official SVG2 code + transformers 4.54.1 + decord + SAM 2 (works on any Linux)
