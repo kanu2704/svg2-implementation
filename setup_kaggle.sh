@@ -4,7 +4,7 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SVG2_COMMIT=77caa44f862727eeba6d8bacbb53f236ac75cd05
 
 # Big downloads (model weights, datasets) go to the large temporary disk.
-export HF_HOME=/tmp/hf_cache
+export HF_HOME="${HF_HOME:-/tmp/hf_cache}"
 mkdir -p "$HF_HOME"
 
 # 1) Official SVG2 code, pinned to the exact commit the plan was written against.
@@ -23,10 +23,13 @@ $PIP install -q "transformers==4.54.1" "huggingface_hub>=0.34,<1.0" \
 $PIP install -q decord 2>/dev/null || $PIP install -q eva-decord || echo "!! no video reader installed"
 
 # 3) SAM2 (pipeline stages 1-2). --no-deps so it cannot replace Kaggle's torch;
-#    SAM2_BUILD_CUDA=0 skips the optional CUDA extension (only used for mask post-processing).
+#    SAM2_BUILD_CUDA=0 skips the optional CUDA extension (only used for mask post-processing);
+#    --no-build-isolation builds it with the torch already installed (no second torch download, ~3 GB of temp space).
+SAM2_GIT="git+https://github.com/facebookresearch/sam2.git"
 python3 -c "import sam2" 2>/dev/null || {
-  $PIP install -q hydra-core iopath &&
-  SAM2_BUILD_CUDA=0 $PIP install -q --no-deps "git+https://github.com/facebookresearch/sam2.git"
+  $PIP install -q hydra-core iopath setuptools wheel &&
+  { SAM2_BUILD_CUDA=0 $PIP install -q --no-deps --no-build-isolation "$SAM2_GIT" ||
+    SAM2_BUILD_CUDA=0 $PIP install -q --no-deps "$SAM2_GIT"; }
 } || echo "!! sam2 install failed"
 
 echo "Setup done (check for !! lines above)."
