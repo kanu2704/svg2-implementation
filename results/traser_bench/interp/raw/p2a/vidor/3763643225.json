@@ -1,0 +1,1 @@
+{"p_stop_at_end": 0.8597, "p_stop_after_each": [0.0316, 0.0402, 0.0792, 0.0321, 0.8578], "relations_written": 5, "human_relations": 0, "missed": 0, "tested": [], "dataset": "vidor", "video": "3763643225", "seconds": 1.7, "input_tokens": 637, "answer_tokens": 214, "objects": 3}
