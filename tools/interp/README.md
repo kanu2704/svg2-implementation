@@ -20,8 +20,8 @@ Notebook `notebooks/traser_eval.ipynb`: run 0a-0d, prepare the videos (1a+1b PVS
 
 ## On your own GPU server (SSH)
 Easiest: the same notebook. Open it from a clone on the server (VS Code Remote-SSH, kernel = a Python
-environment with torch), set `BIG_DIR` in cell 0a to a folder with ~150 GB free and `GPUS` in block 6 to the GPUs you
-may use, then run 0a-0d, the preparation cells, and block 6. Only block 6 uses the GPU.
+environment with torch), set `BIG_DIR` in cell 0a to a folder with ~150 GB free and `GPU_IDS` in cell 0a to the GPUs
+you may use (e.g. `"6"`; numbered as in `nvidia-smi`), then run 0a-0d, the preparation cells, and block 6. Only block 6 uses the GPU.
 
 ## On another GPU machine, from a terminal
 ```bash
