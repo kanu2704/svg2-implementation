@@ -282,9 +282,12 @@ def linear_positions(position_ids, rope_deltas):
 
 
 def encode(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
-           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, progress=None):
+           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, progress=None, capture=None):
     """Everything before the answer is written: frames, masks -> object tokens, vision encoder, resamplers,
-    trajectory-aligned arrangement. Returns (embeds [1, L, D], position_ids, attention mask, rope_deltas, stats)."""
+    trajectory-aligned arrangement. Returns (embeds [1, L, D], position_ids, attention mask, rope_deltas, stats).
+    capture (a dict, for tools/interp): also fills in the arranged token ids ("input_ids", [L]), the vision
+    encoder's tokens before the resamplers ("video_embeds", [N, D], CPU float32), each object's token indices
+    into them ("per_obj_idx") and the window geometry ("tokens_per_window")."""
     progress = progress or (lambda stage, **info: None)
     device = model.device
     dtype = model.lm_head.weight.dtype                 # the language model's dtype (vision may be float32)
@@ -333,24 +336,42 @@ def encode(model, processor, tokenizer, video, mask_data, objects=None, max_obje
 
     if str(device).startswith("cuda"):
         torch.cuda.reset_peak_memory_stats()
-    with torch.no_grad():
-        progress("encoding video + objects", objects=len(obj_ids), video_tokens=n_video_tokens)
-        t1 = time.time()
-        embeds, position_ids, mask, rope_deltas, _, _, _ = T.rearrange_token(
-            model=model, input_ids=input_ids, attention_mask=attention_mask,
-            pixel_values_videos=pixel_values_videos.to(device, dtype=model.model.visual.dtype),
-            video_grid_thw=video_grid_thw[None].to(device),
-            image_grid_thw=None, pixel_values=None,
-            second_per_grid_ts=None,
-            obj_token_indices_per_sample=[[i.to(device) for i in per_obj_idx]],
-            obj_traj_start_id=int(model.config.obj_traj_start_id),
-            obj_traj_end_id=int(model.config.obj_traj_end_id),
-            text_token_ids_per_sample=[[torch.tensor(x, dtype=torch.long) for x in label_ids]],
-            timestamp_token_ids_per_batch=[[torch.tensor(x, dtype=torch.long) for x in window_ids]],
-            grids_per_temporal_window_per_batch=[grids_per_window])
-        stats.update(arranged_tokens=int(embeds.shape[1]), arrange_s=round(time.time() - t1, 1),
-                     embeds_finite=bool(torch.isfinite(embeds).all()),
-                     linear_positions=linear_positions(position_ids, rope_deltas))
+    captured = {}
+    if capture is not None:                     # keep the vision tokens the resamplers read
+        get_video_features = model.model.get_video_features
+
+        def keep(*a, **k):
+            out = get_video_features(*a, **k)
+            v = getattr(out, "pooler_output", out)
+            v = torch.cat(v, dim=0) if isinstance(v, (list, tuple)) else v
+            captured["video_embeds"] = v.detach().float().cpu()
+            return out
+        model.model.get_video_features = keep
+    try:
+        with torch.no_grad():
+            progress("encoding video + objects", objects=len(obj_ids), video_tokens=n_video_tokens)
+            t1 = time.time()
+            embeds, position_ids, mask, rope_deltas, _, new_ids, _ = T.rearrange_token(
+                model=model, input_ids=input_ids, attention_mask=attention_mask,
+                pixel_values_videos=pixel_values_videos.to(device, dtype=model.model.visual.dtype),
+                video_grid_thw=video_grid_thw[None].to(device),
+                image_grid_thw=None, pixel_values=None,
+                second_per_grid_ts=None,
+                obj_token_indices_per_sample=[[i.to(device) for i in per_obj_idx]],
+                obj_traj_start_id=int(model.config.obj_traj_start_id),
+                obj_traj_end_id=int(model.config.obj_traj_end_id),
+                text_token_ids_per_sample=[[torch.tensor(x, dtype=torch.long) for x in label_ids]],
+                timestamp_token_ids_per_batch=[[torch.tensor(x, dtype=torch.long) for x in window_ids]],
+                grids_per_temporal_window_per_batch=[grids_per_window])
+    finally:
+        if capture is not None:
+            del model.model.get_video_features      # back to the class method
+    if capture is not None:
+        capture.update(captured, input_ids=new_ids[0].cpu(), per_obj_idx=[i.cpu() for i in per_obj_idx],
+                       tokens_per_window=(h_patch * w_patch // T.SPATIAL_MERGE_SIZE ** 2) * grids_per_window)
+    stats.update(arranged_tokens=int(embeds.shape[1]), arrange_s=round(time.time() - t1, 1),
+                 embeds_finite=bool(torch.isfinite(embeds).all()),
+                 linear_positions=linear_positions(position_ids, rope_deltas))
     return embeds, position_ids, mask, rope_deltas, stats
 
 
