@@ -696,7 +696,9 @@ def main():
                 continue
             phases = [p for p in args.phases if not (p == "p0" and rank_ >= args.p0_videos)
                       and not (p == "p2c" and rank_ >= args.patch_videos) and not (p == "p3" and rank_ >= args.attn_videos)]
-            phases = [p for p in phases if not C.out_path(p, ds, v, args.out).exists()]
+            # p1's hidden states live in --work: a new machine (e.g. a fresh Kaggle session) makes them again
+            phases = [p for p in phases if not C.out_path(p, ds, v, args.out).exists()
+                      or (p == "p1" and not C.work_paths(args.work, ds, v)["hidden"].exists())]
             if phases:
                 jobs.append((ds, v, phases))
     log(f"{len(jobs)} videos with phases to run", tag)
