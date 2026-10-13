@@ -21,8 +21,8 @@ Notebook `notebooks/traser_eval.ipynb`: run 0a-0d, prepare the videos (1a+1b PVS
 ## On your own GPU server (SSH)
 Easiest: the same notebook. Open it from a clone on the server (VS Code Remote-SSH, kernel = a Python
 environment with torch). Next to the clone, create `svg2_settings.json` with a folder with ~150 GB free and the GPUs
-you may use (numbered as in `nvidia-smi`), e.g. `{"BIG_DIR": "/data/me/svg2_big", "GPU_IDS": "6"}` (or set the same two
-values at the top of cell 0a). Then run 0a-0d, the preparation cells, and block 6. Only block 6 uses the GPU; temporary
+you may use (numbered as in `nvidia-smi`), e.g. `{"BIG_DIR": "/data/me/svg2_big", "GPU_IDS": "6", "ENV": "/data/me/envs/traser"}` (or set the same
+values at the top of cell 0a; with `ENV`, 0a stops before installing anything if the kernel is another environment). Then run 0a-0d, the preparation cells, and block 6. Only block 6 uses the GPU; temporary
 files, pip's downloads and the Hugging Face cache all go to `BIG_DIR`, and the GitHub token stays in the notebook's
 memory only.
 
