@@ -1,5 +1,7 @@
 # Interpretability of TRASER (`tools/interp/`)
 
+Interpretability work lives on the branch `claude/traser-interpretability` (branched from `claude/traser-implementation-guide-xlshit` after the first full run; results in `results/traser_bench/interp/`).
+
 Why does TRASER lose its points (pairs never written, short actions, crowded videos, small objects; see
 `results/traser_bench/diagnosis/ERRORS.md`)? These tools open the released model and test it directly.
 Everything works on TRASER's released checkpoint and its own saved answers.
@@ -28,7 +30,7 @@ memory only.
 
 ## On another GPU machine, from a terminal
 ```bash
-git clone -b claude/traser-implementation-guide-xlshit https://github.com/kanu2704/svg2-implementation && cd svg2-implementation
+git clone -b claude/traser-interpretability https://github.com/kanu2704/svg2-implementation && cd svg2-implementation
 bash setup_kaggle.sh                      # official SVG2 code + transformers 4.54.1 + decord + SAM 2 (works on any Linux)
 pip install scikit-learn matplotlib
 # prepared videos are needed under $BENCH (<dataset>/<video>/{video.mp4, gt.json, masks.json}); see tools/bench_data.py
@@ -36,7 +38,7 @@ python3 tools/export_lm.py --model UWGZQ/TRASER --out $BIG/traser_lm
 for g in 0 1; do CUDA_VISIBLE_DEVICES=$g python3 tools/interp/encode_stage.py --bench $BENCH --work $BIG/interp_work --shard $g --nshards 2 & done; wait
 for g in 0 1; do CUDA_VISIBLE_DEVICES=$g python3 tools/interp/lm_stage.py --lm $BIG/traser_lm --work $BIG/interp_work --shard $g --nshards 2 & done; wait
 python3 tools/interp/probe.py --work $BIG/interp_work && python3 tools/interp/report.py
-git add results/traser_bench/interp && git commit -m "interp results" && git push origin HEAD:claude/traser-implementation-guide-xlshit
+git add results/traser_bench/interp && git commit -m "interp results" && git push origin HEAD:claude/traser-interpretability
 ```
 On GPUs with bfloat16 (A100/H100) the defaults stay float16, the format that produced the saved answers; pass
 `--dtype bfloat16` to both stages to use the paper's format instead.
