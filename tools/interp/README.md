@@ -12,11 +12,15 @@ Everything works on TRASER's released checkpoint and its own saved answers.
 | stage 2 | `lm_stage.py` | GPU, `tools/export_lm.py` export | **p0** harness check · **p1** hidden states per object at every layer · **p2a** forced continuation ("knows but doesn't say") · **p2b** interventions (blank all / OTR / TWR latents, one object, a relation's windows; reversed time labels) · **p2c** activation patching per layer · **p3** attention of time / object-number / word tokens | `results/traser_bench/interp/raw/<phase>/<dataset>/<video>.json`, `<work>/.../<video>.hidden.npz` |
 | probes | `probe.py` | CPU | logistic-regression probes at every stage (vision → OTR/TWR → each LM layer): related pair, written pair, action vs position, touching, moving, in a human relation, relation active in a window; controls (shuffled labels, geometry only) | `results/traser_bench/interp/probes.json` |
 | report | `report.py` | CPU | one page with every table and figure | `results/traser_bench/interp/REPORT.md`, `figs/*.png` |
+| pairs (GPU) | `pairs_stage.py` | GPU, stage 1 | why relevant (human) pairs are never written: **e2** give it the pair (word filled in with the video / video hidden / the pair hidden) · **e3** keep writing (re-open the list, start the subject, ask again as a new turn) and swap two objects' video halfway (VisualSwap) · **e4** attention to the video by position in the list · **e6** push towards the human object | `results/traser_bench/interp/raw/e*/<dataset>/<video>.json` |
+| pairs (CPU) | `pairs_report.py` | CPU, p1 + pairs | **e1** probe vs object names only (habit), tricky pairs · **e5** which pairs are missed · every missed pair sorted into A didn't see / B didn't choose / C stopped early / D habit | `results/traser_bench/interp/PAIRS.md`, `pairs.json`, `figs/pairs_*.png` |
 
 Sample: a fixed random set of the answered videos (`common.DEFAULT_N`: SVG2test 40, PVSG 25, VidOR 60; the same on every
 machine). Every step skips what is already done, so it can be stopped and run again.
 
 ## On Kaggle
+Pair experiment: notebook `notebooks/traser_pairs.ipynb` (setup, PVSG + VidOR sample, one cell for everything).
+
 Notebook `notebooks/traser_eval.ipynb`: run 0a-0d, prepare the videos (1a+1b PVSG, 2a-2d SVG2test, 3a VidOR), then
 **block 6** (one cell). It uses every GPU and pushes the results while it runs.
 
