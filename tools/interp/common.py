@@ -54,9 +54,15 @@ def answered(dataset, results=RESULTS):
 def select_videos(dataset, n=None, seed=0, results=RESULTS):
     """A fixed random sample of the videos TRASER answered (same sample on every machine and every run)."""
     vids = answered(dataset, results)
-    n = DEFAULT_N.get(dataset, 50) if n is None else n
+    base_n = DEFAULT_N.get(dataset, 50)
+    n = base_n if n is None else n
     if n and n < len(vids):
-        vids = sorted(random.Random(seed).sample(vids, n))
+        if n <= base_n:
+            return sorted(random.Random(seed).sample(vids, n))
+        # a bigger sample keeps the default one inside it, so the videos already done are reused
+        base = select_videos(dataset, base_n, seed, results)
+        rest = sorted(set(vids) - set(base))
+        vids = sorted(base + random.Random(seed).sample(rest, n - len(base)))
     return vids
 
 

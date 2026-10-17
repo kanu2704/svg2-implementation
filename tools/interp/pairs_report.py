@@ -399,25 +399,28 @@ def page(res, out):
         if t.get("n"):
             L.append(f"| {d} | {t.get('missed_pair_latents')} | {t.get('missed latents, if spread evenly')} | "
                      f"{t.get('other_latents')} | {t.get('answer')} | {t['n']} |")
-    L += ["", "## 5. Which relevant pairs are missed?", "",
-          "Miss rate in the lowest vs highest third of each fact (logistic-regression weight: + = more misses):", "",
-          "| dataset | fact | miss rate, low third | high third | weight |", "|---|---|---|---|---|"]
-    for d, r in res.items():
-        e = r.get("e5", {})
-        for n, (lo, hi) in (e.get("miss_rate_low_vs_high") or {}).items():
-            L.append(f"| {d} | {n} | {pct(lo)} | {pct(hi)} | {e.get('coef', {}).get(n)} |")
-    L += ["", "## 6. Push: how close was it?", "",
-          "At the point where it writes the object number (after the human subject and word), the object's own direction "
-          "is added in the middle layers. Share of pairs where the object becomes the first choice:", ""]
-    if (Path(out) / "figs" / "pairs_push.png").exists():
-        L += ["![push](figs/pairs_push.png)", ""]
-    L += ["| dataset | push sizes | missed human pairs | unrelated objects (control) |", "|---|---|---|---|"]
-    for d, r in res.items():
-        t = r.get("push", {})
-        if t.get("alphas"):
-            L.append(f"| {d} | {t['alphas']} | {t.get('missed', ['-'])[:-1]} (n={t.get('missed', [0])[-1]}) | "
-                     f"{t.get('control', ['-'])[:-1]} (n={t.get('control', [0])[-1]}) |")
-    L += ["", "A missed human pair that becomes first with a smaller push than an unrelated object = it was close (B).", "",
+    if any(r.get("e5") for r in res.values()):
+        L += ["", "## 5. Which relevant pairs are missed?", "",
+              "Miss rate in the lowest vs highest third of each fact (logistic-regression weight: + = more misses):", "",
+              "| dataset | fact | miss rate, low third | high third | weight |", "|---|---|---|---|---|"]
+        for d, r in res.items():
+            e = r.get("e5", {})
+            for n, (lo, hi) in (e.get("miss_rate_low_vs_high") or {}).items():
+                L.append(f"| {d} | {n} | {pct(lo)} | {pct(hi)} | {e.get('coef', {}).get(n)} |")
+    if any(r.get("push", {}).get("alphas") for r in res.values()):
+        L += ["", "## 6. Push: how close was it?", "",
+              "At the point where it writes the object number (after the human subject and word), the object's own direction "
+              "is added in the middle layers. Share of pairs where the object becomes the first choice:", ""]
+        if (Path(out) / "figs" / "pairs_push.png").exists():
+            L += ["![push](figs/pairs_push.png)", ""]
+        L += ["| dataset | push sizes | missed human pairs | unrelated objects (control) |", "|---|---|---|---|"]
+        for d, r in res.items():
+            t = r.get("push", {})
+            if t.get("alphas"):
+                L.append(f"| {d} | {t['alphas']} | {t.get('missed', ['-'])[:-1]} (n={t.get('missed', [0])[-1]}) | "
+                         f"{t.get('control', ['-'])[:-1]} (n={t.get('control', [0])[-1]}) |")
+        L += ["", "A missed human pair that becomes first with a smaller push than an unrelated object = it was close (B)."]
+    L += ["",
           "**Caveats.** The human labels are incomplete, so some \"unrelated\" pairs are really related. Only a sample of "
           "missed pairs per video is tested (8 by default). The reasons are rules on these measurements, not certainties."]
     return "\n".join(L) + "\n"
@@ -431,6 +434,7 @@ def main():
     ap.add_argument("--datasets", nargs="+", default=C.DATASETS)
     ap.add_argument("--n", type=json.loads, default={})
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--experiments", nargs="+", type=int, default=[1, 2, 3, 4, 5, 6], help="which experiments go on the page")
     args = ap.parse_args()
     import bench_eval as E
     E.RESULTS = Path(args.results)
@@ -451,6 +455,10 @@ def main():
                   "push": push_table(ds, args.out), "reasons": rows,
                   "reasons_count": dict(collections.Counter(x["reason"] for x in rows))})
         r["attention"], r["attention_end"] = attention_table(ds, args.out)
+        if 5 not in args.experiments:
+            r.pop("e5", None)
+        if 6 not in args.experiments:
+            r["push"] = {}
         if rows or r.get("e1"):
             res[ds] = r
             print(f"[pairs] {ds}: {len(rows)} missed pairs sorted: {r['reasons_count']}", flush=True)
