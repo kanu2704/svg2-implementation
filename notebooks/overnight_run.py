@@ -122,6 +122,8 @@ else:
 # ----------------------------------------------------------------------------- SVG2test preparation (traser_eval.ipynb 2a-2d, no GPU)
 if len(glob.glob(os.path.join(BENCH, 'svg2test', '*', 'masks.json'))) >= 100:
     step('SVG2test: already prepared')
+elif not os.path.exists(os.path.join(os.path.dirname(REPO), 'sav_links.txt')):
+    step('SVG2test: skipped (no SA-V links file at ' + os.path.join(os.path.dirname(REPO), 'sav_links.txt') + '); the rest runs without it')
 else:
     try:
         t0 = time.time()
