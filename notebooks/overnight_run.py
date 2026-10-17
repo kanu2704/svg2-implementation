@@ -92,7 +92,7 @@ step(f"ready. big data → {BIG} ({shutil.disk_usage(BIG).free // 2**30} GB free
 
 # ----------------------------------------------------------------------------- pairs 0c
 def git(*args):
-    return subprocess.run(["git", *args], capture_output=True, text=True, env=dict(os.environ, GIT_TERMINAL_PROMPT="0"))
+    return subprocess.run(["git", *args], capture_output=True, text=True, env=dict(os.environ, GIT_TERMINAL_PROMPT="0", GIT_ASKPASS="", SSH_ASKPASS=""))   # never ask for a login (e.g. VS Code's popup)
 
 if not git("config", "user.name").stdout.strip():
     git("config", "user.name", "kanu2704")
