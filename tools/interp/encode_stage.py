@@ -95,6 +95,7 @@ def main():
     ap.add_argument("--datasets", nargs="+", default=C.DATASETS)
     ap.add_argument("--n", type=json.loads, default={}, help='videos per dataset, e.g. \'{"vidor": 50}\' (default: common.DEFAULT_N)')
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--videos_file", default=None, help="encode exactly these videos (one id per line; with one --datasets)")
     ap.add_argument("--shard", type=int, default=0)
     ap.add_argument("--nshards", type=int, default=1)
     ap.add_argument("--model", default=None, help="TRASER checkpoint folder or Hub id")
@@ -107,7 +108,8 @@ def main():
 
     todo = []
     for ds in args.datasets:
-        vids = C.select_videos(ds, args.n.get(ds), args.seed, args.results)
+        vids = (Path(args.videos_file).read_text().split() if args.videos_file
+                else C.select_videos(ds, args.n.get(ds), args.seed, args.results))
         for v in C.shard(vids, args.shard, args.nshards):
             if not C.work_paths(args.work, ds, v)["feats"].exists():
                 todo.append((ds, v))
@@ -166,7 +168,7 @@ def main():
                 dataset=ds, video=v, mask_columns=cols, gt_ids=[gid_of_col[c] for c in cols], n_windows=n_windows,
                 window_labels=stats["window_labels"], duration_s=stats["duration_s"], sampled_frames=stats["sampled_frames"],
                 tokens_per_object=stats["tokens_per_object"], seconds_per_frame=spf,
-                same_objects_as_answer=saved.get("mask_columns") == cols, answer_vision_dtype=saved.get("vision_dtype"),
+                same_objects_as_answer=(saved.get("mask_columns") == cols) if saved else None, answer_vision_dtype=saved.get("vision_dtype"),
                 geometry={"objects": geo["objects"], "pairs": geo["pairs"],
                           "motion": motion(masks, cols, gid_of_col, stats["sampled_idx"], spf)},
                 encode_s=round(time.time() - t0, 1), gpu=torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu")
@@ -181,7 +183,7 @@ def main():
             tmpf.replace(p["feats"])
             done += 1
             log(f"{ds}/{v} encoded ({i}/{len(todo)}): {len(layout['objects'])} objects, {layout['L']} tokens, "
-                f"{time.time() - t0:.0f} s" + ("" if layout["same_objects_as_answer"] else " (!! objects differ from the saved run)"), tag)
+                f"{time.time() - t0:.0f} s" + ("" if layout["same_objects_as_answer"] is not False else " (!! objects differ from the saved run)"), tag)
             del emb, capture
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
