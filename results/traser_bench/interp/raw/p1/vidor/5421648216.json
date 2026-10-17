@@ -1,1 +1,1 @@
-{"objects": 3, "layers": 37, "window_layers": [0, 6, 12, 18, 24, 30, 36], "dataset": "vidor", "video": "5421648216", "seconds": 0.5, "input_tokens": 1248, "answer_tokens": 407}
+{"objects": 3, "layers": 37, "window_layers": [0, 6, 12, 18, 24, 30, 36], "dataset": "vidor", "video": "5421648216", "seconds": 0.4, "input_tokens": 1248, "answer_tokens": 407}
