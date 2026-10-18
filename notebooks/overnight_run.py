@@ -402,7 +402,7 @@ try:
     # --- pairs 1 settings
     DATASETS = ["svg2test", "pvsg", "vidor"]   # svg2test: prepare it first with traser_eval.ipynb (2a-2d); remove it here if not prepared
     INTERP_N = {"svg2test": 0, "pvsg": 0, "vidor": 300}   # videos per dataset (0 = all); a bigger sample keeps the first run's videos (40 / 25 / 60) inside it
-    EXPERIMENTS = [1, 2, 3, 4]         # experiments run and shown (5 and 6 are left out)
+    EXPERIMENTS = [1, 2, 3, 4, 5]      # experiments run and shown (6 is left out)
     MISSED, WRITTEN, CONTROL = 8, 3, 3   # per video: missed human pairs tested, written human pairs and unrelated pairs (for comparison)
     WORK = os.path.join(BIG, "interp_work")    # big per-video files (not pushed)
     LM_DIR = os.path.join(BIG, "traser_lm")    # TRASER's language model alone
