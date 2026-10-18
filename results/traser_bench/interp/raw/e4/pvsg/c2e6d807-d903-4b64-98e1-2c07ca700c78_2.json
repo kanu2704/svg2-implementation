@@ -1,0 +1,1 @@
+{"skipped": "no relation inside the first answer tokens", "relevant_pairs": 12, "missed_pairs": 12, "written_pairs": 0, "dataset": "pvsg", "video": "c2e6d807-d903-4b64-98e1-2c07ca700c78_2", "seconds": 0.0, "input_tokens": 22260, "answer_tokens": 2000, "objects": 39}
