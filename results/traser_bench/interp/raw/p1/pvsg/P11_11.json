@@ -1,1 +1,1 @@
-{"objects": 35, "layers": 37, "window_layers": [0, 6, 12, 18, 24, 30, 36], "dataset": "pvsg", "video": "P11_11", "seconds": 10.6, "input_tokens": 11839, "answer_tokens": 2000}
+{"objects": 35, "layers": 37, "window_layers": [0, 6, 12, 18, 24, 30, 36], "dataset": "pvsg", "video": "P11_11", "seconds": 10.0, "input_tokens": 11839, "answer_tokens": 2000}

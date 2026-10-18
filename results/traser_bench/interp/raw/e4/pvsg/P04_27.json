@@ -1,0 +1,1 @@
+{"skipped": "no relation inside the first answer tokens", "relevant_pairs": 11, "missed_pairs": 10, "written_pairs": 1, "dataset": "pvsg", "video": "P04_27", "seconds": 0.0, "input_tokens": 24956, "answer_tokens": 2000, "objects": 32}
