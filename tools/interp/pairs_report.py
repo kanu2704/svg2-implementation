@@ -183,6 +183,60 @@ def fill_table(ds, out):
             for (k, c), d in t.items()}
 
 
+def auc(pos, neg):
+    if not pos or not neg:
+        return None
+    x = np.array(pos)[:, None] - np.array(neg)[None]
+    return float((x > 0).mean() + 0.5 * (x == 0).mean())
+
+
+def all_table(ds, out):
+    """Experiment 2 on every human pair (pairs_stage e2all): per context, kind and input, the human word's rank
+    (exact word: rank 1, top 5; or an equivalent in the top 5), the object picked first, how much the video
+    raises the human word's log-prob over the same pair without it, and how well the best word's log-prob
+    separates related from non-related pairs (AUC)."""
+    acc = collections.defaultdict(lambda: collections.defaultdict(list))
+    lp = collections.defaultdict(lambda: collections.defaultdict(list))
+    videos = collections.Counter()
+    for a in raw("e2all", ds, out).values():
+        if "skipped" in a:
+            continue
+        for h in a.get("contexts", []):
+            videos[h] += 1
+            for kind in ("missed", "written", "control"):
+                for p in a.get(kind, []):
+                    rs = p.get(h, {})
+                    c = rs.get("clean", {})
+                    for cond, r in rs.items():
+                        if r.get("pair_lp") is not None:
+                            lp[(h, cond)]["control" if kind == "control" else "related"].append(r["pair_lp"])
+                        if not p["words"] or r.get("word_rank") is None:
+                            continue
+                        for k in (kind, "related"):
+                            t = acc[(h, k, cond)]
+                            t["rank1"].append(r["word_rank"] == 1)
+                            t["top5"].append(r["word_rank"] <= 5)
+                            t["top5_eq"].append(word_ok(r))
+                            t["rank"].append(r["word_rank"])
+                            if r.get("object_rank"):
+                                t["obj1"].append(r["object_rank"] == 1)
+                            if cond != "clean" and c.get("word_lp") is not None:
+                                d = c["word_lp"] - r["word_lp"]
+                                t["gain"].append(d)
+    res = {"videos": dict(videos)}
+    for (h, k, cond), t in acc.items():
+        g = t.pop("gain", [])
+        res[f"{h}|{k}|{cond}"] = {"n": len(t["rank"]), "median_rank": float(np.median(t["rank"])),
+                                  **{m: round(float(np.mean(x)), 3) for m, x in t.items() if m != "rank" and x},
+                                  **({"video_raises": round(float(np.mean([x > 0 for x in g])), 3),
+                                      "video_raises_1nat": round(float(np.mean([x > 1 for x in g])), 3),
+                                      "mean_gain_nats": round(float(np.mean(g)), 3)} if g else {})}
+    for (h, cond), d in lp.items():
+        a = auc(d["related"], d["control"])
+        res[f"{h}|auc|{cond}"] = None if a is None else round(a, 3)
+    return res
+
+
 def swap_table(ds, out):
     by_k = collections.defaultdict(lambda: [0, 0, 0])
     for a in raw("e3", ds, out).values():
@@ -367,6 +421,32 @@ def page(res, out):
                          f"{pct(g('pair_hidden'))} | {pct(g('clean', 'obj1'))} / {pct(g('video_hidden', 'obj1'))} |")
     L += ["", "Same answer with the video hidden = the word comes from habit. Good with the video but never written = it "
           "knew but did not choose.", ""]
+    if any(r.get("all", {}).get("videos") for r in res.values()):
+        L += ["### 2b. Every human pair of every video, with and without earlier text", "",
+              "All human pairs (missed + written), no sampling. Context *fresh* = no earlier relation (`\"relationships\": "
+              "[[s, \"`), so nothing can be copied from TRASER's own answer, which was written with the video; *answer* = "
+              "TRASER's answer re-opened, as above. Inputs: the video; every latent set to zero; every latent replaced by "
+              "another video's latents (normal-looking vectors, wrong content). Human word: rank 1 / top 5 (exact word) / "
+              "an equivalent in the top 5; object = the human object picked first after the human word; video raises = "
+              "share of pairs where the video gives the human word a higher log-prob than this input (> 1 nat = 2.7x); "
+              "AUC = the best word's log-prob separates related from non-related pairs.", "",
+              "| dataset | context | pairs | input | rank 1 | top 5 | top 5 (equiv.) | median rank | object first | "
+              "video raises | > 1 nat | AUC related vs not |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+        for d, r in res.items():
+            t = r.get("all", {})
+            for h in ("fresh", "answer"):
+                for kind in ("related", "missed", "written"):
+                    for cond in ("clean", "other_video", "zeros"):
+                        x = t.get(f"{h}|{kind}|{cond}")
+                        if not x:
+                            continue
+                        au = t.get(f"{h}|auc|{cond}") if kind == "related" else None
+                        L.append(f"| {d} | {h} | {kind} ({x['n']}) | {cond.replace('_', ' ')} | {pct(x.get('rank1'))} | "
+                                 f"{pct(x.get('top5'))} | {pct(x.get('top5_eq'))} | {x['median_rank']:g} | {pct(x.get('obj1'))} | "
+                                 f"{pct(x.get('video_raises'))} | {pct(x.get('video_raises_1nat'))} | "
+                                 f"{'-' if au is None else f'{au:.2f}'} |")
+        L += ["", "If the video mattered little, *clean* and *other video* would look the same, also in the *fresh* "
+              "context. A large gap only in *fresh* means the earlier text carries the video's information in *answer*.", ""]
     L += ["## 3. Keep writing, and swap the video halfway", "",
           "| dataset | videos | new relations when the list is re-opened | of them human pairs | missed pairs tested | "
           "come back: re-opened list | subject started for it | asked again (new turn) |", "|---|---|---|---|---|---|---|---|"]
@@ -452,6 +532,7 @@ def main():
             r, knows = e1_e5(ds, videos, stage, args.seed)
         rows = reasons(ds, args.out, knows)
         r.update({"fill": fill_table(ds, args.out), "continue": continue_table(ds, args.out), "swap": swap_table(ds, args.out),
+                  "all": all_table(ds, args.out),
                   "push": push_table(ds, args.out), "reasons": rows,
                   "reasons_count": dict(collections.Counter(x["reason"] for x in rows))})
         r["attention"], r["attention_end"] = attention_table(ds, args.out)
@@ -459,7 +540,7 @@ def main():
             r.pop("e5", None)
         if 6 not in args.experiments:
             r["push"] = {}
-        if rows or r.get("e1"):
+        if rows or r.get("e1") or r["all"].get("videos"):
             res[ds] = r
             print(f"[pairs] {ds}: {len(rows)} missed pairs sorted: {r['reasons_count']}", flush=True)
     C.write_json(Path(args.out) / "pairs.json", res)

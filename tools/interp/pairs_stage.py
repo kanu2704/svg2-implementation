@@ -12,6 +12,10 @@ Phases (one JSON per video and phase under results/traser_bench/interp/raw/<phas
       word together with the human object, `[s, "<word>", o, [[`. Three inputs: the video, the video hidden (all
       latents blank: habit only), the pair hidden (only the two objects' latents blank). Also the object it picks
       after the subject and the human word. Missed pairs, written pairs, and non-related pairs as a control.
+  e2all  experiment 2 on EVERY human pair of every video (no sampling), in two contexts: "answer" (TRASER's own
+      answer re-opened, as e2) and "fresh" (no earlier relation: `"relationships": [[s, "`, so nothing can be copied
+      from text that was written with the video); three inputs: the video, every latent blank (zeros), and every
+      latent replaced by another video's latents (object by object: in-distribution vectors, wrong content).
   e3  keep writing (C): from where TRASER closed its list, re-open it ("," + "[") up to 3 times and let it write;
       start a relation with the missed pair's subject and let it finish; ask again as a new user turn
       ("List more relationships of object s", the multi-turn fix of VisualSwap). Which missed pairs come back?
@@ -47,7 +51,7 @@ from interp import common as C  # noqa: E402
 from interp.lm_stage import (LM, STOP_IDS, Context, Video, attach, blank, human_relations, layer_out,  # noqa: E402
                              replace_out, vocabulary)
 
-PHASES = ["e2", "e3", "e4", "e6"]
+PHASES = ["e2", "e3", "e4", "e6"]          # + "e2all" (asked for by name)
 LOOSE_REL = re.compile(r'\[\s*(-?\d+)\s*,\s*"((?:[^"\\]|\\.)*)"\s*,\s*(-?\d+)\s*,')
 REASK = ("<|im_end|>\n<|im_start|>user\nList more relationships of object {s}, in the same format "
          "[subject, \"relation\", object, [[start, end]]].<|im_end|>\n<|im_start|>assistant\n")
@@ -169,6 +173,80 @@ def e2_fill(lm, V, judge, vocab, picks):
         if lm.torch.cuda.is_available():
             lm.torch.cuda.empty_cache()
     return {"conditions": E2_CONDS, "vocabulary": len(vocab), **out}
+
+
+# ----------------------------------------------------------------------------- e2all
+E2ALL_CONDS = ["clean", "zeros", "other_video"]
+
+
+def all_pairs(V, judge, n_control, seed=0):
+    """Every relevant (human) pair, missed and written, + n_control non-related pairs."""
+    missed, written, control, counts = video_pairs(V, judge, 10 ** 6, 10 ** 6, n_control, seed)
+    return {"missed": missed, "written": written, "control": control}, counts
+
+
+def other_fill(inp, layout, o_inp, o_layout):
+    """inp with every object's latents replaced by another video's: object i gets object (i mod n) of the other
+    video, its OTR to OTR and its TWR (all windows in a row) to TWR, repeated when the other one is shorter."""
+    x = inp.clone()
+    objs = o_layout["objects"]
+    for i, o in enumerate(layout["objects"]):
+        src = objs[i % len(objs)]
+        for dst, sp in ((list(range(*o["otr"])), list(range(*src["otr"]))),
+                        ([t for w in o["windows"] for t in range(*w["twr"])], [t for w in src["windows"] for t in range(*w["twr"])])):
+            if dst and sp:
+                x[0, dst] = o_inp[0, [sp[j % len(sp)] for j in range(len(dst))]]
+    return x
+
+
+def fresh_head(text):
+    """The answer up to the start of its relation list, with a first relation opened: no earlier relation."""
+    i = text.find('"relationships"')
+    j = text.find("[", i) if i >= 0 else -1
+    return None if j < 0 else text[:j + 1] + "["
+
+
+def e2_all(lm, V, judge, vocab, picks, other):
+    """other: (input, layout) of another video of the dataset, or None (then that condition is left out)."""
+    import bench_eval as E
+    heads = {"fresh": fresh_head(V.text), "answer": list_open(V)}
+    heads = {k: h for k, h in heads.items() if h is not None}
+    if not heads:
+        return {"skipped": "no relation list in the answer"}
+    inputs = {"clean": V.inp, "zeros": blank(V.inp, C.latent_positions(V.layout))}
+    if other is not None:
+        inputs["other_video"] = other_fill(V.inp, V.layout, *other)
+    objs = list(range(1, V.n + 1)) + [-1]
+    out = {kind: [dict(p) for p in pairs] for kind, pairs in picks.items()}
+    for cname, x in inputs.items():
+        ctx = Context(lm, x)
+        for kind, pairs in out.items():
+            for p in pairs:
+                s, o = p["s_k"], p["o_k"]
+                words = p["words"] or [vocab[0]]
+                for hname, h in heads.items():
+                    head = h + f'{s}, "'
+                    ctx.goto(head)
+                    res = ctx.rank([f'{w}", {o}, [[' for w in vocab], [f'{w}", {o}, [[' for w in words[:3]])
+                    r = {}
+                    if res:
+                        r["top"] = [[t[:t.index('"')], round(v, 3)] for t, v in res["top"]]
+                        r["pair_lp"] = res["top"][0][1] if res["top"] else None
+                        if p["words"]:
+                            best = min(res["targets"].values(), key=lambda q: q["rank"])
+                            r["word_rank"], r["word_lp"] = best["rank"], round(best["lp"], 3)
+                            r["equivalent_in_top5"] = any(
+                                E.is_right(judge.category("relation", w, t[0]), "lenient") for w in p["words"] for t in r["top"])
+                    if p["words"]:
+                        ctx.goto(head + f'{p["words"][0]}", ')
+                        ob = ctx.rank([f"{k}, [[" for k in objs if k != s], [f"{o}, [["])
+                        t = ob["targets"].get(f"{o}, [[") if ob else None
+                        r["object_rank"], r["object_lp"] = (t["rank"], round(t["lp"], 3)) if t else (None, None)
+                    p.setdefault(hname, {})[cname] = r
+        del ctx
+        if lm.torch.cuda.is_available():
+            lm.torch.cuda.empty_cache()
+    return {"conditions": list(inputs), "contexts": list(heads), "vocabulary": len(vocab), **out}
 
 
 # ----------------------------------------------------------------------------- e3
@@ -463,6 +541,16 @@ def e6_push(lm, V, picks, alphas=(0.0, 0.05, 0.1, 0.2, 0.4), n_pairs=4, seed=0):
 
 
 # ----------------------------------------------------------------------------- main
+def other_video(lm, ds, v, pool, work, seed):
+    """Input and layout of another video of the same dataset (fixed per video), or None."""
+    rest = [u for u in pool if u != v]
+    if not rest:
+        return None
+    u = random.Random(f"{seed}/{ds}/{v}").choice(rest)
+    p = C.work_paths(work, ds, u)
+    return lm.torch.load(p["embeds"]).to(lm.device, dtype=lm.dtype)[None], C.read_json(p["layout"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lm", required=True, help="TRASER's language model exported by tools/export_lm.py")
@@ -497,6 +585,8 @@ def main():
                       and not (p == "e6" and rank_ >= args.push_videos)]
             if phases:
                 jobs.append((ds, v, phases))
+    pools = {ds: [v for v in C.select_videos(ds, args.n.get(ds), args.seed, args.results)
+                  if C.work_paths(args.work, ds, v)["embeds"].exists()] for ds in args.datasets}
     log(f"{len(jobs)} videos with phases to run", tag)
     if not jobs:
         return 0
@@ -516,6 +606,8 @@ def main():
             continue
         missed, written, control, counts = video_pairs(V, judge, args.missed, args.written, args.control, args.seed)
         picks = {"missed": missed, "written": written, "control": control}
+        if "e2all" in phases:
+            picks_all, _ = all_pairs(V, judge, args.control, args.seed)
         for ph in phases:
             t0 = time.time()
             try:
@@ -523,6 +615,10 @@ def main():
                     if ds not in vocab:
                         vocab[ds] = vocabulary(ds, args.results, args.vocab)[0]
                     res = e2_fill(lm, V, judge, vocab[ds], {k: [dict(p) for p in x] for k, x in picks.items()})
+                elif ph == "e2all":
+                    if ds not in vocab:
+                        vocab[ds] = vocabulary(ds, args.results, args.vocab)[0]
+                    res = e2_all(lm, V, judge, vocab[ds], picks_all, other_video(lm, ds, v, pools[ds], args.work, args.seed))
                 elif ph == "e3":
                     res = e3_continue(lm, V, {k: [dict(p) for p in x] for k, x in picks.items()})
                 elif ph == "e4":
