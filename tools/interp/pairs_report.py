@@ -515,9 +515,22 @@ def main():
     ap.add_argument("--n", type=json.loads, default={})
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--experiments", nargs="+", type=int, default=[1, 2, 3, 4, 5, 6], help="which experiments go on the page")
+    ap.add_argument("--only_all", action="store_true",
+                    help="only add experiment 2 on every pair (e2all) to the saved pairs.json; the rest stays as it was")
     args = ap.parse_args()
     import bench_eval as E
     E.RESULTS = Path(args.results)
+    if args.only_all:
+        res = C.read_json(Path(args.out) / "pairs.json", {})
+        for ds in args.datasets:
+            t = all_table(ds, args.out)
+            if t.get("videos"):
+                res.setdefault(ds, {})["all"] = t
+                print(f"[pairs] {ds}: experiment 2 on every pair, {t['videos']} videos", flush=True)
+        C.write_json(Path(args.out) / "pairs.json", res)
+        (Path(args.out) / "PAIRS.md").write_text(page(res, args.out))
+        print(f"[pairs] wrote {Path(args.out) / 'PAIRS.md'}")
+        return
     probes = C.read_json(Path(args.out) / "probes.json", {})
     res = {}
     for ds in args.datasets:
