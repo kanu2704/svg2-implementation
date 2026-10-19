@@ -423,9 +423,9 @@ def page(res, out):
           "knew but did not choose.", ""]
     if any(r.get("all", {}).get("videos") for r in res.values()):
         L += ["### 2b. Every human pair of every video, with and without earlier text", "",
-              "All human pairs (missed + written), no sampling. Context *fresh* = no earlier relation (`\"relationships\": "
+              "*fresh* = every human pair (missed + written, no sampling) with no earlier relation (`\"relationships\": "
               "[[s, \"`), so nothing can be copied from TRASER's own answer, which was written with the video; *answer* = "
-              "TRASER's answer re-opened, as above. Inputs: the video; every latent set to zero; every latent replaced by "
+              "the earlier setup: TRASER's answer re-opened, on every missed pair. Inputs: the video; every latent set to zero; every latent replaced by "
               "another video's latents (normal-looking vectors, wrong content). Human word: rank 1 / top 5 (exact word) / "
               "an equivalent in the top 5; object = the human object picked first after the human word; video raises = "
               "share of pairs where the video gives the human word a higher log-prob than this input (> 1 nat = 2.7x); "

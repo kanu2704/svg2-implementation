@@ -12,10 +12,11 @@ Phases (one JSON per video and phase under results/traser_bench/interp/raw/<phas
       word together with the human object, `[s, "<word>", o, [[`. Three inputs: the video, the video hidden (all
       latents blank: habit only), the pair hidden (only the two objects' latents blank). Also the object it picks
       after the subject and the human word. Missed pairs, written pairs, and non-related pairs as a control.
-  e2all  experiment 2 on EVERY human pair of every video (no sampling), in two contexts: "answer" (TRASER's own
-      answer re-opened, as e2) and "fresh" (no earlier relation: `"relationships": [[s, "`, so nothing can be copied
-      from text that was written with the video); three inputs: the video, every latent blank (zeros), and every
-      latent replaced by another video's latents (object by object: in-distribution vectors, wrong content).
+  e2all  experiment 2 with three inputs: the video, every latent blank (zeros), and every latent replaced by another
+      video's latents (object by object: in-distribution vectors, wrong content). Two setups: "fresh" = EVERY human
+      pair of every video (missed and written, no sampling) + non-related pairs, with no earlier relation
+      (`"relationships": [[s, "`, so nothing can be copied from text written with the video); "answer" = the earlier
+      setup, TRASER's own answer re-opened, on every missed pair.
   e3  keep writing (C): from where TRASER closed its list, re-open it ("," + "[") up to 3 times and let it write;
       start a relation with the missed pair's subject and let it finish; ask again as a new user turn
       ("List more relationships of object s", the multi-turn fix of VisualSwap). Which missed pairs come back?
@@ -225,6 +226,8 @@ def e2_all(lm, V, judge, vocab, picks, other):
                 s, o = p["s_k"], p["o_k"]
                 words = p["words"] or [vocab[0]]
                 for hname, h in heads.items():
+                    if hname == "answer" and kind != "missed":
+                        continue                     # the earlier setup: only the missed pairs
                     head = h + f'{s}, "'
                     ctx.goto(head)
                     res = ctx.rank([f'{w}", {o}, [[' for w in vocab], [f'{w}", {o}, [[' for w in words[:3]])
