@@ -1,0 +1,13 @@
+{"epoch": 1, "step": 1, "videos": 8, "loss": 0.5671, "lr": 1.9764705882352945e-05, "minutes": 3.0}
+{"epoch": 1, "step": 2, "videos": 16, "loss": 0.5161, "lr": 2.929411764705882e-05, "minutes": 4.0}
+{"epoch": 1, "step": 3, "videos": 24, "loss": 0.562, "lr": 3.8588235294117656e-05, "minutes": 5.2}
+{"epoch": 1, "step": 4, "videos": 32, "loss": 0.5185, "lr": 4.7647058823529414e-05, "minutes": 6.4}
+{"epoch": 1, "step": 5, "videos": 40, "loss": 0.5993, "lr": 5.647058823529412e-05, "minutes": 7.5}
+{"epoch": 1, "step": 6, "videos": 48, "loss": 0.588, "lr": 6.505882352941176e-05, "minutes": 9.5}
+{"epoch": 1, "step": 7, "videos": 56, "loss": 0.5889, "lr": 7.341176470588236e-05, "minutes": 10.5}
+{"epoch": 1, "step": 8, "videos": 64, "loss": 0.5146, "lr": 8.15294117647059e-05, "minutes": 12.0}
+{"epoch": 1, "step": 9, "videos": 72, "loss": 0.5439, "lr": 8.941176470588236e-05, "minutes": 14.6}
+{"epoch": 1, "step": 10, "videos": 80, "loss": 0.4574, "lr": 8.823529411764706e-05, "minutes": 15.3}
+{"epoch": 1, "step": 11, "videos": 88, "loss": 0.4679, "lr": 8.705882352941177e-05, "minutes": 17.8}
+{"epoch": 1, "step": 12, "videos": 96, "loss": 0.4542, "lr": 8.588235294117648e-05, "minutes": 18.7}
+{"epoch": 1, "step": 13, "videos": 104, "loss": 0.4766, "lr": 8.470588235294118e-05, "minutes": 21.1}
