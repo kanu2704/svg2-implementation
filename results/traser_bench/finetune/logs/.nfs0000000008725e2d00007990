@@ -63,3 +63,17 @@
 {"epoch": 2, "step": 63, "videos": 160, "loss": 0.3284, "lr": 2.588235294117647e-05, "minutes": 103.9}
 {"epoch": 2, "step": 64, "videos": 168, "loss": 0.2759, "lr": 2.4705882352941178e-05, "minutes": 104.5}
 {"epoch": 2, "step": 65, "videos": 176, "loss": 0.3525, "lr": 2.3529411764705887e-05, "minutes": 106.6}
+{"epoch": 2, "step": 66, "videos": 184, "loss": 0.3151, "lr": 2.2352941176470586e-05, "minutes": 107.5}
+{"epoch": 2, "step": 67, "videos": 192, "loss": 0.317, "lr": 2.11764705882353e-05, "minutes": 109.1}
+{"epoch": 2, "step": 68, "videos": 200, "loss": 0.2879, "lr": 1.9999999999999995e-05, "minutes": 110.0}
+{"epoch": 2, "step": 69, "videos": 208, "loss": 0.3159, "lr": 1.8823529411764708e-05, "minutes": 111.0}
+{"epoch": 2, "step": 70, "videos": 216, "loss": 0.342, "lr": 1.7647058823529417e-05, "minutes": 112.7}
+{"epoch": 2, "step": 71, "videos": 224, "loss": 0.3277, "lr": 1.6470588235294116e-05, "minutes": 113.8}
+{"epoch": 2, "step": 72, "videos": 232, "loss": 0.308, "lr": 1.5294117647058826e-05, "minutes": 116.0}
+{"epoch": 2, "step": 73, "videos": 240, "loss": 0.2773, "lr": 1.4117647058823535e-05, "minutes": 116.9}
+{"epoch": 2, "step": 74, "videos": 248, "loss": 0.3154, "lr": 1.2941176470588234e-05, "minutes": 119.6}
+{"epoch": 2, "step": 75, "videos": 256, "loss": 0.2987, "lr": 1.1764705882352944e-05, "minutes": 121.0}
+{"epoch": 2, "step": 76, "videos": 264, "loss": 0.2983, "lr": 1.0588235294117643e-05, "minutes": 122.2}
+{"epoch": 2, "step": 77, "videos": 272, "loss": 0.3253, "lr": 9.411764705882354e-06, "minutes": 125.1}
+{"epoch": 2, "step": 78, "videos": 280, "loss": 0.3356, "lr": 8.235294117647063e-06, "minutes": 125.7}
+{"epoch": 2, "step": 79, "videos": 288, "loss": 0.3152, "lr": 7.058823529411762e-06, "minutes": 127.2}
