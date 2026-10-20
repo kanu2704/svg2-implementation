@@ -8,6 +8,8 @@ Made from notebooks/traser_pairs.ipynb (cells 0a-4 setup + 4b): edit the noteboo
     cd /media/nas_mount/kanupriya/svg2-implementation && python3 notebooks/full_pairs_run.py 2>&1 | tee -a /media/nas_mount/kanupriya/full_pairs.log
 
 It asks for the GitHub token once at the start (Enter = no pushing; results stay committed on the server).
+SVG2test joins when Meta's SA-V links file is at /media/nas_mount/kanupriya/sav_links.txt (next to the repo folder,
+never inside it): it is prepared right at the start (no GPU, so while the fine-tuning still runs), before the waiting.
 """
 
 # ----------------------------------------------------------------------------- pairs 0a
@@ -120,6 +122,96 @@ else:
     r = git("push", "--dry-run", "origin", f"HEAD:{BRANCH}")
     step("GitHub: push access works ✓" if r.returncode == 0 else
          "GitHub: no push access → saving will tell you the terminal commands. (" + r.stderr.strip().splitlines()[-1][:150] + ")")
+
+# ----------------------------------------------------------------------------- SVG2test preparation (traser_eval.ipynb 2a-2d, no GPU)
+if len(glob.glob(os.path.join(BENCH, 'svg2test', '*', 'masks.json'))) >= 100:
+    step('SVG2test: already prepared')
+elif not os.path.exists(os.path.join(os.path.dirname(REPO), 'sav_links.txt')):
+    step('SVG2test: skipped (no SA-V links file at ' + os.path.join(os.path.dirname(REPO), 'sav_links.txt') + '); the rest runs without it')
+else:
+    try:
+        t0 = time.time()
+        SVG2_ROOT = os.path.join(BIG, "svg2")
+        step("downloading SVG2test labels + masks ...")
+        B.download_svg2test(SVG2_ROOT)
+        rows, masks = B.svg2test_rows(SVG2_ROOT), B.svg2test_masks(SVG2_ROOT)
+        VSPW_IDS = sorted(v for v, r in rows.items() if r["split"] == "vipseg")
+        SAV_IDS = sorted(v for v, r in rows.items() if r["split"] == "sav")
+        SVG2_ALL = sorted(rows)
+        sizes = sorted({tuple(masks[v][0][0]["size"]) for v in VSPW_IDS})
+        step(f"SVG2test: {len(VSPW_IDS)} VSPW + {len(SAV_IDS)} SA-V videos ({time.time() - t0:.0f} s)")
+        print("    mask sizes (height, width) of the VSPW videos:", sizes)
+        VSPW_LOCAL = None        # e.g. "/kaggle/input/vspw-parts" (folder with VSPW_data.tar_aa ... or one archive)
+        max_h = max(h for h, w in sizes)
+        t0 = time.time()
+        if VSPW_LOCAL:
+            parts, VSPW_SOURCE = sorted(glob.glob(os.path.join(VSPW_LOCAL, "*"))), "full (own copy)"
+        elif max_h <= 480:
+            step("masks are at most 480 px high → 480p VSPW is enough; downloading ...")
+            parts, VSPW_SOURCE = B.download_vspw(BIG, "480p"), "480p"
+        else:
+            step(f"masks up to {max_h} px high → downloading full-resolution VSPW (6 parts, ~43 GB) ...")
+            try:
+                parts, VSPW_SOURCE = B.download_vspw(BIG, "full_parts"), "full"
+            except Exception as e:
+                step(f"✗ Google Drive refused the full version: {str(e)[:200]}")
+                step("→ downloading the 480p version instead (frames will be scaled up to the mask size) ...")
+                parts, VSPW_SOURCE = B.download_vspw(BIG, "480p"), "480p (scaled up to the mask size)"
+        step(f"VSPW {VSPW_SOURCE}: {len(parts)} file(s), {sum(os.path.getsize(p) for p in parts) / 2**30:.1f} GB "
+             f"({time.time() - t0:.0f} s)")
+
+        step("reading the 67 videos' frames out of the archive (one pass, ~10-20 min for the full version) ...")
+        t0 = time.time()
+        found = B.extract_vspw_frames(parts if len(parts) > 1 else parts[0], VSPW_IDS, os.path.join(BIG, "vspw_frames"), log=print)
+        step(f"VSPW frames found for {len(found)} of {len(VSPW_IDS)} videos ({time.time() - t0:.0f} s); "
+             f"missing: {sorted(set(VSPW_IDS) - found) or 'none'}")
+
+        step("making one mp4 per video (6 frames/s, at the mask size) ...")
+        SVG2_VIDEOS, SVG2_FALLBACK = {}, {}
+        for i, v in enumerate(sorted(found), 1):
+            fdir = os.path.join(BIG, "vspw_frames", v)
+            n = len(glob.glob(os.path.join(fdir, "*.jpg")))
+            h, w = masks[v][0][0]["size"]
+            out = os.path.join(BIG, "svg2test_videos", f"{v}.mp4")
+            if not os.path.exists(out):
+                B.frames_to_mp4(fdir, out, fps=6, size=(w - w % 2, h - h % 2))
+            SVG2_VIDEOS[v] = out
+            if n != len(masks[v]):              # not expected; then each mask frame gets the nearest frame (2d)
+                SVG2_FALLBACK[v] = (n, len(masks[v]))
+            print(f"    {i:2}/{len(found)} {v:28} {n} frames, {w}x{h} {'✓' if n == len(masks[v]) else '✗ mask frames: ' + str(len(masks[v]))}",
+                  flush=True)
+        os.makedirs("results/traser_bench/svg2test", exist_ok=True)
+        open("results/traser_bench/svg2test/vspw_source.txt", "w").write(f"VSPW frames: {VSPW_SOURCE}\n")
+        step(f"VSPW videos built: {len(SVG2_VIDEOS)}; frame count differs from the masks: {SVG2_FALLBACK or 'none'}")
+        try:
+            SAV_LINKS = "/kaggle/working/sav_links.txt" if ON_KAGGLE else os.path.join(os.path.dirname(REPO), "sav_links.txt")   # Meta's links file (file_name <tab> url per line); own server: next to the repo folder, never inside it
+            if not os.path.exists(SAV_LINKS):
+                raise FileNotFoundError(f"{SAV_LINKS} is missing: get a fresh SA-V links file from Meta first (see above)")
+            step(f"fetching {len(SAV_IDS)} SA-V videos (streams sav_test.tar, nothing else is stored) ...")
+            missing = B.fetch_sav_videos(B.sav_links(SAV_LINKS), SAV_IDS, os.path.join(BIG, "svg2test_videos"))
+            for v in SAV_IDS:
+                p = os.path.join(BIG, "svg2test_videos", f"{v}.mp4")
+                if os.path.exists(p):
+                    SVG2_VIDEOS[v] = p
+            step(f"SA-V videos: {len([v for v in SAV_IDS if v in SVG2_VIDEOS])} of {len(SAV_IDS)}; not found: {sorted(missing) or 'none'}")
+        except Exception as e:
+            step(f'!! SA-V videos skipped ({type(e).__name__}: {str(e)[:200]}); the VSPW ones are prepared anyway')
+        t0 = time.time()
+        diff = []
+        for i, (v, p) in enumerate(sorted(SVG2_VIDEOS.items()), 1):
+            fb = os.path.join(BIG, "vspw_frames", v) if v in SVG2_FALLBACK else None
+            B.prepare_svg2test(v, rows[v], masks[v], p, BENCH, E.RESULTS, vipseg_frames=fb)
+            gt = B.load_gt(BENCH, "svg2test", v)
+            ok = gt["n_frames"] == gt["mask_frames"]
+            if not ok:
+                diff.append((v, gt["n_frames"], gt["mask_frames"]))
+            print(f"    {i:3}/{len(SVG2_VIDEOS)} {v:28} {rows[v]['split']:6} {len(gt['objects'])} objects, "
+                  f"{gt['n_frames']} frames {'✓' if ok else '(masks: ' + str(gt['mask_frames']) + ')'}", flush=True)
+        step(f"prepared {len(SVG2_VIDEOS)} of {len(SVG2_ALL)} SVG2test videos ({time.time() - t0:.0f} s)")
+        print("    video frames ≠ mask frames (video, video frames, mask frames):", diff or "none")
+    except Exception as e:
+        import traceback; traceback.print_exc()
+        step(f'!! SVG2test preparation stopped ({type(e).__name__}); going on without (the rest skips SVG2test)')
 
 # ----------------------------------------------------------------------------- wait for the fine-tuning (overnight_run.py) to finish
 import subprocess as _sp
