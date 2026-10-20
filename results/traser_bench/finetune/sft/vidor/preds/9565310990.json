@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "ball", "attributes": ["vibrant red", "spherical", "smooth", "glossy", "reflective"]}, {"object 2": "child"}, {"object 3": "baby_walker"}, {"object 4": "child"}], "relationships": [[4, "in front of", 3, [[0, 22]]], [1, "in front of", 3, [[0, 22]]], [4, "in front of", 1, [[0, 22]]], [4, "in front of", 2, [[33, 35]]]]}
