@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "crane", "attributes": ["white", "tall", "slender", "elongated", "smooth", "metallic", "reflective", "vertical", "industrial"]}, {"object 2": "person", "attributes": ["dark-colored", "protective", "helmeted", "goggled", "upright"]}], "relationships": [[2, "holding", 1, [[0, 13]]], [2, "on", 1, [[0, 13]]]]}

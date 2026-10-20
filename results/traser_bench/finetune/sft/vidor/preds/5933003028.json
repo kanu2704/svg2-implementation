@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "hand", "attributes": ["smooth skin", "slightly tanned skin", "fingers slightly curled", "subtle creases around knuckles and joints"]}, {"object 2": "computer monitor", "attributes": ["sleek", "modern", "thin bezel", "smooth surface", "reflective"]}], "relationships": [[1, "in front of", 2, [[0, 39]]], [1, "occludes", 2, [[0, 39]]]]}
