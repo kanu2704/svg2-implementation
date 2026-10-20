@@ -8,7 +8,7 @@ Relevant pair = a pair of objects that humans relate (ground truth) and that TRA
 
 | dataset | tested missed pairs | A didn't see | B didn't choose | C stopped early | D habit |
 |---|---|---|---|---|---|
-| pvsg | 268 | 13% | 45% | 20% | 22% |
+| pvsg | 276 | 12% | 46% | 19% | 23% |
 | vidor | 1171 | 4% | 15% | 46% | 36% |
 
 How a pair gets its reason (first rule that fits): **C** it writes the pair when the list is re-opened, when its subject is started for it, or when asked again in a new turn · **D** it fills in the human word (top 5) also with the video hidden, and the video adds less than 1 nat · **B** it fills in the human word with the video, or the probe reads "related" from its vectors · **A** none of these.
@@ -17,8 +17,8 @@ How a pair gets its reason (first rule that fits): **C** it writes the pair when
 
 | dataset | stage | TRASER's vectors | object names only (habit) | both | tricky pairs* | vectors on tricky | habit on tricky |
 |---|---|---|---|---|---|---|---|
-| pvsg | lm_30 | 0.87 | 0.8224 | 0.8508 | 2088 (570 related) | 0.7437 | 0.5661 |
-| vidor | lm_30 | 0.8195 | 0.5659 | 0.7833 | 6693 (3489 related) | 0.8137 | 0.5412 |
+| pvsg | lm_30 | 0.866 | 0.8211 | 0.8517 | 2359 (600 related) | 0.7627 | 0.5847 |
+| vidor | lm_30 | 0.8152 | 0.558 | 0.7761 | 6693 (3489 related) | 0.8102 | 0.5375 |
 
 AUC: 0.5 = guessing, 1 = perfect. *Tricky pairs: the same two object names are related in some videos and not in others, so the names alone cannot tell. If TRASER's vectors beat the names there, it uses the video.
 
@@ -28,18 +28,48 @@ We write `[subject, "` for it and score every relation word together with the hu
 
 | dataset | pairs | with the video | video hidden | pair's objects hidden | picks the human object first (video / hidden) |
 |---|---|---|---|---|---|
-| pvsg | missed (268) | 63% | 57% | 57% | 37% / 25% |
+| pvsg | missed (276) | 64% | 58% | 58% | 36% / 24% |
 | pvsg | written (131) | 73% | 70% | 70% | 53% / 45% |
 | vidor | missed (1171) | 93% | 92% | 93% | 38% / 33% |
 | vidor | written (741) | 96% | 95% | 96% | 50% / 47% |
 
 Same answer with the video hidden = the word comes from habit. Good with the video but never written = it knew but did not choose.
 
+### 2b. Every human pair of every video, with and without earlier text
+
+*fresh* = every human pair (missed + written, no sampling) with no earlier relation (`"relationships": [[s, "`), so nothing can be copied from TRASER's own answer, which was written with the video; *answer* = the earlier setup: TRASER's answer re-opened, on every missed pair. Inputs: the video; every latent set to zero; every latent replaced by another video's latents (normal-looking vectors, wrong content). Human word: rank 1 / top 5 (exact word) / an equivalent in the top 5; object = the human object picked first after the human word; video raises = share of pairs where the video gives the human word a higher log-prob than this input (> 1 nat = 2.7x); AUC = the best word's log-prob separates related from non-related pairs.
+
+| dataset | context | pairs | input | rank 1 | top 5 | top 5 (equiv.) | median rank | object first | video raises | > 1 nat | AUC related vs not |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| pvsg | fresh | related (645) | clean | 43% | 65% | 80% | 3 | 47% | - | - | 0.72 |
+| pvsg | fresh | related (645) | other video | 32% | 55% | 73% | 4 | 27% | 63% | 49% | 0.62 |
+| pvsg | fresh | related (645) | zeros | 36% | 60% | 74% | 3 | 32% | 55% | 33% | 0.65 |
+| pvsg | fresh | missed (387) | clean | 34% | 56% | 72% | 4 | 34% | - | - | - |
+| pvsg | fresh | missed (387) | other video | 27% | 49% | 66% | 6 | 19% | 57% | 44% | - |
+| pvsg | fresh | missed (387) | zeros | 26% | 50% | 63% | 6 | 20% | 51% | 36% | - |
+| pvsg | fresh | written (258) | clean | 55% | 79% | 91% | 1 | 65% | - | - | - |
+| pvsg | fresh | written (258) | other video | 38% | 66% | 85% | 3 | 40% | 71% | 56% | - |
+| pvsg | fresh | written (258) | zeros | 51% | 74% | 89% | 1 | 51% | 60% | 29% | - |
+| pvsg | answer | related (305) | clean | 16% | 29% | 62% | 11 | 36% | - | - | - |
+| pvsg | answer | related (305) | other video | 12% | 26% | 54% | 13 | 23% | 68% | 47% | - |
+| pvsg | answer | related (305) | zeros | 13% | 27% | 55% | 13 | 23% | 66% | 42% | - |
+| pvsg | answer | missed (305) | clean | 16% | 29% | 62% | 11 | 36% | - | - | - |
+| pvsg | answer | missed (305) | other video | 12% | 26% | 54% | 13 | 23% | 68% | 47% | - |
+| pvsg | answer | missed (305) | zeros | 13% | 27% | 55% | 13 | 23% | 66% | 42% | - |
+| vidor | fresh | related (2) | clean | 0% | 0% | 50% | 18.5 | 100% | - | - | - |
+| vidor | fresh | related (2) | other video | 50% | 50% | 100% | 8.5 | 100% | 0% | 0% | - |
+| vidor | fresh | related (2) | zeros | 0% | 0% | 50% | 18.5 | 100% | 0% | 0% | - |
+| vidor | fresh | written (2) | clean | 0% | 0% | 50% | 18.5 | 100% | - | - | - |
+| vidor | fresh | written (2) | other video | 50% | 50% | 100% | 8.5 | 100% | 0% | 0% | - |
+| vidor | fresh | written (2) | zeros | 0% | 0% | 50% | 18.5 | 100% | 0% | 0% | - |
+
+If the video mattered little, *clean* and *other video* would look the same, also in the *fresh* context. A large gap only in *fresh* means the earlier text carries the video's information in *answer*.
+
 ## 3. Keep writing, and swap the video halfway
 
 | dataset | videos | new relations when the list is re-opened | of them human pairs | missed pairs tested | come back: re-opened list | subject started for it | asked again (new turn) |
 |---|---|---|---|---|---|---|---|
-| pvsg | 51 | 394 | 45 | 268 | 9% | 12% | 3% |
+| pvsg | 52 | 418 | 45 | 276 | 9% | 12% | 3% |
 | vidor | 300 | 1384 | 706 | 1171 | 15% | 32% | 18% |
 
 ![swap](figs/pairs_swap.png)
@@ -49,9 +79,9 @@ Swap: the visual contents of TRASER's two most-used objects are exchanged in the
 
 | dataset | k | follows swapped video | follows old text | videos |
 |---|---|---|---|---|
-| pvsg | 0 | 9 | 32 | 51 |
-| pvsg | 3 | 7 | 72 | 51 |
-| pvsg | 8 | 3 | 79 | 51 |
+| pvsg | 0 | 9 | 33 | 52 |
+| pvsg | 3 | 7 | 75 | 52 |
+| pvsg | 8 | 3 | 83 | 52 |
 | vidor | 0 | 104 | 233 | 300 |
 | vidor | 3 | 55 | 346 | 269 |
 | vidor | 8 | 38 | 229 | 165 |
@@ -62,11 +92,11 @@ Swap: the visual contents of TRASER's two most-used objects are exchanged in the
 
 | dataset | relation no. | all video latents | the written object's latents | (if spread evenly) | answer so far | n |
 |---|---|---|---|---|---|---|
-| pvsg | 1-1 | 0.0403 | 0.0072 | 0.0624 | 0.5114 | 54 |
-| pvsg | 2-3 | 0.0361 | 0.0053 | 0.0571 | 0.5576 | 108 |
-| pvsg | 4-6 | 0.0324 | 0.0041 | 0.0591 | 0.5794 | 159 |
-| pvsg | 7-10 | 0.0309 | 0.0043 | 0.0585 | 0.5888 | 198 |
-| pvsg | 11-20 | 0.0268 | 0.0036 | 0.0559 | 0.6088 | 431 |
+| pvsg | 1-1 | 0.0406 | 0.0071 | 0.0614 | 0.5117 | 55 |
+| pvsg | 2-3 | 0.0363 | 0.0052 | 0.0565 | 0.5584 | 110 |
+| pvsg | 4-6 | 0.0327 | 0.004 | 0.0585 | 0.5802 | 162 |
+| pvsg | 7-10 | 0.0311 | 0.0043 | 0.0576 | 0.5895 | 202 |
+| pvsg | 11-20 | 0.027 | 0.0035 | 0.0552 | 0.6091 | 437 |
 | pvsg | 21-40 | 0.0233 | 0.0025 | 0.0511 | 0.6285 | 402 |
 | vidor | 1-1 | 0.0345 | 0.0134 | 0.1926 | 0.496 | 300 |
 | vidor | 2-3 | 0.0281 | 0.01 | 0.1838 | 0.5444 | 585 |
@@ -88,27 +118,28 @@ Miss rate in the lowest vs highest third of each fact (logistic-regression weigh
 
 | dataset | fact | miss rate, low third | high third | weight |
 |---|---|---|---|---|
-| pvsg | time together | 70% | 63% | 0.498 |
-| pvsg | gap | 69% | 50% | 0.072 |
-| pvsg | touching | 71% | 55% | -0.164 |
-| pvsg | size (subject) | 69% | 57% | 0.326 |
-| pvsg | size (object) | 68% | 56% | -0.043 |
-| pvsg | speed (subject) | 58% | 61% | 0.239 |
-| pvsg | speed (object) | 52% | 66% | 0.022 |
-| pvsg | tokens (subject) | 65% | 64% | -0.391 |
-| pvsg | tokens (object) | 68% | 65% | -0.282 |
-| pvsg | living (object) | 62% | 64% | 0.032 |
-| pvsg | objects in video | 57% | 72% | 0.648 |
-| pvsg | name pair is common | 62% | 67% | 0.242 |
+| pvsg | time together | 71% | 66% | 0.579 |
+| pvsg | gap | 81% | 56% | 0.071 |
+| pvsg | touching | 73% | 58% | -0.179 |
+| pvsg | size (subject) | 72% | 58% | 0.34 |
+| pvsg | size (object) | 74% | 57% | -0.012 |
+| pvsg | speed (subject) | 62% | 62% | 0.218 |
+| pvsg | speed (object) | 58% | 64% | 0.013 |
+| pvsg | tokens (subject) | 67% | 66% | -0.402 |
+| pvsg | tokens (object) | 71% | 66% | -0.335 |
+| pvsg | living (object) | 64% | 64% | 0.029 |
+| pvsg | objects in video | 56% | 80% | 0.784 |
+| pvsg | action word | 69% | 62% | -0.06 |
+| pvsg | name pair is common | 62% | 70% | 0.284 |
 | vidor | time together | 67% | 50% | -0.033 |
-| vidor | gap | 47% | 70% | 0.124 |
-| vidor | touching | 70% | 47% | -0.098 |
-| vidor | size (subject) | 68% | 47% | 0.048 |
-| vidor | size (object) | 62% | 55% | -0.036 |
-| vidor | speed (subject) | 61% | 61% | -0.131 |
-| vidor | speed (object) | 56% | 64% | 0.028 |
-| vidor | tokens (subject) | 70% | 48% | -0.232 |
-| vidor | tokens (object) | 63% | 56% | 0.011 |
+| vidor | gap | 47% | 70% | 0.123 |
+| vidor | touching | 70% | 46% | -0.099 |
+| vidor | size (subject) | 68% | 47% | 0.044 |
+| vidor | size (object) | 62% | 55% | -0.032 |
+| vidor | speed (subject) | 61% | 61% | -0.125 |
+| vidor | speed (object) | 56% | 64% | 0.021 |
+| vidor | tokens (subject) | 70% | 48% | -0.226 |
+| vidor | tokens (object) | 62% | 56% | 0.006 |
 | vidor | objects in video | 47% | 73% | 0.453 |
 | vidor | action word | 64% | 41% | -0.192 |
 | vidor | name pair is common | 56% | 64% | 0.194 |
