@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "tablet", "attributes": ["rectangular", "sleek", "smooth", "reflective", "glossy", "rounded", "modern"]}, {"object 2": "child"}, {"object 3": "sofa"}], "relationships": [[2, "holding", 1, [[0, 127]]], [2, "looking at", 1, [[0, 127]]], [2, "sitting on", 3, [[0, 127]]], [2, "touching", 1, [[0, 127]]], [2, "playing with", 1, [[0, 127]]]]}

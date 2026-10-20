@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "adult"}, {"object 2": "adult"}, {"object 3": "adult"}, {"object 4": "ceiling fan"}], "relationships": [[1, "next to", 2, [[0, 3]]], [1, "next to", 3, [[23, 26]]], [2, "next to", 3, [[23, 26]]]]}

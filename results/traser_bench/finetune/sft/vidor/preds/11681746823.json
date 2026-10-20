@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "adult"}, {"object 2": "baby"}], "relationships": [[1, "holding", 2, [[0, 18]]], [1, "kissing", 2, [[0, 18]]], [1, "looking at", 2, [[0, 18]]], [2, "looking at", 1, [[0, 18]]], [1, "in front of", 2, [[0, 18]]], [1, "touching", 2, [[0, 18]]]]}

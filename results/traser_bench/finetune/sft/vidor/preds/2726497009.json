@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "adult"}, {"object 2": "bicycle"}, {"object 3": "adult"}, {"object 4": "bicycle"}, {"object 5": "adult"}, {"object 6": "bicycle"}, {"object 7": "adult"}, {"object 8": "bicycle"}], "relationships": [[1, "riding", 2, [[0, 5]]], [3, "riding", 4, [[15, 25]]], [5, "riding", 6, [[23, 33]]], [7, "riding", 8, [[33, 53]]]]}
