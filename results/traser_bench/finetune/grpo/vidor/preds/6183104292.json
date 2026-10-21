@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "tiger", "attributes": ["orange coat", "bold black stripes", "muscular build", "powerful limbs", "sharp teeth"]}, {"object 2": "adult"}, {"object 3": "fence"}], "relationships": [[2, "touching", 3, [[0, 14]]], [1, "behind", 3, [[0, 14]]], [2, "in front of", 1, [[0, 16]]], [2, "in front of", 3, [[0, 14]]]]}

@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "dog"}, {"object 2": "child"}], "relationships": [[1, "biting", 2, [[0, 13]]], [1, "playing with", 2, [[0, 13]]], [1, "looking at", 2, [[29, 30]]]]}

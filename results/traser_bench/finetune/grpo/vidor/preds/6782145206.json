@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "adult"}, {"object 2": "monitor_(computer_equipment)"}, {"object 3": "monitor_(computer_equipment)"}, {"object 4": "laptop_computer"}], "relationships": [[1, "in front of", 2, [[0, 5]]], [1, "in front of", 3, [[0, 5]]], [1, "in front of", 4, [[0, 5]]], [2, "next to", 3, [[0, 5]]], [2, "next to", 4, [[0, 5]]], [3, "next to", 4, [[0, 5]]]]}

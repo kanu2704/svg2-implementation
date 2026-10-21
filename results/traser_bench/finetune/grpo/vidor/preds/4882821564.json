@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child"}, {"object 2": "sofa"}, {"object 3": "sofa"}, {"object 4": "adult"}], "relationships": [[1, "in front of", 2, [[0, 3]]], [1, "in front of", 3, [[0, 5], [20, 86]]], [1, "in front of", 4, [[20, 29]]], [4, "in front of", 3, [[20, 29]]], [4, "in front of", 1, [[20, 29]]]]}

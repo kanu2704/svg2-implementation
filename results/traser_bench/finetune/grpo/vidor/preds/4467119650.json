@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "baby", "attributes": ["pink", "soft", "small", "rounded", "smooth", "glossy", "moist", "closed", "tilted"]}, {"object 2": "adult"}, {"object 3": "bathtub"}], "relationships": [[2, "holding", 1, [[0, 8]]], [2, "washing", 1, [[0, 8]]], [1, "in", 3, [[0, 8]]], [2, "in", 3, [[0, 8]]]]}
