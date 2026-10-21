@@ -4,9 +4,13 @@ can count a word as right under the lenient criterion, as the main benchmark doe
 Every (human word, TRASER's word) combination in the saved top-5 lists of experiments 2 and 2b
 (results/traser_bench/interp/raw/e2*/), and the object names of 2b, that is not in results/traser_bench/judge_cache.json yet is asked once and
 added to that cache. Runs anywhere with internet (no GPU); the key comes from $NVIDIA_API_KEY or ~/.svg2_keys.
+If Kimi K3 does not answer, the next model of bench_eval.JUDGES that does is used: its verdicts go to their own file
+(judge_cache_<model>.json), count only for words Kimi K3 never judged, and it is first checked on 200 words Kimi K3
+judged.
 
     python3 tools/interp/judge_pairs.py            # ask the judge
     python3 tools/interp/judge_pairs.py --count    # only count what is missing
+    python3 tools/interp/judge_pairs.py --judge z-ai/glm-5.3    # a given model instead of Kimi K3 (or the next that answers)
 """
 import argparse
 import glob
@@ -56,19 +60,23 @@ def main():
     ap.add_argument("--raw", default=str(C.OUT / "raw"))
     ap.add_argument("--results", default=str(C.RESULTS))
     ap.add_argument("--count", action="store_true", help="only count the word pairs not judged yet")
+    ap.add_argument("--judge", default="auto", help="model to ask (auto: Kimi K3, else the next of bench_eval.JUDGES that answers)")
     args = ap.parse_args()
-    judge = E.Judge(cache=Path(args.results) / "judge_cache.json")
+    cache = Path(args.results) / "judge_cache.json"
     pairs = needed(args.raw, args.results)
-    todo = sorted({judge.key(*p) for p in pairs if E.norm(p[1]) != E.norm(p[2])} - set(judge.cache))
-    print(f"{len(pairs)} (human word, TRASER word) combinations in the saved results; {len(todo)} not judged yet")
-    if args.count or not todo:
+    missing = lambda j: sum(j.category(*p) is None for p in pairs)  # noqa: E731
+    judge = E.Judge(cache=cache, others=True)
+    print(f"{len(pairs)} (human word, TRASER word) combinations in the saved results; {missing(judge)} not judged yet")
+    if args.count or not missing(judge):
         return 0
+    judge = E.pick_judge(cache, args.judge)
+    judge.check()
     judge.ask_all(sorted(pairs))
     judge.save()
-    left = sorted({judge.key(*p) for p in pairs if E.norm(p[1]) != E.norm(p[2])} - set(judge.cache))
-    print(f"saved {judge.cache_path}; still not judged: {len(left)}")
+    print(f"saved {judge.cache_path}; still not judged: {missing(judge)}")
+    if judge.note():
+        print(judge.note())
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

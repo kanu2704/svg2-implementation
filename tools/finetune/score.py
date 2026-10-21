@@ -100,7 +100,7 @@ def figures(out):
     return made
 
 
-def page(res, models, train_ds, figs):
+def page(res, models, train_ds, figs, judge_note=""):
     L = ["# Fine-tuning TRASER's language model: SFT and GRPO", "",
          f"Trained on **{train_ds}** (training split), tested on the other datasets (and on {train_ds}'s test split, "
          "marked *in-domain*). Only TRASER's language model (Qwen2.5-VL-3B's decoder) is trained, with LoRA; the "
@@ -126,7 +126,7 @@ def page(res, models, train_ds, figs):
     L += ["**Notes.** Unjudged words count as wrong under lenient scoring (run with `--ask` and your own key to judge "
           "them). TRASER's answers are its saved run (float16, up to 8192 tokens, with attributes); the fine-tuned "
           "models write no attributes (the human labels have none) and up to 4096 tokens. PVSG training videos that "
-          "are also VidOR test videos are left out of training."]
+          "are also VidOR test videos are left out of training." + (f" Judge: {judge_note}" if judge_note else "")]
     return "\n".join(L) + "\n"
 
 
@@ -137,13 +137,16 @@ def main():
     ap.add_argument("--train_dataset", default="pvsg")
     ap.add_argument("--out", default=str(F.OUT))
     ap.add_argument("--ask", action="store_true", help="ask the judge about new word pairs (needs NVIDIA_API_KEY)")
+    ap.add_argument("--judge", default="auto", help="with --ask: model to ask (auto: Kimi K3, else the next that answers)")
     args = ap.parse_args()
-    judge = E.Judge()
+    judge = E.pick_judge(wanted=args.judge) if args.ask else E.Judge(others=True)
+    if args.ask:
+        judge.check()
     models = [m for m in args.models if m == "traser" or Path(args.out, m).exists()]
     res = score(models, args.datasets, args.out, judge, args.ask)
     IC.write_json(Path(args.out) / "finetune.json", res)
     figs = figures(args.out)
-    (Path(args.out) / "FINETUNE.md").write_text(page(res, models, args.train_dataset, figs))
+    (Path(args.out) / "FINETUNE.md").write_text(page(res, models, args.train_dataset, figs, judge.note()))
     print(f"wrote {Path(args.out) / 'FINETUNE.md'}")
     for ds, r in res.items():
         print(ds, {m: r[m]["lenient"]["triplet"] for m in models if m in r})

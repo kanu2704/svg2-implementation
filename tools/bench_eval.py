@@ -162,21 +162,49 @@ def pred_spans(spans, gt, stats):
 
 
 # ----------------------------------------------------------------------------- judge
+# The benchmark's judge first. When it does not answer, pick_judge takes the next one that does; its verdicts are kept
+# apart (judge_cache_<model>.json) and used only for words Kimi K3 never judged, by the tools that pass others=True.
+JUDGES = ["moonshotai/kimi-k3", "moonshotai/kimi-k2.6", "z-ai/glm-5.3", "deepseek-ai/deepseek-v4.1-flash",
+          "nvidia/nemotron-3-ultra-550b-a55b", "nvidia/nemotron-3-super-120b-a12b"]
+
+
 class Judge:
-    """Kimi K3 on NVIDIA NIM. Every answer is cached in results/traser_bench/judge_cache.json."""
-    def __init__(self, model="moonshotai/kimi-k3", cache=RESULTS / "judge_cache.json"):
-        self.model, self.cache_path = model, Path(cache)
-        self.cache = json.load(open(self.cache_path)) if self.cache_path.exists() else {}
+    """Kimi K3 on NVIDIA NIM. Every answer is cached in results/traser_bench/judge_cache.json; another model's
+    answers in judge_cache_<model>.json next to it (read with others=True)."""
+    def __init__(self, model=JUDGES[0], cache=RESULTS / "judge_cache.json", others=False):
+        self.model, self.main_path = model, Path(cache)
+        self.cache = json.load(open(self.main_path)) if self.main_path.exists() else {}
+        self.other = {}                                         # other model -> its answers
+        for p in sorted(self.main_path.parent.glob("judge_cache_*.json")) if others else []:
+            d = json.load(open(p))
+            self.other[d["model"]] = d["verdicts"]
+        if model != JUDGES[0] and model not in self.other:
+            p = self.other_path(model)
+            self.other[model] = json.load(open(p))["verdicts"] if p.exists() else {}
+        self.cache_path = self.main_path if model == JUDGES[0] else self.other_path(model)
         self.client = None
+
+    def other_path(self, model):
+        return self.main_path.with_name(f"judge_cache_{model.replace('/', '__')}.json")
+
+    def mine(self):
+        """The answers of the model asked now."""
+        return self.cache if self.model == JUDGES[0] else self.other[self.model]
 
     @staticmethod
     def key(kind, ref, pred):
         return f"{kind}\t{norm(ref)}\t{norm(pred)}"
 
     def ask_all(self, pairs, chunk=50, log=print):
-        todo = sorted({self.key(*p) for p in pairs if norm(p[1]) != norm(p[2])} - set(self.cache))
+        """Ask about the pairs without a verdict (Kimi K3: without its own verdict, so it replaces another model's)."""
+        keys = {self.key(*p) for p in pairs if norm(p[1]) != norm(p[2])}
+        have = set(self.cache) if self.model == JUDGES[0] else set(self.cache).union(*self.other.values())
+        self.ask_keys(sorted(keys - have), chunk, log)
+
+    def ask_keys(self, todo, chunk=50, log=print):
         if not todo:
             return
+        mine = self.mine()
         from nim import ask, nim_client
         self.client = self.client or nim_client(timeout=180)
         parts = [todo[i:i + chunk] for i in range(0, len(todo), chunk)]
@@ -197,10 +225,10 @@ class Judge:
             new = 0
             for n, k in enumerate(part):
                 if got.get(n) in CATEGORIES:
-                    self.cache[k] = got[n]
+                    mine[k] = got[n]
                     new += 1
             self.save()
-            left = [k for k in part if k not in self.cache]
+            left = [k for k in part if k not in mine]
             done += new
             if left and len(left) > 5:          # a failed or partial answer: ask again in smaller pieces
                 log(f"  {len(left)} pairs without an answer ({'call failed' if not got else 'partial answer'}); "
@@ -210,16 +238,96 @@ class Judge:
                 log(f"  {len(left)} pairs stay unjudged for now: {[k.replace(chr(9), ' | ') for k in left]}")
             log(f"  judged {done}/{len(todo)} new pairs (that request: {time.time() - t0:.0f} s)")
 
-    def category(self, kind, ref, pred):
+    def verdict_of(self, kind, ref, pred):
+        """(category, model that judged it); (None, None) if no judge was asked; the model is None for the same word."""
         if norm(ref) == norm(pred):
-            return "identical"
-        return self.cache.get(self.key(kind, ref, pred))       # None = not judged (yet)
+            return "identical", None
+        k = self.key(kind, ref, pred)
+        if k in self.cache:
+            return self.cache[k], JUDGES[0]
+        for m in sorted(self.other, key=lambda m: JUDGES.index(m) if m in JUDGES else len(JUDGES)):
+            if k in self.other[m]:
+                return self.other[m][k], m
+        return None, None
+
+    def category(self, kind, ref, pred):
+        return self.verdict_of(kind, ref, pred)[0]
 
     def save(self):
         self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+        data = self.cache if self.model == JUDGES[0] else {"model": self.model, "verdicts": self.mine()}
         tmp = self.cache_path.with_suffix(".tmp")
-        tmp.write_text(json.dumps(self.cache, indent=0, sort_keys=True))
+        tmp.write_text(json.dumps(data, indent=0, sort_keys=True))
         tmp.replace(self.cache_path)
+
+    def check(self, n=200, log=print):
+        """Another model: ask it about n words Kimi K3 already judged (half it accepted, half it rejected), to see
+        how far its verdicts can stand in for Kimi K3's. Its verdicts never replace Kimi K3's."""
+        if self.model == JUDGES[0]:
+            return
+        import random
+        old = sorted(k for k in self.cache if k.split("\t")[1] != k.split("\t")[2])
+        acc = [k for k in old if is_right(self.cache[k], "lenient")]
+        rej = [k for k in old if not is_right(self.cache[k], "lenient")]
+        rng = random.Random(0)
+        sample = rng.sample(acc, min(n // 2, len(acc))) + rng.sample(rej, min(n // 2, len(rej)))
+        log(f"  checking {self.model} on {len(sample)} words Kimi K3 already judged ...")
+        self.ask_keys([k for k in sample if k not in self.mine()], log=log)
+        self.save()
+        log("  " + self.note())
+
+    def agreement(self, model):
+        """On the words both judged: Kimi K3 accepted / rejected, and how many of those the other model did too."""
+        v = self.other.get(model, {})
+        both = [k for k in v if k in self.cache and k.split("\t")[1] != k.split("\t")[2]]
+        acc = [k for k in both if is_right(self.cache[k], "lenient")]
+        rej = [k for k in both if not is_right(self.cache[k], "lenient")]
+        return dict(accepted=len(acc), also_accepted=sum(is_right(v[k], "lenient") for k in acc),
+                    rejected=len(rej), also_rejected=sum(not is_right(v[k], "lenient") for k in rej),
+                    only_it=len([k for k in v if k not in self.cache]))
+
+    def note(self):
+        """One line per other model whose verdicts are used (for the pages), or ''."""
+        out = []
+        for m in self.other:
+            a = self.agreement(m)
+            if not a["only_it"] and m != self.model:
+                continue
+            out.append(f"{a['only_it']} words Kimi K3 never judged were judged by {m} (Kimi K3 did not answer). "
+                       f"Check on words Kimi K3 judged: of {a['accepted']} it accepted, {m} also accepts "
+                       f"{a['also_accepted']}; of {a['rejected']} it rejected, {m} also rejects {a['also_rejected']}.")
+        return " ".join(out)
+
+
+def pick_judge(cache=RESULTS / "judge_cache.json", wanted="auto", log=print):
+    """A Judge (others=True) whose model answers now: `wanted`, or (auto) Kimi K3, else the first of JUDGES that
+    answers 2 easy test words correctly."""
+    from nim import ask, nim_client
+    client = nim_client(timeout=180)
+    test = [{"i": 0, "type": "relation", "reference": "holding", "predicted": "grasping"},
+            {"i": 1, "type": "object", "reference": "dog", "predicted": "table"}]
+    for model in JUDGES if wanted == "auto" else [wanted]:
+        log(f"is {model} answering? ...")
+        try:
+            reply = ask(client, model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(test)}],
+                        dict(temperature=0.0), max_tokens=4096, tries=1)
+            got = {int(x.get("i", -1)): str(x.get("category", "")).lower()
+                   for x in reply.get("results", []) if isinstance(x, dict)}
+        except (RuntimeError, ValueError, TypeError) as e:
+            log(f"  no ({str(e)[:200]})")
+            continue
+        if got.get(0) in CATEGORIES and got[0] != "mismatch" and got.get(1) == "mismatch":
+            log(f"  yes: judging with {model}")
+            judge = Judge(model, cache, others=True)
+            judge.client = client
+            return judge
+        log(f"  it answers, but wrongly on 2 easy test words: {got}")
+    try:
+        seen = sorted(m.id for m in client.models.list().data)
+        log("models this key can use: " + ", ".join(seen))
+    except Exception as e:  # noqa: BLE001
+        log(f"(could not list the models: {str(e)[:200]})")
+    raise SystemExit("no judge model answered; tell Claude, or choose one of the models above with --judge <model>")
 
 
 def is_right(category, criterion):

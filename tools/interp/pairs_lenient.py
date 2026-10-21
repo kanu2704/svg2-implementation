@@ -6,7 +6,9 @@ answer), TRASER's 1st choice and its top 5 are checked with the judge:
   object    right if TRASER picks the human object itself, or an object whose human name the judge accepts for the
             human object's name (e.g. another "adult" when the human pair names one adult).
 A combination the judge was never asked counts as wrong (as in the benchmark) and is counted in the "unjudged" column;
-`judge_pairs.py` asks the judge about them. The judge's verdicts are listed too, so they can be checked by eye.
+`judge_pairs.py` asks the judge about them (another model when Kimi K3 does not answer, for the words Kimi K3 never
+judged; the page says which and how often it agrees with Kimi K3). The judge's verdicts are listed too, so they can be
+checked by eye.
 
     python3 tools/interp/pairs_lenient.py    -> results/traser_bench/interp/PAIRS_LENIENT.md + judge_check_*.csv
 """
@@ -121,8 +123,9 @@ def checks(judge, vids):
                             obj[(names[p["o_k"]], names[o])] += 1
 
     def verdict(kind, a, b):
-        c = judge.category(kind, a, b)
-        return "not judged yet" if c is None else (f"{c} (right)" if E.is_right(c, "lenient") else f"{c} (wrong)")
+        c, m = judge.verdict_of(kind, a, b)
+        by = f", by {m}" if m and m != E.JUDGES[0] else ""
+        return "not judged yet" if c is None else (f"{c} (right{by})" if E.is_right(c, "lenient") else f"{c} (wrong{by})")
 
     return ([(a, b, n, verdict("relation", a, b)) for (a, b), n in rel.most_common()],
             [(a, b, n, verdict("object", a, b)) for (a, b), n in obj.most_common()])
@@ -136,7 +139,7 @@ def main():
     ap.add_argument("--show", type=int, default=25, help="judge verdicts listed per dataset (the CSVs have all)")
     args = ap.parse_args()
     E.RESULTS = Path(args.results)
-    judge = E.Judge(cache=Path(args.results) / "judge_cache.json")
+    judge = E.Judge(cache=Path(args.results) / "judge_cache.json", others=True)
     L = ["# Experiment 2b under the lenient judge", "",
          "Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2all`), checked with the benchmark's "
          "judge (Kimi K3, lenient: anything but a mismatch). **Relation**: TRASER's 1st choice / any of its top 5 words for "
@@ -146,6 +149,8 @@ def main():
          "relation) or *after its own answer* (its relation list re-opened; missed pairs only). *only real / only another*: "
          "pairs right with the real video but not the other input / the other way round. *unjudged*: combinations the "
          "judge was never asked, counted as wrong (`python3 tools/interp/judge_pairs.py` asks it).", ""]
+    if judge.note():
+        L += [f"**Judge.** {judge.note()} Kimi K3's own verdicts always come first.", ""]
     rel_rows, obj_rows = [], []
     for ds in C.DATASETS:
         vids = load(args.raw, args.results, ds)
