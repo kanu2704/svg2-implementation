@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "baby", "attributes": ["small", "dark hair", "soft", "rounded face", "tiny ears", "youthful appearance"]}, {"object 2": "baby buggy", "attributes": ["soft", "rounded", "light-colored fabric", "plush", "cushioned", "sturdy frame", "slightly curved handlebar"]}], "relationships": [[1, "lying on", 2, [[0, 31]]], [1, "inside", 2, [[0, 31]]]]}
