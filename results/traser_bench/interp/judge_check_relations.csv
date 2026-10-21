@@ -1,0 +1,2606 @@
+dataset,human word,TRASER word,times,judge
+pvsg,holding,holding,603,identical (right)
+pvsg,holding,hold,509,identical (right)
+pvsg,holding,touching,461,semantic overlap (right)
+pvsg,on,on,444,identical (right)
+pvsg,on,above,325,semantic overlap (right)
+pvsg,on,approaches,308,not judged yet
+pvsg,on,attached to,255,semantic overlap (right)
+pvsg,holding,in front of,230,mismatch (wrong)
+pvsg,on,in front of,220,mismatch (wrong)
+pvsg,holding,carrying,209,hypernym/hyponym (right)
+pvsg,holding,above,195,not judged yet
+pvsg,holding,approaches,189,mismatch (wrong)
+pvsg,holding,manipulates,187,not judged yet
+pvsg,holding,wearing,184,mismatch (wrong)
+pvsg,on,moves away from,175,not judged yet
+pvsg,holding,near,157,mismatch (wrong)
+pvsg,on,in,154,not judged yet
+pvsg,in front of,in front of,148,identical (right)
+pvsg,on,inside,134,mismatch (wrong)
+pvsg,holding,placing,128,semantic overlap (right)
+pvsg,touching,holding,123,hypernym/hyponym (right)
+pvsg,touching,touching,115,identical (right)
+pvsg,in front of,approaches,114,mismatch (wrong)
+pvsg,holding,on,111,mismatch (wrong)
+pvsg,holding,below,106,mismatch (wrong)
+pvsg,beside,holding,106,not judged yet
+pvsg,in front of,holding,106,mismatch (wrong)
+pvsg,holding,behind,103,not judged yet
+pvsg,beside,in front of,101,mismatch (wrong)
+pvsg,picking,holding,98,semantic overlap (right)
+pvsg,touching,hold,92,not judged yet
+pvsg,standing on,on,90,hypernym/hyponym (right)
+pvsg,on,approaching,90,not judged yet
+pvsg,opening,holding,87,mismatch (wrong)
+pvsg,beside,touching,86,semantic overlap (right)
+pvsg,walking on,in front of,83,not judged yet
+pvsg,picking,hold,80,not judged yet
+pvsg,beside,behind,79,not judged yet
+pvsg,holding,looking at,78,mismatch (wrong)
+pvsg,beside,approaches,78,not judged yet
+pvsg,walking on,on,77,hypernym/hyponym (right)
+pvsg,holding,cutting,76,mismatch (wrong)
+pvsg,touching,in front of,75,mismatch (wrong)
+pvsg,holding,grabbing,74,not judged yet
+pvsg,opening,touching,74,mismatch (wrong)
+pvsg,touching,approaches,73,mismatch (wrong)
+pvsg,running on,in front of,71,not judged yet
+pvsg,on,below,71,mismatch (wrong)
+pvsg,standing on,in front of,70,mismatch (wrong)
+pvsg,beside,hold,70,not judged yet
+pvsg,opening,hold,69,mismatch (wrong)
+pvsg,on,moving across,69,not judged yet
+pvsg,holding,next to,68,mismatch (wrong)
+pvsg,looking at,holding,66,mismatch (wrong)
+pvsg,sitting on,on,65,hypernym/hyponym (right)
+pvsg,picking,touching,64,not judged yet
+pvsg,on,holding,63,not judged yet
+pvsg,standing on,touching,62,not judged yet
+pvsg,in front of,approaching,62,mismatch (wrong)
+pvsg,walking on,above,61,mismatch (wrong)
+pvsg,beside,on,61,mismatch (wrong)
+pvsg,in front of,behind,61,mismatch (wrong)
+pvsg,on,touching,61,not judged yet
+pvsg,beside,next to,60,not judged yet
+pvsg,walking on,holding,60,mismatch (wrong)
+pvsg,holding,washing,60,mismatch (wrong)
+pvsg,holding,under,59,not judged yet
+pvsg,in front of,near,59,hypernym/hyponym (right)
+pvsg,walking on,approaches,58,not judged yet
+pvsg,holding,attached to,58,not judged yet
+pvsg,in front of,on,54,mismatch (wrong)
+pvsg,beside,near,53,hypernym/hyponym (right)
+pvsg,running on,approaches,53,not judged yet
+pvsg,in front of,touching,51,mismatch (wrong)
+pvsg,closing,holding,51,mismatch (wrong)
+pvsg,looking at,approaches,50,mismatch (wrong)
+pvsg,touching,near,50,hypernym/hyponym (right)
+pvsg,in front of,next to,50,semantic overlap (right)
+pvsg,wearing,holding,50,not judged yet
+pvsg,walking on,touching,49,not judged yet
+pvsg,standing on,holding,49,not judged yet
+pvsg,standing on,approaches,49,not judged yet
+pvsg,wearing,wearing,49,identical (right)
+pvsg,sitting on,sitting on,47,identical (right)
+pvsg,touching,behind,47,not judged yet
+pvsg,on,lying on,47,not judged yet
+pvsg,standing on,standing on,46,identical (right)
+pvsg,touching,next to,46,semantic overlap (right)
+pvsg,beside,above,46,not judged yet
+pvsg,closing,touching,46,not judged yet
+pvsg,holding,inside,45,not judged yet
+pvsg,sitting on,touching,44,semantic overlap (right)
+pvsg,in front of,hold,44,mismatch (wrong)
+pvsg,running on,on,44,hypernym/hyponym (right)
+pvsg,holding,playing with,43,mismatch (wrong)
+pvsg,hanging from,above,43,not judged yet
+pvsg,looking at,looking at,42,identical (right)
+pvsg,on,near,42,not judged yet
+pvsg,on,sitting on,41,hypernym/hyponym (right)
+pvsg,playing with,holding,41,semantic overlap (right)
+pvsg,opening,opening,41,identical (right)
+pvsg,standing on,above,40,hypernym/hyponym (right)
+pvsg,on,standing on,40,hypernym/hyponym (right)
+pvsg,looking at,hold,39,not judged yet
+pvsg,walking on,behind,39,not judged yet
+pvsg,running on,above,39,not judged yet
+pvsg,touching,on,38,hypernym/hyponym (right)
+pvsg,next to,approaches,38,mismatch (wrong)
+pvsg,in front of,carrying,38,mismatch (wrong)
+pvsg,throwing,holding,38,mismatch (wrong)
+pvsg,next to,in front of,38,mismatch (wrong)
+pvsg,walking on,hold,38,not judged yet
+pvsg,looking at,touching,37,mismatch (wrong)
+pvsg,running on,near,37,not judged yet
+pvsg,beside,looking at,37,mismatch (wrong)
+pvsg,in front of,moves away from,36,mismatch (wrong)
+pvsg,touching,looking at,36,mismatch (wrong)
+pvsg,wearing,carrying,36,not judged yet
+pvsg,picking,approaches,36,not judged yet
+pvsg,pulling,holding,36,not judged yet
+pvsg,sitting on,holding,35,mismatch (wrong)
+pvsg,in front of,above,35,mismatch (wrong)
+pvsg,cleaning,holding,35,mismatch (wrong)
+pvsg,standing on,moving across,34,mismatch (wrong)
+pvsg,standing on,behind,34,not judged yet
+pvsg,next to,holding,34,mismatch (wrong)
+pvsg,in front of,below,34,mismatch (wrong)
+pvsg,in front of,attached to,34,mismatch (wrong)
+pvsg,on,behind,34,mismatch (wrong)
+pvsg,hanging from,on,34,not judged yet
+pvsg,wearing,hold,33,not judged yet
+pvsg,on,moving toward,33,mismatch (wrong)
+pvsg,closing,hold,33,mismatch (wrong)
+pvsg,holding,over,31,not judged yet
+pvsg,throwing,carrying,31,not judged yet
+pvsg,throwing,hold,31,not judged yet
+pvsg,opening,in front of,31,mismatch (wrong)
+pvsg,hanging from,inside,31,not judged yet
+pvsg,closing,opening,31,not judged yet
+pvsg,on,manipulates,31,not judged yet
+pvsg,opening,approaches,30,mismatch (wrong)
+pvsg,touching,wearing,30,not judged yet
+pvsg,beside,wearing,30,not judged yet
+pvsg,in front of,wearing,30,mismatch (wrong)
+pvsg,walking on,near,30,not judged yet
+pvsg,riding,holding,30,not judged yet
+pvsg,in,in,30,identical (right)
+pvsg,opening,above,30,not judged yet
+pvsg,holding,approaching,29,mismatch (wrong)
+pvsg,next to,touching,29,semantic overlap (right)
+pvsg,beside,approaching,29,mismatch (wrong)
+pvsg,in front of,beside,29,not judged yet
+pvsg,playing with,hold,29,not judged yet
+pvsg,riding,riding,29,identical (right)
+pvsg,opening,manipulates,29,not judged yet
+pvsg,beside,beside,29,identical (right)
+pvsg,sitting on,in front of,28,mismatch (wrong)
+pvsg,walking on,moving across,28,semantic overlap (right)
+pvsg,touching,above,28,not judged yet
+pvsg,in,inside,28,synonym (right)
+pvsg,hanging from,in front of,28,not judged yet
+pvsg,looking at,in front of,27,mismatch (wrong)
+pvsg,sitting on,standing on,27,semantic overlap (right)
+pvsg,standing on,sitting on,27,not judged yet
+pvsg,standing on,near,27,not judged yet
+pvsg,next to,looking at,27,mismatch (wrong)
+pvsg,touching,approaching,27,mismatch (wrong)
+pvsg,in front of,looking at,27,mismatch (wrong)
+pvsg,running on,approaching,27,not judged yet
+pvsg,running on,moves away from,27,not judged yet
+pvsg,cleaning,touching,27,not judged yet
+pvsg,in,approaches,27,not judged yet
+pvsg,picking,manipulates,27,not judged yet
+pvsg,walking on,standing on,26,not judged yet
+pvsg,playing with,approaches,26,not judged yet
+pvsg,walking on,approaching,26,mismatch (wrong)
+pvsg,running on,behind,26,not judged yet
+pvsg,picking,grabbing,26,not judged yet
+pvsg,beside,sitting on,26,not judged yet
+pvsg,standing on,hold,26,not judged yet
+pvsg,in,on,26,semantic overlap (right)
+pvsg,running on,inside,26,not judged yet
+pvsg,holding,opening,26,mismatch (wrong)
+pvsg,looking at,approaching,25,not judged yet
+pvsg,touching,carrying,25,not judged yet
+pvsg,holding,hitting,25,mismatch (wrong)
+pvsg,playing with,carrying,25,not judged yet
+pvsg,on,hold,25,not judged yet
+pvsg,closing,above,25,not judged yet
+pvsg,blowing,holding,24,not judged yet
+pvsg,hugging,holding,24,semantic overlap (right)
+pvsg,walking on,next to,24,not judged yet
+pvsg,cleaning,hold,24,not judged yet
+pvsg,blowing,touching,23,not judged yet
+pvsg,holding,in,23,not judged yet
+pvsg,picking,carrying,23,not judged yet
+pvsg,playing with,in front of,23,mismatch (wrong)
+pvsg,picking,above,23,not judged yet
+pvsg,looking at,carrying,23,mismatch (wrong)
+pvsg,closing,approaches,23,not judged yet
+pvsg,looking at,behind,22,not judged yet
+pvsg,sitting on,approaches,22,not judged yet
+pvsg,walking on,moves away from,22,not judged yet
+pvsg,kicking,in front of,22,not judged yet
+pvsg,on,hanging from,22,not judged yet
+pvsg,hanging from,approaches,22,not judged yet
+pvsg,sitting on,lying on,21,not judged yet
+pvsg,beside,under,21,mismatch (wrong)
+pvsg,blowing,hold,21,not judged yet
+pvsg,wearing,approaches,21,not judged yet
+pvsg,throwing,in front of,21,not judged yet
+pvsg,throwing,near,21,not judged yet
+pvsg,playing with,touching,21,not judged yet
+pvsg,playing with,playing with,21,identical (right)
+pvsg,next to,near,21,hypernym/hyponym (right)
+pvsg,on,next to,21,not judged yet
+pvsg,talking to,holding,21,mismatch (wrong)
+pvsg,in,above,21,mismatch (wrong)
+pvsg,cutting,holding,21,mismatch (wrong)
+pvsg,hanging from,attached to,21,not judged yet
+pvsg,closing,in front of,21,mismatch (wrong)
+pvsg,hugging,approaches,20,mismatch (wrong)
+pvsg,standing on,running on,20,not judged yet
+pvsg,kicking,holding,20,mismatch (wrong)
+pvsg,kicking,approaches,20,not judged yet
+pvsg,pulling,carrying,20,not judged yet
+pvsg,beside,hugging,20,not judged yet
+pvsg,kicking,near,20,mismatch (wrong)
+pvsg,hanging from,in,20,not judged yet
+pvsg,carrying,holding,19,not judged yet
+pvsg,looking at,near,19,mismatch (wrong)
+pvsg,looking at,next to,19,mismatch (wrong)
+pvsg,sitting on,above,19,not judged yet
+pvsg,touching,below,19,not judged yet
+pvsg,kissing,holding,19,mismatch (wrong)
+pvsg,kissing,approaches,19,mismatch (wrong)
+pvsg,running on,touching,19,not judged yet
+pvsg,pulling,approaches,19,not judged yet
+pvsg,next to,behind,19,mismatch (wrong)
+pvsg,riding,sitting on,19,not judged yet
+pvsg,opening,placing,19,mismatch (wrong)
+pvsg,holding,cleaning,19,mismatch (wrong)
+pvsg,hanging from,below,19,not judged yet
+pvsg,sitting on,behind,18,not judged yet
+pvsg,next to,approaching,18,mismatch (wrong)
+pvsg,walking on,attached to,18,not judged yet
+pvsg,hugging,looking at,18,mismatch (wrong)
+pvsg,throwing,hitting,18,not judged yet
+pvsg,pulling,touching,18,not judged yet
+pvsg,picking,hitting,18,mismatch (wrong)
+pvsg,running on,holding,18,not judged yet
+pvsg,cleaning,washing,18,synonym (right)
+pvsg,getting down on,holding,18,mismatch (wrong)
+pvsg,touching,beside,18,not judged yet
+pvsg,beside,talking to,18,not judged yet
+pvsg,picking,placing,18,mismatch (wrong)
+pvsg,running on,below,18,not judged yet
+pvsg,sitting on,near,17,semantic overlap (right)
+pvsg,sitting on,wearing,17,not judged yet
+pvsg,beside,moves away from,17,not judged yet
+pvsg,holding,riding,17,not judged yet
+pvsg,kissing,touching,17,not judged yet
+pvsg,in,attached to,17,not judged yet
+pvsg,in,near,17,not judged yet
+pvsg,pulling,hold,17,not judged yet
+pvsg,cutting,approaches,17,not judged yet
+pvsg,opening,on,17,not judged yet
+pvsg,carrying,hold,16,hypernym/hyponym (right)
+pvsg,standing on,walking on,16,not judged yet
+pvsg,looking at,playing with,16,mismatch (wrong)
+pvsg,next to,hold,16,mismatch (wrong)
+pvsg,blowing,carrying,16,not judged yet
+pvsg,hugging,touching,16,not judged yet
+pvsg,in front of,cutting,16,not judged yet
+pvsg,sitting on,riding,16,not judged yet
+pvsg,catching,carrying,16,not judged yet
+pvsg,catching,holding,16,semantic overlap (right)
+pvsg,picking,playing with,16,mismatch (wrong)
+pvsg,next to,above,16,mismatch (wrong)
+pvsg,standing on,looking at,16,not judged yet
+pvsg,lying on,on,16,hypernym/hyponym (right)
+pvsg,grabbing,holding,15,hypernym/hyponym (right)
+pvsg,beside,attached to,15,not judged yet
+pvsg,beside,carrying,15,not judged yet
+pvsg,wearing,below,15,not judged yet
+pvsg,kicking,kicking,15,identical (right)
+pvsg,toward,holding,15,mismatch (wrong)
+pvsg,walking on,washing,15,not judged yet
+pvsg,in front of,inside,15,mismatch (wrong)
+pvsg,in,in front of,15,mismatch (wrong)
+pvsg,riding,on,15,hypernym/hyponym (right)
+pvsg,entering,in front of,15,not judged yet
+pvsg,cutting,hold,15,not judged yet
+pvsg,playing with,near,15,mismatch (wrong)
+pvsg,closing,manipulates,15,not judged yet
+pvsg,opening,inside,15,not judged yet
+pvsg,opening,over,15,not judged yet
+pvsg,grabbing,hold,14,not judged yet
+pvsg,standing on,next to,14,not judged yet
+pvsg,throwing,approaches,14,not judged yet
+pvsg,throwing,touching,14,not judged yet
+pvsg,throwing,behind,14,not judged yet
+pvsg,running on,moving across,14,not judged yet
+pvsg,walking on,inside,14,not judged yet
+pvsg,next to,on,14,mismatch (wrong)
+pvsg,touching,manipulates,14,not judged yet
+pvsg,talking to,looking at,14,semantic overlap (right)
+pvsg,hitting,hitting,14,identical (right)
+pvsg,opening,closing,14,not judged yet
+pvsg,closing,closing,14,identical (right)
+pvsg,carrying,approaches,13,mismatch (wrong)
+pvsg,sitting on,hold,13,not judged yet
+pvsg,sitting on,next to,13,not judged yet
+pvsg,caressing,touching,13,not judged yet
+pvsg,looking at,wearing,13,mismatch (wrong)
+pvsg,touching,placing,13,semantic overlap (right)
+pvsg,walking on,below,13,not judged yet
+pvsg,kissing,looking at,13,mismatch (wrong)
+pvsg,wearing,touching,13,semantic overlap (right)
+pvsg,throwing,above,13,not judged yet
+pvsg,standing on,approaching,13,not judged yet
+pvsg,playing with,approaching,13,mismatch (wrong)
+pvsg,kicking,hold,13,not judged yet
+pvsg,playing with,behind,13,mismatch (wrong)
+pvsg,kicking,above,13,not judged yet
+pvsg,next to,playing with,13,mismatch (wrong)
+pvsg,next to,moves away from,13,mismatch (wrong)
+pvsg,guiding,holding,13,semantic overlap (right)
+pvsg,in,touching,13,not judged yet
+pvsg,standing on,below,13,not judged yet
+pvsg,pulling,riding,13,not judged yet
+pvsg,looking at,riding,13,mismatch (wrong)
+pvsg,wearing,riding,13,not judged yet
+pvsg,pushing,in front of,13,not judged yet
+pvsg,in front of,talking to,13,mismatch (wrong)
+pvsg,beside,playing with,13,not judged yet
+pvsg,on,over,13,not judged yet
+pvsg,cutting,touching,13,not judged yet
+pvsg,on,under,13,mismatch (wrong)
+pvsg,hitting,holding,13,not judged yet
+pvsg,in,moves away from,13,not judged yet
+pvsg,opening,cleaning,13,not judged yet
+pvsg,cutting,above,13,not judged yet
+pvsg,carrying,in front of,12,not judged yet
+pvsg,walking on,walking on,12,identical (right)
+pvsg,opening,wearing,12,not judged yet
+pvsg,blowing,looking at,12,mismatch (wrong)
+pvsg,holding,moves away from,12,not judged yet
+pvsg,touching,grabbing,12,not judged yet
+pvsg,over,attached to,12,not judged yet
+pvsg,wearing,near,12,not judged yet
+pvsg,throwing,kicking,12,mismatch (wrong)
+pvsg,throwing,on,12,not judged yet
+pvsg,playing with,looking at,12,mismatch (wrong)
+pvsg,walking on,running on,12,not judged yet
+pvsg,chasing,holding,12,mismatch (wrong)
+pvsg,picking,kicking,12,not judged yet
+pvsg,playing with,kicking,12,not judged yet
+pvsg,picking,behind,12,not judged yet
+pvsg,pulling,in front of,12,not judged yet
+pvsg,toward,approaches,12,not judged yet
+pvsg,cleaning,approaches,12,not judged yet
+pvsg,walking on,playing with,12,not judged yet
+pvsg,standing on,inside,12,not judged yet
+pvsg,standing on,playing with,12,not judged yet
+pvsg,going down,holding,12,not judged yet
+pvsg,riding,hold,12,not judged yet
+pvsg,cutting,cutting,12,identical (right)
+pvsg,kicking,next to,12,not judged yet
+pvsg,closing,cleaning,12,not judged yet
+pvsg,closing,inside,12,not judged yet
+pvsg,closing,on,12,not judged yet
+pvsg,caressing,holding,11,not judged yet
+pvsg,caressing,approaches,11,mismatch (wrong)
+pvsg,next to,wearing,11,mismatch (wrong)
+pvsg,beside,standing on,11,not judged yet
+pvsg,hugging,hold,11,not judged yet
+pvsg,walking on,sitting on,11,not judged yet
+pvsg,over,on,11,not judged yet
+pvsg,over,above,11,synonym (right)
+pvsg,throwing,wearing,11,not judged yet
+pvsg,holding,kicking,11,not judged yet
+pvsg,throwing,next to,11,not judged yet
+pvsg,catching,hold,11,not judged yet
+pvsg,chasing,approaches,11,not judged yet
+pvsg,kicking,playing with,11,mismatch (wrong)
+pvsg,chasing,playing with,11,semantic overlap (right)
+pvsg,picking,in front of,11,not judged yet
+pvsg,kicking,behind,11,not judged yet
+pvsg,playing with,above,11,not judged yet
+pvsg,pulling,near,11,not judged yet
+pvsg,kicking,touching,11,not judged yet
+pvsg,cleaning,carrying,11,mismatch (wrong)
+pvsg,in,holding,11,not judged yet
+pvsg,standing on,moves away from,11,not judged yet
+pvsg,going down,riding,11,not judged yet
+pvsg,riding,approaches,11,not judged yet
+pvsg,getting down on,hold,11,not judged yet
+pvsg,wearing,above,11,mismatch (wrong)
+pvsg,pushing,holding,11,not judged yet
+pvsg,squatting on,approaches,11,not judged yet
+pvsg,squatting on,on,11,hypernym/hyponym (right)
+pvsg,touching,playing with,11,not judged yet
+pvsg,next to,attached to,11,semantic overlap (right)
+pvsg,in front of,hugging,11,mismatch (wrong)
+pvsg,talking to,in front of,11,mismatch (wrong)
+pvsg,hanging from,near,11,not judged yet
+pvsg,hanging from,moves away from,11,not judged yet
+pvsg,cutting,in front of,11,not judged yet
+pvsg,cutting,near,11,mismatch (wrong)
+pvsg,cooking,above,11,not judged yet
+pvsg,running on,kicking,11,not judged yet
+pvsg,carrying,touching,10,not judged yet
+pvsg,carrying,on,10,not judged yet
+pvsg,grabbing,wearing,10,not judged yet
+pvsg,beside,below,10,not judged yet
+pvsg,in front of,moving away from,10,mismatch (wrong)
+pvsg,walking on,under,10,mismatch (wrong)
+pvsg,looking at,cutting,10,mismatch (wrong)
+pvsg,kicking,carrying,10,not judged yet
+pvsg,toward,hold,10,not judged yet
+pvsg,watering,touching,10,not judged yet
+pvsg,guiding,approaches,10,not judged yet
+pvsg,holding,sitting on,10,not judged yet
+pvsg,pulling,wearing,10,not judged yet
+pvsg,pushing,approaches,10,not judged yet
+pvsg,squatting on,in front of,10,not judged yet
+pvsg,squatting on,holding,10,not judged yet
+pvsg,touching,attached to,10,not judged yet
+pvsg,lying on,touching,10,not judged yet
+pvsg,entering,approaches,10,not judged yet
+pvsg,talking to,approaches,10,not judged yet
+pvsg,talking to,touching,10,not judged yet
+pvsg,on,moving away from,10,not judged yet
+pvsg,opening,near,10,not judged yet
+pvsg,touching,cleaning,10,semantic overlap (right)
+pvsg,hanging from,hanging from,10,identical (right)
+pvsg,opening,washing,10,not judged yet
+pvsg,cleaning,placing,10,not judged yet
+pvsg,closing,over,10,not judged yet
+pvsg,opening,in,10,not judged yet
+pvsg,cooking,in front of,10,not judged yet
+pvsg,kicking,moves away from,10,not judged yet
+pvsg,carrying,near,9,mismatch (wrong)
+pvsg,looking at,above,9,not judged yet
+pvsg,opening,grabbing,9,not judged yet
+pvsg,opening,carrying,9,not judged yet
+pvsg,touching,sitting on,9,hypernym/hyponym (right)
+pvsg,blowing,in front of,9,not judged yet
+pvsg,blowing,near,9,not judged yet
+pvsg,hugging,approaching,9,not judged yet
+pvsg,wearing,in front of,9,mismatch (wrong)
+pvsg,on,moving along,9,semantic overlap (right)
+pvsg,running on,running on,9,identical (right)
+pvsg,catching,touching,9,not judged yet
+pvsg,catching,approaches,9,not judged yet
+pvsg,catching,near,9,not judged yet
+pvsg,running on,sitting on,9,not judged yet
+pvsg,chasing,in front of,9,not judged yet
+pvsg,pulling,playing with,9,not judged yet
+pvsg,guiding,in front of,9,not judged yet
+pvsg,guiding,next to,9,mismatch (wrong)
+pvsg,guiding,behind,9,not judged yet
+pvsg,walking on,carrying,9,not judged yet
+pvsg,next to,below,9,mismatch (wrong)
+pvsg,next to,inside,9,mismatch (wrong)
+pvsg,next to,carrying,9,mismatch (wrong)
+pvsg,next to,next to,9,identical (right)
+pvsg,running on,next to,9,not judged yet
+pvsg,riding,carrying,9,not judged yet
+pvsg,getting down on,riding,9,mismatch (wrong)
+pvsg,getting down on,touching,9,not judged yet
+pvsg,looking at,hugging,9,not judged yet
+pvsg,wearing,inside,9,not judged yet
+pvsg,pushing,near,9,not judged yet
+pvsg,entering,holding,9,not judged yet
+pvsg,opening,cutting,9,mismatch (wrong)
+pvsg,beside,manipulates,9,not judged yet
+pvsg,in,next to,9,mismatch (wrong)
+pvsg,talking to,wearing,9,not judged yet
+pvsg,blowing,wearing,9,not judged yet
+pvsg,picking,cutting,9,not judged yet
+pvsg,playing with,below,9,not judged yet
+pvsg,playing with,next to,9,not judged yet
+pvsg,lighting,holding,9,not judged yet
+pvsg,shaking hand with,holding,9,not judged yet
+pvsg,shaking hand with,in front of,9,not judged yet
+pvsg,shaking hand with,behind,9,not judged yet
+pvsg,shaking hand with,next to,9,not judged yet
+pvsg,shaking hand with,near,9,not judged yet
+pvsg,shaking hand with,beside,9,not judged yet
+pvsg,kissing,in front of,9,not judged yet
+pvsg,cutting,below,9,not judged yet
+pvsg,closing,washing,9,not judged yet
+pvsg,stirring,holding,9,semantic overlap (right)
+pvsg,stirring,hold,9,not judged yet
+pvsg,closing,placing,9,not judged yet
+pvsg,opening,next to,9,not judged yet
+pvsg,grabbing,carrying,8,not judged yet
+pvsg,carrying,carrying,8,identical (right)
+pvsg,blowing,next to,8,not judged yet
+pvsg,blowing,behind,8,not judged yet
+pvsg,touching,moving toward,8,mismatch (wrong)
+pvsg,touching,moves away from,8,mismatch (wrong)
+pvsg,touching,under,8,mismatch (wrong)
+pvsg,beside,over,8,not judged yet
+pvsg,in front of,sitting on,8,mismatch (wrong)
+pvsg,over,hanging from,8,not judged yet
+pvsg,hugging,wearing,8,not judged yet
+pvsg,running on,standing on,8,not judged yet
+pvsg,catching,kicking,8,not judged yet
+pvsg,catching,above,8,not judged yet
+pvsg,picking,chasing,8,not judged yet
+pvsg,pulling,next to,8,not judged yet
+pvsg,pulling,behind,8,not judged yet
+pvsg,pulling,above,8,not judged yet
+pvsg,toward,carrying,8,not judged yet
+pvsg,cleaning,approaching,8,not judged yet
+pvsg,guiding,near,8,not judged yet
+pvsg,walking on,looking at,8,not judged yet
+pvsg,standing on,hitting,8,not judged yet
+pvsg,wearing,attached to,8,not judged yet
+pvsg,pulling,sitting on,8,mismatch (wrong)
+pvsg,pushing,wearing,8,not judged yet
+pvsg,lying on,standing on,8,not judged yet
+pvsg,entering,touching,8,not judged yet
+pvsg,holding,hugging,8,not judged yet
+pvsg,walking on,riding,8,not judged yet
+pvsg,on,carrying,8,not judged yet
+pvsg,kicking,approaching,8,mismatch (wrong)
+pvsg,hitting,hold,8,not judged yet
+pvsg,picking,approaching,8,mismatch (wrong)
+pvsg,hanging from,next to,8,not judged yet
+pvsg,cleaning,attached to,8,not judged yet
+pvsg,hanging from,approaching,8,not judged yet
+pvsg,opening,attached to,8,not judged yet
+pvsg,closing,attached to,8,not judged yet
+pvsg,closing,next to,8,not judged yet
+pvsg,picking,washing,8,not judged yet
+pvsg,carrying,wearing,7,semantic overlap (right)
+pvsg,looking at,on,7,mismatch (wrong)
+pvsg,standing on,wearing,7,not judged yet
+pvsg,looking at,moves away from,7,mismatch (wrong)
+pvsg,in front of,under,7,mismatch (wrong)
+pvsg,playing with,chasing,7,not judged yet
+pvsg,sitting on,moving across,7,not judged yet
+pvsg,catching,in front of,7,not judged yet
+pvsg,catching,on,7,not judged yet
+pvsg,holding,beside,7,not judged yet
+pvsg,in front of,playing with,7,mismatch (wrong)
+pvsg,kicking,on,7,not judged yet
+pvsg,toward,playing with,7,mismatch (wrong)
+pvsg,jumping from,on,7,mismatch (wrong)
+pvsg,guiding,hold,7,not judged yet
+pvsg,watering,holding,7,not judged yet
+pvsg,guiding,touching,7,not judged yet
+pvsg,guiding,approaching,7,not judged yet
+pvsg,cleaning,in front of,7,not judged yet
+pvsg,in,below,7,not judged yet
+pvsg,going down,sitting on,7,not judged yet
+pvsg,going down,on,7,not judged yet
+pvsg,riding,moving with,7,not judged yet
+pvsg,riding,in front of,7,not judged yet
+pvsg,riding,approaching,7,not judged yet
+pvsg,getting down on,on,7,not judged yet
+pvsg,getting down on,approaches,7,not judged yet
+pvsg,pushing,touching,7,not judged yet
+pvsg,squatting on,above,7,hypernym/hyponym (right)
+pvsg,squatting on,touching,7,not judged yet
+pvsg,carrying,attached to,7,not judged yet
+pvsg,lying on,lying on,7,identical (right)
+pvsg,kissing,playing with,7,mismatch (wrong)
+pvsg,entering,in,7,not judged yet
+pvsg,standing on,cutting,7,not judged yet
+pvsg,holding,pushing,7,not judged yet
+pvsg,talking to,hold,7,not judged yet
+pvsg,picking,looking at,7,mismatch (wrong)
+pvsg,picking,wearing,7,not judged yet
+pvsg,biting,touching,7,not judged yet
+pvsg,biting,near,7,not judged yet
+pvsg,throwing,playing with,7,semantic overlap (right)
+pvsg,standing on,carrying,7,not judged yet
+pvsg,playing with,hitting,7,semantic overlap (right)
+pvsg,beside,cleaning,7,not judged yet
+pvsg,squatting on,hold,7,not judged yet
+pvsg,hitting,playing with,7,mismatch (wrong)
+pvsg,beside,moving with,7,not judged yet
+pvsg,shaking hand with,approaches,7,not judged yet
+pvsg,holding,sweeping,7,not judged yet
+pvsg,hanging from,beside,7,not judged yet
+pvsg,on,washing,7,not judged yet
+pvsg,touching,opening,7,not judged yet
+pvsg,picking,cleaning,7,not judged yet
+pvsg,cooking,over,7,not judged yet
+pvsg,kicking,below,7,not judged yet
+pvsg,carrying,behind,6,not judged yet
+pvsg,grabbing,touching,6,hypernym/hyponym (right)
+pvsg,sitting on,approaching,6,not judged yet
+pvsg,walking on,over,6,not judged yet
+pvsg,caressing,looking at,6,mismatch (wrong)
+pvsg,blowing,approaches,6,not judged yet
+pvsg,touching,cutting,6,not judged yet
+pvsg,looking at,talking to,6,not judged yet
+pvsg,looking at,moving with,6,mismatch (wrong)
+pvsg,looking at,beside,6,not judged yet
+pvsg,kissing,approaching,6,not judged yet
+pvsg,kissing,hold,6,not judged yet
+pvsg,hugging,carrying,6,mismatch (wrong)
+pvsg,in front of,hanging from,6,not judged yet
+pvsg,looking at,pushing,6,not judged yet
+pvsg,hugging,behind,6,not judged yet
+pvsg,hugging,in front of,6,mismatch (wrong)
+pvsg,hugging,near,6,not judged yet
+pvsg,hugging,next to,6,mismatch (wrong)
+pvsg,chasing,hold,6,not judged yet
+pvsg,chasing,carrying,6,not judged yet
+pvsg,kicking,chasing,6,not judged yet
+pvsg,playing with,on,6,not judged yet
+pvsg,chasing,behind,6,not judged yet
+pvsg,pulling,on,6,mismatch (wrong)
+pvsg,toward,kicking,6,not judged yet
+pvsg,toward,touching,6,not judged yet
+pvsg,watering,in front of,6,not judged yet
+pvsg,beside,washing,6,not judged yet
+pvsg,beside,inside,6,not judged yet
+pvsg,in,looking at,6,not judged yet
+pvsg,jumping over,approaches,6,not judged yet
+pvsg,throwing,grabbing,6,not judged yet
+pvsg,riding,playing with,6,not judged yet
+pvsg,riding,above,6,not judged yet
+pvsg,getting down on,carrying,6,not judged yet
+pvsg,pushing,behind,6,not judged yet
+pvsg,pushing,next to,6,not judged yet
+pvsg,pushing,beside,6,not judged yet
+pvsg,pushing,below,6,not judged yet
+pvsg,pushing,hold,6,not judged yet
+pvsg,pushing,on,6,mismatch (wrong)
+pvsg,standing on,playing soccer on,6,mismatch (wrong)
+pvsg,squatting on,below,6,not judged yet
+pvsg,lying on,sitting on,6,not judged yet
+pvsg,lying on,holding,6,not judged yet
+pvsg,lying on,approaches,6,not judged yet
+pvsg,toward,wearing,6,not judged yet
+pvsg,drinking from,holding,6,semantic overlap (right)
+pvsg,drinking from,hold,6,not judged yet
+pvsg,drinking from,carrying,6,not judged yet
+pvsg,drinking from,wearing,6,not judged yet
+pvsg,running on,under,6,not judged yet
+pvsg,talking to,carrying,6,not judged yet
+pvsg,next to,beside,6,synonym (right)
+pvsg,talking to,next to,6,mismatch (wrong)
+pvsg,talking to,near,6,not judged yet
+pvsg,talking to,behind,6,not judged yet
+pvsg,cutting,manipulates,6,not judged yet
+pvsg,playing with,wearing,6,not judged yet
+pvsg,biting,in front of,6,not judged yet
+pvsg,throwing,looking at,6,mismatch (wrong)
+pvsg,on,cleaning,6,not judged yet
+pvsg,running on,chasing,6,not judged yet
+pvsg,lighting,hold,6,not judged yet
+pvsg,lighting,touching,6,not judged yet
+pvsg,on,playing with,6,not judged yet
+pvsg,on,cutting,6,not judged yet
+pvsg,shaking hand with,hugging,6,not judged yet
+pvsg,hitting,grabbing,6,not judged yet
+pvsg,opening,behind,6,not judged yet
+pvsg,over,approaches,6,not judged yet
+pvsg,kissing,next to,6,mismatch (wrong)
+pvsg,kissing,near,6,mismatch (wrong)
+pvsg,picking,near,6,not judged yet
+pvsg,swinging,holding,6,mismatch (wrong)
+pvsg,swinging,hold,6,not judged yet
+pvsg,in,approaching,6,not judged yet
+pvsg,cutting,attached to,6,not judged yet
+pvsg,cutting,approaching,6,not judged yet
+pvsg,opening,below,6,not judged yet
+pvsg,closing,below,6,not judged yet
+pvsg,cleaning,manipulates,6,not judged yet
+pvsg,entering,on,6,not judged yet
+pvsg,cooking,near,6,not judged yet
+pvsg,on,placing,6,not judged yet
+pvsg,on,moving with,6,not judged yet
+pvsg,carrying,above,5,not judged yet
+pvsg,standing on,lying on,5,not judged yet
+pvsg,standing on,over,5,not judged yet
+pvsg,sitting on,moves away from,5,not judged yet
+pvsg,opening,looking at,5,mismatch (wrong)
+pvsg,touching,standing on,5,not judged yet
+pvsg,caressing,approaching,5,not judged yet
+pvsg,caressing,hold,5,not judged yet
+pvsg,blowing,below,5,not judged yet
+pvsg,in front of,lying on,5,not judged yet
+pvsg,over,in front of,5,not judged yet
+pvsg,kissing,carrying,5,not judged yet
+pvsg,beside,hanging from,5,not judged yet
+pvsg,wearing,kicking,5,not judged yet
+pvsg,wearing,approaching,5,not judged yet
+pvsg,wearing,under,5,not judged yet
+pvsg,hugging,beside,5,not judged yet
+pvsg,playing with,moves away from,5,not judged yet
+pvsg,catching,wearing,5,mismatch (wrong)
+pvsg,in front of,moving with,5,mismatch (wrong)
+pvsg,playing with,grabbing,5,not judged yet
+pvsg,picking,on,5,not judged yet
+pvsg,chasing,above,5,not judged yet
+pvsg,pulling,looking at,5,mismatch (wrong)
+pvsg,picking,sitting on,5,not judged yet
+pvsg,toward,looking at,5,mismatch (wrong)
+pvsg,watering,hold,5,not judged yet
+pvsg,watering,approaches,5,not judged yet
+pvsg,watering,near,5,not judged yet
+pvsg,watering,behind,5,not judged yet
+pvsg,beside,in,5,not judged yet
+pvsg,going down,above,5,not judged yet
+pvsg,riding,moves away from,5,not judged yet
+pvsg,wearing,in,5,not judged yet
+pvsg,pushing,approaching,5,mismatch (wrong)
+pvsg,wearing,on,5,not judged yet
+pvsg,wearing,next to,5,not judged yet
+pvsg,pushing,above,5,not judged yet
+pvsg,squatting on,moving across,5,mismatch (wrong)
+pvsg,caressing,in front of,5,mismatch (wrong)
+pvsg,caressing,carrying,5,not judged yet
+pvsg,carrying,next to,5,not judged yet
+pvsg,entering,hold,5,not judged yet
+pvsg,entering,above,5,not judged yet
+pvsg,walking on,cutting,5,not judged yet
+pvsg,brushing,holding,5,mismatch (wrong)
+pvsg,brushing,touching,5,not judged yet
+pvsg,beside,cutting,5,not judged yet
+pvsg,talking to,riding,5,not judged yet
+pvsg,in,hold,5,not judged yet
+pvsg,talking to,beside,5,not judged yet
+pvsg,standing on,under,5,not judged yet
+pvsg,cutting,carrying,5,not judged yet
+pvsg,biting,next to,5,not judged yet
+pvsg,lying on,moving across,5,not judged yet
+pvsg,chasing,touching,5,not judged yet
+pvsg,chasing,approaching,5,semantic overlap (right)
+pvsg,standing on,in,5,not judged yet
+pvsg,lighting,wearing,5,not judged yet
+pvsg,kicking,hitting,5,mismatch (wrong)
+pvsg,hitting,approaches,5,not judged yet
+pvsg,shaking hand with,talking to,5,not judged yet
+pvsg,hugging,talking to,5,not judged yet
+pvsg,hitting,chasing,5,not judged yet
+pvsg,entering,inside,5,not judged yet
+pvsg,guiding,moves away from,5,not judged yet
+pvsg,guiding,on,5,not judged yet
+pvsg,lying on,in front of,5,not judged yet
+pvsg,cleaning,wearing,5,mismatch (wrong)
+pvsg,holding,picking,5,not judged yet
+pvsg,cleaning,moves away from,5,not judged yet
+pvsg,on,talking to,5,not judged yet
+pvsg,holding,closing,5,not judged yet
+pvsg,stirring,stirring,5,identical (right)
+pvsg,stirring,manipulates,5,not judged yet
+pvsg,stirring,touching,5,not judged yet
+pvsg,closing,cutting,5,not judged yet
+pvsg,closing,near,5,not judged yet
+pvsg,closing,in,5,not judged yet
+pvsg,cooking,holding,5,not judged yet
+pvsg,holding,lying on,5,not judged yet
+pvsg,carrying,grabbing,4,not judged yet
+pvsg,carrying,looking at,4,not judged yet
+pvsg,carrying,playing with,4,not judged yet
+pvsg,carrying,below,4,not judged yet
+pvsg,walking on,lying on,4,not judged yet
+pvsg,touching,lying on,4,not judged yet
+pvsg,caressing,wearing,4,mismatch (wrong)
+pvsg,walking on,wearing,4,not judged yet
+pvsg,holding,pulling,4,not judged yet
+pvsg,wearing,behind,4,not judged yet
+pvsg,hugging,playing with,4,mismatch (wrong)
+pvsg,standing on,riding,4,not judged yet
+pvsg,running on,riding,4,not judged yet
+pvsg,catching,hitting,4,not judged yet
+pvsg,catching,next to,4,not judged yet
+pvsg,walking on,in,4,not judged yet
+pvsg,kicking,grabbing,4,not judged yet
+pvsg,pulling,approaching,4,not judged yet
+pvsg,toward,approaching,4,synonym (right)
+pvsg,toward,in front of,4,mismatch (wrong)
+pvsg,jumping from,approaches,4,not judged yet
+pvsg,jumping from,in front of,4,not judged yet
+pvsg,watering,approaching,4,not judged yet
+pvsg,cleaning,playing with,4,mismatch (wrong)
+pvsg,jumping over,moves away from,4,not judged yet
+pvsg,jumping over,on,4,not judged yet
+pvsg,running on,looking at,4,not judged yet
+pvsg,walking on,hitting,4,not judged yet
+pvsg,running on,playing with,4,not judged yet
+pvsg,pulling,moving with,4,not judged yet
+pvsg,getting down on,sitting on,4,not judged yet
+pvsg,getting down on,playing with,4,not judged yet
+pvsg,getting down on,in front of,4,not judged yet
+pvsg,pulling,guiding,4,not judged yet
+pvsg,pushing,looking at,4,not judged yet
+pvsg,pushing,carrying,4,not judged yet
+pvsg,pushing,attached to,4,not judged yet
+pvsg,wearing,washing,4,not judged yet
+pvsg,walking on,playing soccer on,4,semantic overlap (right)
+pvsg,squatting on,standing on,4,not judged yet
+pvsg,caressing,attached to,4,not judged yet
+pvsg,lying on,wearing,4,not judged yet
+pvsg,next to,riding,4,mismatch (wrong)
+pvsg,in front of,riding,4,mismatch (wrong)
+pvsg,entering,looking at,4,not judged yet
+pvsg,entering,moves away from,4,not judged yet
+pvsg,grabbing,cutting,4,not judged yet
+pvsg,walking on,manipulates,4,not judged yet
+pvsg,standing on,cleaning,4,not judged yet
+pvsg,pushing,sitting on,4,mismatch (wrong)
+pvsg,walking on,pushing,4,not judged yet
+pvsg,brushing,hold,4,not judged yet
+pvsg,beside,opening,4,not judged yet
+pvsg,hugging,hugging,4,identical (right)
+pvsg,guiding,riding,4,not judged yet
+pvsg,in,behind,4,not judged yet
+pvsg,talking to,hugging,4,not judged yet
+pvsg,biting,behind,4,not judged yet
+pvsg,on,beside,4,mismatch (wrong)
+pvsg,sitting on,walking on,4,not judged yet
+pvsg,guiding,looking at,4,mismatch (wrong)
+pvsg,on,walking on,4,hypernym/hyponym (right)
+pvsg,hitting,approaching,4,mismatch (wrong)
+pvsg,cleaning,looking at,4,mismatch (wrong)
+pvsg,touching,hugging,4,not judged yet
+pvsg,hitting,manipulates,4,not judged yet
+pvsg,squatting on,looking at,4,not judged yet
+pvsg,kissing,beside,4,not judged yet
+pvsg,licking,touching,4,not judged yet
+pvsg,picking,below,4,not judged yet
+pvsg,jumping from,above,4,not judged yet
+pvsg,kicking,inside,4,not judged yet
+pvsg,in,beside,4,not judged yet
+pvsg,walking on,cleaning,4,not judged yet
+pvsg,touching,washing,4,not judged yet
+pvsg,hanging from,touching,4,not judged yet
+pvsg,in,moving toward,4,mismatch (wrong)
+pvsg,closing,behind,4,not judged yet
+pvsg,stirring,approaches,4,not judged yet
+pvsg,touching,over,4,not judged yet
+pvsg,cleaning,grabbing,4,not judged yet
+pvsg,cutting,placing,4,mismatch (wrong)
+pvsg,cooking,hold,4,not judged yet
+pvsg,cooking,on,4,not judged yet
+pvsg,grabbing,approaches,3,not judged yet
+pvsg,grabbing,behind,3,not judged yet
+pvsg,grabbing,near,3,not judged yet
+pvsg,grabbing,on,3,not judged yet
+pvsg,sitting on,cleaning,3,not judged yet
+pvsg,wearing,moves away from,3,not judged yet
+pvsg,standing on,moving along,3,not judged yet
+pvsg,in front of,moving toward,3,mismatch (wrong)
+pvsg,playing with,pushing,3,not judged yet
+pvsg,sitting on,running on,3,not judged yet
+pvsg,throwing,chasing,3,not judged yet
+pvsg,catching,behind,3,not judged yet
+pvsg,running on,over,3,not judged yet
+pvsg,chasing,on,3,not judged yet
+pvsg,kicking,under,3,not judged yet
+pvsg,playing with,under,3,not judged yet
+pvsg,toward,moves away from,3,not judged yet
+pvsg,jumping from,approaching,3,not judged yet
+pvsg,guiding,playing with,3,not judged yet
+pvsg,cleaning,near,3,not judged yet
+pvsg,cleaning,next to,3,not judged yet
+pvsg,watering,next to,3,not judged yet
+pvsg,cleaning,behind,3,not judged yet
+pvsg,walking on,chasing,3,not judged yet
+pvsg,in,under,3,not judged yet
+pvsg,standing on,attached to,3,not judged yet
+pvsg,running on,moving away from,3,not judged yet
+pvsg,catching,attached to,3,not judged yet
+pvsg,catching,approaching,3,not judged yet
+pvsg,going down,hold,3,not judged yet
+pvsg,going down,playing with,3,not judged yet
+pvsg,going down,carrying,3,not judged yet
+pvsg,going down,in front of,3,not judged yet
+pvsg,pulling,hugging,3,not judged yet
+pvsg,riding,attached to,3,not judged yet
+pvsg,riding,wearing,3,not judged yet
+pvsg,getting down on,moves away from,3,not judged yet
+pvsg,getting down on,above,3,mismatch (wrong)
+pvsg,pushing,moves away from,3,not judged yet
+pvsg,pushing,playing with,3,mismatch (wrong)
+pvsg,wearing,moving with,3,not judged yet
+pvsg,standing on,kicking,3,not judged yet
+pvsg,squatting on,moves away from,3,not judged yet
+pvsg,holding,moving toward,3,mismatch (wrong)
+pvsg,carrying,approaching,3,not judged yet
+pvsg,caressing,on,3,not judged yet
+pvsg,caressing,below,3,not judged yet
+pvsg,caressing,near,3,not judged yet
+pvsg,caressing,next to,3,mismatch (wrong)
+pvsg,toward,near,3,not judged yet
+pvsg,toward,above,3,not judged yet
+pvsg,toward,inside,3,not judged yet
+pvsg,entering,near,3,not judged yet
+pvsg,next to,hugging,3,mismatch (wrong)
+pvsg,drinking from,near,3,not judged yet
+pvsg,drinking from,in front of,3,not judged yet
+pvsg,drinking from,above,3,not judged yet
+pvsg,holding,moving with,3,mismatch (wrong)
+pvsg,holding,talking to,3,not judged yet
+pvsg,sitting on,cutting,3,not judged yet
+pvsg,grabbing,looking at,3,not judged yet
+pvsg,grabbing,playing with,3,not judged yet
+pvsg,carrying,placing,3,not judged yet
+pvsg,brushing,standing on,3,not judged yet
+pvsg,brushing,manipulates,3,not judged yet
+pvsg,stepping on,holding,3,mismatch (wrong)
+pvsg,stepping on,touching,3,not judged yet
+pvsg,getting down on,manipulates,3,not judged yet
+pvsg,running on,hold,3,not judged yet
+pvsg,talking to,guiding,3,not judged yet
+pvsg,talking to,pushing,3,not judged yet
+pvsg,guiding,pushing,3,not judged yet
+pvsg,standing on,sweeping,3,not judged yet
+pvsg,beside,moving away from,3,mismatch (wrong)
+pvsg,biting,holding,3,not judged yet
+pvsg,biting,on,3,not judged yet
+pvsg,chasing,moves away from,3,not judged yet
+pvsg,lighting,carrying,3,not judged yet
+pvsg,squatting on,hitting,3,not judged yet
+pvsg,squatting on,playing with,3,not judged yet
+pvsg,squatting on,near,3,not judged yet
+pvsg,hitting,touching,3,not judged yet
+pvsg,eating,holding,3,not judged yet
+pvsg,eating,hold,3,not judged yet
+pvsg,eating,carrying,3,not judged yet
+pvsg,eating,above,3,not judged yet
+pvsg,eating,behind,3,not judged yet
+pvsg,eating,near,3,not judged yet
+pvsg,cleaning,hugging,3,not judged yet
+pvsg,shaking hand with,hold,3,not judged yet
+pvsg,shaking hand with,cutting,3,not judged yet
+pvsg,shaking hand with,touching,3,not judged yet
+pvsg,on,passing,3,not judged yet
+pvsg,picking,throwing,3,not judged yet
+pvsg,hitting,throwing,3,not judged yet
+pvsg,opening,under,3,not judged yet
+pvsg,next to,talking to,3,mismatch (wrong)
+pvsg,holding,photographing,3,mismatch (wrong)
+pvsg,guiding,moving away from,3,not judged yet
+pvsg,looking at,moving away from,3,not judged yet
+pvsg,kissing,behind,3,not judged yet
+pvsg,lighting,behind,3,not judged yet
+pvsg,lighting,in front of,3,not judged yet
+pvsg,lighting,near,3,not judged yet
+pvsg,kicking,wearing,3,not judged yet
+pvsg,licking,approaches,3,not judged yet
+pvsg,licking,looking at,3,not judged yet
+pvsg,licking,in front of,3,not judged yet
+pvsg,licking,near,3,not judged yet
+pvsg,licking,next to,3,not judged yet
+pvsg,biting,attached to,3,not judged yet
+pvsg,lying on,near,3,not judged yet
+pvsg,lying on,behind,3,not judged yet
+pvsg,chasing,below,3,not judged yet
+pvsg,chasing,near,3,mismatch (wrong)
+pvsg,squatting on,inside,3,not judged yet
+pvsg,cleaning,cleaning,3,identical (right)
+pvsg,cutting,moves away from,3,not judged yet
+pvsg,cutting,in,3,not judged yet
+pvsg,cutting,on,3,not judged yet
+pvsg,watering,attached to,3,not judged yet
+pvsg,watering,moves away from,3,not judged yet
+pvsg,on,serving,3,not judged yet
+pvsg,pouring,holding,3,semantic overlap (right)
+pvsg,pouring,hold,3,not judged yet
+pvsg,pouring,touching,3,not judged yet
+pvsg,pulling,opening,3,not judged yet
+pvsg,opening,moving toward,3,not judged yet
+pvsg,closing,moving toward,3,not judged yet
+pvsg,opening,approaching,3,not judged yet
+pvsg,stirring,placing,3,not judged yet
+pvsg,hanging from,holding,3,not judged yet
+pvsg,closing,grabbing,3,not judged yet
+pvsg,entering,moving toward,3,not judged yet
+pvsg,over,over,3,identical (right)
+pvsg,cooking,cooking,3,identical (right)
+pvsg,over,holding,3,mismatch (wrong)
+pvsg,over,hold,3,not judged yet
+pvsg,entering,washing,3,not judged yet
+pvsg,entering,pulling,3,not judged yet
+pvsg,watering,on,3,not judged yet
+pvsg,carrying,under,2,not judged yet
+pvsg,looking at,below,2,mismatch (wrong)
+pvsg,grabbing,above,2,not judged yet
+pvsg,grabbing,next to,2,not judged yet
+pvsg,sitting on,looking at,2,not judged yet
+pvsg,opening,playing with,2,not judged yet
+pvsg,blowing,grabbing,2,not judged yet
+pvsg,hugging,serving,2,mismatch (wrong)
+pvsg,in front of,pulling,2,not judged yet
+pvsg,over,in,2,not judged yet
+pvsg,in front of,in,2,not judged yet
+pvsg,in front of,chasing,2,not judged yet
+pvsg,sitting on,moving along,2,not judged yet
+pvsg,running on,moving along,2,not judged yet
+pvsg,throwing,below,2,not judged yet
+pvsg,throwing,under,2,not judged yet
+pvsg,in front of,hitting,2,mismatch (wrong)
+pvsg,throwing,attached to,2,not judged yet
+pvsg,chasing,kicking,2,not judged yet
+pvsg,chasing,chasing,2,identical (right)
+pvsg,picking,under,2,not judged yet
+pvsg,chasing,under,2,not judged yet
+pvsg,jumping from,touching,2,not judged yet
+pvsg,jumping from,moving across,2,not judged yet
+pvsg,jumping from,running on,2,not judged yet
+pvsg,jumping from,standing on,2,not judged yet
+pvsg,watering,washing,2,not judged yet
+pvsg,guiding,washing,2,not judged yet
+pvsg,guiding,carrying,2,not judged yet
+pvsg,watering,above,2,not judged yet
+pvsg,guiding,above,2,not judged yet
+pvsg,walking on,catching,2,not judged yet
+pvsg,next to,washing,2,mismatch (wrong)
+pvsg,in front of,washing,2,not judged yet
+pvsg,in,playing with,2,not judged yet
+pvsg,jumping over,in,2,not judged yet
+pvsg,jumping over,inside,2,mismatch (wrong)
+pvsg,jumping over,standing on,2,not judged yet
+pvsg,jumping over,in front of,2,not judged yet
+pvsg,walking on,moving away from,2,mismatch (wrong)
+pvsg,standing on,moving away from,2,not judged yet
+pvsg,catching,grabbing,2,not judged yet
+pvsg,catching,moves away from,2,not judged yet
+pvsg,catching,below,2,not judged yet
+pvsg,going down,moving with,2,not judged yet
+pvsg,riding,behind,2,not judged yet
+pvsg,riding,next to,2,not judged yet
+pvsg,riding,near,2,not judged yet
+pvsg,going down,approaches,2,not judged yet
+pvsg,getting down on,moving with,2,not judged yet
+pvsg,looking at,sitting on,2,not judged yet
+pvsg,getting down on,looking at,2,not judged yet
+pvsg,pushing,chasing,2,not judged yet
+pvsg,wearing,beside,2,not judged yet
+pvsg,pushing,under,2,not judged yet
+pvsg,getting down on,moving across,2,not judged yet
+pvsg,squatting on,approaching,2,not judged yet
+pvsg,walking on,kicking,2,not judged yet
+pvsg,squatting on,running on,2,not judged yet
+pvsg,squatting on,playing soccer on,2,mismatch (wrong)
+pvsg,caressing,behind,2,not judged yet
+pvsg,lying on,hold,2,not judged yet
+pvsg,toward,behind,2,not judged yet
+pvsg,entering,standing on,2,not judged yet
+pvsg,entering,approaching,2,not judged yet
+pvsg,entering,behind,2,not judged yet
+pvsg,entering,below,2,not judged yet
+pvsg,next to,moving toward,2,mismatch (wrong)
+pvsg,pulling,inside,2,not judged yet
+pvsg,drinking from,manipulates,2,not judged yet
+pvsg,drinking from,approaches,2,not judged yet
+pvsg,drinking from,riding,2,not judged yet
+pvsg,drinking from,behind,2,not judged yet
+pvsg,drinking from,below,2,not judged yet
+pvsg,kissing,hugging,2,not judged yet
+pvsg,kissing,talking to,2,not judged yet
+pvsg,carrying,sitting on,2,not judged yet
+pvsg,pulling,placing,2,not judged yet
+pvsg,brushing,sanding,2,semantic overlap (right)
+pvsg,brushing,approaches,2,not judged yet
+pvsg,stepping on,hold,2,not judged yet
+pvsg,getting down on,standing on,2,not judged yet
+pvsg,stepping on,standing on,2,not judged yet
+pvsg,beside,pulling,2,not judged yet
+pvsg,jumping over,attached to,2,not judged yet
+pvsg,holding,guiding,2,not judged yet
+pvsg,guiding,guiding,2,identical (right)
+pvsg,guiding,moving with,2,semantic overlap (right)
+pvsg,blowing,manipulates,2,not judged yet
+pvsg,blowing,playing with,2,not judged yet
+pvsg,blowing,approaching,2,not judged yet
+pvsg,biting,carrying,2,not judged yet
+pvsg,biting,wearing,2,not judged yet
+pvsg,biting,looking at,2,not judged yet
+pvsg,biting,hold,2,not judged yet
+pvsg,biting,approaches,2,not judged yet
+pvsg,biting,moves away from,2,not judged yet
+pvsg,biting,below,2,not judged yet
+pvsg,biting,above,2,not judged yet
+pvsg,lying on,walking on,2,not judged yet
+pvsg,squatting on,sitting on,2,not judged yet
+pvsg,playing with,cutting,2,not judged yet
+pvsg,chasing,looking at,2,not judged yet
+pvsg,chasing,moving away from,2,mismatch (wrong)
+pvsg,beside,moving toward,2,not judged yet
+pvsg,guiding,hugging,2,not judged yet
+pvsg,on,hitting,2,not judged yet
+pvsg,squatting on,cutting,2,not judged yet
+pvsg,squatting on,behind,2,not judged yet
+pvsg,standing on,catching,2,not judged yet
+pvsg,pulling,hitting,2,not judged yet
+pvsg,chasing,hitting,2,mismatch (wrong)
+pvsg,eating,touching,2,not judged yet
+pvsg,eating,wearing,2,not judged yet
+pvsg,eating,in front of,2,not judged yet
+pvsg,eating,under,2,not judged yet
+pvsg,shaking hand with,looking at,2,not judged yet
+pvsg,shaking hand with,approaching,2,not judged yet
+pvsg,shaking hand with,wearing,2,not judged yet
+pvsg,shaking hand with,carrying,2,not judged yet
+pvsg,beside,riding,2,not judged yet
+pvsg,looking at,photographing,2,not judged yet
+pvsg,talking to,talking to,2,identical (right)
+pvsg,blowing,cutting,2,not judged yet
+pvsg,entering,opening,2,not judged yet
+pvsg,squatting on,carrying,2,not judged yet
+pvsg,over,moves away from,2,not judged yet
+pvsg,next to,under,2,mismatch (wrong)
+pvsg,next to,moving with,2,mismatch (wrong)
+pvsg,blowing,under,2,not judged yet
+pvsg,lighting,on,2,not judged yet
+pvsg,grabbing,kicking,2,not judged yet
+pvsg,toward,chasing,2,not judged yet
+pvsg,toward,hitting,2,not judged yet
+pvsg,licking,approaching,2,not judged yet
+pvsg,kissing,above,2,not judged yet
+pvsg,licking,above,2,not judged yet
+pvsg,kissing,below,2,not judged yet
+pvsg,licking,below,2,not judged yet
+pvsg,sitting on,hitting,2,not judged yet
+pvsg,swinging,riding,2,not judged yet
+pvsg,swinging,pushing,2,not judged yet
+pvsg,swinging,wearing,2,not judged yet
+pvsg,sitting on,carrying,2,not judged yet
+pvsg,swinging,touching,2,not judged yet
+pvsg,picking,riding,2,not judged yet
+pvsg,jumping from,playing with,2,not judged yet
+pvsg,jumping from,looking at,2,not judged yet
+pvsg,jumping from,near,2,not judged yet
+pvsg,jumping from,behind,2,not judged yet
+pvsg,carrying,hitting,2,not judged yet
+pvsg,squatting on,in,2,not judged yet
+pvsg,touching,inside,2,mismatch (wrong)
+pvsg,pushing,cleaning,2,not judged yet
+pvsg,hanging from,behind,2,not judged yet
+pvsg,cutting,moving toward,2,not judged yet
+pvsg,carrying,moves away from,2,not judged yet
+pvsg,walking on,talking to,2,not judged yet
+pvsg,pouring,washing,2,mismatch (wrong)
+pvsg,next to,sweeping,2,not judged yet
+pvsg,next to,cutting,2,not judged yet
+pvsg,sitting on,manipulates,2,not judged yet
+pvsg,pulling,manipulates,2,not judged yet
+pvsg,closing,approaching,2,not judged yet
+pvsg,in front of,opening,2,not judged yet
+pvsg,stirring,grabbing,2,not judged yet
+pvsg,touching,closing,2,not judged yet
+pvsg,carrying,washing,2,not judged yet
+pvsg,cooking,inside,2,not judged yet
+pvsg,cooking,next to,2,not judged yet
+pvsg,cooking,behind,2,not judged yet
+pvsg,swinging,placing,2,not judged yet
+pvsg,over,placing,2,not judged yet
+pvsg,swinging,approaches,2,not judged yet
+pvsg,running on,attached to,2,not judged yet
+pvsg,kicking,attached to,2,not judged yet
+pvsg,beside,placing,2,not judged yet
+pvsg,picking,sweeping,2,not judged yet
+pvsg,beside,sweeping,2,not judged yet
+pvsg,watering,lying on,2,not judged yet
+pvsg,watering,wearing,2,not judged yet
+pvsg,watering,under,2,not judged yet
+pvsg,grabbing,in front of,1,mismatch (wrong)
+pvsg,grabbing,under,1,not judged yet
+pvsg,sitting on,over,1,not judged yet
+pvsg,looking at,lying on,1,not judged yet
+pvsg,walking on,moving toward,1,not judged yet
+pvsg,touching,serving,1,semantic overlap (right)
+pvsg,in front of,manipulates,1,not judged yet
+pvsg,over,behind,1,not judged yet
+pvsg,in front of,over,1,not judged yet
+pvsg,throwing,riding,1,not judged yet
+pvsg,throwing,in,1,not judged yet
+pvsg,looking at,chasing,1,not judged yet
+pvsg,hugging,chasing,1,not judged yet
+pvsg,hugging,pushing,1,not judged yet
+pvsg,hugging,above,1,not judged yet
+pvsg,in front of,pushing,1,mismatch (wrong)
+pvsg,catching,riding,1,not judged yet
+pvsg,catching,in,1,not judged yet
+pvsg,catching,chasing,1,not judged yet
+pvsg,throwing,beside,1,not judged yet
+pvsg,running on,moving toward,1,not judged yet
+pvsg,throwing,approaching,1,not judged yet
+pvsg,chasing,grabbing,1,not judged yet
+pvsg,pulling,pushing,1,not judged yet
+pvsg,pulling,beside,1,not judged yet
+pvsg,toward,grabbing,1,not judged yet
+pvsg,jumping from,holding,1,not judged yet
+pvsg,jumping from,sitting on,1,not judged yet
+pvsg,watering,playing with,1,not judged yet
+pvsg,watering,carrying,1,not judged yet
+pvsg,cleaning,above,1,not judged yet
+pvsg,next to,catching,1,not judged yet
+pvsg,next to,hitting,1,mismatch (wrong)
+pvsg,walking on,guiding,1,not judged yet
+pvsg,in front of,kicking,1,not judged yet
+pvsg,jumping over,touching,1,not judged yet
+pvsg,jumping over,approaching,1,not judged yet
+pvsg,jumping over,moving away from,1,not judged yet
+pvsg,running on,hitting,1,not judged yet
+pvsg,running on,beside,1,not judged yet
+pvsg,walking on,beside,1,not judged yet
+pvsg,standing on,beside,1,not judged yet
+pvsg,wearing,sitting on,1,not judged yet
+pvsg,pulling,moves away from,1,not judged yet
+pvsg,riding,pulling,1,not judged yet
+pvsg,riding,moving away from,1,not judged yet
+pvsg,going down,moves away from,1,not judged yet
+pvsg,riding,touching,1,not judged yet
+pvsg,going down,touching,1,not judged yet
+pvsg,wearing,passing,1,not judged yet
+pvsg,riding,looking at,1,not judged yet
+pvsg,riding,lying on,1,not judged yet
+pvsg,pushing,moving with,1,not judged yet
+pvsg,pushing,kicking,1,not judged yet
+pvsg,pushing,washing,1,not judged yet
+pvsg,getting down on,attached to,1,not judged yet
+pvsg,squatting on,attached to,1,not judged yet
+pvsg,getting down on,below,1,not judged yet
+pvsg,getting down on,approaching,1,not judged yet
+pvsg,caressing,moving toward,1,not judged yet
+pvsg,carrying,moving toward,1,not judged yet
+pvsg,caressing,lying on,1,not judged yet
+pvsg,carrying,lying on,1,not judged yet
+pvsg,caressing,under,1,not judged yet
+pvsg,lying on,cleaning,1,not judged yet
+pvsg,caressing,playing with,1,not judged yet
+pvsg,kissing,grabbing,1,not judged yet
+pvsg,caressing,grabbing,1,not judged yet
+pvsg,looking at,grabbing,1,not judged yet
+pvsg,hugging,grabbing,1,not judged yet
+pvsg,toward,riding,1,not judged yet
+pvsg,toward,below,1,not judged yet
+pvsg,entering,under,1,not judged yet
+pvsg,pulling,talking to,1,not judged yet
+pvsg,drinking from,touching,1,not judged yet
+pvsg,drinking from,under,1,not judged yet
+pvsg,kissing,moving with,1,not judged yet
+pvsg,kissing,wearing,1,not judged yet
+pvsg,grabbing,placing,1,mismatch (wrong)
+pvsg,looking at,placing,1,mismatch (wrong)
+pvsg,grabbing,washing,1,not judged yet
+pvsg,looking at,washing,1,not judged yet
+pvsg,walking on,opening,1,not judged yet
+pvsg,carrying,riding,1,not judged yet
+pvsg,touching,sanding,1,hypernym/hyponym (right)
+pvsg,touching,moving along,1,mismatch (wrong)
+pvsg,brushing,moving along,1,mismatch (wrong)
+pvsg,walking on,sanding,1,mismatch (wrong)
+pvsg,getting down on,sanding,1,mismatch (wrong)
+pvsg,stepping on,sanding,1,mismatch (wrong)
+pvsg,stepping on,approaches,1,not judged yet
+pvsg,stepping on,manipulates,1,not judged yet
+pvsg,stepping on,on,1,not judged yet
+pvsg,stepping on,in front of,1,not judged yet
+pvsg,grabbing,grabbing,1,identical (right)
+pvsg,grabbing,manipulates,1,not judged yet
+pvsg,in front of,cleaning,1,not judged yet
+pvsg,jumping over,above,1,semantic overlap (right)
+pvsg,jumping over,hanging from,1,not judged yet
+pvsg,jumping over,moving along,1,not judged yet
+pvsg,hugging,cutting,1,not judged yet
+pvsg,hugging,moving with,1,not judged yet
+pvsg,looking at,guiding,1,not judged yet
+pvsg,talking to,playing with,1,not judged yet
+pvsg,talking to,moving with,1,mismatch (wrong)
+pvsg,in,riding,1,not judged yet
+pvsg,talking to,above,1,not judged yet
+pvsg,talking to,sitting on,1,not judged yet
+pvsg,talking to,on,1,not judged yet
+pvsg,next to,guiding,1,not judged yet
+pvsg,wearing,looking at,1,not judged yet
+pvsg,beside,serving,1,not judged yet
+pvsg,picking,serving,1,not judged yet
+pvsg,beside,chasing,1,not judged yet
+pvsg,holding,serving,1,mismatch (wrong)
+pvsg,looking at,manipulates,1,not judged yet
+pvsg,cutting,looking at,1,not judged yet
+pvsg,biting,biting,1,identical (right)
+pvsg,playing with,biting,1,not judged yet
+pvsg,biting,chasing,1,not judged yet
+pvsg,biting,under,1,not judged yet
+pvsg,throwing,pulling,1,not judged yet
+pvsg,throwing,sitting on,1,not judged yet
+pvsg,running on,lying on,1,not judged yet
+pvsg,squatting on,lying on,1,not judged yet
+pvsg,running on,walking on,1,not judged yet
+pvsg,squatting on,walking on,1,not judged yet
+pvsg,playing with,placing,1,not judged yet
+pvsg,running on,carrying,1,not judged yet
+pvsg,running on,moving with,1,not judged yet
+pvsg,chasing,riding,1,not judged yet
+pvsg,kissing,riding,1,not judged yet
+pvsg,chasing,moving with,1,not judged yet
+pvsg,catching,looking at,1,mismatch (wrong)
+pvsg,catching,washing,1,not judged yet
+pvsg,throwing,washing,1,not judged yet
+pvsg,playing with,washing,1,not judged yet
+pvsg,catching,playing with,1,not judged yet
+pvsg,throwing,pushing,1,not judged yet
+pvsg,catching,pushing,1,not judged yet
+pvsg,blowing,attached to,1,not judged yet
+pvsg,sitting on,in,1,not judged yet
+pvsg,lighting,attached to,1,not judged yet
+pvsg,picking,guiding,1,not judged yet
+pvsg,picking,hugging,1,not judged yet
+pvsg,playing with,riding,1,not judged yet
+pvsg,on,running on,1,not judged yet
+pvsg,on,chasing,1,not judged yet
+pvsg,squatting on,chasing,1,not judged yet
+pvsg,on,catching,1,not judged yet
+pvsg,squatting on,catching,1,not judged yet
+pvsg,squatting on,under,1,not judged yet
+pvsg,standing on,grabbing,1,not judged yet
+pvsg,standing on,chasing,1,not judged yet
+pvsg,pulling,cutting,1,not judged yet
+pvsg,throwing,cutting,1,not judged yet
+pvsg,throwing,manipulates,1,not judged yet
+pvsg,hitting,cutting,1,not judged yet
+pvsg,chasing,cutting,1,not judged yet
+pvsg,kicking,cutting,1,not judged yet
+pvsg,hitting,in front of,1,not judged yet
+pvsg,hitting,carrying,1,not judged yet
+pvsg,eating,looking at,1,not judged yet
+pvsg,eating,on,1,not judged yet
+pvsg,eating,next to,1,not judged yet
+pvsg,eating,below,1,not judged yet
+pvsg,touching,moving away from,1,mismatch (wrong)
+pvsg,wearing,hitting,1,not judged yet
+pvsg,touching,pushing,1,not judged yet
+pvsg,kissing,pushing,1,not judged yet
+pvsg,cleaning,pushing,1,not judged yet
+pvsg,touching,talking to,1,not judged yet
+pvsg,cleaning,talking to,1,not judged yet
+pvsg,shaking hand with,moving with,1,not judged yet
+pvsg,beside,lying on,1,not judged yet
+pvsg,holding,hanging from,1,not judged yet
+pvsg,looking at,attached to,1,not judged yet
+pvsg,talking to,manipulates,1,not judged yet
+pvsg,toward,manipulates,1,not judged yet
+pvsg,hugging,manipulates,1,not judged yet
+pvsg,caressing,hugging,1,not judged yet
+pvsg,caressing,talking to,1,not judged yet
+pvsg,talking to,approaching,1,mismatch (wrong)
+pvsg,picking,standing on,1,not judged yet
+pvsg,picking,moves away from,1,not judged yet
+pvsg,next to,moving across,1,not judged yet
+pvsg,in front of,standing on,1,not judged yet
+pvsg,entering,sitting on,1,not judged yet
+pvsg,hugging,photographing,1,not judged yet
+pvsg,next to,photographing,1,mismatch (wrong)
+pvsg,next to,serving,1,not judged yet
+pvsg,hugging,sitting on,1,not judged yet
+pvsg,next to,sitting on,1,mismatch (wrong)
+pvsg,blowing,photographing,1,mismatch (wrong)
+pvsg,guiding,passing,1,not judged yet
+pvsg,guiding,beside,1,not judged yet
+pvsg,looking at,inside,1,not judged yet
+pvsg,lighting,lighting,1,identical (right)
+pvsg,lighting,placing,1,not judged yet
+pvsg,lighting,manipulates,1,not judged yet
+pvsg,lighting,grabbing,1,not judged yet
+pvsg,blowing,pulling,1,not judged yet
+pvsg,picking,next to,1,not judged yet
+pvsg,grabbing,chasing,1,not judged yet
+pvsg,grabbing,approaching,1,not judged yet
+pvsg,grabbing,hitting,1,not judged yet
+pvsg,lying on,running on,1,not judged yet
+pvsg,lying on,approaching,1,not judged yet
+pvsg,licking,holding,1,not judged yet
+pvsg,kissing,on,1,not judged yet
+pvsg,licking,on,1,not judged yet
+pvsg,kissing,moves away from,1,mismatch (wrong)
+pvsg,licking,moves away from,1,not judged yet
+pvsg,licking,carrying,1,not judged yet
+pvsg,playing with,beside,1,not judged yet
+pvsg,licking,beside,1,not judged yet
+pvsg,wearing,manipulates,1,not judged yet
+pvsg,sitting on,inside,1,not judged yet
+pvsg,playing with,attached to,1,not judged yet
+pvsg,biting,moving away from,1,not judged yet
+pvsg,biting,playing with,1,not judged yet
+pvsg,biting,beside,1,not judged yet
+pvsg,sitting on,pushing,1,not judged yet
+pvsg,getting down on,pushing,1,not judged yet
+pvsg,swinging,on,1,not judged yet
+pvsg,swinging,hitting,1,not judged yet
+pvsg,getting down on,hitting,1,not judged yet
+pvsg,getting down on,wearing,1,not judged yet
+pvsg,swinging,carrying,1,not judged yet
+pvsg,sitting on,playing with,1,not judged yet
+pvsg,swinging,playing with,1,not judged yet
+pvsg,lying on,moves away from,1,not judged yet
+pvsg,lying on,next to,1,not judged yet
+pvsg,lying on,below,1,not judged yet
+pvsg,lying on,above,1,not judged yet
+pvsg,chasing,wearing,1,not judged yet
+pvsg,jumping from,chasing,1,not judged yet
+pvsg,jumping from,riding,1,not judged yet
+pvsg,jumping from,moving with,1,not judged yet
+pvsg,jumping from,below,1,not judged yet
+pvsg,jumping from,next to,1,not judged yet
+pvsg,carrying,inside,1,not judged yet
+pvsg,throwing,inside,1,not judged yet
+pvsg,squatting on,wearing,1,not judged yet
+pvsg,kicking,looking at,1,mismatch (wrong)
+pvsg,next to,hanging from,1,not judged yet
+pvsg,on,wearing,1,not judged yet
+pvsg,in,carrying,1,not judged yet
+pvsg,cleaning,in,1,not judged yet
+pvsg,touching,pulling,1,not judged yet
+pvsg,cutting,moving away from,1,not judged yet
+pvsg,hanging from,moving away from,1,not judged yet
+pvsg,carrying,sweeping,1,not judged yet
+pvsg,cleaning,sweeping,1,not judged yet
+pvsg,watering,sweeping,1,not judged yet
+pvsg,watering,cleaning,1,not judged yet
+pvsg,walking on,serving,1,not judged yet
+pvsg,closing,under,1,not judged yet
+pvsg,pouring,manipulates,1,not judged yet
+pvsg,pouring,carrying,1,not judged yet
+pvsg,pouring,wearing,1,not judged yet
+pvsg,pouring,placing,1,not judged yet
+pvsg,brushing,brushing,1,identical (right)
+pvsg,brushing,cutting,1,not judged yet
+pvsg,brushing,in front of,1,not judged yet
+pvsg,brushing,sitting on,1,not judged yet
+pvsg,brushing,on,1,not judged yet
+pvsg,standing on,manipulates,1,not judged yet
+pvsg,walking on,sweeping,1,not judged yet
+pvsg,sitting on,sweeping,1,not judged yet
+pvsg,getting down on,sweeping,1,not judged yet
+pvsg,walking on,placing,1,not judged yet
+pvsg,sitting on,placing,1,not judged yet
+pvsg,getting down on,placing,1,not judged yet
+pvsg,standing on,guiding,1,not judged yet
+pvsg,pulling,grabbing,1,not judged yet
+pvsg,hanging from,hold,1,not judged yet
+pvsg,stirring,washing,1,not judged yet
+pvsg,stirring,approaching,1,not judged yet
+pvsg,stirring,moving toward,1,not judged yet
+pvsg,cutting,inside,1,not judged yet
+pvsg,opening,sweeping,1,not judged yet
+pvsg,hanging from,lying on,1,not judged yet
+pvsg,carrying,photographing,1,not judged yet
+pvsg,over,below,1,not judged yet
+pvsg,opening,photographing,1,not judged yet
+pvsg,closing,photographing,1,not judged yet
+pvsg,cleaning,cutting,1,not judged yet
+pvsg,cutting,wearing,1,not judged yet
+pvsg,cutting,washing,1,not judged yet
+pvsg,cooking,in,1,not judged yet
+pvsg,cooking,attached to,1,not judged yet
+pvsg,cooking,below,1,not judged yet
+pvsg,cooking,approaches,1,not judged yet
+pvsg,over,pushing,1,not judged yet
+pvsg,over,wearing,1,not judged yet
+pvsg,swinging,washing,1,not judged yet
+pvsg,over,washing,1,not judged yet
+pvsg,over,touching,1,not judged yet
+pvsg,swinging,approaching,1,not judged yet
+pvsg,over,approaching,1,not judged yet
+pvsg,kicking,moving away from,1,mismatch (wrong)
+pvsg,running on,in,1,not judged yet
+pvsg,entering,manipulates,1,not judged yet
+pvsg,entering,placing,1,not judged yet
+pvsg,entering,closing,1,not judged yet
+pvsg,cleaning,pulling,1,not judged yet
+pvsg,closing,wearing,1,not judged yet
+pvsg,picking,attached to,1,not judged yet
+pvsg,picking,inside,1,not judged yet
+pvsg,beside,grabbing,1,not judged yet
+pvsg,watering,manipulates,1,not judged yet
+pvsg,watering,below,1,not judged yet
+vidor,next to,in front of,2318,mismatch (wrong)
+vidor,in front of,in front of,1954,identical (right)
+vidor,next to,approaches,1617,mismatch (wrong)
+vidor,next to,near,1582,hypernym/hyponym (right)
+vidor,in front of,approaches,1486,mismatch (wrong)
+vidor,next to,overlapping,1312,mismatch (wrong)
+vidor,next to,above,1207,mismatch (wrong)
+vidor,in front of,near,1176,hypernym/hyponym (right)
+vidor,next to,next to,1064,identical (right)
+vidor,in front of,overlapping,1028,semantic overlap (right)
+vidor,next to,behind,997,mismatch (wrong)
+vidor,next to,holding,997,mismatch (wrong)
+vidor,in front of,approaching,834,mismatch (wrong)
+vidor,next to,approaching,829,mismatch (wrong)
+vidor,in front of,moves away from,827,mismatch (wrong)
+vidor,next to,moves away from,820,mismatch (wrong)
+vidor,next to,touching,797,semantic overlap (right)
+vidor,behind,in front of,790,mismatch (wrong)
+vidor,in front of,behind,751,mismatch (wrong)
+vidor,next to,below,707,mismatch (wrong)
+vidor,in front of,above,705,mismatch (wrong)
+vidor,watch,in front of,660,mismatch (wrong)
+vidor,in front of,below,628,mismatch (wrong)
+vidor,in front of,next to,624,semantic overlap (right)
+vidor,away,in front of,624,mismatch (wrong)
+vidor,in front of,holding,620,mismatch (wrong)
+vidor,next to,attached to,611,semantic overlap (right)
+vidor,away,approaches,600,mismatch (wrong)
+vidor,behind,approaches,587,mismatch (wrong)
+vidor,next to,on,578,mismatch (wrong)
+vidor,behind,near,522,hypernym/hyponym (right)
+vidor,watch,approaches,509,mismatch (wrong)
+vidor,watch,near,482,mismatch (wrong)
+vidor,in front of,touching,466,mismatch (wrong)
+vidor,next to,holds,441,mismatch (wrong)
+vidor,behind,behind,434,identical (right)
+vidor,watch,overlapping,427,mismatch (wrong)
+vidor,in front of,on,427,mismatch (wrong)
+vidor,next to,looking at,424,mismatch (wrong)
+vidor,behind,overlapping,421,semantic overlap (right)
+vidor,in front of,attached to,421,mismatch (wrong)
+vidor,watch,holding,398,mismatch (wrong)
+vidor,towards,in front of,397,mismatch (wrong)
+vidor,away,approaching,394,mismatch (wrong)
+vidor,towards,approaches,383,synonym (right)
+vidor,next to,moves with,381,mismatch (wrong)
+vidor,in front of,looking at,380,mismatch (wrong)
+vidor,in front of,moves with,366,mismatch (wrong)
+vidor,away,near,362,mismatch (wrong)
+vidor,watch,touching,361,mismatch (wrong)
+vidor,away,moves away from,352,synonym (right)
+vidor,next to,carrying,348,mismatch (wrong)
+vidor,behind,above,343,mismatch (wrong)
+vidor,watch,next to,338,mismatch (wrong)
+vidor,behind,approaching,333,mismatch (wrong)
+vidor,watch,above,326,mismatch (wrong)
+vidor,behind,moves away from,319,mismatch (wrong)
+vidor,behind,below,300,mismatch (wrong)
+vidor,away,overlapping,295,mismatch (wrong)
+vidor,watch,approaching,294,mismatch (wrong)
+vidor,behind,next to,294,semantic overlap (right)
+vidor,away,holding,283,mismatch (wrong)
+vidor,next to,hold,282,mismatch (wrong)
+vidor,watch,looking at,279,synonym (right)
+vidor,away,above,279,mismatch (wrong)
+vidor,watch,behind,275,mismatch (wrong)
+vidor,behind,holding,260,mismatch (wrong)
+vidor,beneath,in front of,247,mismatch (wrong)
+vidor,next to,wearing,241,mismatch (wrong)
+vidor,towards,approaching,241,synonym (right)
+vidor,towards,near,236,mismatch (wrong)
+vidor,in front of,holds,226,mismatch (wrong)
+vidor,away,behind,223,mismatch (wrong)
+vidor,watch,moves away from,222,mismatch (wrong)
+vidor,in front of,moving away from,222,mismatch (wrong)
+vidor,towards,above,220,mismatch (wrong)
+vidor,towards,moves away from,215,mismatch (wrong)
+vidor,in front of,carrying,212,mismatch (wrong)
+vidor,next to,moving away from,209,mismatch (wrong)
+vidor,towards,overlapping,195,mismatch (wrong)
+vidor,towards,holding,189,mismatch (wrong)
+vidor,away,touching,185,mismatch (wrong)
+vidor,behind,on,183,mismatch (wrong)
+vidor,away,below,181,mismatch (wrong)
+vidor,in front of,wearing,174,mismatch (wrong)
+vidor,next to,inside,171,mismatch (wrong)
+vidor,watch,holds,164,mismatch (wrong)
+vidor,next to,sitting on,159,mismatch (wrong)
+vidor,behind,moves with,159,mismatch (wrong)
+vidor,towards,touching,151,mismatch (wrong)
+vidor,in front of,inside,151,mismatch (wrong)
+vidor,away,next to,147,mismatch (wrong)
+vidor,behind,attached to,147,not judged yet
+vidor,next to,moving with,144,mismatch (wrong)
+vidor,watch,below,144,mismatch (wrong)
+vidor,away,on,143,mismatch (wrong)
+vidor,behind,touching,142,mismatch (wrong)
+vidor,away,moving away from,141,synonym (right)
+vidor,beneath,approaches,135,mismatch (wrong)
+vidor,hold,holding,131,identical (right)
+vidor,in front of,moving with,128,mismatch (wrong)
+vidor,beneath,below,127,synonym (right)
+vidor,towards,behind,126,mismatch (wrong)
+vidor,in front of,hold,126,mismatch (wrong)
+vidor,in front of,passes,123,mismatch (wrong)
+vidor,watch,hold,122,mismatch (wrong)
+vidor,away,moves with,121,mismatch (wrong)
+vidor,towards,next to,119,mismatch (wrong)
+vidor,towards,below,118,mismatch (wrong)
+vidor,in front of,sitting on,117,mismatch (wrong)
+vidor,above,in front of,116,mismatch (wrong)
+vidor,beneath,near,115,mismatch (wrong)
+vidor,behind,carrying,115,mismatch (wrong)
+vidor,behind,looking at,113,mismatch (wrong)
+vidor,above,on,112,semantic overlap (right)
+vidor,watch,carrying,111,mismatch (wrong)
+vidor,beneath,overlapping,109,mismatch (wrong)
+vidor,next to,playing with,109,mismatch (wrong)
+vidor,away,attached to,108,not judged yet
+vidor,away,holds,107,mismatch (wrong)
+vidor,above,approaches,106,mismatch (wrong)
+vidor,towards,on,106,mismatch (wrong)
+vidor,away,looking at,104,mismatch (wrong)
+vidor,next to,touches,103,semantic overlap (right)
+vidor,beneath,above,100,mismatch (wrong)
+vidor,beneath,behind,99,not judged yet
+vidor,behind,holds,98,mismatch (wrong)
+vidor,beneath,carrying,96,mismatch (wrong)
+vidor,towards,looking at,95,semantic overlap (right)
+vidor,watch,moves with,94,mismatch (wrong)
+vidor,hold,holds,94,identical (right)
+vidor,next to,riding,94,mismatch (wrong)
+vidor,towards,attached to,94,not judged yet
+vidor,watch,wearing,93,mismatch (wrong)
+vidor,above,holding,92,mismatch (wrong)
+vidor,away,wearing,90,mismatch (wrong)
+vidor,behind,moving away from,90,mismatch (wrong)
+vidor,next to,looks at,88,mismatch (wrong)
+vidor,next to,passes,87,mismatch (wrong)
+vidor,watch,on,85,mismatch (wrong)
+vidor,above,above,83,identical (right)
+vidor,away,carrying,82,mismatch (wrong)
+vidor,beneath,attached to,82,not judged yet
+vidor,beneath,next to,81,not judged yet
+vidor,beneath,moves away from,80,mismatch (wrong)
+vidor,next to,pushes,80,mismatch (wrong)
+vidor,towards,moving away from,78,mismatch (wrong)
+vidor,towards,holds,77,mismatch (wrong)
+vidor,beneath,holding,77,mismatch (wrong)
+vidor,hold,hold,76,identical (right)
+vidor,ride,holding,76,mismatch (wrong)
+vidor,hold,touching,75,hypernym/hyponym (right)
+vidor,towards,moves with,75,semantic overlap (right)
+vidor,watch,moving away from,72,mismatch (wrong)
+vidor,next to,dancing with,71,mismatch (wrong)
+vidor,watch,playing with,69,mismatch (wrong)
+vidor,in front of,dancing with,69,mismatch (wrong)
+vidor,in front of,looks at,69,mismatch (wrong)
+vidor,in front of,riding,68,mismatch (wrong)
+vidor,above,moves away from,67,mismatch (wrong)
+vidor,away,hold,67,not judged yet
+vidor,behind,moving with,67,mismatch (wrong)
+vidor,behind,passes,66,mismatch (wrong)
+vidor,above,near,65,hypernym/hyponym (right)
+vidor,away,passes,64,mismatch (wrong)
+vidor,speak to,in front of,64,mismatch (wrong)
+vidor,towards,wearing,63,mismatch (wrong)
+vidor,watch,attached to,63,not judged yet
+vidor,watch,looks at,62,synonym (right)
+vidor,away,riding,61,mismatch (wrong)
+vidor,above,attached to,60,mismatch (wrong)
+vidor,beneath,moves with,57,mismatch (wrong)
+vidor,beneath,holds,57,mismatch (wrong)
+vidor,behind,inside,56,mismatch (wrong)
+vidor,above,riding,56,mismatch (wrong)
+vidor,beneath,approaching,55,mismatch (wrong)
+vidor,towards,hold,55,mismatch (wrong)
+vidor,lean on,touching,55,semantic overlap (right)
+vidor,above,overlapping,54,semantic overlap (right)
+vidor,next to,plays with,54,mismatch (wrong)
+vidor,speak to,next to,54,mismatch (wrong)
+vidor,ride,riding,54,identical (right)
+vidor,speak to,near,53,mismatch (wrong)
+vidor,lean on,in front of,53,mismatch (wrong)
+vidor,in front of,touches,52,mismatch (wrong)
+vidor,away,sitting on,52,mismatch (wrong)
+vidor,speak to,touching,51,mismatch (wrong)
+vidor,in front of,playing with,51,mismatch (wrong)
+vidor,in front of,dances with,51,mismatch (wrong)
+vidor,above,approaching,50,mismatch (wrong)
+vidor,behind,sitting on,50,mismatch (wrong)
+vidor,towards,carrying,50,mismatch (wrong)
+vidor,above,touching,49,mismatch (wrong)
+vidor,hold,in front of,48,mismatch (wrong)
+vidor,watch,dancing with,47,mismatch (wrong)
+vidor,speak to,approaches,47,mismatch (wrong)
+vidor,hold,approaches,46,mismatch (wrong)
+vidor,speak to,overlapping,46,mismatch (wrong)
+vidor,away,moving with,46,mismatch (wrong)
+vidor,hold,carrying,45,semantic overlap (right)
+vidor,next to,ride,44,mismatch (wrong)
+vidor,next to,dances with,44,mismatch (wrong)
+vidor,behind,hold,44,not judged yet
+vidor,above,ride,44,mismatch (wrong)
+vidor,ride,above,44,mismatch (wrong)
+vidor,hold,near,43,mismatch (wrong)
+vidor,towards,sitting on,43,mismatch (wrong)
+vidor,hold,wearing,42,mismatch (wrong)
+vidor,behind,wearing,42,mismatch (wrong)
+vidor,in front of,pushes,42,mismatch (wrong)
+vidor,ride,ride,42,identical (right)
+vidor,watch,touches,41,mismatch (wrong)
+vidor,ride,on,41,semantic overlap (right)
+vidor,watch,inside,40,mismatch (wrong)
+vidor,above,sitting on,39,semantic overlap (right)
+vidor,beneath,on,38,mismatch (wrong)
+vidor,ride,in front of,37,mismatch (wrong)
+vidor,speak to,looking at,36,semantic overlap (right)
+vidor,watch,sitting on,35,mismatch (wrong)
+vidor,lean on,sitting on,35,semantic overlap (right)
+vidor,away,inside,35,not judged yet
+vidor,watch,pushes,35,mismatch (wrong)
+vidor,above,next to,34,mismatch (wrong)
+vidor,hold,overlapping,34,mismatch (wrong)
+vidor,watch,moving with,33,mismatch (wrong)
+vidor,ride,near,33,mismatch (wrong)
+vidor,release,holding,32,mismatch (wrong)
+vidor,lean on,approaches,32,mismatch (wrong)
+vidor,next to,hugging,32,mismatch (wrong)
+vidor,speak to,holding,31,mismatch (wrong)
+vidor,above,behind,31,mismatch (wrong)
+vidor,in front of,hugging,31,mismatch (wrong)
+vidor,towards,passes,30,mismatch (wrong)
+vidor,lean on,holding,30,mismatch (wrong)
+vidor,away,pushes,30,mismatch (wrong)
+vidor,beneath,touching,30,mismatch (wrong)
+vidor,towards,riding,29,mismatch (wrong)
+vidor,behind,riding,29,mismatch (wrong)
+vidor,hold,looking at,29,mismatch (wrong)
+vidor,watch,plays with,28,mismatch (wrong)
+vidor,next to,petting,28,mismatch (wrong)
+vidor,above,holds,28,mismatch (wrong)
+vidor,watch,dances with,28,mismatch (wrong)
+vidor,hold,pushes,27,semantic overlap (right)
+vidor,above,hold,27,mismatch (wrong)
+vidor,beneath,passes,27,not judged yet
+vidor,lean on,near,27,mismatch (wrong)
+vidor,chase,in front of,27,mismatch (wrong)
+vidor,hold,above,27,mismatch (wrong)
+vidor,away,touches,26,mismatch (wrong)
+vidor,away,ride,26,mismatch (wrong)
+vidor,beneath,hold,26,not judged yet
+vidor,behind,dancing with,26,mismatch (wrong)
+vidor,above,carrying,26,mismatch (wrong)
+vidor,grab,holding,26,hypernym/hyponym (right)
+vidor,above,moves with,25,mismatch (wrong)
+vidor,lean on,on,25,hypernym/hyponym (right)
+vidor,watch,hugging,25,mismatch (wrong)
+vidor,watch,passes,25,mismatch (wrong)
+vidor,ride,next to,25,not judged yet
+vidor,towards,touches,24,mismatch (wrong)
+vidor,speak to,behind,24,mismatch (wrong)
+vidor,above,below,24,not judged yet
+vidor,ride,hold,24,mismatch (wrong)
+vidor,ride,approaches,24,not judged yet
+vidor,hold,next to,23,not judged yet
+vidor,speak to,above,23,mismatch (wrong)
+vidor,ride,overlapping,23,mismatch (wrong)
+vidor,lean on,next to,23,mismatch (wrong)
+vidor,next to,carry,23,not judged yet
+vidor,next to,playing,23,mismatch (wrong)
+vidor,release,touching,22,mismatch (wrong)
+vidor,towards,moving with,22,mismatch (wrong)
+vidor,beneath,moving with,22,not judged yet
+vidor,next to,use,22,not judged yet
+vidor,ride,carrying,22,mismatch (wrong)
+vidor,chase,approaches,22,semantic overlap (right)
+vidor,push,approaches,21,mismatch (wrong)
+vidor,in front of,ride,21,not judged yet
+vidor,watch,riding,21,mismatch (wrong)
+vidor,ride,holds,21,mismatch (wrong)
+vidor,lean on,overlapping,21,mismatch (wrong)
+vidor,in front of,use,21,not judged yet
+vidor,hold,playing with,20,mismatch (wrong)
+vidor,speak to,approaching,20,mismatch (wrong)
+vidor,away,dancing with,20,mismatch (wrong)
+vidor,carry,carrying,20,identical (right)
+vidor,touch,holding,19,semantic overlap (right)
+vidor,behind,looks at,19,mismatch (wrong)
+vidor,in front of,petting,19,mismatch (wrong)
+vidor,lean on,behind,19,mismatch (wrong)
+vidor,lift,holding,19,semantic overlap (right)
+vidor,carry,holding,19,hypernym/hyponym (right)
+vidor,beneath,moving away from,18,mismatch (wrong)
+vidor,release,holds,18,mismatch (wrong)
+vidor,towards,playing with,18,mismatch (wrong)
+vidor,towards,inside,18,not judged yet
+vidor,chase,overlapping,18,mismatch (wrong)
+vidor,chase,above,18,mismatch (wrong)
+vidor,grab,holds,18,hypernym/hyponym (right)
+vidor,grab,above,18,not judged yet
+vidor,bite,holding,18,mismatch (wrong)
+vidor,carry,wearing,18,semantic overlap (right)
+vidor,grab,touching,18,hypernym/hyponym (right)
+vidor,push,holding,17,semantic overlap (right)
+vidor,hold,plays with,17,mismatch (wrong)
+vidor,towards,looks at,17,semantic overlap (right)
+vidor,next to,feed,17,not judged yet
+vidor,behind,dances with,17,mismatch (wrong)
+vidor,feed,on,17,not judged yet
+vidor,release,approaches,16,mismatch (wrong)
+vidor,away,playing with,16,mismatch (wrong)
+vidor,hold,approaching,16,mismatch (wrong)
+vidor,above,inside,16,mismatch (wrong)
+vidor,hit,in front of,16,mismatch (wrong)
+vidor,towards,pushes,16,mismatch (wrong)
+vidor,lean on,approaching,16,mismatch (wrong)
+vidor,in front of,plays with,16,mismatch (wrong)
+vidor,chase,approaching,16,semantic overlap (right)
+vidor,chase,near,16,mismatch (wrong)
+vidor,hug,holding,16,hypernym/hyponym (right)
+vidor,behind,pushes,16,mismatch (wrong)
+vidor,point to,in front of,16,mismatch (wrong)
+vidor,push,in front of,15,mismatch (wrong)
+vidor,above,moving away from,15,mismatch (wrong)
+vidor,release,in front of,15,mismatch (wrong)
+vidor,hold,behind,15,mismatch (wrong)
+vidor,away,looks at,15,mismatch (wrong)
+vidor,above,wearing,15,mismatch (wrong)
+vidor,use,holding,15,hypernym/hyponym (right)
+vidor,bite,touching,15,mismatch (wrong)
+vidor,ride,moves with,15,semantic overlap (right)
+vidor,touch,approaches,14,mismatch (wrong)
+vidor,release,pushes,14,mismatch (wrong)
+vidor,hit,approaches,14,mismatch (wrong)
+vidor,hit,holding,14,mismatch (wrong)
+vidor,hit,touching,14,hypernym/hyponym (right)
+vidor,behind,playing with,14,mismatch (wrong)
+vidor,use,hold,14,not judged yet
+vidor,lean on,inside,14,mismatch (wrong)
+vidor,in front of,beneath,14,not judged yet
+vidor,lean on,riding,14,mismatch (wrong)
+vidor,chase,moves away from,14,mismatch (wrong)
+vidor,grab,wearing,14,mismatch (wrong)
+vidor,grab,in front of,14,mismatch (wrong)
+vidor,ride,looking at,14,not judged yet
+vidor,ride,touching,14,mismatch (wrong)
+vidor,carry,approaches,14,mismatch (wrong)
+vidor,carry,in front of,14,mismatch (wrong)
+vidor,ride,inside,14,semantic overlap (right)
+vidor,touch,in front of,13,mismatch (wrong)
+vidor,beneath,looking at,13,mismatch (wrong)
+vidor,above,looking at,13,mismatch (wrong)
+vidor,release,near,13,mismatch (wrong)
+vidor,watch,feed,13,mismatch (wrong)
+vidor,towards,dancing with,13,mismatch (wrong)
+vidor,push,approaching,13,mismatch (wrong)
+vidor,press,approaches,13,mismatch (wrong)
+vidor,press,holding,13,semantic overlap (right)
+vidor,pat,touching,13,hypernym/hyponym (right)
+vidor,pat,in front of,13,mismatch (wrong)
+vidor,speak to,moves away from,13,mismatch (wrong)
+vidor,beneath,beneath,13,identical (right)
+vidor,next to,beneath,13,not judged yet
+vidor,chase,holding,13,mismatch (wrong)
+vidor,point to,approaches,13,mismatch (wrong)
+vidor,touch,touching,12,identical (right)
+vidor,hold,riding,12,mismatch (wrong)
+vidor,hold,on,12,mismatch (wrong)
+vidor,towards,ride,12,mismatch (wrong)
+vidor,pull,holding,12,semantic overlap (right)
+vidor,lean on,looking at,12,mismatch (wrong)
+vidor,in front of,watch,12,not judged yet
+vidor,press,touching,12,hypernym/hyponym (right)
+vidor,pat,approaches,12,mismatch (wrong)
+vidor,behind,touches,12,mismatch (wrong)
+vidor,watch,watch,12,identical (right)
+vidor,use,holds,12,not judged yet
+vidor,watch,use,12,not judged yet
+vidor,ride,pushes,12,mismatch (wrong)
+vidor,ride,behind,12,mismatch (wrong)
+vidor,inside,in front of,12,mismatch (wrong)
+vidor,chase,wearing,12,not judged yet
+vidor,grab,approaches,12,mismatch (wrong)
+vidor,grab,overlapping,12,not judged yet
+vidor,hug,touching,12,hypernym/hyponym (right)
+vidor,inside,holding,12,mismatch (wrong)
+vidor,point to,overlapping,12,not judged yet
+vidor,push,touching,11,semantic overlap (right)
+vidor,pull,approaches,11,mismatch (wrong)
+vidor,behind,ride,11,not judged yet
+vidor,watch,petting,11,mismatch (wrong)
+vidor,hit,near,11,mismatch (wrong)
+vidor,press,approaching,11,mismatch (wrong)
+vidor,pat,overlapping,11,mismatch (wrong)
+vidor,use,carrying,11,hypernym/hyponym (right)
+vidor,ride,wearing,11,mismatch (wrong)
+vidor,ride,moves away from,11,not judged yet
+vidor,lift,carrying,11,semantic overlap (right)
+vidor,lift,approaches,11,mismatch (wrong)
+vidor,hug,carrying,11,mismatch (wrong)
+vidor,ride,approaching,11,not judged yet
+vidor,point to,near,11,mismatch (wrong)
+vidor,inside,pushes,11,mismatch (wrong)
+vidor,inside,inside,11,identical (right)
+vidor,in front of,hold hand of,11,not judged yet
+vidor,release,overlapping,10,mismatch (wrong)
+vidor,hold,touches,10,hypernym/hyponym (right)
+vidor,next to,watch,10,not judged yet
+vidor,push,near,10,mismatch (wrong)
+vidor,away,dances with,10,mismatch (wrong)
+vidor,pat,next to,10,mismatch (wrong)
+vidor,speak to,moves with,10,not judged yet
+vidor,lean on,above,10,semantic overlap (right)
+vidor,lift,holds,10,semantic overlap (right)
+vidor,inside,near,10,mismatch (wrong)
+vidor,chase,carrying,10,mismatch (wrong)
+vidor,hold,moves away from,10,mismatch (wrong)
+vidor,grab,hold,10,hypernym/hyponym (right)
+vidor,grab,carrying,10,semantic overlap (right)
+vidor,grab,near,10,mismatch (wrong)
+vidor,release,hold,10,mismatch (wrong)
+vidor,watch,playing,10,mismatch (wrong)
+vidor,carry,near,10,mismatch (wrong)
+vidor,point to,approaching,10,not judged yet
+vidor,bite,holds,10,mismatch (wrong)
+vidor,press,near,10,mismatch (wrong)
+vidor,press,overlapping,10,not judged yet
+vidor,lean on,pushes,10,mismatch (wrong)
+vidor,lean on,ride,10,mismatch (wrong)
+vidor,touch,holds,9,semantic overlap (right)
+vidor,push,moves away from,9,mismatch (wrong)
+vidor,touch,looking at,9,mismatch (wrong)
+vidor,in front of,passing by,9,mismatch (wrong)
+vidor,release,riding,9,not judged yet
+vidor,speak to,playing with,9,mismatch (wrong)
+vidor,next to,performing with,9,mismatch (wrong)
+vidor,hit,above,9,not judged yet
+vidor,hit,overlapping,9,mismatch (wrong)
+vidor,push,riding,9,mismatch (wrong)
+vidor,push,next to,9,not judged yet
+vidor,pat,approaching,9,not judged yet
+vidor,pat,holding,9,mismatch (wrong)
+vidor,lean on,moves away from,9,mismatch (wrong)
+vidor,pull,touching,9,semantic overlap (right)
+vidor,above,pushes,9,mismatch (wrong)
+vidor,lean on,holds,9,mismatch (wrong)
+vidor,lift,wearing,9,mismatch (wrong)
+vidor,in front of,carry,9,not judged yet
+vidor,kick,wearing,9,not judged yet
+vidor,lift,above,9,mismatch (wrong)
+vidor,hold,attached to,9,not judged yet
+vidor,lift,in front of,9,mismatch (wrong)
+vidor,release,carrying,9,mismatch (wrong)
+vidor,release,above,9,mismatch (wrong)
+vidor,behind,playing,9,mismatch (wrong)
+vidor,ride,sitting on,9,semantic overlap (right)
+vidor,carry,moves with,9,not judged yet
+vidor,ride,below,9,not judged yet
+vidor,carry,attached to,9,not judged yet
+vidor,carry,carry,9,identical (right)
+vidor,push,moves with,9,mismatch (wrong)
+vidor,inside,riding,9,mismatch (wrong)
+vidor,feed,approaches,9,not judged yet
+vidor,feed,in front of,9,mismatch (wrong)
+vidor,feed,near,9,mismatch (wrong)
+vidor,feed,above,9,mismatch (wrong)
+vidor,push,carrying,8,mismatch (wrong)
+vidor,hold,ride,8,mismatch (wrong)
+vidor,beneath,inside,8,not judged yet
+vidor,speak to,looks at,8,semantic overlap (right)
+vidor,away,plays with,8,mismatch (wrong)
+vidor,towards,dances with,8,mismatch (wrong)
+vidor,push,overlapping,8,mismatch (wrong)
+vidor,push,moving with,8,mismatch (wrong)
+vidor,pat,near,8,mismatch (wrong)
+vidor,behind,watch,8,not judged yet
+vidor,beneath,sitting on,8,not judged yet
+vidor,speak to,holds,8,not judged yet
+vidor,use,touching,8,not judged yet
+vidor,lift,hold,8,semantic overlap (right)
+vidor,caress,holding,8,mismatch (wrong)
+vidor,kick,above,8,not judged yet
+vidor,bite,looking at,8,mismatch (wrong)
+vidor,bite,approaches,8,mismatch (wrong)
+vidor,hug,approaches,8,mismatch (wrong)
+vidor,carry,moves away from,8,mismatch (wrong)
+vidor,carry,holds,8,hypernym/hyponym (right)
+vidor,point to,holding,8,mismatch (wrong)
+vidor,press,next to,8,not judged yet
+vidor,grab,below,8,not judged yet
+vidor,inside,ride,8,not judged yet
+vidor,inside,behind,8,mismatch (wrong)
+vidor,feed,attached to,8,not judged yet
+vidor,point to,above,8,mismatch (wrong)
+vidor,push,holds,7,semantic overlap (right)
+vidor,touch,moves away from,7,mismatch (wrong)
+vidor,push,looking at,7,mismatch (wrong)
+vidor,release,next to,7,not judged yet
+vidor,towards,plays with,7,mismatch (wrong)
+vidor,next to,bite,7,not judged yet
+vidor,next to,passing by,7,mismatch (wrong)
+vidor,lean on,lean on,7,identical (right)
+vidor,speak to,dancing with,7,mismatch (wrong)
+vidor,hit,looking at,7,mismatch (wrong)
+vidor,away,hugging,7,mismatch (wrong)
+vidor,pat,looking at,7,mismatch (wrong)
+vidor,above,moving with,7,mismatch (wrong)
+vidor,pull,approaching,7,mismatch (wrong)
+vidor,lean on,hold,7,mismatch (wrong)
+vidor,inside,next to,7,not judged yet
+vidor,chase,below,7,mismatch (wrong)
+vidor,watch,ride,7,mismatch (wrong)
+vidor,lift,near,7,mismatch (wrong)
+vidor,lift,overlapping,7,mismatch (wrong)
+vidor,in front of,playing,7,mismatch (wrong)
+vidor,bite,carrying,7,mismatch (wrong)
+vidor,hold,below,7,mismatch (wrong)
+vidor,carry,approaching,7,mismatch (wrong)
+vidor,carry,next to,7,mismatch (wrong)
+vidor,carry,overlapping,7,mismatch (wrong)
+vidor,ride,moving with,7,semantic overlap (right)
+vidor,point to,looking at,7,semantic overlap (right)
+vidor,point to,touching,7,mismatch (wrong)
+vidor,point to,next to,7,not judged yet
+vidor,away,beneath,7,not judged yet
+vidor,bite,hold,7,not judged yet
+vidor,bite,in front of,7,mismatch (wrong)
+vidor,pull,in front of,7,mismatch (wrong)
+vidor,wave,holding,7,mismatch (wrong)
+vidor,hug,holds,7,hypernym/hyponym (right)
+vidor,feed,overlapping,7,not judged yet
+vidor,point to,moves away from,7,mismatch (wrong)
+vidor,push,ride,7,mismatch (wrong)
+vidor,touch,carrying,6,mismatch (wrong)
+vidor,release,plays with,6,mismatch (wrong)
+vidor,release,behind,6,not judged yet
+vidor,next to,lean on,6,not judged yet
+vidor,lean on,touches,6,not judged yet
+vidor,hit,approaching,6,mismatch (wrong)
+vidor,press,holds,6,semantic overlap (right)
+vidor,pat,above,6,mismatch (wrong)
+vidor,towards,hugging,6,mismatch (wrong)
+vidor,behind,hugging,6,mismatch (wrong)
+vidor,beneath,touches,6,not judged yet
+vidor,clean,holding,6,mismatch (wrong)
+vidor,press,in front of,6,mismatch (wrong)
+vidor,use,use,6,identical (right)
+vidor,lean on,carrying,6,not judged yet
+vidor,lift,touching,6,semantic overlap (right)
+vidor,chase,moving away from,6,not judged yet
+vidor,kick,holding,6,mismatch (wrong)
+vidor,kick,in front of,6,mismatch (wrong)
+vidor,kick,near,6,mismatch (wrong)
+vidor,chase,on,6,not judged yet
+vidor,hold,moves with,6,not judged yet
+vidor,hit,holds,6,mismatch (wrong)
+vidor,carry,behind,6,not judged yet
+vidor,behind,use,6,not judged yet
+vidor,press,dancing with,6,mismatch (wrong)
+vidor,pull,near,6,mismatch (wrong)
+vidor,pull,overlapping,6,mismatch (wrong)
+vidor,bite,above,6,not judged yet
+vidor,chase,behind,6,not judged yet
+vidor,release,sitting on,6,not judged yet
+vidor,wave hand to,approaches,6,mismatch (wrong)
+vidor,wave hand to,in front of,6,mismatch (wrong)
+vidor,push,behind,6,not judged yet
+vidor,wave,wearing,6,mismatch (wrong)
+vidor,wave,in front of,6,mismatch (wrong)
+vidor,hug,hold,6,not judged yet
+vidor,hug,in front of,6,mismatch (wrong)
+vidor,feed,passes,6,not judged yet
+vidor,point to,below,6,not judged yet
+vidor,throw,holding,6,mismatch (wrong)
+vidor,throw,hold,6,not judged yet
+vidor,throw,touching,6,not judged yet
+vidor,play(instrument),holding,6,hypernym/hyponym (right)
+vidor,play(instrument),playing,6,synonym (right)
+vidor,play(instrument),hold,6,not judged yet
+vidor,push,on,6,mismatch (wrong)
+vidor,release,ride,5,not judged yet
+vidor,release,playing with,5,mismatch (wrong)
+vidor,away,passing by,5,mismatch (wrong)
+vidor,away,petting,5,mismatch (wrong)
+vidor,speak to,moving with,5,not judged yet
+vidor,hit,moves away from,5,mismatch (wrong)
+vidor,push,pushes,5,identical (right)
+vidor,push,above,5,not judged yet
+vidor,push,moving away from,5,mismatch (wrong)
+vidor,behind,petting,5,mismatch (wrong)
+vidor,hold,sitting on,5,mismatch (wrong)
+vidor,press,moves with,5,not judged yet
+vidor,use,looking at,5,mismatch (wrong)
+vidor,speak to,touches,5,mismatch (wrong)
+vidor,speak to,hold,5,not judged yet
+vidor,hold,use,5,not judged yet
+vidor,behind,passing by,5,not judged yet
+vidor,inside,approaches,5,not judged yet
+vidor,touch,approaching,5,not judged yet
+vidor,speak to,hugging,5,mismatch (wrong)
+vidor,touch,behind,5,mismatch (wrong)
+vidor,kick,carrying,5,not judged yet
+vidor,kick,overlapping,5,mismatch (wrong)
+vidor,grab,attached to,5,not judged yet
+vidor,grab,next to,5,not judged yet
+vidor,hold,moving away from,5,mismatch (wrong)
+vidor,hug,looking at,5,mismatch (wrong)
+vidor,bite,bite,5,identical (right)
+vidor,bite,wearing,5,mismatch (wrong)
+vidor,carry,moving with,5,not judged yet
+vidor,release,approaching,5,mismatch (wrong)
+vidor,release,looking at,5,mismatch (wrong)
+vidor,behind,plays with,5,mismatch (wrong)
+vidor,bite,below,5,not judged yet
+vidor,use,in front of,5,not judged yet
+vidor,lean on,push,5,not judged yet
+vidor,inside,push,5,not judged yet
+vidor,in front of,push,5,not judged yet
+vidor,behind,hold hand of,5,not judged yet
+vidor,feed,moves with,5,not judged yet
+vidor,feed,behind,5,not judged yet
+vidor,press,above,5,not judged yet
+vidor,throw,holds,5,mismatch (wrong)
+vidor,play(instrument),carrying,5,mismatch (wrong)
+vidor,carry,hold,5,not judged yet
+vidor,above,dancing with,5,not judged yet
+vidor,release,on,4,mismatch (wrong)
+vidor,towards,feed,4,not judged yet
+vidor,watch,bite,4,not judged yet
+vidor,speak to,plays with,4,not judged yet
+vidor,towards,petting,4,mismatch (wrong)
+vidor,hit,behind,4,not judged yet
+vidor,hit,next to,4,mismatch (wrong)
+vidor,press,touches,4,hypernym/hyponym (right)
+vidor,press,looking at,4,mismatch (wrong)
+vidor,press,pushes,4,not judged yet
+vidor,speak to,dances with,4,not judged yet
+vidor,pat,below,4,not judged yet
+vidor,touch,hold,4,not judged yet
+vidor,beneath,riding,4,not judged yet
+vidor,clean,touching,4,mismatch (wrong)
+vidor,ride,attached to,4,not judged yet
+vidor,behind,feed,4,not judged yet
+vidor,lean on,moves with,4,mismatch (wrong)
+vidor,hold hand of,approaches,4,mismatch (wrong)
+vidor,hold hand of,holding,4,hypernym/hyponym (right)
+vidor,chase,moves with,4,not judged yet
+vidor,chase,next to,4,not judged yet
+vidor,in front of,feed,4,mismatch (wrong)
+vidor,caress,touching,4,hypernym/hyponym (right)
+vidor,caress,approaches,4,mismatch (wrong)
+vidor,touch,above,4,not judged yet
+vidor,chase,holds,4,mismatch (wrong)
+vidor,kick,on,4,not judged yet
+vidor,watch,carry,4,not judged yet
+vidor,lift,approaching,4,not judged yet
+vidor,grab,on,4,not judged yet
+vidor,hit,hold,4,not judged yet
+vidor,hit,touches,4,not judged yet
+vidor,hit,attached to,4,not judged yet
+vidor,carry,above,4,not judged yet
+vidor,point to,playing with,4,mismatch (wrong)
+vidor,grab,approaching,4,not judged yet
+vidor,grab,pushes,4,mismatch (wrong)
+vidor,ride,use,4,not judged yet
+vidor,above,use,4,not judged yet
+vidor,knock,above,4,not judged yet
+vidor,knock,in front of,4,mismatch (wrong)
+vidor,release,moves away from,4,mismatch (wrong)
+vidor,press,dances with,4,not judged yet
+vidor,push,hold,4,not judged yet
+vidor,use,near,4,mismatch (wrong)
+vidor,wave hand to,approaching,4,mismatch (wrong)
+vidor,wave hand to,holding,4,mismatch (wrong)
+vidor,wave,carrying,4,mismatch (wrong)
+vidor,wave,holds,4,mismatch (wrong)
+vidor,wave,hold,4,not judged yet
+vidor,wave,approaches,4,mismatch (wrong)
+vidor,wave,above,4,not judged yet
+vidor,ride,moving away from,4,not judged yet
+vidor,away,playing,4,mismatch (wrong)
+vidor,hold,playing,4,mismatch (wrong)
+vidor,wave,near,4,mismatch (wrong)
+vidor,hug,hugging,4,identical (right)
+vidor,inside,carrying,4,mismatch (wrong)
+vidor,inside,on,4,mismatch (wrong)
+vidor,throw,near,4,not judged yet
+vidor,play(instrument),holds,4,not judged yet
+vidor,hug,overlapping,4,mismatch (wrong)
+vidor,wave,touching,4,mismatch (wrong)
+vidor,touch,sitting on,3,not judged yet
+vidor,pull,holds,3,semantic overlap (right)
+vidor,pull,plays with,3,mismatch (wrong)
+vidor,pull,playing with,3,mismatch (wrong)
+vidor,beneath,carry,3,mismatch (wrong)
+vidor,speak to,feed,3,not judged yet
+vidor,towards,passing by,3,mismatch (wrong)
+vidor,away,feed,3,not judged yet
+vidor,hit,below,3,not judged yet
+vidor,press,carrying,3,mismatch (wrong)
+vidor,watch,performing with,3,mismatch (wrong)
+vidor,in front of,performing with,3,mismatch (wrong)
+vidor,speak to,below,3,not judged yet
+vidor,get on,approaches,3,not judged yet
+vidor,get on,approaching,3,not judged yet
+vidor,above,lean on,3,not judged yet
+vidor,lean on,moving away from,3,mismatch (wrong)
+vidor,touch,wearing,3,mismatch (wrong)
+vidor,beneath,wearing,3,mismatch (wrong)
+vidor,clean,approaches,3,mismatch (wrong)
+vidor,clean,holds,3,not judged yet
+vidor,clean,carrying,3,not judged yet
+vidor,beneath,dances with,3,not judged yet
+vidor,pat,holds,3,mismatch (wrong)
+vidor,press,moving with,3,not judged yet
+vidor,lean on,wearing,3,mismatch (wrong)
+vidor,hold hand of,approaching,3,mismatch (wrong)
+vidor,hold hand of,in front of,3,mismatch (wrong)
+vidor,above,touches,3,mismatch (wrong)
+vidor,lift,playing with,3,mismatch (wrong)
+vidor,lift,looking at,3,mismatch (wrong)
+vidor,inside,looking at,3,mismatch (wrong)
+vidor,chase,looking at,3,mismatch (wrong)
+vidor,chase,passes,3,not judged yet
+vidor,caress,holds,3,not judged yet
+vidor,speak to,carrying,3,mismatch (wrong)
+vidor,open,holding,3,mismatch (wrong)
+vidor,open,holds,3,not judged yet
+vidor,touch,near,3,mismatch (wrong)
+vidor,kick,holds,3,mismatch (wrong)
+vidor,lift,moves away from,3,mismatch (wrong)
+vidor,hold,carry,3,not judged yet
+vidor,lift,on,3,mismatch (wrong)
+vidor,chase,inside,3,not judged yet
+vidor,grab,behind,3,not judged yet
+vidor,grab,inside,3,not judged yet
+vidor,hold,inside,3,not judged yet
+vidor,away,watch,3,not judged yet
+vidor,release,wearing,3,mismatch (wrong)
+vidor,hit,playing,3,mismatch (wrong)
+vidor,caress,looking at,3,mismatch (wrong)
+vidor,carry,looking at,3,mismatch (wrong)
+vidor,ride,looks at,3,not judged yet
+vidor,grab,looking at,3,mismatch (wrong)
+vidor,lift,pushes,3,mismatch (wrong)
+vidor,knock,approaches,3,not judged yet
+vidor,knock,approaching,3,not judged yet
+vidor,knock,moves away from,3,not judged yet
+vidor,knock,behind,3,not judged yet
+vidor,knock,near,3,not judged yet
+vidor,knock,overlapping,3,not judged yet
+vidor,ride,plays with,3,mismatch (wrong)
+vidor,lean on,attached to,3,not judged yet
+vidor,bite,pushes,3,not judged yet
+vidor,pull,moves with,3,not judged yet
+vidor,bite,near,3,mismatch (wrong)
+vidor,bite,overlapping,3,mismatch (wrong)
+vidor,use,behind,3,not judged yet
+vidor,wave hand to,moves away from,3,mismatch (wrong)
+vidor,wave hand to,next to,3,mismatch (wrong)
+vidor,wave hand to,behind,3,not judged yet
+vidor,wave hand to,near,3,mismatch (wrong)
+vidor,watch,beneath,3,not judged yet
+vidor,wave,approaching,3,not judged yet
+vidor,wave,moves away from,3,mismatch (wrong)
+vidor,beneath,playing with,3,mismatch (wrong)
+vidor,kiss,holding,3,mismatch (wrong)
+vidor,hug,playing with,3,mismatch (wrong)
+vidor,pat,playing with,3,mismatch (wrong)
+vidor,pat,behind,3,mismatch (wrong)
+vidor,grab,touches,3,hypernym/hyponym (right)
+vidor,feed,carrying,3,not judged yet
+vidor,inside,holds,3,not judged yet
+vidor,point to,behind,3,not judged yet
+vidor,squeeze,holding,3,hypernym/hyponym (right)
+vidor,squeeze,pushes,3,not judged yet
+vidor,point to,holds,3,not judged yet
+vidor,throw,carrying,3,mismatch (wrong)
+vidor,bite,next to,3,not judged yet
+vidor,hug,next to,3,mismatch (wrong)
+vidor,hug,above,3,mismatch (wrong)
+vidor,hug,behind,3,not judged yet
+vidor,chase,riding,3,not judged yet
+vidor,chase,moving with,3,semantic overlap (right)
+vidor,throw,wearing,3,not judged yet
+vidor,throw,in front of,3,mismatch (wrong)
+vidor,throw,above,3,not judged yet
+vidor,carry,below,3,not judged yet
+vidor,get off,riding,3,mismatch (wrong)
+vidor,beneath,playing,3,mismatch (wrong)
+vidor,pull,moves away from,3,mismatch (wrong)
+vidor,pull,behind,3,mismatch (wrong)
+vidor,pull,sitting on,3,mismatch (wrong)
+vidor,beneath,dancing with,3,not judged yet
+vidor,pull,pushes,2,mismatch (wrong)
+vidor,pull,riding,2,not judged yet
+vidor,speak to,petting,2,not judged yet
+vidor,away,use,2,not judged yet
+vidor,hit,moving away from,2,mismatch (wrong)
+vidor,hit,looks at,2,not judged yet
+vidor,hit,moves with,2,not judged yet
+vidor,push,touches,2,semantic overlap (right)
+vidor,pat,dancing with,2,mismatch (wrong)
+vidor,pat,dances with,2,not judged yet
+vidor,speak to,on,2,not judged yet
+vidor,pat,moves with,2,not judged yet
+vidor,pat,carrying,2,mismatch (wrong)
+vidor,get on,sitting on,2,not judged yet
+vidor,get on,in front of,2,mismatch (wrong)
+vidor,touch,riding,2,mismatch (wrong)
+vidor,pull,touches,2,not judged yet
+vidor,pull,hold,2,not judged yet
+vidor,clean,touches,2,mismatch (wrong)
+vidor,clean,hold,2,mismatch (wrong)
+vidor,hold hand of,touching,2,hypernym/hyponym (right)
+vidor,hold hand of,moves away from,2,mismatch (wrong)
+vidor,inside,approaching,2,not judged yet
+vidor,above,passes,2,not judged yet
+vidor,touch,next to,2,mismatch (wrong)
+vidor,caress,hold,2,not judged yet
+vidor,caress,carrying,2,mismatch (wrong)
+vidor,touch,pushes,2,semantic overlap (right)
+vidor,caress,next to,2,not judged yet
+vidor,caress,in front of,2,mismatch (wrong)
+vidor,open,hold,2,not judged yet
+vidor,open,looking at,2,mismatch (wrong)
+vidor,touch,overlapping,2,semantic overlap (right)
+vidor,kick,approaches,2,mismatch (wrong)
+vidor,away,carry,2,not judged yet
+vidor,towards,carry,2,not judged yet
+vidor,lift,moves with,2,not judged yet
+vidor,kick,inside,2,not judged yet
+vidor,lift,sitting on,2,not judged yet
+vidor,release,inside,2,not judged yet
+vidor,push,bite,2,not judged yet
+vidor,hug,bite,2,not judged yet
+vidor,caress,petting,2,synonym (right)
+vidor,caress,playing with,2,mismatch (wrong)
+vidor,hit,wearing,2,mismatch (wrong)
+vidor,above,looks at,2,mismatch (wrong)
+vidor,point to,plays with,2,not judged yet
+vidor,hold,lift,2,semantic overlap (right)
+vidor,next to,lift,2,mismatch (wrong)
+vidor,knock,looking at,2,not judged yet
+vidor,towards,drive,2,not judged yet
+vidor,ride,hugging,2,not judged yet
+vidor,ride,playing with,2,mismatch (wrong)
+vidor,lean on,passes,2,not judged yet
+vidor,pat,pushes,2,not judged yet
+vidor,grab,riding,2,not judged yet
+vidor,pat,riding,2,not judged yet
+vidor,pat,inside,2,not judged yet
+vidor,release,touches,2,mismatch (wrong)
+vidor,bite,touches,2,mismatch (wrong)
+vidor,pull,looking at,2,mismatch (wrong)
+vidor,pull,dancing with,2,mismatch (wrong)
+vidor,pull,dances with,2,not judged yet
+vidor,pull,next to,2,not judged yet
+vidor,use,below,2,not judged yet
+vidor,next to,performing music with,2,mismatch (wrong)
+vidor,wave hand to,looking at,2,mismatch (wrong)
+vidor,wave hand to,riding,2,not judged yet
+vidor,wave hand to,overlapping,2,not judged yet
+vidor,above,plays with,2,mismatch (wrong)
+vidor,behind,beneath,2,not judged yet
+vidor,towards,beneath,2,not judged yet
+vidor,caress,feed,2,not judged yet
+vidor,touch,feed,2,not judged yet
+vidor,wave,moving away from,2,not judged yet
+vidor,speak to,attached to,2,not judged yet
+vidor,beneath,plays with,2,not judged yet
+vidor,hold hand of,carrying,2,semantic overlap (right)
+vidor,kiss,carrying,2,mismatch (wrong)
+vidor,feed,moves away from,2,not judged yet
+vidor,hug,pushes,2,not judged yet
+vidor,point to,moving away from,2,not judged yet
+vidor,point to,moves with,2,not judged yet
+vidor,press,hold,2,not judged yet
+vidor,squeeze,hold,2,not judged yet
+vidor,squeeze,holds,2,not judged yet
+vidor,squeeze,carrying,2,mismatch (wrong)
+vidor,lean on,playing with,2,mismatch (wrong)
+vidor,point to,hold,2,not judged yet
+vidor,carry,riding,2,not judged yet
+vidor,carry,passes,2,not judged yet
+vidor,hug,sitting on,2,not judged yet
+vidor,hug,near,2,mismatch (wrong)
+vidor,hold,bite,2,not judged yet
+vidor,towards,bite,2,not judged yet
+vidor,away,bite,2,not judged yet
+vidor,in front of,bite,2,mismatch (wrong)
+vidor,lean on,hugging,2,mismatch (wrong)
+vidor,carry,moving away from,2,mismatch (wrong)
+vidor,chase,pushes,2,not judged yet
+vidor,use,approaches,2,not judged yet
+vidor,throw,overlapping,2,not judged yet
+vidor,wave,overlapping,2,mismatch (wrong)
+vidor,hold,moving with,2,semantic overlap (right)
+vidor,push,dancing with,2,mismatch (wrong)
+vidor,get off,ride,2,mismatch (wrong)
+vidor,get off,on,2,mismatch (wrong)
+vidor,get off,moves with,2,not judged yet
+vidor,lean on,dancing with,2,mismatch (wrong)
+vidor,above,dances with,2,not judged yet
+vidor,behind,bite,2,not judged yet
+vidor,beneath,ride,2,not judged yet
+vidor,behind,carry,2,not judged yet
+vidor,push,sitting on,1,not judged yet
+vidor,pull,ride,1,not judged yet
+vidor,hit,dancing with,1,not judged yet
+vidor,hit,dances with,1,not judged yet
+vidor,press,wearing,1,mismatch (wrong)
+vidor,press,playing with,1,mismatch (wrong)
+vidor,speak to,performing with,1,not judged yet
+vidor,pat,performing with,1,not judged yet
+vidor,away,performing with,1,mismatch (wrong)
+vidor,towards,performing with,1,mismatch (wrong)
+vidor,speak to,sitting on,1,not judged yet
+vidor,pat,sitting on,1,mismatch (wrong)
+vidor,pat,on,1,mismatch (wrong)
+vidor,speak to,wearing,1,mismatch (wrong)
+vidor,behind,lean on,1,not judged yet
+vidor,pat,hugging,1,not judged yet
+vidor,pat,hold,1,not judged yet
+vidor,get on,touching,1,mismatch (wrong)
+vidor,get on,lean on,1,not judged yet
+vidor,towards,lean on,1,not judged yet
+vidor,get on,looking at,1,not judged yet
+vidor,get on,moves away from,1,not judged yet
+vidor,get on,on,1,semantic overlap (right)
+vidor,in front of,drive,1,not judged yet
+vidor,touch,touches,1,identical (right)
+vidor,pull,carrying,1,mismatch (wrong)
+vidor,pull,attached to,1,not judged yet
+vidor,clean,approaching,1,not judged yet
+vidor,clean,attached to,1,not judged yet
+vidor,pat,moving with,1,not judged yet
+vidor,hold hand of,looking at,1,mismatch (wrong)
+vidor,speak to,moving away from,1,mismatch (wrong)
+vidor,hold hand of,moving away from,1,mismatch (wrong)
+vidor,hold hand of,overlapping,1,mismatch (wrong)
+vidor,hold hand of,next to,1,mismatch (wrong)
+vidor,hold hand of,above,1,not judged yet
+vidor,towards,use,1,not judged yet
+vidor,inside,looks at,1,mismatch (wrong)
+vidor,inside,moves away from,1,not judged yet
+vidor,inside,overlapping,1,not judged yet
+vidor,inside,moves with,1,not judged yet
+vidor,clean,pushes,1,not judged yet
+vidor,caress,pushes,1,not judged yet
+vidor,clean,riding,1,not judged yet
+vidor,caress,riding,1,not judged yet
+vidor,clean,next to,1,not judged yet
+vidor,clean,behind,1,not judged yet
+vidor,caress,behind,1,not judged yet
+vidor,clean,in front of,1,mismatch (wrong)
+vidor,speak to,watch,1,not judged yet
+vidor,speak to,inside,1,not judged yet
+vidor,open,touching,1,not judged yet
+vidor,open,approaches,1,not judged yet
+vidor,open,approaching,1,not judged yet
+vidor,open,wearing,1,not judged yet
+vidor,open,carrying,1,not judged yet
+vidor,touch,dancing with,1,not judged yet
+vidor,touch,moves with,1,not judged yet
+vidor,touch,below,1,not judged yet
+vidor,chase,hold,1,not judged yet
+vidor,kick,hold,1,not judged yet
+vidor,chase,attached to,1,not judged yet
+vidor,kick,attached to,1,not judged yet
+vidor,lift,carry,1,not judged yet
+vidor,lift,attached to,1,not judged yet
+vidor,kick,approaching,1,mismatch (wrong)
+vidor,chase,carry,1,not judged yet
+vidor,kick,carry,1,not judged yet
+vidor,grab,carry,1,not judged yet
+vidor,grab,moves with,1,not judged yet
+vidor,chase,sitting on,1,not judged yet
+vidor,chase,touching,1,mismatch (wrong)
+vidor,lift,inside,1,not judged yet
+vidor,release,carry,1,not judged yet
+vidor,release,moves with,1,not judged yet
+vidor,watch,hit,1,not judged yet
+vidor,hit,hit,1,identical (right)
+vidor,next to,hit,1,not judged yet
+vidor,push,wearing,1,not judged yet
+vidor,hug,wearing,1,not judged yet
+vidor,hit,playing with,1,mismatch (wrong)
+vidor,caress,plays with,1,mismatch (wrong)
+vidor,caress,near,1,mismatch (wrong)
+vidor,caress,overlapping,1,mismatch (wrong)
+vidor,carry,looks at,1,mismatch (wrong)
+vidor,carry,touching,1,semantic overlap (right)
+vidor,lean on,looks at,1,not judged yet
+vidor,point to,looks at,1,semantic overlap (right)
+vidor,lift,next to,1,not judged yet
+vidor,hold,looks at,1,mismatch (wrong)
+vidor,knock,moving away from,1,not judged yet
+vidor,knock,below,1,not judged yet
+vidor,ride,touches,1,not judged yet
+vidor,speak to,riding,1,not judged yet
+vidor,touch,moving away from,1,mismatch (wrong)
+vidor,bite,moves away from,1,mismatch (wrong)
+vidor,pull,moving with,1,mismatch (wrong)
+vidor,next to,hug,1,not judged yet
+vidor,use,next to,1,not judged yet
+vidor,use,overlapping,1,not judged yet
+vidor,bite,approaching,1,mismatch (wrong)
+vidor,bite,attached to,1,not judged yet
+vidor,watch,performing music with,1,mismatch (wrong)
+vidor,release,below,1,not judged yet
+vidor,wave hand to,looks at,1,not judged yet
+vidor,wave hand to,above,1,not judged yet
+vidor,wave hand to,below,1,not judged yet
+vidor,wave,looking at,1,mismatch (wrong)
+vidor,wave,on,1,not judged yet
+vidor,ride,push,1,not judged yet
+vidor,above,push,1,not judged yet
+vidor,speak to,playing,1,not judged yet
+vidor,ride,playing,1,not judged yet
+vidor,above,playing,1,not judged yet
+vidor,caress,looks at,1,not judged yet
+vidor,touch,looks at,1,mismatch (wrong)
+vidor,caress,wearing,1,not judged yet
+vidor,caress,approaching,1,mismatch (wrong)
+vidor,hit,carrying,1,mismatch (wrong)
+vidor,beneath,hugging,1,mismatch (wrong)
+vidor,beneath,looks at,1,mismatch (wrong)
+vidor,hold hand of,hold,1,not judged yet
+vidor,kiss,hold,1,not judged yet
+vidor,hold hand of,holds,1,not judged yet
+vidor,kiss,holds,1,not judged yet
+vidor,lift,hugging,1,mismatch (wrong)
+vidor,hold hand of,hugging,1,semantic overlap (right)
+vidor,kiss,hugging,1,semantic overlap (right)
+vidor,touch,hugging,1,hypernym/hyponym (right)
+vidor,above,hugging,1,mismatch (wrong)
+vidor,kiss,approaches,1,not judged yet
+vidor,hug,approaching,1,mismatch (wrong)
+vidor,kiss,approaching,1,mismatch (wrong)
+vidor,hug,moves away from,1,mismatch (wrong)
+vidor,kiss,moves away from,1,not judged yet
+vidor,kiss,in front of,1,mismatch (wrong)
+vidor,hold hand of,playing with,1,mismatch (wrong)
+vidor,kiss,playing with,1,mismatch (wrong)
+vidor,touch,playing with,1,mismatch (wrong)
+vidor,above,playing with,1,mismatch (wrong)
+vidor,kiss,touching,1,semantic overlap (right)
+vidor,lift,plays with,1,mismatch (wrong)
+vidor,hug,plays with,1,mismatch (wrong)
+vidor,hold hand of,plays with,1,not judged yet
+vidor,kiss,plays with,1,not judged yet
+vidor,touch,plays with,1,mismatch (wrong)
+vidor,pat,moves away from,1,mismatch (wrong)
+vidor,grab,moves away from,1,mismatch (wrong)
+vidor,inside,above,1,not judged yet
+vidor,feed,moving with,1,not judged yet
+vidor,away,hold hand of,1,not judged yet
+vidor,inside,hold,1,not judged yet
+vidor,push,push,1,identical (right)
+vidor,behind,push,1,not judged yet
+vidor,next to,push,1,not judged yet
+vidor,push,inside,1,mismatch (wrong)
+vidor,press,riding,1,not judged yet
+vidor,squeeze,riding,1,not judged yet
+vidor,press,ride,1,not judged yet
+vidor,squeeze,ride,1,not judged yet
+vidor,squeeze,above,1,not judged yet
+vidor,point to,pushes,1,not judged yet
+vidor,throw,approaches,1,not judged yet
+vidor,throw,sitting on,1,not judged yet
+vidor,throw,playing with,1,mismatch (wrong)
+vidor,play(instrument),behind,1,mismatch (wrong)
+vidor,carry,ride,1,not judged yet
+vidor,carry,inside,1,not judged yet
+vidor,bite,playing with,1,mismatch (wrong)
+vidor,grab,playing with,1,mismatch (wrong)
+vidor,bite,behind,1,not judged yet
+vidor,hug,petting,1,mismatch (wrong)
+vidor,hug,inside,1,not judged yet
+vidor,watch,hug,1,not judged yet
+vidor,in front of,hug,1,not judged yet
+vidor,towards,hug,1,not judged yet
+vidor,away,hug,1,not judged yet
+vidor,lean on,petting,1,not judged yet
+vidor,wave hand to,holds,1,not judged yet
+vidor,wave hand to,pushes,1,not judged yet
+vidor,wave hand to,moving away from,1,mismatch (wrong)
+vidor,wave hand to,carrying,1,not judged yet
+vidor,use,wearing,1,not judged yet
+vidor,throw,behind,1,not judged yet
+vidor,wave,behind,1,not judged yet
+vidor,hold,dancing with,1,mismatch (wrong)
+vidor,push,playing,1,not judged yet
+vidor,get off,holding,1,not judged yet
+vidor,get off,approaches,1,not judged yet
+vidor,get off,moves away from,1,not judged yet
+vidor,get off,approaching,1,not judged yet
+vidor,get off,moving away from,1,not judged yet
+vidor,get off,moving with,1,mismatch (wrong)
+vidor,lean on,moving with,1,mismatch (wrong)
+vidor,play(instrument),sitting on,1,not judged yet
+vidor,play(instrument),touching,1,hypernym/hyponym (right)
+vidor,pull,moving away from,1,mismatch (wrong)
+vidor,pull,petting,1,mismatch (wrong)
+vidor,pull,inside,1,not judged yet
+vidor,pull,below,1,not judged yet
+vidor,pull,on,1,mismatch (wrong)
+vidor,pull,above,1,mismatch (wrong)
+vidor,press,moves away from,1,mismatch (wrong)
+vidor,lean on,dances with,1,mismatch (wrong)
+vidor,press,behind,1,mismatch (wrong)
+vidor,point to,carrying,1,not judged yet
+vidor,pat,plays with,1,not judged yet
+vidor,pat,looks at,1,not judged yet
+vidor,pat,watch,1,not judged yet
+vidor,beneath,bite,1,not judged yet
+vidor,point to,dancing with,1,not judged yet
+vidor,point to,dances with,1,mismatch (wrong)
+vidor,next to,hold hand of,1,not judged yet
+vidor,towards,hold hand of,1,not judged yet

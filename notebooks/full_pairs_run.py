@@ -521,9 +521,11 @@ run_parallel([f"CUDA_VISIBLE_DEVICES={gpu} python3 tools/interp/encode_stage.py 
               f"--model {traser_dir} --base_model {qwen_dir} --datasets {ds_all} --n '{n_all}' --shard {i} --nshards {N_GPU}"
               for i, gpu in enumerate(GPUS)], "inputs")
 step("experiment 2 on every pair ...")
+PROCS_PER_GPU = 3     # copies per GPU: each one mostly waits between many small steps, so 3 share one big GPU well (~10-12 GB each)
+SLOTS = [g for g in GPUS for _ in range(PROCS_PER_GPU)]
 run_parallel([f"CUDA_VISIBLE_DEVICES={gpu} python3 tools/interp/pairs_stage.py --lm {LM_DIR} --work {WORK} "
-              f"--datasets {ds_all} --n '{n_all}' --control {CONTROL} --phases e2all --shard {i} --nshards {N_GPU}"
-              for i, gpu in enumerate(GPUS)], "experiment 2 (every pair)")
+              f"--datasets {ds_all} --n '{n_all}' --control {CONTROL} --phases e2all --shard {i} --nshards {len(SLOTS)}"
+              for i, gpu in enumerate(SLOTS)], "experiment 2 (every pair)")
 save("interp", quiet=True)
 run_parallel([f"python3 tools/interp/pairs_report.py --work {WORK} --datasets {' '.join(sorted(set(DATASETS) | set(use)))} "
               "--only_all"], "report (adds table 2b)")

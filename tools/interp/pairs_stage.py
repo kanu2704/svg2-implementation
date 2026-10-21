@@ -245,6 +245,8 @@ def e2_all(lm, V, judge, vocab, picks, other):
                         ob = ctx.rank([f"{k}, [[" for k in objs if k != s], [f"{o}, [["])
                         t = ob["targets"].get(f"{o}, [[") if ob else None
                         r["object_rank"], r["object_lp"] = (t["rank"], round(t["lp"], 3)) if t else (None, None)
+                        # the objects it would write here, best first (for the lenient object check, pairs_lenient.py)
+                        r["object_top"] = [[int(c.split(",")[0]), v] for c, v in ob["top"]] if ob else []
                     p.setdefault(hname, {})[cname] = r
         del ctx
         if lm.torch.cuda.is_available():
@@ -554,6 +556,18 @@ def other_video(lm, ds, v, pool, work, seed):
     return lm.torch.load(p["embeds"]).to(lm.device, dtype=lm.dtype)[None], C.read_json(p["layout"])
 
 
+def finished(path, phase):
+    """A phase's result exists; for e2all also with the objects it picks (files from before that are redone)."""
+    if not path.exists():
+        return False
+    if phase != "e2all":
+        return True
+    text = path.read_text()
+    d = json.loads(text)
+    has_words = any(p.get("words") for g in ("missed", "written") for p in d.get(g, []))
+    return "skipped" in d or not has_words or '"object_top"' in text
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lm", required=True, help="TRASER's language model exported by tools/export_lm.py")
@@ -584,7 +598,7 @@ def main():
         for rank_, v in enumerate(vids):
             if rank_ % args.nshards != args.shard or not C.work_paths(args.work, ds, v)["embeds"].exists():
                 continue
-            phases = [p for p in args.phases if not C.out_path(p, ds, v, args.out).exists()
+            phases = [p for p in args.phases if not finished(C.out_path(p, ds, v, args.out), p)
                       and not (p == "e6" and rank_ >= args.push_videos)]
             if phases:
                 jobs.append((ds, v, phases))
