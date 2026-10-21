@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child", "attributes": ["dark hair", "partially submerged", "head tilted forward"]}, {"object 2": "child", "attributes": ["dark-haired", "partially-submerged", "tilted-head"]}], "relationships": [[1, "in front of", 2, [[0, 9]]], [1, "far from", 2, [[0, 9]]]]}

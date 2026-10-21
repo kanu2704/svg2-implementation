@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "child"}, {"object 2": "child"}, {"object 3": "child"}, {"object 4": "child"}, {"object 5": "child"}, {"object 6": "child"}, {"object 7": "child"}], "relationships": [[1, "next to", 7, [[0, 19]]], [7, "next to", 6, [[0, 19]]], [6, "next to", 5, [[0, 19]]], [5, "next to", 4, [[0, 19]]], [4, "next to", 3, [[0, 19]]], [3, "next to", 2, [[0, 19]]]]}

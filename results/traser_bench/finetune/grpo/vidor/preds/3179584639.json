@@ -1,0 +1,1 @@
+{"objects": [{"object 1": "baby", "attributes": ["small", "delicate", "soft", "rounded", "light-colored", "patterned"]}, {"object 2": "adult"}, {"object 3": "camera"}], "relationships": [[2, "holding", 1, [[0, 9]]], [2, "looking at", 1, [[0, 9]]], [2, "in front of", 1, [[0, 9]]], [2, "touching", 1, [[0, 9]]]]}
