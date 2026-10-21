@@ -293,7 +293,7 @@ class Judge:
             a = self.agreement(m)
             if not a["only_it"] and m != self.model:
                 continue
-            out.append(f"{a['only_it']} words Kimi K3 never judged were judged by {m} (Kimi K3 did not answer). "
+            out.append(f"{a['only_it']} words Kimi K3 never judged were judged by {m} (NVIDIA retired Kimi K3 on 15 Oct 2026). "
                        f"Check on words Kimi K3 judged: of {a['accepted']} it accepted, {m} also accepts "
                        f"{a['also_accepted']}; of {a['rejected']} it rejected, {m} also rejects {a['also_rejected']}.")
         return " ".join(out)
@@ -301,15 +301,24 @@ class Judge:
 
 def pick_judge(cache=RESULTS / "judge_cache.json", wanted="auto", log=print):
     """A Judge (others=True) whose model answers now: `wanted`, or (auto) Kimi K3, else the first of JUDGES that
-    answers 2 easy test words correctly."""
+    this key can use and that answers 2 easy test words correctly."""
     from nim import ask, nim_client
-    client = nim_client(timeout=180)
+    client, quick = nim_client(timeout=180), nim_client(timeout=60)
+    try:
+        seen = {m.id for m in client.models.list().data}
+    except Exception as e:  # noqa: BLE001
+        seen = set()
+        log(f"(could not list the models: {str(e)[:200]})")
+    order = JUDGES if wanted == "auto" else [wanted]
+    if seen and wanted == "auto":
+        log("not offered to this key, skipped: " + (", ".join(m for m in order if m not in seen) or "none"))
+        order = [m for m in order if m in seen]
     test = [{"i": 0, "type": "relation", "reference": "holding", "predicted": "grasping"},
             {"i": 1, "type": "object", "reference": "dog", "predicted": "table"}]
-    for model in JUDGES if wanted == "auto" else [wanted]:
-        log(f"is {model} answering? ...")
+    for model in order:
+        log(f"is {model} answering? (thinking models can take a minute; waiting at most 2) ...")
         try:
-            reply = ask(client, model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(test)}],
+            reply = ask(quick, model, [{"role": "user", "content": JUDGE_PROMPT % json.dumps(test)}],
                         dict(temperature=0.0), max_tokens=4096, tries=1)
             got = {int(x.get("i", -1)): str(x.get("category", "")).lower()
                    for x in reply.get("results", []) if isinstance(x, dict)}
@@ -322,11 +331,8 @@ def pick_judge(cache=RESULTS / "judge_cache.json", wanted="auto", log=print):
             judge.client = client
             return judge
         log(f"  it answers, but wrongly on 2 easy test words: {got}")
-    try:
-        seen = sorted(m.id for m in client.models.list().data)
-        log("models this key can use: " + ", ".join(seen))
-    except Exception as e:  # noqa: BLE001
-        log(f"(could not list the models: {str(e)[:200]})")
+    if seen:
+        log("models this key can use: " + ", ".join(sorted(seen)))
     raise SystemExit("no judge model answered; tell Claude, or choose one of the models above with --judge <model>")
 
 
