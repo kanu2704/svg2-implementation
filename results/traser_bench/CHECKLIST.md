@@ -35,7 +35,7 @@ Updated 21 Oct 2026, 16:10. ✅ done · ⏳ running · ⬜ to do (who does it)
 - ✅ SFT + GRPO trained on PVSG, tested on PVSG (62) + VidOR (300)
 - ⬜ judge the 833-883 relation words the fine-tuned models used that were never judged (`score.py --ask`, NVIDIA key): until then their lenient scores are too low
 - ⬜ SVG2test test: needs SVG2test prepared
-- ⬜ put the full SFT training log back into `logs/sft.jsonl` (Claude, after the runs; it is in the git history)
+- ✅ full SFT training log back in `logs/sft.jsonl` (steps 1-79 of 86; the last 7 steps were lost when the server swapped the file)
 
 ## 8. Write-up
 - ⬜ one-page summary for the supervisor: interpretability + pair experiment + fine-tuning (Claude)
