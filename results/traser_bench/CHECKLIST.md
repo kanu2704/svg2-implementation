@@ -20,7 +20,7 @@ Updated 21 Oct 2026, 16:10. ✅ done · ⏳ running · ⬜ to do (who does it)
 ## 5. Experiment 2 on every human pair (`PAIRS.md` 2b, `PAIRS_LENIENT.md`)
 - ✅ PVSG: 62 videos, 739 pairs (without the objects it picks)
 - ⏳ VidOR: 124 / 835 videos (running, 1 copy)
-- ⬜ restart with the new code (you, server): saves the objects it picks + 3 copies; PVSG and the VidOR videos done so far are redone
+- ⬜ restart with the new code (you, server): 3 copies; the remaining videos get relations + the objects it picks, then a quick objects-only step adds the objects to PVSG and the VidOR videos done before
 - ⬜ SVG2test (100): put the SA-V links file at `/media/nas_mount/kanupriya/sav_links.txt`, then start `full_pairs_run.py` again
 
 ## 6. Lenient judge (Kimi K3) on experiment 2b (`interp/PAIRS_LENIENT.md`, `judge_check_*.csv`)

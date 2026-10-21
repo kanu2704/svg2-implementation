@@ -527,6 +527,11 @@ run_parallel([f"CUDA_VISIBLE_DEVICES={gpu} python3 tools/interp/pairs_stage.py -
               f"--datasets {ds_all} --n '{n_all}' --control {CONTROL} --phases e2all --shard {i} --nshards {len(SLOTS)}"
               for i, gpu in enumerate(SLOTS)], "experiment 2 (every pair)")
 save("interp", quiet=True)
+step("the objects it picks, for the videos done before they were saved ...")
+run_parallel([f"CUDA_VISIBLE_DEVICES={gpu} python3 tools/interp/pairs_stage.py --lm {LM_DIR} --work {WORK} "
+              f"--datasets {ds_all} --n '{n_all}' --control {CONTROL} --phases e2obj --shard {i} --nshards {len(SLOTS)}"
+              for i, gpu in enumerate(SLOTS)], "objects for the earlier videos")
+save("interp", quiet=True)
 run_parallel([f"python3 tools/interp/pairs_report.py --work {WORK} --datasets {' '.join(sorted(set(DATASETS) | set(use)))} "
               "--only_all"], "report (adds table 2b)")
 save("interp")

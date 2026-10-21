@@ -17,6 +17,8 @@ Phases (one JSON per video and phase under results/traser_bench/interp/raw/<phas
       pair of every video (missed and written, no sampling) + non-related pairs, with no earlier relation
       (`"relationships": [[s, "`, so nothing can be copied from text written with the video); "answer" = the earlier
       setup, TRASER's own answer re-opened, on every missed pair.
+  e2obj  only the objects it picks (object_top), added to e2all results saved before they were kept: the same
+      inputs, contexts and pairs, without the (much slower) relation word step.
   e3  keep writing (C): from where TRASER closed its list, re-open it ("," + "[") up to 3 times and let it write;
       start a relation with the missed pair's subject and let it finish; ask again as a new user turn
       ("List more relationships of object s", the multi-turn fix of VisualSwap). Which missed pairs come back?
@@ -52,7 +54,7 @@ from interp import common as C  # noqa: E402
 from interp.lm_stage import (LM, STOP_IDS, Context, Video, attach, blank, human_relations, layer_out,  # noqa: E402
                              replace_out, vocabulary)
 
-PHASES = ["e2", "e3", "e4", "e6"]          # + "e2all" (asked for by name)
+PHASES = ["e2", "e3", "e4", "e6"]          # + "e2all", "e2obj" (asked for by name)
 LOOSE_REL = re.compile(r'\[\s*(-?\d+)\s*,\s*"((?:[^"\\]|\\.)*)"\s*,\s*(-?\d+)\s*,')
 REASK = ("<|im_end|>\n<|im_start|>user\nList more relationships of object {s}, in the same format "
          "[subject, \"relation\", object, [[start, end]]].<|im_end|>\n<|im_start|>assistant\n")
@@ -252,6 +254,42 @@ def e2_all(lm, V, judge, vocab, picks, other):
         if lm.torch.cuda.is_available():
             lm.torch.cuda.empty_cache()
     return {"conditions": list(inputs), "contexts": list(heads), "vocabulary": len(vocab), **out}
+
+
+def e2_objects(lm, V, saved, other):
+    """e2obj: the objects it picks (object_top), added to an e2all result saved before they were kept. Same inputs,
+    contexts and pairs as e2_all, only its object step. The object rank saved then must come out the same; the
+    counts go to "objects_added"."""
+    heads = {"fresh": fresh_head(V.text), "answer": list_open(V)}
+    heads = {k: h for k, h in heads.items() if h is not None}
+    inputs = {"clean": V.inp, "zeros": blank(V.inp, C.latent_positions(V.layout))}
+    if other is not None:
+        inputs["other_video"] = other_fill(V.inp, V.layout, *other)
+    objs = list(range(1, V.n + 1)) + [-1]
+    same = differ = 0
+    for cname, x in inputs.items():
+        ctx = Context(lm, x)
+        for kind in ("missed", "written"):
+            for p in saved.get(kind, []):
+                if not p.get("words"):
+                    continue
+                s, o = p["s_k"], p["o_k"]
+                for hname, h in heads.items():
+                    r = p.get(hname, {}).get(cname)
+                    if r is None or "object_top" in r:
+                        continue
+                    ctx.goto(h + f'{s}, "{p["words"][0]}", ')
+                    ob = ctx.rank([f"{k}, [[" for k in objs if k != s], [f"{o}, [["])
+                    r["object_top"] = [[int(c.split(",")[0]), v] for c, v in ob["top"]] if ob else []
+                    t = ob["targets"].get(f"{o}, [[") if ob else None
+                    if (t["rank"] if t else None) == r.get("object_rank"):
+                        same += 1
+                    else:
+                        differ += 1
+        del ctx
+        if lm.torch.cuda.is_available():
+            lm.torch.cuda.empty_cache()
+    return dict(saved, objects_added={"same_rank": same, "different_rank": differ})
 
 
 # ----------------------------------------------------------------------------- e3
@@ -557,10 +595,11 @@ def other_video(lm, ds, v, pool, work, seed):
 
 
 def finished(path, phase):
-    """A phase's result exists; for e2all also with the objects it picks (files from before that are redone)."""
+    """A phase's result exists. e2obj (path: the e2all result) is done when that result has the objects it picks,
+    has no pair with human words, or does not exist yet (then e2all writes them)."""
+    if phase != "e2obj":
+        return path.exists()
     if not path.exists():
-        return False
-    if phase != "e2all":
         return True
     text = path.read_text()
     d = json.loads(text)
@@ -598,7 +637,7 @@ def main():
         for rank_, v in enumerate(vids):
             if rank_ % args.nshards != args.shard or not C.work_paths(args.work, ds, v)["embeds"].exists():
                 continue
-            phases = [p for p in args.phases if not finished(C.out_path(p, ds, v, args.out), p)
+            phases = [p for p in args.phases if not finished(C.out_path("e2all" if p == "e2obj" else p, ds, v, args.out), p)
                       and not (p == "e6" and rank_ >= args.push_videos)]
             if phases:
                 jobs.append((ds, v, phases))
@@ -636,6 +675,13 @@ def main():
                     if ds not in vocab:
                         vocab[ds] = vocabulary(ds, args.results, args.vocab)[0]
                     res = e2_all(lm, V, judge, vocab[ds], picks_all, other_video(lm, ds, v, pools[ds], args.work, args.seed))
+                elif ph == "e2obj":
+                    path = C.out_path("e2all", ds, v, args.out)
+                    res = e2_objects(lm, V, json.loads(path.read_text()),
+                                     other_video(lm, ds, v, pools[ds], args.work, args.seed))
+                    C.write_json(path, dict(res, objects_seconds=round(time.time() - t0, 1)))
+                    log(f"{ds}/{v} e2obj done in {time.time() - t0:.0f} s (saved object ranks: {res['objects_added']})", tag)
+                    continue
                 elif ph == "e3":
                     res = e3_continue(lm, V, {k: [dict(p) for p in x] for k, x in picks.items()})
                 elif ph == "e4":
