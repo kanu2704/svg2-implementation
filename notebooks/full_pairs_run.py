@@ -434,7 +434,7 @@ def watch(dataset, total, every=15, autosave_min=15, label=None, count=None, aut
 print("helpers ready")
 
 # ----------------------------------------------------------------------------- pairs 1 settings
-DATASETS = ["pvsg", "vidor"]   # add "svg2test" once it is prepared (traser_eval.ipynb 2a-2d, needs the SA-V links file)
+DATASETS = ["pvsg", "vidor"] + (["svg2test"] if glob.glob(os.path.join(BENCH, "svg2test", "*", "gt.json")) else [])   # SVG2test once it is prepared (traser_eval.ipynb 2a-2d, needs the SA-V links file)
 INTERP_N = {"svg2test": 0, "pvsg": 0, "vidor": 300}   # videos per dataset (0 = all); a bigger sample keeps the first run's videos (40 / 25 / 60) inside it
 EXPERIMENTS = [1, 2, 3, 4, 5]      # experiments run and shown (6 is left out)
 MISSED, WRITTEN, CONTROL = 8, 3, 3   # per video: missed human pairs tested, written human pairs and unrelated pairs (for comparison)
@@ -556,4 +556,17 @@ run_parallel([f"python3 tools/interp/pairs_report.py --work {WORK} --datasets {'
 save("interp")
 step(f"done in {(time.time() - t0) / 3600:.1f} h → PAIRS.md, section 2b")
 
-step('===== all done: results/traser_bench/interp/PAIRS.md, section 2b =====')
+# ----------------------------------------------------------------------------- interpretability report: SVG2test (traser_eval.ipynb 6)
+if "svg2test" in use:      # PVSG (25) and VidOR (60) were done before; finished videos are skipped
+    n_rep = json.dumps({"svg2test": 40})
+    t0 = time.time()
+    step("interpretability report, SVG2test sample (40 videos): stage 2 ...")
+    run_parallel([f"CUDA_VISIBLE_DEVICES={GPUS[0]} python3 tools/interp/lm_stage.py --lm {LM_DIR} --work {WORK} "
+                  f"--datasets svg2test --n '{n_rep}'"], "interpretability stage 2 (SVG2test)")
+    save("interp", quiet=True)
+    run_parallel([f"python3 tools/interp/probe.py --work {WORK} --datasets svg2test --n '{n_rep}'",], "probes (SVG2test)")
+    run_parallel(["python3 tools/interp/report.py"], "REPORT.md")
+    save("interp")
+    step(f"done in {(time.time() - t0) / 3600:.1f} h → interp/REPORT.md with SVG2test")
+
+step('===== all done: results/traser_bench/interp/PAIRS.md (section 2b) and REPORT.md =====')

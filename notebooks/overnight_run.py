@@ -419,7 +419,7 @@ print("helpers ready")
 # ----------------------------------------------------------------------------- pair experiment
 try:
     # --- pairs 1 settings
-    DATASETS = ["pvsg", "vidor"]   # add "svg2test" once it is prepared (traser_eval.ipynb 2a-2d, needs the SA-V links file)
+    DATASETS = ["pvsg", "vidor"] + (["svg2test"] if glob.glob(os.path.join(BENCH, "svg2test", "*", "gt.json")) else [])   # SVG2test once it is prepared (traser_eval.ipynb 2a-2d, needs the SA-V links file)
     INTERP_N = {"svg2test": 0, "pvsg": 0, "vidor": 300}   # videos per dataset (0 = all); a bigger sample keeps the first run's videos (40 / 25 / 60) inside it
     EXPERIMENTS = [1, 2, 3, 4, 5]      # experiments run and shown (6 is left out)
     MISSED, WRITTEN, CONTROL = 8, 3, 3   # per video: missed human pairs tested, written human pairs and unrelated pairs (for comparison)

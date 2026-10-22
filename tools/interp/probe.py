@@ -250,7 +250,7 @@ def main():
     args = ap.parse_args()
     import bench_eval as E
     E.RESULTS = Path(args.results)
-    out = {}
+    out = C.read_json(Path(args.out) / "probes.json", {})     # the datasets not run this time stay as they are
     for ds in args.datasets:
         vids = C.select_videos(ds, args.n.get(ds), args.seed, args.results)
         videos = [V for V in (load_video(ds, v, args.work, args.results) for v in vids) if V is not None]
