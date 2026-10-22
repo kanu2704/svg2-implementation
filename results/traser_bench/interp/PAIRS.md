@@ -41,27 +41,36 @@ Same answer with the video hidden = the word comes from habit. Good with the vid
 
 | dataset | context | pairs | input | rank 1 | top 5 | top 5 (equiv.) | median rank | object first | video raises | > 1 nat | AUC related vs not |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| pvsg | fresh | related (645) | clean | 43% | 65% | 80% | 3 | 47% | - | - | 0.72 |
-| pvsg | fresh | related (645) | other video | 32% | 55% | 73% | 4 | 27% | 63% | 49% | 0.62 |
-| pvsg | fresh | related (645) | zeros | 36% | 60% | 74% | 3 | 32% | 55% | 33% | 0.65 |
-| pvsg | fresh | missed (387) | clean | 34% | 56% | 72% | 4 | 34% | - | - | - |
-| pvsg | fresh | missed (387) | other video | 27% | 49% | 66% | 6 | 19% | 57% | 44% | - |
-| pvsg | fresh | missed (387) | zeros | 26% | 50% | 63% | 6 | 20% | 51% | 36% | - |
-| pvsg | fresh | written (258) | clean | 55% | 79% | 91% | 1 | 65% | - | - | - |
-| pvsg | fresh | written (258) | other video | 38% | 66% | 85% | 3 | 40% | 71% | 56% | - |
-| pvsg | fresh | written (258) | zeros | 51% | 74% | 89% | 1 | 51% | 60% | 29% | - |
-| pvsg | answer | related (305) | clean | 16% | 29% | 62% | 11 | 36% | - | - | - |
-| pvsg | answer | related (305) | other video | 12% | 26% | 54% | 13 | 23% | 68% | 47% | - |
-| pvsg | answer | related (305) | zeros | 13% | 27% | 55% | 13 | 23% | 66% | 42% | - |
-| pvsg | answer | missed (305) | clean | 16% | 29% | 62% | 11 | 36% | - | - | - |
-| pvsg | answer | missed (305) | other video | 12% | 26% | 54% | 13 | 23% | 68% | 47% | - |
-| pvsg | answer | missed (305) | zeros | 13% | 27% | 55% | 13 | 23% | 66% | 42% | - |
-| vidor | fresh | related (2) | clean | 0% | 0% | 50% | 18.5 | 100% | - | - | - |
-| vidor | fresh | related (2) | other video | 50% | 50% | 100% | 8.5 | 100% | 0% | 0% | - |
-| vidor | fresh | related (2) | zeros | 0% | 0% | 50% | 18.5 | 100% | 0% | 0% | - |
-| vidor | fresh | written (2) | clean | 0% | 0% | 50% | 18.5 | 100% | - | - | - |
-| vidor | fresh | written (2) | other video | 50% | 50% | 100% | 8.5 | 100% | 0% | 0% | - |
-| vidor | fresh | written (2) | zeros | 0% | 0% | 50% | 18.5 | 100% | 0% | 0% | - |
+| pvsg | fresh | related (739) | clean | 44% | 66% | 81% | 2 | 42% | - | - | 0.71 |
+| pvsg | fresh | related (739) | other video | 33% | 57% | 76% | 4 | 24% | 62% | 48% | 0.60 |
+| pvsg | fresh | related (739) | zeros | 35% | 57% | 75% | 3 | 29% | 56% | 34% | 0.63 |
+| pvsg | fresh | missed (476) | clean | 37% | 58% | 75% | 3 | 29% | - | - | - |
+| pvsg | fresh | missed (476) | other video | 30% | 51% | 70% | 5 | 16% | 57% | 43% | - |
+| pvsg | fresh | missed (476) | zeros | 26% | 47% | 67% | 6 | 17% | 54% | 37% | - |
+| pvsg | fresh | written (263) | clean | 56% | 80% | 91% | 1 | 64% | - | - | - |
+| pvsg | fresh | written (263) | other video | 40% | 66% | 85% | 3 | 39% | 70% | 56% | - |
+| pvsg | fresh | written (263) | zeros | 52% | 75% | 89% | 1 | 50% | 60% | 29% | - |
+| pvsg | answer | related (355) | clean | 17% | 36% | 66% | 10 | 31% | - | - | - |
+| pvsg | answer | related (355) | other video | 14% | 33% | 60% | 11 | 21% | 65% | 45% | - |
+| pvsg | answer | related (355) | zeros | 13% | 32% | 61% | 11 | 20% | 64% | 42% | - |
+| pvsg | answer | missed (355) | clean | 17% | 36% | 66% | 10 | 31% | - | - | - |
+| pvsg | answer | missed (355) | other video | 14% | 33% | 60% | 11 | 21% | 65% | 45% | - |
+| pvsg | answer | missed (355) | zeros | 13% | 32% | 61% | 11 | 20% | 64% | 42% | - |
+| vidor | fresh | related (11157) | clean | 7% | 25% | 63% | 12 | 38% | - | - | 0.65 |
+| vidor | fresh | related (11157) | other video | 8% | 26% | 64% | 13 | 31% | 38% | 26% | 0.57 |
+| vidor | fresh | related (11157) | zeros | 10% | 36% | 72% | 9 | 32% | 26% | 15% | 0.56 |
+| vidor | fresh | missed (6528) | clean | 7% | 22% | 57% | 13 | 30% | - | - | - |
+| vidor | fresh | missed (6528) | other video | 8% | 24% | 60% | 14 | 26% | 36% | 25% | - |
+| vidor | fresh | missed (6528) | zeros | 10% | 31% | 66% | 11 | 25% | 27% | 15% | - |
+| vidor | fresh | written (4629) | clean | 8% | 30% | 72% | 11 | 49% | - | - | - |
+| vidor | fresh | written (4629) | other video | 8% | 30% | 71% | 12 | 38% | 41% | 27% | - |
+| vidor | fresh | written (4629) | zeros | 11% | 42% | 82% | 7 | 42% | 26% | 14% | - |
+| vidor | answer | related (6528) | clean | 26% | 74% | 94% | 3 | 31% | - | - | - |
+| vidor | answer | related (6528) | other video | 22% | 67% | 92% | 4 | 28% | 51% | 29% | - |
+| vidor | answer | related (6528) | zeros | 20% | 65% | 92% | 4 | 28% | 55% | 30% | - |
+| vidor | answer | missed (6528) | clean | 26% | 74% | 94% | 3 | 31% | - | - | - |
+| vidor | answer | missed (6528) | other video | 22% | 67% | 92% | 4 | 28% | 51% | 29% | - |
+| vidor | answer | missed (6528) | zeros | 20% | 65% | 92% | 4 | 28% | 55% | 30% | - |
 
 If the video mattered little, *clean* and *other video* would look the same, also in the *fresh* context. A large gap only in *fresh* means the earlier text carries the video's information in *answer*.
 
