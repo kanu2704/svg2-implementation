@@ -51,8 +51,27 @@ else:
         # packages are installed into the kernel's environment: never into someone else's
         raise RuntimeError(f"wrong kernel: this notebook runs in {sys.prefix}, your settings say {ENV}. "
                            "Pick that environment as the kernel (top right) and run 0a again. Nothing was installed.")
+def gpu_uuids(ids):
+    """nvidia-smi's GPU numbers -> the cards' UUIDs. CUDA numbers only the GPUs that work, so once a GPU of the
+    machine crashes, CUDA's numbers no longer match nvidia-smi's; a UUID always names the same card."""
+    out = subprocess.run(["nvidia-smi", "--query-gpu=index,uuid,name,memory.total", "--format=csv,noheader"],
+                         capture_output=True, text=True).stdout
+    cards = {r[0]: r[1:] for r in (list(map(str.strip, l.split(","))) for l in out.splitlines()) if len(r) == 4}
+    uuids = []
+    for x in [x.strip() for x in ids.split(",") if x.strip()]:
+        if x.startswith("GPU-"):
+            uuids.append(x)
+        elif x in cards:
+            step(f"GPU {x}: {cards[x][1]}, {cards[x][2]} ({cards[x][0]})")
+            uuids.append(cards[x][0])
+        else:
+            raise RuntimeError(f"GPU {x} of your settings is not working right now (nvidia-smi lists {sorted(cards)}). "
+                               "Nothing was started: check nvidia-smi, then run this again.")
+    return ",".join(uuids)
+
 if GPU_IDS:
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"   # number the GPUs as nvidia-smi does (CUDA's default order differs)
+    GPU_IDS = gpu_uuids(GPU_IDS)                     # by UUID: still the same card after another GPU of the machine crashes
     os.environ["CUDA_VISIBLE_DEVICES"] = GPU_IDS     # set before any GPU use: every cell and worker sees only these
 elif not ON_KAGGLE:
     print("!! GPU_IDS is empty: every GPU of this machine is visible. On a shared server set it (see above).")
@@ -275,7 +294,7 @@ def start_workers(dataset, videos, last=(), extra="", label=None, cmd=None, done
     todo = [v for v in videos if v not in done and v not in last] + [v for v in last if v in videos and v not in done]
     ids = [x.strip() for x in GPU_IDS.split(",") if x.strip()]     # own server: only these GPUs
     out = subprocess.run(["nvidia-smi"] + (["-i", ",".join(ids)] if ids else []) +
-                         ["--query-gpu=index,memory.free", "--format=csv,noheader,nounits"], capture_output=True, text=True).stdout
+                         [f"--query-gpu={'uuid' if ids else 'index'},memory.free", "--format=csv,noheader,nounits"], capture_output=True, text=True).stdout
     rows = [l.split(",") for l in out.splitlines() if l.count(",") == 1]
     gpus, free = [r[0].strip() for r in rows] or ["0"], [r[1].strip() for r in rows]
     step(f"{label}: {len(set(videos) & set(done))} videos done earlier, {len(todo)} to run, GPU(s) {gpus}, free MiB: {free}")
@@ -455,7 +474,7 @@ try:
     GPUS = None              # None = every GPU this notebook can see
     if GPUS is None:
         seen = os.environ.get("CUDA_VISIBLE_DEVICES")
-        GPUS = [int(x) for x in seen.split(",") if x.strip()] if seen else list(range(max(1, torch.cuda.device_count())))
+        GPUS = [x.strip() for x in seen.split(",") if x.strip()] if seen else list(range(max(1, torch.cuda.device_count())))
     N_GPU = len(GPUS)
 
     def run_parallel(cmds, label):
