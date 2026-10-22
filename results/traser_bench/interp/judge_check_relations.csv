@@ -1482,1125 +1482,1806 @@ pvsg,picking,inside,1,not judged yet
 pvsg,beside,grabbing,1,not judged yet
 pvsg,watering,manipulates,1,not judged yet
 pvsg,watering,below,1,not judged yet
-vidor,next to,in front of,2318,mismatch (wrong)
-vidor,in front of,in front of,1954,identical (right)
-vidor,next to,approaches,1617,mismatch (wrong)
-vidor,next to,near,1582,hypernym/hyponym (right)
-vidor,in front of,approaches,1486,mismatch (wrong)
-vidor,next to,overlapping,1312,mismatch (wrong)
-vidor,next to,above,1207,mismatch (wrong)
-vidor,in front of,near,1176,hypernym/hyponym (right)
-vidor,next to,next to,1064,identical (right)
-vidor,in front of,overlapping,1028,semantic overlap (right)
-vidor,next to,behind,997,mismatch (wrong)
-vidor,next to,holding,997,mismatch (wrong)
-vidor,in front of,approaching,834,mismatch (wrong)
-vidor,next to,approaching,829,mismatch (wrong)
-vidor,in front of,moves away from,827,mismatch (wrong)
-vidor,next to,moves away from,820,mismatch (wrong)
-vidor,next to,touching,797,semantic overlap (right)
-vidor,behind,in front of,790,mismatch (wrong)
-vidor,in front of,behind,751,mismatch (wrong)
-vidor,next to,below,707,mismatch (wrong)
-vidor,in front of,above,705,mismatch (wrong)
-vidor,watch,in front of,660,mismatch (wrong)
-vidor,in front of,below,628,mismatch (wrong)
-vidor,in front of,next to,624,semantic overlap (right)
-vidor,away,in front of,624,mismatch (wrong)
-vidor,in front of,holding,620,mismatch (wrong)
-vidor,next to,attached to,611,semantic overlap (right)
-vidor,away,approaches,600,mismatch (wrong)
-vidor,behind,approaches,587,mismatch (wrong)
-vidor,next to,on,578,mismatch (wrong)
-vidor,behind,near,522,hypernym/hyponym (right)
-vidor,watch,approaches,509,mismatch (wrong)
-vidor,watch,near,482,mismatch (wrong)
-vidor,in front of,touching,466,mismatch (wrong)
-vidor,next to,holds,441,mismatch (wrong)
-vidor,behind,behind,434,identical (right)
-vidor,watch,overlapping,427,mismatch (wrong)
-vidor,in front of,on,427,mismatch (wrong)
-vidor,next to,looking at,424,mismatch (wrong)
-vidor,behind,overlapping,421,semantic overlap (right)
-vidor,in front of,attached to,421,mismatch (wrong)
-vidor,watch,holding,398,mismatch (wrong)
-vidor,towards,in front of,397,mismatch (wrong)
-vidor,away,approaching,394,mismatch (wrong)
-vidor,towards,approaches,383,synonym (right)
-vidor,next to,moves with,381,mismatch (wrong)
-vidor,in front of,looking at,380,mismatch (wrong)
-vidor,in front of,moves with,366,mismatch (wrong)
-vidor,away,near,362,mismatch (wrong)
-vidor,watch,touching,361,mismatch (wrong)
-vidor,away,moves away from,352,synonym (right)
-vidor,next to,carrying,348,mismatch (wrong)
-vidor,behind,above,343,mismatch (wrong)
-vidor,watch,next to,338,mismatch (wrong)
-vidor,behind,approaching,333,mismatch (wrong)
-vidor,watch,above,326,mismatch (wrong)
-vidor,behind,moves away from,319,mismatch (wrong)
-vidor,behind,below,300,mismatch (wrong)
-vidor,away,overlapping,295,mismatch (wrong)
-vidor,watch,approaching,294,mismatch (wrong)
-vidor,behind,next to,294,semantic overlap (right)
-vidor,away,holding,283,mismatch (wrong)
-vidor,next to,hold,282,mismatch (wrong)
-vidor,watch,looking at,279,synonym (right)
-vidor,away,above,279,mismatch (wrong)
-vidor,watch,behind,275,mismatch (wrong)
-vidor,behind,holding,260,mismatch (wrong)
-vidor,beneath,in front of,247,mismatch (wrong)
-vidor,next to,wearing,241,mismatch (wrong)
-vidor,towards,approaching,241,synonym (right)
-vidor,towards,near,236,mismatch (wrong)
-vidor,in front of,holds,226,mismatch (wrong)
-vidor,away,behind,223,mismatch (wrong)
-vidor,watch,moves away from,222,mismatch (wrong)
-vidor,in front of,moving away from,222,mismatch (wrong)
-vidor,towards,above,220,mismatch (wrong)
-vidor,towards,moves away from,215,mismatch (wrong)
-vidor,in front of,carrying,212,mismatch (wrong)
-vidor,next to,moving away from,209,mismatch (wrong)
-vidor,towards,overlapping,195,mismatch (wrong)
-vidor,towards,holding,189,mismatch (wrong)
-vidor,away,touching,185,mismatch (wrong)
-vidor,behind,on,183,mismatch (wrong)
-vidor,away,below,181,mismatch (wrong)
-vidor,in front of,wearing,174,mismatch (wrong)
-vidor,next to,inside,171,mismatch (wrong)
-vidor,watch,holds,164,mismatch (wrong)
-vidor,next to,sitting on,159,mismatch (wrong)
-vidor,behind,moves with,159,mismatch (wrong)
-vidor,towards,touching,151,mismatch (wrong)
-vidor,in front of,inside,151,mismatch (wrong)
-vidor,away,next to,147,mismatch (wrong)
-vidor,behind,attached to,147,not judged yet
-vidor,next to,moving with,144,mismatch (wrong)
-vidor,watch,below,144,mismatch (wrong)
-vidor,away,on,143,mismatch (wrong)
-vidor,behind,touching,142,mismatch (wrong)
-vidor,away,moving away from,141,synonym (right)
-vidor,beneath,approaches,135,mismatch (wrong)
-vidor,hold,holding,131,identical (right)
-vidor,in front of,moving with,128,mismatch (wrong)
-vidor,beneath,below,127,synonym (right)
-vidor,towards,behind,126,mismatch (wrong)
-vidor,in front of,hold,126,mismatch (wrong)
-vidor,in front of,passes,123,mismatch (wrong)
-vidor,watch,hold,122,mismatch (wrong)
-vidor,away,moves with,121,mismatch (wrong)
-vidor,towards,next to,119,mismatch (wrong)
-vidor,towards,below,118,mismatch (wrong)
-vidor,in front of,sitting on,117,mismatch (wrong)
-vidor,above,in front of,116,mismatch (wrong)
-vidor,beneath,near,115,mismatch (wrong)
-vidor,behind,carrying,115,mismatch (wrong)
-vidor,behind,looking at,113,mismatch (wrong)
-vidor,above,on,112,semantic overlap (right)
-vidor,watch,carrying,111,mismatch (wrong)
-vidor,beneath,overlapping,109,mismatch (wrong)
-vidor,next to,playing with,109,mismatch (wrong)
-vidor,away,attached to,108,not judged yet
-vidor,away,holds,107,mismatch (wrong)
-vidor,above,approaches,106,mismatch (wrong)
-vidor,towards,on,106,mismatch (wrong)
-vidor,away,looking at,104,mismatch (wrong)
-vidor,next to,touches,103,semantic overlap (right)
-vidor,beneath,above,100,mismatch (wrong)
-vidor,beneath,behind,99,not judged yet
-vidor,behind,holds,98,mismatch (wrong)
-vidor,beneath,carrying,96,mismatch (wrong)
-vidor,towards,looking at,95,semantic overlap (right)
-vidor,watch,moves with,94,mismatch (wrong)
-vidor,hold,holds,94,identical (right)
-vidor,next to,riding,94,mismatch (wrong)
-vidor,towards,attached to,94,not judged yet
-vidor,watch,wearing,93,mismatch (wrong)
-vidor,above,holding,92,mismatch (wrong)
-vidor,away,wearing,90,mismatch (wrong)
-vidor,behind,moving away from,90,mismatch (wrong)
-vidor,next to,looks at,88,mismatch (wrong)
-vidor,next to,passes,87,mismatch (wrong)
-vidor,watch,on,85,mismatch (wrong)
-vidor,above,above,83,identical (right)
-vidor,away,carrying,82,mismatch (wrong)
-vidor,beneath,attached to,82,not judged yet
-vidor,beneath,next to,81,not judged yet
-vidor,beneath,moves away from,80,mismatch (wrong)
-vidor,next to,pushes,80,mismatch (wrong)
-vidor,towards,moving away from,78,mismatch (wrong)
-vidor,towards,holds,77,mismatch (wrong)
-vidor,beneath,holding,77,mismatch (wrong)
-vidor,hold,hold,76,identical (right)
-vidor,ride,holding,76,mismatch (wrong)
-vidor,hold,touching,75,hypernym/hyponym (right)
-vidor,towards,moves with,75,semantic overlap (right)
-vidor,watch,moving away from,72,mismatch (wrong)
-vidor,next to,dancing with,71,mismatch (wrong)
-vidor,watch,playing with,69,mismatch (wrong)
-vidor,in front of,dancing with,69,mismatch (wrong)
-vidor,in front of,looks at,69,mismatch (wrong)
-vidor,in front of,riding,68,mismatch (wrong)
-vidor,above,moves away from,67,mismatch (wrong)
-vidor,away,hold,67,not judged yet
-vidor,behind,moving with,67,mismatch (wrong)
-vidor,behind,passes,66,mismatch (wrong)
-vidor,above,near,65,hypernym/hyponym (right)
-vidor,away,passes,64,mismatch (wrong)
-vidor,speak to,in front of,64,mismatch (wrong)
-vidor,towards,wearing,63,mismatch (wrong)
-vidor,watch,attached to,63,not judged yet
-vidor,watch,looks at,62,synonym (right)
-vidor,away,riding,61,mismatch (wrong)
-vidor,above,attached to,60,mismatch (wrong)
-vidor,beneath,moves with,57,mismatch (wrong)
-vidor,beneath,holds,57,mismatch (wrong)
-vidor,behind,inside,56,mismatch (wrong)
-vidor,above,riding,56,mismatch (wrong)
-vidor,beneath,approaching,55,mismatch (wrong)
-vidor,towards,hold,55,mismatch (wrong)
-vidor,lean on,touching,55,semantic overlap (right)
-vidor,above,overlapping,54,semantic overlap (right)
-vidor,next to,plays with,54,mismatch (wrong)
-vidor,speak to,next to,54,mismatch (wrong)
-vidor,ride,riding,54,identical (right)
-vidor,speak to,near,53,mismatch (wrong)
-vidor,lean on,in front of,53,mismatch (wrong)
-vidor,in front of,touches,52,mismatch (wrong)
-vidor,away,sitting on,52,mismatch (wrong)
-vidor,speak to,touching,51,mismatch (wrong)
-vidor,in front of,playing with,51,mismatch (wrong)
-vidor,in front of,dances with,51,mismatch (wrong)
-vidor,above,approaching,50,mismatch (wrong)
-vidor,behind,sitting on,50,mismatch (wrong)
-vidor,towards,carrying,50,mismatch (wrong)
-vidor,above,touching,49,mismatch (wrong)
-vidor,hold,in front of,48,mismatch (wrong)
-vidor,watch,dancing with,47,mismatch (wrong)
-vidor,speak to,approaches,47,mismatch (wrong)
-vidor,hold,approaches,46,mismatch (wrong)
-vidor,speak to,overlapping,46,mismatch (wrong)
-vidor,away,moving with,46,mismatch (wrong)
-vidor,hold,carrying,45,semantic overlap (right)
-vidor,next to,ride,44,mismatch (wrong)
-vidor,next to,dances with,44,mismatch (wrong)
-vidor,behind,hold,44,not judged yet
-vidor,above,ride,44,mismatch (wrong)
-vidor,ride,above,44,mismatch (wrong)
-vidor,hold,near,43,mismatch (wrong)
-vidor,towards,sitting on,43,mismatch (wrong)
-vidor,hold,wearing,42,mismatch (wrong)
-vidor,behind,wearing,42,mismatch (wrong)
-vidor,in front of,pushes,42,mismatch (wrong)
-vidor,ride,ride,42,identical (right)
-vidor,watch,touches,41,mismatch (wrong)
-vidor,ride,on,41,semantic overlap (right)
-vidor,watch,inside,40,mismatch (wrong)
-vidor,above,sitting on,39,semantic overlap (right)
-vidor,beneath,on,38,mismatch (wrong)
-vidor,ride,in front of,37,mismatch (wrong)
-vidor,speak to,looking at,36,semantic overlap (right)
-vidor,watch,sitting on,35,mismatch (wrong)
-vidor,lean on,sitting on,35,semantic overlap (right)
-vidor,away,inside,35,not judged yet
-vidor,watch,pushes,35,mismatch (wrong)
-vidor,above,next to,34,mismatch (wrong)
-vidor,hold,overlapping,34,mismatch (wrong)
-vidor,watch,moving with,33,mismatch (wrong)
-vidor,ride,near,33,mismatch (wrong)
-vidor,release,holding,32,mismatch (wrong)
-vidor,lean on,approaches,32,mismatch (wrong)
-vidor,next to,hugging,32,mismatch (wrong)
-vidor,speak to,holding,31,mismatch (wrong)
-vidor,above,behind,31,mismatch (wrong)
-vidor,in front of,hugging,31,mismatch (wrong)
-vidor,towards,passes,30,mismatch (wrong)
-vidor,lean on,holding,30,mismatch (wrong)
-vidor,away,pushes,30,mismatch (wrong)
-vidor,beneath,touching,30,mismatch (wrong)
-vidor,towards,riding,29,mismatch (wrong)
-vidor,behind,riding,29,mismatch (wrong)
-vidor,hold,looking at,29,mismatch (wrong)
-vidor,watch,plays with,28,mismatch (wrong)
-vidor,next to,petting,28,mismatch (wrong)
-vidor,above,holds,28,mismatch (wrong)
-vidor,watch,dances with,28,mismatch (wrong)
-vidor,hold,pushes,27,semantic overlap (right)
-vidor,above,hold,27,mismatch (wrong)
-vidor,beneath,passes,27,not judged yet
-vidor,lean on,near,27,mismatch (wrong)
-vidor,chase,in front of,27,mismatch (wrong)
-vidor,hold,above,27,mismatch (wrong)
-vidor,away,touches,26,mismatch (wrong)
-vidor,away,ride,26,mismatch (wrong)
-vidor,beneath,hold,26,not judged yet
-vidor,behind,dancing with,26,mismatch (wrong)
-vidor,above,carrying,26,mismatch (wrong)
-vidor,grab,holding,26,hypernym/hyponym (right)
-vidor,above,moves with,25,mismatch (wrong)
-vidor,lean on,on,25,hypernym/hyponym (right)
-vidor,watch,hugging,25,mismatch (wrong)
-vidor,watch,passes,25,mismatch (wrong)
-vidor,ride,next to,25,not judged yet
-vidor,towards,touches,24,mismatch (wrong)
-vidor,speak to,behind,24,mismatch (wrong)
-vidor,above,below,24,not judged yet
-vidor,ride,hold,24,mismatch (wrong)
-vidor,ride,approaches,24,not judged yet
-vidor,hold,next to,23,not judged yet
-vidor,speak to,above,23,mismatch (wrong)
-vidor,ride,overlapping,23,mismatch (wrong)
-vidor,lean on,next to,23,mismatch (wrong)
-vidor,next to,carry,23,not judged yet
-vidor,next to,playing,23,mismatch (wrong)
-vidor,release,touching,22,mismatch (wrong)
-vidor,towards,moving with,22,mismatch (wrong)
-vidor,beneath,moving with,22,not judged yet
-vidor,next to,use,22,not judged yet
-vidor,ride,carrying,22,mismatch (wrong)
-vidor,chase,approaches,22,semantic overlap (right)
-vidor,push,approaches,21,mismatch (wrong)
-vidor,in front of,ride,21,not judged yet
-vidor,watch,riding,21,mismatch (wrong)
-vidor,ride,holds,21,mismatch (wrong)
-vidor,lean on,overlapping,21,mismatch (wrong)
-vidor,in front of,use,21,not judged yet
-vidor,hold,playing with,20,mismatch (wrong)
-vidor,speak to,approaching,20,mismatch (wrong)
-vidor,away,dancing with,20,mismatch (wrong)
-vidor,carry,carrying,20,identical (right)
-vidor,touch,holding,19,semantic overlap (right)
-vidor,behind,looks at,19,mismatch (wrong)
-vidor,in front of,petting,19,mismatch (wrong)
-vidor,lean on,behind,19,mismatch (wrong)
-vidor,lift,holding,19,semantic overlap (right)
-vidor,carry,holding,19,hypernym/hyponym (right)
-vidor,beneath,moving away from,18,mismatch (wrong)
-vidor,release,holds,18,mismatch (wrong)
-vidor,towards,playing with,18,mismatch (wrong)
-vidor,towards,inside,18,not judged yet
-vidor,chase,overlapping,18,mismatch (wrong)
-vidor,chase,above,18,mismatch (wrong)
-vidor,grab,holds,18,hypernym/hyponym (right)
-vidor,grab,above,18,not judged yet
-vidor,bite,holding,18,mismatch (wrong)
-vidor,carry,wearing,18,semantic overlap (right)
-vidor,grab,touching,18,hypernym/hyponym (right)
-vidor,push,holding,17,semantic overlap (right)
-vidor,hold,plays with,17,mismatch (wrong)
-vidor,towards,looks at,17,semantic overlap (right)
-vidor,next to,feed,17,not judged yet
-vidor,behind,dances with,17,mismatch (wrong)
-vidor,feed,on,17,not judged yet
-vidor,release,approaches,16,mismatch (wrong)
-vidor,away,playing with,16,mismatch (wrong)
-vidor,hold,approaching,16,mismatch (wrong)
-vidor,above,inside,16,mismatch (wrong)
-vidor,hit,in front of,16,mismatch (wrong)
-vidor,towards,pushes,16,mismatch (wrong)
-vidor,lean on,approaching,16,mismatch (wrong)
-vidor,in front of,plays with,16,mismatch (wrong)
-vidor,chase,approaching,16,semantic overlap (right)
-vidor,chase,near,16,mismatch (wrong)
-vidor,hug,holding,16,hypernym/hyponym (right)
-vidor,behind,pushes,16,mismatch (wrong)
-vidor,point to,in front of,16,mismatch (wrong)
-vidor,push,in front of,15,mismatch (wrong)
-vidor,above,moving away from,15,mismatch (wrong)
-vidor,release,in front of,15,mismatch (wrong)
-vidor,hold,behind,15,mismatch (wrong)
-vidor,away,looks at,15,mismatch (wrong)
-vidor,above,wearing,15,mismatch (wrong)
-vidor,use,holding,15,hypernym/hyponym (right)
-vidor,bite,touching,15,mismatch (wrong)
-vidor,ride,moves with,15,semantic overlap (right)
-vidor,touch,approaches,14,mismatch (wrong)
-vidor,release,pushes,14,mismatch (wrong)
-vidor,hit,approaches,14,mismatch (wrong)
-vidor,hit,holding,14,mismatch (wrong)
-vidor,hit,touching,14,hypernym/hyponym (right)
-vidor,behind,playing with,14,mismatch (wrong)
-vidor,use,hold,14,not judged yet
-vidor,lean on,inside,14,mismatch (wrong)
-vidor,in front of,beneath,14,not judged yet
-vidor,lean on,riding,14,mismatch (wrong)
-vidor,chase,moves away from,14,mismatch (wrong)
-vidor,grab,wearing,14,mismatch (wrong)
-vidor,grab,in front of,14,mismatch (wrong)
-vidor,ride,looking at,14,not judged yet
-vidor,ride,touching,14,mismatch (wrong)
-vidor,carry,approaches,14,mismatch (wrong)
-vidor,carry,in front of,14,mismatch (wrong)
-vidor,ride,inside,14,semantic overlap (right)
-vidor,touch,in front of,13,mismatch (wrong)
-vidor,beneath,looking at,13,mismatch (wrong)
-vidor,above,looking at,13,mismatch (wrong)
-vidor,release,near,13,mismatch (wrong)
-vidor,watch,feed,13,mismatch (wrong)
-vidor,towards,dancing with,13,mismatch (wrong)
-vidor,push,approaching,13,mismatch (wrong)
-vidor,press,approaches,13,mismatch (wrong)
-vidor,press,holding,13,semantic overlap (right)
-vidor,pat,touching,13,hypernym/hyponym (right)
-vidor,pat,in front of,13,mismatch (wrong)
-vidor,speak to,moves away from,13,mismatch (wrong)
-vidor,beneath,beneath,13,identical (right)
-vidor,next to,beneath,13,not judged yet
-vidor,chase,holding,13,mismatch (wrong)
-vidor,point to,approaches,13,mismatch (wrong)
-vidor,touch,touching,12,identical (right)
-vidor,hold,riding,12,mismatch (wrong)
-vidor,hold,on,12,mismatch (wrong)
-vidor,towards,ride,12,mismatch (wrong)
-vidor,pull,holding,12,semantic overlap (right)
-vidor,lean on,looking at,12,mismatch (wrong)
-vidor,in front of,watch,12,not judged yet
-vidor,press,touching,12,hypernym/hyponym (right)
-vidor,pat,approaches,12,mismatch (wrong)
-vidor,behind,touches,12,mismatch (wrong)
-vidor,watch,watch,12,identical (right)
-vidor,use,holds,12,not judged yet
-vidor,watch,use,12,not judged yet
-vidor,ride,pushes,12,mismatch (wrong)
-vidor,ride,behind,12,mismatch (wrong)
-vidor,inside,in front of,12,mismatch (wrong)
-vidor,chase,wearing,12,not judged yet
-vidor,grab,approaches,12,mismatch (wrong)
-vidor,grab,overlapping,12,not judged yet
-vidor,hug,touching,12,hypernym/hyponym (right)
-vidor,inside,holding,12,mismatch (wrong)
-vidor,point to,overlapping,12,not judged yet
-vidor,push,touching,11,semantic overlap (right)
-vidor,pull,approaches,11,mismatch (wrong)
-vidor,behind,ride,11,not judged yet
-vidor,watch,petting,11,mismatch (wrong)
-vidor,hit,near,11,mismatch (wrong)
-vidor,press,approaching,11,mismatch (wrong)
-vidor,pat,overlapping,11,mismatch (wrong)
-vidor,use,carrying,11,hypernym/hyponym (right)
-vidor,ride,wearing,11,mismatch (wrong)
-vidor,ride,moves away from,11,not judged yet
-vidor,lift,carrying,11,semantic overlap (right)
-vidor,lift,approaches,11,mismatch (wrong)
-vidor,hug,carrying,11,mismatch (wrong)
-vidor,ride,approaching,11,not judged yet
-vidor,point to,near,11,mismatch (wrong)
-vidor,inside,pushes,11,mismatch (wrong)
-vidor,inside,inside,11,identical (right)
-vidor,in front of,hold hand of,11,not judged yet
-vidor,release,overlapping,10,mismatch (wrong)
-vidor,hold,touches,10,hypernym/hyponym (right)
-vidor,next to,watch,10,not judged yet
-vidor,push,near,10,mismatch (wrong)
-vidor,away,dances with,10,mismatch (wrong)
-vidor,pat,next to,10,mismatch (wrong)
-vidor,speak to,moves with,10,not judged yet
-vidor,lean on,above,10,semantic overlap (right)
-vidor,lift,holds,10,semantic overlap (right)
-vidor,inside,near,10,mismatch (wrong)
-vidor,chase,carrying,10,mismatch (wrong)
-vidor,hold,moves away from,10,mismatch (wrong)
-vidor,grab,hold,10,hypernym/hyponym (right)
-vidor,grab,carrying,10,semantic overlap (right)
-vidor,grab,near,10,mismatch (wrong)
-vidor,release,hold,10,mismatch (wrong)
-vidor,watch,playing,10,mismatch (wrong)
-vidor,carry,near,10,mismatch (wrong)
-vidor,point to,approaching,10,not judged yet
-vidor,bite,holds,10,mismatch (wrong)
-vidor,press,near,10,mismatch (wrong)
-vidor,press,overlapping,10,not judged yet
-vidor,lean on,pushes,10,mismatch (wrong)
-vidor,lean on,ride,10,mismatch (wrong)
-vidor,touch,holds,9,semantic overlap (right)
-vidor,push,moves away from,9,mismatch (wrong)
-vidor,touch,looking at,9,mismatch (wrong)
-vidor,in front of,passing by,9,mismatch (wrong)
-vidor,release,riding,9,not judged yet
-vidor,speak to,playing with,9,mismatch (wrong)
-vidor,next to,performing with,9,mismatch (wrong)
-vidor,hit,above,9,not judged yet
-vidor,hit,overlapping,9,mismatch (wrong)
-vidor,push,riding,9,mismatch (wrong)
-vidor,push,next to,9,not judged yet
-vidor,pat,approaching,9,not judged yet
-vidor,pat,holding,9,mismatch (wrong)
-vidor,lean on,moves away from,9,mismatch (wrong)
-vidor,pull,touching,9,semantic overlap (right)
-vidor,above,pushes,9,mismatch (wrong)
-vidor,lean on,holds,9,mismatch (wrong)
-vidor,lift,wearing,9,mismatch (wrong)
-vidor,in front of,carry,9,not judged yet
-vidor,kick,wearing,9,not judged yet
-vidor,lift,above,9,mismatch (wrong)
-vidor,hold,attached to,9,not judged yet
-vidor,lift,in front of,9,mismatch (wrong)
-vidor,release,carrying,9,mismatch (wrong)
-vidor,release,above,9,mismatch (wrong)
-vidor,behind,playing,9,mismatch (wrong)
-vidor,ride,sitting on,9,semantic overlap (right)
-vidor,carry,moves with,9,not judged yet
-vidor,ride,below,9,not judged yet
-vidor,carry,attached to,9,not judged yet
-vidor,carry,carry,9,identical (right)
-vidor,push,moves with,9,mismatch (wrong)
-vidor,inside,riding,9,mismatch (wrong)
-vidor,feed,approaches,9,not judged yet
-vidor,feed,in front of,9,mismatch (wrong)
+vidor,next to,in front of,14215,mismatch (wrong)
+vidor,in front of,in front of,13874,identical (right)
+vidor,in front of,approaches,10476,mismatch (wrong)
+vidor,next to,approaches,10339,mismatch (wrong)
+vidor,next to,near,9615,hypernym/hyponym (right)
+vidor,next to,overlapping,8198,mismatch (wrong)
+vidor,in front of,near,7778,hypernym/hyponym (right)
+vidor,next to,above,7238,mismatch (wrong)
+vidor,in front of,overlapping,7218,semantic overlap (right)
+vidor,next to,behind,6748,mismatch (wrong)
+vidor,next to,next to,6548,identical (right)
+vidor,next to,holding,6490,mismatch (wrong)
+vidor,in front of,moves away from,5983,mismatch (wrong)
+vidor,in front of,approaching,5970,mismatch (wrong)
+vidor,behind,in front of,5939,mismatch (wrong)
+vidor,next to,moves away from,5562,mismatch (wrong)
+vidor,in front of,above,5520,mismatch (wrong)
+vidor,in front of,behind,5484,mismatch (wrong)
+vidor,next to,touching,5334,semantic overlap (right)
+vidor,next to,approaching,5238,mismatch (wrong)
+vidor,in front of,holding,4490,mismatch (wrong)
+vidor,next to,below,4364,mismatch (wrong)
+vidor,in front of,next to,4340,semantic overlap (right)
+vidor,behind,approaches,4333,mismatch (wrong)
+vidor,watch,in front of,4282,mismatch (wrong)
+vidor,in front of,below,4231,mismatch (wrong)
+vidor,in front of,touching,4162,mismatch (wrong)
+vidor,behind,near,3802,hypernym/hyponym (right)
+vidor,next to,attached to,3598,semantic overlap (right)
+vidor,watch,approaches,3575,mismatch (wrong)
+vidor,behind,overlapping,3383,semantic overlap (right)
+vidor,behind,behind,3258,identical (right)
+vidor,next to,on,3252,mismatch (wrong)
+vidor,next to,holds,3045,mismatch (wrong)
+vidor,away,approaches,3044,mismatch (wrong)
+vidor,in front of,attached to,3032,mismatch (wrong)
+vidor,away,in front of,3023,mismatch (wrong)
+vidor,watch,near,2956,mismatch (wrong)
+vidor,watch,overlapping,2799,mismatch (wrong)
+vidor,watch,holding,2787,mismatch (wrong)
+vidor,behind,above,2774,mismatch (wrong)
+vidor,in front of,on,2650,mismatch (wrong)
+vidor,towards,approaches,2600,synonym (right)
+vidor,towards,in front of,2584,mismatch (wrong)
+vidor,behind,moves away from,2580,mismatch (wrong)
+vidor,next to,looking at,2497,mismatch (wrong)
+vidor,in front of,looking at,2480,mismatch (wrong)
+vidor,watch,touching,2469,mismatch (wrong)
+vidor,behind,approaching,2430,mismatch (wrong)
+vidor,next to,carrying,2357,mismatch (wrong)
+vidor,next to,hold,2223,mismatch (wrong)
+vidor,behind,next to,2209,semantic overlap (right)
+vidor,in front of,moves with,2191,mismatch (wrong)
+vidor,next to,moves with,2163,mismatch (wrong)
+vidor,watch,next to,2133,mismatch (wrong)
+vidor,watch,approaching,2128,mismatch (wrong)
+vidor,watch,behind,2015,mismatch (wrong)
+vidor,behind,below,1942,mismatch (wrong)
+vidor,away,approaching,1939,mismatch (wrong)
+vidor,away,moves away from,1901,synonym (right)
+vidor,behind,holding,1888,mismatch (wrong)
+vidor,away,near,1813,mismatch (wrong)
+vidor,watch,above,1781,mismatch (wrong)
+vidor,watch,looking at,1775,synonym (right)
+vidor,in front of,moving away from,1731,mismatch (wrong)
+vidor,towards,approaching,1668,synonym (right)
+vidor,away,overlapping,1621,mismatch (wrong)
+vidor,towards,near,1570,mismatch (wrong)
+vidor,beneath,in front of,1567,mismatch (wrong)
+vidor,in front of,holds,1560,mismatch (wrong)
+vidor,towards,moves away from,1493,mismatch (wrong)
+vidor,watch,moves away from,1486,mismatch (wrong)
+vidor,towards,overlapping,1482,mismatch (wrong)
+vidor,away,holding,1389,mismatch (wrong)
+vidor,behind,touching,1357,mismatch (wrong)
+vidor,next to,moving away from,1322,mismatch (wrong)
+vidor,next to,wearing,1286,mismatch (wrong)
+vidor,in front of,carrying,1270,mismatch (wrong)
+vidor,towards,holding,1261,mismatch (wrong)
+vidor,away,above,1251,mismatch (wrong)
+vidor,away,behind,1185,mismatch (wrong)
+vidor,watch,holds,1168,mismatch (wrong)
+vidor,in front of,hold,1111,mismatch (wrong)
+vidor,next to,touches,1103,semantic overlap (right)
+vidor,behind,attached to,1082,not judged yet
+vidor,towards,above,1058,mismatch (wrong)
+vidor,next to,inside,1046,mismatch (wrong)
+vidor,towards,behind,1037,mismatch (wrong)
+vidor,towards,touching,1027,mismatch (wrong)
+vidor,away,touching,1004,mismatch (wrong)
+vidor,next to,sitting on,973,mismatch (wrong)
+vidor,away,next to,973,mismatch (wrong)
+vidor,watch,hold,950,mismatch (wrong)
+vidor,behind,moves with,935,mismatch (wrong)
+vidor,beneath,below,933,synonym (right)
+vidor,towards,next to,917,mismatch (wrong)
+vidor,in front of,inside,894,mismatch (wrong)
+vidor,behind,on,877,mismatch (wrong)
+vidor,watch,below,844,mismatch (wrong)
+vidor,in front of,passes,825,mismatch (wrong)
+vidor,next to,playing with,821,mismatch (wrong)
+vidor,behind,looking at,805,mismatch (wrong)
+vidor,behind,holds,798,mismatch (wrong)
+vidor,beneath,behind,779,not judged yet
+vidor,away,moving away from,765,synonym (right)
+vidor,beneath,approaches,738,mismatch (wrong)
+vidor,away,below,738,mismatch (wrong)
+vidor,hold,holding,727,identical (right)
+vidor,in front of,touches,726,mismatch (wrong)
+vidor,behind,carrying,723,mismatch (wrong)
+vidor,beneath,near,719,mismatch (wrong)
+vidor,in front of,wearing,719,mismatch (wrong)
+vidor,behind,moving away from,712,mismatch (wrong)
+vidor,above,on,692,semantic overlap (right)
+vidor,in front of,playing with,688,mismatch (wrong)
+vidor,next to,moving with,676,mismatch (wrong)
+vidor,watch,carrying,674,mismatch (wrong)
+vidor,away,on,664,mismatch (wrong)
+vidor,in front of,sitting on,652,mismatch (wrong)
+vidor,above,in front of,651,mismatch (wrong)
+vidor,towards,below,641,mismatch (wrong)
+vidor,in front of,moving with,635,mismatch (wrong)
+vidor,beneath,above,598,mismatch (wrong)
+vidor,beneath,carrying,596,mismatch (wrong)
+vidor,above,approaches,580,mismatch (wrong)
+vidor,next to,passes,575,mismatch (wrong)
+vidor,beneath,overlapping,569,mismatch (wrong)
+vidor,hold,holds,569,identical (right)
+vidor,watch,moves with,567,mismatch (wrong)
+vidor,watch,playing with,547,mismatch (wrong)
+vidor,behind,passes,537,mismatch (wrong)
+vidor,towards,looking at,533,semantic overlap (right)
+vidor,towards,moving away from,528,mismatch (wrong)
+vidor,beneath,attached to,521,not judged yet
+vidor,behind,hold,519,not judged yet
+vidor,towards,on,513,mismatch (wrong)
+vidor,away,moves with,509,mismatch (wrong)
+vidor,away,looking at,508,mismatch (wrong)
+vidor,above,above,504,identical (right)
+vidor,next to,pushes,502,mismatch (wrong)
+vidor,hold,hold,497,identical (right)
+vidor,watch,moving away from,495,mismatch (wrong)
+vidor,beneath,holding,495,mismatch (wrong)
+vidor,in front of,dancing with,488,mismatch (wrong)
+vidor,towards,holds,476,mismatch (wrong)
+vidor,away,holds,469,mismatch (wrong)
+vidor,in front of,looks at,469,mismatch (wrong)
+vidor,lean on,touching,460,semantic overlap (right)
+vidor,next to,dancing with,455,mismatch (wrong)
+vidor,away,passes,450,mismatch (wrong)
+vidor,behind,inside,450,mismatch (wrong)
+vidor,away,attached to,448,not judged yet
+vidor,above,holding,448,mismatch (wrong)
+vidor,next to,riding,443,mismatch (wrong)
+vidor,in front of,dances with,442,mismatch (wrong)
+vidor,towards,attached to,438,not judged yet
+vidor,beneath,next to,433,not judged yet
+vidor,lean on,in front of,430,mismatch (wrong)
+vidor,watch,touches,425,mismatch (wrong)
+vidor,watch,wearing,414,mismatch (wrong)
+vidor,towards,moves with,408,semantic overlap (right)
+vidor,speak to,in front of,405,mismatch (wrong)
+vidor,beneath,moves away from,401,mismatch (wrong)
+vidor,hold,touching,381,hypernym/hyponym (right)
+vidor,towards,hold,381,mismatch (wrong)
+vidor,above,attached to,381,mismatch (wrong)
+vidor,away,carrying,379,mismatch (wrong)
+vidor,next to,looks at,377,mismatch (wrong)
+vidor,beneath,holds,373,mismatch (wrong)
+vidor,lean on,holding,368,mismatch (wrong)
+vidor,above,moves away from,367,mismatch (wrong)
+vidor,towards,carrying,366,mismatch (wrong)
+vidor,away,hold,355,not judged yet
+vidor,in front of,riding,352,mismatch (wrong)
+vidor,next to,dances with,349,mismatch (wrong)
+vidor,watch,looks at,346,synonym (right)
+vidor,lean on,sitting on,340,semantic overlap (right)
+vidor,towards,passes,339,mismatch (wrong)
+vidor,watch,inside,336,mismatch (wrong)
+vidor,lean on,on,332,hypernym/hyponym (right)
+vidor,hold,carrying,326,semantic overlap (right)
+vidor,behind,moving with,326,mismatch (wrong)
+vidor,next to,plays with,323,mismatch (wrong)
+vidor,speak to,approaches,323,mismatch (wrong)
+vidor,watch,on,313,mismatch (wrong)
+vidor,above,touching,310,mismatch (wrong)
+vidor,above,near,294,hypernym/hyponym (right)
+vidor,next to,hugging,294,mismatch (wrong)
+vidor,next to,playing,291,mismatch (wrong)
+vidor,speak to,overlapping,286,mismatch (wrong)
+vidor,above,sitting on,281,semantic overlap (right)
+vidor,lean on,approaches,281,mismatch (wrong)
+vidor,beneath,moves with,275,mismatch (wrong)
+vidor,watch,dancing with,273,mismatch (wrong)
+vidor,in front of,plays with,271,mismatch (wrong)
+vidor,speak to,near,270,mismatch (wrong)
+vidor,speak to,touching,269,mismatch (wrong)
+vidor,away,sitting on,266,mismatch (wrong)
+vidor,beneath,approaching,261,mismatch (wrong)
+vidor,watch,pushes,259,mismatch (wrong)
+vidor,speak to,next to,258,mismatch (wrong)
+vidor,in front of,hugging,252,mismatch (wrong)
+vidor,away,riding,251,mismatch (wrong)
+vidor,behind,wearing,250,mismatch (wrong)
+vidor,hold,in front of,248,mismatch (wrong)
+vidor,away,wearing,247,mismatch (wrong)
+vidor,away,inside,246,not judged yet
+vidor,above,riding,246,mismatch (wrong)
+vidor,speak to,holding,245,mismatch (wrong)
+vidor,towards,wearing,245,mismatch (wrong)
+vidor,behind,playing with,238,mismatch (wrong)
+vidor,above,approaching,236,mismatch (wrong)
+vidor,in front of,petting,235,mismatch (wrong)
+vidor,hold,approaches,234,mismatch (wrong)
+vidor,behind,touches,230,mismatch (wrong)
+vidor,towards,sitting on,229,mismatch (wrong)
+vidor,hold,near,228,mismatch (wrong)
+vidor,towards,touches,226,mismatch (wrong)
+vidor,ride,holding,224,mismatch (wrong)
+vidor,watch,plays with,223,mismatch (wrong)
+vidor,in front of,pushes,223,mismatch (wrong)
+vidor,watch,attached to,222,not judged yet
+vidor,away,touches,219,mismatch (wrong)
+vidor,behind,sitting on,219,mismatch (wrong)
+vidor,towards,inside,219,not judged yet
+vidor,watch,dances with,219,mismatch (wrong)
+vidor,above,overlapping,218,semantic overlap (right)
+vidor,next to,ride,217,mismatch (wrong)
+vidor,speak to,looking at,217,semantic overlap (right)
+vidor,watch,moving with,209,mismatch (wrong)
+vidor,behind,playing,207,mismatch (wrong)
+vidor,next to,petting,205,mismatch (wrong)
+vidor,watch,sitting on,204,mismatch (wrong)
+vidor,next to,carry,201,not judged yet
+vidor,in front of,playing,196,mismatch (wrong)
+vidor,watch,hugging,190,mismatch (wrong)
+vidor,hug,holding,189,hypernym/hyponym (right)
+vidor,speak to,approaching,185,mismatch (wrong)
+vidor,touch,holding,184,semantic overlap (right)
+vidor,towards,playing with,183,mismatch (wrong)
+vidor,hold,overlapping,181,mismatch (wrong)
+vidor,speak to,behind,179,mismatch (wrong)
+vidor,in front of,ride,177,not judged yet
+vidor,behind,dancing with,177,mismatch (wrong)
+vidor,ride,riding,176,identical (right)
+vidor,behind,riding,175,mismatch (wrong)
+vidor,beneath,on,173,mismatch (wrong)
+vidor,watch,riding,173,mismatch (wrong)
+vidor,away,playing with,172,mismatch (wrong)
+vidor,watch,passes,172,mismatch (wrong)
+vidor,hold,wearing,171,mismatch (wrong)
+vidor,above,behind,171,mismatch (wrong)
+vidor,above,ride,171,mismatch (wrong)
+vidor,hold hand of,in front of,171,mismatch (wrong)
+vidor,hug,in front of,171,mismatch (wrong)
+vidor,away,moving with,170,mismatch (wrong)
+vidor,hug,touching,170,hypernym/hyponym (right)
+vidor,touch,touching,168,identical (right)
+vidor,towards,riding,164,mismatch (wrong)
+vidor,carry,holding,162,hypernym/hyponym (right)
+vidor,beneath,beneath,161,identical (right)
+vidor,hold,above,161,mismatch (wrong)
+vidor,release,holding,158,mismatch (wrong)
+vidor,away,pushes,158,mismatch (wrong)
+vidor,grab,holding,157,hypernym/hyponym (right)
+vidor,next to,performing with,156,mismatch (wrong)
+vidor,carry,carrying,154,identical (right)
+vidor,lean on,behind,153,mismatch (wrong)
+vidor,hold hand of,approaches,149,mismatch (wrong)
+vidor,behind,dances with,147,mismatch (wrong)
+vidor,ride,in front of,147,mismatch (wrong)
+vidor,ride,ride,146,identical (right)
+vidor,hug,approaches,144,mismatch (wrong)
+vidor,lean on,near,143,mismatch (wrong)
+vidor,play(instrument),playing,143,synonym (right)
+vidor,towards,moving with,141,mismatch (wrong)
+vidor,behind,pushes,141,mismatch (wrong)
+vidor,play(instrument),holding,141,hypernym/hyponym (right)
+vidor,touch,approaches,139,mismatch (wrong)
+vidor,watch,petting,137,mismatch (wrong)
+vidor,above,next to,136,mismatch (wrong)
+vidor,touch,in front of,134,mismatch (wrong)
+vidor,next to,use,134,not judged yet
+vidor,above,below,133,not judged yet
+vidor,hug,overlapping,133,mismatch (wrong)
+vidor,carry,wearing,132,semantic overlap (right)
+vidor,beneath,touching,130,mismatch (wrong)
+vidor,ride,on,129,semantic overlap (right)
+vidor,hold,looking at,128,mismatch (wrong)
+vidor,above,inside,127,mismatch (wrong)
+vidor,ride,above,127,mismatch (wrong)
+vidor,above,moves with,126,mismatch (wrong)
+vidor,away,ride,126,mismatch (wrong)
+vidor,behind,looks at,126,mismatch (wrong)
+vidor,hold hand of,overlapping,126,mismatch (wrong)
+vidor,hold,next to,124,not judged yet
+vidor,lean on,above,123,semantic overlap (right)
+vidor,lean on,approaching,122,mismatch (wrong)
+vidor,lean on,overlapping,122,mismatch (wrong)
+vidor,release,touching,121,mismatch (wrong)
+vidor,speak to,above,121,mismatch (wrong)
+vidor,hold hand of,holding,121,hypernym/hyponym (right)
+vidor,above,holds,120,mismatch (wrong)
+vidor,play(instrument),hold,120,not judged yet
+vidor,lean on,looking at,119,mismatch (wrong)
+vidor,towards,dances with,119,mismatch (wrong)
+vidor,lean on,riding,119,mismatch (wrong)
+vidor,grab,holds,119,hypernym/hyponym (right)
+vidor,hold,behind,118,mismatch (wrong)
+vidor,beneath,hold,118,not judged yet
+vidor,ride,near,115,mismatch (wrong)
+vidor,beneath,moving with,114,not judged yet
+vidor,lift,holding,112,semantic overlap (right)
+vidor,release,holds,110,mismatch (wrong)
+vidor,towards,dancing with,110,mismatch (wrong)
+vidor,in front of,performing with,110,mismatch (wrong)
+vidor,watch,playing,108,mismatch (wrong)
+vidor,beneath,passes,107,not judged yet
+vidor,play(instrument),holds,106,not judged yet
+vidor,towards,pushes,105,mismatch (wrong)
+vidor,away,dancing with,105,mismatch (wrong)
+vidor,lean on,next to,105,mismatch (wrong)
+vidor,hug,near,105,mismatch (wrong)
+vidor,speak to,moves away from,102,mismatch (wrong)
+vidor,ride,approaches,102,not judged yet
+vidor,hold hand of,touching,102,hypernym/hyponym (right)
+vidor,behind,plays with,102,mismatch (wrong)
+vidor,hold hand of,near,102,mismatch (wrong)
+vidor,grab,hold,101,hypernym/hyponym (right)
+vidor,away,dances with,99,mismatch (wrong)
+vidor,hold,playing with,97,mismatch (wrong)
+vidor,lean on,touches,97,not judged yet
+vidor,next to,beneath,97,not judged yet
+vidor,inside,holding,96,mismatch (wrong)
+vidor,behind,ride,95,not judged yet
+vidor,push,holding,94,semantic overlap (right)
+vidor,push,approaches,94,mismatch (wrong)
+vidor,lean on,inside,94,mismatch (wrong)
+vidor,grab,touching,94,hypernym/hyponym (right)
+vidor,hold,pushes,93,semantic overlap (right)
+vidor,above,wearing,93,mismatch (wrong)
+vidor,behind,hugging,93,mismatch (wrong)
+vidor,inside,in front of,93,mismatch (wrong)
+vidor,away,looks at,92,mismatch (wrong)
+vidor,bite,touching,92,mismatch (wrong)
+vidor,hug,holds,92,hypernym/hyponym (right)
+vidor,play(instrument),carrying,92,mismatch (wrong)
+vidor,lean on,moves away from,91,mismatch (wrong)
+vidor,watch,ride,91,mismatch (wrong)
+vidor,ride,overlapping,90,mismatch (wrong)
+vidor,behind,petting,89,mismatch (wrong)
+vidor,in front of,use,89,not judged yet
+vidor,touch,holds,88,semantic overlap (right)
+vidor,release,hold,88,mismatch (wrong)
+vidor,carry,approaches,88,mismatch (wrong)
+vidor,pull,holding,87,semantic overlap (right)
+vidor,carry,holds,87,hypernym/hyponym (right)
+vidor,towards,ride,86,mismatch (wrong)
+vidor,hold hand of,approaching,86,mismatch (wrong)
+vidor,hug,next to,86,mismatch (wrong)
+vidor,caress,holding,85,mismatch (wrong)
+vidor,carry,carry,85,identical (right)
+vidor,above,hold,84,mismatch (wrong)
+vidor,lean on,holds,84,mismatch (wrong)
+vidor,lean on,hold,83,mismatch (wrong)
+vidor,in front of,beneath,82,not judged yet
+vidor,caress,touching,82,hypernym/hyponym (right)
+vidor,use,holding,81,hypernym/hyponym (right)
+vidor,hold,touches,80,hypernym/hyponym (right)
+vidor,release,approaches,79,mismatch (wrong)
+vidor,towards,plays with,79,mismatch (wrong)
+vidor,chase,approaches,78,semantic overlap (right)
+vidor,towards,looks at,77,semantic overlap (right)
+vidor,in front of,watch,77,not judged yet
+vidor,touch,overlapping,77,semantic overlap (right)
+vidor,hug,hold,77,not judged yet
+vidor,pull,approaches,76,mismatch (wrong)
+vidor,hold,below,76,mismatch (wrong)
+vidor,carry,in front of,76,mismatch (wrong)
+vidor,push,in front of,75,mismatch (wrong)
+vidor,hold,approaching,75,mismatch (wrong)
+vidor,hold hand of,above,75,not judged yet
+vidor,bite,holding,75,mismatch (wrong)
+vidor,inside,inside,75,identical (right)
+vidor,away,plays with,74,mismatch (wrong)
+vidor,touch,approaching,74,not judged yet
+vidor,hug,carrying,74,mismatch (wrong)
+vidor,ride,holds,73,mismatch (wrong)
+vidor,caress,approaches,73,mismatch (wrong)
+vidor,touch,near,73,mismatch (wrong)
+vidor,hug,approaching,73,mismatch (wrong)
+vidor,above,looking at,72,mismatch (wrong)
+vidor,above,moving away from,72,mismatch (wrong)
+vidor,use,hold,72,not judged yet
+vidor,above,carrying,71,mismatch (wrong)
+vidor,bite,approaches,71,mismatch (wrong)
+vidor,beneath,moving away from,69,mismatch (wrong)
+vidor,grab,in front of,69,mismatch (wrong)
+vidor,lean on,lean on,68,identical (right)
+vidor,use,holds,68,not judged yet
+vidor,hug,looking at,68,mismatch (wrong)
+vidor,lean on,wearing,67,mismatch (wrong)
+vidor,kick,holding,67,mismatch (wrong)
+vidor,hug,above,67,mismatch (wrong)
+vidor,hug,behind,67,not judged yet
+vidor,pat,holding,66,mismatch (wrong)
+vidor,inside,approaches,66,not judged yet
+vidor,touch,above,66,not judged yet
+vidor,pull,in front of,66,mismatch (wrong)
+vidor,point to,in front of,66,mismatch (wrong)
+vidor,push,touching,65,semantic overlap (right)
+vidor,release,in front of,64,mismatch (wrong)
+vidor,watch,performing with,64,mismatch (wrong)
+vidor,lift,holds,64,semantic overlap (right)
+vidor,bite,in front of,64,mismatch (wrong)
+vidor,in front of,passing by,63,mismatch (wrong)
+vidor,touch,hold,63,not judged yet
+vidor,speak to,holds,63,not judged yet
+vidor,touch,looking at,62,mismatch (wrong)
+vidor,speak to,playing with,62,mismatch (wrong)
+vidor,grab,near,62,mismatch (wrong)
+vidor,hold hand of,behind,62,not judged yet
+vidor,press,touching,61,hypernym/hyponym (right)
+vidor,pat,approaches,61,mismatch (wrong)
+vidor,speak to,moves with,61,not judged yet
+vidor,bite,looking at,61,mismatch (wrong)
+vidor,ride,next to,60,not judged yet
+vidor,grab,approaches,60,mismatch (wrong)
+vidor,ride,moves with,60,semantic overlap (right)
+vidor,point to,approaches,60,mismatch (wrong)
+vidor,release,near,59,mismatch (wrong)
+vidor,point to,touching,59,mismatch (wrong)
+vidor,next to,performing music with,59,mismatch (wrong)
+vidor,inside,riding,59,mismatch (wrong)
+vidor,towards,playing,59,mismatch (wrong)
+vidor,beneath,inside,58,not judged yet
+vidor,lift,touching,58,semantic overlap (right)
+vidor,push,near,57,mismatch (wrong)
+vidor,press,holding,57,semantic overlap (right)
+vidor,use,carrying,57,hypernym/hyponym (right)
+vidor,carry,hold,57,not judged yet
+vidor,next to,feed,56,not judged yet
+vidor,towards,passing by,56,mismatch (wrong)
+vidor,lift,approaches,56,mismatch (wrong)
+vidor,hold,moves away from,56,mismatch (wrong)
+vidor,lift,in front of,56,mismatch (wrong)
+vidor,away,passing by,55,mismatch (wrong)
+vidor,hit,approaches,55,mismatch (wrong)
+vidor,watch,use,55,not judged yet
+vidor,chase,in front of,55,mismatch (wrong)
+vidor,grab,carrying,55,semantic overlap (right)
+vidor,push,overlapping,54,mismatch (wrong)
+vidor,speak to,below,54,not judged yet
+vidor,above,pushes,54,mismatch (wrong)
+vidor,hold hand of,next to,54,mismatch (wrong)
+vidor,carry,near,54,mismatch (wrong)
+vidor,lift,hold,53,semantic overlap (right)
+vidor,grab,above,53,not judged yet
+vidor,grab,overlapping,53,not judged yet
+vidor,behind,use,53,not judged yet
+vidor,in front of,lean on,53,not judged yet
+vidor,hit,in front of,52,mismatch (wrong)
+vidor,push,approaching,52,mismatch (wrong)
+vidor,pat,touching,52,hypernym/hyponym (right)
+vidor,point to,holding,52,mismatch (wrong)
+vidor,pull,near,52,mismatch (wrong)
+vidor,bite,overlapping,52,mismatch (wrong)
+vidor,inside,touching,52,mismatch (wrong)
+vidor,release,overlapping,51,mismatch (wrong)
+vidor,pat,in front of,51,mismatch (wrong)
+vidor,pull,overlapping,51,mismatch (wrong)
+vidor,behind,performing with,51,mismatch (wrong)
+vidor,beneath,looking at,50,mismatch (wrong)
+vidor,hold,plays with,50,mismatch (wrong)
+vidor,away,petting,50,mismatch (wrong)
+vidor,speak to,dancing with,50,mismatch (wrong)
+vidor,press,approaches,50,mismatch (wrong)
+vidor,watch,watch,50,identical (right)
+vidor,pull,touching,50,semantic overlap (right)
+vidor,ride,hold,50,mismatch (wrong)
+vidor,hold hand of,moves away from,50,mismatch (wrong)
+vidor,carry,moves with,50,not judged yet
+vidor,wave hand to,in front of,50,mismatch (wrong)
+vidor,wave,holding,50,mismatch (wrong)
+vidor,towards,hugging,49,mismatch (wrong)
+vidor,grab,wearing,49,mismatch (wrong)
+vidor,carry,next to,49,mismatch (wrong)
+vidor,hold hand of,holds,49,not judged yet
+vidor,lean on,ride,49,mismatch (wrong)
+vidor,smell,approaches,49,mismatch (wrong)
+vidor,push,holds,48,semantic overlap (right)
+vidor,above,lean on,48,not judged yet
+vidor,ride,moves away from,48,not judged yet
+vidor,speak to,hold,48,not judged yet
+vidor,chase,approaching,48,semantic overlap (right)
+vidor,ride,approaching,48,not judged yet
+vidor,pull,holds,47,semantic overlap (right)
+vidor,in front of,feed,47,mismatch (wrong)
+vidor,release,carrying,47,mismatch (wrong)
+vidor,carry,overlapping,47,mismatch (wrong)
+vidor,use,in front of,47,not judged yet
+vidor,kiss,holding,47,mismatch (wrong)
+vidor,press,in front of,46,mismatch (wrong)
+vidor,above,touches,46,mismatch (wrong)
+vidor,wave hand to,approaches,46,mismatch (wrong)
+vidor,away,playing,46,mismatch (wrong)
+vidor,touch,touches,45,identical (right)
+vidor,ride,carrying,45,mismatch (wrong)
+vidor,touch,behind,45,mismatch (wrong)
+vidor,lean on,pushes,45,mismatch (wrong)
+vidor,towards,petting,44,mismatch (wrong)
+vidor,hit,holding,44,mismatch (wrong)
+vidor,lift,carrying,44,semantic overlap (right)
+vidor,inside,near,44,mismatch (wrong)
+vidor,bite,holds,44,mismatch (wrong)
+vidor,pull,above,44,mismatch (wrong)
+vidor,next to,bite,43,not judged yet
+vidor,hold,use,43,not judged yet
+vidor,chase,holding,43,mismatch (wrong)
+vidor,kick,approaches,43,mismatch (wrong)
+vidor,kick,in front of,43,mismatch (wrong)
+vidor,carry,attached to,43,not judged yet
+vidor,bite,near,43,mismatch (wrong)
+vidor,use,near,43,mismatch (wrong)
+vidor,hug,playing with,43,mismatch (wrong)
+vidor,push,moves away from,41,mismatch (wrong)
+vidor,next to,lean on,41,not judged yet
+vidor,pull,approaching,41,mismatch (wrong)
+vidor,ride,behind,41,mismatch (wrong)
+vidor,hold hand of,looking at,41,mismatch (wrong)
+vidor,chase,moves away from,41,mismatch (wrong)
+vidor,in front of,carry,41,not judged yet
+vidor,point to,near,41,mismatch (wrong)
+vidor,watch,feed,40,mismatch (wrong)
+vidor,next to,passing by,40,mismatch (wrong)
+vidor,hit,overlapping,40,mismatch (wrong)
+vidor,push,next to,40,not judged yet
+vidor,chase,overlapping,40,mismatch (wrong)
+vidor,touch,next to,40,mismatch (wrong)
+vidor,speak to,hugging,40,mismatch (wrong)
+vidor,caress,in front of,40,mismatch (wrong)
+vidor,lift,overlapping,40,mismatch (wrong)
+vidor,carry,above,40,not judged yet
+vidor,ride,below,40,not judged yet
+vidor,ride,inside,40,semantic overlap (right)
+vidor,hug,hugging,40,identical (right)
+vidor,play(instrument),in front of,40,mismatch (wrong)
+vidor,hit,touching,39,hypernym/hyponym (right)
+vidor,caress,petting,39,synonym (right)
+vidor,point to,looking at,39,semantic overlap (right)
+vidor,wave,holds,39,mismatch (wrong)
+vidor,point to,overlapping,39,not judged yet
+vidor,inside,sitting on,39,mismatch (wrong)
+vidor,pat,overlapping,38,mismatch (wrong)
+vidor,ride,wearing,38,mismatch (wrong)
+vidor,wave hand to,approaching,38,mismatch (wrong)
+vidor,behind,beneath,38,not judged yet
+vidor,hug,below,38,not judged yet
+vidor,hold hand of,below,38,not judged yet
+vidor,in front of,performing music with,38,mismatch (wrong)
+vidor,lean on,below,38,not judged yet
+vidor,touch,moves away from,37,mismatch (wrong)
+vidor,beneath,carry,37,mismatch (wrong)
+vidor,ride,pushes,37,mismatch (wrong)
+vidor,release,above,37,mismatch (wrong)
+vidor,kiss,touching,37,semantic overlap (right)
+vidor,caress,touches,37,hypernym/hyponym (right)
+vidor,use,use,36,identical (right)
+vidor,use,touching,36,not judged yet
+vidor,lift,near,36,mismatch (wrong)
+vidor,ride,touching,36,mismatch (wrong)
+vidor,bite,hold,36,not judged yet
+vidor,play(instrument),behind,36,mismatch (wrong)
+vidor,speak to,looks at,35,semantic overlap (right)
+vidor,hit,near,35,mismatch (wrong)
+vidor,push,riding,35,mismatch (wrong)
+vidor,speak to,dances with,35,not judged yet
+vidor,pat,approaching,35,not judged yet
+vidor,pat,near,35,mismatch (wrong)
+vidor,hold,moves with,35,not judged yet
+vidor,hold,attached to,35,not judged yet
+vidor,release,looking at,35,mismatch (wrong)
+vidor,bite,above,35,not judged yet
+vidor,touch,playing with,35,mismatch (wrong)
+vidor,smell,approaching,35,mismatch (wrong)
+vidor,push,pushes,34,identical (right)
+vidor,inside,next to,34,not judged yet
+vidor,speak to,carrying,34,mismatch (wrong)
+vidor,push,hold,34,not judged yet
+vidor,wave,hold,34,not judged yet
+vidor,caress,approaching,34,mismatch (wrong)
+vidor,throw,holding,34,mismatch (wrong)
+vidor,pat,next to,33,mismatch (wrong)
+vidor,away,hugging,33,mismatch (wrong)
+vidor,lean on,carrying,33,not judged yet
+vidor,inside,overlapping,33,not judged yet
+vidor,point to,approaching,33,not judged yet
+vidor,bite,approaching,33,mismatch (wrong)
+vidor,kiss,in front of,33,mismatch (wrong)
+vidor,in front of,hold hand of,33,not judged yet
+vidor,hold hand of,moves with,33,mismatch (wrong)
+vidor,use,above,33,not judged yet
+vidor,next to,watch,32,not judged yet
+vidor,hit,approaching,32,mismatch (wrong)
+vidor,speak to,touches,32,mismatch (wrong)
+vidor,inside,approaching,32,not judged yet
+vidor,chase,near,32,mismatch (wrong)
+vidor,touch,below,32,not judged yet
+vidor,chase,carrying,32,mismatch (wrong)
+vidor,carry,behind,32,not judged yet
+vidor,grab,below,32,not judged yet
+vidor,wave,carrying,32,mismatch (wrong)
+vidor,hold hand of,hold,32,not judged yet
+vidor,inside,ride,32,not judged yet
+vidor,inside,on,32,mismatch (wrong)
+vidor,throw,holds,32,mismatch (wrong)
+vidor,play(instrument),touching,32,hypernym/hyponym (right)
+vidor,touch,carrying,31,mismatch (wrong)
+vidor,release,pushes,31,mismatch (wrong)
+vidor,hold,riding,31,mismatch (wrong)
+vidor,pat,looking at,31,mismatch (wrong)
+vidor,release,approaching,31,mismatch (wrong)
+vidor,press,overlapping,31,not judged yet
+vidor,push,moves with,31,mismatch (wrong)
+vidor,inside,behind,31,mismatch (wrong)
+vidor,release,next to,30,not judged yet
+vidor,caress,holds,30,not judged yet
+vidor,kick,holds,30,mismatch (wrong)
+vidor,ride,looking at,30,not judged yet
+vidor,grab,pushes,30,mismatch (wrong)
+vidor,press,near,30,mismatch (wrong)
+vidor,kiss,approaches,30,not judged yet
+vidor,throw,hold,30,not judged yet
+vidor,hug,moves with,30,not judged yet
+vidor,smell,touching,30,semantic overlap (right)
+vidor,push,looking at,29,mismatch (wrong)
+vidor,hold,on,29,mismatch (wrong)
+vidor,press,approaching,29,mismatch (wrong)
+vidor,press,looking at,29,mismatch (wrong)
+vidor,behind,watch,29,not judged yet
+vidor,above,moving with,29,mismatch (wrong)
+vidor,behind,passing by,29,not judged yet
+vidor,kick,carrying,29,not judged yet
+vidor,chase,above,29,mismatch (wrong)
+vidor,kick,overlapping,29,mismatch (wrong)
+vidor,carry,moves away from,29,mismatch (wrong)
+vidor,carry,approaching,29,mismatch (wrong)
+vidor,hug,moves away from,29,mismatch (wrong)
+vidor,grab,touches,29,hypernym/hyponym (right)
+vidor,kick,touching,29,semantic overlap (right)
+vidor,shout at,in front of,29,not judged yet
+vidor,release,playing with,28,mismatch (wrong)
+vidor,release,behind,28,not judged yet
+vidor,push,above,28,not judged yet
+vidor,hold,sitting on,28,mismatch (wrong)
+vidor,pat,holds,28,mismatch (wrong)
+vidor,lean on,moves with,28,mismatch (wrong)
+vidor,inside,looking at,28,mismatch (wrong)
+vidor,use,overlapping,28,not judged yet
+vidor,inside,pushes,28,mismatch (wrong)
+vidor,inside,above,28,not judged yet
+vidor,point to,above,28,mismatch (wrong)
+vidor,pull,behind,28,mismatch (wrong)
+vidor,hold hand of,dancing with,28,mismatch (wrong)
+vidor,speak to,inside,27,not judged yet
+vidor,lift,above,27,mismatch (wrong)
+vidor,grab,behind,27,not judged yet
+vidor,carry,touching,27,semantic overlap (right)
+vidor,caress,above,27,mismatch (wrong)
+vidor,play(instrument),near,27,not judged yet
+vidor,kick,near,26,mismatch (wrong)
+vidor,hold,inside,26,not judged yet
+vidor,release,wearing,26,mismatch (wrong)
+vidor,bite,carrying,26,mismatch (wrong)
+vidor,ride,sitting on,26,semantic overlap (right)
+vidor,use,behind,26,not judged yet
+vidor,use,next to,26,not judged yet
+vidor,push,behind,26,not judged yet
+vidor,next to,push,26,not judged yet
+vidor,lean on,playing with,26,mismatch (wrong)
+vidor,hit,above,25,not judged yet
+vidor,lean on,moving away from,25,mismatch (wrong)
+vidor,pull,hold,25,not judged yet
+vidor,speak to,moving away from,25,mismatch (wrong)
+vidor,pull,next to,25,not judged yet
+vidor,bite,below,25,not judged yet
+vidor,wave hand to,moves away from,25,mismatch (wrong)
+vidor,hold,playing,25,mismatch (wrong)
+vidor,carry,below,25,not judged yet
+vidor,hold hand of,dances with,25,mismatch (wrong)
+vidor,smell,in front of,25,mismatch (wrong)
+vidor,hold hand of,inside,25,not judged yet
+vidor,play(instrument),overlapping,25,mismatch (wrong)
+vidor,speak to,moving with,24,not judged yet
+vidor,pull,carrying,24,mismatch (wrong)
+vidor,lift,playing with,24,mismatch (wrong)
+vidor,kick,above,24,not judged yet
+vidor,caress,near,24,mismatch (wrong)
+vidor,lean on,attached to,24,not judged yet
+vidor,hold hand of,playing with,24,mismatch (wrong)
+vidor,inside,holds,24,not judged yet
+vidor,point to,behind,24,not judged yet
+vidor,point to,holds,24,not judged yet
+vidor,push,ride,24,mismatch (wrong)
+vidor,hug,dancing with,24,mismatch (wrong)
+vidor,shout at,approaches,24,not judged yet
+vidor,push,carrying,23,mismatch (wrong)
+vidor,hit,looking at,23,mismatch (wrong)
+vidor,lift,looking at,23,mismatch (wrong)
+vidor,inside,moves away from,23,not judged yet
+vidor,lift,approaching,23,not judged yet
+vidor,carry,moving with,23,not judged yet
+vidor,ride,moving with,23,semantic overlap (right)
+vidor,bite,moves away from,23,mismatch (wrong)
+vidor,wave hand to,holding,23,mismatch (wrong)
+vidor,wave hand to,next to,23,mismatch (wrong)
+vidor,wave hand to,near,23,mismatch (wrong)
+vidor,wave hand to,overlapping,23,not judged yet
+vidor,press,above,23,not judged yet
+vidor,bite,playing with,23,mismatch (wrong)
+vidor,push,on,23,mismatch (wrong)
+vidor,hug,touches,23,not judged yet
+vidor,lean on,playing,23,mismatch (wrong)
+vidor,hit,next to,22,mismatch (wrong)
+vidor,clean,holding,22,mismatch (wrong)
+vidor,hold,carry,22,not judged yet
+vidor,kick,approaching,22,mismatch (wrong)
+vidor,grab,next to,22,not judged yet
+vidor,caress,overlapping,22,mismatch (wrong)
+vidor,release,moves away from,22,mismatch (wrong)
+vidor,release,touches,22,mismatch (wrong)
+vidor,press,next to,22,not judged yet
+vidor,wave,approaches,22,mismatch (wrong)
+vidor,point to,moves away from,22,mismatch (wrong)
+vidor,throw,near,22,not judged yet
+vidor,hug,inside,22,not judged yet
+vidor,kick,pushes,22,semantic overlap (right)
+vidor,smell,looking at,22,mismatch (wrong)
+vidor,shout at,next to,22,not judged yet
+vidor,shout at,overlapping,22,not judged yet
+vidor,speak to,plays with,21,not judged yet
+vidor,press,touches,21,hypernym/hyponym (right)
+vidor,pat,above,21,mismatch (wrong)
+vidor,pat,hold,21,not judged yet
+vidor,touch,pushes,21,semantic overlap (right)
+vidor,point to,next to,21,not judged yet
+vidor,use,below,21,not judged yet
+vidor,wave hand to,looking at,21,mismatch (wrong)
+vidor,wave hand to,behind,21,not judged yet
+vidor,grab,playing with,21,mismatch (wrong)
+vidor,hug,dances with,21,mismatch (wrong)
+vidor,touch,petting,21,hypernym/hyponym (right)
+vidor,smell,moves away from,21,mismatch (wrong)
+vidor,touch,sitting on,20,not judged yet
+vidor,hit,behind,20,not judged yet
+vidor,touch,riding,20,mismatch (wrong)
+vidor,touch,wearing,20,mismatch (wrong)
+vidor,beneath,wearing,20,mismatch (wrong)
+vidor,chase,touching,20,mismatch (wrong)
+vidor,hit,holds,20,mismatch (wrong)
+vidor,caress,looking at,20,mismatch (wrong)
+vidor,inside,carrying,20,mismatch (wrong)
+vidor,feed,approaches,20,not judged yet
+vidor,in front of,bite,20,mismatch (wrong)
+vidor,pull,moves away from,20,mismatch (wrong)
+vidor,behind,performing music with,20,mismatch (wrong)
+vidor,feed,holding,20,mismatch (wrong)
+vidor,kick,touches,20,semantic overlap (right)
+vidor,shout at,holding,20,not judged yet
+vidor,release,plays with,19,mismatch (wrong)
+vidor,pull,pushes,19,mismatch (wrong)
+vidor,use,looking at,19,mismatch (wrong)
+vidor,lift,wearing,19,mismatch (wrong)
+vidor,caress,behind,19,not judged yet
+vidor,kick,hold,19,not judged yet
+vidor,away,carry,19,not judged yet
+vidor,bite,bite,19,identical (right)
+vidor,lift,next to,19,not judged yet
+vidor,watch,performing music with,19,mismatch (wrong)
+vidor,wave hand to,above,19,not judged yet
+vidor,kiss,holds,19,not judged yet
+vidor,hug,plays with,19,mismatch (wrong)
+vidor,pat,behind,19,mismatch (wrong)
+vidor,in front of,push,19,not judged yet
+vidor,bite,next to,19,not judged yet
+vidor,throw,in front of,19,mismatch (wrong)
+vidor,push,playing with,19,mismatch (wrong)
+vidor,play(instrument),next to,19,not judged yet
+vidor,hit,moves away from,18,mismatch (wrong)
+vidor,away,performing with,18,mismatch (wrong)
+vidor,chase,holds,18,mismatch (wrong)
+vidor,towards,carry,18,not judged yet
+vidor,grab,approaching,18,not judged yet
+vidor,grab,looking at,18,mismatch (wrong)
+vidor,pull,looking at,18,mismatch (wrong)
+vidor,feed,on,18,not judged yet
+vidor,throw,carrying,18,mismatch (wrong)
+vidor,throw,touching,18,not judged yet
+vidor,kiss,overlapping,18,mismatch (wrong)
+vidor,watch,bite,17,not judged yet
+vidor,speak to,on,17,not judged yet
+vidor,chase,moves with,17,not judged yet
+vidor,watch,hit,17,not judged yet
+vidor,carry,looking at,17,mismatch (wrong)
+vidor,lift,pushes,17,mismatch (wrong)
+vidor,above,playing with,17,mismatch (wrong)
+vidor,touch,plays with,17,mismatch (wrong)
+vidor,hug,pushes,17,not judged yet
+vidor,point to,hold,17,not judged yet
+vidor,bite,behind,17,not judged yet
+vidor,throw,overlapping,17,not judged yet
+vidor,drive,riding,17,semantic overlap (right)
+vidor,kick,behind,17,not judged yet
+vidor,kiss,looking at,17,mismatch (wrong)
+vidor,touch,on,17,semantic overlap (right)
+vidor,hold hand of,touches,17,hypernym/hyponym (right)
+vidor,shout at,approaching,17,not judged yet
+vidor,push,touches,16,semantic overlap (right)
+vidor,press,holds,16,semantic overlap (right)
+vidor,speak to,wearing,16,mismatch (wrong)
+vidor,pull,touches,16,not judged yet
+vidor,clean,touching,16,mismatch (wrong)
+vidor,ride,attached to,16,not judged yet
+vidor,behind,feed,16,not judged yet
+vidor,chase,below,16,mismatch (wrong)
+vidor,caress,next to,16,not judged yet
+vidor,chase,wearing,16,not judged yet
+vidor,caress,playing with,16,mismatch (wrong)
+vidor,ride,moving away from,16,not judged yet
+vidor,hold hand of,carrying,16,semantic overlap (right)
+vidor,hold hand of,hugging,16,semantic overlap (right)
+vidor,play(instrument),wearing,16,mismatch (wrong)
+vidor,play(instrument),approaches,16,not judged yet
+vidor,caress,on,16,not judged yet
+vidor,feed,touching,16,mismatch (wrong)
+vidor,smell,overlapping,16,mismatch (wrong)
+vidor,caress,moves away from,16,mismatch (wrong)
+vidor,release,riding,15,not judged yet
+vidor,push,moving away from,15,mismatch (wrong)
+vidor,chase,looking at,15,mismatch (wrong)
+vidor,watch,carry,15,not judged yet
+vidor,hit,hold,15,not judged yet
+vidor,bite,touches,15,mismatch (wrong)
+vidor,pull,moves with,15,not judged yet
+vidor,wave,wearing,15,mismatch (wrong)
+vidor,hug,petting,15,mismatch (wrong)
+vidor,lean on,hugging,15,mismatch (wrong)
+vidor,behind,carry,15,not judged yet
+vidor,drive,in front of,15,not judged yet
+vidor,drive,inside,15,mismatch (wrong)
+vidor,hold hand of,moving with,15,mismatch (wrong)
+vidor,wave hand to,touching,15,mismatch (wrong)
+vidor,kick,passes,15,not judged yet
+vidor,shout at,touching,15,not judged yet
+vidor,hold,ride,14,mismatch (wrong)
+vidor,pull,riding,14,not judged yet
+vidor,hit,below,14,not judged yet
+vidor,push,moving with,14,mismatch (wrong)
+vidor,press,playing with,14,mismatch (wrong)
+vidor,behind,lean on,14,not judged yet
+vidor,pat,carrying,14,mismatch (wrong)
+vidor,hold hand of,moving away from,14,mismatch (wrong)
+vidor,hold,moving away from,14,mismatch (wrong)
+vidor,bite,wearing,14,mismatch (wrong)
+vidor,hug,wearing,14,not judged yet
+vidor,chase,behind,14,not judged yet
+vidor,release,sitting on,14,not judged yet
+vidor,beneath,playing with,14,mismatch (wrong)
+vidor,kiss,hold,14,not judged yet
+vidor,hold hand of,plays with,14,not judged yet
+vidor,inside,hold,14,not judged yet
+vidor,use,wearing,14,not judged yet
+vidor,use,approaches,14,not judged yet
+vidor,press,behind,14,mismatch (wrong)
+vidor,drive,holding,14,mismatch (wrong)
+vidor,caress,attached to,14,mismatch (wrong)
+vidor,kiss,near,14,mismatch (wrong)
+vidor,press,sitting on,14,not judged yet
+vidor,watch,push,14,not judged yet
+vidor,shout at,near,14,mismatch (wrong)
+vidor,shout at,inside,14,not judged yet
+vidor,bite,plays with,14,mismatch (wrong)
+vidor,pull,playing with,13,mismatch (wrong)
+vidor,speak to,petting,13,not judged yet
+vidor,beneath,touches,13,not judged yet
+vidor,chase,moving away from,13,not judged yet
+vidor,caress,hold,13,not judged yet
+vidor,release,moves with,13,not judged yet
+vidor,hit,playing with,13,mismatch (wrong)
+vidor,knock,in front of,13,mismatch (wrong)
+vidor,above,plays with,13,mismatch (wrong)
+vidor,kiss,hugging,13,semantic overlap (right)
+vidor,pull,petting,13,mismatch (wrong)
+vidor,lean on,dancing with,13,mismatch (wrong)
+vidor,next to,hold hand of,13,not judged yet
+vidor,lick,approaches,13,not judged yet
+vidor,lift,dancing with,13,mismatch (wrong)
+vidor,lift,behind,13,not judged yet
+vidor,smell,near,13,mismatch (wrong)
+vidor,touch,attached to,13,not judged yet
+vidor,point to,touches,13,mismatch (wrong)
+vidor,kiss,behind,13,not judged yet
+vidor,towards,feed,12,not judged yet
+vidor,towards,performing with,12,mismatch (wrong)
+vidor,pat,below,12,not judged yet
+vidor,above,passes,12,not judged yet
+vidor,lift,moves with,12,not judged yet
+vidor,grab,attached to,12,not judged yet
+vidor,knock,approaches,12,not judged yet
+vidor,release,below,12,not judged yet
+vidor,above,playing,12,not judged yet
+vidor,kiss,approaching,12,mismatch (wrong)
+vidor,kiss,playing with,12,mismatch (wrong)
+vidor,point to,below,12,not judged yet
+vidor,towards,bite,12,not judged yet
+vidor,wave,touching,12,mismatch (wrong)
+vidor,throw,above,12,not judged yet
+vidor,get off,riding,12,mismatch (wrong)
+vidor,press,moves away from,12,mismatch (wrong)
+vidor,lean on,dances with,12,mismatch (wrong)
+vidor,throw,below,12,not judged yet
+vidor,kiss,next to,12,not judged yet
+vidor,drive,approaches,12,not judged yet
+vidor,lick,touching,12,not judged yet
+vidor,lean on,plays with,12,mismatch (wrong)
+vidor,kick,moves away from,12,mismatch (wrong)
+vidor,touch,inside,12,not judged yet
+vidor,touch,ride,12,not judged yet
+vidor,kick,playing with,12,mismatch (wrong)
+vidor,push,passes,12,not judged yet
+vidor,shout at,behind,12,not judged yet
+vidor,kiss,above,12,not judged yet
+vidor,squeeze,touching,12,hypernym/hyponym (right)
+vidor,pat,on,11,mismatch (wrong)
+vidor,towards,lean on,11,not judged yet
+vidor,clean,holds,11,not judged yet
+vidor,clean,hold,11,mismatch (wrong)
+vidor,inside,moves with,11,not judged yet
+vidor,caress,carrying,11,mismatch (wrong)
+vidor,kick,wearing,11,not judged yet
+vidor,knock,near,11,not judged yet
+vidor,press,dancing with,11,mismatch (wrong)
+vidor,watch,beneath,11,not judged yet
+vidor,towards,beneath,11,not judged yet
+vidor,touch,looks at,11,mismatch (wrong)
+vidor,kiss,carrying,11,mismatch (wrong)
+vidor,pat,moves away from,11,mismatch (wrong)
+vidor,feed,attached to,11,not judged yet
+vidor,feed,in front of,11,mismatch (wrong)
+vidor,behind,push,11,not judged yet
+vidor,push,inside,11,mismatch (wrong)
+vidor,squeeze,holding,11,hypernym/hyponym (right)
+vidor,hold,bite,11,not judged yet
+vidor,away,bite,11,not judged yet
+vidor,wave hand to,moving away from,11,mismatch (wrong)
+vidor,play(instrument),sitting on,11,not judged yet
+vidor,pull,below,11,not judged yet
+vidor,point to,carrying,11,not judged yet
+vidor,drive,ride,11,not judged yet
+vidor,inside,drive,11,not judged yet
+vidor,above,petting,11,mismatch (wrong)
+vidor,bite,looks at,11,mismatch (wrong)
+vidor,inside,below,11,not judged yet
+vidor,away,feed,10,not judged yet
+vidor,speak to,sitting on,10,not judged yet
+vidor,pat,moves with,10,not judged yet
+vidor,in front of,drive,10,not judged yet
+vidor,towards,use,10,not judged yet
+vidor,touch,moves with,10,not judged yet
+vidor,lift,moves away from,10,mismatch (wrong)
+vidor,grab,inside,10,not judged yet
+vidor,lean on,looks at,10,not judged yet
+vidor,point to,playing with,10,mismatch (wrong)
+vidor,away,beneath,10,not judged yet
+vidor,speak to,riding,10,not judged yet
+vidor,wave hand to,below,10,not judged yet
+vidor,wave,approaching,10,not judged yet
+vidor,wave,in front of,10,mismatch (wrong)
+vidor,beneath,plays with,10,not judged yet
+vidor,lift,hugging,10,mismatch (wrong)
+vidor,lift,plays with,10,mismatch (wrong)
+vidor,grab,moves away from,10,mismatch (wrong)
+vidor,feed,above,10,mismatch (wrong)
+vidor,press,hold,10,not judged yet
+vidor,throw,playing with,10,mismatch (wrong)
+vidor,chase,pushes,10,not judged yet
+vidor,hold,moving with,10,semantic overlap (right)
+vidor,get off,holding,10,not judged yet
+vidor,pull,inside,10,not judged yet
+vidor,towards,watch,10,not judged yet
+vidor,smell,holding,10,not judged yet
+vidor,kick,next to,10,not judged yet
+vidor,kick,below,10,not judged yet
+vidor,lean on,use,10,not judged yet
+vidor,chase,playing with,10,semantic overlap (right)
+vidor,lift,touches,10,semantic overlap (right)
+vidor,lift,dances with,10,not judged yet
+vidor,shake hand with,approaches,10,not judged yet
+vidor,away,lean on,10,not judged yet
+vidor,play(instrument),use,10,not judged yet
+vidor,play(instrument),looking at,10,mismatch (wrong)
+vidor,in front of,speak to,10,not judged yet
+vidor,bite,moving away from,10,mismatch (wrong)
+vidor,shout at,looking at,10,not judged yet
+vidor,smell,below,10,not judged yet
+vidor,release,on,9,mismatch (wrong)
+vidor,pull,plays with,9,mismatch (wrong)
+vidor,press,wearing,9,mismatch (wrong)
+vidor,press,carrying,9,mismatch (wrong)
+vidor,pat,dancing with,9,mismatch (wrong)
+vidor,pat,sitting on,9,mismatch (wrong)
+vidor,beneath,sitting on,9,not judged yet
+vidor,caress,riding,9,not judged yet
+vidor,chase,hold,9,not judged yet
+vidor,knock,approaching,9,not judged yet
+vidor,hit,carrying,9,mismatch (wrong)
+vidor,pat,playing with,9,mismatch (wrong)
 vidor,feed,near,9,mismatch (wrong)
-vidor,feed,above,9,mismatch (wrong)
-vidor,push,carrying,8,mismatch (wrong)
-vidor,hold,ride,8,mismatch (wrong)
-vidor,beneath,inside,8,not judged yet
-vidor,speak to,looks at,8,semantic overlap (right)
-vidor,away,plays with,8,mismatch (wrong)
-vidor,towards,dances with,8,mismatch (wrong)
-vidor,push,overlapping,8,mismatch (wrong)
-vidor,push,moving with,8,mismatch (wrong)
-vidor,pat,near,8,mismatch (wrong)
-vidor,behind,watch,8,not judged yet
-vidor,beneath,sitting on,8,not judged yet
-vidor,speak to,holds,8,not judged yet
-vidor,use,touching,8,not judged yet
-vidor,lift,hold,8,semantic overlap (right)
-vidor,caress,holding,8,mismatch (wrong)
-vidor,kick,above,8,not judged yet
-vidor,bite,looking at,8,mismatch (wrong)
-vidor,bite,approaches,8,mismatch (wrong)
-vidor,hug,approaches,8,mismatch (wrong)
-vidor,carry,moves away from,8,mismatch (wrong)
-vidor,carry,holds,8,hypernym/hyponym (right)
-vidor,point to,holding,8,mismatch (wrong)
-vidor,press,next to,8,not judged yet
-vidor,grab,below,8,not judged yet
-vidor,inside,ride,8,not judged yet
-vidor,inside,behind,8,mismatch (wrong)
-vidor,feed,attached to,8,not judged yet
-vidor,point to,above,8,mismatch (wrong)
-vidor,push,holds,7,semantic overlap (right)
-vidor,touch,moves away from,7,mismatch (wrong)
-vidor,push,looking at,7,mismatch (wrong)
-vidor,release,next to,7,not judged yet
-vidor,towards,plays with,7,mismatch (wrong)
-vidor,next to,bite,7,not judged yet
-vidor,next to,passing by,7,mismatch (wrong)
-vidor,lean on,lean on,7,identical (right)
-vidor,speak to,dancing with,7,mismatch (wrong)
-vidor,hit,looking at,7,mismatch (wrong)
-vidor,away,hugging,7,mismatch (wrong)
-vidor,pat,looking at,7,mismatch (wrong)
-vidor,above,moving with,7,mismatch (wrong)
-vidor,pull,approaching,7,mismatch (wrong)
-vidor,lean on,hold,7,mismatch (wrong)
-vidor,inside,next to,7,not judged yet
-vidor,chase,below,7,mismatch (wrong)
-vidor,watch,ride,7,mismatch (wrong)
-vidor,lift,near,7,mismatch (wrong)
-vidor,lift,overlapping,7,mismatch (wrong)
-vidor,in front of,playing,7,mismatch (wrong)
-vidor,bite,carrying,7,mismatch (wrong)
-vidor,hold,below,7,mismatch (wrong)
-vidor,carry,approaching,7,mismatch (wrong)
-vidor,carry,next to,7,mismatch (wrong)
-vidor,carry,overlapping,7,mismatch (wrong)
-vidor,ride,moving with,7,semantic overlap (right)
-vidor,point to,looking at,7,semantic overlap (right)
-vidor,point to,touching,7,mismatch (wrong)
-vidor,point to,next to,7,not judged yet
-vidor,away,beneath,7,not judged yet
-vidor,bite,hold,7,not judged yet
-vidor,bite,in front of,7,mismatch (wrong)
-vidor,pull,in front of,7,mismatch (wrong)
-vidor,wave,holding,7,mismatch (wrong)
-vidor,hug,holds,7,hypernym/hyponym (right)
+vidor,point to,moving away from,9,not judged yet
+vidor,throw,approaches,9,not judged yet
+vidor,hug,sitting on,9,not judged yet
+vidor,lean on,moving with,9,mismatch (wrong)
+vidor,pull,moving away from,9,mismatch (wrong)
+vidor,point to,dancing with,9,not judged yet
+vidor,carry,on,9,not judged yet
+vidor,hug,moving with,9,mismatch (wrong)
+vidor,smell,playing with,9,mismatch (wrong)
+vidor,lick,in front of,9,mismatch (wrong)
+vidor,inside,moving away from,9,mismatch (wrong)
+vidor,kick,looking at,9,mismatch (wrong)
+vidor,beneath,pushes,9,not judged yet
+vidor,use,on,9,not judged yet
+vidor,press,inside,9,not judged yet
+vidor,shake hand with,approaching,9,not judged yet
+vidor,use,attached to,9,not judged yet
+vidor,pat,touches,9,not judged yet
+vidor,kick,plays with,9,mismatch (wrong)
+vidor,play(instrument),above,9,mismatch (wrong)
+vidor,shout at,moves away from,9,not judged yet
+vidor,drive,near,9,mismatch (wrong)
+vidor,watch,hold hand of,9,not judged yet
+vidor,lick,looking at,9,mismatch (wrong)
+vidor,press,below,9,not judged yet
+vidor,pat,attached to,9,not judged yet
+vidor,away,use,8,not judged yet
+vidor,hit,moving away from,8,mismatch (wrong)
+vidor,press,pushes,8,not judged yet
+vidor,clean,approaches,8,mismatch (wrong)
+vidor,clean,carrying,8,not judged yet
+vidor,point to,looks at,8,semantic overlap (right)
+vidor,knock,overlapping,8,not judged yet
+vidor,touch,moving away from,8,mismatch (wrong)
+vidor,bite,pushes,8,not judged yet
+vidor,press,dances with,8,not judged yet
+vidor,wave,moves away from,8,mismatch (wrong)
+vidor,wave,near,8,mismatch (wrong)
+vidor,speak to,attached to,8,not judged yet
+vidor,beneath,looks at,8,mismatch (wrong)
+vidor,behind,hold hand of,8,not judged yet
+vidor,carry,riding,8,not judged yet
+vidor,carry,moving away from,8,mismatch (wrong)
+vidor,wave hand to,holds,8,not judged yet
+vidor,throw,behind,8,not judged yet
+vidor,hold,dancing with,8,mismatch (wrong)
+vidor,push,below,8,not judged yet
+vidor,grab,plays with,8,mismatch (wrong)
+vidor,wave hand to,playing with,8,not judged yet
+vidor,watch,drive,8,not judged yet
+vidor,chase,plays with,8,semantic overlap (right)
+vidor,shake hand with,in front of,8,mismatch (wrong)
+vidor,hold,hugging,8,not judged yet
+vidor,watch,lean on,8,not judged yet
+vidor,smell,behind,8,not judged yet
+vidor,wave hand to,attached to,8,not judged yet
+vidor,smell,above,8,mismatch (wrong)
+vidor,hold,petting,8,semantic overlap (right)
+vidor,inside,wearing,8,not judged yet
+vidor,watch,speak to,8,not judged yet
+vidor,release,ride,7,not judged yet
+vidor,pull,ride,7,not judged yet
+vidor,speak to,feed,7,not judged yet
+vidor,pat,dances with,7,not judged yet
+vidor,chase,passes,7,not judged yet
+vidor,chase,next to,7,not judged yet
+vidor,speak to,watch,7,not judged yet
+vidor,kick,on,7,not judged yet
+vidor,next to,hit,7,not judged yet
+vidor,hit,touches,7,not judged yet
+vidor,above,use,7,not judged yet
+vidor,knock,moves away from,7,not judged yet
+vidor,pull,dancing with,7,mismatch (wrong)
+vidor,next to,hug,7,not judged yet
+vidor,kiss,moves away from,7,not judged yet
 vidor,feed,overlapping,7,not judged yet
-vidor,point to,moves away from,7,mismatch (wrong)
-vidor,push,ride,7,mismatch (wrong)
-vidor,touch,carrying,6,mismatch (wrong)
-vidor,release,plays with,6,mismatch (wrong)
-vidor,release,behind,6,not judged yet
-vidor,next to,lean on,6,not judged yet
-vidor,lean on,touches,6,not judged yet
-vidor,hit,approaching,6,mismatch (wrong)
-vidor,press,holds,6,semantic overlap (right)
-vidor,pat,above,6,mismatch (wrong)
-vidor,towards,hugging,6,mismatch (wrong)
-vidor,behind,hugging,6,mismatch (wrong)
-vidor,beneath,touches,6,not judged yet
-vidor,clean,holding,6,mismatch (wrong)
-vidor,press,in front of,6,mismatch (wrong)
-vidor,use,use,6,identical (right)
-vidor,lean on,carrying,6,not judged yet
-vidor,lift,touching,6,semantic overlap (right)
-vidor,chase,moving away from,6,not judged yet
-vidor,kick,holding,6,mismatch (wrong)
-vidor,kick,in front of,6,mismatch (wrong)
-vidor,kick,near,6,mismatch (wrong)
+vidor,push,push,7,identical (right)
+vidor,carry,passes,7,not judged yet
+vidor,watch,hug,7,not judged yet
+vidor,chase,moving with,7,semantic overlap (right)
+vidor,get off,ride,7,mismatch (wrong)
+vidor,pull,sitting on,7,mismatch (wrong)
+vidor,beneath,dancing with,7,not judged yet
+vidor,above,dancing with,7,not judged yet
+vidor,point to,dances with,7,mismatch (wrong)
+vidor,drive,drive,7,identical (right)
+vidor,drive,approaching,7,not judged yet
+vidor,hug,attached to,7,not judged yet
+vidor,wave hand to,hold,7,not judged yet
+vidor,lick,approaching,7,mismatch (wrong)
+vidor,lick,holding,7,mismatch (wrong)
+vidor,pat,petting,7,synonym (right)
+vidor,pat,wearing,7,mismatch (wrong)
+vidor,push,plays with,7,mismatch (wrong)
+vidor,smell,attached to,7,not judged yet
+vidor,smell,touches,7,not judged yet
+vidor,feed,holds,7,not judged yet
+vidor,feed,looking at,7,mismatch (wrong)
+vidor,ride,petting,7,not judged yet
+vidor,next to,speak to,7,not judged yet
+vidor,point to,wearing,7,not judged yet
+vidor,play(instrument),approaching,7,not judged yet
+vidor,squeeze,approaches,7,mismatch (wrong)
+vidor,drive,next to,7,not judged yet
+vidor,lick,overlapping,7,not judged yet
+vidor,push,sitting on,6,not judged yet
+vidor,beneath,riding,6,not judged yet
+vidor,clean,touches,6,mismatch (wrong)
+vidor,clean,in front of,6,mismatch (wrong)
+vidor,open,looking at,6,mismatch (wrong)
+vidor,open,approaches,6,not judged yet
+vidor,touch,dancing with,6,not judged yet
 vidor,chase,on,6,not judged yet
-vidor,hold,moves with,6,not judged yet
-vidor,hit,holds,6,mismatch (wrong)
-vidor,carry,behind,6,not judged yet
-vidor,behind,use,6,not judged yet
-vidor,press,dancing with,6,mismatch (wrong)
-vidor,pull,near,6,mismatch (wrong)
-vidor,pull,overlapping,6,mismatch (wrong)
-vidor,bite,above,6,not judged yet
-vidor,chase,behind,6,not judged yet
-vidor,release,sitting on,6,not judged yet
-vidor,wave hand to,approaches,6,mismatch (wrong)
-vidor,wave hand to,in front of,6,mismatch (wrong)
-vidor,push,behind,6,not judged yet
-vidor,wave,wearing,6,mismatch (wrong)
-vidor,wave,in front of,6,mismatch (wrong)
-vidor,hug,hold,6,not judged yet
-vidor,hug,in front of,6,mismatch (wrong)
+vidor,chase,inside,6,not judged yet
+vidor,lift,sitting on,6,not judged yet
+vidor,lift,inside,6,not judged yet
+vidor,away,watch,6,not judged yet
+vidor,release,inside,6,not judged yet
+vidor,hit,hit,6,identical (right)
+vidor,hit,wearing,6,mismatch (wrong)
+vidor,hit,attached to,6,not judged yet
+vidor,above,looks at,6,mismatch (wrong)
+vidor,hold,looks at,6,mismatch (wrong)
+vidor,knock,behind,6,not judged yet
+vidor,knock,above,6,not judged yet
+vidor,knock,below,6,not judged yet
+vidor,pat,inside,6,not judged yet
+vidor,bite,attached to,6,not judged yet
 vidor,feed,passes,6,not judged yet
-vidor,point to,below,6,not judged yet
-vidor,throw,holding,6,mismatch (wrong)
-vidor,throw,hold,6,not judged yet
-vidor,throw,touching,6,not judged yet
-vidor,play(instrument),holding,6,hypernym/hyponym (right)
-vidor,play(instrument),playing,6,synonym (right)
-vidor,play(instrument),hold,6,not judged yet
-vidor,push,on,6,mismatch (wrong)
-vidor,release,ride,5,not judged yet
-vidor,release,playing with,5,mismatch (wrong)
-vidor,away,passing by,5,mismatch (wrong)
-vidor,away,petting,5,mismatch (wrong)
-vidor,speak to,moving with,5,not judged yet
-vidor,hit,moves away from,5,mismatch (wrong)
-vidor,push,pushes,5,identical (right)
-vidor,push,above,5,not judged yet
-vidor,push,moving away from,5,mismatch (wrong)
-vidor,behind,petting,5,mismatch (wrong)
-vidor,hold,sitting on,5,mismatch (wrong)
+vidor,feed,carrying,6,not judged yet
+vidor,point to,moves with,6,not judged yet
+vidor,squeeze,hold,6,not judged yet
+vidor,pull,on,6,mismatch (wrong)
+vidor,pat,looks at,6,not judged yet
+vidor,kiss,moves with,6,mismatch (wrong)
+vidor,hug,on,6,not judged yet
+vidor,lick,moves away from,6,not judged yet
+vidor,speak to,pushes,6,not judged yet
+vidor,above,beneath,6,not judged yet
+vidor,hug,moving away from,6,mismatch (wrong)
+vidor,hold hand of,wearing,6,not judged yet
+vidor,clean,looking at,6,mismatch (wrong)
+vidor,lift,moving with,6,mismatch (wrong)
+vidor,smell,on,6,mismatch (wrong)
+vidor,shake hand with,touching,6,semantic overlap (right)
+vidor,lean on,drive,6,not judged yet
+vidor,smell,next to,6,not judged yet
+vidor,inside,attached to,6,mismatch (wrong)
+vidor,drive,overlapping,6,not judged yet
+vidor,wave hand to,on,6,not judged yet
+vidor,away,performing music with,6,not judged yet
+vidor,drive,pushes,6,mismatch (wrong)
+vidor,press,looks at,6,not judged yet
+vidor,shout at,touches,6,not judged yet
+vidor,shout at,playing with,6,not judged yet
+vidor,shout at,above,6,not judged yet
+vidor,release,petting,6,mismatch (wrong)
+vidor,cut,holding,6,mismatch (wrong)
+vidor,cut,touching,6,mismatch (wrong)
+vidor,caress,moving away from,6,mismatch (wrong)
+vidor,inside,playing with,6,mismatch (wrong)
+vidor,bite,moves with,6,not judged yet
+vidor,wave,use,6,not judged yet
+vidor,throw,pushes,6,not judged yet
+vidor,pull,wearing,6,not judged yet
+vidor,hold hand of,attached to,6,not judged yet
+vidor,press,on,6,mismatch (wrong)
+vidor,lick,near,6,mismatch (wrong)
+vidor,get on,holding,6,mismatch (wrong)
+vidor,hit,looks at,5,not judged yet
+vidor,hit,moves with,5,not judged yet
+vidor,beneath,dances with,5,not judged yet
 vidor,press,moves with,5,not judged yet
-vidor,use,looking at,5,mismatch (wrong)
-vidor,speak to,touches,5,mismatch (wrong)
-vidor,speak to,hold,5,not judged yet
-vidor,hold,use,5,not judged yet
-vidor,behind,passing by,5,not judged yet
-vidor,inside,approaches,5,not judged yet
-vidor,touch,approaching,5,not judged yet
-vidor,speak to,hugging,5,mismatch (wrong)
-vidor,touch,behind,5,mismatch (wrong)
-vidor,kick,carrying,5,not judged yet
-vidor,kick,overlapping,5,mismatch (wrong)
-vidor,grab,attached to,5,not judged yet
-vidor,grab,next to,5,not judged yet
-vidor,hold,moving away from,5,mismatch (wrong)
-vidor,hug,looking at,5,mismatch (wrong)
-vidor,bite,bite,5,identical (right)
-vidor,bite,wearing,5,mismatch (wrong)
-vidor,carry,moving with,5,not judged yet
-vidor,release,approaching,5,mismatch (wrong)
-vidor,release,looking at,5,mismatch (wrong)
-vidor,behind,plays with,5,mismatch (wrong)
-vidor,bite,below,5,not judged yet
-vidor,use,in front of,5,not judged yet
+vidor,open,approaching,5,not judged yet
+vidor,chase,attached to,5,not judged yet
+vidor,caress,plays with,5,mismatch (wrong)
+vidor,ride,use,5,not judged yet
+vidor,grab,riding,5,not judged yet
+vidor,pat,riding,5,not judged yet
+vidor,pull,dances with,5,not judged yet
+vidor,wave,above,5,not judged yet
+vidor,above,push,5,not judged yet
+vidor,speak to,playing,5,not judged yet
+vidor,touch,feed,5,not judged yet
+vidor,touch,hugging,5,hypernym/hyponym (right)
+vidor,above,hugging,5,mismatch (wrong)
 vidor,lean on,push,5,not judged yet
 vidor,inside,push,5,not judged yet
-vidor,in front of,push,5,not judged yet
-vidor,behind,hold hand of,5,not judged yet
 vidor,feed,moves with,5,not judged yet
 vidor,feed,behind,5,not judged yet
-vidor,press,above,5,not judged yet
-vidor,throw,holds,5,mismatch (wrong)
-vidor,play(instrument),carrying,5,mismatch (wrong)
-vidor,carry,hold,5,not judged yet
-vidor,above,dancing with,5,not judged yet
-vidor,release,on,4,mismatch (wrong)
-vidor,towards,feed,4,not judged yet
-vidor,watch,bite,4,not judged yet
-vidor,speak to,plays with,4,not judged yet
-vidor,towards,petting,4,mismatch (wrong)
-vidor,hit,behind,4,not judged yet
-vidor,hit,next to,4,mismatch (wrong)
-vidor,press,touches,4,hypernym/hyponym (right)
-vidor,press,looking at,4,mismatch (wrong)
-vidor,press,pushes,4,not judged yet
-vidor,speak to,dances with,4,not judged yet
-vidor,pat,below,4,not judged yet
-vidor,touch,hold,4,not judged yet
-vidor,beneath,riding,4,not judged yet
-vidor,clean,touching,4,mismatch (wrong)
-vidor,ride,attached to,4,not judged yet
-vidor,behind,feed,4,not judged yet
-vidor,lean on,moves with,4,mismatch (wrong)
-vidor,hold hand of,approaches,4,mismatch (wrong)
-vidor,hold hand of,holding,4,hypernym/hyponym (right)
-vidor,chase,moves with,4,not judged yet
-vidor,chase,next to,4,not judged yet
-vidor,in front of,feed,4,mismatch (wrong)
-vidor,caress,touching,4,hypernym/hyponym (right)
-vidor,caress,approaches,4,mismatch (wrong)
-vidor,touch,above,4,not judged yet
-vidor,chase,holds,4,mismatch (wrong)
-vidor,kick,on,4,not judged yet
-vidor,watch,carry,4,not judged yet
-vidor,lift,approaching,4,not judged yet
+vidor,away,hold hand of,5,not judged yet
+vidor,in front of,hug,5,not judged yet
+vidor,throw,wearing,5,not judged yet
+vidor,wave,overlapping,5,mismatch (wrong)
+vidor,push,dancing with,5,mismatch (wrong)
+vidor,get off,on,5,mismatch (wrong)
+vidor,towards,hold hand of,5,not judged yet
+vidor,carry,playing,5,mismatch (wrong)
+vidor,throw,plays with,5,mismatch (wrong)
+vidor,throw,next to,5,not judged yet
+vidor,hit,plays with,5,not judged yet
+vidor,wave,playing with,5,mismatch (wrong)
+vidor,carry,pushes,5,not judged yet
+vidor,drive,on,5,mismatch (wrong)
+vidor,ride,drive,5,not judged yet
+vidor,release,moving away from,5,mismatch (wrong)
+vidor,hold hand of,sitting on,5,not judged yet
+vidor,caress,below,5,mismatch (wrong)
+vidor,lick,holds,5,not judged yet
+vidor,kiss,wearing,5,mismatch (wrong)
+vidor,feed,touches,5,not judged yet
+vidor,hold,passes,5,not judged yet
+vidor,next to,drive,5,not judged yet
+vidor,kiss,dancing with,5,mismatch (wrong)
+vidor,smell,looks at,5,mismatch (wrong)
+vidor,shake hand with,holding,5,semantic overlap (right)
+vidor,hold hand of,riding,5,not judged yet
+vidor,feed,hold,5,mismatch (wrong)
+vidor,wave hand to,touches,5,not judged yet
+vidor,wave hand to,moves with,5,not judged yet
+vidor,in front of,play(instrument),5,not judged yet
+vidor,smell,moving away from,5,mismatch (wrong)
+vidor,close,use,5,not judged yet
+vidor,get off,pushes,5,mismatch (wrong)
+vidor,away,push,5,not judged yet
+vidor,play(instrument),touches,5,not judged yet
+vidor,inside,touches,5,not judged yet
+vidor,bite,inside,5,not judged yet
+vidor,play(instrument),moves away from,5,not judged yet
+vidor,behind,drive,5,not judged yet
+vidor,drive,behind,5,not judged yet
+vidor,carry,sitting on,5,not judged yet
+vidor,point to,attached to,5,not judged yet
+vidor,play(instrument),inside,5,not judged yet
+vidor,push,attached to,5,not judged yet
+vidor,caress,ride,5,not judged yet
+vidor,hold,push,5,not judged yet
+vidor,feed,playing with,5,mismatch (wrong)
+vidor,in front of,hit,5,not judged yet
+vidor,get off,holds,5,mismatch (wrong)
+vidor,lick,looks at,5,not judged yet
+vidor,speak to,performing with,4,not judged yet
+vidor,get on,approaches,4,not judged yet
+vidor,get on,touching,4,mismatch (wrong)
+vidor,get on,in front of,4,mismatch (wrong)
+vidor,pull,attached to,4,not judged yet
+vidor,pat,moving with,4,not judged yet
+vidor,inside,looks at,4,mismatch (wrong)
+vidor,caress,pushes,4,not judged yet
+vidor,open,holding,4,mismatch (wrong)
+vidor,open,touching,4,not judged yet
+vidor,lift,on,4,mismatch (wrong)
 vidor,grab,on,4,not judged yet
-vidor,hit,hold,4,not judged yet
-vidor,hit,touches,4,not judged yet
-vidor,hit,attached to,4,not judged yet
-vidor,carry,above,4,not judged yet
-vidor,point to,playing with,4,mismatch (wrong)
-vidor,grab,approaching,4,not judged yet
-vidor,grab,pushes,4,mismatch (wrong)
-vidor,ride,use,4,not judged yet
-vidor,above,use,4,not judged yet
-vidor,knock,above,4,not judged yet
-vidor,knock,in front of,4,mismatch (wrong)
-vidor,release,moves away from,4,mismatch (wrong)
-vidor,press,dances with,4,not judged yet
-vidor,push,hold,4,not judged yet
-vidor,use,near,4,mismatch (wrong)
-vidor,wave hand to,approaching,4,mismatch (wrong)
-vidor,wave hand to,holding,4,mismatch (wrong)
-vidor,wave,carrying,4,mismatch (wrong)
-vidor,wave,holds,4,mismatch (wrong)
-vidor,wave,hold,4,not judged yet
-vidor,wave,approaches,4,mismatch (wrong)
-vidor,wave,above,4,not judged yet
-vidor,ride,moving away from,4,not judged yet
-vidor,away,playing,4,mismatch (wrong)
-vidor,hold,playing,4,mismatch (wrong)
-vidor,wave,near,4,mismatch (wrong)
-vidor,hug,hugging,4,identical (right)
-vidor,inside,carrying,4,mismatch (wrong)
-vidor,inside,on,4,mismatch (wrong)
-vidor,throw,near,4,not judged yet
-vidor,play(instrument),holds,4,not judged yet
-vidor,hug,overlapping,4,mismatch (wrong)
-vidor,wave,touching,4,mismatch (wrong)
-vidor,touch,sitting on,3,not judged yet
-vidor,pull,holds,3,semantic overlap (right)
-vidor,pull,plays with,3,mismatch (wrong)
-vidor,pull,playing with,3,mismatch (wrong)
-vidor,beneath,carry,3,mismatch (wrong)
-vidor,speak to,feed,3,not judged yet
-vidor,towards,passing by,3,mismatch (wrong)
-vidor,away,feed,3,not judged yet
-vidor,hit,below,3,not judged yet
-vidor,press,carrying,3,mismatch (wrong)
-vidor,watch,performing with,3,mismatch (wrong)
-vidor,in front of,performing with,3,mismatch (wrong)
-vidor,speak to,below,3,not judged yet
-vidor,get on,approaches,3,not judged yet
+vidor,hit,playing,4,mismatch (wrong)
+vidor,ride,looks at,4,not judged yet
+vidor,knock,looking at,4,not judged yet
+vidor,ride,playing with,4,mismatch (wrong)
+vidor,ride,plays with,4,mismatch (wrong)
+vidor,pat,pushes,4,not judged yet
+vidor,pull,moving with,4,mismatch (wrong)
+vidor,ride,playing,4,not judged yet
+vidor,caress,feed,4,not judged yet
+vidor,squeeze,holds,4,not judged yet
+vidor,press,riding,4,not judged yet
+vidor,carry,inside,4,not judged yet
+vidor,lean on,petting,4,not judged yet
+vidor,beneath,bite,4,not judged yet
+vidor,throw,looking at,4,not judged yet
+vidor,next to,pull,4,not judged yet
+vidor,above,drive,4,not judged yet
+vidor,lick,wearing,4,not judged yet
+vidor,lick,hold,4,not judged yet
+vidor,smell,plays with,4,mismatch (wrong)
+vidor,hug,riding,4,not judged yet
+vidor,carry,touches,4,not judged yet
+vidor,chase,bite,4,not judged yet
+vidor,throw,approaching,4,not judged yet
+vidor,throw,moves away from,4,not judged yet
+vidor,hold,dances with,4,not judged yet
+vidor,point to,hugging,4,not judged yet
+vidor,smell,moves with,4,not judged yet
+vidor,feed,feed,4,identical (right)
+vidor,beneath,passing by,4,not judged yet
+vidor,close,holding,4,not judged yet
+vidor,close,approaches,4,not judged yet
+vidor,close,touching,4,not judged yet
+vidor,release,attached to,4,not judged yet
+vidor,press,moving away from,4,mismatch (wrong)
+vidor,use,touches,4,not judged yet
+vidor,grab,sitting on,4,not judged yet
+vidor,get off,above,4,mismatch (wrong)
+vidor,get off,near,4,mismatch (wrong)
+vidor,play(instrument),below,4,not judged yet
+vidor,hug,feed,4,not judged yet
+vidor,lift,petting,4,mismatch (wrong)
+vidor,cut,in front of,4,mismatch (wrong)
+vidor,press,plays with,4,mismatch (wrong)
+vidor,away,drive,4,not judged yet
+vidor,use,moves away from,4,not judged yet
+vidor,use,carry,4,not judged yet
+vidor,kiss,dances with,4,mismatch (wrong)
+vidor,kiss,below,4,not judged yet
+vidor,drive,looking at,4,not judged yet
+vidor,knock,touching,4,not judged yet
+vidor,knock,holding,4,not judged yet
+vidor,lift,below,4,not judged yet
+vidor,hold hand of,hold hand of,4,identical (right)
+vidor,hold hand of,passes,4,not judged yet
+vidor,kiss,touches,4,not judged yet
+vidor,push,looks at,4,mismatch (wrong)
+vidor,carry,playing with,4,mismatch (wrong)
+vidor,caress,moves with,4,not judged yet
+vidor,speak to,ride,4,not judged yet
+vidor,pat,playing,4,mismatch (wrong)
+vidor,hit,on,4,not judged yet
+vidor,hold hand of,petting,4,not judged yet
+vidor,lick,next to,4,not judged yet
+vidor,hit,pushes,4,not judged yet
+vidor,lick,below,4,not judged yet
+vidor,get on,riding,4,not judged yet
+vidor,hug,playing,4,not judged yet
+vidor,hit,dancing with,3,not judged yet
+vidor,pat,hugging,3,not judged yet
 vidor,get on,approaching,3,not judged yet
-vidor,above,lean on,3,not judged yet
-vidor,lean on,moving away from,3,mismatch (wrong)
-vidor,touch,wearing,3,mismatch (wrong)
-vidor,beneath,wearing,3,mismatch (wrong)
-vidor,clean,approaches,3,mismatch (wrong)
-vidor,clean,holds,3,not judged yet
-vidor,clean,carrying,3,not judged yet
-vidor,beneath,dances with,3,not judged yet
-vidor,pat,holds,3,mismatch (wrong)
+vidor,clean,approaching,3,not judged yet
 vidor,press,moving with,3,not judged yet
-vidor,lean on,wearing,3,mismatch (wrong)
-vidor,hold hand of,approaching,3,mismatch (wrong)
-vidor,hold hand of,in front of,3,mismatch (wrong)
-vidor,above,touches,3,mismatch (wrong)
-vidor,lift,playing with,3,mismatch (wrong)
-vidor,lift,looking at,3,mismatch (wrong)
-vidor,inside,looking at,3,mismatch (wrong)
-vidor,chase,looking at,3,mismatch (wrong)
-vidor,chase,passes,3,not judged yet
-vidor,caress,holds,3,not judged yet
-vidor,speak to,carrying,3,mismatch (wrong)
-vidor,open,holding,3,mismatch (wrong)
 vidor,open,holds,3,not judged yet
-vidor,touch,near,3,mismatch (wrong)
-vidor,kick,holds,3,mismatch (wrong)
-vidor,lift,moves away from,3,mismatch (wrong)
-vidor,hold,carry,3,not judged yet
-vidor,lift,on,3,mismatch (wrong)
-vidor,chase,inside,3,not judged yet
-vidor,grab,behind,3,not judged yet
-vidor,grab,inside,3,not judged yet
-vidor,hold,inside,3,not judged yet
-vidor,away,watch,3,not judged yet
-vidor,release,wearing,3,mismatch (wrong)
-vidor,hit,playing,3,mismatch (wrong)
-vidor,caress,looking at,3,mismatch (wrong)
-vidor,carry,looking at,3,mismatch (wrong)
-vidor,ride,looks at,3,not judged yet
-vidor,grab,looking at,3,mismatch (wrong)
-vidor,lift,pushes,3,mismatch (wrong)
-vidor,knock,approaches,3,not judged yet
-vidor,knock,approaching,3,not judged yet
-vidor,knock,moves away from,3,not judged yet
-vidor,knock,behind,3,not judged yet
-vidor,knock,near,3,not judged yet
-vidor,knock,overlapping,3,not judged yet
-vidor,ride,plays with,3,mismatch (wrong)
-vidor,lean on,attached to,3,not judged yet
-vidor,bite,pushes,3,not judged yet
-vidor,pull,moves with,3,not judged yet
-vidor,bite,near,3,mismatch (wrong)
-vidor,bite,overlapping,3,mismatch (wrong)
-vidor,use,behind,3,not judged yet
-vidor,wave hand to,moves away from,3,mismatch (wrong)
-vidor,wave hand to,next to,3,mismatch (wrong)
-vidor,wave hand to,behind,3,not judged yet
-vidor,wave hand to,near,3,mismatch (wrong)
-vidor,watch,beneath,3,not judged yet
-vidor,wave,approaching,3,not judged yet
-vidor,wave,moves away from,3,mismatch (wrong)
-vidor,beneath,playing with,3,mismatch (wrong)
-vidor,kiss,holding,3,mismatch (wrong)
-vidor,hug,playing with,3,mismatch (wrong)
-vidor,pat,playing with,3,mismatch (wrong)
-vidor,pat,behind,3,mismatch (wrong)
-vidor,grab,touches,3,hypernym/hyponym (right)
-vidor,feed,carrying,3,not judged yet
-vidor,inside,holds,3,not judged yet
-vidor,point to,behind,3,not judged yet
-vidor,squeeze,holding,3,hypernym/hyponym (right)
+vidor,push,wearing,3,not judged yet
+vidor,carry,looks at,3,mismatch (wrong)
+vidor,point to,plays with,3,not judged yet
+vidor,lean on,passes,3,not judged yet
+vidor,wave,looking at,3,mismatch (wrong)
+vidor,caress,looks at,3,not judged yet
+vidor,wave,moving away from,3,not judged yet
+vidor,feed,moves away from,3,not judged yet
 vidor,squeeze,pushes,3,not judged yet
-vidor,point to,holds,3,not judged yet
-vidor,throw,carrying,3,mismatch (wrong)
-vidor,bite,next to,3,not judged yet
-vidor,hug,next to,3,mismatch (wrong)
-vidor,hug,above,3,mismatch (wrong)
-vidor,hug,behind,3,not judged yet
+vidor,press,ride,3,not judged yet
+vidor,squeeze,above,3,not judged yet
+vidor,away,hug,3,not judged yet
 vidor,chase,riding,3,not judged yet
-vidor,chase,moving with,3,semantic overlap (right)
-vidor,throw,wearing,3,not judged yet
-vidor,throw,in front of,3,mismatch (wrong)
-vidor,throw,above,3,not judged yet
-vidor,carry,below,3,not judged yet
-vidor,get off,riding,3,mismatch (wrong)
+vidor,get off,moves with,3,not judged yet
 vidor,beneath,playing,3,mismatch (wrong)
-vidor,pull,moves away from,3,mismatch (wrong)
-vidor,pull,behind,3,mismatch (wrong)
-vidor,pull,sitting on,3,mismatch (wrong)
-vidor,beneath,dancing with,3,not judged yet
-vidor,pull,pushes,2,mismatch (wrong)
-vidor,pull,riding,2,not judged yet
-vidor,speak to,petting,2,not judged yet
-vidor,away,use,2,not judged yet
-vidor,hit,moving away from,2,mismatch (wrong)
-vidor,hit,looks at,2,not judged yet
-vidor,hit,moves with,2,not judged yet
-vidor,push,touches,2,semantic overlap (right)
-vidor,pat,dancing with,2,mismatch (wrong)
-vidor,pat,dances with,2,not judged yet
-vidor,speak to,on,2,not judged yet
-vidor,pat,moves with,2,not judged yet
-vidor,pat,carrying,2,mismatch (wrong)
+vidor,above,dances with,3,not judged yet
+vidor,pat,plays with,3,not judged yet
+vidor,beneath,ride,3,not judged yet
+vidor,throw,touches,3,not judged yet
+vidor,wave,plays with,3,mismatch (wrong)
+vidor,open,moves away from,3,not judged yet
+vidor,kiss,moving with,3,not judged yet
+vidor,drive,above,3,not judged yet
+vidor,ride,passes,3,not judged yet
+vidor,hold hand of,on,3,not judged yet
+vidor,caress,inside,3,not judged yet
+vidor,wave hand to,plays with,3,not judged yet
+vidor,wave hand to,wearing,3,not judged yet
+vidor,lick,playing with,3,not judged yet
+vidor,hug,ride,3,not judged yet
+vidor,kick,sitting on,3,not judged yet
+vidor,kiss,petting,3,mismatch (wrong)
+vidor,use,playing with,3,not judged yet
+vidor,behind,play(instrument),3,not judged yet
+vidor,feed,petting,3,not judged yet
+vidor,push,dances with,3,not judged yet
+vidor,shake hand with,looking at,3,mismatch (wrong)
+vidor,point to,petting,3,not judged yet
+vidor,drive,touching,3,mismatch (wrong)
+vidor,wave hand to,passes,3,not judged yet
+vidor,wave hand to,petting,3,mismatch (wrong)
+vidor,towards,play(instrument),3,not judged yet
+vidor,play(instrument),play(instrument),3,identical (right)
+vidor,close,approaching,3,not judged yet
+vidor,drive,push,3,not judged yet
+vidor,drive,carrying,3,not judged yet
+vidor,lift,riding,3,mismatch (wrong)
+vidor,lift,ride,3,not judged yet
+vidor,grab,playing,3,not judged yet
+vidor,shout at,looks at,3,mismatch (wrong)
+vidor,shout at,hold,3,not judged yet
+vidor,lean on,bite,3,not judged yet
+vidor,cut,approaches,3,not judged yet
+vidor,pull,looks at,3,not judged yet
+vidor,release,dances with,3,not judged yet
+vidor,point to,passes,3,not judged yet
+vidor,clean,feed,3,mismatch (wrong)
+vidor,press,bite,3,mismatch (wrong)
+vidor,squeeze,touches,3,hypernym/hyponym (right)
+vidor,release,use,3,not judged yet
+vidor,release,looks at,3,mismatch (wrong)
+vidor,hug,looks at,3,mismatch (wrong)
+vidor,open,use,3,not judged yet
+vidor,grab,passes,3,not judged yet
+vidor,watch,kick,3,not judged yet
+vidor,kick,kick,3,identical (right)
+vidor,hug,passes,3,not judged yet
+vidor,smell,holds,3,not judged yet
+vidor,smell,passes,3,not judged yet
+vidor,kick,moves with,3,not judged yet
+vidor,grab,push,3,not judged yet
+vidor,lift,push,3,not judged yet
+vidor,hit,inside,3,mismatch (wrong)
+vidor,release,moving with,3,not judged yet
+vidor,feed,plays with,3,not judged yet
+vidor,hold hand of,pushes,3,not judged yet
+vidor,wave,touches,3,not judged yet
+vidor,squeeze,hugging,3,semantic overlap (right)
+vidor,squeeze,overlapping,3,semantic overlap (right)
+vidor,lick,behind,3,not judged yet
+vidor,get off,hold,3,mismatch (wrong)
+vidor,use,inside,3,not judged yet
+vidor,knock,carrying,3,not judged yet
+vidor,hit,dances with,2,not judged yet
 vidor,get on,sitting on,2,not judged yet
-vidor,get on,in front of,2,mismatch (wrong)
-vidor,touch,riding,2,mismatch (wrong)
-vidor,pull,touches,2,not judged yet
-vidor,pull,hold,2,not judged yet
-vidor,clean,touches,2,mismatch (wrong)
-vidor,clean,hold,2,mismatch (wrong)
-vidor,hold hand of,touching,2,hypernym/hyponym (right)
-vidor,hold hand of,moves away from,2,mismatch (wrong)
-vidor,inside,approaching,2,not judged yet
-vidor,above,passes,2,not judged yet
-vidor,touch,next to,2,mismatch (wrong)
-vidor,caress,hold,2,not judged yet
-vidor,caress,carrying,2,mismatch (wrong)
-vidor,touch,pushes,2,semantic overlap (right)
-vidor,caress,next to,2,not judged yet
-vidor,caress,in front of,2,mismatch (wrong)
+vidor,get on,on,2,semantic overlap (right)
+vidor,clean,attached to,2,not judged yet
+vidor,clean,pushes,2,not judged yet
+vidor,clean,riding,2,not judged yet
+vidor,clean,next to,2,not judged yet
 vidor,open,hold,2,not judged yet
-vidor,open,looking at,2,mismatch (wrong)
-vidor,touch,overlapping,2,semantic overlap (right)
-vidor,kick,approaches,2,mismatch (wrong)
-vidor,away,carry,2,not judged yet
-vidor,towards,carry,2,not judged yet
-vidor,lift,moves with,2,not judged yet
+vidor,open,carrying,2,not judged yet
+vidor,kick,attached to,2,not judged yet
+vidor,lift,carry,2,not judged yet
 vidor,kick,inside,2,not judged yet
-vidor,lift,sitting on,2,not judged yet
-vidor,release,inside,2,not judged yet
+vidor,grab,moves with,2,not judged yet
 vidor,push,bite,2,not judged yet
 vidor,hug,bite,2,not judged yet
-vidor,caress,petting,2,synonym (right)
-vidor,caress,playing with,2,mismatch (wrong)
-vidor,hit,wearing,2,mismatch (wrong)
-vidor,above,looks at,2,mismatch (wrong)
-vidor,point to,plays with,2,not judged yet
 vidor,hold,lift,2,semantic overlap (right)
 vidor,next to,lift,2,mismatch (wrong)
-vidor,knock,looking at,2,not judged yet
 vidor,towards,drive,2,not judged yet
 vidor,ride,hugging,2,not judged yet
-vidor,ride,playing with,2,mismatch (wrong)
-vidor,lean on,passes,2,not judged yet
-vidor,pat,pushes,2,not judged yet
-vidor,grab,riding,2,not judged yet
-vidor,pat,riding,2,not judged yet
-vidor,pat,inside,2,not judged yet
-vidor,release,touches,2,mismatch (wrong)
-vidor,bite,touches,2,mismatch (wrong)
-vidor,pull,looking at,2,mismatch (wrong)
-vidor,pull,dancing with,2,mismatch (wrong)
-vidor,pull,dances with,2,not judged yet
-vidor,pull,next to,2,not judged yet
-vidor,use,below,2,not judged yet
-vidor,next to,performing music with,2,mismatch (wrong)
-vidor,wave hand to,looking at,2,mismatch (wrong)
+vidor,wave hand to,looks at,2,not judged yet
 vidor,wave hand to,riding,2,not judged yet
-vidor,wave hand to,overlapping,2,not judged yet
-vidor,above,plays with,2,mismatch (wrong)
-vidor,behind,beneath,2,not judged yet
-vidor,towards,beneath,2,not judged yet
-vidor,caress,feed,2,not judged yet
-vidor,touch,feed,2,not judged yet
-vidor,wave,moving away from,2,not judged yet
-vidor,speak to,attached to,2,not judged yet
-vidor,beneath,plays with,2,not judged yet
-vidor,hold hand of,carrying,2,semantic overlap (right)
-vidor,kiss,carrying,2,mismatch (wrong)
-vidor,feed,moves away from,2,not judged yet
-vidor,hug,pushes,2,not judged yet
-vidor,point to,moving away from,2,not judged yet
-vidor,point to,moves with,2,not judged yet
-vidor,press,hold,2,not judged yet
-vidor,squeeze,hold,2,not judged yet
-vidor,squeeze,holds,2,not judged yet
+vidor,beneath,hugging,2,mismatch (wrong)
+vidor,kiss,plays with,2,not judged yet
 vidor,squeeze,carrying,2,mismatch (wrong)
-vidor,lean on,playing with,2,mismatch (wrong)
-vidor,point to,hold,2,not judged yet
-vidor,carry,riding,2,not judged yet
-vidor,carry,passes,2,not judged yet
-vidor,hug,sitting on,2,not judged yet
-vidor,hug,near,2,mismatch (wrong)
-vidor,hold,bite,2,not judged yet
-vidor,towards,bite,2,not judged yet
-vidor,away,bite,2,not judged yet
-vidor,in front of,bite,2,mismatch (wrong)
-vidor,lean on,hugging,2,mismatch (wrong)
-vidor,carry,moving away from,2,mismatch (wrong)
-vidor,chase,pushes,2,not judged yet
-vidor,use,approaches,2,not judged yet
-vidor,throw,overlapping,2,not judged yet
-vidor,wave,overlapping,2,mismatch (wrong)
-vidor,hold,moving with,2,semantic overlap (right)
-vidor,push,dancing with,2,mismatch (wrong)
-vidor,get off,ride,2,mismatch (wrong)
-vidor,get off,on,2,mismatch (wrong)
-vidor,get off,moves with,2,not judged yet
-vidor,lean on,dancing with,2,mismatch (wrong)
-vidor,above,dances with,2,not judged yet
+vidor,carry,ride,2,not judged yet
+vidor,wave hand to,carrying,2,not judged yet
+vidor,wave,behind,2,not judged yet
+vidor,get off,approaches,2,not judged yet
+vidor,get off,moves away from,2,not judged yet
+vidor,get off,moving away from,2,not judged yet
 vidor,behind,bite,2,not judged yet
-vidor,beneath,ride,2,not judged yet
-vidor,behind,carry,2,not judged yet
-vidor,push,sitting on,1,not judged yet
-vidor,pull,ride,1,not judged yet
-vidor,hit,dancing with,1,not judged yet
-vidor,hit,dances with,1,not judged yet
-vidor,press,wearing,1,mismatch (wrong)
-vidor,press,playing with,1,mismatch (wrong)
-vidor,speak to,performing with,1,not judged yet
+vidor,open,in front of,2,mismatch (wrong)
+vidor,inside,carry,2,not judged yet
+vidor,drive,moves away from,2,not judged yet
+vidor,drive,moving away from,2,not judged yet
+vidor,wave,next to,2,not judged yet
+vidor,wave,inside,2,not judged yet
+vidor,play(instrument),playing with,2,not judged yet
+vidor,hit,hugging,2,not judged yet
+vidor,lick,bite,2,not judged yet
+vidor,lick,carrying,2,not judged yet
+vidor,smell,wearing,2,not judged yet
+vidor,pat,moving away from,2,mismatch (wrong)
+vidor,touch,dances with,2,not judged yet
+vidor,lean on,beneath,2,not judged yet
+vidor,point to,performing with,2,not judged yet
+vidor,feed,approaching,2,not judged yet
+vidor,carry,petting,2,not judged yet
+vidor,throw,moving away from,2,not judged yet
+vidor,hit,passes,2,not judged yet
+vidor,kiss,sitting on,2,not judged yet
+vidor,shake hand with,behind,2,not judged yet
+vidor,shake hand with,next to,2,not judged yet
+vidor,shake hand with,near,2,not judged yet
+vidor,lift,moving away from,2,not judged yet
+vidor,watch,passing by,2,mismatch (wrong)
+vidor,inside,lean on,2,not judged yet
+vidor,wave hand to,inside,2,not judged yet
+vidor,towards,performing music with,2,not judged yet
+vidor,clean,above,2,mismatch (wrong)
+vidor,speak to,passes,2,not judged yet
+vidor,inside,hugging,2,not judged yet
+vidor,get off,in front of,2,not judged yet
+vidor,push,hugging,2,not judged yet
+vidor,bite,on,2,mismatch (wrong)
+vidor,away,towards,2,not judged yet
+vidor,release,playing,2,not judged yet
+vidor,shout at,plays with,2,not judged yet
+vidor,shout at,moves with,2,not judged yet
+vidor,cut,hold,2,not judged yet
+vidor,release,dancing with,2,not judged yet
+vidor,lift,watch,2,not judged yet
+vidor,hug,watch,2,not judged yet
+vidor,point to,on,2,not judged yet
+vidor,push,petting,2,not judged yet
+vidor,speak to,speak to,2,identical (right)
+vidor,hug,use,2,not judged yet
+vidor,shake hand with,moves with,2,not judged yet
+vidor,towards,hit,2,not judged yet
+vidor,carry,hugging,2,not judged yet
+vidor,kiss,inside,2,not judged yet
+vidor,squeeze,moves away from,2,mismatch (wrong)
+vidor,squeeze,in front of,2,mismatch (wrong)
+vidor,inside,moving with,2,mismatch (wrong)
+vidor,inside,plays with,2,mismatch (wrong)
+vidor,throw,inside,2,not judged yet
+vidor,grab,bite,2,not judged yet
+vidor,hit,moving with,2,not judged yet
+vidor,touch,passes,2,mismatch (wrong)
+vidor,caress,passes,2,not judged yet
+vidor,bite,moving with,2,not judged yet
+vidor,carry,plays with,2,not judged yet
+vidor,kick,hugging,2,not judged yet
+vidor,kiss,moving away from,2,mismatch (wrong)
+vidor,caress,sitting on,2,not judged yet
+vidor,hug,beneath,2,not judged yet
+vidor,pat,ride,2,not judged yet
+vidor,drive,moves with,2,mismatch (wrong)
+vidor,hold hand of,playing,2,not judged yet
+vidor,press,attached to,2,not judged yet
+vidor,play(instrument),moving away from,2,not judged yet
+vidor,lift,feed,2,mismatch (wrong)
+vidor,get off,touching,2,mismatch (wrong)
+vidor,lean on,hold hand of,2,not judged yet
+vidor,point to,sitting on,2,not judged yet
+vidor,lick,moving away from,2,mismatch (wrong)
+vidor,kiss,watch,2,not judged yet
+vidor,wave,playing,2,not judged yet
+vidor,squeeze,next to,2,not judged yet
+vidor,kiss,looks at,2,not judged yet
+vidor,beneath,petting,2,not judged yet
+vidor,lick,above,2,not judged yet
+vidor,get on,ride,2,semantic overlap (right)
+vidor,get on,holds,2,not judged yet
+vidor,get on,hold,2,mismatch (wrong)
+vidor,squeeze,moves with,2,not judged yet
+vidor,release,bite,2,not judged yet
+vidor,chase,looks at,2,mismatch (wrong)
+vidor,kick,push,2,not judged yet
+vidor,towards,push,2,not judged yet
+vidor,pull,carry,2,not judged yet
+vidor,play(instrument),performing with,2,synonym (right)
+vidor,hold,performing with,2,not judged yet
+vidor,play(instrument),performing music with,2,synonym (right)
+vidor,hold,performing music with,2,not judged yet
+vidor,play(instrument),dancing with,2,not judged yet
+vidor,knock,passes,2,not judged yet
+vidor,knock,inside,2,not judged yet
+vidor,inside,playing,2,not judged yet
+vidor,hit,riding,2,mismatch (wrong)
+vidor,hit,ride,2,not judged yet
 vidor,pat,performing with,1,not judged yet
-vidor,away,performing with,1,mismatch (wrong)
-vidor,towards,performing with,1,mismatch (wrong)
-vidor,speak to,sitting on,1,not judged yet
-vidor,pat,sitting on,1,mismatch (wrong)
-vidor,pat,on,1,mismatch (wrong)
-vidor,speak to,wearing,1,mismatch (wrong)
-vidor,behind,lean on,1,not judged yet
-vidor,pat,hugging,1,not judged yet
-vidor,pat,hold,1,not judged yet
-vidor,get on,touching,1,mismatch (wrong)
 vidor,get on,lean on,1,not judged yet
-vidor,towards,lean on,1,not judged yet
 vidor,get on,looking at,1,not judged yet
 vidor,get on,moves away from,1,not judged yet
-vidor,get on,on,1,semantic overlap (right)
-vidor,in front of,drive,1,not judged yet
-vidor,touch,touches,1,identical (right)
-vidor,pull,carrying,1,mismatch (wrong)
-vidor,pull,attached to,1,not judged yet
-vidor,clean,approaching,1,not judged yet
-vidor,clean,attached to,1,not judged yet
-vidor,pat,moving with,1,not judged yet
-vidor,hold hand of,looking at,1,mismatch (wrong)
-vidor,speak to,moving away from,1,mismatch (wrong)
-vidor,hold hand of,moving away from,1,mismatch (wrong)
-vidor,hold hand of,overlapping,1,mismatch (wrong)
-vidor,hold hand of,next to,1,mismatch (wrong)
-vidor,hold hand of,above,1,not judged yet
-vidor,towards,use,1,not judged yet
-vidor,inside,looks at,1,mismatch (wrong)
-vidor,inside,moves away from,1,not judged yet
-vidor,inside,overlapping,1,not judged yet
-vidor,inside,moves with,1,not judged yet
-vidor,clean,pushes,1,not judged yet
-vidor,caress,pushes,1,not judged yet
-vidor,clean,riding,1,not judged yet
-vidor,caress,riding,1,not judged yet
-vidor,clean,next to,1,not judged yet
 vidor,clean,behind,1,not judged yet
-vidor,caress,behind,1,not judged yet
-vidor,clean,in front of,1,mismatch (wrong)
-vidor,speak to,watch,1,not judged yet
-vidor,speak to,inside,1,not judged yet
-vidor,open,touching,1,not judged yet
-vidor,open,approaches,1,not judged yet
-vidor,open,approaching,1,not judged yet
 vidor,open,wearing,1,not judged yet
-vidor,open,carrying,1,not judged yet
-vidor,touch,dancing with,1,not judged yet
-vidor,touch,moves with,1,not judged yet
-vidor,touch,below,1,not judged yet
-vidor,chase,hold,1,not judged yet
-vidor,kick,hold,1,not judged yet
-vidor,chase,attached to,1,not judged yet
-vidor,kick,attached to,1,not judged yet
-vidor,lift,carry,1,not judged yet
 vidor,lift,attached to,1,not judged yet
-vidor,kick,approaching,1,mismatch (wrong)
 vidor,chase,carry,1,not judged yet
 vidor,kick,carry,1,not judged yet
 vidor,grab,carry,1,not judged yet
-vidor,grab,moves with,1,not judged yet
 vidor,chase,sitting on,1,not judged yet
-vidor,chase,touching,1,mismatch (wrong)
-vidor,lift,inside,1,not judged yet
 vidor,release,carry,1,not judged yet
-vidor,release,moves with,1,not judged yet
-vidor,watch,hit,1,not judged yet
-vidor,hit,hit,1,identical (right)
-vidor,next to,hit,1,not judged yet
-vidor,push,wearing,1,not judged yet
-vidor,hug,wearing,1,not judged yet
-vidor,hit,playing with,1,mismatch (wrong)
-vidor,caress,plays with,1,mismatch (wrong)
-vidor,caress,near,1,mismatch (wrong)
-vidor,caress,overlapping,1,mismatch (wrong)
-vidor,carry,looks at,1,mismatch (wrong)
-vidor,carry,touching,1,semantic overlap (right)
-vidor,lean on,looks at,1,not judged yet
-vidor,point to,looks at,1,semantic overlap (right)
-vidor,lift,next to,1,not judged yet
-vidor,hold,looks at,1,mismatch (wrong)
 vidor,knock,moving away from,1,not judged yet
-vidor,knock,below,1,not judged yet
 vidor,ride,touches,1,not judged yet
-vidor,speak to,riding,1,not judged yet
-vidor,touch,moving away from,1,mismatch (wrong)
-vidor,bite,moves away from,1,mismatch (wrong)
-vidor,pull,moving with,1,mismatch (wrong)
-vidor,next to,hug,1,not judged yet
-vidor,use,next to,1,not judged yet
-vidor,use,overlapping,1,not judged yet
-vidor,bite,approaching,1,mismatch (wrong)
-vidor,bite,attached to,1,not judged yet
-vidor,watch,performing music with,1,mismatch (wrong)
-vidor,release,below,1,not judged yet
-vidor,wave hand to,looks at,1,not judged yet
-vidor,wave hand to,above,1,not judged yet
-vidor,wave hand to,below,1,not judged yet
-vidor,wave,looking at,1,mismatch (wrong)
 vidor,wave,on,1,not judged yet
 vidor,ride,push,1,not judged yet
-vidor,above,push,1,not judged yet
-vidor,speak to,playing,1,not judged yet
-vidor,ride,playing,1,not judged yet
-vidor,above,playing,1,not judged yet
-vidor,caress,looks at,1,not judged yet
-vidor,touch,looks at,1,mismatch (wrong)
 vidor,caress,wearing,1,not judged yet
-vidor,caress,approaching,1,mismatch (wrong)
-vidor,hit,carrying,1,mismatch (wrong)
-vidor,beneath,hugging,1,mismatch (wrong)
-vidor,beneath,looks at,1,mismatch (wrong)
-vidor,hold hand of,hold,1,not judged yet
-vidor,kiss,hold,1,not judged yet
-vidor,hold hand of,holds,1,not judged yet
-vidor,kiss,holds,1,not judged yet
-vidor,lift,hugging,1,mismatch (wrong)
-vidor,hold hand of,hugging,1,semantic overlap (right)
-vidor,kiss,hugging,1,semantic overlap (right)
-vidor,touch,hugging,1,hypernym/hyponym (right)
-vidor,above,hugging,1,mismatch (wrong)
-vidor,kiss,approaches,1,not judged yet
-vidor,hug,approaching,1,mismatch (wrong)
-vidor,kiss,approaching,1,mismatch (wrong)
-vidor,hug,moves away from,1,mismatch (wrong)
-vidor,kiss,moves away from,1,not judged yet
-vidor,kiss,in front of,1,mismatch (wrong)
-vidor,hold hand of,playing with,1,mismatch (wrong)
-vidor,kiss,playing with,1,mismatch (wrong)
-vidor,touch,playing with,1,mismatch (wrong)
-vidor,above,playing with,1,mismatch (wrong)
-vidor,kiss,touching,1,semantic overlap (right)
-vidor,lift,plays with,1,mismatch (wrong)
-vidor,hug,plays with,1,mismatch (wrong)
-vidor,hold hand of,plays with,1,not judged yet
-vidor,kiss,plays with,1,not judged yet
-vidor,touch,plays with,1,mismatch (wrong)
-vidor,pat,moves away from,1,mismatch (wrong)
-vidor,grab,moves away from,1,mismatch (wrong)
-vidor,inside,above,1,not judged yet
 vidor,feed,moving with,1,not judged yet
-vidor,away,hold hand of,1,not judged yet
-vidor,inside,hold,1,not judged yet
-vidor,push,push,1,identical (right)
-vidor,behind,push,1,not judged yet
-vidor,next to,push,1,not judged yet
-vidor,push,inside,1,mismatch (wrong)
-vidor,press,riding,1,not judged yet
 vidor,squeeze,riding,1,not judged yet
-vidor,press,ride,1,not judged yet
 vidor,squeeze,ride,1,not judged yet
-vidor,squeeze,above,1,not judged yet
 vidor,point to,pushes,1,not judged yet
-vidor,throw,approaches,1,not judged yet
 vidor,throw,sitting on,1,not judged yet
-vidor,throw,playing with,1,mismatch (wrong)
-vidor,play(instrument),behind,1,mismatch (wrong)
-vidor,carry,ride,1,not judged yet
-vidor,carry,inside,1,not judged yet
-vidor,bite,playing with,1,mismatch (wrong)
-vidor,grab,playing with,1,mismatch (wrong)
-vidor,bite,behind,1,not judged yet
-vidor,hug,petting,1,mismatch (wrong)
-vidor,hug,inside,1,not judged yet
-vidor,watch,hug,1,not judged yet
-vidor,in front of,hug,1,not judged yet
 vidor,towards,hug,1,not judged yet
-vidor,away,hug,1,not judged yet
-vidor,lean on,petting,1,not judged yet
-vidor,wave hand to,holds,1,not judged yet
 vidor,wave hand to,pushes,1,not judged yet
-vidor,wave hand to,moving away from,1,mismatch (wrong)
-vidor,wave hand to,carrying,1,not judged yet
-vidor,use,wearing,1,not judged yet
-vidor,throw,behind,1,not judged yet
-vidor,wave,behind,1,not judged yet
-vidor,hold,dancing with,1,mismatch (wrong)
 vidor,push,playing,1,not judged yet
-vidor,get off,holding,1,not judged yet
-vidor,get off,approaches,1,not judged yet
-vidor,get off,moves away from,1,not judged yet
 vidor,get off,approaching,1,not judged yet
-vidor,get off,moving away from,1,not judged yet
 vidor,get off,moving with,1,mismatch (wrong)
-vidor,lean on,moving with,1,mismatch (wrong)
-vidor,play(instrument),sitting on,1,not judged yet
-vidor,play(instrument),touching,1,hypernym/hyponym (right)
-vidor,pull,moving away from,1,mismatch (wrong)
-vidor,pull,petting,1,mismatch (wrong)
-vidor,pull,inside,1,not judged yet
-vidor,pull,below,1,not judged yet
-vidor,pull,on,1,mismatch (wrong)
-vidor,pull,above,1,mismatch (wrong)
-vidor,press,moves away from,1,mismatch (wrong)
-vidor,lean on,dances with,1,mismatch (wrong)
-vidor,press,behind,1,mismatch (wrong)
-vidor,point to,carrying,1,not judged yet
-vidor,pat,plays with,1,not judged yet
-vidor,pat,looks at,1,not judged yet
 vidor,pat,watch,1,not judged yet
-vidor,beneath,bite,1,not judged yet
-vidor,point to,dancing with,1,not judged yet
-vidor,point to,dances with,1,mismatch (wrong)
-vidor,next to,hold hand of,1,not judged yet
-vidor,towards,hold hand of,1,not judged yet
+vidor,open,looks at,1,not judged yet
+vidor,carry,pull,1,not judged yet
+vidor,play(instrument),carry,1,not judged yet
+vidor,play(instrument),moves with,1,not judged yet
+vidor,pull,push,1,not judged yet
+vidor,wave,moves with,1,not judged yet
+vidor,carry,beneath,1,not judged yet
+vidor,lick,plays with,1,not judged yet
+vidor,kick,moving away from,1,mismatch (wrong)
+vidor,press,petting,1,not judged yet
+vidor,carry,use,1,not judged yet
+vidor,throw,passes,1,not judged yet
+vidor,wave,below,1,mismatch (wrong)
+vidor,caress,hugging,1,not judged yet
+vidor,smell,riding,1,not judged yet
+vidor,smell,inside,1,mismatch (wrong)
+vidor,shake hand with,looks at,1,not judged yet
+vidor,shake hand with,on,1,not judged yet
+vidor,shake hand with,attached to,1,not judged yet
+vidor,shake hand with,petting,1,mismatch (wrong)
+vidor,shake hand with,playing with,1,mismatch (wrong)
+vidor,kick,playing,1,not judged yet
+vidor,feed,wearing,1,not judged yet
+vidor,drive,sitting on,1,not judged yet
+vidor,drive,hold,1,not judged yet
+vidor,next to,play(instrument),1,not judged yet
+vidor,touch,playing,1,not judged yet
+vidor,clean,playing,1,not judged yet
+vidor,clean,below,1,not judged yet
+vidor,clean,performing with,1,not judged yet
+vidor,clean,near,1,mismatch (wrong)
+vidor,clean,moves with,1,not judged yet
+vidor,close,hold,1,not judged yet
+vidor,close,attached to,1,not judged yet
+vidor,close,above,1,not judged yet
+vidor,close,near,1,not judged yet
+vidor,watch,pull,1,not judged yet
+vidor,in front of,pull,1,not judged yet
+vidor,wave hand to,passing by,1,not judged yet
+vidor,ride,dances with,1,not judged yet
+vidor,ride,dancing with,1,not judged yet
+vidor,next to,towards,1,not judged yet
+vidor,in front of,towards,1,not judged yet
+vidor,play(instrument),riding,1,not judged yet
+vidor,play(instrument),ride,1,not judged yet
+vidor,play(instrument),on,1,not judged yet
+vidor,shout at,holds,1,not judged yet
+vidor,shout at,below,1,not judged yet
+vidor,pat,bite,1,not judged yet
+vidor,cut,holds,1,not judged yet
+vidor,cut,approaching,1,not judged yet
+vidor,cut,touches,1,not judged yet
+vidor,cut,above,1,not judged yet
+vidor,pat,feed,1,not judged yet
+vidor,hold,watch,1,not judged yet
+vidor,hold hand of,watch,1,not judged yet
+vidor,point to,inside,1,not judged yet
+vidor,press,hugging,1,not judged yet
+vidor,hold hand of,feed,1,not judged yet
+vidor,pull,feed,1,not judged yet
+vidor,shake hand with,moves away from,1,not judged yet
+vidor,shake hand with,moving away from,1,not judged yet
+vidor,shake hand with,dancing with,1,not judged yet
+vidor,shake hand with,holds,1,not judged yet
+vidor,shake hand with,hold,1,not judged yet
+vidor,shake hand with,above,1,not judged yet
+vidor,kick,hit,1,not judged yet
+vidor,away,hit,1,not judged yet
+vidor,speak to,lean on,1,not judged yet
+vidor,kiss,on,1,not judged yet
+vidor,inside,dances with,1,not judged yet
+vidor,inside,dancing with,1,not judged yet
+vidor,knock,hugging,1,not judged yet
+vidor,drive,plays with,1,not judged yet
+vidor,inside,use,1,not judged yet
+vidor,use,pushes,1,not judged yet
+vidor,hold,hit,1,not judged yet
+vidor,wave,hit,1,not judged yet
+vidor,release,hit,1,not judged yet
+vidor,in front of,kick,1,not judged yet
+vidor,lick,pushes,1,not judged yet
+vidor,lean on,carry,1,not judged yet
+vidor,point to,riding,1,not judged yet
+vidor,cut,looking at,1,mismatch (wrong)
+vidor,cut,sitting on,1,not judged yet
+vidor,cut,wearing,1,not judged yet
+vidor,cut,carrying,1,not judged yet
+vidor,cut,overlapping,1,not judged yet
+vidor,touch,moving with,1,not judged yet
+vidor,kiss,lean on,1,not judged yet
+vidor,kiss,attached to,1,not judged yet
+vidor,open,touches,1,not judged yet
+vidor,close,touches,1,not judged yet
+vidor,close,carrying,1,not judged yet
+vidor,open,pushes,1,not judged yet
+vidor,close,pushes,1,not judged yet
+vidor,open,riding,1,not judged yet
+vidor,close,riding,1,not judged yet
+vidor,close,looking at,1,mismatch (wrong)
+vidor,close,moves away from,1,not judged yet
+vidor,smell,sitting on,1,not judged yet
+vidor,grab,kick,1,not judged yet
+vidor,next to,kick,1,not judged yet
+vidor,towards,kick,1,not judged yet
+vidor,smell,bite,1,not judged yet
+vidor,smell,carrying,1,not judged yet
+vidor,smell,hold,1,not judged yet
+vidor,lift,use,1,not judged yet
+vidor,shout at,moving away from,1,not judged yet
+vidor,shout at,moving with,1,not judged yet
+vidor,release,hugging,1,mismatch (wrong)
+vidor,grab,petting,1,mismatch (wrong)
+vidor,caress,moving with,1,not judged yet
+vidor,pat,passes,1,not judged yet
+vidor,drive,attached to,1,not judged yet
+vidor,drive,moving with,1,not judged yet
+vidor,hug,push,1,not judged yet
+vidor,caress,push,1,not judged yet
+vidor,wave hand to,watch,1,not judged yet
+vidor,grab,moving away from,1,not judged yet
+vidor,feed,pushes,1,not judged yet
+vidor,kiss,pushes,1,not judged yet
+vidor,kiss,use,1,not judged yet
+vidor,play(instrument),attached to,1,not judged yet
+vidor,clean,looks at,1,mismatch (wrong)
+vidor,feed,looks at,1,not judged yet
+vidor,lift,looks at,1,mismatch (wrong)
+vidor,feed,riding,1,not judged yet
+vidor,feed,ride,1,not judged yet
+vidor,feed,sitting on,1,not judged yet
+vidor,get off,push,1,not judged yet
+vidor,get off,looking at,1,not judged yet
+vidor,get off,next to,1,not judged yet
+vidor,get off,inside,1,not judged yet
+vidor,press,lean on,1,not judged yet
+vidor,hug,hold hand of,1,not judged yet
+vidor,clean,petting,1,not judged yet
+vidor,clean,playing with,1,not judged yet
+vidor,clean,plays with,1,not judged yet
+vidor,smell,pushes,1,not judged yet
+vidor,hug,hug,1,identical (right)
+vidor,speak to,hug,1,not judged yet
+vidor,kiss,hug,1,not judged yet
+vidor,touch,carry,1,not judged yet
+vidor,kick,petting,1,not judged yet
+vidor,touch,push,1,not judged yet
+vidor,bite,passes,1,not judged yet
+vidor,chase,petting,1,not judged yet
+vidor,hold hand of,ride,1,not judged yet
+vidor,squeeze,hug,1,not judged yet
+vidor,behind,hug,1,not judged yet
+vidor,squeeze,behind,1,not judged yet
+vidor,squeeze,approaching,1,not judged yet
+vidor,squeeze,near,1,mismatch (wrong)
+vidor,point to,use,1,not judged yet
+vidor,touch,use,1,not judged yet
+vidor,bite,beneath,1,not judged yet
+vidor,kick,beneath,1,not judged yet
+vidor,pull,passes,1,not judged yet
+vidor,pull,hugging,1,mismatch (wrong)
+vidor,lean on,touch,1,not judged yet
+vidor,above,touch,1,not judged yet
+vidor,bite,carry,1,not judged yet
+vidor,release,passes,1,not judged yet
+vidor,squeeze,on,1,not judged yet
+vidor,squeeze,sitting on,1,not judged yet
+vidor,squeeze,inside,1,not judged yet
+vidor,release,lean on,1,not judged yet
+vidor,lick,moves with,1,not judged yet
+vidor,lick,touches,1,not judged yet
+vidor,get off,petting,1,not judged yet
+vidor,get on,petting,1,not judged yet
+vidor,get on,above,1,not judged yet
+vidor,squeeze,looking at,1,mismatch (wrong)
+vidor,carry,feed,1,not judged yet
+vidor,get on,inside,1,semantic overlap (right)
+vidor,get on,pushes,1,not judged yet
+vidor,get on,carrying,1,not judged yet
+vidor,get on,next to,1,not judged yet
+vidor,get on,near,1,not judged yet
+vidor,chase,touches,1,mismatch (wrong)
+vidor,inside,petting,1,not judged yet
+vidor,beneath,use,1,not judged yet
+vidor,kick,riding,1,not judged yet
+vidor,use,riding,1,not judged yet
+vidor,kiss,riding,1,not judged yet
+vidor,kiss,ride,1,not judged yet
+vidor,watch,chase,1,not judged yet
+vidor,grab,looks at,1,mismatch (wrong)
+vidor,kick,looks at,1,not judged yet
+vidor,behind,hit,1,not judged yet
+vidor,behind,speak to,1,not judged yet
+vidor,throw,attached to,1,not judged yet
+vidor,throw,beneath,1,not judged yet
+vidor,pull,playing,1,not judged yet
+vidor,lift,passes,1,not judged yet
+vidor,pull,pull,1,identical (right)
+vidor,play(instrument),dances with,1,not judged yet
+vidor,play(instrument),hugging,1,not judged yet
+vidor,use,moves with,1,not judged yet
+vidor,knock,pushes,1,not judged yet
+vidor,knock,bite,1,not judged yet
+vidor,knock,holds,1,not judged yet
+vidor,knock,attached to,1,not judged yet
+vidor,knock,looks at,1,not judged yet
+vidor,knock,next to,1,not judged yet
+vidor,bite,sitting on,1,not judged yet
+vidor,hit,drive,1,not judged yet
+vidor,drive,playing,1,not judged yet
+vidor,drive,wearing,1,not judged yet
+vidor,wave hand to,playing,1,not judged yet
+vidor,watch,play(instrument),1,not judged yet
+vidor,speak to,play(instrument),1,not judged yet
+vidor,wave hand to,play(instrument),1,not judged yet
+vidor,push,feed,1,not judged yet
+vidor,pat,lean on,1,not judged yet
