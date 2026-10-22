@@ -1,6 +1,6 @@
 # What is done and what is still needed (TRASER)
 
-Updated 21 Oct 2026, 16:10. ✅ done · ⏳ running · ⬜ to do (who does it)
+Updated 22 Oct 2026, 15:30. ✅ done · ⏳ running · ⬜ to do (who does it)
 
 ## 1. Benchmark: the paper's Table 2 for TRASER (`README.md`)
 - ✅ PVSG (62), SVG2test (100), VidOR (835) scored: lenient, tIoU > 0.5; VidOR with occurrences merged
@@ -18,18 +18,17 @@ Updated 21 Oct 2026, 16:10. ✅ done · ⏳ running · ⬜ to do (who does it)
 - ⬜ SVG2test: needs the SA-V links file
 
 ## 5. Experiment 2 on every human pair (`PAIRS.md` 2b, `PAIRS_LENIENT.md`)
-- ✅ PVSG: 62 videos, 739 pairs (without the objects it picks)
-- ⏳ VidOR: 124 / 835 videos (running, 1 copy)
-- ⬜ restart with the new code (you, server): 3 copies; the remaining videos get relations + the objects it picks, then a quick objects-only step adds the objects to PVSG and the VidOR videos done before
+- ✅ PVSG: 62 videos, 739 pairs (relation words)
+- ✅ VidOR: 835 videos, 11,157 pairs (relation words; the objects it picks on the 649 videos run after the restart)
+- ⬜ objects for the 248 videos run before (62 PVSG + 186 VidOR): the objects-only step saved nothing; its log is needed (you, server)
 - ⬜ SVG2test (100): put the SA-V links file at `/media/nas_mount/kanupriya/sav_links.txt`, then start `full_pairs_run.py` again
 
-## 6. Lenient judge (Kimi K3) on experiment 2b (`interp/PAIRS_LENIENT.md`, `judge_check_*.csv`)
-- ✅ relation word tables, PVSG (1st choice + top 5), partly judged
-- ⬜ judge the ~1,700 word combinations not judged yet (you, Mac: `tools/interp/judge_pairs.py` with your NVIDIA key)
-- ⬜ object tables (1st choice + top 5): after the restarted run
-- ⬜ judge the object names: `judge_pairs.py` again after the run
+## 6. Lenient judge on experiment 2b (`interp/PAIRS_LENIENT.md`, `judge_check_*.csv`)
+- ✅ every word judged: Kimi K3's saved verdicts first (also for the same two words in the other order, 195); the 2,627 it never judged by Claude in this chat with the benchmark's judge prompt (NVIDIA retired Kimi K3 on 15 Oct 2026). Blind check on 200 words Kimi K3 judged: Claude accepts 79 of its 100 accepted, rejects 98 of its 100 rejected
+- ✅ relation word tables (1st choice + top 5): PVSG + VidOR
+- ✅ object tables: VidOR (649 videos); PVSG after the objects-only step
 - ⬜ check the judge's verdicts by eye (you: `judge_check_relations.csv`, `judge_check_objects.csv`)
-- ⬜ VidOR and SVG2test tables: after their runs (Claude regenerates the page)
+- ⬜ SVG2test tables: after its run
 
 ## 7. Fine-tuning (`finetune/FINETUNE.md`)
 - ✅ SFT + GRPO trained on PVSG, tested on PVSG (62) + VidOR (300)

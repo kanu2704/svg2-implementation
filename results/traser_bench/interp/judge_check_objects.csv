@@ -1,817 +1,817 @@
 dataset,human object,picked object,times,judge
 vidor,adult,adult,34608,identical (right)
 vidor,child,child,7945,identical (right)
-vidor,child,adult,5557,not judged yet
+vidor,child,adult,5557,"hypernym/hyponym (right, by moonshotai/kimi-k3 (other order))"
 vidor,adult,child,5296,hypernym/hyponym (right)
 vidor,adult,chair,2592,mismatch (wrong)
-vidor,adult,table,2122,not judged yet
-vidor,child,table,1660,not judged yet
-vidor,chair,adult,1619,not judged yet
-vidor,guitar,adult,1517,not judged yet
+vidor,adult,table,2122,"mismatch (wrong, by claude)"
+vidor,child,table,1660,"mismatch (wrong, by claude)"
+vidor,chair,adult,1619,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,guitar,adult,1517,"mismatch (wrong, by claude)"
 vidor,adult,car,1496,mismatch (wrong)
 vidor,child,toy,1432,mismatch (wrong)
 vidor,toy,toy,1391,identical (right)
-vidor,child,sofa,1353,not judged yet
-vidor,adult,guitar,1347,not judged yet
-vidor,camera,adult,1314,not judged yet
-vidor,adult,cup,1271,not judged yet
+vidor,child,sofa,1353,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,adult,guitar,1347,"mismatch (wrong, by claude)"
+vidor,camera,adult,1314,"mismatch (wrong, by claude)"
+vidor,adult,cup,1271,"mismatch (wrong, by claude)"
 vidor,sheep/goat,sheep/goat,1244,identical (right)
-vidor,baby,adult,1071,not judged yet
-vidor,cup,adult,1052,not judged yet
-vidor,toy,child,1038,not judged yet
-vidor,table,adult,1036,not judged yet
-vidor,adult,bottle,1024,not judged yet
+vidor,baby,adult,1071,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,cup,adult,1052,"mismatch (wrong, by claude)"
+vidor,toy,child,1038,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,table,adult,1036,"mismatch (wrong, by claude)"
+vidor,adult,bottle,1024,"mismatch (wrong, by claude)"
 vidor,dog,dog,1019,identical (right)
 vidor,chair,chair,1016,identical (right)
-vidor,ball/sports ball,adult,1010,not judged yet
-vidor,ball/sports ball,child,1008,not judged yet
-vidor,adult,screen/monitor,1006,not judged yet
+vidor,ball/sports ball,adult,1010,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,child,1008,"mismatch (wrong, by claude)"
+vidor,adult,screen/monitor,1006,"mismatch (wrong, by claude)"
 vidor,adult,baby,976,mismatch (wrong)
-vidor,table,child,973,not judged yet
-vidor,adult,camera,958,not judged yet
-vidor,toy,adult,937,not judged yet
-vidor,bottle,adult,937,not judged yet
+vidor,table,child,973,"mismatch (wrong, by claude)"
+vidor,adult,camera,958,"mismatch (wrong, by claude)"
+vidor,toy,adult,937,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,bottle,adult,937,"mismatch (wrong, by claude)"
 vidor,adult,toy,925,mismatch (wrong)
-vidor,car,adult,917,not judged yet
-vidor,child,ball/sports ball,855,not judged yet
-vidor,adult,ball/sports ball,854,not judged yet
-vidor,child,chair,837,not judged yet
-vidor,screen/monitor,adult,781,not judged yet
+vidor,car,adult,917,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,child,ball/sports ball,855,"mismatch (wrong, by claude)"
+vidor,adult,ball/sports ball,854,"mismatch (wrong, by claude)"
+vidor,child,chair,837,"mismatch (wrong, by claude)"
+vidor,screen/monitor,adult,781,"mismatch (wrong, by claude)"
 vidor,adult,sofa,764,mismatch (wrong)
-vidor,dog,adult,722,not judged yet
+vidor,dog,adult,722,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,car,car,689,identical (right)
-vidor,adult,bicycle,680,not judged yet
-vidor,handbag,adult,679,not judged yet
+vidor,adult,bicycle,680,"mismatch (wrong, by claude)"
+vidor,handbag,adult,679,"mismatch (wrong, by claude)"
 vidor,sofa,child,663,mismatch (wrong)
 vidor,adult,dog,617,mismatch (wrong)
-vidor,sofa,adult,601,not judged yet
+vidor,sofa,adult,601,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,hamster/rat,hamster/rat,584,identical (right)
-vidor,bicycle,adult,572,not judged yet
-vidor,child,screen/monitor,563,not judged yet
+vidor,bicycle,adult,572,"mismatch (wrong, by claude)"
+vidor,child,screen/monitor,563,"mismatch (wrong, by claude)"
 vidor,ball/sports ball,ball/sports ball,563,identical (right)
 vidor,adult,backpack,551,mismatch (wrong)
-vidor,adult,handbag,529,not judged yet
-vidor,adult,cellphone,514,not judged yet
-vidor,adult,watercraft,509,not judged yet
-vidor,backpack,adult,501,not judged yet
-vidor,toy,sofa,462,not judged yet
+vidor,adult,handbag,529,"mismatch (wrong, by claude)"
+vidor,adult,cellphone,514,"mismatch (wrong, by claude)"
+vidor,adult,watercraft,509,"mismatch (wrong, by claude)"
+vidor,backpack,adult,501,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,toy,sofa,462,"mismatch (wrong, by claude)"
 vidor,toy,baby,457,mismatch (wrong)
 vidor,guitar,guitar,448,identical (right)
 vidor,adult,horse,444,mismatch (wrong)
-vidor,chair,child,443,not judged yet
-vidor,cellphone,adult,442,not judged yet
+vidor,chair,child,443,"mismatch (wrong, by claude)"
+vidor,cellphone,adult,442,"mismatch (wrong, by claude)"
 vidor,cup,cup,428,identical (right)
 vidor,lion,lion,422,identical (right)
-vidor,sofa,toy,411,not judged yet
-vidor,child,car,410,not judged yet
-vidor,baby,toy,399,not judged yet
-vidor,adult,stool,384,not judged yet
+vidor,sofa,toy,411,"mismatch (wrong, by claude)"
+vidor,child,car,410,"mismatch (wrong, by claude)"
+vidor,baby,toy,399,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,adult,stool,384,"mismatch (wrong, by claude)"
 vidor,bicycle,bicycle,380,identical (right)
-vidor,dog,car,374,not judged yet
+vidor,dog,car,374,"mismatch (wrong, by claude)"
 vidor,kangaroo,kangaroo,372,identical (right)
-vidor,baby,chair,366,not judged yet
-vidor,baby,baby seat,362,not judged yet
-vidor,child,cup,345,not judged yet
-vidor,child,handbag,338,not judged yet
-vidor,adult,dish,335,not judged yet
+vidor,baby,chair,366,"mismatch (wrong, by claude)"
+vidor,baby,baby seat,362,"mismatch (wrong, by claude)"
+vidor,child,cup,345,"mismatch (wrong, by claude)"
+vidor,child,handbag,338,"mismatch (wrong, by claude)"
+vidor,adult,dish,335,"mismatch (wrong, by claude)"
 vidor,fruits,fruits,331,identical (right)
 vidor,bottle,bottle,322,identical (right)
 vidor,cup,bottle,321,semantic overlap (right)
-vidor,horse,adult,289,not judged yet
+vidor,horse,adult,289,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,screen/monitor,screen/monitor,288,identical (right)
-vidor,sofa,table,287,not judged yet
-vidor,stool,adult,282,not judged yet
-vidor,baby seat,baby,279,not judged yet
-vidor,adult,bench,277,not judged yet
+vidor,sofa,table,287,"mismatch (wrong, by claude)"
+vidor,stool,adult,282,"mismatch (wrong, by claude)"
+vidor,baby seat,baby,279,"mismatch (wrong, by claude)"
+vidor,adult,bench,277,"mismatch (wrong, by claude)"
 vidor,duck,duck,271,identical (right)
-vidor,adult,cake,270,not judged yet
+vidor,adult,cake,270,"mismatch (wrong, by claude)"
 vidor,child,baby,269,hypernym/hyponym (right)
-vidor,adult,hamster/rat,267,not judged yet
-vidor,screen/monitor,child,265,not judged yet
+vidor,adult,hamster/rat,267,"mismatch (wrong, by claude)"
+vidor,screen/monitor,child,265,"mismatch (wrong, by claude)"
 vidor,table,table,259,identical (right)
 vidor,sofa,sofa,249,identical (right)
 vidor,child,dog,248,mismatch (wrong)
 vidor,chair,table,248,mismatch (wrong)
-vidor,car,dog,248,not judged yet
-vidor,handbag,child,247,not judged yet
-vidor,dog,toy,244,not judged yet
-vidor,cellphone,child,236,not judged yet
+vidor,car,dog,248,"mismatch (wrong, by claude)"
+vidor,handbag,child,247,"mismatch (wrong, by claude)"
+vidor,dog,toy,244,"mismatch (wrong, by claude)"
+vidor,cellphone,child,236,"mismatch (wrong, by claude)"
 vidor,bottle,cup,233,semantic overlap (right)
 vidor,baby seat,baby seat,232,identical (right)
-vidor,child,laptop,231,not judged yet
-vidor,ball/sports ball,table,230,not judged yet
-vidor,watercraft,adult,229,not judged yet
-vidor,adult,bus/truck,228,not judged yet
+vidor,child,laptop,231,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,table,230,"mismatch (wrong, by claude)"
+vidor,watercraft,adult,229,"mismatch (wrong, by claude)"
+vidor,adult,bus/truck,228,"mismatch (wrong, by claude)"
 vidor,baby,baby,228,identical (right)
 vidor,chair,sofa,225,semantic overlap (right)
-vidor,adult,ski,222,not judged yet
-vidor,cup,child,216,not judged yet
-vidor,table,sofa,213,not judged yet
-vidor,dog,child,212,not judged yet
+vidor,adult,ski,222,"mismatch (wrong, by claude)"
+vidor,cup,child,216,"mismatch (wrong, by claude)"
+vidor,table,sofa,213,"mismatch (wrong, by claude)"
+vidor,dog,child,212,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,baby,child,206,hypernym/hyponym (right)
-vidor,chair,baby,205,not judged yet
+vidor,chair,baby,205,"mismatch (wrong, by claude)"
 vidor,sofa,chair,204,semantic overlap (right)
-vidor,adult,baby seat,197,not judged yet
-vidor,dog,bottle,196,not judged yet
-vidor,ski,adult,194,not judged yet
+vidor,adult,baby seat,197,"mismatch (wrong, by claude)"
+vidor,dog,bottle,196,"mismatch (wrong, by claude)"
+vidor,ski,adult,194,"mismatch (wrong, by claude)"
 vidor,backpack,backpack,190,identical (right)
-vidor,cup,table,190,not judged yet
-vidor,bottle,table,188,not judged yet
-vidor,dish,adult,186,not judged yet
-vidor,child,guitar,185,not judged yet
-vidor,adult,piano,183,not judged yet
-vidor,toy,table,179,not judged yet
+vidor,cup,table,190,"mismatch (wrong, by claude)"
+vidor,bottle,table,188,"mismatch (wrong, by claude)"
+vidor,dish,adult,186,"mismatch (wrong, by claude)"
+vidor,child,guitar,185,"mismatch (wrong, by claude)"
+vidor,adult,piano,183,"mismatch (wrong, by claude)"
+vidor,toy,table,179,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,table,chair,178,mismatch (wrong)
-vidor,ski,child,178,not judged yet
-vidor,child,bicycle,170,not judged yet
-vidor,child,sink,167,not judged yet
-vidor,guitar,child,165,not judged yet
-vidor,car,child,162,not judged yet
-vidor,sheep/goat,adult,162,not judged yet
-vidor,dish,bottle,161,not judged yet
-vidor,bench,adult,159,not judged yet
+vidor,ski,child,178,"mismatch (wrong, by claude)"
+vidor,child,bicycle,170,"mismatch (wrong, by claude)"
+vidor,child,sink,167,"mismatch (wrong, by claude)"
+vidor,guitar,child,165,"mismatch (wrong, by claude)"
+vidor,car,child,162,"mismatch (wrong, by claude)"
+vidor,sheep/goat,adult,162,"mismatch (wrong, by claude)"
+vidor,dish,bottle,161,"mismatch (wrong, by claude)"
+vidor,bench,adult,159,"mismatch (wrong, by claude)"
 vidor,camera,camera,156,identical (right)
-vidor,cake,adult,156,not judged yet
-vidor,child,faucet,156,not judged yet
-vidor,baby seat,adult,154,not judged yet
-vidor,sofa,screen/monitor,153,not judged yet
-vidor,duck,child,153,not judged yet
-vidor,toy,screen/monitor,149,not judged yet
-vidor,traffic light,adult,147,not judged yet
-vidor,bottle,child,144,not judged yet
-vidor,baby,table,143,not judged yet
-vidor,adult,bat,143,not judged yet
-vidor,table,cup,141,not judged yet
-vidor,toy,dog,141,not judged yet
-vidor,table,screen/monitor,140,not judged yet
+vidor,cake,adult,156,"mismatch (wrong, by claude)"
+vidor,child,faucet,156,"mismatch (wrong, by claude)"
+vidor,baby seat,adult,154,"mismatch (wrong, by claude)"
+vidor,sofa,screen/monitor,153,"mismatch (wrong, by claude)"
+vidor,duck,child,153,"mismatch (wrong, by claude)"
+vidor,toy,screen/monitor,149,"mismatch (wrong, by claude)"
+vidor,traffic light,adult,147,"mismatch (wrong, by claude)"
+vidor,bottle,child,144,"mismatch (wrong, by claude)"
+vidor,baby,table,143,"mismatch (wrong, by claude)"
+vidor,adult,bat,143,"mismatch (wrong, by claude)"
+vidor,table,cup,141,"mismatch (wrong, by claude)"
+vidor,toy,dog,141,"mismatch (wrong, by claude)"
+vidor,table,screen/monitor,140,"mismatch (wrong, by claude)"
 vidor,table,toy,139,mismatch (wrong)
-vidor,hamster/rat,adult,138,not judged yet
-vidor,child,horse,137,not judged yet
-vidor,screen/monitor,table,136,not judged yet
-vidor,child,ski,134,not judged yet
-vidor,baby walker,adult,131,not judged yet
-vidor,table,bottle,131,not judged yet
-vidor,adult,snowboard,130,not judged yet
-vidor,bottle,dog,128,not judged yet
+vidor,hamster/rat,adult,138,"mismatch (wrong, by claude)"
+vidor,child,horse,137,"mismatch (wrong, by claude)"
+vidor,screen/monitor,table,136,"mismatch (wrong, by claude)"
+vidor,child,ski,134,"mismatch (wrong, by claude)"
+vidor,baby walker,adult,131,"mismatch (wrong, by claude)"
+vidor,table,bottle,131,"mismatch (wrong, by claude)"
+vidor,adult,snowboard,130,"mismatch (wrong, by claude)"
+vidor,bottle,dog,128,"mismatch (wrong, by claude)"
 vidor,guitar,chair,126,mismatch (wrong)
-vidor,toy,baby seat,126,not judged yet
+vidor,toy,baby seat,126,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,penguin,penguin,126,identical (right)
 vidor,handbag,handbag,121,identical (right)
-vidor,screen/monitor,sofa,118,not judged yet
-vidor,adult,baby walker,118,not judged yet
-vidor,adult,traffic light,118,not judged yet
-vidor,child,bottle,118,not judged yet
-vidor,duck,adult,118,not judged yet
-vidor,car,bus/truck,116,not judged yet
-vidor,cellphone,cup,116,not judged yet
-vidor,adult,laptop,116,not judged yet
-vidor,bat,adult,115,not judged yet
+vidor,screen/monitor,sofa,118,"mismatch (wrong, by claude)"
+vidor,adult,baby walker,118,"mismatch (wrong, by claude)"
+vidor,adult,traffic light,118,"mismatch (wrong, by claude)"
+vidor,child,bottle,118,"mismatch (wrong, by claude)"
+vidor,duck,adult,118,"mismatch (wrong, by claude)"
+vidor,car,bus/truck,116,"mismatch (wrong, by claude)"
+vidor,cellphone,cup,116,"mismatch (wrong, by claude)"
+vidor,adult,laptop,116,"mismatch (wrong, by claude)"
+vidor,bat,adult,115,"mismatch (wrong, by claude)"
 vidor,bird,bird,114,identical (right)
-vidor,child,stool,114,not judged yet
-vidor,cup,cellphone,112,not judged yet
-vidor,cup,chair,112,not judged yet
-vidor,child,refrigerator,112,not judged yet
-vidor,adult,sheep/goat,111,not judged yet
-vidor,bottle,camera,111,not judged yet
-vidor,laptop,sofa,110,not judged yet
-vidor,bus/truck,car,109,not judged yet
+vidor,child,stool,114,"mismatch (wrong, by claude)"
+vidor,cup,cellphone,112,"mismatch (wrong, by claude)"
+vidor,cup,chair,112,"mismatch (wrong, by claude)"
+vidor,child,refrigerator,112,"mismatch (wrong, by claude)"
+vidor,adult,sheep/goat,111,"mismatch (wrong, by claude)"
+vidor,bottle,camera,111,"mismatch (wrong, by claude)"
+vidor,laptop,sofa,110,"mismatch (wrong, by claude)"
+vidor,bus/truck,car,109,"mismatch (wrong, by claude)"
 vidor,chair,stool,109,hypernym/hyponym (right)
-vidor,baby,stool,108,not judged yet
-vidor,chair,handbag,108,not judged yet
+vidor,baby,stool,108,"mismatch (wrong, by claude)"
+vidor,chair,handbag,108,"mismatch (wrong, by claude)"
 vidor,ski,ski,107,identical (right)
-vidor,bicycle,car,106,not judged yet
-vidor,laptop,adult,104,not judged yet
-vidor,child,cake,104,not judged yet
-vidor,adult,fruits,104,not judged yet
-vidor,adult,suitcase,102,not judged yet
+vidor,bicycle,car,106,"mismatch (wrong, by claude)"
+vidor,laptop,adult,104,"mismatch (wrong, by claude)"
+vidor,child,cake,104,"mismatch (wrong, by claude)"
+vidor,adult,fruits,104,"mismatch (wrong, by claude)"
+vidor,adult,suitcase,102,"mismatch (wrong, by claude)"
 vidor,stool,chair,101,semantic overlap (right)
-vidor,chair,screen/monitor,101,not judged yet
-vidor,adult,duck,101,not judged yet
-vidor,screen/monitor,guitar,100,not judged yet
+vidor,chair,screen/monitor,101,"mismatch (wrong, by claude)"
+vidor,adult,duck,101,"mismatch (wrong, by claude)"
+vidor,screen/monitor,guitar,100,"mismatch (wrong, by claude)"
 vidor,stool,stool,100,identical (right)
-vidor,adult,electric fan,99,not judged yet
-vidor,bicycle,child,99,not judged yet
-vidor,penguin,adult,99,not judged yet
+vidor,adult,electric fan,99,"mismatch (wrong, by claude)"
+vidor,bicycle,child,99,"mismatch (wrong, by claude)"
+vidor,penguin,adult,99,"mismatch (wrong, by claude)"
 vidor,toy,bottle,99,mismatch (wrong)
-vidor,laptop,child,98,not judged yet
-vidor,adult,faucet,98,not judged yet
-vidor,child,cellphone,98,not judged yet
-vidor,sofa,baby,97,not judged yet
-vidor,chair,toy,96,not judged yet
-vidor,baby,sofa,95,not judged yet
+vidor,laptop,child,98,"mismatch (wrong, by claude)"
+vidor,adult,faucet,98,"mismatch (wrong, by claude)"
+vidor,child,cellphone,98,"mismatch (wrong, by claude)"
+vidor,sofa,baby,97,"mismatch (wrong, by claude)"
+vidor,chair,toy,96,"mismatch (wrong, by claude)"
+vidor,baby,sofa,95,"mismatch (wrong, by claude)"
 vidor,ball/sports ball,toy,93,mismatch (wrong)
-vidor,toy,baby walker,93,not judged yet
-vidor,stool,child,93,not judged yet
-vidor,child,fruits,93,not judged yet
-vidor,bottle,dish,91,not judged yet
+vidor,toy,baby walker,93,"hypernym/hyponym (right, by moonshotai/kimi-k3 (other order))"
+vidor,stool,child,93,"mismatch (wrong, by claude)"
+vidor,child,fruits,93,"mismatch (wrong, by claude)"
+vidor,bottle,dish,91,"mismatch (wrong, by claude)"
 vidor,baby seat,toy,90,mismatch (wrong)
-vidor,toy,chair,90,not judged yet
-vidor,fruits,baby,90,not judged yet
+vidor,toy,chair,90,"mismatch (wrong, by claude)"
+vidor,fruits,baby,90,"mismatch (wrong, by claude)"
 vidor,adult,motorcycle,89,mismatch (wrong)
-vidor,faucet,child,89,not judged yet
-vidor,fruits,adult,89,not judged yet
-vidor,chair,cup,88,not judged yet
+vidor,faucet,child,89,"mismatch (wrong, by claude)"
+vidor,fruits,adult,89,"mismatch (wrong, by claude)"
+vidor,chair,cup,88,"mismatch (wrong, by claude)"
 vidor,child,backpack,87,mismatch (wrong)
-vidor,handbag,cellphone,87,not judged yet
-vidor,chair,guitar,86,not judged yet
-vidor,laptop,table,85,not judged yet
-vidor,bus/truck,adult,85,not judged yet
-vidor,horse,child,85,not judged yet
-vidor,cup,camera,84,not judged yet
-vidor,piano,adult,82,not judged yet
-vidor,laptop,screen/monitor,81,not judged yet
-vidor,toy,ball/sports ball,81,not judged yet
-vidor,guitar,screen/monitor,80,not judged yet
-vidor,cellphone,sofa,78,not judged yet
-vidor,refrigerator,child,78,not judged yet
-vidor,cake,child,78,not judged yet
-vidor,dog,table,78,not judged yet
-vidor,dog,motorcycle,77,not judged yet
-vidor,cup,sofa,77,not judged yet
-vidor,camera,cake,76,not judged yet
-vidor,elephant,adult,76,not judged yet
-vidor,elephant,ball/sports ball,76,not judged yet
-vidor,faucet,adult,75,not judged yet
-vidor,child,baby walker,75,not judged yet
-vidor,fruits,child,75,not judged yet
-vidor,baby,fruits,75,not judged yet
-vidor,sink,child,74,not judged yet
-vidor,dish,cup,74,not judged yet
-vidor,adult,refrigerator,72,not judged yet
-vidor,baby,screen/monitor,72,not judged yet
-vidor,handbag,camera,71,not judged yet
-vidor,motorcycle,car,71,not judged yet
-vidor,adult,elephant,71,not judged yet
-vidor,adult,cat,70,not judged yet
-vidor,toy,bicycle,70,not judged yet
-vidor,screen/monitor,toy,70,not judged yet
-vidor,child,duck,70,not judged yet
+vidor,handbag,cellphone,87,"mismatch (wrong, by claude)"
+vidor,chair,guitar,86,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,laptop,table,85,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,bus/truck,adult,85,"mismatch (wrong, by claude)"
+vidor,horse,child,85,"mismatch (wrong, by claude)"
+vidor,cup,camera,84,"mismatch (wrong, by claude)"
+vidor,piano,adult,82,"mismatch (wrong, by claude)"
+vidor,laptop,screen/monitor,81,"semantic overlap (right, by moonshotai/kimi-k3 (other order))"
+vidor,toy,ball/sports ball,81,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,guitar,screen/monitor,80,"mismatch (wrong, by claude)"
+vidor,cellphone,sofa,78,"mismatch (wrong, by claude)"
+vidor,refrigerator,child,78,"mismatch (wrong, by claude)"
+vidor,cake,child,78,"mismatch (wrong, by claude)"
+vidor,dog,table,78,"mismatch (wrong, by claude)"
+vidor,dog,motorcycle,77,"mismatch (wrong, by claude)"
+vidor,cup,sofa,77,"mismatch (wrong, by claude)"
+vidor,camera,cake,76,"mismatch (wrong, by claude)"
+vidor,elephant,adult,76,"mismatch (wrong, by claude)"
+vidor,elephant,ball/sports ball,76,"mismatch (wrong, by claude)"
+vidor,faucet,adult,75,"mismatch (wrong, by claude)"
+vidor,child,baby walker,75,"mismatch (wrong, by claude)"
+vidor,fruits,child,75,"mismatch (wrong, by claude)"
+vidor,baby,fruits,75,"mismatch (wrong, by claude)"
+vidor,sink,child,74,"mismatch (wrong, by claude)"
+vidor,dish,cup,74,"mismatch (wrong, by claude)"
+vidor,adult,refrigerator,72,"mismatch (wrong, by claude)"
+vidor,baby,screen/monitor,72,"mismatch (wrong, by claude)"
+vidor,handbag,camera,71,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,motorcycle,car,71,"mismatch (wrong, by claude)"
+vidor,adult,elephant,71,"mismatch (wrong, by claude)"
+vidor,adult,cat,70,"mismatch (wrong, by claude)"
+vidor,toy,bicycle,70,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,screen/monitor,toy,70,"mismatch (wrong, by claude)"
+vidor,child,duck,70,"mismatch (wrong, by claude)"
 vidor,camera,handbag,69,mismatch (wrong)
-vidor,child,baby seat,69,not judged yet
+vidor,child,baby seat,69,"mismatch (wrong, by claude)"
 vidor,screen/monitor,laptop,68,semantic overlap (right)
-vidor,cup,dish,68,not judged yet
+vidor,cup,dish,68,"mismatch (wrong, by claude)"
 vidor,baby walker,toy,67,hypernym/hyponym (right)
 vidor,handbag,backpack,67,semantic overlap (right)
-vidor,camera,table,67,not judged yet
-vidor,adult,microwave,66,not judged yet
-vidor,fish,adult,66,not judged yet
-vidor,car,bicycle,66,not judged yet
-vidor,train,adult,66,not judged yet
-vidor,traffic light,car,66,not judged yet
+vidor,camera,table,67,"mismatch (wrong, by claude)"
+vidor,adult,microwave,66,"mismatch (wrong, by claude)"
+vidor,fish,adult,66,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,car,bicycle,66,"mismatch (wrong, by claude)"
+vidor,train,adult,66,"mismatch (wrong, by claude)"
+vidor,traffic light,car,66,"mismatch (wrong, by claude)"
 vidor,bus/truck,bus/truck,66,identical (right)
-vidor,fruits,microwave,65,not judged yet
-vidor,sofa,cup,64,not judged yet
-vidor,adult,train,62,not judged yet
-vidor,cup,faucet,62,not judged yet
-vidor,sofa,laptop,61,not judged yet
-vidor,ball/sports ball,baby,61,not judged yet
+vidor,fruits,microwave,65,"mismatch (wrong, by claude)"
+vidor,sofa,cup,64,"mismatch (wrong, by claude)"
+vidor,adult,train,62,"mismatch (wrong, by claude)"
+vidor,cup,faucet,62,"mismatch (wrong, by claude)"
+vidor,sofa,laptop,61,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,baby,61,"mismatch (wrong, by claude)"
 vidor,dish,dish,60,identical (right)
-vidor,baby,ball/sports ball,60,not judged yet
-vidor,crocodile,adult,60,not judged yet
-vidor,screen/monitor,chair,60,not judged yet
-vidor,backpack,child,60,not judged yet
-vidor,guitar,stool,60,not judged yet
-vidor,table,baby,59,not judged yet
-vidor,handbag,chair,59,not judged yet
-vidor,child,elephant,58,not judged yet
-vidor,chair,dog,57,not judged yet
-vidor,cup,screen/monitor,57,not judged yet
-vidor,bottle,sofa,57,not judged yet
-vidor,cellphone,table,56,not judged yet
-vidor,stool,sofa,55,not judged yet
+vidor,baby,ball/sports ball,60,"mismatch (wrong, by claude)"
+vidor,crocodile,adult,60,"mismatch (wrong, by claude)"
+vidor,screen/monitor,chair,60,"mismatch (wrong, by claude)"
+vidor,backpack,child,60,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,guitar,stool,60,"mismatch (wrong, by claude)"
+vidor,table,baby,59,"mismatch (wrong, by claude)"
+vidor,handbag,chair,59,"mismatch (wrong, by claude)"
+vidor,child,elephant,58,"mismatch (wrong, by claude)"
+vidor,chair,dog,57,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,cup,screen/monitor,57,"mismatch (wrong, by claude)"
+vidor,bottle,sofa,57,"mismatch (wrong, by claude)"
+vidor,cellphone,table,56,"mismatch (wrong, by claude)"
+vidor,stool,sofa,55,"mismatch (wrong, by claude)"
 vidor,elephant,elephant,55,identical (right)
 vidor,cat,cat,54,identical (right)
-vidor,backpack,table,54,not judged yet
-vidor,camera,child,54,not judged yet
+vidor,backpack,table,54,"mismatch (wrong, by claude)"
+vidor,camera,child,54,"mismatch (wrong, by claude)"
 vidor,bottle,toy,54,mismatch (wrong)
-vidor,scooter,car,54,not judged yet
-vidor,child,cat,53,not judged yet
-vidor,baby,cup,53,not judged yet
-vidor,baby walker,child,53,not judged yet
-vidor,cat,child,51,not judged yet
-vidor,sofa,dog,51,not judged yet
-vidor,fruits,baby seat,51,not judged yet
-vidor,cellphone,bottle,50,not judged yet
-vidor,child,piano,50,not judged yet
+vidor,scooter,car,54,"mismatch (wrong, by claude)"
+vidor,child,cat,53,"mismatch (wrong, by claude)"
+vidor,baby,cup,53,"mismatch (wrong, by claude)"
+vidor,baby walker,child,53,"mismatch (wrong, by claude)"
+vidor,cat,child,51,"mismatch (wrong, by claude)"
+vidor,sofa,dog,51,"mismatch (wrong, by claude)"
+vidor,fruits,baby seat,51,"mismatch (wrong, by claude)"
+vidor,cellphone,bottle,50,"mismatch (wrong, by claude)"
+vidor,child,piano,50,"mismatch (wrong, by claude)"
 vidor,toy,backpack,50,mismatch (wrong)
-vidor,sofa,bottle,50,not judged yet
-vidor,motorcycle,adult,49,not judged yet
-vidor,toy,cat,49,not judged yet
-vidor,adult,aircraft,48,not judged yet
+vidor,sofa,bottle,50,"mismatch (wrong, by claude)"
+vidor,motorcycle,adult,49,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,toy,cat,49,"mismatch (wrong, by claude)"
+vidor,adult,aircraft,48,"mismatch (wrong, by claude)"
 vidor,dog,chair,48,mismatch (wrong)
-vidor,cat,toy,48,not judged yet
-vidor,motorcycle,dog,48,not judged yet
+vidor,cat,toy,48,"mismatch (wrong, by claude)"
+vidor,motorcycle,dog,48,"mismatch (wrong, by claude)"
 vidor,traffic light,traffic light,48,identical (right)
-vidor,cat,adult,47,not judged yet
-vidor,car,bottle,47,not judged yet
-vidor,ball/sports ball,sofa,47,not judged yet
-vidor,sofa,ball/sports ball,47,not judged yet
-vidor,backpack,sofa,47,not judged yet
-vidor,elephant,child,47,not judged yet
-vidor,table,ball/sports ball,47,not judged yet
-vidor,ski,stop sign,47,not judged yet
+vidor,cat,adult,47,"mismatch (wrong, by claude)"
+vidor,car,bottle,47,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,sofa,47,"mismatch (wrong, by claude)"
+vidor,sofa,ball/sports ball,47,"mismatch (wrong, by claude)"
+vidor,backpack,sofa,47,"mismatch (wrong, by claude)"
+vidor,elephant,child,47,"mismatch (wrong, by claude)"
+vidor,table,ball/sports ball,47,"mismatch (wrong, by claude)"
+vidor,ski,stop sign,47,"mismatch (wrong, by claude)"
 vidor,backpack,handbag,46,semantic overlap (right)
-vidor,table,cat,45,not judged yet
-vidor,guitar,sofa,45,not judged yet
-vidor,suitcase,adult,45,not judged yet
-vidor,adult,vegetables,45,not judged yet
-vidor,screen/monitor,cup,45,not judged yet
-vidor,dog,screen/monitor,45,not judged yet
+vidor,table,cat,45,"mismatch (wrong, by claude)"
+vidor,guitar,sofa,45,"mismatch (wrong, by claude)"
+vidor,suitcase,adult,45,"mismatch (wrong, by claude)"
+vidor,adult,vegetables,45,"mismatch (wrong, by claude)"
+vidor,screen/monitor,cup,45,"mismatch (wrong, by claude)"
+vidor,dog,screen/monitor,45,"mismatch (wrong, by claude)"
 vidor,watercraft,watercraft,44,identical (right)
-vidor,cup,cake,44,not judged yet
-vidor,sofa,stool,44,not judged yet
-vidor,table,backpack,44,not judged yet
-vidor,traffic light,train,44,not judged yet
-vidor,child,camera,44,not judged yet
+vidor,cup,cake,44,"mismatch (wrong, by claude)"
+vidor,sofa,stool,44,"mismatch (wrong, by claude)"
+vidor,table,backpack,44,"mismatch (wrong, by claude)"
+vidor,traffic light,train,44,"mismatch (wrong, by claude)"
+vidor,child,camera,44,"mismatch (wrong, by claude)"
 vidor,stool,toy,43,mismatch (wrong)
-vidor,cellphone,handbag,43,not judged yet
-vidor,antelope,adult,43,not judged yet
-vidor,car,screen/monitor,43,not judged yet
+vidor,cellphone,handbag,43,"mismatch (wrong, by claude)"
+vidor,antelope,adult,43,"mismatch (wrong, by claude)"
+vidor,car,screen/monitor,43,"mismatch (wrong, by claude)"
 vidor,horse,horse,43,identical (right)
 vidor,table,laptop,42,mismatch (wrong)
-vidor,refrigerator,adult,42,not judged yet
-vidor,adult,sink,42,not judged yet
-vidor,faucet,sink,42,not judged yet
-vidor,electric fan,adult,42,not judged yet
+vidor,refrigerator,adult,42,"mismatch (wrong, by claude)"
+vidor,adult,sink,42,"mismatch (wrong, by claude)"
+vidor,faucet,sink,42,"mismatch (wrong, by claude)"
+vidor,electric fan,adult,42,"mismatch (wrong, by claude)"
 vidor,backpack,toy,42,mismatch (wrong)
-vidor,adult,lion,42,not judged yet
-vidor,car,lion,42,not judged yet
-vidor,baby,bottle,42,not judged yet
-vidor,snowboard,adult,41,not judged yet
-vidor,baby,dog,41,not judged yet
-vidor,dog,electric fan,41,not judged yet
-vidor,ball/sports ball,chair,41,not judged yet
-vidor,dish,table,41,not judged yet
-vidor,child,stop sign,41,not judged yet
-vidor,ball/sports ball,baby seat,40,not judged yet
-vidor,table,camera,40,not judged yet
-vidor,ball/sports ball,handbag,40,not judged yet
-vidor,cup,baby,40,not judged yet
-vidor,cellphone,backpack,40,not judged yet
-vidor,child,bench,40,not judged yet
-vidor,camera,bottle,40,not judged yet
+vidor,adult,lion,42,"mismatch (wrong, by claude)"
+vidor,car,lion,42,"mismatch (wrong, by claude)"
+vidor,baby,bottle,42,"mismatch (wrong, by claude)"
+vidor,snowboard,adult,41,"mismatch (wrong, by claude)"
+vidor,baby,dog,41,"mismatch (wrong, by claude)"
+vidor,dog,electric fan,41,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,chair,41,"mismatch (wrong, by claude)"
+vidor,dish,table,41,"mismatch (wrong, by claude)"
+vidor,child,stop sign,41,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,baby seat,40,"mismatch (wrong, by claude)"
+vidor,table,camera,40,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,handbag,40,"mismatch (wrong, by claude)"
+vidor,cup,baby,40,"mismatch (wrong, by claude)"
+vidor,cellphone,backpack,40,"mismatch (wrong, by claude)"
+vidor,child,bench,40,"mismatch (wrong, by claude)"
+vidor,camera,bottle,40,"mismatch (wrong, by claude)"
 vidor,chair,bottle,40,mismatch (wrong)
-vidor,cup,laptop,40,not judged yet
-vidor,dog,bench,39,not judged yet
-vidor,fish,cat,39,not judged yet
+vidor,cup,laptop,40,"mismatch (wrong, by claude)"
+vidor,dog,bench,39,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,fish,cat,39,"mismatch (wrong, by claude)"
 vidor,adult,fish,39,mismatch (wrong)
-vidor,cat,table,39,not judged yet
-vidor,bottle,car,39,not judged yet
+vidor,cat,table,39,"mismatch (wrong, by claude)"
+vidor,bottle,car,39,"mismatch (wrong, by claude)"
 vidor,bicycle,toy,39,mismatch (wrong)
-vidor,vegetables,adult,39,not judged yet
-vidor,dog,baby,39,not judged yet
-vidor,table,dog,39,not judged yet
-vidor,child,microwave,39,not judged yet
-vidor,bicycle,bus/truck,39,not judged yet
+vidor,vegetables,adult,39,"mismatch (wrong, by claude)"
+vidor,dog,baby,39,"mismatch (wrong, by claude)"
+vidor,table,dog,39,"mismatch (wrong, by claude)"
+vidor,child,microwave,39,"mismatch (wrong, by claude)"
+vidor,bicycle,bus/truck,39,"mismatch (wrong, by claude)"
 vidor,antelope,antelope,39,identical (right)
-vidor,bottle,baby,39,not judged yet
-vidor,electric fan,chair,39,not judged yet
-vidor,aircraft,adult,38,not judged yet
+vidor,bottle,baby,39,"mismatch (wrong, by claude)"
+vidor,electric fan,chair,39,"mismatch (wrong, by claude)"
+vidor,aircraft,adult,38,"mismatch (wrong, by claude)"
 vidor,toy,stool,38,mismatch (wrong)
-vidor,car,motorcycle,38,not judged yet
-vidor,oven,adult,38,not judged yet
-vidor,handbag,bench,38,not judged yet
-vidor,microwave,fruits,38,not judged yet
-vidor,stool,guitar,38,not judged yet
-vidor,table,cake,38,not judged yet
-vidor,laptop,cup,38,not judged yet
-vidor,dog,ball/sports ball,37,not judged yet
-vidor,adult,oven,37,not judged yet
-vidor,microwave,adult,37,not judged yet
-vidor,adult,stop sign,37,not judged yet
-vidor,bat,ball/sports ball,36,not judged yet
-vidor,stool,ball/sports ball,36,not judged yet
+vidor,car,motorcycle,38,"mismatch (wrong, by claude)"
+vidor,oven,adult,38,"mismatch (wrong, by claude)"
+vidor,handbag,bench,38,"mismatch (wrong, by claude)"
+vidor,microwave,fruits,38,"mismatch (wrong, by claude)"
+vidor,stool,guitar,38,"mismatch (wrong, by claude)"
+vidor,table,cake,38,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,laptop,cup,38,"mismatch (wrong, by claude)"
+vidor,dog,ball/sports ball,37,"mismatch (wrong, by claude)"
+vidor,adult,oven,37,"mismatch (wrong, by claude)"
+vidor,microwave,adult,37,"mismatch (wrong, by claude)"
+vidor,adult,stop sign,37,"mismatch (wrong, by claude)"
+vidor,bat,ball/sports ball,36,"mismatch (wrong, by claude)"
+vidor,stool,ball/sports ball,36,"mismatch (wrong, by claude)"
 vidor,bat,car,36,mismatch (wrong)
-vidor,child,racket,36,not judged yet
-vidor,baby seat,child,36,not judged yet
-vidor,ball/sports ball,elephant,36,not judged yet
-vidor,fruits,table,36,not judged yet
-vidor,lion,adult,36,not judged yet
-vidor,bottle,chair,36,not judged yet
-vidor,adult,frisbee,36,not judged yet
-vidor,skateboard,bicycle,36,not judged yet
-vidor,stop sign,child,36,not judged yet
+vidor,child,racket,36,"mismatch (wrong, by claude)"
+vidor,baby seat,child,36,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,elephant,36,"mismatch (wrong, by claude)"
+vidor,fruits,table,36,"mismatch (wrong, by claude)"
+vidor,lion,adult,36,"mismatch (wrong, by claude)"
+vidor,bottle,chair,36,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,adult,frisbee,36,"mismatch (wrong, by claude)"
+vidor,skateboard,bicycle,36,"mismatch (wrong, by claude)"
+vidor,stop sign,child,36,"mismatch (wrong, by claude)"
 vidor,baby seat,table,36,mismatch (wrong)
-vidor,baby seat,cup,35,not judged yet
-vidor,sofa,backpack,35,not judged yet
-vidor,ball/sports ball,car,35,not judged yet
-vidor,stool,baby seat,34,not judged yet
-vidor,camera,cup,34,not judged yet
-vidor,guitar,piano,34,not judged yet
-vidor,sink,faucet,34,not judged yet
-vidor,toy,electric fan,34,not judged yet
+vidor,baby seat,cup,35,"mismatch (wrong, by claude)"
+vidor,sofa,backpack,35,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,car,35,"mismatch (wrong, by claude)"
+vidor,stool,baby seat,34,"mismatch (wrong, by claude)"
+vidor,camera,cup,34,"mismatch (wrong, by claude)"
+vidor,guitar,piano,34,"mismatch (wrong, by claude)"
+vidor,sink,faucet,34,"mismatch (wrong, by claude)"
+vidor,toy,electric fan,34,"mismatch (wrong, by claude)"
 vidor,cellphone,cellphone,33,identical (right)
-vidor,cat,chair,33,not judged yet
-vidor,baby,baby walker,33,not judged yet
+vidor,cat,chair,33,"mismatch (wrong, by claude)"
+vidor,baby,baby walker,33,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,baby walker,baby,33,mismatch (wrong)
-vidor,train,traffic light,33,not judged yet
-vidor,child,electric fan,33,not judged yet
-vidor,child,frisbee,33,not judged yet
-vidor,handbag,ball/sports ball,32,not judged yet
-vidor,screen/monitor,dog,32,not judged yet
-vidor,electric fan,toy,32,not judged yet
-vidor,chair,car,32,not judged yet
-vidor,sink,adult,31,not judged yet
-vidor,camera,chair,31,not judged yet
+vidor,train,traffic light,33,"mismatch (wrong, by claude)"
+vidor,child,electric fan,33,"mismatch (wrong, by claude)"
+vidor,child,frisbee,33,"mismatch (wrong, by claude)"
+vidor,handbag,ball/sports ball,32,"mismatch (wrong, by claude)"
+vidor,screen/monitor,dog,32,"mismatch (wrong, by claude)"
+vidor,electric fan,toy,32,"mismatch (wrong, by claude)"
+vidor,chair,car,32,"mismatch (wrong, by claude)"
+vidor,sink,adult,31,"mismatch (wrong, by claude)"
+vidor,camera,chair,31,"mismatch (wrong, by claude)"
 vidor,camera,backpack,31,mismatch (wrong)
-vidor,toy,cup,31,not judged yet
+vidor,toy,cup,31,"mismatch (wrong, by claude)"
 vidor,bench,dog,30,mismatch (wrong)
 vidor,baby seat,chair,30,hypernym/hyponym (right)
-vidor,cat,fish,30,not judged yet
-vidor,chair,cat,30,not judged yet
-vidor,faucet,cup,30,not judged yet
-vidor,child,bat,30,not judged yet
-vidor,snake,adult,30,not judged yet
-vidor,antelope,dog,30,not judged yet
-vidor,lion,car,30,not judged yet
-vidor,piano,chair,30,not judged yet
-vidor,baby seat,dog,30,not judged yet
-vidor,baby,camera,29,not judged yet
-vidor,table,guitar,29,not judged yet
-vidor,camera,cellphone,29,not judged yet
-vidor,cellphone,toy,29,not judged yet
-vidor,baby,backpack,29,not judged yet
-vidor,chair,cake,29,not judged yet
-vidor,cellphone,laptop,28,not judged yet
-vidor,ball/sports ball,dog,28,not judged yet
-vidor,dog,sink,28,not judged yet
-vidor,stop sign,ski,28,not judged yet
-vidor,cellphone,screen/monitor,27,not judged yet
+vidor,cat,fish,30,"mismatch (wrong, by claude)"
+vidor,chair,cat,30,"mismatch (wrong, by claude)"
+vidor,faucet,cup,30,"mismatch (wrong, by claude)"
+vidor,child,bat,30,"mismatch (wrong, by claude)"
+vidor,snake,adult,30,"mismatch (wrong, by claude)"
+vidor,antelope,dog,30,"mismatch (wrong, by claude)"
+vidor,lion,car,30,"mismatch (wrong, by claude)"
+vidor,piano,chair,30,"mismatch (wrong, by claude)"
+vidor,baby seat,dog,30,"mismatch (wrong, by claude)"
+vidor,baby,camera,29,"mismatch (wrong, by claude)"
+vidor,table,guitar,29,"mismatch (wrong, by claude)"
+vidor,camera,cellphone,29,"mismatch (wrong, by claude)"
+vidor,cellphone,toy,29,"mismatch (wrong, by claude)"
+vidor,baby,backpack,29,"mismatch (wrong, by claude)"
+vidor,chair,cake,29,"mismatch (wrong, by claude)"
+vidor,cellphone,laptop,28,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,dog,28,"mismatch (wrong, by claude)"
+vidor,dog,sink,28,"mismatch (wrong, by claude)"
+vidor,stop sign,ski,28,"mismatch (wrong, by claude)"
+vidor,cellphone,screen/monitor,27,"mismatch (wrong, by claude)"
 vidor,laptop,laptop,27,identical (right)
-vidor,handbag,dog,27,not judged yet
-vidor,baby,refrigerator,27,not judged yet
+vidor,handbag,dog,27,"mismatch (wrong, by claude)"
+vidor,baby,refrigerator,27,"mismatch (wrong, by claude)"
 vidor,leopard,leopard,27,identical (right)
-vidor,dog,sofa,27,not judged yet
-vidor,backpack,cellphone,27,not judged yet
-vidor,microwave,child,27,not judged yet
-vidor,guitar,laptop,27,not judged yet
-vidor,electric fan,child,27,not judged yet
-vidor,sofa,electric fan,27,not judged yet
-vidor,horse,bottle,27,not judged yet
+vidor,dog,sofa,27,"mismatch (wrong, by claude)"
+vidor,backpack,cellphone,27,"mismatch (wrong, by claude)"
+vidor,microwave,child,27,"mismatch (wrong, by claude)"
+vidor,guitar,laptop,27,"mismatch (wrong, by claude)"
+vidor,electric fan,child,27,"mismatch (wrong, by claude)"
+vidor,sofa,electric fan,27,"mismatch (wrong, by claude)"
+vidor,horse,bottle,27,"mismatch (wrong, by claude)"
 vidor,bench,table,27,mismatch (wrong)
-vidor,car,scooter,27,not judged yet
-vidor,baby seat,fruits,27,not judged yet
-vidor,baby seat,stool,26,not judged yet
-vidor,camera,screen/monitor,26,not judged yet
-vidor,toy,piano,26,not judged yet
-vidor,antelope,baby,26,not judged yet
-vidor,cup,ball/sports ball,26,not judged yet
+vidor,car,scooter,27,"mismatch (wrong, by claude)"
+vidor,baby seat,fruits,27,"mismatch (wrong, by claude)"
+vidor,baby seat,stool,26,"mismatch (wrong, by claude)"
+vidor,camera,screen/monitor,26,"mismatch (wrong, by claude)"
+vidor,toy,piano,26,"mismatch (wrong, by claude)"
+vidor,antelope,baby,26,"mismatch (wrong, by claude)"
+vidor,cup,ball/sports ball,26,"mismatch (wrong, by claude)"
 vidor,cake,table,26,mismatch (wrong)
-vidor,dog,camera,25,not judged yet
-vidor,chair,camera,25,not judged yet
-vidor,cup,toy,25,not judged yet
-vidor,adult,antelope,25,not judged yet
-vidor,ball/sports ball,cup,25,not judged yet
-vidor,handbag,baby,24,not judged yet
+vidor,dog,camera,25,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,chair,camera,25,"mismatch (wrong, by claude)"
+vidor,cup,toy,25,"mismatch (wrong, by claude)"
+vidor,adult,antelope,25,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,cup,25,"mismatch (wrong, by claude)"
+vidor,handbag,baby,24,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,baby,handbag,24,mismatch (wrong)
-vidor,child,motorcycle,24,not judged yet
-vidor,ball/sports ball,stool,24,not judged yet
-vidor,child,snowboard,24,not judged yet
-vidor,adult,camel,24,not judged yet
-vidor,guitar,table,24,not judged yet
-vidor,bat,child,24,not judged yet
-vidor,refrigerator,chair,24,not judged yet
-vidor,baby,faucet,24,not judged yet
-vidor,cellphone,camera,24,not judged yet
-vidor,faucet,toy,24,not judged yet
-vidor,child,scooter,24,not judged yet
-vidor,bottle,stool,23,not judged yet
-vidor,piano,guitar,23,not judged yet
-vidor,bottle,cellphone,23,not judged yet
-vidor,faucet,refrigerator,23,not judged yet
-vidor,faucet,baby,23,not judged yet
-vidor,backpack,camera,23,not judged yet
-vidor,car,ball/sports ball,23,not judged yet
-vidor,dish,chair,23,not judged yet
-vidor,screen/monitor,camera,22,not judged yet
-vidor,cup,baby seat,22,not judged yet
-vidor,table,dish,22,not judged yet
-vidor,stop sign,adult,22,not judged yet
-vidor,chair,baby seat,21,not judged yet
-vidor,fish,table,21,not judged yet
-vidor,table,fish,21,not judged yet
-vidor,guitar,cellphone,21,not judged yet
-vidor,adult,crocodile,21,not judged yet
-vidor,ball/sports ball,screen/monitor,21,not judged yet
-vidor,screen/monitor,handbag,21,not judged yet
-vidor,sofa,guitar,21,not judged yet
-vidor,cat,sofa,21,not judged yet
-vidor,dog,refrigerator,21,not judged yet
-vidor,refrigerator,sink,21,not judged yet
-vidor,screen/monitor,baby,21,not judged yet
+vidor,child,motorcycle,24,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,stool,24,"mismatch (wrong, by claude)"
+vidor,child,snowboard,24,"mismatch (wrong, by claude)"
+vidor,adult,camel,24,"mismatch (wrong, by claude)"
+vidor,guitar,table,24,"mismatch (wrong, by claude)"
+vidor,bat,child,24,"mismatch (wrong, by claude)"
+vidor,refrigerator,chair,24,"mismatch (wrong, by claude)"
+vidor,baby,faucet,24,"mismatch (wrong, by claude)"
+vidor,cellphone,camera,24,"mismatch (wrong, by claude)"
+vidor,faucet,toy,24,"mismatch (wrong, by claude)"
+vidor,child,scooter,24,"mismatch (wrong, by claude)"
+vidor,bottle,stool,23,"mismatch (wrong, by claude)"
+vidor,piano,guitar,23,"mismatch (wrong, by claude)"
+vidor,bottle,cellphone,23,"mismatch (wrong, by claude)"
+vidor,faucet,refrigerator,23,"mismatch (wrong, by claude)"
+vidor,faucet,baby,23,"mismatch (wrong, by claude)"
+vidor,backpack,camera,23,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,car,ball/sports ball,23,"mismatch (wrong, by claude)"
+vidor,dish,chair,23,"mismatch (wrong, by claude)"
+vidor,screen/monitor,camera,22,"mismatch (wrong, by claude)"
+vidor,cup,baby seat,22,"mismatch (wrong, by claude)"
+vidor,table,dish,22,"mismatch (wrong, by claude)"
+vidor,stop sign,adult,22,"mismatch (wrong, by claude)"
+vidor,chair,baby seat,21,"hypernym/hyponym (right, by moonshotai/kimi-k3 (other order))"
+vidor,fish,table,21,"mismatch (wrong, by claude)"
+vidor,table,fish,21,"mismatch (wrong, by claude)"
+vidor,guitar,cellphone,21,"mismatch (wrong, by claude)"
+vidor,adult,crocodile,21,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,screen/monitor,21,"mismatch (wrong, by claude)"
+vidor,screen/monitor,handbag,21,"mismatch (wrong, by claude)"
+vidor,sofa,guitar,21,"mismatch (wrong, by claude)"
+vidor,cat,sofa,21,"mismatch (wrong, by claude)"
+vidor,dog,refrigerator,21,"mismatch (wrong, by claude)"
+vidor,refrigerator,sink,21,"mismatch (wrong, by claude)"
+vidor,screen/monitor,baby,21,"mismatch (wrong, by claude)"
 vidor,camel,camel,21,identical (right)
-vidor,dog,stool,21,not judged yet
-vidor,chair,refrigerator,21,not judged yet
-vidor,dish,baby,21,not judged yet
-vidor,toy,faucet,21,not judged yet
-vidor,electric fan,sofa,21,not judged yet
-vidor,scooter,child,21,not judged yet
-vidor,sofa,baby seat,21,not judged yet
-vidor,laptop,bottle,21,not judged yet
-vidor,car,chair,21,not judged yet
-vidor,baby seat,ball/sports ball,20,not judged yet
-vidor,handbag,guitar,20,not judged yet
-vidor,sink,refrigerator,20,not judged yet
-vidor,cup,oven,20,not judged yet
-vidor,laptop,guitar,20,not judged yet
-vidor,camera,horse,20,not judged yet
-vidor,stool,baby,19,not judged yet
-vidor,cake,camera,19,not judged yet
-vidor,cat,screen/monitor,19,not judged yet
-vidor,dog,faucet,19,not judged yet
-vidor,dog,guitar,19,not judged yet
-vidor,fish,chair,18,not judged yet
-vidor,handbag,crocodile,18,not judged yet
-vidor,crocodile,handbag,18,not judged yet
-vidor,crocodile,baby,18,not judged yet
-vidor,cake,cup,18,not judged yet
-vidor,motorcycle,child,18,not judged yet
+vidor,dog,stool,21,"mismatch (wrong, by claude)"
+vidor,chair,refrigerator,21,"mismatch (wrong, by claude)"
+vidor,dish,baby,21,"mismatch (wrong, by claude)"
+vidor,toy,faucet,21,"mismatch (wrong, by claude)"
+vidor,electric fan,sofa,21,"mismatch (wrong, by claude)"
+vidor,scooter,child,21,"mismatch (wrong, by claude)"
+vidor,sofa,baby seat,21,"mismatch (wrong, by claude)"
+vidor,laptop,bottle,21,"mismatch (wrong, by claude)"
+vidor,car,chair,21,"mismatch (wrong, by claude)"
+vidor,baby seat,ball/sports ball,20,"mismatch (wrong, by claude)"
+vidor,handbag,guitar,20,"mismatch (wrong, by claude)"
+vidor,sink,refrigerator,20,"mismatch (wrong, by claude)"
+vidor,cup,oven,20,"mismatch (wrong, by claude)"
+vidor,laptop,guitar,20,"mismatch (wrong, by claude)"
+vidor,camera,horse,20,"mismatch (wrong, by claude)"
+vidor,stool,baby,19,"mismatch (wrong, by claude)"
+vidor,cake,camera,19,"mismatch (wrong, by claude)"
+vidor,cat,screen/monitor,19,"mismatch (wrong, by claude)"
+vidor,dog,faucet,19,"mismatch (wrong, by claude)"
+vidor,dog,guitar,19,"mismatch (wrong, by claude)"
+vidor,fish,chair,18,"mismatch (wrong, by claude)"
+vidor,handbag,crocodile,18,"mismatch (wrong, by claude)"
+vidor,crocodile,handbag,18,"mismatch (wrong, by claude)"
+vidor,crocodile,baby,18,"mismatch (wrong, by claude)"
+vidor,cake,cup,18,"mismatch (wrong, by claude)"
+vidor,motorcycle,child,18,"mismatch (wrong, by claude)"
 vidor,motorcycle,motorcycle,18,identical (right)
 vidor,bat,bat,18,identical (right)
-vidor,ball/sports ball,racket,18,not judged yet
-vidor,cat,sink,18,not judged yet
-vidor,cat,faucet,18,not judged yet
+vidor,ball/sports ball,racket,18,"mismatch (wrong, by claude)"
+vidor,cat,sink,18,"mismatch (wrong, by claude)"
+vidor,cat,faucet,18,"mismatch (wrong, by claude)"
 vidor,baby walker,baby walker,18,identical (right)
-vidor,table,fruits,18,not judged yet
-vidor,bottle,backpack,18,not judged yet
-vidor,bottle,handbag,18,not judged yet
-vidor,handbag,bottle,18,not judged yet
-vidor,bottle,horse,18,not judged yet
-vidor,chair,ball/sports ball,18,not judged yet
-vidor,baby seat,sofa,18,not judged yet
-vidor,toy,laptop,18,not judged yet
-vidor,laptop,toy,18,not judged yet
+vidor,table,fruits,18,"mismatch (wrong, by claude)"
+vidor,bottle,backpack,18,"mismatch (wrong, by claude)"
+vidor,bottle,handbag,18,"mismatch (wrong, by claude)"
+vidor,handbag,bottle,18,"mismatch (wrong, by claude)"
+vidor,bottle,horse,18,"mismatch (wrong, by claude)"
+vidor,chair,ball/sports ball,18,"mismatch (wrong, by claude)"
+vidor,baby seat,sofa,18,"mismatch (wrong, by claude)"
+vidor,toy,laptop,18,"mismatch (wrong, by claude)"
+vidor,laptop,toy,18,"mismatch (wrong, by claude)"
 vidor,scooter,scooter,18,identical (right)
-vidor,backpack,ski,18,not judged yet
-vidor,frisbee,adult,18,not judged yet
-vidor,bench,baby seat,18,not judged yet
-vidor,bottle,laptop,18,not judged yet
-vidor,sofa,bench,18,not judged yet
-vidor,table,baby seat,18,not judged yet
-vidor,ball/sports ball,bat,17,not judged yet
-vidor,sofa,cat,17,not judged yet
-vidor,backpack,cup,17,not judged yet
+vidor,backpack,ski,18,"mismatch (wrong, by claude)"
+vidor,frisbee,adult,18,"mismatch (wrong, by claude)"
+vidor,bench,baby seat,18,"mismatch (wrong, by claude)"
+vidor,bottle,laptop,18,"mismatch (wrong, by claude)"
+vidor,sofa,bench,18,"mismatch (wrong, by claude)"
+vidor,table,baby seat,18,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,ball/sports ball,bat,17,"mismatch (wrong, by claude)"
+vidor,sofa,cat,17,"mismatch (wrong, by claude)"
+vidor,backpack,cup,17,"mismatch (wrong, by claude)"
 vidor,piano,piano,17,identical (right)
-vidor,aircraft,car,16,not judged yet
+vidor,aircraft,car,16,"mismatch (wrong, by claude)"
 vidor,camera,dog,16,mismatch (wrong)
-vidor,screen/monitor,ball/sports ball,16,not judged yet
-vidor,car,backpack,16,not judged yet
-vidor,cellphone,bench,16,not judged yet
-vidor,baby walker,bread,16,not judged yet
-vidor,bread,adult,16,not judged yet
-vidor,stool,screen/monitor,16,not judged yet
-vidor,screen/monitor,stool,16,not judged yet
-vidor,electric fan,dog,16,not judged yet
-vidor,baby,horse,16,not judged yet
+vidor,screen/monitor,ball/sports ball,16,"mismatch (wrong, by claude)"
+vidor,car,backpack,16,"mismatch (wrong, by claude)"
+vidor,cellphone,bench,16,"mismatch (wrong, by claude)"
+vidor,baby walker,bread,16,"mismatch (wrong, by claude)"
+vidor,bread,adult,16,"mismatch (wrong, by claude)"
+vidor,stool,screen/monitor,16,"mismatch (wrong, by claude)"
+vidor,screen/monitor,stool,16,"mismatch (wrong, by claude)"
+vidor,electric fan,dog,16,"mismatch (wrong, by claude)"
+vidor,baby,horse,16,"mismatch (wrong, by claude)"
 vidor,adult,skateboard,16,mismatch (wrong)
-vidor,cat,handbag,15,not judged yet
-vidor,chair,fish,15,not judged yet
-vidor,handbag,screen/monitor,15,not judged yet
-vidor,baby seat,refrigerator,15,not judged yet
-vidor,refrigerator,baby,15,not judged yet
-vidor,child,vegetables,15,not judged yet
-vidor,vegetables,child,15,not judged yet
-vidor,vegetables,table,15,not judged yet
+vidor,cat,handbag,15,"mismatch (wrong, by claude)"
+vidor,chair,fish,15,"mismatch (wrong, by claude)"
+vidor,handbag,screen/monitor,15,"mismatch (wrong, by claude)"
+vidor,baby seat,refrigerator,15,"mismatch (wrong, by claude)"
+vidor,refrigerator,baby,15,"mismatch (wrong, by claude)"
+vidor,child,vegetables,15,"mismatch (wrong, by claude)"
+vidor,vegetables,child,15,"mismatch (wrong, by claude)"
+vidor,vegetables,table,15,"mismatch (wrong, by claude)"
 vidor,cup,handbag,15,mismatch (wrong)
-vidor,adult,snake,15,not judged yet
-vidor,baby,oven,15,not judged yet
-vidor,baby,dish,15,not judged yet
-vidor,racket,child,15,not judged yet
-vidor,adult,penguin,15,not judged yet
-vidor,faucet,cat,15,not judged yet
-vidor,piano,table,15,not judged yet
-vidor,cup,piano,15,not judged yet
-vidor,camera,car,15,not judged yet
-vidor,horse,baby,15,not judged yet
-vidor,dish,sofa,15,not judged yet
+vidor,adult,snake,15,"mismatch (wrong, by claude)"
+vidor,baby,oven,15,"mismatch (wrong, by claude)"
+vidor,baby,dish,15,"mismatch (wrong, by claude)"
+vidor,racket,child,15,"mismatch (wrong, by claude)"
+vidor,adult,penguin,15,"mismatch (wrong, by claude)"
+vidor,faucet,cat,15,"mismatch (wrong, by claude)"
+vidor,piano,table,15,"mismatch (wrong, by claude)"
+vidor,cup,piano,15,"mismatch (wrong, by claude)"
+vidor,camera,car,15,"mismatch (wrong, by claude)"
+vidor,horse,baby,15,"mismatch (wrong, by claude)"
+vidor,dish,sofa,15,"mismatch (wrong, by claude)"
 vidor,bench,bench,15,identical (right)
-vidor,cake,bottle,15,not judged yet
-vidor,adult,scooter,15,not judged yet
-vidor,scooter,adult,15,not judged yet
-vidor,dog,laptop,15,not judged yet
-vidor,car,table,15,not judged yet
-vidor,dog,handbag,14,not judged yet
-vidor,screen/monitor,cat,14,not judged yet
-vidor,train,car,14,not judged yet
-vidor,oven,faucet,14,not judged yet
-vidor,backpack,bench,14,not judged yet
-vidor,cup,backpack,14,not judged yet
+vidor,cake,bottle,15,"mismatch (wrong, by claude)"
+vidor,adult,scooter,15,"mismatch (wrong, by claude)"
+vidor,scooter,adult,15,"mismatch (wrong, by claude)"
+vidor,dog,laptop,15,"mismatch (wrong, by claude)"
+vidor,car,table,15,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,dog,handbag,14,"mismatch (wrong, by claude)"
+vidor,screen/monitor,cat,14,"mismatch (wrong, by claude)"
+vidor,train,car,14,"mismatch (wrong, by claude)"
+vidor,oven,faucet,14,"mismatch (wrong, by claude)"
+vidor,backpack,bench,14,"mismatch (wrong, by claude)"
+vidor,cup,backpack,14,"mismatch (wrong, by claude)"
 vidor,baby walker,backpack,14,mismatch (wrong)
-vidor,backpack,screen/monitor,13,not judged yet
-vidor,camera,bench,13,not judged yet
-vidor,ball/sports ball,bench,13,not judged yet
-vidor,bottle,screen/monitor,13,not judged yet
-vidor,skateboard,car,13,not judged yet
-vidor,aircraft,bus/truck,12,not judged yet
-vidor,car,aircraft,12,not judged yet
-vidor,cup,refrigerator,12,not judged yet
-vidor,bench,piano,12,not judged yet
-vidor,bench,guitar,12,not judged yet
-vidor,table,vegetables,12,not judged yet
-vidor,table,bird,12,not judged yet
-vidor,piano,toy,12,not judged yet
-vidor,sofa,piano,12,not judged yet
-vidor,cake,toy,12,not judged yet
-vidor,child,chicken,12,not judged yet
-vidor,camera,stool,12,not judged yet
-vidor,toy,camera,12,not judged yet
-vidor,faucet,oven,12,not judged yet
-vidor,adult,racket,12,not judged yet
-vidor,racket,adult,12,not judged yet
-vidor,ball/sports ball,baby walker,12,not judged yet
-vidor,sink,cat,12,not judged yet
+vidor,backpack,screen/monitor,13,"mismatch (wrong, by claude)"
+vidor,camera,bench,13,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,bench,13,"mismatch (wrong, by claude)"
+vidor,bottle,screen/monitor,13,"mismatch (wrong, by claude)"
+vidor,skateboard,car,13,"mismatch (wrong, by claude)"
+vidor,aircraft,bus/truck,12,"mismatch (wrong, by claude)"
+vidor,car,aircraft,12,"mismatch (wrong, by claude)"
+vidor,cup,refrigerator,12,"mismatch (wrong, by claude)"
+vidor,bench,piano,12,"mismatch (wrong, by claude)"
+vidor,bench,guitar,12,"mismatch (wrong, by claude)"
+vidor,table,vegetables,12,"mismatch (wrong, by claude)"
+vidor,table,bird,12,"mismatch (wrong, by claude)"
+vidor,piano,toy,12,"mismatch (wrong, by claude)"
+vidor,sofa,piano,12,"mismatch (wrong, by claude)"
+vidor,cake,toy,12,"mismatch (wrong, by claude)"
+vidor,child,chicken,12,"mismatch (wrong, by claude)"
+vidor,camera,stool,12,"mismatch (wrong, by claude)"
+vidor,toy,camera,12,"mismatch (wrong, by claude)"
+vidor,faucet,oven,12,"mismatch (wrong, by claude)"
+vidor,adult,racket,12,"mismatch (wrong, by claude)"
+vidor,racket,adult,12,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,baby walker,12,"mismatch (wrong, by claude)"
+vidor,sink,cat,12,"mismatch (wrong, by claude)"
 vidor,squirrel,squirrel,12,identical (right)
-vidor,cat,bottle,12,not judged yet
-vidor,bottle,faucet,12,not judged yet
-vidor,bottle,sink,12,not judged yet
-vidor,bottle,cat,12,not judged yet
-vidor,bread,baby walker,12,not judged yet
-vidor,dog,antelope,12,not judged yet
+vidor,cat,bottle,12,"mismatch (wrong, by claude)"
+vidor,bottle,faucet,12,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,bottle,sink,12,"mismatch (wrong, by claude)"
+vidor,bottle,cat,12,"mismatch (wrong, by claude)"
+vidor,bread,baby walker,12,"mismatch (wrong, by claude)"
+vidor,dog,antelope,12,"mismatch (wrong, by claude)"
 vidor,microwave,microwave,12,identical (right)
-vidor,chair,piano,12,not judged yet
-vidor,piano,cup,12,not judged yet
-vidor,handbag,sofa,12,not judged yet
-vidor,sofa,handbag,12,not judged yet
-vidor,bus/truck,screen/monitor,12,not judged yet
-vidor,camera,ball/sports ball,12,not judged yet
-vidor,electric fan,screen/monitor,12,not judged yet
-vidor,backpack,baby,12,not judged yet
-vidor,toy,car,12,not judged yet
+vidor,chair,piano,12,"mismatch (wrong, by claude)"
+vidor,piano,cup,12,"mismatch (wrong, by claude)"
+vidor,handbag,sofa,12,"mismatch (wrong, by claude)"
+vidor,sofa,handbag,12,"mismatch (wrong, by claude)"
+vidor,bus/truck,screen/monitor,12,"mismatch (wrong, by claude)"
+vidor,camera,ball/sports ball,12,"mismatch (wrong, by claude)"
+vidor,electric fan,screen/monitor,12,"mismatch (wrong, by claude)"
+vidor,backpack,baby,12,"mismatch (wrong, by claude)"
+vidor,toy,car,12,"mismatch (wrong, by claude)"
 vidor,table,bench,12,semantic overlap (right)
-vidor,bird,table,12,not judged yet
-vidor,bottle,baby walker,12,not judged yet
-vidor,baby walker,bottle,12,not judged yet
-vidor,skateboard,adult,12,not judged yet
-vidor,handbag,table,12,not judged yet
-vidor,cellphone,chair,12,not judged yet
-vidor,adult,bread,11,not judged yet
-vidor,child,bread,11,not judged yet
-vidor,chair,dish,11,not judged yet
-vidor,oven,baby,10,not judged yet
-vidor,cup,guitar,10,not judged yet
+vidor,bird,table,12,"mismatch (wrong, by claude)"
+vidor,bottle,baby walker,12,"mismatch (wrong, by claude)"
+vidor,baby walker,bottle,12,"mismatch (wrong, by claude)"
+vidor,skateboard,adult,12,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,handbag,table,12,"mismatch (wrong, by claude)"
+vidor,cellphone,chair,12,"mismatch (wrong, by claude)"
+vidor,adult,bread,11,"mismatch (wrong, by claude)"
+vidor,child,bread,11,"mismatch (wrong, by claude)"
+vidor,chair,dish,11,"mismatch (wrong, by claude)"
+vidor,oven,baby,10,"mismatch (wrong, by claude)"
+vidor,cup,guitar,10,"mismatch (wrong, by claude)"
 vidor,ball/sports ball,bottle,10,mismatch (wrong)
-vidor,handbag,cat,9,not judged yet
-vidor,refrigerator,baby seat,9,not judged yet
-vidor,refrigerator,cup,9,not judged yet
-vidor,hamster/rat,sink,9,not judged yet
-vidor,faucet,hamster/rat,9,not judged yet
-vidor,hamster/rat,faucet,9,not judged yet
-vidor,motorcycle,toy,9,not judged yet
+vidor,handbag,cat,9,"mismatch (wrong, by claude)"
+vidor,refrigerator,baby seat,9,"mismatch (wrong, by claude)"
+vidor,refrigerator,cup,9,"mismatch (wrong, by claude)"
+vidor,hamster/rat,sink,9,"mismatch (wrong, by claude)"
+vidor,faucet,hamster/rat,9,"mismatch (wrong, by claude)"
+vidor,hamster/rat,faucet,9,"mismatch (wrong, by claude)"
+vidor,motorcycle,toy,9,"mismatch (wrong, by claude)"
 vidor,table,suitcase,9,mismatch (wrong)
-vidor,piano,child,9,not judged yet
-vidor,refrigerator,faucet,9,not judged yet
-vidor,cat,camera,9,not judged yet
-vidor,table,faucet,9,not judged yet
-vidor,camel,adult,9,not judged yet
-vidor,chicken,adult,9,not judged yet
-vidor,camera,baby,9,not judged yet
-vidor,racket,ball/sports ball,9,not judged yet
-vidor,baby walker,bench,9,not judged yet
-vidor,baby walker,ball/sports ball,9,not judged yet
+vidor,piano,child,9,"mismatch (wrong, by claude)"
+vidor,refrigerator,faucet,9,"mismatch (wrong, by claude)"
+vidor,cat,camera,9,"mismatch (wrong, by claude)"
+vidor,table,faucet,9,"mismatch (wrong, by claude)"
+vidor,camel,adult,9,"mismatch (wrong, by claude)"
+vidor,chicken,adult,9,"mismatch (wrong, by claude)"
+vidor,camera,baby,9,"mismatch (wrong, by claude)"
+vidor,racket,ball/sports ball,9,"mismatch (wrong, by claude)"
+vidor,baby walker,bench,9,"mismatch (wrong, by claude)"
+vidor,baby walker,ball/sports ball,9,"mismatch (wrong, by claude)"
 vidor,faucet,bottle,9,mismatch (wrong)
-vidor,bus/truck,traffic light,9,not judged yet
-vidor,oven,microwave,9,not judged yet
-vidor,table,piano,9,not judged yet
+vidor,bus/truck,traffic light,9,"mismatch (wrong, by claude)"
+vidor,oven,microwave,9,"semantic overlap (right, by moonshotai/kimi-k3 (other order))"
+vidor,table,piano,9,"mismatch (wrong, by claude)"
 vidor,cattle/cow,cattle/cow,9,identical (right)
-vidor,motorcycle,bus/truck,9,not judged yet
-vidor,chair,electric fan,9,not judged yet
-vidor,adult,tiger,9,not judged yet
-vidor,tiger,adult,9,not judged yet
-vidor,child,dish,9,not judged yet
-vidor,dish,child,9,not judged yet
+vidor,motorcycle,bus/truck,9,"mismatch (wrong, by claude)"
+vidor,chair,electric fan,9,"mismatch (wrong, by claude)"
+vidor,adult,tiger,9,"mismatch (wrong, by claude)"
+vidor,tiger,adult,9,"mismatch (wrong, by claude)"
+vidor,child,dish,9,"mismatch (wrong, by claude)"
+vidor,dish,child,9,"mismatch (wrong, by claude)"
 vidor,toy,handbag,9,mismatch (wrong)
 vidor,handbag,toy,9,mismatch (wrong)
-vidor,cake,chair,9,not judged yet
-vidor,baby seat,bench,9,not judged yet
-vidor,dog,baby seat,9,not judged yet
-vidor,dog,backpack,9,not judged yet
-vidor,ball/sports ball,bicycle,9,not judged yet
-vidor,backpack,bicycle,9,not judged yet
-vidor,watercraft,car,9,not judged yet
-vidor,backpack,baby walker,9,not judged yet
-vidor,stool,dog,8,not judged yet
-vidor,toy,bread,8,not judged yet
+vidor,cake,chair,9,"mismatch (wrong, by claude)"
+vidor,baby seat,bench,9,"mismatch (wrong, by claude)"
+vidor,dog,baby seat,9,"mismatch (wrong, by claude)"
+vidor,dog,backpack,9,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,bicycle,9,"mismatch (wrong, by claude)"
+vidor,backpack,bicycle,9,"mismatch (wrong, by claude)"
+vidor,watercraft,car,9,"mismatch (wrong, by claude)"
+vidor,backpack,baby walker,9,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,stool,dog,8,"mismatch (wrong, by claude)"
+vidor,toy,bread,8,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,snowboard,snowboard,8,identical (right)
-vidor,bench,baby,8,not judged yet
-vidor,cellphone,dish,8,not judged yet
-vidor,faucet,dog,7,not judged yet
-vidor,faucet,table,7,not judged yet
-vidor,faucet,dish,7,not judged yet
-vidor,oven,cup,7,not judged yet
-vidor,baby,antelope,7,not judged yet
-vidor,guitar,cup,7,not judged yet
-vidor,dish,cellphone,7,not judged yet
-vidor,chair,cellphone,7,not judged yet
-vidor,table,cellphone,7,not judged yet
-vidor,cellphone,guitar,6,not judged yet
-vidor,guitar,handbag,6,not judged yet
-vidor,sink,hamster/rat,6,not judged yet
-vidor,backpack,car,6,not judged yet
-vidor,suitcase,table,6,not judged yet
-vidor,adult,bird,6,not judged yet
-vidor,piano,sofa,6,not judged yet
-vidor,sink,dog,6,not judged yet
-vidor,camera,bird,6,not judged yet
-vidor,camera,cat,6,not judged yet
-vidor,cat,bird,6,not judged yet
-vidor,bird,chair,6,not judged yet
-vidor,bird,adult,6,not judged yet
-vidor,bird,camera,6,not judged yet
-vidor,snowboard,child,6,not judged yet
-vidor,cup,chicken,6,not judged yet
-vidor,adult,chicken,6,not judged yet
+vidor,bench,baby,8,"mismatch (wrong, by claude)"
+vidor,cellphone,dish,8,"mismatch (wrong, by claude)"
+vidor,faucet,dog,7,"mismatch (wrong, by claude)"
+vidor,faucet,table,7,"mismatch (wrong, by claude)"
+vidor,faucet,dish,7,"mismatch (wrong, by claude)"
+vidor,oven,cup,7,"mismatch (wrong, by claude)"
+vidor,baby,antelope,7,"mismatch (wrong, by claude)"
+vidor,guitar,cup,7,"mismatch (wrong, by claude)"
+vidor,dish,cellphone,7,"mismatch (wrong, by claude)"
+vidor,chair,cellphone,7,"mismatch (wrong, by claude)"
+vidor,table,cellphone,7,"mismatch (wrong, by claude)"
+vidor,cellphone,guitar,6,"mismatch (wrong, by claude)"
+vidor,guitar,handbag,6,"mismatch (wrong, by claude)"
+vidor,sink,hamster/rat,6,"mismatch (wrong, by claude)"
+vidor,backpack,car,6,"mismatch (wrong, by claude)"
+vidor,suitcase,table,6,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,adult,bird,6,"mismatch (wrong, by claude)"
+vidor,piano,sofa,6,"mismatch (wrong, by claude)"
+vidor,sink,dog,6,"mismatch (wrong, by claude)"
+vidor,camera,bird,6,"mismatch (wrong, by claude)"
+vidor,camera,cat,6,"mismatch (wrong, by claude)"
+vidor,cat,bird,6,"mismatch (wrong, by claude)"
+vidor,bird,chair,6,"mismatch (wrong, by claude)"
+vidor,bird,adult,6,"mismatch (wrong, by claude)"
+vidor,bird,camera,6,"mismatch (wrong, by claude)"
+vidor,snowboard,child,6,"mismatch (wrong, by claude)"
+vidor,cup,chicken,6,"mismatch (wrong, by claude)"
+vidor,adult,chicken,6,"mismatch (wrong, by claude)"
 vidor,cat,dog,6,semantic overlap (right)
 vidor,dog,cat,6,mismatch (wrong)
-vidor,snake,backpack,6,not judged yet
-vidor,bus/truck,bicycle,6,not judged yet
-vidor,sink,bottle,6,not judged yet
-vidor,bread,child,6,not judged yet
+vidor,snake,backpack,6,"mismatch (wrong, by claude)"
+vidor,bus/truck,bicycle,6,"mismatch (wrong, by claude)"
+vidor,sink,bottle,6,"mismatch (wrong, by claude)"
+vidor,bread,child,6,"mismatch (wrong, by claude)"
 vidor,microwave,oven,6,semantic overlap (right)
-vidor,oven,child,6,not judged yet
-vidor,backpack,bottle,6,not judged yet
-vidor,motorcycle,handbag,6,not judged yet
-vidor,handbag,car,6,not judged yet
-vidor,bicycle,table,6,not judged yet
-vidor,ball/sports ball,camera,6,not judged yet
-vidor,car,toy,6,not judged yet
-vidor,bottle,cake,6,not judged yet
-vidor,laptop,dog,6,not judged yet
-vidor,frisbee,child,6,not judged yet
-vidor,baby,bench,6,not judged yet
-vidor,cellphone,baby,6,not judged yet
-vidor,baby,cellphone,6,not judged yet
-vidor,bicycle,skateboard,6,not judged yet
-vidor,table,handbag,6,not judged yet
-vidor,backpack,dog,6,not judged yet
-vidor,backpack,baby seat,6,not judged yet
+vidor,oven,child,6,"mismatch (wrong, by claude)"
+vidor,backpack,bottle,6,"mismatch (wrong, by claude)"
+vidor,motorcycle,handbag,6,"mismatch (wrong, by claude)"
+vidor,handbag,car,6,"mismatch (wrong, by claude)"
+vidor,bicycle,table,6,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,camera,6,"mismatch (wrong, by claude)"
+vidor,car,toy,6,"mismatch (wrong, by claude)"
+vidor,bottle,cake,6,"mismatch (wrong, by claude)"
+vidor,laptop,dog,6,"mismatch (wrong, by claude)"
+vidor,frisbee,child,6,"mismatch (wrong, by claude)"
+vidor,baby,bench,6,"mismatch (wrong, by claude)"
+vidor,cellphone,baby,6,"mismatch (wrong, by claude)"
+vidor,baby,cellphone,6,"mismatch (wrong, by claude)"
+vidor,bicycle,skateboard,6,"mismatch (wrong, by claude)"
+vidor,table,handbag,6,"mismatch (wrong, by claude)"
+vidor,backpack,dog,6,"mismatch (wrong, by claude)"
+vidor,backpack,baby seat,6,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
 vidor,baby seat,backpack,6,mismatch (wrong)
-vidor,bicycle,backpack,6,not judged yet
+vidor,bicycle,backpack,6,"mismatch (wrong, by claude)"
 vidor,racket,racket,6,identical (right)
-vidor,suitcase,handbag,6,not judged yet
-vidor,suitcase,cellphone,6,not judged yet
-vidor,cellphone,car,6,not judged yet
-vidor,car,cellphone,6,not judged yet
-vidor,car,watercraft,6,not judged yet
-vidor,ball/sports ball,guitar,5,not judged yet
-vidor,guitar,dog,5,not judged yet
-vidor,camera,watercraft,5,not judged yet
-vidor,ski,backpack,5,not judged yet
-vidor,stool,bottle,4,not judged yet
-vidor,refrigerator,dog,4,not judged yet
-vidor,stool,camera,4,not judged yet
-vidor,bus/truck,aircraft,3,not judged yet
-vidor,baby,microwave,3,not judged yet
-vidor,train,baby walker,3,not judged yet
-vidor,baby walker,train,3,not judged yet
-vidor,baby,train,3,not judged yet
-vidor,baby,crocodile,3,not judged yet
-vidor,guitar,ball/sports ball,3,not judged yet
-vidor,guitar,bench,3,not judged yet
-vidor,piano,bench,3,not judged yet
-vidor,toy,motorcycle,3,not judged yet
+vidor,suitcase,handbag,6,"semantic overlap (right, by moonshotai/kimi-k3 (other order))"
+vidor,suitcase,cellphone,6,"mismatch (wrong, by claude)"
+vidor,cellphone,car,6,"mismatch (wrong, by claude)"
+vidor,car,cellphone,6,"mismatch (wrong, by claude)"
+vidor,car,watercraft,6,"mismatch (wrong, by claude)"
+vidor,ball/sports ball,guitar,5,"mismatch (wrong, by claude)"
+vidor,guitar,dog,5,"mismatch (wrong, by claude)"
+vidor,camera,watercraft,5,"mismatch (wrong, by claude)"
+vidor,ski,backpack,5,"mismatch (wrong, by claude)"
+vidor,stool,bottle,4,"mismatch (wrong, by claude)"
+vidor,refrigerator,dog,4,"mismatch (wrong, by claude)"
+vidor,stool,camera,4,"mismatch (wrong, by claude)"
+vidor,bus/truck,aircraft,3,"mismatch (wrong, by claude)"
+vidor,baby,microwave,3,"mismatch (wrong, by claude)"
+vidor,train,baby walker,3,"mismatch (wrong, by claude)"
+vidor,baby walker,train,3,"mismatch (wrong, by claude)"
+vidor,baby,train,3,"mismatch (wrong, by claude)"
+vidor,baby,crocodile,3,"mismatch (wrong, by claude)"
+vidor,guitar,ball/sports ball,3,"mismatch (wrong, by claude)"
+vidor,guitar,bench,3,"mismatch (wrong, by claude)"
+vidor,piano,bench,3,"mismatch (wrong, by claude)"
+vidor,toy,motorcycle,3,"mismatch (wrong, by claude)"
 vidor,train,train,3,identical (right)
-vidor,suitcase,toy,3,not judged yet
-vidor,child,suitcase,3,not judged yet
-vidor,toy,suitcase,3,not judged yet
-vidor,toy,cake,3,not judged yet
-vidor,chair,bird,3,not judged yet
-vidor,chicken,cup,3,not judged yet
-vidor,camera,toy,3,not judged yet
-vidor,baby,sink,3,not judged yet
-vidor,sink,baby,3,not judged yet
-vidor,backpack,snake,3,not judged yet
-vidor,sink,cup,3,not judged yet
-vidor,dish,faucet,3,not judged yet
-vidor,traffic light,bus/truck,3,not judged yet
-vidor,stool,refrigerator,3,not judged yet
-vidor,refrigerator,stool,3,not judged yet
-vidor,child,oven,3,not judged yet
-vidor,handbag,motorcycle,3,not judged yet
+vidor,suitcase,toy,3,"mismatch (wrong, by claude)"
+vidor,child,suitcase,3,"mismatch (wrong, by claude)"
+vidor,toy,suitcase,3,"mismatch (wrong, by claude)"
+vidor,toy,cake,3,"mismatch (wrong, by claude)"
+vidor,chair,bird,3,"mismatch (wrong, by claude)"
+vidor,chicken,cup,3,"mismatch (wrong, by claude)"
+vidor,camera,toy,3,"mismatch (wrong, by claude)"
+vidor,baby,sink,3,"mismatch (wrong, by claude)"
+vidor,sink,baby,3,"mismatch (wrong, by claude)"
+vidor,backpack,snake,3,"mismatch (wrong, by claude)"
+vidor,sink,cup,3,"mismatch (wrong, by claude)"
+vidor,dish,faucet,3,"mismatch (wrong, by claude)"
+vidor,traffic light,bus/truck,3,"mismatch (wrong, by claude)"
+vidor,stool,refrigerator,3,"mismatch (wrong, by claude)"
+vidor,refrigerator,stool,3,"mismatch (wrong, by claude)"
+vidor,child,oven,3,"mismatch (wrong, by claude)"
+vidor,handbag,motorcycle,3,"mismatch (wrong, by claude)"
 vidor,toy,guitar,3,mismatch (wrong)
 vidor,guitar,toy,3,mismatch (wrong)
-vidor,cat,suitcase,3,not judged yet
-vidor,car,bat,3,not judged yet
-vidor,sofa,dish,3,not judged yet
-vidor,bench,child,3,not judged yet
-vidor,screen/monitor,bottle,3,not judged yet
-vidor,car,baby,3,not judged yet
-vidor,baby,car,3,not judged yet
-vidor,car,skateboard,3,not judged yet
-vidor,electric fan,bench,3,not judged yet
-vidor,laptop,cellphone,3,not judged yet
-vidor,baby,laptop,3,not judged yet
-vidor,laptop,baby,3,not judged yet
+vidor,cat,suitcase,3,"mismatch (wrong, by claude)"
+vidor,car,bat,3,"mismatch (wrong, by moonshotai/kimi-k3 (other order))"
+vidor,sofa,dish,3,"mismatch (wrong, by claude)"
+vidor,bench,child,3,"mismatch (wrong, by claude)"
+vidor,screen/monitor,bottle,3,"mismatch (wrong, by claude)"
+vidor,car,baby,3,"mismatch (wrong, by claude)"
+vidor,baby,car,3,"mismatch (wrong, by claude)"
+vidor,car,skateboard,3,"mismatch (wrong, by claude)"
+vidor,electric fan,bench,3,"mismatch (wrong, by claude)"
+vidor,laptop,cellphone,3,"mismatch (wrong, by claude)"
+vidor,baby,laptop,3,"mismatch (wrong, by claude)"
+vidor,laptop,baby,3,"mismatch (wrong, by claude)"
 vidor,skateboard,skateboard,3,identical (right)
-vidor,ski,car,3,not judged yet
-vidor,bicycle,ball/sports ball,3,not judged yet
-vidor,cellphone,suitcase,3,not judged yet
+vidor,ski,car,3,"mismatch (wrong, by claude)"
+vidor,bicycle,ball/sports ball,3,"mismatch (wrong, by claude)"
+vidor,cellphone,suitcase,3,"mismatch (wrong, by claude)"
 vidor,handbag,suitcase,3,semantic overlap (right)
-vidor,screen/monitor,refrigerator,2,not judged yet
-vidor,screen/monitor,backpack,2,not judged yet
+vidor,screen/monitor,refrigerator,2,"mismatch (wrong, by claude)"
+vidor,screen/monitor,backpack,2,"mismatch (wrong, by claude)"
 vidor,bread,toy,2,mismatch (wrong)
-vidor,horse,camera,2,not judged yet
-vidor,watercraft,camera,2,not judged yet
-vidor,cup,bench,2,not judged yet
-vidor,dish,oven,1,not judged yet
-vidor,car,handbag,1,not judged yet
-vidor,bench,cup,1,not judged yet
+vidor,horse,camera,2,"mismatch (wrong, by claude)"
+vidor,watercraft,camera,2,"mismatch (wrong, by claude)"
+vidor,cup,bench,2,"mismatch (wrong, by claude)"
+vidor,dish,oven,1,"mismatch (wrong, by claude)"
+vidor,car,handbag,1,"mismatch (wrong, by claude)"
+vidor,bench,cup,1,"mismatch (wrong, by claude)"

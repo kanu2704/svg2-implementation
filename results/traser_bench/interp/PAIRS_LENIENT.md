@@ -2,25 +2,27 @@
 
 Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2all`), checked with the benchmark's judge (Kimi K3, lenient: anything but a mismatch). **Relation**: TRASER's 1st choice / any of its top 5 words for the pair is accepted for one of the human words. **Object**: given the subject and the human word, the object it picks first / any of its top 5 is the human object or an object whose human name the judge accepts for it. Inputs: the real video, another video's input in its place, the video blanked. Context: *fresh* (no earlier relation) or *after its own answer* (its relation list re-opened; missed pairs only). *only real / only another*: pairs right with the real video but not the other input / the other way round. *unjudged*: combinations the judge was never asked, counted as wrong (`python3 tools/interp/judge_pairs.py` asks it).
 
+**Judge.** 2627 words Kimi K3 never judged were judged by claude (NVIDIA retired Kimi K3 on 15 Oct 2026). Check on words Kimi K3 judged: of 100 it accepted, claude also accepts 79; of 100 it rejected, claude also rejects 98. Kimi K3's own verdicts always come first.
+
 ## pvsg: 62 videos, 739 human pairs
 
 ### Relation word, TRASER's 1st choice
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) |
 |---|---|---|---|---|---|---|---|
-| fresh | all human pairs (739) | 429 (58%) | 364 (49%) | 388 (53%) | 99 / 34 | 82 / 41 | 192 |
-| fresh | missed (476) | 243 (51%) | 215 (45%) | 206 (43%) | 53 / 25 | 65 / 28 | 159 |
-| fresh | written (263) | 186 (71%) | 149 (57%) | 182 (69%) | 46 / 9 | 17 / 13 | 33 |
-| after its own answer | missed (355) | 100 (28%) | 87 (25%) | 87 (25%) | 25 / 12 | 22 / 9 | 164 |
+| fresh | all human pairs (739) | 449 (61%) | 376 (51%) | 410 (55%) | 103 / 30 | 88 / 49 | 0 |
+| fresh | missed (476) | 256 (54%) | 222 (47%) | 221 (46%) | 57 / 23 | 71 / 36 | 0 |
+| fresh | written (263) | 193 (73%) | 154 (59%) | 189 (72%) | 46 / 7 | 17 / 13 | 0 |
+| after its own answer | missed (355) | 123 (35%) | 110 (31%) | 115 (32%) | 26 / 13 | 21 / 13 | 0 |
 
 ### Relation word, any of its top 5
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) |
 |---|---|---|---|---|---|---|---|
-| fresh | all human pairs (739) | 599 (81%) | 559 (76%) | 553 (75%) | 69 / 29 | 77 / 31 | 116 |
-| fresh | missed (476) | 359 (75%) | 335 (70%) | 318 (67%) | 44 / 20 | 65 / 24 | 100 |
-| fresh | written (263) | 240 (91%) | 224 (85%) | 235 (89%) | 25 / 9 | 12 / 7 | 16 |
-| after its own answer | missed (355) | 236 (66%) | 212 (60%) | 217 (61%) | 36 / 12 | 30 / 11 | 119 |
+| fresh | all human pairs (739) | 634 (86%) | 608 (82%) | 583 (79%) | 61 / 35 | 78 / 27 | 0 |
+| fresh | missed (476) | 388 (82%) | 371 (78%) | 344 (72%) | 44 / 27 | 66 / 22 | 0 |
+| fresh | written (263) | 246 (94%) | 237 (90%) | 239 (91%) | 17 / 8 | 12 / 5 | 0 |
+| after its own answer | missed (355) | 250 (70%) | 220 (62%) | 225 (63%) | 41 / 11 | 34 / 9 | 0 |
 
 ### Object, TRASER's 1st choice
 
@@ -39,18 +41,18 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 | holding | touching | 461 | semantic overlap (right) |
 | on | on | 444 | identical (right) |
 | on | above | 325 | semantic overlap (right) |
-| on | approaches | 308 | not judged yet |
+| on | approaches | 308 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
 | on | attached to | 255 | semantic overlap (right) |
 | holding | in front of | 230 | mismatch (wrong) |
 | on | in front of | 220 | mismatch (wrong) |
 | holding | carrying | 209 | hypernym/hyponym (right) |
-| holding | above | 195 | not judged yet |
+| holding | above | 195 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
 | holding | approaches | 189 | mismatch (wrong) |
-| holding | manipulates | 187 | not judged yet |
+| holding | manipulates | 187 | semantic overlap (right, by claude) |
 | holding | wearing | 184 | mismatch (wrong) |
-| on | moves away from | 175 | not judged yet |
+| on | moves away from | 175 | mismatch (wrong, by claude) |
 | holding | near | 157 | mismatch (wrong) |
-| on | in | 154 | not judged yet |
+| on | in | 154 | semantic overlap (right, by moonshotai/kimi-k3 (other order)) |
 | in front of | in front of | 148 | identical (right) |
 | on | inside | 134 | mismatch (wrong) |
 | holding | placing | 128 | semantic overlap (right) |
@@ -60,7 +62,7 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 | holding | on | 111 | mismatch (wrong) |
 | holding | below | 106 | mismatch (wrong) |
 
-1483 different combinations, 1150 not judged yet; all of them in `judge_check_*.csv`.
+1483 different combinations, 0 not judged yet; all of them in `judge_check_*.csv`.
 
 ## vidor: 835 videos, 11157 human pairs
 
@@ -68,19 +70,19 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) |
 |---|---|---|---|---|---|---|---|
-| fresh | all human pairs (11157) | 3263 (29%) | 2761 (25%) | 3651 (33%) | 1563 / 1061 | 1078 / 1466 | 277 |
-| fresh | missed (6528) | 1542 (24%) | 1392 (21%) | 1719 (26%) | 739 / 589 | 573 / 750 | 178 |
-| fresh | written (4629) | 1721 (37%) | 1369 (30%) | 1932 (42%) | 824 / 472 | 505 / 716 | 99 |
-| after its own answer | missed (6528) | 3403 (52%) | 3227 (49%) | 3558 (55%) | 774 / 598 | 528 / 683 | 79 |
+| fresh | all human pairs (11157) | 3265 (29%) | 2763 (25%) | 3656 (33%) | 1565 / 1063 | 1076 / 1467 | 0 |
+| fresh | missed (6528) | 1543 (24%) | 1392 (21%) | 1722 (26%) | 740 / 589 | 572 / 751 | 0 |
+| fresh | written (4629) | 1722 (37%) | 1371 (30%) | 1934 (42%) | 825 / 474 | 504 / 716 | 0 |
+| after its own answer | missed (6528) | 3405 (52%) | 3227 (49%) | 3559 (55%) | 775 / 597 | 528 / 682 | 0 |
 
 ### Relation word, any of its top 5
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) |
 |---|---|---|---|---|---|---|---|
-| fresh | all human pairs (11157) | 7072 (63%) | 7191 (64%) | 8061 (72%) | 1441 / 1560 | 920 / 1909 | 835 |
-| fresh | missed (6528) | 3736 (57%) | 3916 (60%) | 4288 (66%) | 845 / 1025 | 647 / 1199 | 590 |
-| fresh | written (4629) | 3336 (72%) | 3275 (71%) | 3773 (82%) | 596 / 535 | 273 / 710 | 245 |
-| after its own answer | missed (6528) | 6111 (94%) | 6028 (92%) | 6013 (92%) | 136 / 53 | 140 / 42 | 72 |
+| fresh | all human pairs (11157) | 7080 (63%) | 7197 (65%) | 8077 (72%) | 1441 / 1558 | 909 / 1906 | 0 |
+| fresh | missed (6528) | 3739 (57%) | 3922 (60%) | 4296 (66%) | 841 / 1024 | 640 / 1197 | 0 |
+| fresh | written (4629) | 3341 (72%) | 3275 (71%) | 3781 (82%) | 600 / 534 | 269 / 709 | 0 |
+| after its own answer | missed (6528) | 6113 (94%) | 6031 (92%) | 6016 (92%) | 135 / 53 | 139 / 42 | 0 |
 
 ### Object, TRASER's 1st choice
 
@@ -88,10 +90,10 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) | same object, exact (real video) |
 |---|---|---|---|---|---|---|---|---|
-| fresh | all human pairs (8852) | 5546 (63%) | 5180 (59%) | 5072 (57%) | 1218 / 852 | 1148 / 674 | 2802 | 3291 (37%) |
-| fresh | missed (5168) | 2914 (56%) | 2831 (55%) | 2673 (52%) | 654 / 571 | 676 / 435 | 1902 | 1495 (29%) |
-| fresh | written (3684) | 2632 (71%) | 2349 (64%) | 2399 (65%) | 564 / 281 | 472 / 239 | 900 | 1796 (49%) |
-| after its own answer | missed (5168) | 3048 (59%) | 2917 (56%) | 2892 (56%) | 420 / 289 | 372 / 216 | 1756 | 1563 (30%) |
+| fresh | all human pairs (8852) | 5742 (65%) | 5397 (61%) | 5239 (59%) | 1155 / 810 | 1151 / 648 | 0 | 3291 (37%) |
+| fresh | missed (5168) | 3061 (59%) | 2963 (57%) | 2780 (54%) | 628 / 530 | 686 / 405 | 0 | 1495 (29%) |
+| fresh | written (3684) | 2681 (73%) | 2434 (66%) | 2459 (67%) | 527 / 280 | 465 / 243 | 0 | 1796 (49%) |
+| after its own answer | missed (5168) | 3202 (62%) | 3086 (60%) | 3058 (59%) | 378 / 262 | 340 / 196 | 0 | 1563 (30%) |
 
 ### Object, any of its top 5
 
@@ -99,10 +101,10 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 
 | context | pairs | real video | another video's input | video blanked | only real / only another | only real / only blanked | unjudged (real video) | same object, exact (real video) |
 |---|---|---|---|---|---|---|---|---|
-| fresh | all human pairs (8852) | 8603 (97%) | 8603 (97%) | 8627 (97%) | 107 / 107 | 90 / 114 | 249 | 7821 (88%) |
-| fresh | missed (5168) | 4962 (96%) | 4976 (96%) | 4986 (96%) | 75 / 89 | 71 / 95 | 206 | 4365 (84%) |
-| fresh | written (3684) | 3641 (99%) | 3627 (98%) | 3641 (99%) | 32 / 18 | 19 / 19 | 43 | 3456 (94%) |
-| after its own answer | missed (5168) | 4975 (96%) | 5003 (97%) | 4981 (96%) | 56 / 84 | 61 / 67 | 192 | 4414 (85%) |
+| fresh | all human pairs (8852) | 8623 (97%) | 8631 (98%) | 8650 (98%) | 91 / 99 | 82 / 109 | 0 | 7821 (88%) |
+| fresh | missed (5168) | 4981 (96%) | 4993 (97%) | 5004 (97%) | 66 / 78 | 64 / 87 | 0 | 4365 (84%) |
+| fresh | written (3684) | 3642 (99%) | 3638 (99%) | 3646 (99%) | 25 / 21 | 18 / 22 | 0 | 3456 (94%) |
+| after its own answer | missed (5168) | 4985 (96%) | 5016 (97%) | 5004 (97%) | 49 / 80 | 45 / 64 | 0 | 4414 (85%) |
 
 ### Check the judge: relation words, most frequent
 
@@ -134,7 +136,7 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 | behind | approaches | 4333 | mismatch (wrong) |
 | watch | in front of | 4282 | mismatch (wrong) |
 
-1803 different combinations, 893 not judged yet; all of them in `judge_check_*.csv`.
+1803 different combinations, 0 not judged yet; all of them in `judge_check_*.csv`.
 
 ### Check the judge: objects (another object than the human one), most frequent
 
@@ -142,28 +144,28 @@ Every human pair whose two objects TRASER received (`pairs_stage.py --phases e2a
 |---|---|---|---|
 | adult | adult | 34608 | identical (right) |
 | child | child | 7945 | identical (right) |
-| child | adult | 5557 | not judged yet |
+| child | adult | 5557 | hypernym/hyponym (right, by moonshotai/kimi-k3 (other order)) |
 | adult | child | 5296 | hypernym/hyponym (right) |
 | adult | chair | 2592 | mismatch (wrong) |
-| adult | table | 2122 | not judged yet |
-| child | table | 1660 | not judged yet |
-| chair | adult | 1619 | not judged yet |
-| guitar | adult | 1517 | not judged yet |
+| adult | table | 2122 | mismatch (wrong, by claude) |
+| child | table | 1660 | mismatch (wrong, by claude) |
+| chair | adult | 1619 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
+| guitar | adult | 1517 | mismatch (wrong, by claude) |
 | adult | car | 1496 | mismatch (wrong) |
 | child | toy | 1432 | mismatch (wrong) |
 | toy | toy | 1391 | identical (right) |
-| child | sofa | 1353 | not judged yet |
-| adult | guitar | 1347 | not judged yet |
-| camera | adult | 1314 | not judged yet |
-| adult | cup | 1271 | not judged yet |
+| child | sofa | 1353 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
+| adult | guitar | 1347 | mismatch (wrong, by claude) |
+| camera | adult | 1314 | mismatch (wrong, by claude) |
+| adult | cup | 1271 | mismatch (wrong, by claude) |
 | sheep/goat | sheep/goat | 1244 | identical (right) |
-| baby | adult | 1071 | not judged yet |
-| cup | adult | 1052 | not judged yet |
-| toy | child | 1038 | not judged yet |
-| table | adult | 1036 | not judged yet |
-| adult | bottle | 1024 | not judged yet |
+| baby | adult | 1071 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
+| cup | adult | 1052 | mismatch (wrong, by claude) |
+| toy | child | 1038 | mismatch (wrong, by moonshotai/kimi-k3 (other order)) |
+| table | adult | 1036 | mismatch (wrong, by claude) |
+| adult | bottle | 1024 | mismatch (wrong, by claude) |
 | dog | dog | 1019 | identical (right) |
 | chair | chair | 1016 | identical (right) |
-| ball/sports ball | adult | 1010 | not judged yet |
+| ball/sports ball | adult | 1010 | mismatch (wrong, by claude) |
 
-816 different combinations, 690 not judged yet; all of them in `judge_check_*.csv`.
+816 different combinations, 0 not judged yet; all of them in `judge_check_*.csv`.

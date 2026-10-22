@@ -175,6 +175,7 @@ class Judge:
         self.model, self.main_path = model, Path(cache)
         self.cache = json.load(open(self.main_path)) if self.main_path.exists() else {}
         self.other = {}                                         # other model -> its answers
+        self.others = others
         for p in sorted(self.main_path.parent.glob("judge_cache_*.json")) if others else []:
             d = json.load(open(p))
             self.other[d["model"]] = d["verdicts"]
@@ -198,8 +199,8 @@ class Judge:
     def ask_all(self, pairs, chunk=50, log=print):
         """Ask about the pairs without a verdict (Kimi K3: without its own verdict, so it replaces another model's)."""
         keys = {self.key(*p) for p in pairs if norm(p[1]) != norm(p[2])}
-        have = set(self.cache) if self.model == JUDGES[0] else set(self.cache).union(*self.other.values())
-        self.ask_keys(sorted(keys - have), chunk, log)
+        todo = keys - set(self.cache) if self.model == JUDGES[0] else {k for k in keys if self.verdict_by_key(k)[0] is None}
+        self.ask_keys(sorted(todo), chunk, log)
 
     def ask_keys(self, todo, chunk=50, log=print):
         if not todo:
@@ -239,12 +240,20 @@ class Judge:
             log(f"  judged {done}/{len(todo)} new pairs (that request: {time.time() - t0:.0f} s)")
 
     def verdict_of(self, kind, ref, pred):
-        """(category, model that judged it); (None, None) if no judge was asked; the model is None for the same word."""
+        """(category, model that judged it); (None, None) if no judge was asked; the model is None for the same word.
+        With others=True, Kimi K3's verdict on the same two words in the other order comes before other models'
+        (the categories are symmetric)."""
         if norm(ref) == norm(pred):
             return "identical", None
-        k = self.key(kind, ref, pred)
+        return self.verdict_by_key(self.key(kind, ref, pred))
+
+    def verdict_by_key(self, k):
         if k in self.cache:
             return self.cache[k], JUDGES[0]
+        if self.others:
+            kind, ref, pred = k.split("\t")
+            if f"{kind}\t{pred}\t{ref}" in self.cache:
+                return self.cache[f"{kind}\t{pred}\t{ref}"], JUDGES[0] + " (other order)"
         for m in sorted(self.other, key=lambda m: JUDGES.index(m) if m in JUDGES else len(JUDGES)):
             if k in self.other[m]:
                 return self.other[m][k], m
@@ -284,7 +293,7 @@ class Judge:
         rej = [k for k in both if not is_right(self.cache[k], "lenient")]
         return dict(accepted=len(acc), also_accepted=sum(is_right(v[k], "lenient") for k in acc),
                     rejected=len(rej), also_rejected=sum(not is_right(v[k], "lenient") for k in rej),
-                    only_it=len([k for k in v if k not in self.cache]))
+                    only_it=sum(self.verdict_by_key(k)[1] == model for k in v))
 
     def note(self):
         """One line per other model whose verdicts are used (for the pages), or ''."""
