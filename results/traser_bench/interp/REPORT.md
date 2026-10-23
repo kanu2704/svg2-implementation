@@ -10,6 +10,8 @@ The language model alone (exported weights) on the saved input sequences, compar
 |---|---|---|---|
 | pvsg | 0018_4748191834 | 300/300 | 97% |
 | pvsg | 0046_11919433184 | 300/300 | 98% |
+| svg2test | 1125_Cbv34yDZ8gc | 85/300 | 96% |
+| svg2test | 1190_UmpN6eLjN8w | 62/300 | 98% |
 | vidor | 10024067406 | 189/189 | 98% |
 | vidor | 11244289523 | 300/300 | 97% |
 
@@ -49,6 +51,22 @@ Controls for *related*: shuffled labels 0.50; geometry only (on screen together,
 
 **Known but not written?** At `lm_30` (best stage for *related*), 37% of the 428 human pairs TRASER did *not* write score above 90% of unrelated pairs, vs 46% of the 336 pairs it did write.
 
+### svg2test (40 videos)
+
+| question | n (positives) | vision | otr | twr | lm_00 | lm_03 | lm_06 | lm_09 | lm_12 | lm_15 | lm_18 | lm_21 | lm_24 | lm_27 | lm_30 | lm_33 | lm_36 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| pair: do humans relate subject → object | 11104 (1058) | 0.70 | 0.82 | 0.84 | 0.84 | 0.83 | 0.83 | 0.84 | 0.85 | 0.85 | 0.87 | 0.88 | 0.88 | 0.87 | 0.87 | 0.86 | 0.86 |
+| pair: did TRASER write the pair | 11104 (878) | 0.69 | 0.77 | 0.77 | 0.77 | 0.76 | 0.77 | 0.78 | 0.78 | 0.78 | 0.79 | 0.78 | 0.78 | 0.78 | 0.79 | 0.79 | 0.79 |
+| pair (related): action word vs only position words | 1058 (303) | 0.67 | 0.77 | 0.65 | 0.74 | 0.76 | 0.76 | 0.75 | 0.76 | 0.77 | 0.78 | 0.74 | 0.71 | 0.75 | 0.75 | 0.78 | 0.76 |
+| pair: do the masks touch | 10476 (3257) | 0.74 | 0.82 | 0.85 | 0.84 | 0.84 | 0.83 | 0.84 | 0.84 | 0.84 | 0.86 | 0.86 | 0.86 | 0.87 | 0.86 | 0.84 | 0.83 |
+| object: in any human relation | 1127 (728) | 0.58 | 0.67 | 0.67 | 0.68 | 0.69 | 0.70 | 0.70 | 0.70 | 0.70 | 0.70 | 0.67 | 0.66 | 0.69 | 0.68 | 0.68 | 0.70 |
+| object: moving fast vs slow | 712 (356) | 0.82 | 0.78 | 0.88 | 0.85 | 0.85 | 0.86 | 0.86 | 0.86 | 0.86 | 0.88 | 0.93 | 0.91 | 0.93 | 0.92 | 0.91 | 0.92 |
+| window: is the relation happening in this 4-second window | 3551 (3486) | 0.66 | · | 0.50 | 0.50 | · | 0.50 | · | 0.53 | · | 0.68 | · | 0.65 | · | 0.70 | · | 0.67 |
+
+Controls for *related*: shuffled labels 0.50; geometry only (on screen together, gap, touching, sizes, motion, tokens, person/animal) 0.88; geometry + `lm_24` 0.90.
+
+**Known but not written?** At `lm_24` (best stage for *related*), 58% of the 653 human pairs TRASER did *not* write score above 90% of unrelated pairs, vs 69% of the 405 pairs it did write.
+
 ![probe AUC by stage](figs/probes.png)
 
 
@@ -60,12 +78,14 @@ After TRASER's last relation we start one more, with the subject of a human rela
 |---|---|---|---|---|---|---|---|
 | pvsg missed | 137 | 5 (8) | 23% (3%) | 43% | 34% (5%) | 61% (21%) | **12%** (0%) |
 | pvsg written | 73 | 2 (8) | 40% (4%) | 68% | 40% (5%) | 59% (23%) | **26%** (0%) |
+| svg2test missed | 374 | 10 (12) | 57% (2%) | 74% | 40% (3%) | 66% (13%) | **10%** (0%) |
+| svg2test written | 172 | 5 (12) | 42% (6%) | 66% | 33% (2%) | 50% (8%) | **9%** (0%) |
 | vidor missed | 329 | 4 (3) | 53% (4%) | 75% | 35% (20%) | 76% (66%) | **31%** (2%) |
 | vidor written | 188 | 2 (3) | 49% (6%) | 81% | 49% (16%) | 76% (65%) | **49%** (3%) |
 
 *all three* = subject in the top 3, word in the top 5 (or a same-meaning word), object in the top 3.
 
-**Stopping.** Probability that TRASER closes its relation list, at the point where it did: pvsg mean 59%; vidor mean 70%.
+**Stopping.** Probability that TRASER closes its relation list, at the point where it did: pvsg mean 59%; svg2test mean 60%; vidor mean 70%.
 
 ![probability of stopping after each relation](figs/stop.png)
 
@@ -79,6 +99,10 @@ Change in log-probability (nats; negative = TRASER's own answer became less like
 | pvsg | OTR latents only (whole-video summary) | -0.06 | -0.11 | -0.13 | -0.10 | 582 |
 | pvsg | TWR latents only (4-second windows) | -0.01 | -0.04 | -0.15 | -0.37 | 582 |
 | pvsg | time labels reversed | -0.03 | -0.05 | -0.16 | -1.34 | 582 |
+| svg2test | all visual latents | -0.19 | -0.29 | -0.26 | -0.15 | 743 |
+| svg2test | OTR latents only (whole-video summary) | -0.04 | -0.15 | -0.09 | -0.06 | 743 |
+| svg2test | TWR latents only (4-second windows) | -0.04 | -0.04 | -0.05 | -0.07 | 743 |
+| svg2test | time labels reversed | -0.04 | -0.04 | -0.04 | -0.52 | 743 |
 | vidor | all visual latents | -0.16 | -0.46 | -0.15 | -0.31 | 792 |
 | vidor | OTR latents only (whole-video summary) | -0.07 | -0.22 | -0.05 | -0.05 | 792 |
 | vidor | TWR latents only (4-second windows) | -0.05 | -0.07 | -0.04 | -0.19 | 792 |
@@ -89,6 +113,7 @@ Change in log-probability (nats; negative = TRASER's own answer became less like
 | dataset | position words | other words | top words (change) |
 |---|---|---|---|
 | pvsg | -0.15 | -0.25 | in front of -0.11, holding -0.41, riding -0.03, on -0.16, approaching -0.32, moving away from -0.01, looking at -0.19, placing -0.29 |
+| svg2test | -0.17 | -0.52 | in front of -0.09, on -0.16, above -0.13, wearing -0.07, below -0.49, has -0.28, in -0.47, touching -0.23 |
 | vidor | -0.24 | -0.80 | in front of -0.17, approaches -0.98, near -0.35, moves away from -0.18, looking at -0.99, holding -0.79, on -0.43, behind -0.62 |
 
 **Removing one object.** Mean change for relations that involve the removed object vs relations that do not (if the model reads each object from its own latents, only the first should drop):
@@ -96,6 +121,7 @@ Change in log-probability (nats; negative = TRASER's own answer became less like
 | dataset | involving it: object number | involving it: word | not involving it: object number | not involving it: word |
 |---|---|---|---|---|
 | pvsg | -0.22 | -0.10 | -0.00 | -0.00 |
+| svg2test | -0.17 | -0.10 | -0.00 | 0.00 |
 | vidor | -0.13 | -0.16 | -0.01 | -0.02 |
 
 **Where do the times come from?** The time labels `<a - b sec>` are reversed (the first window gets the last label, ...) while the video latents stay. We compare TRASER's times with the same times moved to where the reversed labels would put them. If times are read from the labels, the moved times become the more likely ones.
@@ -103,6 +129,7 @@ Change in log-probability (nats; negative = TRASER's own answer became less like
 | dataset | relations | clean labels: original times preferred | reversed labels: moved times preferred | mean preference for moved times (clean → reversed, nats) |
 |---|---|---|---|---|
 | pvsg | 576 | 87% | 30% | -3.08 → -0.98 |
+| svg2test | 736 | 86% | 36% | -1.12 → -0.24 |
 | vidor | 740 | 92% | 30% | -3.01 → -0.92 |
 
 **Windows of a relation.** Removing the TWR latents of both objects in the windows where the relation happens, vs in the same number of other windows of the same two objects:
@@ -110,6 +137,7 @@ Change in log-probability (nats; negative = TRASER's own answer became less like
 | dataset | tests | times: own windows | times: other windows | word: own windows | word: other windows |
 |---|---|---|---|---|---|
 | pvsg | 34 | -0.65 | -0.03 | -0.05 | 0.00 |
+| svg2test | 10 | -0.54 | 0.24 | 0.00 | 0.08 |
 | vidor | 58 | -0.76 | 0.01 | -0.07 | -0.05 |
 
 ## 4. Where is the object decided? (activation patching)
@@ -122,6 +150,13 @@ One object of a relation TRASER wrote is removed (its latents set to zero), whic
 |---|---|---|---|---|---|---|---|---|---|---|
 | at its latents | 1.00 | 1.01 | 1.00 | 0.99 | 0.75 | 0.28 | 0.01 | 0.01 | 0.00 | 0.00 |
 | at the writing position | -0.00 | 0.00 | 0.00 | 0.01 | 0.01 | 0.00 | 0.03 | 0.09 | 0.66 | 0.94 |
+
+**svg2test** (7 relations; mean drop when removed 2.68 nats)
+
+| layer | 0 | 4 | 8 | 12 | 16 | 19 | 23 | 27 | 31 | 35 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| at its latents | 1.00 | 1.00 | 1.00 | 1.00 | 0.85 | 0.21 | -0.00 | 0.00 | -0.00 | 0.00 |
+| at the writing position | 0.00 | -0.00 | 0.00 | -0.00 | -0.00 | -0.00 | -0.04 | -0.01 | 0.16 | 0.29 |
 
 **vidor** (6 relations; mean drop when removed 1.25 nats)
 
@@ -153,6 +188,20 @@ Attention (averaged over heads) from the position that writes each token. Shown 
 | answer | 70% / 3.3× | 70% / 3.4× |
 | prompt | 24% / 24.1× | 16% / 15.9× |
 
+*svg2test* (6 videos)
+
+| part of the input | layer 18 | layer 35 |
+|---|---|---|
+| own window latents | 0% / 0.0× | 0% / 0.1× |
+| own window label | 0% / 0.2× | 0% / 0.2× |
+| other windows latents | 0% / 0.0× | 0% / 0.1× |
+| own otr | 0% / 0.2× | 0% / 0.1× |
+| other labels | 2% / 0.2× | 1% / 0.2× |
+| other objects | 1% / 0.0× | 2% / 0.1× |
+| object markers | 4% / 0.9× | 10% / 2.0× |
+| answer | 69% / 2.0× | 69% / 2.0× |
+| prompt | 23% / 23.1× | 17% / 16.7× |
+
 *vidor* (20 videos)
 
 | part of the input | layer 18 | layer 35 |
@@ -178,6 +227,15 @@ Attention (averaged over heads) from the position that writes each token. Shown 
 | answer | 64% / 3.0× | 77% / 3.7× |
 | prompt | 32% / 31.2× | 12% / 11.4× |
 
+*svg2test* (6 videos)
+
+| part of the input | layer 18 | layer 35 |
+|---|---|---|
+| named object block | 0% / 0.1× | 1% / 0.2× |
+| other objects | 4% / 0.1× | 10% / 0.2× |
+| answer | 66% / 1.9× | 79% / 2.3× |
+| prompt | 30% / 29.7× | 11% / 10.5× |
+
 *vidor* (20 videos)
 
 | part of the input | layer 18 | layer 35 |
@@ -198,6 +256,16 @@ Attention (averaged over heads) from the position that writes each token. Shown 
 | labels and markers | 3% / 0.2× | 12% / 0.7× |
 | answer | 66% / 3.2× | 69% / 3.4× |
 | prompt | 30% / 30.0× | 16% / 15.9× |
+
+*svg2test* (6 videos)
+
+| part of the input | layer 18 | layer 35 |
+|---|---|---|
+| subject and object | 0% / 0.0× | 0% / 0.1× |
+| other objects | 1% / 0.0× | 2% / 0.1× |
+| labels and markers | 3% / 0.2× | 11% / 0.9× |
+| answer | 65% / 1.9× | 71% / 2.1× |
+| prompt | 30% / 30.4× | 15% / 14.7× |
 
 *vidor* (20 videos)
 
