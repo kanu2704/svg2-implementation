@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cat",
+      "attributes": ["black", "playing"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["sitting", "petting cat"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["standing", "wearing light-colored clothes"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["colorful", "on floor"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["red", "rolling on floor"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["wooden", "near man"]
+    },
+    {
+      "object 7": "couch",
+      "attributes": ["black", "near man"]
+    },
+    {
+      "object 8": "table",
+      "attributes": ["brown", "near man"]
+    },
+    {
+      "object 9": "dining table",
+      "attributes": ["wooden", "near man"]
+    },
+    {
+      "object 10": "stool",
+      "attributes": ["wooden", "near man"]
+    },
+    {
+      "object 11": "staircase",
+      "attributes": ["wooden", "near man"]
+    },
+    {
+      "object 12": "balcony",
+      "attributes": ["wooden", "near man"]
+    },
+    {
+      "object 13": "floor",
+      "attributes": ["wooden", "under objects"]
+    },
+    {
+      "object 14": "wall",
+      "attributes": ["white", "near man"]
+    },
+    {
+      "object 15": "door",
+      "attributes": ["white", "near man"]
+    },
+    {
+      "object 16": "window",
+      "attributes": ["white", "near man"]
+    },
+    {
+      "object 17": "toy",
+      "attributes": ["blue", "on floor"]
+    },
+    {
+      "object 18": "chair",
+      "attributes": ["wooden", "near child"]
+    },
+    {
+      "object 19": "dining table",
+      "attributes": ["wooden", "near child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

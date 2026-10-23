@@ -1,0 +1,1339 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cupcake",
+      "attributes": ["on table", "with candle"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white shirt", "smiling"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing white shirt", "smiling"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing bib", "eating cake"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["dark surface", "holding cupcakes"]
+    },
+    {
+      "object 6": "cup",
+      "attributes": ["on table", "with liquid"]
+    },
+    {
+      "object 7": "candle",
+      "attributes": ["on cupcake", "lit"]
+    },
+    {
+      "object 8": "birthday hat",
+      "attributes": ["on child's head", "colorful"]
+    },
+    {
+      "object 9": "window",
+      "attributes": ["bright light coming through", "visible in background"]
+    },
+    {
+      "object 10": "curtain",
+      "attributes": ["yellow color", "hanging on window"]
+    },
+    {
+      "object 11": "chair",
+      "attributes": ["brown color", "behind child"]
+    },
+    {
+      "object 12": "bottle",
+      "attributes": ["on table", "with label"]
+    },
+    {
+      "object 13": "bottle cap",
+      "attributes": ["on bottle", "metallic"]
+    },
+    {
+      "object 14": "bottle of soda",
+      "attributes": ["on table", "with label"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "interacts with",
+      "child",
+      [
+        ["0 - 4 sec", "smiling at child"],
+        ["4 - 8 sec", "clapping hands"],
+        ["8 - 12 sec", "laughing"]
+      ]
+    ],
+    [
+      "woman",
+      "interacts with",
+      "child",
+      [
+        ["0 - 4 sec", "smiling at child"],
+        ["4 - 8 sec", "clapping hands"],
+        ["8 - 12 sec", "laughing"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cupcake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "white shirt",
+      [
+        ["0 - 4 sec", "man wearing white shirt"],
+        ["4 - 8 sec", "man wearing white shirt"],
+        ["8 - 12 sec", "man wearing white shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "white shirt",
+      [
+        ["0 - 4 sec", "woman wearing white shirt"],
+        ["4 - 8 sec", "woman wearing white shirt"],
+        ["8 - 12 sec", "woman wearing white shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]
+      ]
+    ],
+    [
+      "child",
+      "eats",
+      "cake",
+      [
+        ["0 - 4 sec", "child eating cake"],
+        ["4 - 8 sec", "child eating cake"],
+        ["8 - 12 sec", "child eating cake"]
+      ]
+    ],
+    [
+      "man",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "man wearing striped shirt"],
+        ["4 - 8 sec", "man wearing striped shirt"],
+        ["8 - 12 sec", "man wearing striped shirt"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "striped shirt",
+      [
+        ["0 - 4 sec", "woman wearing striped shirt"],
+        ["4 - 8 sec", "woman wearing striped shirt"],
+        ["8 - 12 sec", "woman wearing striped shirt"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "bib",
+      [
+        ["0 - 4 sec", "child wearing bib"],
+        ["4 - 8 sec", "child wearing bib"],
+        ["8 - 12 sec", "child wearing bib"]
+      ]
+    ],
+    [
+      "child",
+      "wears",
+      "birthday hat",
+      [
+        ["0 - 4 sec", "child wearing birthday hat"],
+        ["4 - 8 sec", "child wearing birthday hat"],
+        ["8 - 12 sec", "child wearing birthday hat"]
+      ]
+    ],
+    [
+      "man",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "man clapping hands"],
+        ["8 - 12 sec", "man clapping hands"]
+      ]
+    ],
+    [
+      "woman",
+      "claps",
+      "hands",
+      [
+        ["4 - 8 sec", "woman clapping hands"],
+        ["8 - 12 sec", "woman clapping hands"]
+      ]
+    ],
+    [
+      "man",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "man laughing at child"]
+      ]
+    ],
+    [
+      "woman",
+      "laughs",
+      "at",
+      [
+        ["8 - 12 sec", "woman laughing at child"]

@@ -1,0 +1,324 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 10": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 11": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 12": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 13": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 14": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 15": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 16": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 17": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 18": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 19": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 20": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 21": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 22": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 23": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 24": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 25": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 26": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    },
+    {
+      "object 27": "person",
+      "attributes": ["wearing white shirt", "standing on stage"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "handing over gift",
+      2,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      2,
+      "handing over gift",
+      3,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      3,
+      "handing over gift",
+      4,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      4,
+      "handing over gift",
+      5,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      5,
+      "handing over gift",
+      6,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      6,
+      "handing over gift",
+      7,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      7,
+      "handing over gift",
+      8,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      8,
+      "handing over gift",
+      9,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      9,
+      "handing over gift",
+      10,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      10,
+      "handing over gift",
+      11,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      11,
+      "handing over gift",
+      12,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      12,
+      "handing over gift",
+      13,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      13,
+      "handing over gift",
+      14,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      14,
+      "handing over gift",
+      15,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      15,
+      "handing over gift",
+      16,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      16,
+      "handing over gift",
+      17,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      17,
+      "handing over gift",
+      18,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      18,
+      "handing over gift",
+      19,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      19,
+      "handing over gift",
+      20,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      20,
+      "handing over gift",
+      21,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      21,
+      "handing over gift",
+      22,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      22,
+      "handing over gift",
+      23,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      23,
+      "handing over gift",
+      24,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      24,
+      "handing over gift",
+      25,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      25,
+      "handing over gift",
+      26,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      26,
+      "handing over gift",
+      27,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ]
+  ]
+}
+```

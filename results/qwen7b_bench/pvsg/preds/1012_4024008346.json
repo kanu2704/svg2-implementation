@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["blue", "yellow"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing yellow shirt", "playing with ball"]
+    },
+    {
+      "object 3": "walker",
+      "attributes": ["colorful", "on floor"]
+    },
+    {
+      "object 4": "balloon",
+      "attributes": ["yellow", "in child's hand"]
+    },
+    {
+      "object 5": "adult",
+      "attributes": ["standing nearby", "watching child"]
+    },
+    {
+      "object 6": "couch",
+      "attributes": ["brown", "near wall"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["white", "behind couch"]
+    },
+    {
+      "object 8": "balloon",
+      "attributes": ["blue", "on floor"]
+    },
+    {
+      "object 9": "door",
+      "attributes": ["black", "closed"]
+    },
+    {
+      "object 10": "woman",
+      "attributes": ["sitting on couch", "wearing black top"]
+    },
+    {
+      "object 11": "balloon",
+      "attributes": ["yellow", "in child's hand"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "plays with",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "observes",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "holds",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      8,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      9,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      10,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      11,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

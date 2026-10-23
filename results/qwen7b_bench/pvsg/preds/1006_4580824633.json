@@ -1,0 +1,61 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing black top", "wearing red pants with white polka dots"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["white fur with gray patches", "curly hair"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["round", "yellow"]
+    },
+    {
+      "object 4": "grass",
+      "attributes": ["green"]
+    },
+    {
+      "object 5": "tree",
+      "attributes": ["tall", "green leaves"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      3,
+      [
+        [8, 16],
+        [28, 32]
+      ]
+    ],
+    [
+      3,
+      "rolls in",
+      4,
+      [
+        [16, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```

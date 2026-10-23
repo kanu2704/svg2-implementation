@@ -1,0 +1,112 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["playing with hula hoop", "wearing casual clothes"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["holding hula hoop", "wearing casual clothes"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["standing near child", "wearing casual clothes"]
+    },
+    {
+      "object 4": "hula hoop",
+      "attributes": ["being played with by child", "being held by woman"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["being thrown and caught", "being kicked"]
+    },
+    {
+      "object 6": "dog",
+      "attributes": ["lying on ground", "near child"]
+    },
+    {
+      "object 7": "football",
+      "attributes": ["being kicked", "being caught"]
+    },
+    {
+      "object 8": "car",
+      "attributes": ["parked in driveway", "silver color"]
+    },
+    {
+      "object 9": "woman 2",
+      "attributes": ["standing near car", "wearing casual clothes"]
+    },
+    {
+      "object 10": "child 2",
+      "attributes": ["standing near woman 2", "wearing casual clothes"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      4,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      1,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      5,
+      "kicking",
+      7,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      7,
+      "being kicked",
+      5,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      8,
+      "parked in",
+      2,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      9,
+      "standing near",
+      8,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      10,
+      "standing near",
+      9,
+      [
+        ["<0 - 4 sec>", "<28 - 32 sec>"]
+      ]
+    ]
+  ]
+}
+```
