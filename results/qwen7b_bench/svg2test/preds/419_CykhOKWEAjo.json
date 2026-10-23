@@ -1,0 +1,143 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a gray shirt", "wearing khaki pants"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a purple shirt", "wearing blue shorts with white patterns"]
+    },
+    {
+      "object 3": "wooden planks",
+      "attributes": ["stacked on the ground"]
+    },
+    {
+      "object 4": "fence",
+      "attributes": ["wooden, surrounding the yard"]
+    },
+    {
+      "object 5": "trees",
+      "attributes": ["large, leafy, in the background"]
+    },
+    {
+      "object 6": "grass",
+      "attributes": ["green, covering the ground"]
+    },
+    {
+      "object 7": "sky",
+      "attributes": ["overcast, cloudy"]
+    },
+    {
+      "object 8": "bushes",
+      "attributes": ["green, near the fence"]
+    },
+    {
+      "object 9": "sacks",
+      "attributes": ["white, stacked against the fence"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "standing",
+      "child",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man",
+      "holding",
+      "child",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "walking",
+      "wooden planks",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "wooden planks",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man",
+      "kneeling",
+      "wooden planks",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "fence",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "trees",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "grass",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "sky",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "bushes",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "sacks",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

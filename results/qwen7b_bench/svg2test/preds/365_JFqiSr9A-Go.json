@@ -1,0 +1,276 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "desk",
+      "attributes": ["wooden", "organized"]
+    },
+    {
+      "object 2": "computer monitor",
+      "attributes": ["large", "displaying files"]
+    },
+    {
+      "object 3": "keyboard",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 4": "mouse",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 5": "coffee maker",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 6": "shelf",
+      "attributes": ["wooden", "hanging"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["sitting", "wearing black shirt"]
+    },
+    {
+      "object 8": "chair",
+      "attributes": ["black", "ergonomic"]
+    },
+    {
+      "object 9": "wall",
+      "attributes": ["white", "decorated with posters"]
+    },
+    {
+      "object 10": "pegboard",
+      "attributes": ["wooden", "with hooks and items"]
+    },
+    {
+      "object 11": "desk drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 12": "desk surface",
+      "attributes": ["wooden", "clean"]
+    },
+    {
+      "object 13": "desk organizer",
+      "attributes": ["wooden", "on desk"]
+    },
+    {
+      "object 14": "wall art",
+      "attributes": ["framed", "colorful"]
+    },
+    {
+      "object 15": "desk lamp",
+      "attributes": ["white", "on desk"]
+    },
+    {
+      "object 16": "desk shelf",
+      "attributes": ["white", "empty"]
+    },
+    {
+      "object 17": "desk",
+      "attributes": ["wooden", "organized"]
+    },
+    {
+      "object 18": "computer monitor",
+      "attributes": ["large", "displaying files"]
+    },
+    {
+      "object 19": "keyboard",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 20": "mouse",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 21": "coffee maker",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 22": "shelf",
+      "attributes": ["wooden", "hanging"]
+    },
+    {
+      "object 23": "person",
+      "attributes": ["sitting", "wearing black shirt"]
+    },
+    {
+      "object 24": "chair",
+      "attributes": ["black", "ergonomic"]
+    },
+    {
+      "object 25": "wall",
+      "attributes": ["white", "decorated with posters"]
+    },
+    {
+      "object 26": "pegboard",
+      "attributes": ["wooden", "with hooks and items"]
+    },
+    {
+      "object 27": "desk drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 28": "desk surface",
+      "attributes": ["wooden", "clean"]
+    },
+    {
+      "object 29": "desk organizer",
+      "attributes": ["wooden", "on desk"]
+    },
+    {
+      "object 30": "wall art",
+      "attributes": ["framed", "colorful"]
+    },
+    {
+      "object 31": "desk lamp",
+      "attributes": ["white", "on desk"]
+    },
+    {
+      "object 32": "desk shelf",
+      "attributes": ["white", "empty"]
+    },
+    {
+      "object 33": "desk",
+      "attributes": ["wooden", "organized"]
+    },
+    {
+      "object 34": "computer monitor",
+      "attributes": ["large", "displaying files"]
+    },
+    {
+      "object 35": "keyboard",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 36": "mouse",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 37": "coffee maker",
+      "attributes": ["black", "on desk"]
+    },
+    {
+      "object 38": "shelf",
+      "attributes": ["wooden", "hanging"]
+    },
+    {
+      "object 39": "person",
+      "attributes": ["sitting", "wearing black shirt"]
+    },
+    {
+      "object 40": "chair",
+      "attributes": ["black", "ergonomic"]
+    }
+  ],
+  "relationships": [
+    [
+      7,
+      "using",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "looking at",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "typing on",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "sitting in",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "facing",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "wearing",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      37,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "using",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

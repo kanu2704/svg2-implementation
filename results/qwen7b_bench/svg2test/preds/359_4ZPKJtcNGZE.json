@@ -1,0 +1,1355 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Object 1",
+      "attributes": ["in the grass"]
+    },
+    {
+      "object 2": "Object 2",
+      "attributes": ["in the grass"]
+    },
+    {
+      "object 3": "Object 3",
+      "attributes": ["flowing water"]
+    },
+    {
+      "object 4": "Object 4",
+      "attributes": ["yellow excavator", "excavating"]
+    },
+    {
+      "object 5": "Object 5",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 6": "Object 6",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 7": "Object 7",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 8": "Object 8",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 9": "Object 9",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 10": "Object 10",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 11": "Object 11",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 12": "Object 12",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 13": "Object 13",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 14": "Object 14",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 15": "Object 15",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 16": "Object 16",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 17": "Object 17",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 18": "Object 18",
+      "attributes": ["muddy area"]
+    },
+    {
+      "object 19": "Object 19",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 20": "Object 20",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 21": "Object 21",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 22": "Object 22",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 23": "Object 23",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 24": "Object 24",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 25": "Object 25",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 26": "Object 26",
+      "attributes": ["part of Object 4"]
+    },
+    {
+      "object 27": "Object 27",
+      "attributes": ["part of Object 4"]
+    }
+  ],
+  "relationships": [
+    [
+      "Object 1",
+      "near",
+      "Object 3",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 2",
+      "near",
+      "Object 3",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Object 4",
+      "excavating",
+      "Object 18",
+      [
+        "<
