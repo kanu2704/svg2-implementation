@@ -1,0 +1,340 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding knife", "cutting vegetables"]
+    },
+    {
+      "object 2": "knife",
+      "attributes": ["used for cutting vegetables", "held by hand"]
+    },
+    {
+      "object 3": "chopping board",
+      "attributes": ["on countertop", "vegetables are chopped on it"]
+    },
+    {
+      "object 4": "countertop",
+      "attributes": ["flat surface", "chopping board and other items placed on it"]
+    },
+    {
+      "object 5": "package",
+      "attributes": ["contains food ingredients", "placed on countertop"]
+    },
+    {
+      "object 6": "spices",
+      "attributes": ["in a packet", "near chopping board"]
+    },
+    {
+      "object 7": "stove",
+      "attributes": ["gas stove", "pan is placed on it"]
+    },
+    {
+      "object 8": "pan",
+      "attributes": ["green handle", "on stove"]
+    },
+    {
+      "object 9": "oil bottle",
+      "attributes": ["green cap", "near stove"]
+    },
+    {
+      "object 10": "plate",
+      "attributes": ["stacked plates", "on countertop"]
+    },
+    {
+      "object 11": "tortilla",
+      "attributes": ["flour tortillas", "on plate"]
+    },
+    {
+      "object 12": "box",
+      "attributes": ["contains food", "on countertop"]
+    },
+    {
+      "object 13": "tomato",
+      "attributes": ["red", "on chopping board"]
+    },
+    {
+      "object 14": "onion",
+      "attributes": ["purple", "on chopping board"]
+    },
+    {
+      "object 15": "pepper",
+      "attributes": ["orange", "on chopping board"]
+    },
+    {
+      "object 16": "spatula",
+      "attributes": ["used for cooking", "on countertop"]
+    },
+    {
+      "object 17": "spoon",
+      "attributes": ["used for stirring", "on countertop"]
+    },
+    {
+      "object 18": "sink",
+      "attributes": ["metallic", "near stove"]
+    },
+    {
+      "object 19": "kitchen towel",
+      "attributes": ["hanging on wall", "near sink"]
+    },
+    {
+      "object 20": "cabinet",
+      "attributes": ["wooden", "above countertop"]
+    },
+    {
+      "object 21": "drawer",
+      "attributes": ["under countertop", "near stove"]
+    },
+    {
+      "object 22": "spices",
+      "attributes": ["in a jar", "on countertop"]
+    },
+    {
+      "object 23": "bowl",
+      "attributes": ["white", "on countertop"]
+    },
+    {
+      "object 24": "spatula",
+      "attributes": ["used for cooking", "on countertop"]
+    },
+    {
+      "object 25": "spices",
+      "attributes": ["in a jar", "on countertop"]
+    },
+    {
+      "object 26": "spatula",
+      "attributes": ["used for cooking", "on countertop"]
+    },
+    {
+      "object 27": "spices",
+      "attributes": ["in a jar", "on countertop"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "is using",
+      2,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "is on",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      4,
+      "is near",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      5,
+      "is on",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      6,
+      "is on",
+      7,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      7,
+      "has pan on it",
+      8,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      8,
+      "is on",
+      7,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      8,
+      "is near",
+      9,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      9,
+      "is on",
+      7,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      10,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      11,
+      "is on",
+      10,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      12,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      13,
+      "is on",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      14,
+      "is on",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      15,
+      "is on",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      16,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      17,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      18,
+      "is near",
+      19,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      19,
+      "is hanging on",
+      20,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      20,
+      "is under",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      21,
+      "is under",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      22,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      23,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      24,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      25,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      26,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      27,
+      "is on",
+      4,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

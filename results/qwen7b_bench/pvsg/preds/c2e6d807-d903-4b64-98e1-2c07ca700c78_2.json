@@ -1,0 +1,110 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "plate",
+      "attributes": ["clean", "stacked"]
+    },
+    {
+      "object 2": "bowl",
+      "attributes": ["clean", "stacked"]
+    },
+    {
+      "object 3": "cup",
+      "attributes": ["clean", "stacked"]
+    },
+    {
+      "object 4": "sink",
+      "attributes": ["filled with water", "dishes inside"]
+    },
+    {
+      "object 5": "water",
+      "attributes": ["in sink", "cleaning dishes"]
+    },
+    {
+      "object 6": "cloth",
+      "attributes": ["wet", "used for drying"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["covered with tablecloth", "plates on top"]
+    },
+    {
+      "object 8": "chair",
+      "attributes": ["wooden", "placed around table"]
+    },
+    {
+      "object 9": "kitchen",
+      "attributes": ["interior space", "sink and table visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on top of",
+      7,
+      [[0, 125]]
+    ],
+    [
+      2,
+      "on top of",
+      7,
+      [[0, 125]]
+    ],
+    [
+      3,
+      "on top of",
+      7,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "contains",
+      1,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "contains",
+      2,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "contains",
+      3,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "has",
+      5,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "near",
+      7,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "near",
+      8,
+      [[0, 125]]
+    ],
+    [
+      4,
+      "near",
+      9,
+      [[0, 125]]
+    ],
+    [
+      7,
+      "supported by",
+      8,
+      [[0, 125]]
+    ]
+  ]
+}
+```

@@ -1,0 +1,206 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "player",
+      "attributes": ["wearing yellow vest", "running"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["yellow", "rolling"]
+    },
+    {
+      "object 3": "goalkeeper",
+      "attributes": ["wearing black outfit", "standing in goal"]
+    },
+    {
+      "object 4": "assistant",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 5": "referee",
+      "attributes": ["wearing red shirt", "standing on field"]
+    },
+    {
+      "object 6": "opponent",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 7": "assistant",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 8": "assistant",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 9": "opponent",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 10": "assistant",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    },
+    {
+      "object 11": "assistant",
+      "attributes": ["wearing black outfit", "standing near goal"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      2,
+      "rolls towards",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "runs towards",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      7,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      11,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ]
+  ]
+}
+```

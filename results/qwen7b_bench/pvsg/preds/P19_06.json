@@ -1,0 +1,357 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pan",
+      "attributes": ["black", "non-stick"]
+    },
+    {
+      "object 2": "spatula",
+      "attributes": ["metallic", "black handle"]
+    },
+    {
+      "object 3": "egg",
+      "attributes": ["fried", "yellow yolk"]
+    },
+    {
+      "object 4": "butter",
+      "attributes": ["melted", "golden"]
+    },
+    {
+      "object 5": "stove",
+      "attributes": ["electric", "black surface"]
+    },
+    {
+      "object 6": "kitchen counter",
+      "attributes": ["white", "clean"]
+    },
+    {
+      "object 7": "sink",
+      "attributes": ["stainless steel", "clean"]
+    },
+    {
+      "object 8": "hand",
+      "attributes": ["visible", "holding spatula"]
+    },
+    {
+      "object 9": "spoon",
+      "attributes": ["metallic", "silver"]
+    },
+    {
+      "object 10": "oil",
+      "attributes": ["clear", "shiny"]
+    },
+    {
+      "object 11": "pot",
+      "attributes": ["silver", "steaming"]
+    },
+    {
+      "object 12": "food",
+      "attributes": ["unidentified", "on stove"]
+    },
+    {
+      "object 13": "kitchen drawer",
+      "attributes": ["open", "containing utensils"]
+    },
+    {
+      "object 14": "kitchen cabinet",
+      "attributes": ["closed", "dark wood"]
+    },
+    {
+      "object 15": "kitchen sink",
+      "attributes": ["stainless steel", "empty"]
+    },
+    {
+      "object 16": "kitchen towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 17": "kitchen appliance",
+      "attributes": ["white", "modern design"]
+    },
+    {
+      "object 18": "kitchen drawer handle",
+      "attributes": ["metallic", "shiny"]
+    },
+    {
+      "object 19": "kitchen counter top",
+      "attributes": ["dark granite", "polished"]
+    },
+    {
+      "object 20": "kitchen utensil",
+      "attributes": ["wooden", "spatula-like"]
+    },
+    {
+      "object 21": "kitchen drawer knob",
+      "attributes": ["metallic", "round"]
+    },
+    {
+      "object 22": "kitchen drawer",
+      "attributes": ["open", "containing utensils"]
+    },
+    {
+      "object 23": "kitchen counter",
+      "attributes": ["white", "clean"]
+    },
+    {
+      "object 24": "kitchen sink",
+      "attributes": ["stainless steel", "clean"]
+    },
+    {
+      "object 25": "hand",
+      "attributes": ["visible", "holding spatula"]
+    },
+    {
+      "object 26": "spoon",
+      "attributes": ["metallic", "silver"]
+    },
+    {
+      "object 27": "oil",
+      "attributes": ["clear", "shiny"]
+    },
+    {
+      "object 28": "pot",
+      "attributes": ["silver", "steaming"]
+    },
+    {
+      "object 29": "food",
+      "attributes": ["unidentified", "on stove"]
+    },
+    {
+      "object 30": "kitchen drawer",
+      "attributes": ["open", "containing utensils"]
+    },
+    {
+      "object 31": "kitchen cabinet",
+      "attributes": ["closed", "dark wood"]
+    },
+    {
+      "object 32": "kitchen sink",
+      "attributes": ["stainless steel", "clean"]
+    },
+    {
+      "object 33": "hand",
+      "attributes": ["visible", "holding spatula"]
+    },
+    {
+      "object 34": "spoon",
+      "attributes": ["metallic", "silver"]
+    },
+    {
+      "object 35": "oil",
+      "attributes": ["clear", "shiny"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "is on",
+      5,
+      [[0, 127]]
+    ],
+    [
+      2,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      3,
+      "is cooked in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      4,
+      "is on",
+      1,
+      [[0, 127]]
+    ],
+    [
+      5,
+      "is on",
+      7,
+      [[0, 127]]
+    ],
+    [
+      6,
+      "is on",
+      1,
+      [[0, 127]]
+    ],
+    [
+      7,
+      "is in",
+      2,
+      [[0, 127]]
+    ],
+    [
+      8,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      9,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      10,
+      "is on",
+      5,
+      [[0, 127]]
+    ],
+    [
+      11,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      12,
+      "is on",
+      1,
+      [[0, 127]]
+    ],
+    [
+      13,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      14,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      15,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      16,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      17,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      18,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      19,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      20,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      21,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      22,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      23,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      24,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      25,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      26,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      27,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      28,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      29,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      30,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      31,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      32,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      33,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      34,
+      "is in",
+      1,
+      [[0, 127]]
+    ],
+    [
+      35,
+      "is in",
+      1,
+      [[0, 127]]
+    ]
+  ]
+}
