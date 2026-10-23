@@ -1,0 +1,24 @@
+{
+ "pvsg": {
+  "traser": {
+   "videos": 62,
+   "json_ok": 51,
+   "triplet": 10.3,
+   "relation": 13.9,
+   "object": 62.2,
+   "relation_any_time": 27.7,
+   "unjudged": 0,
+   "answer_tokens": 2769
+  },
+  "qwen7b": {
+   "videos": 62,
+   "json_ok": 42,
+   "triplet": 0.0,
+   "relation": 0.0,
+   "object": 7.6,
+   "relation_any_time": 0.4,
+   "unjudged": 899,
+   "answer_tokens": 2490
+  }
+ }
+}

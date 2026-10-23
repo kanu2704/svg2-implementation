@@ -1,0 +1,552 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "iron",
+      "attributes": ["blue", "white handle"]
+    },
+    {
+      "object 2": "table",
+      "attributes": ["patterned surface", "black legs"]
+    },
+    {
+      "object 3": "cloth",
+      "attributes": ["black and white pattern", "folded"]
+    },
+    {
+      "object 4": "ironing board",
+      "attributes": ["hexagonal pattern", "white surface"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["gray fabric", "several cushions"]
+    },
+    {
+      "object 6": "floor",
+      "attributes": ["brown carpet"]
+    },
+    {
+      "object 7": "room",
+      "attributes": ["living space", "furniture arrangement"]
+    },
+    {
+      "object 8": "ironing station",
+      "attributes": ["iron on table", "ironing board nearby"]
+    },
+    {
+      "object 9": "ironing area",
+      "attributes": ["clothing ironed", "ironing board in use"]
+    },
+    {
+      "object 10": "ironing hand",
+      "attributes": ["holding iron", "moving over cloth"]
+    },
+    {
+      "object 11": "ironing surface",
+      "attributes": ["hexagonal pattern", "flat surface"]
+    },
+    {
+      "object 12": "ironing cloth",
+      "attributes": ["black and white checkered", "folded"]
+    },
+    {
+      "object 13": "ironing bag",
+      "attributes": ["black and white pattern", "on floor"]
+    },
+    {
+      "object 14": "ironing bottle",
+      "attributes": ["clear plastic", "on floor"]
+    },
+    {
+      "object 15": "ironing person",
+      "attributes": ["wearing black shirt", "holding iron"]
+    },
+    {
+      "object 16": "ironing room",
+      "attributes": ["living room setting", "furniture visible"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 10",
+      "ironing",
+      "object 12",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 11",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 12",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 11",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 12",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "holding",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "holding",
+      "object 13",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 13",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 13",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 13",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 13",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "holding",
+      "object 14",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 14",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 14",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 14",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 14",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "holding",
+      "object 15",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 15",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 15",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 15",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 15",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "holding",
+      "object 16",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "placing",
+      "object 16",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "lifting",
+      "object 16",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "dropping",
+      "object 16",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "object 10",
+      "moving",
+      "object 16",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "0 - 4 sec"]
+      ]
+    ]
+  ]
+}
+```
