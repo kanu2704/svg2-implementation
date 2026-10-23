@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["standing", "wearing collar"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting", "wearing green shirt"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown leather", "in living room"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["brown leather", "next to couch"]
+    },
+    {
+      "object 5": "dog",
+      "attributes": ["standing on couch", "wearing collar"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "sits on",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      1,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      5,
+      "stands on",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      4,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

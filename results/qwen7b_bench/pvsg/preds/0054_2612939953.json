@@ -1,0 +1,164 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a hat", "riding a horse"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a blue jacket", "riding a horse"]
+    },
+    {
+      "object 3": "horse",
+      "attributes": ["white coat", "being ridden by man and woman"]
+    },
+    {
+      "object 4": "hat",
+      "attributes": ["on man's head", "protects from sun"]
+    },
+    {
+      "object 5": "jacket",
+      "attributes": ["blue, worn by woman", "protects from cold"]
+    },
+    {
+      "object 6": "man2",
+      "attributes": ["wearing a red shirt", "riding a horse"]
+    },
+    {
+      "object 7": "woman2",
+      "attributes": ["wearing a white jacket", "riding a horse"]
+    },
+    {
+      "object 8": "horse2",
+      "attributes": ["brown coat", "ridden by man2 and woman2"]
+    },
+    {
+      "object 9": "man3",
+      "attributes": ["wearing a black hat", "riding a horse"]
+    },
+    {
+      "object 10": "woman3",
+      "attributes": ["wearing a red jacket", "riding a horse"]
+    },
+    {
+      "object 11": "horse3",
+      "attributes": ["brown coat", "ridden by man3 and woman3"]
+    },
+    {
+      "object 12": "man4",
+      "attributes": ["wearing a blue jacket", "riding a horse"]
+    },
+    {
+      "object 13": "woman4",
+      "attributes": ["wearing a red jacket", "riding a horse"]
+    },
+    {
+      "object 14": "horse4",
+      "attributes": ["brown coat", "ridden by man4 and woman4"]
+    },
+    {
+      "object 15": "man5",
+      "attributes": ["wearing a white jacket", "riding a horse"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "rides",
+      3,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      2,
+      "rides",
+      3,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      6,
+      "rides",
+      8,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      7,
+      "rides",
+      8,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      9,
+      "rides",
+      11,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      10,
+      "rides",
+      11,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      12,
+      "rides",
+      14,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      13,
+      "rides",
+      14,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      7,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      9,
+      "interacts with",
+      10,
+      [
+        [0, 73]
+      ]
+    ],
+    [
+      12,
+      "interacts with",
+      13,
+      [
+        [0, 73]
+      ]
+    ]
+  ]
+}
+```

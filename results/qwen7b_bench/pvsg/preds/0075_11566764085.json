@@ -1,0 +1,228 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "scissors",
+      "attributes": ["red handle", "metallic blade"]
+    },
+    {
+      "object 2": "cardboard box",
+      "attributes": ["brown color", "flap partially open"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing green shirt and patterned pants", "holding scissors"]
+    },
+    {
+      "object 4": "adult",
+      "attributes": ["wearing pink polka dot shirt", "assisting child with scissors"]
+    },
+    {
+      "object 5": "toy",
+      "attributes": ["colorful, wrapped in plastic"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["dark fabric, visible in background"]
+    },
+    {
+      "object 7": "floor",
+      "attributes": ["wooden texture, patterned rug"]
+    },
+    {
+      "object 8": "package",
+      "attributes": ["plastic-wrapped, colorful"]
+    },
+    {
+      "object 9": "child's hand",
+      "attributes": ["holding toy"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "holds",
+      1,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      4,
+      "assists",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      8,
+      [
+        [28, 32]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      5,
+      [
+        [32, 36]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      5,
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      9,
+      [
+        [28, 32]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      9,
+      [
+        [32, 36]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      9,
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      8,
+      [
+        [32, 36]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      8,
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      8,
+      [
+        [40, 44]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      5,
+      [
+        [40, 44]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      5,
+      [
+        [44, 48]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      5,
+      [
+        [44, 48]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      9,
+      [
+        [44, 48]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      9,
+      [
+        [48, 52]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      9,
+      [
+        [48, 52]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      8,
+      [
+        [48, 52]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      8,
+      [
+        [52, 56]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      8,
+      [
+        [52, 56]
+      ]
+    ],
+    [
+      3,
+      "unwraps",
+      5,
+      [
+        [52, 56]
+      ]
+    ],
+    [
+      3,
+      "drops",
+      5,
+      [
+        [56, 60]
+      ]
+    ],
+    [
+      3,
+      "holds",
+      5,
+      [
+        [56, 60]
+      ]
+    ]
+  ]
+}
+```

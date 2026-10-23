@@ -1,0 +1,132 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cake",
+      "attributes": ["lit candle", "blue and white decorations"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["eating cake", "wearing plaid shirt"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["standing behind child", "wearing striped shirt"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["checkered tablecloth", "holding cake"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["green plastic chair", "child sitting on it"]
+    },
+    {
+      "object 6": "candle",
+      "attributes": ["lit", "on cake"]
+    },
+    {
+      "object 7": "hand",
+      "attributes": ["holding cake", "blowing out candle"]
+    },
+    {
+      "object 8": "mouth",
+      "attributes": ["eating cake", "happy expression"]
+    },
+    {
+      "object 9": "face",
+      "attributes": ["smiling", "looking at child"]
+    },
+    {
+      "object 10": "light",
+      "attributes": ["illuminating room", "coming from window"]
+    },
+    {
+      "object 11": "room",
+      "attributes": ["cozy atmosphere", "family gathering"]
+    },
+    {
+      "object 12": "floor",
+      "attributes": ["wooden floor", "visible in background"]
+    },
+    {
+      "object 13": "window",
+      "attributes": ["letting in light", "view of outside"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "eating",
+      "cake",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "woman",
+      "standing",
+      "behind",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "child",
+      "sitting",
+      "chair",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "candle",
+      "lit",
+      "on",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "hand",
+      "blowing",
+      "out",
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      "light",
+      "illuminating",
+      "room",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "room",
+      "cozy",
+      "atmosphere",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "floor",
+      "wooden",
+      "visible",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "window",
+      "letting",
+      "in",
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

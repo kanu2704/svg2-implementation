@@ -1,0 +1,250 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing green beanie", "standing on field"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing black jacket", "standing on field"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing green helmet", "standing on field"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing black and white uniform", "standing on field"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing green helmet", "standing on field"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing white helmet", "standing on field"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing black and white uniform", "standing on field"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing white helmet", "standing on field"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing gray hoodie", "standing on field"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["wearing black and white uniform", "standing on field"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["wearing white helmet", "standing on field"]
+    },
+    {
+      "object 12": "man",
+      "attributes": ["wearing black and white uniform", "standing on field"]
+    },
+    {
+      "object 13": "man",
+      "attributes": ["wearing white helmet", "standing on field"]
+    },
+    {
+      "object 14": "man",
+      "attributes": ["wearing black jacket", "standing on field"]
+    },
+    {
+      "object 15": "man",
+      "attributes": ["wearing blue shirt", "standing on field"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

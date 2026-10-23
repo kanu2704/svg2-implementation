@@ -1,0 +1,96 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["standing", "wearing suit"]
+    },
+    {
+      "object 2": "table",
+      "attributes": ["white tablecloth", "plates with food"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["brown wooden chair", "black cushion"]
+    },
+    {
+      "object 4": "plate",
+      "attributes": ["food on it", "on the table"]
+    },
+    {
+      "object 5": "napkin",
+      "attributes": ["blue napkin", "folded neatly"]
+    },
+    {
+      "object 6": "glove",
+      "attributes": ["white glove", "on hand"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["wearing wedding dress", "headpiece"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["standing behind woman", "wearing suit"]
+    },
+    {
+      "object 9": "suitcase",
+      "attributes": ["brown leather", "on floor"]
+    },
+    {
+      "object 10": "handbag",
+      "attributes": ["brown leather", "on floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "has",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "is on",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      6,
+      "worn by",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      8,
+      "stands behind",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      9,
+      "near",
+      10,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

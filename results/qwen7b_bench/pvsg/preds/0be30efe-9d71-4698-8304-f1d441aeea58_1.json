@@ -1,0 +1,136 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "brush",
+      "attributes": ["yellow handle", "painting tool"]
+    },
+    {
+      "object 2": "paint can",
+      "attributes": ["open lid", "paint container"]
+    },
+    {
+      "object 3": "wooden surface",
+      "attributes": ["being painted", "horizontal"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing red shirt", "holding brush"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["plastic", "blue"]
+    },
+    {
+      "object 6": "car",
+      "attributes": ["black", "parked"]
+    },
+    {
+      "object 7": "tree",
+      "attributes": ["green leaves", "shaded area"]
+    },
+    {
+      "object 8": "sidewalk",
+      "attributes": ["paved", "gray"]
+    },
+    {
+      "object 9": "garage door",
+      "attributes": ["closed", "metallic"]
+    },
+    {
+      "object 10": "plastic bag",
+      "attributes": ["on ground", "transparent"]
+    },
+    {
+      "object 11": "plant",
+      "attributes": ["green", "in pot"]
+    },
+    {
+      "object 12": "hand",
+      "attributes": ["holding brush", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "paints",
+      3,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "holds",
+      1,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "walks on",
+      8,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      6,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      7,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      9,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      10,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      11,
+      [
+        [0, 93]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      12,
+      [
+        [0, 93]
+      ]
+    ]
+  ]
+}
+```

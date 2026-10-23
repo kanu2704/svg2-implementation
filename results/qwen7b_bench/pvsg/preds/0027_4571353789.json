@@ -1,0 +1,192 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a white shirt and beige pants", "standing near the entrance"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a white dress", "dancing with man 1"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing a pink shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 4": "man 3",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 5": "man 4",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 6": "man 5",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 7": "man 6",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 8": "man 7",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 9": "man 8",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 10": "man 9",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 11": "man 10",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 12": "man 11",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 13": "man 12",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 14": "man 13",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    },
+    {
+      "object 15": "man 14",
+      "attributes": ["wearing a white shirt and khaki pants", "standing near the entrance"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "dances with",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "dances with",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      11,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      12,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      13,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      14,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      15,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

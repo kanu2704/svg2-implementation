@@ -1,0 +1,77 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing owl pajamas", "holding baby"]
+    },
+    {
+      "object 2": "baby1",
+      "attributes": ["wearing red shirt", "playing with toy"]
+    },
+    {
+      "object 3": "baby2",
+      "attributes": ["wearing red shirt", "playing with toy"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["red and white", "being played with by baby1"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["purple", "with pillows"]
+    },
+    {
+      "object 6": "camera",
+      "attributes": ["silver", "held by woman"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      4,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      4,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "holds",
+      6,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"]
+      ]
+    ]
+  ]
+}
+```

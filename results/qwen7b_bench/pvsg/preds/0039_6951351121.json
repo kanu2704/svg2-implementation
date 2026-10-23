@@ -1,0 +1,205 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player",
+      "attributes": ["wearing green jersey", "running"]
+    },
+    {
+      "object 2": "Player",
+      "attributes": ["wearing black jersey", "running"]
+    },
+    {
+      "object 3": "Player",
+      "attributes": ["wearing green jersey", "running"]
+    },
+    {
+      "object 4": "Player",
+      "attributes": ["wearing black jersey", "running"]
+    },
+    {
+      "object 5": "Player",
+      "attributes": ["wearing green jersey", "running"]
+    },
+    {
+      "object 6": "Player",
+      "attributes": ["wearing black jersey", "running"]
+    },
+    {
+      "object 7": "Player",
+      "attributes": ["wearing green jersey", "running"]
+    },
+    {
+      "object 8": "Player",
+      "attributes": ["wearing black jersey", "running"]
+    },
+    {
+      "object 9": "Player",
+      "attributes": ["wearing black jersey", "standing still"]
+    },
+    {
+      "object 10": "Player",
+      "attributes": ["wearing black jersey", "standing still"]
+    },
+    {
+      "object 11": "Player",
+      "attributes": ["wearing green jersey", "jumping"]
+    },
+    {
+      "object 12": "Player",
+      "attributes": ["wearing black jersey", "holding ball"]
+    },
+    {
+      "object 13": "Player",
+      "attributes": ["wearing black jersey", "standing still"]
+    },
+    {
+      "object 14": "Player",
+      "attributes": ["wearing black jersey", "kicking ball"]
+    },
+    {
+      "object 15": "Player",
+      "attributes": ["wearing black jersey", "standing still"]
+    },
+    {
+      "object 16": "Player",
+      "attributes": ["wearing green jersey", "running"]
+    },
+    {
+      "object 17": "Spectator",
+      "attributes": ["wearing purple jacket", "standing still"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "chases",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "chases",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "chases",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "chases",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "chases",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "holds",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      14,
+      "kicks",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "chases",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "observes",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

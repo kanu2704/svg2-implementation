@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing green pajamas", "playing with toy"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on couch", "holding phone"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown leather couch", "in living room"]
+    },
+    {
+      "object 4": "rug",
+      "attributes": ["patterned rug", "on floor"]
+    },
+    {
+      "object 5": "phone",
+      "attributes": ["black smartphone", "held by woman"]
+    },
+    {
+      "object 6": "boy",
+      "attributes": ["wearing green pajamas", "playing with toy"]
+    },
+    {
+      "object 7": "couch",
+      "attributes": ["brown leather couch", "in living room"]
+    },
+    {
+      "object 8": "woman",
+      "attributes": ["sitting on couch", "holding phone"]
+    },
+    {
+      "object 9": "rug",
+      "attributes": ["patterned rug", "on floor"]
+    },
+    {
+      "object 10": "phone",
+      "attributes": ["black smartphone", "held by woman"]
+    },
+    {
+      "object 11": "child",
+      "attributes": ["wearing green pajamas", "playing with toy"]
+    },
+    {
+      "object 12": "woman",
+      "attributes": ["sitting on couch", "holding phone"]
+    },
+    {
+      "object 13": "couch",
+      "attributes": ["brown leather couch", "in living room"]
+    },
+    {
+      "object 14": "rug",
+      "attributes": ["patterned rug", "on floor"]
+    },
+    {
+      "object 15": "phone",
+      "attributes": ["black smartphone", "held by woman"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

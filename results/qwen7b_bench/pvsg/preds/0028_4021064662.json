@@ -1,0 +1,1336 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["on the ground"]
+    },
+    {
+      "object 2": "man 1",
+      "attributes": ["wearing red shirt", "wearing gray shorts", "wearing white shoes"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing red shirt", "wearing gray shorts", "wearing white shoes"]
+    },
+    {
+      "object 4": "child 1",
+      "attributes": ["wearing white shirt", "wearing red shorts", "wearing red cap"]
+    },
+    {
+      "object 5": "child 2",
+      "attributes": ["wearing white shirt", "wearing red shorts", "wearing red cap"]
+    },
+    {
+      "object 6": "man 3",
+      "attributes": ["wearing purple shirt", "wearing gray shorts", "wearing white shoes"]
+    },
+    {
+      "object 7": "shoes",
+      "attributes": ["on the ground"]
+    },
+    {
+      "object 8": "man 4",
+      "attributes": ["wearing white shirt", "wearing red shorts", "wearing red cap"]
+    },
+    {
+      "object 9": "man 5",
+      "attributes": ["wearing white shirt", "wearing red shorts", "wearing red cap"]
+    },
+    {
+      "object 10": "man 6",
+      "attributes": ["wearing white shirt", "wearing red shorts", "wearing red cap"]
+    }
+  ],
+  "relationships": [
+    [
+      "man 1",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 6",
+      "plays with",
+      "child 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 2",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 2",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 3",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 5",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 4",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 5",
+      "stands next to",
+      "man 6",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 1",
+      "plays with",
+      "child 1",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "man 

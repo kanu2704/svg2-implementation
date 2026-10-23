@@ -1,0 +1,82 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player",
+      "attributes": ["wearing orange jersey", "holding football"]
+    },
+    {
+      "object 2": "Player",
+      "attributes": ["wearing black helmet", "wearing black jersey"]
+    },
+    {
+      "object 3": "Player",
+      "attributes": ["wearing orange jersey with number 7", "wearing black pants"]
+    },
+    {
+      "object 4": "Football",
+      "attributes": ["brown leather, white laces"]
+    },
+    {
+      "object 5": "Player",
+      "attributes": ["wearing white shirt with 'FOOTBALL IS EVERYTHING' text", "wearing green shorts"]
+    },
+    {
+      "object 6": "Player",
+      "attributes": ["wearing black and red jersey", "wearing black pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "passes the ball to",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "chases after",
+      1,
+      [
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "receives the ball from",
+      1,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "is held by",
+      6,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "runs towards",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      5,
+      [
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

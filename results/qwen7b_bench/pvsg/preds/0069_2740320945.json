@@ -1,0 +1,104 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wears red dress", "wears sunglasses"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wears black suit", "wears hat"]
+    },
+    {
+      "object 3": "woman 2",
+      "attributes": ["wears black dress", "wears hat"]
+    },
+    {
+      "object 4": "woman 3",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 5": "woman 4",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 6": "woman 5",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 7": "woman 6",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 8": "woman 7",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 9": "woman 8",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 10": "woman 9",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 11": "woman 10",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 12": "woman 11",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 13": "woman 12",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 14": "woman 13",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 15": "woman 14",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 16": "woman 15",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 17": "woman 16",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 18": "woman 17",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 19": "woman 18",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    },
+    {
+      "object 20": "woman 19",
+      "attributes": ["wears black dress with white stripes", "wears hat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands next to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

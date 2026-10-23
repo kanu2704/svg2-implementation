@@ -1,0 +1,180 @@
+```json
+{
+    "objects": [
+        {
+            "object 1": "child",
+            "attributes": ["playing with ball", "wearing white shirt"]
+        },
+        {
+            "object 2": "woman",
+            "attributes": ["standing near child", "wearing pink shirt"]
+        },
+        {
+            "object 3": "ball",
+            "attributes": ["blue", "being kicked"]
+        },
+        {
+            "object 4": "grass",
+            "attributes": ["green", "on ground"]
+        },
+        {
+            "object 5": "sidewalk",
+            "attributes": ["concrete", "near grass"]
+        },
+        {
+            "object 6": "house",
+            "attributes": ["beige", "with windows"]
+        },
+        {
+            "object 7": "fence",
+            "attributes": ["wooden", "surrounding yard"]
+        },
+        {
+            "object 8": "chair",
+            "attributes": ["outdoor", "on patio"]
+        },
+        {
+            "object 9": "trash can",
+            "attributes": ["black", "behind house"]
+        },
+        {
+            "object 10": "potted plant",
+            "attributes": ["red flowers", "on fence"]
+        },
+        {
+            "object 11": "umbrella",
+            "attributes": ["red and white", "on patio"]
+        },
+        {
+            "object 12": "yard",
+            "attributes": ["enclosed", "with grass and plants"]
+        },
+        {
+            "object 13": "soccer ball",
+            "attributes": ["white with red and blue patterns", "on ground"]
+        },
+        {
+            "object 14": "umbrella",
+            "attributes": ["red and white", "on patio"]
+        },
+        {
+            "object 15": "chair",
+            "attributes": ["outdoor", "on patio"]
+        }
+    ],
+    "relationships": [
+        [
+            1,
+            "playing with",
+            3,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            2,
+            "standing near",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            3,
+            "being kicked",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            4,
+            "on",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            5,
+            "near",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            6,
+            "surrounding",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            7,
+            "on",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            8,
+            "behind",
+            1,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            9,
+            "on",
+            10,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            10,
+            "on",
+            11,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            11,
+            "on",
+            12,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            12,
+            "on",
+            13,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            13,
+            "on",
+            14,
+            [
+                [0, 112]
+            ]
+        ],
+        [
+            14,
+            "on",
+            15,
+            [
+                [0, 112]
+            ]
+        ]
+    ]
+}
+```
