@@ -1,0 +1,223 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["gray", "front view"]
+    },
+    {
+      "object 2": "road",
+      "attributes": ["gray", "curved"]
+    },
+    {
+      "object 3": "grass",
+      "attributes": ["green", "background"]
+    },
+    {
+      "object 4": "curb",
+      "attributes": ["gray", "curved"]
+    },
+    {
+      "object 5": "tree",
+      "attributes": ["green", "background"]
+    },
+    {
+      "object 6": "license plate",
+      "attributes": ["black", "white text", "numbered"]
+    },
+    {
+      "object 7": "headlight",
+      "attributes": ["white", "on car"]
+    },
+    {
+      "object 8": "grille",
+      "attributes": ["silver", "with logo"]
+    },
+    {
+      "object 9": "side mirror",
+      "attributes": ["black", "on car"]
+    },
+    {
+      "object 10": "fender",
+      "attributes": ["gray", "part of car"]
+    },
+    {
+      "object 11": "windshield",
+      "attributes": ["clear", "on car"]
+    },
+    {
+      "object 12": "front bumper",
+      "attributes": ["gray", "part of car"]
+    },
+    {
+      "object 13": "logo",
+      "attributes": ["blue", "on grille"]
+    },
+    {
+      "object 14": "headlight",
+      "attributes": ["white", "on car"]
+    },
+    {
+      "object 15": "grille",
+      "attributes": ["silver", "with logo"]
+    },
+    {
+      "object 16": "side mirror",
+      "attributes": ["black", "on car"]
+    },
+    {
+      "object 17": "front bumper",
+      "attributes": ["gray", "part of car"]
+    },
+    {
+      "object 18": "license plate",
+      "attributes": ["black", "white text", "numbered"]
+    },
+    {
+      "object 19": "headlight",
+      "attributes": ["white", "on car"]
+    },
+    {
+      "object 20": "grille",
+      "attributes": ["silver", "with logo"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drives on",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reflects light from",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "has part",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,137 @@
+```json
+{
+  "objects": [
+    {
+      "1": "woman",
+      "attributes": ["wearing black dress", "long blonde hair", "black high heels"]
+    },
+    {
+      "2": "bench",
+      "attributes": ["white bench with curved backrest", "placed on pavement"]
+    },
+    {
+      "3": "fountain",
+      "attributes": ["water feature", "surrounded by concrete base"]
+    },
+    {
+      "4": "street",
+      "attributes": ["paved road", "adjacent to sidewalk"]
+    },
+    {
+      "5": "sidewalk",
+      "attributes": ["adjacent to street", "paved surface for pedestrians"]
+    },
+    {
+      "6": "tree",
+      "attributes": ["bare branches", "standing near fountain"]
+    },
+    {
+      "7": "building",
+      "attributes": ["brick structure", "visible in background"]
+    },
+    {
+      "8": "car",
+      "attributes": ["white car parked", "on street"]
+    },
+    {
+      "9": "parking lot",
+      "attributes": ["area for parking cars", "adjacent to building"]
+    },
+    {
+      "10": "streetlight",
+      "attributes": ["illuminating area", "tall pole with light fixture"]
+    },
+    {
+      "11": "planters",
+      "attributes": ["potted plants", "placed along sidewalk"]
+    },
+    {
+      "12": "street corner",
+      "attributes": ["junction of two streets", "marked with lines"]
+    },
+    {
+      "13": "crosswalk",
+      "attributes": ["marked area for pedestrians", "at street corner"]
+    },
+    {
+      "14": "road sign",
+      "attributes": ["traffic sign", "indicating direction or speed limit"]
+    },
+    {
+      "15": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "16": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    },
+    {
+      "17": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "18": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    },
+    {
+      "19": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "20": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    },
+    {
+      "21": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "22": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    },
+    {
+      "23": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "24": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    },
+    {
+      "25": "sidewalk tree",
+      "attributes": ["tree with bare branches", "along sidewalk"]
+    },
+    {
+      "26": "sidewalk planters",
+      "attributes": ["potted plants", "along sidewalk"]
+    }
+  ],
+  "relationships": [
+    [1, "walks past", 2, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "approaches", 3, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "passes by", 4, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "stands near", 5, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks towards", 6, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "faces", 7, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "looks at", 8, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks away from", 9, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "passes by", 10, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 11, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks towards", 12, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "faces", 13, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks away from", 14, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 15, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 16, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 17, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 18, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 19, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 20, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 21, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 22, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 23, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 24, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 25, [[0, 4], [4, 8], [8, 12], [12, 16]]],
+    [1, "walks past", 26, [[0, 4], [4, 8], [8, 12], [12, 16]]]
+  ]
+}
+```

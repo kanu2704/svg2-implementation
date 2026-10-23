@@ -1,0 +1,194 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["wearing bracelet"]
+    },
+    {
+      "object 2": "microwave",
+      "attributes": []
+    },
+    {
+      "object 3": "plate",
+      "attributes": ["inside microwave"]
+    },
+    {
+      "object 4": "pizza",
+      "attributes": ["on plate"]
+    },
+    {
+      "object 5": "bracelet",
+      "attributes": ["on hand"]
+    },
+    {
+      "object 6": "microwave door",
+      "attributes": ["closed"]
+    },
+    {
+      "object 7": "microwave interior",
+      "attributes": ["visible through door"]
+    },
+    {
+      "object 8": "microwave control panel",
+      "attributes": ["visible on right side"]
+    },
+    {
+      "object 9": "microwave handle",
+      "attributes": ["on top of microwave"]
+    },
+    {
+      "object 10": "microwave light",
+      "attributes": ["illuminating interior"]
+    },
+    {
+      "object 11": "microwave door handle",
+      "attributes": ["on left side of door"]
+    },
+    {
+      "object 12": "microwave door hinge",
+      "attributes": ["on left side of door"]
+    },
+    {
+      "object 13": "microwave door frame",
+      "attributes": ["on left side of door"]
+    },
+    {
+      "object 14": "microwave door window",
+      "attributes": ["on left side of door"]
+    },
+    {
+      "object 15": "microwave door lock",
+      "attributes": ["on left side of door"]
+    },
+    {
+      "object 16": "microwave door latch",
+      "attributes": ["on left side of door"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "inside",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "wearing",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      6,
+      "closed",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "opening",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "closing",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      10,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      10,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      11,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      13,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      14,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      15,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "reaching into",
+      16,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

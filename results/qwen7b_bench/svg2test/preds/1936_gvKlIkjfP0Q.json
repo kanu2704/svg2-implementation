@@ -1,0 +1,480 @@
+```json
+{
+  "objects": [
+    {
+      "1": "hand",
+      "attributes": ["holding car part"]
+    },
+    {
+      "2": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "3": "tripod",
+      "attributes": ["black", "camera tripod"]
+    },
+    {
+      "4": "projector",
+      "attributes": ["white", "projector on ceiling"]
+    },
+    {
+      "5": "door",
+      "attributes": ["white", "garage door"]
+    },
+    {
+      "6": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "7": "wall",
+      "attributes": ["white", "garage wall"]
+    },
+    {
+      "8": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "9": "wall",
+      "attributes": ["white", "garage wall"]
+    },
+    {
+      "10": "projector",
+      "attributes": ["white", "projector on ceiling"]
+    },
+    {
+      "11": "ceiling",
+      "attributes": ["white", "garage ceiling"]
+    },
+    {
+      "12": "projector",
+      "attributes": ["white", "projector on ceiling"]
+    },
+    {
+      "13": "wall",
+      "attributes": ["white", "garage wall"]
+    },
+    {
+      "14": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "15": "hand",
+      "attributes": ["holding car part"]
+    },
+    {
+      "16": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "17": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "18": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "19": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "20": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "21": "wall",
+      "attributes": ["white", "garage wall"]
+    },
+    {
+      "22": "hand",
+      "attributes": ["holding car part"]
+    },
+    {
+      "23": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "24": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "25": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "26": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "27": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "28": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "29": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "30": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "31": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "32": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "33": "projector",
+      "attributes": ["white", "projector on ceiling"]
+    },
+    {
+      "34": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "35": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "36": "hand",
+      "attributes": ["holding car part"]
+    },
+    {
+      "37": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "38": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "39": "car",
+      "attributes": ["silver", "sports car"]
+    },
+    {
+      "40": "car",
+      "attributes": ["silver", "sports car"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "in front of",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      9,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      11,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      12,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      13,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      14,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      15,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      15,
+      "holding",
+      16,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      17,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      18,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      19,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      21,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      22,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      24,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      25,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      26,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      27,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      28,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      29,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      30,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      31,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      32,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      33,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      34,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      35,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      36,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      36,
+      "holding",
+      37,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      37,
+      "next to",
+      38,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      37,
+      "next to",
+      39,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      37,
+      "next to",
+      40,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

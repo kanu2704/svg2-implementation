@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "1": "Train",
+      "attributes": ["moving", "passing through"]
+    },
+    {
+      "2": "Traffic Light",
+      "attributes": ["red light", "stationary"]
+    },
+    {
+      "3": "Snow",
+      "attributes": ["white", "covering ground"]
+    },
+    {
+      "4": "Signboard",
+      "attributes": ["yellow", "with text"]
+    },
+    {
+      "5": "Mountain",
+      "attributes": ["snow-covered", "background"]
+    },
+    {
+      "6": "Bridge",
+      "attributes": ["over train tracks", "partially visible"]
+    },
+    {
+      "7": "Train",
+      "attributes": ["moving", "passing through"]
+    },
+    {
+      "8": "Traffic Light",
+      "attributes": ["red light", "stationary"]
+    },
+    {
+      "9": "Snow",
+      "attributes": ["white", "covering ground"]
+    },
+    {
+      "10": "Signboard",
+      "attributes": ["yellow", "with text"]
+    },
+    {
+      "11": "Mountain",
+      "attributes": ["snow-covered", "background"]
+    },
+    {
+      "12": "Train",
+      "attributes": ["moving", "passing through"]
+    },
+    {
+      "13": "Traffic Light",
+      "attributes": ["red light", "stationary"]
+    },
+    {
+      "14": "Snow",
+      "attributes": ["white", "covering ground"]
+    },
+    {
+      "15": "Signboard",
+      "attributes": ["yellow", "with text"]
+    },
+    {
+      "16": "Mountain",
+      "attributes": ["snow-covered", "background"]
+    },
+    {
+      "17": "Train",
+      "attributes": ["moving", "passing through"]
+    },
+    {
+      "18": "Traffic Light",
+      "attributes": ["red light", "stationary"]
+    },
+    {
+      "19": "Snow",
+      "attributes": ["white", "covering ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "passes through",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "passes through",
+      6,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "passes through",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "passes through",
+      6,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```
