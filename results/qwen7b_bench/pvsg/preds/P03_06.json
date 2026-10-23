@@ -1,0 +1,284 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "spatula",
+      "attributes": ["black handle", "metallic blade"]
+    },
+    {
+      "object 2": "pot",
+      "attributes": ["on stove", "contains food"]
+    },
+    {
+      "object 3": "stove",
+      "attributes": ["burner with pot", "kitchen appliance"]
+    },
+    {
+      "object 4": "kitchen counter",
+      "attributes": ["holding cutting board", "near stove"]
+    },
+    {
+      "object 5": "cutting board",
+      "attributes": ["with knife", "on counter"]
+    },
+    {
+      "object 6": "knife",
+      "attributes": ["on cutting board", "black handle"]
+    },
+    {
+      "object 7": "plate",
+      "attributes": ["stacked on counter", "white ceramic"]
+    },
+    {
+      "object 8": "sink",
+      "attributes": ["in kitchen", "near counter"]
+    },
+    {
+      "object 9": "drawer",
+      "attributes": ["under counter", "holds utensils"]
+    },
+    {
+      "object 10": "utensils",
+      "attributes": ["in drawer", "various types"]
+    },
+    {
+      "object 11": "spoon",
+      "attributes": ["in hand", "metallic"]
+    },
+    {
+      "object 12": "food",
+      "attributes": ["on plate", "cooked"]
+    },
+    {
+      "object 13": "hand",
+      "attributes": ["holding spoon", "performing action"]
+    },
+    {
+      "object 14": "kitchen sink",
+      "attributes": ["near counter", "cleaning area"]
+    },
+    {
+      "object 15": "water",
+      "attributes": ["in sink", "clear"]
+    },
+    {
+      "object 16": "bowl",
+      "attributes": ["on counter", "empty"]
+    },
+    {
+      "object 17": "spatula",
+      "attributes": ["in hand", "black handle"]
+    },
+    {
+      "object 18": "pot lid",
+      "attributes": ["on counter", "metallic"]
+    },
+    {
+      "object 19": "spatula",
+      "attributes": ["in hand", "black handle"]
+    },
+    {
+      "object 20": "pot",
+      "attributes": ["on stove", "contains food"]
+    },
+    {
+      "object 21": "stove",
+      "attributes": ["burner with pot", "kitchen appliance"]
+    },
+    {
+      "object 22": "kitchen counter",
+      "attributes": ["holding cutting board", "near stove"]
+    },
+    {
+      "object 23": "cutting board",
+      "attributes": ["with knife", "on counter"]
+    },
+    {
+      "object 24": "knife",
+      "attributes": ["on cutting board", "black handle"]
+    },
+    {
+      "object 25": "plate",
+      "attributes": ["stacked on counter", "white ceramic"]
+    },
+    {
+      "object 26": "sink",
+      "attributes": ["in kitchen", "near counter"]
+    },
+    {
+      "object 27": "drawer",
+      "attributes": ["under counter", "holds utensils"]
+    },
+    {
+      "object 28": "utensils",
+      "attributes": ["in drawer", "various types"]
+    },
+    {
+      "object 29": "spoon",
+      "attributes": ["in hand", "metallic"]
+    },
+    {
+      "object 30": "food",
+      "attributes": ["on plate", "cooked"]
+    },
+    {
+      "object 31": "hand",
+      "attributes": ["holding spoon", "performing action"]
+    },
+    {
+      "object 32": "kitchen sink",
+      "attributes": ["near counter", "cleaning area"]
+    },
+    {
+      "object 33": "bowl",
+      "attributes": ["on counter", "empty"]
+    },
+    {
+      "object 34": "spatula",
+      "attributes": ["in hand", "black handle"]
+    },
+    {
+      "object 35": "pot lid",
+      "attributes": ["on counter", "metallic"]
+    },
+    {
+      "object 36": "spatula",
+      "attributes": ["in hand", "black handle"]
+    },
+    {
+      "object 37": "pot",
+      "attributes": ["on stove", "contains food"]
+    },
+    {
+      "object 38": "stove",
+      "attributes": ["burner with pot", "kitchen appliance"]
+    },
+    {
+      "object 39": "kitchen counter",
+      "attributes": ["holding cutting board", "near stove"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on top of",
+      20,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      21,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      22,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      23,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      24,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      25,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      26,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      27,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      28,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      29,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      30,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      31,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      32,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      33,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      34,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      35,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      36,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      37,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      38,
+      [[0, 4]]
+    ],
+    [
+      1,
+      "in",
+      39,
+      [[0, 4]]
+    ]
+  ]
+}
+```

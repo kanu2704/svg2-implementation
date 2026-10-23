@@ -1,0 +1,128 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "stove",
+      "attributes": ["burner", "pan"]
+    },
+    {
+      "object 2": "pan",
+      "attributes": ["on stove", "filled with food"]
+    },
+    {
+      "object 3": "spatula",
+      "attributes": ["wooden handle", "used for stirring"]
+    },
+    {
+      "object 4": "kitchen counter",
+      "attributes": ["near stove", "clean surface"]
+    },
+    {
+      "object 5": "kitchen sink",
+      "attributes": ["near counter", "empty"]
+    },
+    {
+      "object 6": "kitchen cabinet",
+      "attributes": ["above counter", "closed"]
+    },
+    {
+      "object 7": "kitchen towel",
+      "attributes": ["hanging on cabinet", "white"]
+    },
+    {
+      "object 8": "kitchen drawer",
+      "attributes": ["under counter", "open"]
+    },
+    {
+      "object 9": "kitchen utensils",
+      "attributes": ["in drawer", "various types"]
+    },
+    {
+      "object 10": "kitchen appliances",
+      "attributes": ["near counter", "white and black"]
+    },
+    {
+      "object 11": "kitchen floor",
+      "attributes": ["carpeted", "gray"]
+    },
+    {
+      "object 12": "kitchen wall",
+      "attributes": ["white", "tile backsplash"]
+    },
+    {
+      "object 13": "kitchen window",
+      "attributes": ["over counter", "closed"]
+    },
+    {
+      "object 14": "kitchen door",
+      "attributes": ["behind counter", "white"]
+    },
+    {
+      "object 15": "kitchen light",
+      "attributes": ["above counter", "on"]
+    },
+    {
+      "object 16": "kitchen faucet",
+      "attributes": ["over sink", "silver"]
+    },
+    {
+      "object 17": "kitchen soap dispenser",
+      "attributes": ["near faucet", "blue"]
+    },
+    {
+      "object 18": "kitchen sponge",
+      "attributes": ["on counter", "yellow"]
+    },
+    {
+      "object 19": "kitchen dish rack",
+      "attributes": ["near sink", "empty"]
+    },
+    {
+      "object 20": "kitchen trash can",
+      "attributes": ["under counter", "black"]
+    },
+    {
+      "object 21": "kitchen trash bag",
+      "attributes": ["in can", "full"]
+    },
+    {
+      "object 22": "kitchen bottle",
+      "attributes": ["on counter", "plastic"]
+    },
+    {
+      "object 23": "kitchen bottle",
+      "attributes": ["on counter", "glass"]
+    },
+    {
+      "object 24": "kitchen bottle",
+      "attributes": ["on counter", "metal"]
+    },
+    {
+      "object 25": "kitchen bottle",
+      "attributes": ["on counter", "plastic"]
+    },
+    {
+      "object 26": "kitchen bottle",
+      "attributes": ["on counter", "plastic"]
+    }
+  ],
+  "relationships": [
+    [
+      "stove",
+      "has",
+      "pan",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

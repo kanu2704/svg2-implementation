@@ -1,0 +1,156 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "brush",
+      "attributes": ["yellow handle", "black bristles"]
+    },
+    {
+      "object 2": "paint can",
+      "attributes": ["silver lid", "dark paint"]
+    },
+    {
+      "object 3": "wooden surface",
+      "attributes": ["brown color", "textured"]
+    },
+    {
+      "object 4": "gloved hand",
+      "attributes": ["white glove with black dots", "holding brush"]
+    },
+    {
+      "object 5": "tree",
+      "attributes": ["green leaves", "trunk visible"]
+    },
+    {
+      "object 6": "fence",
+      "attributes": ["metal construction", "gray color"]
+    },
+    {
+      "object 7": "chair",
+      "attributes": ["blue plastic", "outdoor setting"]
+    },
+    {
+      "object 8": "ground",
+      "attributes": ["paved with tiles", "shadows from trees"]
+    },
+    {
+      "object 9": "canopy",
+      "attributes": ["white fabric", "provides shade"]
+    },
+    {
+      "object 10": "umbrella",
+      "attributes": ["blue and white patterned", "protects from sun"]
+    },
+    {
+      "object 11": "person",
+      "attributes": ["wearing gloves", "engaged in painting"]
+    },
+    {
+      "object 12": "paint bucket",
+      "attributes": ["black container", "holds paint"]
+    },
+    {
+      "object 13": "paintbrush",
+      "attributes": ["orange handle", "used for painting"]
+    }
+  ],
+  "relationships": [
+    [
+      "brush",
+      "in contact with",
+      "wooden surface",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "gloved hand",
+      "holding",
+      "brush",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "paint can",
+      "near",
+      "wooden surface",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "person",
+      "performing action",
+      "brush",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "person",
+      "wearing",
+      "gloves",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "fence",
+      "behind",
+      "wooden surface",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "chair",
+      "near",
+      "fence",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "ground",
+      "under",
+      "wooden surface",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "canopy",
+      "above",
+      "person",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "umbrella",
+      "near",
+      "canopy",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "paint bucket",
+      "near",
+      "paint can",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "paintbrush",
+      "in use",
+      "paint can",
+      [
+        [0, 128]
+      ]
+    ]
+  ]
+}
+```
