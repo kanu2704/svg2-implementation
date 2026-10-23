@@ -1,0 +1,132 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "waterfall",
+      "attributes": ["flowing", "powerful"]
+    },
+    {
+      "object 2": "trees",
+      "attributes": ["dense", "green"]
+    },
+    {
+      "object 3": "sky",
+      "attributes": ["blue", "cloudy"]
+    },
+    {
+      "object 4": "plants",
+      "attributes": ["lush", "green"]
+    },
+    {
+      "object 5": "water",
+      "attributes": ["calm", "reflective"]
+    },
+    {
+      "object 6": "land",
+      "attributes": ["flat", "distant"]
+    },
+    {
+      "object 7": "clouds",
+      "attributes": ["white", "scattered"]
+    },
+    {
+      "object 8": "vegetation",
+      "attributes": ["tall", "dense"]
+    },
+    {
+      "object 9": "cliffs",
+      "attributes": ["steep", "rocky"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      1,
+      "above",
+      5,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      1,
+      "below",
+      6,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      3,
+      "above",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      5,
+      "reflecting",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      6,
+      "beyond",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      7,
+      "in the sky",
+      3,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      8,
+      "on the left side",
+      1,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      9,
+      "on the right side",
+      1,
+      [
+        [0, 19]
+      ]
+    ]
+  ]
+}
+```

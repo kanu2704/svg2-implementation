@@ -1,0 +1,54 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["orange", "moving"]
+    },
+    {
+      "object 2": "net",
+      "attributes": ["static", "dividing court"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing blue shirt and red shorts", "holding tennis racket", "playing tennis"]
+    },
+    {
+      "object 4": "racket",
+      "attributes": ["black and white", "held by child", "used for hitting ball"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "hits",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "hits",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

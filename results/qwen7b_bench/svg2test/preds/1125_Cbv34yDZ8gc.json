@@ -1,0 +1,519 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing blue cap", "holding phone"]
+    },
+    {
+      "object 2": "phone",
+      "attributes": ["black", "in man's hand"]
+    },
+    {
+      "object 3": "plant",
+      "attributes": ["green leaves", "on left side of frame"]
+    },
+    {
+      "object 4": "hammer",
+      "attributes": ["metallic", "on top of white structure"]
+    },
+    {
+      "object 5": "white structure",
+      "attributes": ["concrete", "with hole in center"]
+    },
+    {
+      "object 6": "garbage bag",
+      "attributes": ["plastic", "being held by man"]
+    },
+    {
+      "object 7": "man 2",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 8": "man 3",
+      "attributes": ["wearing beige shirt", "standing near white structure"]
+    },
+    {
+      "object 9": "man 4",
+      "attributes": ["wearing black shirt", "standing near white structure"]
+    },
+    {
+      "object 10": "man 5",
+      "attributes": ["wearing black shirt with white stripes", "standing near white structure"]
+    },
+    {
+      "object 11": "man 6",
+      "attributes": ["wearing white shirt and brown apron", "standing near white structure"]
+    },
+    {
+      "object 12": "trowel",
+      "attributes": ["metallic", "on top of white structure"]
+    },
+    {
+      "object 13": "hammer 2",
+      "attributes": ["metallic", "on top of white structure"]
+    },
+    {
+      "object 14": "man 7",
+      "attributes": ["wearing green shirt", "standing near white structure"]
+    },
+    {
+      "object 15": "man 8",
+      "attributes": ["wearing yellow shirt", "standing near white structure"]
+    },
+    {
+      "object 16": "man 9",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 17": "man 10",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 18": "man 11",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 19": "man 12",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 20": "man 13",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 21": "man 14",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 22": "man 15",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 23": "man 16",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 24": "man 17",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 25": "man 18",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 26": "man 19",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 27": "man 20",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 28": "man 21",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 29": "man 22",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 30": "man 23",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 31": "man 24",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 32": "man 25",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 33": "man 26",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 34": "man 27",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 35": "man 28",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 36": "man 29",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 37": "man 30",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 38": "man 31",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 39": "man 32",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    },
+    {
+      "object 40": "man 33",
+      "attributes": ["wearing white shirt", "standing near white structure"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      29,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      31,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      37,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+} 
+```

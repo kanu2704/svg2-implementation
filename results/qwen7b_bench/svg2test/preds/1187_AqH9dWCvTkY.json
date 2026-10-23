@@ -1,0 +1,782 @@
+```json
+{
+  "objects": [
+    {
+      "1": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "2": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "3": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "4": "runner",
+      "attributes": ["wearing purple and white uniform", "running on track"]
+    },
+    {
+      "5": "runner",
+      "attributes": ["wearing purple and white uniform", "running on track"]
+    },
+    {
+      "6": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "7": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "8": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "9": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "10": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "11": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "12": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "13": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "14": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "15": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "16": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "17": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "18": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "19": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "20": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "21": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "22": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "23": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "24": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "25": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "26": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "27": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "28": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "29": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "30": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "31": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "32": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "33": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "34": "runner",
+      "attributes": ["wearing blue and yellow uniform", "running on track"]
+    },
+    {
+      "35": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    },
+    {
+      "36": "spectator",
+      "attributes": ["wearing sunglasses", "standing near track"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "runs past",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "runs past",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "runs past",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "runs past",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "runs past",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "runs past",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      29,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      31,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "runs past",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

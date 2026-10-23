@@ -1,0 +1,528 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing yellow shirt", "wearing black pants", "wearing glasses"]
+    },
+    {
+      "object 2": "man 2",
+      "attributes": ["wearing plaid shirt", "wearing khaki pants", "wearing glasses"]
+    },
+    {
+      "object 3": "man 3",
+      "attributes": ["wearing white shirt", "wearing brown pants", "wearing tie", "wearing glasses"]
+    },
+    {
+      "object 4": "man 4",
+      "attributes": ["wearing black jacket", "wearing jeans", "wearing glasses"]
+    },
+    {
+      "object 5": "man 5",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 6": "man 6",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 7": "man 7",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 8": "man 8",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 9": "man 9",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 10": "man 10",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 11": "man 11",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 12": "man 12",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 13": "man 13",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 14": "man 14",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 15": "man 15",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 16": "man 16",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 17": "man 17",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 18": "man 18",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 19": "man 19",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 20": "man 20",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 21": "man 21",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 22": "man 22",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 23": "man 23",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 24": "man 24",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 25": "man 25",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 26": "man 26",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 27": "man 27",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 28": "man 28",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 29": "man 29",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 30": "man 30",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 31": "man 31",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 32": "man 32",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 33": "man 33",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 34": "man 34",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 35": "man 35",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 36": "man 36",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 37": "man 37",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 38": "man 38",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 39": "man 39",
+      "attributes": ["wearing suit", "wearing glasses"]
+    },
+    {
+      "object 40": "man 40",
+      "attributes": ["wearing suit", "wearing glasses"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing on",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      39,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      40,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

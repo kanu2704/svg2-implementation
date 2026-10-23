@@ -1,0 +1,140 @@
+```json
+{
+  "objects": [
+    {
+      "1": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "2": "man",
+      "attributes": ["smiling", "wearing sunglasses"]
+    },
+    {
+      "3": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "4": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "5": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "6": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "7": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "8": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "9": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "10": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "11": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "12": "man",
+      "attributes": ["wearing sunglasses"]
+    },
+    {
+      "13": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "14": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "15": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "16": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "17": "airplane",
+      "attributes": ["flying"]
+    },
+    {
+      "18": "airplane",
+      "attributes": ["flying"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

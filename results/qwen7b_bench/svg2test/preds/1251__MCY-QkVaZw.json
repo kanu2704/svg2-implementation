@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing green bikini", "bending over"]
+    },
+    {
+      "object 2": "green fabric",
+      "attributes": ["floating in water", "being held by woman"]
+    },
+    {
+      "object 3": "boat",
+      "attributes": ["in the distance", "stationary"]
+    },
+    {
+      "object 4": "water",
+      "attributes": ["clear and shallow", "reflecting light"]
+    },
+    {
+      "object 5": "sand",
+      "attributes": ["visible at the bottom of the frame", "brown"]
+    },
+    {
+      "object 6": "boat",
+      "attributes": ["in the distance", "stationary"]
+    },
+    {
+      "object 7": "boat",
+      "attributes": ["in the distance", "stationary"]
+    },
+    {
+      "object 8": "woman",
+      "attributes": ["wearing green bikini", "standing upright"]
+    },
+    {
+      "object 9": "woman",
+      "attributes": ["wearing green bikini", "bending over"]
+    },
+    {
+      "object 10": "woman",
+      "attributes": ["wearing green bikini", "bending over"]
+    },
+    {
+      "object 11": "woman",
+      "attributes": ["wearing green bikini", "bending over"]
+    },
+    {
+      "object 12": "green fabric",
+      "attributes": ["floating in water", "being held by woman"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "floating on",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      6,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      7,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      8,
+      "standing",
+      4,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      9,
+      "bending",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "bending",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      11,
+      "bending",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      12,
+      "floating on",
+      4,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```
