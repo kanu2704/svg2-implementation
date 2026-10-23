@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "rocking horse",
+      "attributes": ["wooden", "white mane"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing pajamas", "playing with rocking horse"]
+    },
+    {
+      "object 3": "adult",
+      "attributes": ["sitting on couch", "holding cup"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "playing with",
+      "rocking horse",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "adult",
+      "watching",
+      "child",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

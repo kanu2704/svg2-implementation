@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a cap", "holding a baby"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing a green outfit", "being held by the man"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["fluffy fur", "standing near the man and baby"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["pink and white", "on the floor"]
+    },
+    {
+      "object 5": "cabinet",
+      "attributes": ["white color", "in the background"]
+    },
+    {
+      "object 6": "floor",
+      "attributes": ["visible in the background"]
+    },
+    {
+      "object 7": "man 2",
+      "attributes": ["wearing a cap", "standing behind the man holding the baby"]
+    },
+    {
+      "object 8": "woman",
+      "attributes": ["wearing a red hat", "standing next to the man 2"]
+    },
+    {
+      "object 9": "toilet paper",
+      "attributes": ["on the counter", "near the toy"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      1,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      4,
+      "on the floor",
+      1,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      5,
+      "in the background",
+      1,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      6,
+      "visible in the background",
+      1,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      7,
+      "standing behind",
+      1,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      8,
+      "standing next to",
+      7,
+      [
+        [0, 17]
+      ]
+    ],
+    [
+      9,
+      "on the counter",
+      4,
+      [
+        [0, 17]
+      ]
+    ]
+  ]
+}
+```

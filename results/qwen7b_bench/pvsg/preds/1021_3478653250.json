@@ -1,0 +1,173 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Child",
+      "attributes": ["wearing green jacket", "playing baseball"]
+    },
+    {
+      "object 2": "Baseball Bat",
+      "attributes": ["orange and black color", "held by child"]
+    },
+    {
+      "object 3": "Baseball",
+      "attributes": ["white color", "bounces on ground"]
+    },
+    {
+      "object 4": "Baseball Tee",
+      "attributes": ["red and blue color", "holds the ball"]
+    },
+    {
+      "object 5": "Backyard",
+      "attributes": ["wooden fence", "green grass"]
+    },
+    {
+      "object 6": "Basketball Hoop",
+      "attributes": ["blue and white color", "in the backyard"]
+    },
+    {
+      "object 7": "Red Ball",
+      "attributes": ["red color", "on the ground"]
+    },
+    {
+      "object 8": "Green Ball",
+      "attributes": ["green color", "on the ground"]
+    },
+    {
+      "object 9": "White Ball",
+      "attributes": ["white color", "on the ground"]
+    },
+    {
+      "object 10": "Pink Ball",
+      "attributes": ["pink color", "on the ground"]
+    },
+    {
+      "object 11": "Yellow Ball",
+      "attributes": ["yellow color", "on the ground"]
+    },
+    {
+      "object 12": "Baseball",
+      "attributes": ["white color", "bounces on ground"]
+    },
+    {
+      "object 13": "Baseball",
+      "attributes": ["white color", "bounces on ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "hits",
+      2,
+      [
+        [4, 8],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      12,
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      13,
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "hits",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "hits",
+      13,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      8,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      9,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      10,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      11,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      12,
+      [
+        [0, 65]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      13,
+      [
+        [0, 65]
+      ]
+    ]
+  ]
+}
+```

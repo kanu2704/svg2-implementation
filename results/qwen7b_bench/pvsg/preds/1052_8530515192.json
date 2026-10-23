@@ -1,0 +1,164 @@
+```json
+{
+    "objects": [
+        {
+            "object 1": "cake",
+            "attributes": ["birthday cake with lit candles"]
+        },
+        {
+            "object 2": "girl",
+            "attributes": ["blowing out candles", "wearing blue shirt"]
+        },
+        {
+            "object 3": "man",
+            "attributes": ["sitting at table", "wearing blue shirt"]
+        },
+        {
+            "object 4": "child",
+            "attributes": ["wearing purple dress", "blowing out candles"]
+        },
+        {
+            "object 5": "woman",
+            "attributes": ["standing behind girl", "wearing green top"]
+        },
+        {
+            "object 6": "candles",
+            "attributes": ["lit on cake"]
+        },
+        {
+            "object 7": "table",
+            "attributes": ["red surface, holds cake"]
+        },
+        {
+            "object 8": "birthday",
+            "attributes": ["celebration event"]
+        },
+        {
+            "object 9": "birthday cake",
+            "attributes": ["white frosting, colorful decorations"]
+        },
+        {
+            "object 10": "birthday party",
+            "attributes": ["children's gathering"]
+        },
+        {
+            "object 11": "birthday celebration",
+            "attributes": ["joyful atmosphere"]
+        },
+        {
+            "object 12": "birthday cake",
+            "attributes": ["pink and white design, lit candles"]
+        },
+        {
+            "object 13": "birthday cake",
+            "attributes": ["white frosting, colorful decorations"]
+        },
+        {
+            "object 14": "birthday cake",
+            "attributes": ["pink and white design, lit candles"]
+        },
+        {
+            "object 15": "birthday cake",
+            "attributes": ["white frosting, colorful decorations"]
+        }
+    ],
+    "relationships": [
+        [
+            2,
+            "blowing out candles",
+            4,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            3,
+            "sitting at table",
+            1,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            4,
+            "blowing out candles",
+            1,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            5,
+            "standing behind girl",
+            2,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            6,
+            "lit on cake",
+            9,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            7,
+            "red surface, holds cake",
+            9,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            8,
+            "celebration event",
+            10,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            9,
+            "white frosting, colorful decorations",
+            11,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            10,
+            "children's gathering",
+            12,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            11,
+            "joyful atmosphere",
+            13,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            12,
+            "pink and white design, lit candles",
+            14,
+            [
+                [0, 72]
+            ]
+        ],
+        [
+            13,
+            "white frosting, colorful decorations",
+            15,
+            [
+                [0, 72]
+            ]
+        ]
+    ]
+}
+```

@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with presents"]
+    },
+    {
+      "object 2": "christmas tree",
+      "attributes": ["decorated with lights and ornaments", "in the background"]
+    },
+    {
+      "object 3": "present",
+      "attributes": ["green wrapping paper with Santa Claus pattern", "being opened by child"]
+    },
+    {
+      "object 4": "book",
+      "attributes": ["red cover", "being read by child"]
+    },
+    {
+      "object 5": "toy",
+      "attributes": ["red toy car", "on the floor near presents"]
+    },
+    {
+      "object 6": "parent",
+      "attributes": ["sitting on the floor", "assisting child with presents"]
+    },
+    {
+      "object 7": "floor",
+      "attributes": ["carpeted surface", "where presents are placed"]
+    },
+    {
+      "object 8": "book",
+      "attributes": ["blue cover", "being held by child"]
+    },
+    {
+      "object 9": "book",
+      "attributes": ["yellow cover", "being read by child"]
+    },
+    {
+      "object 10": "book",
+      "attributes": ["orange cover", "being read by child"]
+    },
+    {
+      "object 11": "book",
+      "attributes": ["blue cover", "being read by child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 80]
+      ]
+    ],
+    [
+      1,
+      "reading",
+      4,
+      [
+        [40, 80]
+      ]
+    ],
+    [
+      1,
+      "receiving help from",
+      6,
+      [
+        [0, 80]
+      ]
+    ],
+    [
+      1,
+      "opening",
+      3,
+      [
+        [0, 80]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      8,
+      [
+        [40, 80]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      9,
+      [
+        [40, 80]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      10,
+      [
+        [40, 80]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      11,
+      [
+        [40, 80]
+      ]
+    ]
+  ]
+}
+```
