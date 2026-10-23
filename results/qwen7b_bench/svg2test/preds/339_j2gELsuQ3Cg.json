@@ -1,0 +1,90 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing blue dress", "long hair"]
+    },
+    {
+      "object 2": "clothes rack",
+      "attributes": ["hanging clothes"]
+    },
+    {
+      "object 3": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 4": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 5": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 6": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 7": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 8": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 9": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 10": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 11": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 12": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 13": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    },
+    {
+      "object 14": "shirt",
+      "attributes": ["hanging on clothes rack"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "selects",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "moves",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "talks to",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

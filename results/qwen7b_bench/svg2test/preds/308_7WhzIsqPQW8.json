@@ -1,0 +1,675 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a black suit", "standing still"]
+    },
+    {
+      "object 2": "woman 1",
+      "attributes": ["wearing a black dress with sequins", "dancing"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing a black suit with white shirt", "dancing"]
+    },
+    {
+      "object 4": "woman 2",
+      "attributes": ["wearing a black dress with sequins", "dancing"]
+    },
+    {
+      "object 5": "couple 1",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 6": "couple 2",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 7": "couple 3",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 8": "couple 4",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 9": "couple 5",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 10": "couple 6",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 11": "couple 7",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 12": "couple 8",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 13": "couple 9",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 14": "couple 10",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 15": "couple 11",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 16": "couple 12",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 17": "couple 13",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 18": "couple 14",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 19": "couple 15",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 20": "couple 16",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 21": "couple 17",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 22": "couple 18",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 23": "couple 19",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 24": "couple 20",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 25": "couple 21",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 26": "couple 22",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 27": "couple 23",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 28": "couple 24",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 29": "couple 25",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 30": "couple 26",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 31": "couple 27",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 32": "couple 28",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 33": "couple 29",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 34": "couple 30",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 35": "couple 31",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 36": "couple 32",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 37": "couple 33",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 38": "couple 34",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 39": "couple 35",
+      "attributes": ["man wearing a black suit, woman in a black dress with sequins", "dancing together"]
+    },
+    {
+      "object 40": "couple 36",
+      "attributes": ["man wearing a black suit with white shirt, woman in a black dress with sequins", "dancing together"]
+    }
+  ],
+  "relationships": [
+    [
+      "couple 1",
+      "dancing with",
+      "couple 2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 2",
+      "dancing with",
+      "couple 3",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 3",
+      "dancing with",
+      "couple 4",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 4",
+      "dancing with",
+      "couple 5",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 5",
+      "dancing with",
+      "couple 6",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 6",
+      "dancing with",
+      "couple 7",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 7",
+      "dancing with",
+      "couple 8",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 8",
+      "dancing with",
+      "couple 9",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 9",
+      "dancing with",
+      "couple 10",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 10",
+      "dancing with",
+      "couple 11",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 11",
+      "dancing with",
+      "couple 12",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 12",
+      "dancing with",
+      "couple 13",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 13",
+      "dancing with",
+      "couple 14",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 14",
+      "dancing with",
+      "couple 15",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 15",
+      "dancing with",
+      "couple 16",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 16",
+      "dancing with",
+      "couple 17",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 17",
+      "dancing with",
+      "couple 18",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 18",
+      "dancing with",
+      "couple 19",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 19",
+      "dancing with",
+      "couple 20",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 20",
+      "dancing with",
+      "couple 21",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 21",
+      "dancing with",
+      "couple 22",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 22",
+      "dancing with",
+      "couple 23",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 23",
+      "dancing with",
+      "couple 24",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 24",
+      "dancing with",
+      "couple 25",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 25",
+      "dancing with",
+      "couple 26",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 26",
+      "dancing with",
+      "couple 27",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 27",
+      "dancing with",
+      "couple 28",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 28",
+      "dancing with",
+      "couple 29",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 29",
+      "dancing with",
+      "couple 30",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 30",
+      "dancing with",
+      "couple 31",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 31",
+      "dancing with",
+      "couple 32",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 32",
+      "dancing with",
+      "couple 33",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 33",
+      "dancing with",
+      "couple 34",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 34",
+      "dancing with",
+      "couple 35",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 35",
+      "dancing with",
+      "couple 36",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 36",
+      "dancing with",
+      "couple 37",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 37",
+      "dancing with",
+      "couple 38",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 38",
+      "dancing with",
+      "couple 39",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "couple 39",
+      "dancing with",
+      "couple 40",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```
