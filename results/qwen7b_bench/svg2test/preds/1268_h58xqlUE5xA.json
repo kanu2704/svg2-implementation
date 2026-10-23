@@ -1,0 +1,178 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing white shirt", "wearing black pants"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing black top", "wearing black pants"]
+    },
+    {
+      "object 3": "sky",
+      "attributes": ["cloudy"]
+    },
+    {
+      "object 4": "trees",
+      "attributes": ["green"]
+    },
+    {
+      "object 5": "waterfall",
+      "attributes": ["powerful", "white foam"]
+    },
+    {
+      "object 6": "ground",
+      "attributes": ["rocky", "brown"]
+    },
+    {
+      "object 7": "vegetation",
+      "attributes": ["dense", "green"]
+    },
+    {
+      "object 8": "tree",
+      "attributes": ["tall", "green"]
+    },
+    {
+      "object 9": "stairs",
+      "attributes": ["metal railings", "gray"]
+    },
+    {
+      "object 10": "bench",
+      "attributes": ["wooden", "brown"]
+    },
+    {
+      "object 11": "railing",
+      "attributes": ["metal", "silver"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      8,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      8,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      10,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      10,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      11,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      11,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      6,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      6,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      7,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      7,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

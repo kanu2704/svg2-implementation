@@ -1,0 +1,538 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "birdcage",
+      "attributes": ["metal", "caged"]
+    },
+    {
+      "object 2": "cat",
+      "attributes": ["fluffy", "gray"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing white shirt", "holding cat"]
+    },
+    {
+      "object 4": "dresser",
+      "attributes": ["wooden", "drawers"]
+    },
+    {
+      "object 5": "lamp",
+      "attributes": ["orange and white striped", "on dresser"]
+    },
+    {
+      "object 6": "window",
+      "attributes": ["bright light coming through"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["white"]
+    },
+    {
+      "object 8": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 9": "toy",
+      "attributes": ["red and green", "hanging in cage"]
+    },
+    {
+      "object 10": "man's hand",
+      "attributes": ["holding cat"]
+    },
+    {
+      "object 11": "man's arm",
+      "attributes": ["holding cat"]
+    },
+    {
+      "object 12": "man's leg",
+      "attributes": ["wearing cargo pants"]
+    },
+    {
+      "object 13": "man's torso",
+      "attributes": ["wearing white shirt"]
+    },
+    {
+      "object 14": "man's head",
+      "attributes": ["short hair"]
+    },
+    {
+      "object 15": "man's ear",
+      "attributes": ["visible"]
+    },
+    {
+      "object 16": "man's eye",
+      "attributes": ["visible"]
+    },
+    {
+      "object 17": "man's nose",
+      "attributes": ["visible"]
+    },
+    {
+      "object 18": "man's mouth",
+      "attributes": ["visible"]
+    },
+    {
+      "object 19": "man's shoulder",
+      "attributes": ["wearing white shirt"]
+    },
+    {
+      "object 20": "man's elbow",
+      "attributes": ["visible"]
+    },
+    {
+      "object 21": "man's hand (left)",
+      "attributes": ["holding cat"]
+    },
+    {
+      "object 22": "man's hand (right)",
+      "attributes": ["holding cat"]
+    },
+    {
+      "object 23": "man's foot",
+      "attributes": ["barefoot"]
+    },
+    {
+      "object 24": "man's knee",
+      "attributes": ["bent"]
+    },
+    {
+      "object 25": "man's leg (left)",
+      "attributes": ["wearing cargo pants"]
+    },
+    {
+      "object 26": "man's leg (right)",
+      "attributes": ["wearing cargo pants"]
+    },
+    {
+      "object 27": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 28": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 29": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 30": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 31": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 32": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 33": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 34": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 35": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 36": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 37": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 38": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 39": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    },
+    {
+      "object 40": "man's hand (holding cat)",
+      "attributes": ["visible"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "holds",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      19,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      33,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      34,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      35,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      36,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      37,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      38,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      39,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      40,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,32 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sea",
+      "attributes": ["water"]
+    },
+    {
+      "object 2": "inflatable tube",
+      "attributes": ["floats on water", "has a dog lying on it"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["lying on the inflatable tube", "brown fur", "black ears"]
+    },
+    {
+      "object 4": "water",
+      "attributes": ["calm surface"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "on top of",
+      3,
+      [
+        [0, 9]
+      ]
+    ]
+  ]
+}
+```

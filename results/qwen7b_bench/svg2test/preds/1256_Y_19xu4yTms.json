@@ -1,0 +1,424 @@
+```json
+{
+  "objects": [
+    {
+      "1": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "2": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "3": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "4": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "5": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "6": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "7": "boat",
+      "attributes": ["gray color", "seats for people"]
+    },
+    {
+      "8": "water",
+      "attributes": ["calm surface", "blue color"]
+    },
+    {
+      "9": "whale",
+      "attributes": ["large size", "swimming in water"]
+    },
+    {
+      "10": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "11": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "12": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "13": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "14": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "15": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "16": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "17": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "18": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "19": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "20": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "21": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "22": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "23": "person",
+      "attributes": ["waring a hat", "wearing a jacket"]
+    },
+    {
+      "24": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "25": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "26": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "27": "person",
+      "attributes": ["wearing a hat", "wearing a jacket"]
+    },
+    {
+      "28": "chair",
+      "attributes": ["purple color", "on the boat"]
+    },
+    {
+      "29": "chair",
+      "attributes": ["purple color", "on the boat"]
+    },
+    {
+      "30": "chair",
+      "attributes": ["purple color", "on the boat"]
+    },
+    {
+      "31": "chair",
+      "attributes": ["purple color", "on the boat"]
+    },
+    {
+      "32": "chair",
+      "attributes": ["purple color", "on the boat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      9,
+      "swimming near",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      11,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      12,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      13,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      14,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      15,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      16,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      17,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      18,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      19,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      20,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      21,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      22,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      23,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      24,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      25,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      26,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      27,
+      "standing on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      28,
+      "on",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      29,
+      "on",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      30,
+      "on",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      31,
+      "on",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```
