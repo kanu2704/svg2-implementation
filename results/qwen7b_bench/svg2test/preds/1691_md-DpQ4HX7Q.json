@@ -1,0 +1,253 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 2": "bridge",
+      "attributes": ["metal structure", "spanning over water"]
+    },
+    {
+      "object 3": "water",
+      "attributes": ["calm surface", "reflects sky and boats"]
+    },
+    {
+      "object 4": "trees",
+      "attributes": ["green foliage", "lining the riverbanks"]
+    },
+    {
+      "object 5": "land",
+      "attributes": ["hilly terrain", "covered in trees"]
+    },
+    {
+      "object 6": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 7": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 8": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 9": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 10": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 11": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 12": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 13": "water",
+      "attributes": ["calm surface", "reflects sky and boats"]
+    },
+    {
+      "object 14": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 15": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 16": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 17": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 18": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 19": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 20": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    },
+    {
+      "object 21": "boat",
+      "attributes": ["white", "red", "paddle wheels", "people on board"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "in front of",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "on water",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,519 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "player",
+      "attributes": ["wearing jersey number 65", "standing with hands on hips"]
+    },
+    {
+      "object 2": "player",
+      "attributes": ["wearing jersey number 39", "standing with hands behind back"]
+    },
+    {
+      "object 3": "player",
+      "attributes": ["wearing jersey number 40", "standing with hands on knees"]
+    },
+    {
+      "object 4": "player",
+      "attributes": ["wearing jersey number 28", "standing with hands on knees"]
+    },
+    {
+      "object 5": "player",
+      "attributes": ["wearing jersey number 27", "standing with hands on knees"]
+    },
+    {
+      "object 6": "player",
+      "attributes": ["wearing jersey number 26", "standing with hands on knees"]
+    },
+    {
+      "object 7": "player",
+      "attributes": ["wearing jersey number 25", "standing with hands on knees"]
+    },
+    {
+      "object 8": "player",
+      "attributes": ["wearing jersey number 24", "standing with hands on knees"]
+    },
+    {
+      "object 9": "player",
+      "attributes": ["wearing jersey number 23", "standing with hands on knees"]
+    },
+    {
+      "object 10": "player",
+      "attributes": ["wearing jersey number 22", "standing with hands on knees"]
+    },
+    {
+      "object 11": "player",
+      "attributes": ["wearing jersey number 21", "standing with hands on knees"]
+    },
+    {
+      "object 12": "player",
+      "attributes": ["wearing jersey number 20", "standing with hands on knees"]
+    },
+    {
+      "object 13": "player",
+      "attributes": ["wearing jersey number 19", "standing with hands on knees"]
+    },
+    {
+      "object 14": "player",
+      "attributes": ["wearing jersey number 18", "standing with hands on knees"]
+    },
+    {
+      "object 15": "player",
+      "attributes": ["wearing jersey number 17", "standing with hands on knees"]
+    },
+    {
+      "object 16": "player",
+      "attributes": ["wearing jersey number 16", "standing with hands on knees"]
+    },
+    {
+      "object 17": "player",
+      "attributes": ["wearing jersey number 15", "standing with hands on knees"]
+    },
+    {
+      "object 18": "player",
+      "attributes": ["wearing jersey number 14", "standing with hands on knees"]
+    },
+    {
+      "object 19": "player",
+      "attributes": ["wearing jersey number 13", "standing with hands on knees"]
+    },
+    {
+      "object 20": "player",
+      "attributes": ["wearing jersey number 12", "standing with hands on knees"]
+    },
+    {
+      "object 21": "player",
+      "attributes": ["wearing jersey number 11", "standing with hands on knees"]
+    },
+    {
+      "object 22": "player",
+      "attributes": ["wearing jersey number 10", "standing with hands on knees"]
+    },
+    {
+      "object 23": "player",
+      "attributes": ["wearing jersey number 9", "standing with hands on knees"]
+    },
+    {
+      "object 24": "player",
+      "attributes": ["wearing jersey number 8", "standing with hands on knees"]
+    },
+    {
+      "object 25": "player",
+      "attributes": ["wearing jersey number 7", "standing with hands on knees"]
+    },
+    {
+      "object 26": "player",
+      "attributes": ["wearing jersey number 6", "standing with hands on knees"]
+    },
+    {
+      "object 27": "player",
+      "attributes": ["wearing jersey number 5", "standing with hands on knees"]
+    },
+    {
+      "object 28": "player",
+      "attributes": ["wearing jersey number 4", "standing with hands on knees"]
+    },
+    {
+      "object 29": "player",
+      "attributes": ["wearing jersey number 3", "standing with hands on knees"]
+    },
+    {
+      "object 30": "player",
+      "attributes": ["wearing jersey number 2", "standing with hands on knees"]
+    },
+    {
+      "object 31": "player",
+      "attributes": ["wearing jersey number 1", "standing with hands on knees"]
+    },
+    {
+      "object 32": "player",
+      "attributes": ["wearing jersey number 20", "standing with hands on knees"]
+    },
+    {
+      "object 33": "player",
+      "attributes": ["wearing jersey number 21", "standing with hands on knees"]
+    },
+    {
+      "object 34": "player",
+      "attributes": ["wearing jersey number 22", "standing with hands on knees"]
+    },
+    {
+      "object 35": "player",
+      "attributes": ["wearing jersey number 23", "standing with hands on knees"]
+    },
+    {
+      "object 36": "player",
+      "attributes": ["wearing jersey number 24", "standing with hands on knees"]
+    },
+    {
+      "object 37": "player",
+      "attributes": ["wearing jersey number 25", "standing with hands on knees"]
+    },
+    {
+      "object 38": "player",
+      "attributes": ["wearing jersey number 26", "standing with hands on knees"]
+    },
+    {
+      "object 39": "player",
+      "attributes": ["wearing jersey number 27", "standing with hands on knees"]
+    },
+    {
+      "object 40": "player",
+      "attributes": ["wearing jersey number 28", "standing with hands on knees"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing next to",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "standing next to",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "standing next to",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "standing next to",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "standing next to",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "standing next to",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "standing next to",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "standing next to",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "standing next to",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "standing next to",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "standing next to",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "standing next to",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "standing next to",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "standing next to",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "standing next to",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "standing next to",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "standing next to",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "standing next to",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "standing next to",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "standing next to",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "standing next to",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "standing next to",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "standing next to",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "standing next to",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "standing next to",
+      29,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "standing next to",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "standing next to",
+      31,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "standing next to",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "standing next to",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "standing next to",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "standing next to",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "standing next to",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "standing next to",
+      37,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "standing next to",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "standing next to",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      39,
+      "standing next to",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

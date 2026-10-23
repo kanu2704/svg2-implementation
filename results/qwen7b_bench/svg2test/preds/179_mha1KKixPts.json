@@ -1,0 +1,33 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "tree",
+      "attributes": ["tall", "green"]
+    },
+    {
+      "object 2": "forest",
+      "attributes": ["dense", "green"]
+    },
+    {
+      "object 3": "excavator",
+      "attributes": ["moving", "metallic"]
+    }
+  ],
+  "relationships": [
+    [
+      "excavator",
+      "operating in",
+      "forest",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

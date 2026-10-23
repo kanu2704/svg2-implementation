@@ -1,0 +1,113 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "phone",
+      "attributes": ["white", "horizontal"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["touching phone"]
+    },
+    {
+      "object 3": "price tag",
+      "attributes": ["yellow", "stickered"]
+    },
+    {
+      "object 4": "shelf",
+      "attributes": ["metallic", "gray"]
+    },
+    {
+      "object 5": "phone stand",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 6": "phone",
+      "attributes": ["black", "cracked screen"]
+    },
+    {
+      "object 7": "phone stand",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 8": "phone",
+      "attributes": ["white", "horizontal"]
+    },
+    {
+      "object 9": "phone",
+      "attributes": ["white", "horizontal"]
+    },
+    {
+      "object 10": "phone stand",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 11": "phone",
+      "attributes": ["white", "horizontal"]
+    },
+    {
+      "object 12": "shelf",
+      "attributes": ["metallic", "gray"]
+    },
+    {
+      "object 13": "phone stand",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 14": "phone",
+      "attributes": ["white", "horizontal"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "touch",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "release",
+      1,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "hangs from",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "hangs from",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      8,
+      "hangs from",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      11,
+      "hangs from",
+      13,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

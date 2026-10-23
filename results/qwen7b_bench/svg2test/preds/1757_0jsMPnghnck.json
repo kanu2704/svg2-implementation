@@ -1,0 +1,298 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "landscape",
+      "attributes": ["hills", "trees", "buildings"]
+    },
+    {
+      "object 2": "house",
+      "attributes": ["large", "brown roof", "surrounded by trees"]
+    },
+    {
+      "object 3": "road",
+      "attributes": ["curved", "near house"]
+    },
+    {
+      "object 4": "building",
+      "attributes": ["circular", "white exterior", "on top of hill"]
+    },
+    {
+      "object 5": "pool",
+      "attributes": ["green water", "near house"]
+    },
+    {
+      "object 6": "golf course",
+      "attributes": ["green fairways", "sand traps", "near house"]
+    },
+    {
+      "object 7": "swimming pool",
+      "attributes": ["blue water", "near house"]
+    },
+    {
+      "object 8": "house",
+      "attributes": ["smaller", "brown roof", "near larger house"]
+    },
+    {
+      "object 9": "pool",
+      "attributes": ["green water", "near smaller house"]
+    },
+    {
+      "object 10": "house",
+      "attributes": ["brown roof", "near golf course"]
+    },
+    {
+      "object 11": "golf course",
+      "attributes": ["green fairways", "sand traps", "near house"]
+    },
+    {
+      "object 12": "swimming pool",
+      "attributes": ["green water", "near house"]
+    },
+    {
+      "object 13": "trees",
+      "attributes": ["green leaves", "lining the road"]
+    },
+    {
+      "object 14": "house",
+      "attributes": ["brown roof", "near golf course"]
+    },
+    {
+      "object 15": "pool",
+      "attributes": ["green water", "near house"]
+    },
+    {
+      "object 16": "golf course",
+      "attributes": ["green fairways", "sand traps", "near house"]
+    },
+    {
+      "object 17": "swimming pool",
+      "attributes": ["green water", "near house"]
+    },
+    {
+      "object 18": "trees",
+      "attributes": ["green leaves", "lining the road"]
+    },
+    {
+      "object 19": "house",
+      "attributes": ["brown roof", "near golf course"]
+    },
+    {
+      "object 20": "pool",
+      "attributes": ["green water", "near house"]
+    },
+    {
+      "object 21": "trees",
+      "attributes": ["green leaves", "lining the road"]
+    },
+    {
+      "object 22": "house",
+      "attributes": ["brown roof", "near golf course"]
+    },
+    {
+      "object 23": "pool",
+      "attributes": ["green water", "near house"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "adjacent to",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "connected by",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "surrounds",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "overlooks",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "adjacent to",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "contains",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "adjacent to",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "surrounds",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "adjacent to",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "surrounds",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "contains",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "adjacent to",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "surrounds",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "adjacent to",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "surrounds",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "contains",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "adjacent to",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "surrounds",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "adjacent to",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "surrounds",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "adjacent to",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "surrounds",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

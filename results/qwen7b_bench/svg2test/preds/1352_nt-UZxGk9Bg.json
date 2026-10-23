@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Skier",
+      "attributes": ["wearing black jacket", "wearing red pants", "wearing ski goggles"]
+    },
+    {
+      "object 2": "Ski Poles",
+      "attributes": ["red and black poles", "held by the skier"]
+    },
+    {
+      "object 3": "Ski Boots",
+      "attributes": ["attached to skis", "part of skiing equipment"]
+    },
+    {
+      "object 4": "Ski",
+      "attributes": ["green and yellow", "used for skiing"]
+    },
+    {
+      "object 5": "Snow",
+      "attributes": ["white and flat", "surface on which skiing occurs"]
+    }
+  ],
+  "relationships": [
+    [
+      "Skier",
+      "holding",
+      "Ski Poles",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "Skier",
+      "standing on",
+      "Ski",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "Ski",
+      "on",
+      "Snow",
+      [
+        [0, 9]
+      ]
+    ]
+  ]
+}
+```

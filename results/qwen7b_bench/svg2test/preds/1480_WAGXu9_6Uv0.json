@@ -1,0 +1,492 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sink",
+      "attributes": ["white", "rectangular"]
+    },
+    {
+      "object 2": "faucet",
+      "attributes": ["metallic", "centered on sink"]
+    },
+    {
+      "object 3": "mirror",
+      "attributes": ["reflective", "above sink"]
+    },
+    {
+      "object 4": "soap dispenser",
+      "attributes": ["plastic", "on sink"]
+    },
+    {
+      "object 5": "toothbrush holder",
+      "attributes": ["clear plastic", "on sink"]
+    },
+    {
+      "object 6": "toothpaste",
+      "attributes": ["blue tube", "in holder"]
+    },
+    {
+      "object 7": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 8": "shaving cream",
+      "attributes": ["pink can", "on sink"]
+    },
+    {
+      "object 9": "deodorant",
+      "attributes": ["white can", "on sink"]
+    },
+    {
+      "object 10": "shampoo",
+      "attributes": ["blue bottle", "on sink"]
+    },
+    {
+      "object 11": "conditioner",
+      "attributes": ["brown bottle", "on sink"]
+    },
+    {
+      "object 12": "towel rack",
+      "attributes": ["metallic", "holding towel"]
+    },
+    {
+      "object 13": "light",
+      "attributes": ["white", "on mirror"]
+    },
+    {
+      "object 14": "shaving brush",
+      "attributes": ["green handle", "in holder"]
+    },
+    {
+      "object 15": "toilet paper",
+      "attributes": ["white roll", "on holder"]
+    },
+    {
+      "object 16": "towel bar",
+      "attributes": ["metallic", "holding towel"]
+    },
+    {
+      "object 17": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 18": "shaving cream",
+      "attributes": ["pink can", "on sink"]
+    },
+    {
+      "object 19": "deodorant",
+      "attributes": ["white can", "on sink"]
+    },
+    {
+      "object 20": "shampoo",
+      "attributes": ["blue bottle", "on sink"]
+    },
+    {
+      "object 21": "conditioner",
+      "attributes": ["brown bottle", "on sink"]
+    },
+    {
+      "object 22": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 23": "light",
+      "attributes": ["white", "on mirror"]
+    },
+    {
+      "object 24": "shaving brush",
+      "attributes": ["green handle", "in holder"]
+    },
+    {
+      "object 25": "toilet paper",
+      "attributes": ["white roll", "on holder"]
+    },
+    {
+      "object 26": "towel bar",
+      "attributes": ["metallic", "holding towel"]
+    },
+    {
+      "object 27": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 28": "shaving cream",
+      "attributes": ["pink can", "on sink"]
+    },
+    {
+      "object 29": "deodorant",
+      "attributes": ["white can", "on sink"]
+    },
+    {
+      "object 30": "shampoo",
+      "attributes": ["blue bottle", "on sink"]
+    },
+    {
+      "object 31": "conditioner",
+      "attributes": ["brown bottle", "on sink"]
+    },
+    {
+      "object 32": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 33": "light",
+      "attributes": ["white", "on mirror"]
+    },
+    {
+      "object 34": "shaving brush",
+      "attributes": ["green handle", "in holder"]
+    },
+    {
+      "object 35": "toilet paper",
+      "attributes": ["white roll", "on holder"]
+    },
+    {
+      "object 36": "towel bar",
+      "attributes": ["metallic", "holding towel"]
+    },
+    {
+      "object 37": "towel",
+      "attributes": ["white", "hanging"]
+    },
+    {
+      "object 38": "shaving cream",
+      "attributes": ["pink can", "on sink"]
+    },
+    {
+      "object 39": "deodorant",
+      "attributes": ["white can", "on sink"]
+    },
+    {
+      "object 40": "shampoo",
+      "attributes": ["blue bottle", "on sink"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "centered on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "reflects",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "in",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "on",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "holding",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "holding",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "holding",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "holding",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "holding",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "holding",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "holding",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "holding",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "holding",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "holding",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "holding",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "holding",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "holding",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "holding",
+      29,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "holding",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "holding",
+      31,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "holding",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "holding",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "holding",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "holding",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "holding",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "holding",
+      37,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "holding",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "holding",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "holding",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```
