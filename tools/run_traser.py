@@ -17,6 +17,10 @@ using its own functions. Two things differ:
 `generate`. `encode` alone is used to hand that sequence to vLLM (tools/vllm_generate.py): TRASER gives its
 language model plain 1D positions 0..L-1 (token_arrangement.py), so the language model is an ordinary
 Qwen2 decoder over those embeddings.
+
+`load_qwen` puts an off-the-shelf Qwen2.5-VL-7B-Instruct (no scene-graph training) into the same pipeline: same frames,
+masks, token selection, arrangement and window labels; its own vision encoder and language model; the two trained
+resamplers (which only fit TRASER's 3B model) replaced by plain averaging to the same number of tokens (MeanPool).
 """
 import argparse
 import json
@@ -187,6 +191,57 @@ def vision_in_float32(model):
             part.float()
 
 
+QWEN_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
+# TRASER's prompt (it learned the answer format in training) + the format, for a model that never saw it (as the
+# paper's baselines got a JSON template). {objects} and {last_frame} are filled in per video.
+QWEN_PROMPT = T.PROMPTS["scene_graph"] + (
+    'Each "Object k:" block above is one tracked object of the video, with its tokens over time; the labels '
+    '<a - b sec> are its time windows. Time is counted in frames, from 0 to {last_frame}.\n'
+    'Answer with JSON only, in exactly this form:\n'
+    '{"objects": [{"object 1": "<name>", "attributes": ["<attribute>", ...]}, {"object 2": "<name>", "attributes": [...]}, ...], '
+    '"relationships": [[<subject object number>, "<relation>", <object number>, [[<start>, <end>], ...]], ...]}\n'
+    'Name every object from 1 to {objects} with a short noun and list its attributes; then list every relationship '
+    '(actions and spatial relations) between two of these objects, with the time spans when it holds.\n')
+
+
+class MeanPool(torch.nn.Module):
+    """Stands in for a trained perceiver resampler, with nothing learned: an object's tokens (in their order: time,
+    then position) averaged in n_latents equal runs (fewer tokens than n_latents: repeated)."""
+    def __init__(self, n_latents=32):
+        super().__init__()
+        self.n_latents = n_latents
+
+    def forward(self, context, attention_mask):
+        out = []
+        for x, m in zip(context, attention_mask):
+            x = x[m.bool()] if bool(m.any()) else x[:1] * 0
+            y = torch.nn.functional.adaptive_avg_pool1d(x.float().t()[None], self.n_latents)[0].t()
+            out.append(y.to(context.dtype))
+        return torch.stack(out)
+
+
+def load_qwen(model_id=None, dtype="auto", device=None, n_latents=32):
+    """Model, processor and tokenizer: Qwen2.5-VL-7B-Instruct in TRASER's pipeline (see the top of this file).
+    TRASER's own special tokens (<obj_traj_start>/<obj_traj_end>, trained) are left out."""
+    device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+    torch_dtype = getattr(torch, pick_dtype(dtype))
+    avoid_math_attention()
+    model = T.TRASER.from_pretrained(model_id or QWEN_MODEL, torch_dtype=torch_dtype)
+    model.perceiver_resampler, model.second_perceiver_resampler = MeanPool(n_latents), MeanPool(n_latents)
+    model.config.obj_traj_start_id = model.config.obj_traj_end_id = None
+    model = model.to(device).eval()
+    if torch_dtype == torch.float16:
+        vision_in_float32(model)
+    lazy_padding()
+    chunk_resamplers(model)
+    chunk_vision(model)
+    last_logits_only(model)
+    processor = T.AutoProcessor.from_pretrained(model_id or QWEN_MODEL)
+    tokenizer = T.AutoTokenizer.from_pretrained(model_id or QWEN_MODEL, use_fast=False)
+    processor.tokenizer = tokenizer
+    return model, processor, tokenizer
+
+
 def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     """Model, processor and tokenizer, as in their main (load once, reuse for many videos).
     model_id / base_model may be local folders (offline use)."""
@@ -251,7 +306,8 @@ def select_object_tokens(mask_data, obj_ids, sampled_idx, grid_thw, coverage_thr
 
 
 def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
-          coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, max_new_tokens=8192, progress=None):
+          coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, max_new_tokens=8192, progress=None,
+          prompt=None):
     """One video: their preprocessing and generation step for step. Returns (text, stats).
     stats["mask_columns"][k - 1] is the mask column the model calls "object k".
     progress(stage, **info), if given, is called at every step and every 25 generated tokens (live status)."""
@@ -259,7 +315,7 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     embeds, position_ids, mask, rope_deltas, stats = encode(
         model, processor, tokenizer, video, mask_data, objects=objects, max_objects=max_objects, task=task,
         coverage_thresh=coverage_thresh, time_reduce=time_reduce, temporal_window_length=temporal_window_length,
-        progress=progress)
+        progress=progress, prompt=prompt)
     with torch.no_grad():
         progress("generating answer", tokens=0, input_tokens=int(embeds.shape[1]))
         t2 = time.time()
@@ -274,6 +330,12 @@ def infer(model, processor, tokenizer, video, mask_data, objects=None, max_objec
     return text, stats
 
 
+def special(config, name):
+    """TRASER's own token ids (None for a model without them: those tokens are left out)."""
+    v = getattr(config, name, None)
+    return None if v is None else int(v)
+
+
 def linear_positions(position_ids, rope_deltas):
     """True if the arranged sequence uses plain positions 0..L-1 on all three RoPE rows (what vLLM assumes)."""
     L = position_ids.shape[-1]
@@ -282,9 +344,10 @@ def linear_positions(position_ids, rope_deltas):
 
 
 def encode(model, processor, tokenizer, video, mask_data, objects=None, max_objects=40, task="scene_graph",
-           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, progress=None, capture=None):
+           coverage_thresh=0.5, time_reduce="max", temporal_window_length=4, progress=None, capture=None, prompt=None):
     """Everything before the answer is written: frames, masks -> object tokens, vision encoder, resamplers,
     trajectory-aligned arrangement. Returns (embeds [1, L, D], position_ids, attention mask, rope_deltas, stats).
+    prompt: instead of TRASER's prompt for `task` (QWEN_PROMPT: {objects}, {last_frame} filled in here).
     capture (a dict, for tools/interp): also fills in the arranged token ids ("input_ids", [L]), the vision
     encoder's tokens before the resamplers ("video_embeds", [N, D], CPU float32), each object's token indices
     into them ("per_obj_idx") and the window geometry ("tokens_per_window")."""
@@ -323,7 +386,8 @@ def encode(model, processor, tokenizer, video, mask_data, objects=None, max_obje
                  tokens_selected_union=union, tokens_dropped_fraction=round(1 - union / n_video_tokens, 3))
 
     # ---- prompt, "Object k: " labels, "<a - b sec>" window labels ----
-    input_ids = T.build_prompt_ids(tokenizer, T.PROMPTS[task], n_video_tokens).to(device)
+    text = (prompt or T.PROMPTS[task]).replace("{objects}", str(len(per_obj_idx))).replace("{last_frame}", str(len(sampled_idx) - 1))
+    input_ids = T.build_prompt_ids(tokenizer, text, n_video_tokens).to(device)
     attention_mask = torch.ones_like(input_ids)
     label_ids = tokenizer([T.OBJECT_LABEL_TEMPLATE.format(i=k + 1) for k in range(len(per_obj_idx))],
                           add_special_tokens=False)["input_ids"]
@@ -332,7 +396,7 @@ def encode(model, processor, tokenizer, video, mask_data, objects=None, max_obje
     windows = [f"<{w * temporal_window_length} - {(w + 1) * temporal_window_length} sec>"
                for w in range(math.ceil(t_grid / grids_per_window))]
     window_ids = tokenizer(windows, add_special_tokens=False)["input_ids"]
-    stats.update(window_labels=windows, prompt_tokens=int(input_ids.shape[1]))
+    stats.update(window_labels=windows, prompt_tokens=int(input_ids.shape[1]), prompt=text)
 
     if str(device).startswith("cuda"):
         torch.cuda.reset_peak_memory_stats()
@@ -358,8 +422,8 @@ def encode(model, processor, tokenizer, video, mask_data, objects=None, max_obje
                 image_grid_thw=None, pixel_values=None,
                 second_per_grid_ts=None,
                 obj_token_indices_per_sample=[[i.to(device) for i in per_obj_idx]],
-                obj_traj_start_id=int(model.config.obj_traj_start_id),
-                obj_traj_end_id=int(model.config.obj_traj_end_id),
+                obj_traj_start_id=special(model.config, "obj_traj_start_id"),
+                obj_traj_end_id=special(model.config, "obj_traj_end_id"),
                 text_token_ids_per_sample=[[torch.tensor(x, dtype=torch.long) for x in label_ids]],
                 timestamp_token_ids_per_batch=[[torch.tensor(x, dtype=torch.long) for x in window_ids]],
                 grids_per_temporal_window_per_batch=[grids_per_window])

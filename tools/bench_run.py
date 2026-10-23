@@ -118,6 +118,10 @@ def main():
     ap.add_argument("--runs", default="/kaggle/working/traser_bench_runs")
     ap.add_argument("--gpu_name", default="gpu0")
     ap.add_argument("--model", default=None, help="TRASER checkpoint (Hub id or local folder)")
+    ap.add_argument("--lm", choices=["traser", "qwen7b"], default="traser",
+                    help="qwen7b: Qwen2.5-VL-7B-Instruct, not fine-tuned, in TRASER's pipeline (run_traser.load_qwen); "
+                         "use another --results folder")
+    ap.add_argument("--qwen_model", default=None, help="--lm qwen7b: Qwen2.5-VL-7B-Instruct (Hub id or local folder)")
     ap.add_argument("--base_model", default=None, help="Qwen2.5-VL-3B-Instruct processor (Hub id or local folder)")
     ap.add_argument("--sam2_ckpt", default=None, help="local sam2.1_hiera_large.pt (VidOR masks, offline)")
     ap.add_argument("--pvsg_root", default=None)
@@ -212,7 +216,8 @@ def main():
     threading.Thread(target=watchdog, daemon=True).start()
     import torch
     import bench_data as B
-    from run_traser import encode, infer, load_model
+    from run_traser import QWEN_PROMPT, encode, infer, load_model, load_qwen
+    prompt = QWEN_PROMPT if args.lm == "qwen7b" else None
 
     prepare = Preparer(args)
     model = processor = tokenizer = None
@@ -230,9 +235,10 @@ def main():
                 shutil.copyfile(B.item_dir(args.bench, B.base_dataset(dataset), video_id) / "gt.json", gt_copy)
             if model is None:
                 save_status(state="loading model")
-                log("loading the TRASER model ...")
+                log("loading the TRASER model ..." if args.lm == "traser" else "loading Qwen2.5-VL-7B-Instruct (TRASER's pipeline) ...")
                 t0 = time.time()
-                model, processor, tokenizer = load_model(args.model, dtype=args.dtype, base_model=args.base_model)
+                model, processor, tokenizer = (load_qwen(args.qwen_model, dtype=args.dtype) if args.lm == "qwen7b" else
+                                               load_model(args.model, dtype=args.dtype, base_model=args.base_model))
                 log(f"model loaded in {time.time() - t0:.0f} s ({getattr(getattr(getattr(model, 'lm_head', None), 'weight', None), 'dtype', '?')}, "
                     f"{torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'})")
             gt = B.load_gt(args.bench, dataset, video_id)
@@ -262,7 +268,7 @@ def main():
             objects = [o["col"] for o in gt["objects"]]
             if encode_mode:
                 emb, pos, am, rd, stats = encode(model, processor, tokenizer, video, masks, objects=objects,
-                                                 max_objects=args.max_objects, progress=progress)
+                                                 max_objects=args.max_objects, progress=progress, prompt=prompt)
                 if not stats["linear_positions"] or not bool(am.all()):
                     raise RuntimeError("the arranged sequence does not use plain positions 0..L-1 without padding; "
                                        "it cannot be handed to vLLM as is")
@@ -284,7 +290,8 @@ def main():
                 del emb, pos, am, rd
             else:
                 text, stats = infer(model, processor, tokenizer, video, masks, objects=objects,
-                                    max_objects=args.max_objects, progress=progress)
+                                    max_objects=args.max_objects, progress=progress, prompt=prompt)
+                stats["lm"] = args.lm
                 stats["total_s"] = round(time.time() - t0, 1)
                 stats["gpu"] = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
                 stats_out.write_text(json.dumps(stats, indent=1))
