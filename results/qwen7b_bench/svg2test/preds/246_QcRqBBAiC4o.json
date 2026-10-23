@@ -1,0 +1,1468 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "printer",
+      "attributes": ["printing", "white"]
+    },
+    {
+      "object 2": "desk",
+      "attributes": ["wooden", "office"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["standing", "attendant"]
+    },
+    {
+      "object 4": "customer",
+      "attributes": ["standing", "client"]
+    },
+    {
+      "object 5": "computer",
+      "attributes": ["black", "monitor"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["black", "office"]
+    },
+    {
+      "object 7": "lamp",
+      "attributes": ["chandelier", "ornate"]
+    },
+    {
+      "object 8": "mirror",
+      "attributes": ["large", "wall"]
+    },
+    {
+      "object 9": "fireplace",
+      "attributes": ["white", "mantel"]
+    },
+    {
+      "object 10": "bookshelf",
+      "attributes": ["wooden", "decorative"]
+    },
+    {
+      "object 11": "pillars",
+      "attributes": ["white", "supporting"]
+    },
+    {
+      "object 12": "receptionist",
+      "attributes": ["attending", "client"]
+    }
+  ],
+  "relationships": [
+    [
+      "customer",
+      "interacts_with",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "printer",
+      "operated_by",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "stands_at",
+      "desk",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "waits_at",
+      "desk",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "speaks_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "uses_computer",
+      "computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "receives_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "smiles",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "customer",
+      "thanks_receptionist",
+      "receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "attends_to",
+      "customer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "receptionist",
+      "prints_document",
+      "printer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [2
