@@ -1,0 +1,216 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "floor",
+      "attributes": ["cleaning"]
+    },
+    {
+      "object 2": "cloth",
+      "attributes": ["wet", "blue"]
+    },
+    {
+      "object 3": "bucket",
+      "attributes": ["green", "water-filled"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["brown", "wooden"]
+    },
+    {
+      "object 5": "cable",
+      "attributes": ["white", "coiled"]
+    },
+    {
+      "object 6": "wall",
+      "attributes": ["white", "smooth"]
+    },
+    {
+      "object 7": "door",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 8": "table",
+      "attributes": ["brown", "wooden"]
+    },
+    {
+      "object 9": "cabinet",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 10": "socket",
+      "attributes": ["white", "plugged"]
+    },
+    {
+      "object 11": "dustbin",
+      "attributes": ["black", "plastic"]
+    },
+    {
+      "object 12": "cable",
+      "attributes": ["black", "coiled"]
+    },
+    {
+      "object 13": "cable",
+      "attributes": ["white", "coiled"]
+    },
+    {
+      "object 14": "cable",
+      "attributes": ["black", "coiled"]
+    },
+    {
+      "object 15": "cable",
+      "attributes": ["white", "coiled"]
+    },
+    {
+      "object 16": "cable",
+      "attributes": ["black", "coiled"]
+    },
+    {
+      "object 17": "cable",
+      "attributes": ["white", "coiled"]
+    },
+    {
+      "object 18": "cable",
+      "attributes": ["black", "coiled"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "cleaned by",
+      2,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      3,
+      "contains",
+      2,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      6,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      7,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      8,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      9,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      10,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      11,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      12,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      13,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      14,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      15,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      16,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      17,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "near",
+      18,
+      [
+        [0, 84]
+      ]
+    ]
+  ]
+}
+```

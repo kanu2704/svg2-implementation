@@ -1,0 +1,139 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "lemon",
+      "attributes": ["yellow", "ripened"]
+    },
+    {
+      "object 2": "bucket",
+      "attributes": ["yellow", "filled with lemons"]
+    },
+    {
+      "object 3": "pruning shears",
+      "attributes": ["metallic", "used for cutting"]
+    },
+    {
+      "object 4": "tree",
+      "attributes": ["green leaves", "fruit-bearing"]
+    },
+    {
+      "object 5": "hand",
+      "attributes": ["holding a lemon", "wearing a glove"]
+    },
+    {
+      "object 6": "branch",
+      "attributes": ["part of the tree", "bearing fruit"]
+    },
+    {
+      "object 7": "leaves",
+      "attributes": ["green", "on the tree"]
+    },
+    {
+      "object 8": "ground",
+      "attributes": ["dirt", "under the tree"]
+    },
+    {
+      "object 9": "lemon basket",
+      "attributes": ["yellow", "filled with lemons"]
+    },
+    {
+      "object 10": "lemon picker",
+      "attributes": ["wearing gloves", "picking lemons"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "picked by",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "placed in",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "cut from",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "held by",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "in",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "on",
+      7,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "on",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ]
+  ]
+}
+```
