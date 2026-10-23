@@ -71,6 +71,21 @@ Same answer with the video hidden = the word comes from habit. Good with the vid
 | vidor | answer | missed (6528) | clean | 26% | 74% | 94% | 3 | 31% | - | - | - |
 | vidor | answer | missed (6528) | other video | 22% | 67% | 92% | 4 | 28% | 51% | 29% | - |
 | vidor | answer | missed (6528) | zeros | 20% | 65% | 92% | 4 | 28% | 55% | 30% | - |
+| svg2test | fresh | related (2519) | clean | 42% | 76% | 85% | 2 | 48% | - | - | 0.82 |
+| svg2test | fresh | related (2519) | other video | 29% | 62% | 75% | 3 | 22% | 65% | 52% | 0.68 |
+| svg2test | fresh | related (2519) | zeros | 32% | 67% | 80% | 3 | 29% | 63% | 46% | 0.70 |
+| svg2test | fresh | missed (1534) | clean | 37% | 73% | 83% | 2 | 38% | - | - | - |
+| svg2test | fresh | missed (1534) | other video | 22% | 57% | 72% | 4 | 15% | 64% | 52% | - |
+| svg2test | fresh | missed (1534) | zeros | 24% | 60% | 76% | 4 | 21% | 62% | 48% | - |
+| svg2test | fresh | written (985) | clean | 50% | 81% | 87% | 2 | 63% | - | - | - |
+| svg2test | fresh | written (985) | other video | 39% | 70% | 80% | 2 | 34% | 68% | 52% | - |
+| svg2test | fresh | written (985) | zeros | 45% | 78% | 86% | 2 | 42% | 63% | 42% | - |
+| svg2test | answer | related (1449) | clean | 36% | 68% | 82% | 2 | 38% | - | - | - |
+| svg2test | answer | related (1449) | other video | 23% | 58% | 78% | 4 | 22% | 72% | 54% | - |
+| svg2test | answer | related (1449) | zeros | 25% | 56% | 79% | 4 | 25% | 69% | 48% | - |
+| svg2test | answer | missed (1449) | clean | 36% | 68% | 82% | 2 | 38% | - | - | - |
+| svg2test | answer | missed (1449) | other video | 23% | 58% | 78% | 4 | 22% | 72% | 54% | - |
+| svg2test | answer | missed (1449) | zeros | 25% | 56% | 79% | 4 | 25% | 69% | 48% | - |
 
 If the video mattered little, *clean* and *other video* would look the same, also in the *fresh* context. A large gap only in *fresh* means the earlier text carries the video's information in *answer*.
 
