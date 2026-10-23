@@ -1,0 +1,1213 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a dress", "playing with a ball"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing pajamas", "playing with a ball"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["orange", "being kicked and thrown"]
+    },
+    {
+      "object 4": "basketball hoop",
+      "attributes": ["pink rim", "white backboard"]
+    },
+    {
+      "object 5": "stroller",
+      "attributes": ["red and black", "in the background"]
+    },
+    {
+      "object 6": "lamp",
+      "attributes": ["white shade", "on the floor"]
+    },
+    {
+      "object 7": "cabinet",
+      "attributes": ["dark wood", "with glass doors"]
+    },
+    {
+      "object 8": "tire swing",
+      "attributes": ["gray frame", "attached to a pole"]
+    },
+    {
+      "object 9": "mirror",
+      "attributes": ["reflecting the room", "on the wall"]
+    },
+    {
+      "object 10": "lamp",
+      "attributes": ["white shade", "on the floor"]
+    },
+    {
+      "object 11": "lamp",
+      "attributes": ["white shade", "on the floor"]
+    },
+    {
+      "object 12": "ball",
+      "attributes": ["brown", "being held by the girl"]
+    },
+    {
+      "object 13": "ball",
+      "attributes": ["brown", "being held by the boy"]
+    }
+  ],
+  "relationships": [
+    [
+      "girl",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "plays with",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "basketball hoop",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "basketball hoop",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "stroller",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "stroller",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<32 - 36 sec>", "<36 - 40 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<40 - 44 sec>", "<44 - 48 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<48 - 52 sec>", "<52 - 56 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
+      "ball",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "throws",
+      "ball",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "catches",
+      "ball",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "catches",
+      "ball",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "lamp",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "lamp",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "cabinet",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "cabinet",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "tire swing",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "tire swing",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "stands near",
+      "mirror",
+      [
+        ["<60 - 64 sec>", "<64 - 68 sec>"]
+      ]
+    ],
+    [
+      "boy",
+      "stands near",
+      "mirror",
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      "girl",
+      "throws",
