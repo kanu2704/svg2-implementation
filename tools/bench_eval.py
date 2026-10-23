@@ -102,12 +102,18 @@ def to_spans(x):
     return out
 
 
+def strip_fence(text):
+    """The answer inside a Markdown code block (```json ... ```), as chat models write it; else the text as is."""
+    m = re.fullmatch(r"\s*```[A-Za-z]*[ \t]*\n(.*?)\s*```\s*", text, re.S)
+    return m.group(1) if m else text
+
+
 def parse_prediction(text):
     """{"objects": {k: label}, "relations": [(s, pred, o, [[a, b], ...])], "json_ok": bool}.
     Invalid JSON (e.g. cut off at the token limit) is salvaged item by item."""
     objects, relations = {}, []
     try:
-        g = json.loads(text)
+        g = json.loads(strip_fence(text))
         for o in g.get("objects", []):
             for key, val in o.items():
                 m = re.fullmatch(r"object[ _](\d+)", key)
