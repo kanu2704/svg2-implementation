@@ -1,0 +1,276 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding glass", "moving"]
+    },
+    {
+      "object 2": "glass",
+      "attributes": ["containing red liquid", "being held"]
+    },
+    {
+      "object 3": "stove",
+      "attributes": ["gas stove", "in kitchen"]
+    },
+    {
+      "object 4": "cupboard",
+      "attributes": ["kitchen cupboard", "closed"]
+    },
+    {
+      "object 5": "sink",
+      "attributes": ["kitchen sink", "near stove"]
+    },
+    {
+      "object 6": "coffee maker",
+      "attributes": ["on stove", "silver"]
+    },
+    {
+      "object 7": "towel",
+      "attributes": ["hanging on handle", "striped"]
+    },
+    {
+      "object 8": "trash can",
+      "attributes": ["white", "under counter"]
+    },
+    {
+      "object 9": "oven",
+      "attributes": ["built-in", "black"]
+    },
+    {
+      "object 10": "counter",
+      "attributes": ["kitchen counter", "gray"]
+    },
+    {
+      "object 11": "paper",
+      "attributes": ["on counter", "white"]
+    },
+    {
+      "object 12": "bottle",
+      "attributes": ["dark", "on counter"]
+    },
+    {
+      "object 13": "spoon",
+      "attributes": ["in bottle", "metallic"]
+    },
+    {
+      "object 14": "napkin",
+      "attributes": ["on counter", "white"]
+    },
+    {
+      "object 15": "hand",
+      "attributes": ["opening bottle", "holding bottle"]
+    },
+    {
+      "object 16": "sink",
+      "attributes": ["kitchen sink", "metallic"]
+    },
+    {
+      "object 17": "counter",
+      "attributes": ["kitchen counter", "gray"]
+    },
+    {
+      "object 18": "bottle",
+      "attributes": ["dark", "on counter"]
+    },
+    {
+      "object 19": "napkin",
+      "attributes": ["on counter", "white"]
+    },
+    {
+      "object 20": "trash can",
+      "attributes": ["white", "under counter"]
+    },
+    {
+      "object 21": "stove",
+      "attributes": ["gas stove", "in kitchen"]
+    },
+    {
+      "object 22": "cupboard",
+      "attributes": ["kitchen cupboard", "closed"]
+    },
+    {
+      "object 23": "sink",
+      "attributes": ["kitchen sink", "near stove"]
+    },
+    {
+      "object 24": "coffee maker",
+      "attributes": ["on stove", "silver"]
+    },
+    {
+      "object 25": "towel",
+      "attributes": ["hanging on handle", "striped"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "drops",
+      2,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "opens",
+      18,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      18,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      18,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      19,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      19,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      20,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      20,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      21,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      21,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      22,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      22,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      23,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      23,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      24,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      24,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "holds",
+      25,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "drops",
+      25,
+      [
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

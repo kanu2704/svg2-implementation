@@ -1,0 +1,168 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "chopping_board",
+      "attributes": ["wooden", "cutting_surface"]
+    },
+    {
+      "object 2": "knife",
+      "attributes": ["metallic", "sharp_edge"]
+    },
+    {
+      "object 3": "peppers",
+      "attributes": ["red", "cut"]
+    },
+    {
+      "object 4": "pot",
+      "attributes": ["black", "cooking_surface"]
+    },
+    {
+      "object 5": "stove",
+      "attributes": ["electric", "heats_pots"]
+    },
+    {
+      "object 6": "pan",
+      "attributes": ["black", "cooking_surface"]
+    },
+    {
+      "object 7": "spatula",
+      "attributes": ["plastic", "used_for_stirring"]
+    },
+    {
+      "object 8": "food",
+      "attributes": ["mixed_vegetables", "being_cooked"]
+    },
+    {
+      "object 9": "salt_container",
+      "attributes": ["white", "contains_salt"]
+    },
+    {
+      "object 10": "salt_shaker",
+      "attributes": ["white", "dispenses_salt"]
+    },
+    {
+      "object 11": "measuring_cups",
+      "attributes": ["purple", "used_for_liquid_measurements"]
+    },
+    {
+      "object 12": "potato",
+      "attributes": ["yellow", "being_chopped"]
+    },
+    {
+      "object 13": "chopped_potatoes",
+      "attributes": ["yellow", "ready_to_be_added"]
+    },
+    {
+      "object 14": "chopped_peppers",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 15": "chopped_onions",
+      "attributes": ["white", "added_to_food"]
+    },
+    {
+      "object 16": "chopped_carrots",
+      "attributes": ["orange", "added_to_food"]
+    },
+    {
+      "object 17": "chopped_zucchini",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 18": "chopped_cucumbers",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 19": "chopped_bell_peppers",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 20": "chopped_green_peppers",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 21": "chopped_red_peppers",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 22": "chopped_green_onions",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 23": "chopped_tomatoes",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 24": "chopped_garlic",
+      "attributes": ["white", "added_to_food"]
+    },
+    {
+      "object 25": "chopped_basil",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 26": "chopped_celery",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 27": "chopped_red_onions",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 28": "chopped_red_pepper_flakes",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 29": "chopped_green_pepper_flakes",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 30": "chopped_red_pepper_flakes",
+      "attributes": ["red", "added_to_food"]
+    },
+    {
+      "object 31": "chopped_green_pepper_flakes",
+      "attributes": ["green", "added_to_food"]
+    },
+    {
+      "object 32": "chopped_red_pepper_flakes",
+      "attributes": ["red", "added_to_food"]
+    }
+  ],
+  "relationships": [
+    [1, "on", 2, [[0, 104]]],
+    [2, "in_use_for", 1, [[0, 104]]],
+    [3, "on", 1, [[0, 104]]],
+    [4, "on", 5, [[0, 104]]],
+    [5, "under", 4, [[0, 104]]],
+    [6, "on", 5, [[0, 104]]],
+    [7, "used_for", 6, [[0, 104]]],
+    [8, "in", 4, [[0, 104]]],
+    [9, "in", 4, [[0, 104]]],
+    [10, "in", 4, [[0, 104]]],
+    [11, "in", 4, [[0, 104]]],
+    [12, "in", 4, [[0, 104]]],
+    [13, "in", 4, [[0, 104]]],
+    [14, "in", 4, [[0, 104]]],
+    [15, "in", 4, [[0, 104]]],
+    [16, "in", 4, [[0, 104]]],
+    [17, "in", 4, [[0, 104]]],
+    [18, "in", 4, [[0, 104]]],
+    [19, "in", 4, [[0, 104]]],
+    [20, "in", 4, [[0, 104]]],
+    [21, "in", 4, [[0, 104]]],
+    [22, "in", 4, [[0, 104]]],
+    [23, "in", 4, [[0, 104]]],
+    [24, "in", 4, [[0, 104]]],
+    [25, "in", 4, [[0, 104]]],
+    [26, "in", 4, [[0, 104]]],
+    [27, "in", 4, [[0, 104]]],
+    [28, "in", 4, [[0, 104]]],
+    [29, "in", 4, [[0, 104]]],
+    [30, "in", 4, [[0, 104]]],
+    [31, "in", 4, [[0, 104]]],
+    [32, "in", 4, [[0, 104]]]
+  ]
+}
+```

@@ -1,0 +1,132 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding cup", "mixing"]
+    },
+    {
+      "object 2": "cup",
+      "attributes": ["blue", "white lid"]
+    },
+    {
+      "object 3": "spoon",
+      "attributes": ["blue handle", "metallic spoon"]
+    },
+    {
+      "object 4": "container",
+      "attributes": ["black", "lid on top"]
+    },
+    {
+      "object 5": "bowl",
+      "attributes": ["green", "perforated lid"]
+    },
+    {
+      "object 6": "knife",
+      "attributes": ["red handle", "metallic blade"]
+    },
+    {
+      "object 7": "drawer",
+      "attributes": ["open", "containing items"]
+    },
+    {
+      "object 8": "spatula",
+      "attributes": ["blue handle", "metallic spatula"]
+    },
+    {
+      "object 9": "scissors",
+      "attributes": ["black handles", "metallic blades"]
+    },
+    {
+      "object 10": "spoon",
+      "attributes": ["brown handle", "metallic spoon"]
+    },
+    {
+      "object 11": "spatula",
+      "attributes": ["red handle", "metallic spatula"]
+    },
+    {
+      "object 12": "spatula",
+      "attributes": ["yellow handle", "metallic spatula"]
+    },
+    {
+      "object 13": "spatula",
+      "attributes": ["white handle", "metallic spatula"]
+    },
+    {
+      "object 14": "spatula",
+      "attributes": ["black handle", "metallic spatula"]
+    },
+    {
+      "object 15": "spatula",
+      "attributes": ["silver handle", "metallic spatula"]
+    },
+    {
+      "object 16": "spatula",
+      "attributes": ["brown handle", "metallic spatula"]
+    },
+    {
+      "object 17": "spatula",
+      "attributes": ["red handle", "metallic spatula"]
+    },
+    {
+      "object 18": "spatula",
+      "attributes": ["blue handle", "metallic spatula"]
+    },
+    {
+      "object 19": "spatula",
+      "attributes": ["green handle", "metallic spatula"]
+    },
+    {
+      "object 20": "spatula",
+      "attributes": ["black handle", "metallic spatula"]
+    },
+    {
+      "object 21": "spatula",
+      "attributes": ["silver handle", "metallic spatula"]
+    },
+    {
+      "object 22": "spatula",
+      "attributes": ["brown handle", "metallic spatula"]
+    },
+    {
+      "object 23": "spatula",
+      "attributes": ["red handle", "metallic spatula"]
+    },
+    {
+      "object 24": "spatula",
+      "attributes": ["blue handle", "metallic spatula"]
+    },
+    {
+      "object 25": "spatula",
+      "attributes": ["green handle", "metallic spatula"]
+    },
+    {
+      "object 26": "spatula",
+      "attributes": ["black handle", "metallic spatula"]
+    },
+    {
+      "object 27": "spatula",
+      "attributes": ["silver handle", "metallic spatula"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

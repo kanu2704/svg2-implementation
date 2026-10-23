@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "box",
+      "attributes": ["boxed cereal", "milk carton"]
+    },
+    {
+      "object 2": "cereal bowl",
+      "attributes": ["filled with cereal", "on countertop"]
+    },
+    {
+      "object 3": "sink",
+      "attributes": ["in kitchen", "with dishes"]
+    },
+    {
+      "object 4": "kitchen counter",
+      "attributes": ["near sink", "with cereal box and milk carton"]
+    },
+    {
+      "object 5": "milk carton",
+      "attributes": ["opened", "pouring milk into bowl"]
+    },
+    {
+      "object 6": "scissors",
+      "attributes": ["on counter", "near cereal box"]
+    },
+    {
+      "object 7": "dishes",
+      "attributes": ["in dish rack", "clean"]
+    },
+    {
+      "object 8": "cereal",
+      "attributes": ["in bowl", "with milk"]
+    }
+  ],
+  "relationships": [
+    [
+      "box",
+      "above",
+      "cereal bowl",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

@@ -1,0 +1,342 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wears red shirt", "holds cup"]
+    },
+    {
+      "object 2": "cup",
+      "attributes": ["white color", "contains liquid"]
+    },
+    {
+      "object 3": "microwave",
+      "attributes": ["silver color", "has control panel"]
+    },
+    {
+      "object 4": "sink",
+      "attributes": ["white color", "has faucet"]
+    },
+    {
+      "object 5": "plate",
+      "attributes": ["white color", "holds food"]
+    },
+    {
+      "object 6": "food",
+      "attributes": ["baked good with raisins"]
+    },
+    {
+      "object 7": "plastic bag",
+      "attributes": ["contains food", "translucent"]
+    },
+    {
+      "object 8": "kitchen counter",
+      "attributes": ["black color", "holds items"]
+    },
+    {
+      "object 9": "toaster",
+      "attributes": ["white color", "has slots for bread"]
+    },
+    {
+      "object 10": "coffee maker",
+      "attributes": ["white color", "has handle"]
+    },
+    {
+      "object 11": "water jug",
+      "attributes": ["transparent color", "has spout"]
+    },
+    {
+      "object 12": "dishes",
+      "attributes": ["stacked on counter", "various shapes and sizes"]
+    },
+    {
+      "object 13": "plastic container",
+      "attributes": ["transparent color", "has lid"]
+    },
+    {
+      "object 14": "oven",
+      "attributes": ["white color", "has control panel"]
+    },
+    {
+      "object 15": "drawer",
+      "attributes": ["open", "holds utensils"]
+    },
+    {
+      "object 16": "spatula",
+      "attributes": ["metallic color", "used for cooking"]
+    },
+    {
+      "object 17": "utensils",
+      "attributes": ["various types", "stored in drawer"]
+    },
+    {
+      "object 18": "kettle",
+      "attributes": ["white color", "has handle"]
+    },
+    {
+      "object 19": "plastic wrap",
+      "attributes": ["used to cover food", "transparent"]
+    },
+    {
+      "object 20": "baking sheet",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 21": "oven mitts",
+      "attributes": ["used for handling hot items", "red color"]
+    },
+    {
+      "object 22": "baking pan",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 23": "oven rack",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 24": "baking tray",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 25": "baking dish",
+      "attributes": ["ceramic color", "used for baking"]
+    },
+    {
+      "object 26": "baking sheet",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 27": "baking pan",
+      "attributes": ["metallic color", "used for baking"]
+    },
+    {
+      "object 28": "baking tray",
+      "attributes": ["metallic color", "used for baking"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pours",
+      2,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      5,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "places",
+      5,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "drops",
+      6,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "holds",
+      7,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      7,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      8,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      9,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      9,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      10,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      11,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      11,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      12,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      13,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      13,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      14,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      15,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      15,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      16,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      17,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      17,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      18,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      19,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      19,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      20,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      21,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      21,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      22,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      23,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      23,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      24,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      25,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      25,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      26,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "carries",
+      27,
+      [[12, 16], [20, 24]]
+    ],
+    [
+      1,
+      "drops",
+      27,
+      [[28, 32], [40, 44]]
+    ],
+    [
+      1,
+      "places",
+      28,
+      [[12, 16], [20, 24]]
+    ]
+  ]
+}
+```
