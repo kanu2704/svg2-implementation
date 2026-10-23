@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing green shirt", "holding golf club"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing blue shirt", "holding golf club"]
+    },
+    {
+      "object 3": "golf club",
+      "attributes": ["green and white", "being swung"]
+    },
+    {
+      "object 4": "basket",
+      "attributes": ["filled with golf balls", "on the ground"]
+    },
+    {
+      "object 5": "golf ball",
+      "attributes": ["white", "scattered on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "hits",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "hits",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "throws",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "hits",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "hits",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

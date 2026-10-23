@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "canoe",
+      "attributes": ["red", "long"]
+    },
+    {
+      "object 2": "people",
+      "attributes": ["wearing life jackets", "rowing"]
+    },
+    {
+      "object 3": "oars",
+      "attributes": ["black", "held by people"]
+    },
+    {
+      "object 4": "coach",
+      "attributes": ["standing at back", "wearing red vest"]
+    },
+    {
+      "object 5": "pool",
+      "attributes": ["indoor", "water surface visible"]
+    }
+  ],
+  "relationships": [
+    [
+      "people",
+      "rowing",
+      "oars",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "coach",
+      "overseeing",
+      "people",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "canoe",
+      "in water",
+      "pool",
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

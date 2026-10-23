@@ -1,0 +1,330 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing striped shirt", "carrying backpack"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing white top", "carrying black bag"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["black SUV", "parked on street"]
+    },
+    {
+      "object 4": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 5": "building",
+      "attributes": ["multi-story", "brick facade"]
+    },
+    {
+      "object 6": "street",
+      "attributes": ["paved road", "parallel to sidewalk"]
+    },
+    {
+      "object 7": "storefront",
+      "attributes": ["green door", "window display"]
+    },
+    {
+      "object 8": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 9": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 10": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 11": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 12": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 13": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 14": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 15": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 16": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 17": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 18": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 19": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 20": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 21": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 22": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 23": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 24": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 25": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 26": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 27": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 28": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 29": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 30": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 31": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 32": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 33": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 34": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 35": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 36": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    },
+    {
+      "object 37": "handbag",
+      "attributes": ["black, small size", "carried by woman"]
+    },
+    {
+      "object 38": "sidewalk",
+      "attributes": ["concrete surface", "adjacent to street"]
+    },
+    {
+      "object 39": "couple",
+      "attributes": ["walking together", "man carrying camera"]
+    },
+    {
+      "object 40": "camera",
+      "attributes": ["black, compact design", "held by man"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

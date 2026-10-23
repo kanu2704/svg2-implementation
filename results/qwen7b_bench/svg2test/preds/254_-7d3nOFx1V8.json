@@ -1,0 +1,2039 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "window",
+      "attributes": ["cleaning", "outside"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing glasses", "holding bottle", "standing near window"]
+    },
+    {
+      "object 3": "bottle",
+      "attributes": ["spray bottle", "used for cleaning"]
+    },
+    {
+      "object 4": "flower pot",
+      "attributes": ["hanging on wall", "contains flowers"]
+    },
+    {
+      "object 5": "brick wall",
+      "attributes": ["behind man", "part of building"]
+    },
+    {
+      "object 6": "door",
+      "attributes": ["visible in background", "part of building"]
+    },
+    {
+      "object 7": "plant",
+      "attributes": ["in flower pot", "blooming with purple flowers"]
+    },
+    {
+      "object 8": "brick",
+      "attributes": ["on wall", "part of building"]
+    },
+    {
+      "object 9": "hand",
+      "attributes": ["holding bottle", "man's hand"]
+    },
+    {
+      "object 10": "arm",
+      "attributes": ["man's arm", "holding bottle"]
+    },
+    {
+      "object 11": "floor",
+      "attributes": ["outside, near window", "part of building"]
+    },
+    {
+      "object 12": "window sill",
+      "attributes": ["brick", "part of window structure"]
+    },
+    {
+      "object 13": "flower",
+      "attributes": ["purple", "in hanging basket"]
+    },
+    {
+      "object 14": "hanging basket",
+      "attributes": ["contains flowers", "hanging from wall"]
+    },
+    {
+      "object 15": "brick",
+      "attributes": ["on wall", "part of building"]
+    },
+    {
+      "object 16": "man's head",
+      "attributes": ["gray hair", "wearing glasses"]
+    },
+    {
+      "object 17": "man's body",
+      "attributes": ["standing", "wearing dark shirt"]
+    },
+    {
+      "object 18": "man's hand",
+      "attributes": ["holding bottle", "man's hand"]
+    },
+    {
+      "object 19": "man's arm",
+      "attributes": ["man's arm", "holding bottle"]
+    },
+    {
+      "object 20": "man's leg",
+      "attributes": ["standing", "part of man's body"]
+    },
+    {
+      "object 21": "man's foot",
+      "attributes": ["standing", "part of man's body"]
+    },
+    {
+      "object 22": "man's hand",
+      "attributes": ["holding bottle", "man's hand"]
+    },
+    {
+      "object 23": "man's arm",
+      "attributes": ["man's arm", "holding bottle"]
+    },
+    {
+      "object 24": "man's leg",
+      "attributes": ["standing", "part of man's body"]
+    },
+    {
+      "object 25": "man's foot",
+      "attributes": ["standing", "part of man's body"]
+    },
+    {
+      "object 26": "man's hand",
+      "attributes": ["holding bottle", "man's hand"]
+    },
+    {
+      "object 27": "man's arm",
+      "attributes": ["man's arm", "holding bottle"]
+    },
+    {
+      "object 28": "man's head",
+      "attributes": ["gray hair", "wearing glasses"]
+    },
+    {
+      "object 29": "man's body",
+      "attributes": ["standing", "wearing dark shirt"]
+    },
+    {
+      "object 30": "man's hand",
+      "attributes": ["holding bottle", "man's hand"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "is using",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is holding",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is wearing",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      20,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      21,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      22,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      23,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      24,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      25,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      26,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      27,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      28,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      29,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      30,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "is standing near",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+     
