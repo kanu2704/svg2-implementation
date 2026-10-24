@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cat",
+      "attributes": ["black", "fluffy"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting", "wearing red sweater"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["red", "upholstered"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["wooden", "brown"]
+    }
+  ],
+  "relationships": [
+    [
+      "cat",
+      "on top of",
+      "woman",
+      [
+        ["0", "76"]
+      ]
+    ],
+    [
+      "woman",
+      "sitting on",
+      "chair",
+      [
+        ["0", "76"]
+      ]
+    ],
+    [
+      "cat",
+      "jumping off",
+      "chair",
+      [
+        ["20", "28"]
+      ]
+    ],
+    [
+      "cat",
+      "standing on",
+      "table",
+      [
+        ["28", "32"]
+      ]
+    ]
+  ]
+}
+```

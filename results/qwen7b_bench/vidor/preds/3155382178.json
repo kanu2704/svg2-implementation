@@ -1,0 +1,78 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["red", "station wagon"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing black shirt and pants", "walking"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing blue shirt and shorts", "walking"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing blue shirt and shorts", "walking"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing black shirt and pants", "walking"]
+    },
+    {
+      "object 6": "ball",
+      "attributes": ["pink and white", "rolling on grass"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "walks behind",
+      3,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "walks behind",
+      4,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "walks in front of",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "walks in front of",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "rolls on ground",
+      null,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

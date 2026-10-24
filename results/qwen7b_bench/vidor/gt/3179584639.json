@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "3179584639",
+ "fps": 29.97002997002997,
+ "n_frames": 258,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 258,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.608600000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.1081
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.608600000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.871533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.608600000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.608600000000001
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1104/3179584639.mp4",
+ "video": "video.mp4"
+}

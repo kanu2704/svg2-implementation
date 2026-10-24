@@ -1,0 +1,47 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "diver",
+      "attributes": ["wearing scuba gear", "underwater"]
+    },
+    {
+      "object 2": "diver2",
+      "attributes": ["wearing scuba gear", "underwater"]
+    },
+    {
+      "object 3": "diver3",
+      "attributes": ["wearing scuba gear", "underwater"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      1,
+      "swimming with",
+      3,
+      [
+        ["4 - 8 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      2,
+      "swimming with",
+      3,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ]
+  ]
+}
+```

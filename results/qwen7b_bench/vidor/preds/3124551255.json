@@ -1,0 +1,93 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["gray fur", "wearing a red collar"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a Santa outfit", "playing with toys"]
+    },
+    {
+      "object 3": "elmo toy",
+      "attributes": ["red plush toy", "wears a Santa hat"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["pink plush toy", "wears a red and black polka dot dress"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing a red outfit", "sitting on the floor"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "interacts with",
+      "elmo toy",
+      [
+        ["0 - 4 sec", "child plays with elmo toy"],
+        ["8 - 12 sec", "child interacts with elmo toy"],
+        ["16 - 20 sec", "child plays with elmo toy"],
+        ["24 - 28 sec", "child interacts with elmo toy"],
+        ["32 - 36 sec", "child plays with elmo toy"],
+        ["40 - 44 sec", "child interacts with elmo toy"],
+        ["48 - 52 sec", "child plays with elmo toy"],
+        ["56 - 60 sec", "child interacts with elmo toy"],
+        ["60 - 64 sec", "child plays with elmo toy"]
+      ]
+    ],
+    [
+      "child",
+      "interacts with",
+      "toy",
+      [
+        ["40 - 44 sec", "child plays with toy"],
+        ["48 - 52 sec", "child interacts with toy"],
+        ["56 - 60 sec", "child plays with toy"],
+        ["60 - 64 sec", "child interacts with toy"]
+      ]
+    ],
+    [
+      "elmo toy",
+      "interacts with",
+      "child",
+      [
+        ["0 - 4 sec", "elmo toy interacts with child"],
+        ["8 - 12 sec", "elmo toy interacts with child"],
+        ["16 - 20 sec", "elmo toy interacts with child"],
+        ["24 - 28 sec", "elmo toy interacts with child"],
+        ["32 - 36 sec", "elmo toy interacts with child"],
+        ["40 - 44 sec", "elmo toy interacts with child"],
+        ["48 - 52 sec", "elmo toy interacts with child"],
+        ["56 - 60 sec", "elmo toy interacts with child"],
+        ["60 - 64 sec", "elmo toy interacts with child"]
+      ]
+    ],
+    [
+      "child",
+      "interacts with",
+      "person",
+      [
+        ["40 - 44 sec", "child interacts with person"],
+        ["48 - 52 sec", "child interacts with person"],
+        ["56 - 60 sec", "child interacts with person"],
+        ["60 - 64 sec", "child interacts with person"]
+      ]
+    ],
+    [
+      "person",
+      "interacts with",
+      "child",
+      [
+        ["40 - 44 sec", "person interacts with child"],
+        ["48 - 52 sec", "person interacts with child"],
+        ["56 - 60 sec", "person interacts with child"],
+        ["60 - 64 sec", "person interacts with child"]
+      ]
+    ]
+  ]
+}
+```

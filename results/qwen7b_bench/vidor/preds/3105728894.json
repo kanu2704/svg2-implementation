@@ -1,0 +1,556 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "clown",
+      "attributes": ["colorful costume", "wearing a hat"]
+    },
+    {
+      "object 2": "man in camouflage",
+      "attributes": ["wearing camouflage outfit", "holding a stick"]
+    },
+    {
+      "object 3": "woman in purple",
+      "attributes": ["wearing a purple outfit", "carrying a basket"]
+    },
+    {
+      "object 4": "blue bag",
+      "attributes": ["blue color", "on the ground"]
+    },
+    {
+      "object 5": "empty table",
+      "attributes": ["metallic structure", "no items on it"]
+    },
+    {
+      "object 6": "green and red objects",
+      "attributes": ["green and red colors", "on the floor"]
+    },
+    {
+      "object 7": "clown 2",
+      "attributes": ["colorful costume", "wearing a hat"]
+    },
+    {
+      "object 8": "child in red",
+      "attributes": ["wearing a red shirt", "playing with a toy"]
+    },
+    {
+      "object 9": "man in black",
+      "attributes": ["wearing a black outfit", "standing still"]
+    },
+    {
+      "object 10": "person in dark clothing",
+      "attributes": ["dark clothing", "moving around"]
+    },
+    {
+      "object 11": "clown 3",
+      "attributes": ["colorful costume", "wearing a hat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      4,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      7,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      8,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "interacts with",
+      9,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      9,
+      "interacts with",
+      10,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      9,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "interacts with",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

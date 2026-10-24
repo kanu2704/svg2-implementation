@@ -1,0 +1,73 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Baby",
+      "attributes": ["wearing striped outfit", "lying on back"]
+    },
+    {
+      "object 2": "Play Mat",
+      "attributes": ["colorful", "with hanging toys"]
+    },
+    {
+      "object 3": "Toys",
+      "attributes": ["hanging from play mat", "interactive"]
+    },
+    {
+      "object 4": "Baby's Feet",
+      "attributes": ["visible in some frames", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "looking at",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      4,
+      [
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ],
+    [
+      3,
+      "above",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ]
+  ]
+}
+```

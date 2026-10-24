@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing blue pajamas", "playing with a book"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing plaid shirt", "sitting on the floor"]
+    },
+    {
+      "object 3": "book",
+      "attributes": ["blue cover", "being held by child and man"]
+    },
+    {
+      "object 4": "stuffed animal",
+      "attributes": ["white color", "placed on the floor"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["brown surface", "with a white bag on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      2,
+      "sitting next to",
+      1,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      4,
+      "on",
+      5,
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```
