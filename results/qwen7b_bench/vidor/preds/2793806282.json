@@ -1,0 +1,747 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a white swimsuit", "holding a dog"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["wearing a life jacket", "swimming with the woman"]
+    },
+    {
+      "object 3": "tree",
+      "attributes": ["partially submerged in water"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing sunglasses", "wearing a white shirt"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["standing on the shore", "wearing blue jeans and a white shirt"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["standing on the shore", "wearing blue jeans and a white shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "interacts with",
+      "dog",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "swims with",
+      "dog",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "holds",
+      "dog",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "white swimsuit",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "dog",
+      "wears",
+      "life jacket",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "stands",
+      "in water",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "dog",
+      "stands",
+      "in water",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "sunglasses",
+      [
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "white shirt",
+      [
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "black hair",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "necklace",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "earrings",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["

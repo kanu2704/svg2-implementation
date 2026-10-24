@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 2": "child1",
+      "attributes": ["wearing red pants", "sitting"]
+    },
+    {
+      "object 3": "child2",
+      "attributes": ["wearing blue jacket", "sitting"]
+    },
+    {
+      "object 4": "child3",
+      "attributes": ["wearing red shirt", "sitting"]
+    },
+    {
+      "object 5": "man1",
+      "attributes": ["wearing green jacket", "sitting"]
+    },
+    {
+      "object 6": "man2",
+      "attributes": ["wearing brown pants", "standing"]
+    },
+    {
+      "object 7": "child4",
+      "attributes": ["wearing red hoodie", "kneeling"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "stands behind",
+      6,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      2,
+      [
+        [16, 56]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      3,
+      [
+        [16, 56]
+      ]
+    ],
+    [
+      7,
+      "interacts with",
+      4,
+      [
+        [16, 56]
+      ]
+    ]
+  ]
+}
+```

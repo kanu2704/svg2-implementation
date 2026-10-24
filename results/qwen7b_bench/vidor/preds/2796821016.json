@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Child",
+      "attributes": ["playing", "wearing striped shirt"]
+    },
+    {
+      "object 2": "Child 2",
+      "attributes": ["playing", "wearing blue shirt"]
+    },
+    {
+      "object 3": "Ball",
+      "attributes": ["orange and yellow", "rolling on floor"]
+    },
+    {
+      "object 4": "Couch",
+      "attributes": ["beige", "in living room"]
+    },
+    {
+      "object 5": "Television",
+      "attributes": ["white", "on stand"]
+    },
+    {
+      "object 6": "Floor",
+      "attributes": ["rug with pattern", "in living room"]
+    },
+    {
+      "object 7": "Cushion",
+      "attributes": ["beige", "on couch"]
+    },
+    {
+      "object 8": "Remote",
+      "attributes": ["black", "on floor"]
+    }
+  ],
+  "relationships": [
+    [
+      "Child",
+      "chases",
+      "Ball",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

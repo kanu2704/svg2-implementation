@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Baby",
+      "attributes": ["wearing a white outfit", "lying in a crib"]
+    },
+    {
+      "object 2": "Crib",
+      "attributes": ["contains the baby", "has toys attached"]
+    },
+    {
+      "object 3": "Toys",
+      "attributes": ["attached to the crib", "various shapes and colors"]
+    },
+    {
+      "object 4": "Person",
+      "attributes": ["holding the baby", "wearing a white shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      "Person",
+      "holding",
+      "Baby",
+      [
+        ["<0 - 4 sec>", "<84 - 88 sec>"]
+      ]
+    ],
+    [
+      "Person",
+      "wearing",
+      "White shirt",
+      [
+        ["<0 - 4 sec>", "<84 - 88 sec>"]
+      ]
+    ],
+    [
+      "Baby",
+      "lying on",
+      "Crib",
+      [
+        ["<0 - 92 sec>"]
+      ]
+    ],
+    [
+      "Toys",
+      "attached to",
+      "Crib",
+      [
+        ["<0 - 92 sec>"]
+      ]
+    ],
+    [
+      "Person",
+      "holding",
+      "Baby",
+      [
+        ["<0 - 4 sec>", "<84 - 88 sec>"]
+      ]
+    ]
+  ]
+}
+```
