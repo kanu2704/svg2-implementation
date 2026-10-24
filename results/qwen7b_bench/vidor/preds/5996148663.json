@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a hat", "wearing sunglasses", "wearing a backpack"]
+    },
+    {
+      "object 2": "backpack",
+      "attributes": ["large", "filled with items"]
+    },
+    {
+      "object 3": "hat",
+      "attributes": ["camouflage pattern"]
+    },
+    {
+      "object 4": "sunglasses",
+      "attributes": ["dark lenses"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "wears",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      2,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

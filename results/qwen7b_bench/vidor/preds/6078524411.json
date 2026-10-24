@@ -1,0 +1,347 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pacifier", "playing with food"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing blue jacket", "sitting at table"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing striped shirt", "sitting at table"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["wearing black jacket", "standing in background"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing black jacket and cap", "standing in background"]
+    },
+    {
+      "object 6": "woman",
+      "attributes": ["wearing green jacket", "standing in background"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing black jacket and cap", "standing in background"]
+    },
+    {
+      "object 8": "woman",
+      "attributes": ["wearing green jacket", "standing in background"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "playing with",
+      "food",
+      [
+        ["0 - 4 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "child",
+      "near",
+      "adult",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "child",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "child",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "adult",
+      "near",
+      "child",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "child",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "child",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "adult",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "man",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 6

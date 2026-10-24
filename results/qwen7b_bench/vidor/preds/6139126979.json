@@ -1,0 +1,46 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "horse",
+      "attributes": ["white", "galloping"]
+    },
+    {
+      "object 2": "rider",
+      "attributes": ["wearing blue and white outfit", "holding reins"]
+    },
+    {
+      "object 3": "spectator",
+      "attributes": ["standing still", "wearing casual clothes"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "riding",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "watching",
+      1,
+      [
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

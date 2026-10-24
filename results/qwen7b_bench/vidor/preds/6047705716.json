@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman1",
+      "attributes": ["wearing purple hat", "holding sign"]
+    },
+    {
+      "object 2": "woman2",
+      "attributes": ["wearing orange hat", "holding guitar"]
+    },
+    {
+      "object 3": "woman3",
+      "attributes": ["wearing white shirt", "holding guitar"]
+    },
+    {
+      "object 4": "guitar",
+      "attributes": ["orange and black color", "being held by woman2 and woman3"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman2",
+      "playing",
+      "guitar",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "woman3",
+      "playing",
+      "guitar",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "woman1",
+      "standing next to",
+      "woman2",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "woman1",
+      "standing next to",
+      "woman3",
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

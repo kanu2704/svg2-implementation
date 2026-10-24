@@ -1,0 +1,79 @@
+{
+ "dataset": "vidor",
+ "video_id": "5996148663",
+ "fps": 29.97002997002997,
+ "n_frames": 498,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 498,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "backpack"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "backpack"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 3,
+   "pred": "carry",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.616600000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "carry",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.1344666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.616600000000002
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.616600000000002
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1201/5996148663.mp4",
+ "video": "video.mp4"
+}

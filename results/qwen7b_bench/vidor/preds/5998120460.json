@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "toy",
+      "attributes": ["green", "yellow", "purple", "red"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing orange outfit", "wearing bib"]
+    },
+    {
+      "object 3": "pillow",
+      "attributes": ["red"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing tank top", "wearing plaid shorts"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["black leather"]
+    }
+  ],
+  "relationships": [
+    [
+      4,
+      "interacts with",
+      2,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      4,
+      "sits on",
+      5,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      5,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      3,
+      "rests against",
+      5,
+      [
+        [0, 72]
+      ]
+    ]
+  ]
+}
+```

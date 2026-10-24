@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["green", "white roof"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing white shirt and black shorts", "wearing black jacket and white pants"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing white shirt and black shorts", "wearing black jacket and white pants"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing black shirt and white shorts", "wearing red shorts and white shirt"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing white shirt and black shorts", "wearing black jacket and white pants"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing green shirt and red shorts", "wearing red socks and black shoes"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing green shirt and red shorts", "wearing red socks and black shoes"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["wearing black shirt and white shorts", "wearing red shorts and white shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "walks towards",
+      3,
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ],
+    [
+      3,
+      "walks towards",
+      2,
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      4,
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      7,
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      6,
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      4,
+      [
+        ["<28 - 32 sec>", "<28 - 32 sec>"]
+      ]
+    ]
+  ]
+}
+```

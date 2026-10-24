@@ -1,0 +1,81 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a white cap", "wearing a yellow shirt", "wearing blue jeans"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a red and white striped shirt", "wearing a white hat"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing a blue hat", "wearing a white shirt"]
+    },
+    {
+      "object 4": "man 2",
+      "attributes": ["wearing a yellow shirt", "wearing a black cap"]
+    },
+    {
+      "object 5": "child 2",
+      "attributes": ["wearing a green shirt", "wearing a black cap"]
+    },
+    {
+      "object 6": "phone",
+      "attributes": ["being held by the man"]
+    },
+    {
+      "object 7": "phone 2",
+      "attributes": ["being held by the woman"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "holding",
+      "phone",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["28 - 32 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing next to",
+      "man",
+      [
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "phone 2",
+      [
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "man 2",
+      "holding",
+      "phone",
+      [
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "child 2",
+      "standing next to",
+      "man 2",
+      [
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ]
+  ]
+}
+```

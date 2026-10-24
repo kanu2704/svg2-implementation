@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["sleeping", "wearing blue outfit"]
+    },
+    {
+      "object 2": "cradle",
+      "attributes": ["blue", "has hanging toys"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["hanging", "colorful", "attached to cradle"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["hanging", "colorful", "attached to cradle"]
+    },
+    {
+      "object 5": "toy",
+      "attributes": ["hanging", "colorful", "attached to cradle"]
+    },
+    {
+      "object 6": "toy",
+      "attributes": ["hanging", "colorful", "attached to cradle"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "in",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      3,
+      "attached to",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      4,
+      "attached to",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      6,
+      "attached to",
+      2,
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,32 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "plane",
+      "attributes": ["rotates", "moves"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["sits", "plays"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["drives", "stops"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        ["40 - 48 sec", "48 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ]
+  ]
+}
+```

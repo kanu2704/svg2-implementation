@@ -1,0 +1,260 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing green shirt", "bending over"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white shirt", "bending over"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 12": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 13": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    },
+    {
+      "object 14": "man",
+      "attributes": ["wearing green shirt", "standing upright"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "bend",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "bend",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "stand",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      4,
+      "stand",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      5,
+      "stand",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      6,
+      "stand",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      7,
+      "stand",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      8,
+      "stand",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      9,
+      "stand",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      10,
+      "stand",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      11,
+      "stand",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      12,
+      "stand",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      13,
+      "stand",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      14,
+      "stand",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

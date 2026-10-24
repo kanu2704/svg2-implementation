@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "women",
+      "attributes": ["wearing black tank tops", "wearing black leggings"]
+    },
+    {
+      "object 2": "women",
+      "attributes": ["wearing blue tank tops", "wearing blue leggings"]
+    },
+    {
+      "object 3": "women",
+      "attributes": ["wearing red tank tops", "wearing red leggings"]
+    },
+    {
+      "object 4": "women",
+      "attributes": ["wearing white tank tops", "wearing white leggings"]
+    },
+    {
+      "object 5": "camera",
+      "attributes": ["black and silver", "on a tripod"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "performing yoga",
+      2,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      2,
+      "performing yoga",
+      3,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      3,
+      "performing yoga",
+      4,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      1,
+      "in front of",
+      5,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      2,
+      "in front of",
+      5,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      5,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      5,
+      [
+        [0, 48]
+      ]
+    ]
+  ]
+}
+```

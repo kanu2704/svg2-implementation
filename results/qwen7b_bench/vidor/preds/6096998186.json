@@ -1,0 +1,77 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing black jacket", "smiling"]
+    },
+    {
+      "object 2": "woman 2",
+      "attributes": ["wearing green shirt", "holding toy"]
+    },
+    {
+      "object 3": "woman 3",
+      "attributes": ["wearing yellow dress", "smiling"]
+    },
+    {
+      "object 4": "woman 4",
+      "attributes": ["wearing white blouse", "holding toy"]
+    },
+    {
+      "object 5": "woman 5",
+      "attributes": ["wearing black top", "smiling"]
+    },
+    {
+      "object 6": "woman 6",
+      "attributes": ["wearing black top", "clapping"]
+    },
+    {
+      "object 7": "woman 7",
+      "attributes": ["wearing green patterned shirt", "smiling"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "clapping with",
+      "woman 6",
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman 2",
+      "holding",
+      "toy",
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman 4",
+      "holding",
+      "toy",
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman 5",
+      "clapping with",
+      "woman 6",
+      [
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

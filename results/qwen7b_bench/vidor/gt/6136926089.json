@@ -1,0 +1,118 @@
+{
+ "dataset": "vidor",
+ "video_id": "6136926089",
+ "fps": 29.97002997002997,
+ "n_frames": 1522,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1522,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "baby walker"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     0.7674333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     1.4681333333333333,
+     2.2355666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     3.2032000000000003,
+     10.410400000000001
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     6.7067000000000005,
+     9.576233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     2.2355666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     3.2032000000000003,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.0020000000000002,
+     2.2355666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     3.2032000000000003,
+     10.977633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1005/6136926089.mp4",
+ "video": "video.mp4"
+}

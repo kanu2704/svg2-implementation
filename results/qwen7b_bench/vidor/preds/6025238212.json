@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing a black hoodie", "has short brown hair"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing a costume with red and yellow details", "has long blonde hair"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing glasses and a dark jacket", "has gray hair"]
+    },
+    {
+      "object 4": "projector",
+      "attributes": ["projecting images on the wall", "images include 'LONDON 1900'"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "projects image behind",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "projects image behind",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "projects image behind",
+      3,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

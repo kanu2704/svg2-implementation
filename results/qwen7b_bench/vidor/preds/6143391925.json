@@ -1,0 +1,65 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a striped shirt", "holding a baby"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing a pink top and white shorts", "playing with a ball"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["yellow and black patterned", "on the floor"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["gray fabric", "in the background"]
+    },
+    {
+      "object 5": "tv",
+      "attributes": ["on", "displaying text"]
+    },
+    {
+      "object 6": "room",
+      "attributes": ["living room setting", "furniture visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec"],
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      1,
+      "sits on",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      5,
+      "is in",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec"]
+      ]
+    ]
+  ]
+}
+```

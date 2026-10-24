@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fan",
+      "attributes": ["spinning"]
+    },
+    {
+      "object 2": "tv",
+      "attributes": ["displaying video content"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["metal frame", "seated position"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["metal frame", "surrounding chairs"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      3,
+      "around",
+      4,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```
