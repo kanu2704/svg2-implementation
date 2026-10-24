@@ -1,0 +1,276 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["small", "furry", "on leash"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white shirt", "holding dog"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["small", "furry", "on leash"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["small", "furry", "on leash"]
+    },
+    {
+      "object 5": "car",
+      "attributes": ["red", "station wagon"]
+    },
+    {
+      "object 6": "car",
+      "attributes": ["white", "sedan"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing pink shorts", "standing near cars"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing white shirt", "holding leash"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being held by",
+      2,
+      [
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      1,
+      [
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ],
+    [
+      2,
+      "holding leash",
+      8,
+      [
+        [4 - 8 sec],
+        [8 - 12 sec],
+        [12 - 16 sec],
+        [16 - 20 sec],
+        [20 - 24 sec],
+        [24 - 28 sec],
+        [28 - 32 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      8,
+      "holding leash",
+      1,
+      [
+        [4 - 8 sec],
+        [8 - 12 sec],
+        [12 - 16 sec],
+        [16 - 20 sec],
+        [20 - 24 sec],
+        [24 - 28 sec],
+        [28 - 32 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      1,
+      "being walked by",
+      8,
+      [
+        [4 - 8 sec],
+        [8 - 12 sec],
+        [12 - 16 sec],
+        [16 - 20 sec],
+        [20 - 24 sec],
+        [24 - 28 sec],
+        [28 - 32 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      3,
+      "being held by",
+      2,
+      [
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ],
+    [
+      2,
+      "holding leash",
+      4,
+      [
+        [4 - 8 sec],
+        [8 - 12 sec],
+        [12 - 16 sec],
+        [16 - 20 sec],
+        [20 - 24 sec],
+        [24 - 28 sec],
+        [28 - 32 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      4,
+      "being walked by",
+      8,
+      [
+        [4 - 8 sec],
+        [8 - 12 sec],
+        [12 - 16 sec],
+        [16 - 20 sec],
+        [20 - 24 sec],
+        [24 - 28 sec],
+        [28 - 32 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      5,
+      "being parked near",
+      6,
+      [
+        [0 - 4 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      6,
+      "being parked near",
+      5,
+      [
+        [0 - 4 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      7,
+      "standing near",
+      5,
+      [
+        [0 - 4 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      7,
+      "standing near",
+      6,
+      [
+        [0 - 4 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ],
+    [
+      7,
+      "standing near",
+      8,
+      [
+        [0 - 4 sec],
+        [32 - 36 sec],
+        [36 - 40 sec],
+        [40 - 44 sec],
+        [44 - 48 sec],
+        [48 - 52 sec],
+        [52 - 56 sec],
+        [56 - 60 sec]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,78 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A small white dog with a black spot on its back.",
+      "attributes": ["small", "white", "black spot"]
+    },
+    {
+      "dog2": "A larger black dog with a blue leash.",
+      "attributes": ["large", "black", "blue leash"]
+    },
+    {
+      "person": "A person wearing jeans and red shoes.",
+      "attributes": ["wears jeans", "wears red shoes"]
+    },
+    {
+      "hand": "A hand reaching out to pet the dogs.",
+      "attributes": ["reaching out", "petting gesture"]
+    }
+  ],
+  "relationships": [
+    [
+      "dog1",
+      "walks alongside",
+      "dog2",
+      [
+        ["0 - 4 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      "dog2",
+      "walks alongside",
+      "dog1",
+      [
+        ["0 - 4 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      "person",
+      "petting",
+      "dog2",
+      [
+        ["8 - 12 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "40 - 44 sec"],
+        ["48 - 52 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      "person",
+      "petting",
+      "dog1",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      "hand",
+      "petting",
+      "dog2",
+      [
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "hand",
+      "petting",
+      "dog1",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ]
+  ]
+}
+```

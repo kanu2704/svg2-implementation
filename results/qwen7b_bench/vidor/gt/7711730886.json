@@ -1,0 +1,154 @@
+{
+ "dataset": "vidor",
+ "video_id": "7711730886",
+ "fps": 29.97002997002997,
+ "n_frames": 280,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 280,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "car"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "car"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "skateboard"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "car"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 5,
+   "pred": "ride",
+   "obj": 6,
+   "spans": [
+    [
+     4.0040000000000004,
+     5.372033333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "ride",
+   "obj": 6,
+   "spans": [
+    [
+     5.772433333333334,
+     7.073733333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.838166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.838166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     2.5025,
+     4.838166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     2.5025,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "towards",
+   "obj": 3,
+   "spans": [
+    [
+     2.5025,
+     4.6046000000000005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1026/7711730886.mp4",
+ "video": "video.mp4"
+}

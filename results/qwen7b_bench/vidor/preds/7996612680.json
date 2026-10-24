@@ -1,0 +1,26 @@
+```json
+{
+  "objects": [
+    {
+      "dog": "A light-colored dog with a red leash, standing on the pavement."
+    },
+    {
+      "child": "A child wearing a colorful backpack, sitting in a toy car."
+    },
+    {
+      "toy car": "A small, colorful toy car with a child inside."
+    }
+  ],
+  "relationships": [
+    [
+      "dog",
+      "near",
+      "toy car",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

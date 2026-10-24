@@ -1,0 +1,62 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "singer",
+      "attributes": ["wearing a patterned shirt", "holding a microphone", "standing on stage"]
+    },
+    {
+      "object 2": "audience member 1",
+      "attributes": ["sitting in the background", "wearing dark clothing"]
+    },
+    {
+      "object 3": "audience member 2",
+      "attributes": ["sitting in the background", "wearing dark clothing"]
+    },
+    {
+      "object 4": "audience member 3",
+      "attributes": ["sitting in the background", "wearing dark clothing"]
+    },
+    {
+      "object 5": "audience member 4",
+      "attributes": ["sitting in the background", "wearing dark clothing"]
+    },
+    {
+      "object 6": "audience member 5",
+      "attributes": ["sitting in the background", "wearing dark clothing"]
+    }
+  ],
+  "relationships": [
+    [
+      "singer",
+      "performing for",
+      "audience member 1",
+      [[0, 28]]
+    ],
+    [
+      "singer",
+      "performing for",
+      "audience member 2",
+      [[0, 28]]
+    ],
+    [
+      "singer",
+      "performing for",
+      "audience member 3",
+      [[0, 28]]
+    ],
+    [
+      "singer",
+      "performing for",
+      "audience member 4",
+      [[0, 28]]
+    ],
+    [
+      "singer",
+      "performing for",
+      "audience member 5",
+      [[0, 28]]
+    ]
+  ]
+}
+```

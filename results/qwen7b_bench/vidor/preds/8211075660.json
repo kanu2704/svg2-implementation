@@ -1,0 +1,59 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a black jacket", "standing still"]
+    },
+    {
+      "object 2": "van",
+      "attributes": ["white color", "station wagon style", "parked on the side of the road"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["black color", "station wagon style", "parked on the side of the road"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing a dark jacket", "holding a microphone", "standing near the car"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing a dark jacket", "standing still"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing a dark jacket", "holding a microphone", "standing near the car"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      3,
+      [
+        ["0 - 4 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      3,
+      [
+        ["0 - 4 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      4,
+      "holding",
+      6,
+      [
+        ["32 - 36 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"]
+      ]
+    ]
+  ]
+}
+```

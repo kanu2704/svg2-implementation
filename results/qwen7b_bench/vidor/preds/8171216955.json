@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a plaid dress", "has long hair with a blue bow"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing a white shirt", "smiling and laughing"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing a white shirt", "holding a toy piggy bank"]
+    },
+    {
+      "object 4": "toy piggy bank",
+      "attributes": ["brown color", "red ribbon around the neck"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["dark surface", "cards and toys on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "laughing at",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "holding",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "on",
+      5,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

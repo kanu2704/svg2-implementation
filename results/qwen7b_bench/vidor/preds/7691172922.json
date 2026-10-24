@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A brown dog lying on a porch",
+      "attributes": ["brown fur", "lying down"]
+    },
+    {
+      "dog2": "A brown dog standing on a porch",
+      "attributes": ["brown fur", "standing up"]
+    },
+    {
+      "person": "A person wearing red pants and white shoes",
+      "attributes": ["red pants", "white shoes"]
+    },
+    {
+      "porch": "A wooden porch with a railing",
+      "attributes": ["wooden surface", "railing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "approaches",
+      2,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "walks towards",
+      3,
+      [
+        [28, 32]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [44, 48]
+      ]
+    ]
+  ]
+}
+```

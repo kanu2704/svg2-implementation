@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["moving"]
+    },
+    {
+      "object 2": "car",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 3": "skateboarder",
+      "attributes": ["wearing black shirt and shorts", "skateboarding"]
+    },
+    {
+      "object 4": "car",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing black shirt and shorts", "standing"]
+    },
+    {
+      "object 6": "skateboard",
+      "attributes": ["on the ground"]
+    },
+    {
+      "object 7": "building",
+      "attributes": ["brick building in background"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "near",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "standing near",
+      7,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

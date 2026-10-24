@@ -1,0 +1,253 @@
+```json
+{
+  "objects": [
+    {
+      "1": "person",
+      "attributes": ["wearing striped shirt", "standing still"]
+    },
+    {
+      "2": "person",
+      "attributes": ["wearing red shirt", "standing still"]
+    },
+    {
+      "3": "person",
+      "attributes": ["wearing pink shirt", "standing still"]
+    },
+    {
+      "4": "person",
+      "attributes": ["wearing green shirt and black pants", "riding bike"]
+    },
+    {
+      "5": "person",
+      "attributes": ["wearing black shirt and jeans", "riding bike"]
+    },
+    {
+      "6": "person",
+      "attributes": ["wearing black shirt and jeans", "standing still"]
+    },
+    {
+      "7": "person",
+      "attributes": ["wearing white jacket and black pants", "standing still"]
+    },
+    {
+      "8": "person",
+      "attributes": ["wearing black shirt and blue shorts", "skateboarding"]
+    },
+    {
+      "9": "person",
+      "attributes": ["wearing white jacket and black pants", "standing still"]
+    },
+    {
+      "10": "person",
+      "attributes": ["wearing black shirt and blue shorts", "skateboarding"]
+    },
+    {
+      "11": "person",
+      "attributes": ["wearing black shirt and blue shorts", "skateboarding"]
+    },
+    {
+      "12": "person",
+      "attributes": ["wearing black shirt and blue shorts", "skateboarding"]
+    },
+    {
+      "13": "person",
+      "attributes": ["wearing black shirt and blue shorts", "skateboarding"]
+    }
+  ],
+  "relationships": [
+    [
+      4,
+      "rides bike",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24],
+        [36, 40]
+      ]
+    ],
+    [
+      5,
+      "rides bike",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24],
+        [36, 40]
+      ]
+    ],
+    [
+      8,
+      "skateboards",
+      10,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      8,
+      "skateboards",
+      11,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      8,
+      "skateboards",
+      12,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      8,
+      "skateboards",
+      13,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      10,
+      "skateboards",
+      11,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      10,
+      "skateboards",
+      12,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      10,
+      "skateboards",
+      13,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      11,
+      "skateboards",
+      12,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      11,
+      "skateboards",
+      13,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      12,
+      "skateboards",
+      13,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ]
+  ]
+}
+```

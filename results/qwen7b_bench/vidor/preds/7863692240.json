@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing goggles", "holding child"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing yellow swim cap", "wearing yellow floatation device"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing blue wristband", "reaching out hand"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["extended towards child"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "holding",
+      "child",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "person",
+      "reaching out",
+      "hand",
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,49 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing plaid shirt"]
+    },
+    {
+      "object 2": "keyboardist",
+      "attributes": ["playing keyboard", "wearing black shirt"]
+    },
+    {
+      "object 3": "drummer",
+      "attributes": ["playing drums", "wearing hat"]
+    },
+    {
+      "object 4": "bassist",
+      "attributes": ["playing bass guitar", "wearing white shirt"]
+    },
+    {
+      "object 5": "singer",
+      "attributes": ["singing", "wearing white shirt"]
+    },
+    {
+      "object 6": "drummer's stool",
+      "attributes": ["drum set stool", "positioned for drummer"]
+    },
+    {
+      "object 7": "keyboardist's stool",
+      "attributes": ["keyboard stool", "positioned for keyboardist"]
+    },
+    {
+      "object 8": "bass player's stool",
+      "attributes": ["bass guitar stool", "positioned for bassist"]
+    },
+    {
+      "object 9": "microphone stand",
+      "attributes": ["microphone stand", "holding microphone for singer"]
+    }
+  ],
+  "relationships": [
+    [1, "playing with", 2, [[0, 4], [4, 8]]],
+    [2, "playing with", 3, [[0, 4], [4, 8]]],
+    [3, "playing with", 6, [[0, 4], [4, 8]]],
+    [4, "playing with", 7, [[0, 4], [4, 8]]],
+    [5, "singing into", 9, [[0, 4], [4, 8]]]
+  ]
+}
+```

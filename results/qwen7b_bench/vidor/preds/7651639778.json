@@ -1,0 +1,452 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a black jacket", "wearing blue jeans"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a brown jacket", "wearing blue jeans"]
+    },
+    {
+      "object 3": "man3",
+      "attributes": ["wearing a black jacket", "wearing blue jeans"]
+    },
+    {
+      "object 4": "man4",
+      "attributes": ["wearing a black jacket", "wearing blue jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      "man1",
+      "carries on shoulders",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"],
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "carries on shoulders",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "carries on shoulders",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands behind",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands behind",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands behind",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands in front of",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands in front of",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands in front of",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands next to",
+      "man3",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "man4",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "man1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec"]
+      ]
+    ],
+    [
+      "man4",
+      "stands next to",
+      "man2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec",

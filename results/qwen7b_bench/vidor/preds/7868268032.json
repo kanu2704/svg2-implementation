@@ -1,0 +1,38 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "bird",
+      "attributes": ["brown feathers", "yellow beak"]
+    },
+    {
+      "object 2": "table",
+      "attributes": ["wooden surface", "brown color"]
+    },
+    {
+      "object 3": "bench",
+      "attributes": ["wooden structure", "brown color"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on top of",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

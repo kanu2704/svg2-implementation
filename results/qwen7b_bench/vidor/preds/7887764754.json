@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "stool",
+      "attributes": ["orange seat", "white body"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["orange plastic"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["white fur", "black collar"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing pink shirt", "sitting on chair"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

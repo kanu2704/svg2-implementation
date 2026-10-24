@@ -1,0 +1,69 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["sitting", "wearing orange shirt"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["standing on stool", "wearing white onesie"]
+    },
+    {
+      "object 3": "stool",
+      "attributes": ["wooden", "has colorful blocks"]
+    },
+    {
+      "object 4": "tv",
+      "attributes": ["on wall", "playing video"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "looking at",
+      "baby",
+      [
+        ["0 - 4 sec", "0 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["92 - 96 sec", "96 - 100 sec"]
+      ]
+    ],
+    [
+      "baby",
+      "standing on",
+      "stool",
+      [
+        ["0 - 4 sec", "0 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["92 - 96 sec", "96 - 100 sec"]
+      ]
+    ],
+    [
+      "tv",
+      "playing video",
+      "man",
+      [
+        ["0 - 4 sec", "0 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["92 - 96 sec", "96 - 100 sec"]
+      ]
+    ]
+  ]
+}
+```

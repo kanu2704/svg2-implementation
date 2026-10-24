@@ -1,0 +1,183 @@
+{
+ "dataset": "vidor",
+ "video_id": "7691172922",
+ "fps": 29.97002997002997,
+ "n_frames": 1454,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1454,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "bench"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "chair"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     19.8198,
+     19.986633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     41.107733333333336,
+     41.574866666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     19.8198,
+     22.655966666666668
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     39.005633333333336,
+     41.77506666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touch",
+   "obj": 0,
+   "spans": [
+    [
+     38.60523333333333,
+     38.705333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     20.02,
+     22.655966666666668
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     38.338300000000004,
+     38.705333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     39.005633333333336,
+     42.27556666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     40.04,
+     42.27556666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     46.046,
+     48.248200000000004
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     20.02,
+     22.655966666666668
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     38.338300000000004,
+     38.705333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     39.005633333333336,
+     41.00763333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1009/7691172922.mp4",
+ "video": "video.mp4"
+}

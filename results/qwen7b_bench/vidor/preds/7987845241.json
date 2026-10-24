@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["brown and white fur", "ears flopping", "smiling"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a purple shirt", "holding the dog's head"]
+    },
+    {
+      "object 3": "assistant",
+      "attributes": ["wearing a white shirt", "assisting with the dog's head"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["holding the dog's mouth open"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "holding",
+      "dog",
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      "assistant",
+      "assisting",
+      "person",
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      "hand",
+      "holding",
+      "dog",
+      [
+        [0, 52]
+      ]
+    ]
+  ]
+}
+```

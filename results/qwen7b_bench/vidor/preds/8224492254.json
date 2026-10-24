@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding baby's hand"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["biting hand", "wearing yellow shirt"]
+    },
+    {
+      "object 3": "pillow",
+      "attributes": ["green with white flowers"]
+    },
+    {
+      "object 4": "television",
+      "attributes": ["on in background"]
+    },
+    {
+      "object 5": "coffee maker",
+      "attributes": ["silver and black"]
+    },
+    {
+      "object 6": "cup",
+      "attributes": ["blue with polka dots", "on table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 38]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      1,
+      [
+        [0, 38]
+      ]
+    ],
+    [
+      5,
+      "on",
+      6,
+      [
+        [0, 38]
+      ]
+    ]
+  ]
+}
+```

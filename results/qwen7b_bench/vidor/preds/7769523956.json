@@ -1,0 +1,140 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding object", "wearing watch"]
+    },
+    {
+      "object 2": "laptop",
+      "attributes": ["on desk", "black keyboard"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["flat surface", "holds objects"]
+    },
+    {
+      "object 4": "red cup",
+      "attributes": ["contains objects", "red color"]
+    },
+    {
+      "object 5": "cable",
+      "attributes": ["connected to devices", "black color"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["part of seating area", "blue color"]
+    },
+    {
+      "object 7": "book",
+      "attributes": ["green cover", "placed on desk"]
+    },
+    {
+      "object 8": "device",
+      "attributes": ["being held by hand", "electronic device"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "holding",
+      "object 8",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 3",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 4",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 5",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 6",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 1",
+      "near",
+      "object 7",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 2",
+      "on",
+      "object 3",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 4",
+      "on",
+      "object 3",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 5",
+      "connected to",
+      "object 8",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

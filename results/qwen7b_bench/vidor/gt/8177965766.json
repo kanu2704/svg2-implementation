@@ -1,0 +1,342 @@
+{
+ "dataset": "vidor",
+ "video_id": "8177965766",
+ "fps": 24.0,
+ "n_frames": 705,
+ "video_fps": 24.0,
+ "ann_frames": 705,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sofa"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sofa"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "electric fan"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "bench"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     13.041666666666666,
+     16.375
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     27.041666666666668,
+     28.083333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     15.5,
+     16.166666666666668
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     27.041666666666668,
+     28.083333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     24.25
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     26.541666666666668,
+     28.958333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.75
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     8.375,
+     10.333333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     12.0,
+     16.375
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     4.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 4,
+   "spans": [
+    [
+     14.75,
+     28.958333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     12.0,
+     16.375
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     4.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     12.0,
+     16.375
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     12.0,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     14.75,
+     28.958333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     14.75,
+     16.375
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     20.0,
+     21.833333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     12.916666666666666,
+     14.958333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     20.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     26.0,
+     29.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "beneath",
+   "obj": 4,
+   "spans": [
+    [
+     14.75,
+     28.958333333333332
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1007/8177965766.mp4",
+ "video": "video.mp4"
+}

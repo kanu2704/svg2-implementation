@@ -1,0 +1,168 @@
+{
+ "dataset": "vidor",
+ "video_id": "7728559968",
+ "fps": 29.97002997002997,
+ "n_frames": 1480,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1480,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     10.543866666666666,
+     22.1221
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     14.180833333333334,
+     18.685333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     21.087733333333333,
+     22.4224
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     24.9249,
+     32.7327
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "kick",
+   "obj": 0,
+   "spans": [
+    [
+     31.031,
+     33.80043333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     42.67596666666667,
+     43.5435
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     44.944900000000004,
+     45.245200000000004
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "kick",
+   "obj": 1,
+   "spans": [
+    [
+     10.443766666666667,
+     13.646966666666668
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "kick",
+   "obj": 1,
+   "spans": [
+    [
+     15.181833333333334,
+     16.383033333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     39.039
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     38.038000000000004,
+     49.049
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     39.039
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     38.038000000000004,
+     49.049
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1019/7728559968.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a tie-dye dress", "blonde hair"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing a floral dress", "blonde hair"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["red", "in the sandbox"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing a pink shirt and blue pants", "playing with a toy"]
+    },
+    {
+      "object 5": "sandbox",
+      "attributes": ["contains a red ball", "on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "stroller",
+      "attributes": ["black", "has wheels"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing orange shirt", "holding bottle"]
+    },
+    {
+      "object 3": "bottle",
+      "attributes": ["plastic", "with label"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing orange shirt", "holding bottle"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "in",
+      1,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "held by",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "in",
+      2,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

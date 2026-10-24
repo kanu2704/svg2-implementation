@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "7923062808",
+ "fps": 29.97002997002997,
+ "n_frames": 53,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 53,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.7684333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.7684333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.7684333333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1002/7923062808.mp4",
+ "video": "video.mp4"
+}

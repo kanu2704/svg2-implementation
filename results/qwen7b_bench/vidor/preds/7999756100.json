@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing black jacket", "holding camera"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing black jacket", "holding camera"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing black jacket", "holding camera"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing red jacket", "bending over"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing black jacket", "clapping hands"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing brown jacket", "running"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["wearing pink jacket", "bending over"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing blue jacket", "standing"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing black jacket", "carrying backpack"]
+    },
+    {
+      "object 10": "tire",
+      "attributes": ["black tire with red rim"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["wearing brown jacket", "running"]
+    },
+    {
+      "object 12": "man",
+      "attributes": ["wearing blue jacket", "standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [0, 4],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 4],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "bending over",
+      7,
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "clapping hands",
+      5,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      6,
+      "running",
+      11,
+      [
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "standing",
+      12,
+      [
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```
