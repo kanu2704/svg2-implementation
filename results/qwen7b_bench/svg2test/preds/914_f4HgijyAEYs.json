@@ -1,0 +1,69 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing glasses", "black leather jacket"]
+    },
+    {
+      "object 2": "cotton_candy",
+      "attributes": ["large, fluffy"]
+    },
+    {
+      "object 3": "carousel",
+      "attributes": ["colorful lights", "spinning"]
+    },
+    {
+      "object 4": "ground",
+      "attributes": ["part of the amusement park"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["other rides visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "eating",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "spinning",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "standing_on",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "in_front_of",
+      5,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

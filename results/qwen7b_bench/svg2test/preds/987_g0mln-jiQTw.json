@@ -1,0 +1,140 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "waterfall",
+      "attributes": ["flowing", "cascade"]
+    },
+    {
+      "object 2": "trees",
+      "attributes": ["green", "dense"]
+    },
+    {
+      "object 3": "rocks",
+      "attributes": ["brown", "rough"]
+    },
+    {
+      "object 4": "sky",
+      "attributes": ["blue", "cloudy"]
+    },
+    {
+      "object 5": "bird",
+      "attributes": ["flying", "swift"]
+    },
+    {
+      "object 6": "butterfly",
+      "attributes": ["fluttering", "colorful"]
+    },
+    {
+      "object 7": "flower",
+      "attributes": ["red", "blooming"]
+    },
+    {
+      "object 8": "stream",
+      "attributes": ["winding", "clear"]
+    },
+    {
+      "object 9": "mountain",
+      "attributes": ["rocky", "towering"]
+    },
+    {
+      "object 10": "path",
+      "attributes": ["narrow", "dirt"]
+    },
+    {
+      "object 11": "shadow",
+      "attributes": ["dark", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "surrounds",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "supports",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "above",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "flies over",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      6,
+      "flutters near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      7,
+      "blooms on",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      8,
+      "flows into",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      9,
+      "behind",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      10,
+      "leads to",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      11,
+      "casts on",
+      1,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

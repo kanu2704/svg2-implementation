@@ -1,0 +1,54 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a mask", "carrying a bag"]
+    },
+    {
+      "object 2": "artwork",
+      "attributes": ["hanging on the wall", "colorful"]
+    },
+    {
+      "object 3": "hallway",
+      "attributes": ["long corridor", "white walls"]
+    },
+    {
+      "object 4": "ceiling lights",
+      "attributes": ["bright", "fluorescent"]
+    },
+    {
+      "object 5": "floor",
+      "attributes": ["wooden", "polished"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks past",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "observes",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "hangs on",
+      3,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

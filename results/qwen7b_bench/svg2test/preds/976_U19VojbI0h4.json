@@ -1,0 +1,528 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 2": "door",
+      "attributes": ["open"]
+    },
+    {
+      "object 3": "painting",
+      "attributes": ["large", "horizontal"]
+    },
+    {
+      "object 4": "cabinet",
+      "attributes": ["black", "textured"]
+    },
+    {
+      "object 5": "fireplace",
+      "attributes": ["stone", "modern"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["dark", "wooden"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["white"]
+    },
+    {
+      "object 8": "rug",
+      "attributes": ["beige", "soft"]
+    },
+    {
+      "object 9": "door",
+      "attributes": ["closed"]
+    },
+    {
+      "object 10": "lamp",
+      "attributes": ["white shade", "black base"]
+    },
+    {
+      "object 11": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 12": "shelf",
+      "attributes": ["black", "floating"]
+    },
+    {
+      "object 13": "wall",
+      "attributes": ["white"]
+    },
+    {
+      "object 14": "vase",
+      "attributes": ["white", "tall"]
+    },
+    {
+      "object 15": "ceiling",
+      "attributes": ["black", "modern"]
+    },
+    {
+      "object 16": "ceiling light",
+      "attributes": ["yellow", "round"]
+    },
+    {
+      "object 17": "door",
+      "attributes": ["open"]
+    },
+    {
+      "object 18": "door",
+      "attributes": ["closed"]
+    },
+    {
+      "object 19": "coffee table",
+      "attributes": ["dark", "wooden"]
+    },
+    {
+      "object 20": "rug",
+      "attributes": ["beige", "soft"]
+    },
+    {
+      "object 21": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 22": "door",
+      "attributes": ["open"]
+    },
+    {
+      "object 23": "painting",
+      "attributes": ["large", "horizontal"]
+    },
+    {
+      "object 24": "shelf",
+      "attributes": ["black", "floating"]
+    },
+    {
+      "object 25": "lamp",
+      "attributes": ["white shade", "black base"]
+    },
+    {
+      "object 26": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 27": "shelf",
+      "attributes": ["black", "floating"]
+    },
+    {
+      "object 28": "coffee table",
+      "attributes": ["dark", "wooden"]
+    },
+    {
+      "object 29": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 30": "rug",
+      "attributes": ["beige", "soft"]
+    },
+    {
+      "object 31": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 32": "fireplace",
+      "attributes": ["stone", "modern"]
+    },
+    {
+      "object 33": "ceiling",
+      "attributes": ["black", "modern"]
+    },
+    {
+      "object 34": "ceiling light",
+      "attributes": ["yellow", "round"]
+    },
+    {
+      "object 35": "door",
+      "attributes": ["open"]
+    },
+    {
+      "object 36": "painting",
+      "attributes": ["large", "horizontal"]
+    },
+    {
+      "object 37": "shelf",
+      "attributes": ["black", "floating"]
+    },
+    {
+      "object 38": "lamp",
+      "attributes": ["white shade", "black base"]
+    },
+    {
+      "object 39": "plant",
+      "attributes": ["green", "small"]
+    },
+    {
+      "object 40": "vase",
+      "attributes": ["white", "tall"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "in front of",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "above",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "on top of",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "on top of",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "next to",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "behind",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "in front of",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "next to",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "on top of",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "on top of",
+      12,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "next to",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "behind",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "on top of",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "above",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "next to",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "behind",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "next to",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "on top of",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "next to",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "on top of",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "behind",
+      23,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "on top of",
+      24,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "next to",
+      25,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "on top of",
+      26,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "next to",
+      27,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "on top of",
+      28,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "next to",
+      29,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "on top of",
+      30,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "next to",
+      31,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "on top of",
+      32,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "behind",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "above",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "next to",
+      35,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "behind",
+      36,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "on top of",
+      37,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "next to",
+      38,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "on top of",
+      39,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      39,
+      "next to",
+      40,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      40,
+      "on top of",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

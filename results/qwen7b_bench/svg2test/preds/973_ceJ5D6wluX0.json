@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "train",
+      "attributes": ["emitting smoke", "moving forward"]
+    },
+    {
+      "object 2": "bridge",
+      "attributes": ["stone structure", "arched design"]
+    },
+    {
+      "object 3": "landscape",
+      "attributes": ["greenery", "rolling hills"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "traversing",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "moving towards",
+      3,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

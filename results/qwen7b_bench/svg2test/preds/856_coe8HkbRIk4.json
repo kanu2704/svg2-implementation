@@ -1,0 +1,396 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "golf club",
+      "attributes": ["metallic", "black grip"]
+    },
+    {
+      "object 2": "golf ball",
+      "attributes": ["white", "round"]
+    },
+    {
+      "object 3": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 5": "hat",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 6": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 8": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 10": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 12": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 13": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 14": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 15": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 16": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 17": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 18": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 19": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 20": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 21": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 22": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 23": "man",
+      "attributes": ["wearing black jacket", "blue pants", "wearing gloves"]
+    },
+    {
+      "object 24": "golf course",
+      "attributes": ["green grass", "trees in the background"]
+    },
+    {
+      "object 25": "golf club",
+      "attributes": ["metallic", "black grip"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "in hand",
+      "object 4",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "on ground",
+      "object 3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "standing",
+      "object 3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 5",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 21",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 20",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 17",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 13",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 15",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 19",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 11",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 18",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 16",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 14",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 12",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 10",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 9",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 7",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 8",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 6",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 22",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 23",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 24",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "wearing",
+      "object 25",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"]
+      ]
+    ]
+  ]
+}
+```
