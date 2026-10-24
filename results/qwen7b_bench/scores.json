@@ -20,5 +20,27 @@
    "unjudged": 899,
    "answer_tokens": 2490
   }
+ },
+ "svg2test": {
+  "traser": {
+   "videos": 100,
+   "json_ok": 96,
+   "triplet": 21.2,
+   "relation": 27.1,
+   "object": 58.4,
+   "relation_any_time": 29.9,
+   "unjudged": 0,
+   "answer_tokens": 2693
+  },
+  "qwen7b": {
+   "videos": 100,
+   "json_ok": 86,
+   "triplet": 0.2,
+   "relation": 0.9,
+   "object": 7.1,
+   "relation_any_time": 1.1,
+   "unjudged": 1998,
+   "answer_tokens": 2500
+  }
  }
 }

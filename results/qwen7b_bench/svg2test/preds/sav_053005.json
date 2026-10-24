@@ -1,0 +1,1522 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a black dress with white polka dots", "holding a red clutch", "long dark hair"]
+    },
+    {
+      "object 2": "floor",
+      "attributes": ["carpeted with a wavy pattern"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["white leather", "placed against the wall"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["brown leather", "positioned near the wall"]
+    },
+    {
+      "object 5": "window",
+      "attributes": ["large, covered by curtains"]
+    },
+    {
+      "object 6": "chandelier",
+      "attributes": ["ornate, hanging from the ceiling"]
+    },
+    {
+      "object 7": "lamp",
+      "attributes": ["modern design, placed on a table"]
+    },
+    {
+      "object 8": "door",
+      "attributes": ["visible in the background, possibly leading to another room"]
+    },
+    {
+      "object 9": "pillow",
+      "attributes": ["placed on the couch, adding comfort and style"]
+    },
+    {
+      "object 10": "wall",
+      "attributes": ["neutral-colored, providing a backdrop for the scene"]
+    },
+    {
+      "object 11": "curtain",
+      "attributes": ["long, covering the window completely"]
+    },
+    {
+      "object 12": "hotel lobby",
+      "attributes": ["well-lit, spacious area with modern decor"]
+    },
+    {
+      "object 13": "hotel reception desk",
+      "attributes": ["visible in the background, suggesting a hotel setting"]
+    },
+    {
+      "object 14": "hotel sign",
+      "attributes": ["illuminated, indicating the name of the hotel"]
+    },
+    {
+      "object 15": "hotel entrance",
+      "attributes": ["large glass doors, inviting guests into the hotel"]
+    },
+    {
+      "object 16": "hotel elevator",
+      "attributes": ["visible through the glass doors, suggesting a modern hotel"]
+    },
+    {
+      "object 17": "hotel lobby carpet",
+      "attributes": ["patterned, adding to the aesthetic of the hotel lobby"]
+    },
+    {
+      "object 18": "hotel seating area",
+      "attributes": ["comfortable chairs and couches, designed for relaxation"]
+    },
+    {
+      "object 19": "hotel receptionist",
+      "attributes": ["standing behind the desk, ready to assist guests"]
+    },
+    {
+      "object 20": "hotel guest",
+      "attributes": ["walking towards the reception desk, possibly checking in"]
+    },
+    {
+      "object 21": "hotel security guard",
+      "attributes": ["standing near the entrance, ensuring safety"]
+    },
+    {
+      "object 22": "hotel staff",
+      "attributes": ["attending to guests, maintaining the hotel's operations"]
+    },
+    {
+      "object 23": "hotel decoration",
+      "attributes": ["chandeliers and modern furniture, creating an elegant atmosphere"]
+    },
+    {
+      "object 24": "hotel lighting",
+      "attributes": ["bright lights illuminating the entire space"]
+    },
+    {
+      "object 25": "hotel reception desk chair",
+      "attributes": ["white leather, positioned at the reception desk"]
+    },
+    {
+      "object 26": "hotel reception desk table",
+      "attributes": ["wooden, supporting the receptionist's activities"]
+    },
+    {
+      "object 27": "hotel reception desk lamp",
+      "attributes": ["modern design, providing light for the receptionist"]
+    },
+    {
+      "object 28": "hotel reception desk phone",
+      "attributes": ["visible on the desk, used for communication"]
+    },
+    {
+      "object 29": "hotel reception desk computer",
+      "attributes": ["used by the receptionist for hotel management tasks"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "walks",
+      "hotel lobby",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "hotel lobby",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "interacts with",
+      "hotel reception desk",
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "takes picture",
+      "hotel lobby",
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "moves",
+      "hotel lobby",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "faces",
+      "hotel reception desk",
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "holds",
+      "red clutch",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "black dress with white polka dots",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "has",
+      "long dark hair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "high heels",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "stands",
+      "in front of",
+      "hotel reception desk",
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "faces",
+      "hotel receptionist",
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "interacts with",
+      "hotel receptionist",
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel chandelier",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel window",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel door",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel elevator",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk table",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk lamp",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk phone",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk computer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel receptionist",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel security guard",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel staff",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel decoration",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "woman",
+      "poses",
+      "in front of",
+      "hotel reception desk chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+   

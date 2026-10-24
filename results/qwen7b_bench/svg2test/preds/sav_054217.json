@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a dress", "jumping on trampoline"]
+    },
+    {
+      "object 2": "trampoline",
+      "attributes": ["blue surface", "enclosed by net"]
+    },
+    {
+      "object 3": "net",
+      "attributes": ["protects the trampoline area"]
+    }
+  ],
+  "relationships": [
+    [
+      "girl",
+      "on top of",
+      "trampoline",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "girl",
+      "near",
+      "net",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

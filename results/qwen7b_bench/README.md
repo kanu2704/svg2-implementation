@@ -4,12 +4,12 @@ TRASER's pipeline (same frames, same masks, same token selection and trajectory-
 
 Lenient semantic criterion, temporal IoU > 0.5, scored by `tools/bench_eval.py` exactly as TRASER's answers; TRASER's numbers are on the same videos as Qwen's.
 
-| | Triplet pvsg | Relation pvsg | Object pvsg |
-|---|---|---|---|
-| TRASER, paper | 16.1 | 16.9 | 72.7 |
-| Qwen2.5-VL-3B (no fine-tuning), paper | 0.1 | 0.1 | 10.4 |
-| **TRASER (released weights), ours** | 10.3 | 13.9 | 62.2 |
-| **Qwen2.5-VL-7B-Instruct in TRASER's pipeline (not fine-tuned), ours** | 0.0 | 0.0 | 7.6 |
+| | Triplet pvsg | Triplet svg2test | Relation pvsg | Relation svg2test | Object pvsg | Object svg2test |
+|---|---|---|---|---|---|---|
+| TRASER, paper | 16.1 | 16.7 | 16.9 | 18.7 | 72.7 | 79.0 |
+| Qwen2.5-VL-3B (no fine-tuning), paper | 0.1 | 0.2 | 0.1 | 0.3 | 10.4 | 24.2 |
+| **TRASER (released weights), ours** | 10.3 | 21.2 | 13.9 | 27.1 | 62.2 | 58.4 |
+| **Qwen2.5-VL-7B-Instruct in TRASER's pipeline (not fine-tuned), ours** | 0.0 | 0.2 | 0.0 | 0.9 | 7.6 | 7.1 |
 
 ## Coverage
 
@@ -17,5 +17,7 @@ Lenient semantic criterion, temporal IoU > 0.5, scored by `tools/bench_eval.py` 
 |---|---|---|---|---|---|---|
 | pvsg | TRASER (released weights), ours | 62 | 51 | 2769 | 27.7 | 0 |
 | pvsg | Qwen2.5-VL-7B-Instruct in TRASER's pipeline (not fine-tuned), ours | 62 | 42 | 2490 | 0.4 | 899 |
+| svg2test | TRASER (released weights), ours | 100 | 96 | 2693 | 29.9 | 0 |
+| svg2test | Qwen2.5-VL-7B-Instruct in TRASER's pipeline (not fine-tuned), ours | 100 | 86 | 2500 | 1.1 | 1998 |
 
 *Unjudged words count as wrong (`--ask` or another judge fills them in).* Judge: 5729 words Kimi K3 never judged were judged by claude (NVIDIA retired Kimi K3 on 15 Oct 2026). Check on words Kimi K3 judged: of 100 it accepted, claude also accepts 79; of 100 it rejected, claude also rejects 98.
