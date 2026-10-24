@@ -1,0 +1,51 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boat",
+      "attributes": ["sailboat", "white"]
+    },
+    {
+      "object 2": "boat2",
+      "attributes": ["sailboat", "white"]
+    },
+    {
+      "object 3": "boat3",
+      "attributes": ["sailboat", "white"]
+    },
+    {
+      "object 4": "boat4",
+      "attributes": ["sailboat", "white"]
+    }
+  ],
+  "relationships": [
+    [
+      "boat",
+      "in front of",
+      "boat2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "boat2",
+      "in front of",
+      "boat3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "boat3",
+      "in front of",
+      "boat4",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

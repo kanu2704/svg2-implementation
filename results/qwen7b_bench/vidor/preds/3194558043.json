@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dancer",
+      "attributes": ["wearing red shirt", "performing dance moves"]
+    },
+    {
+      "object 2": "band member",
+      "attributes": ["playing guitar", "singing"]
+    },
+    {
+      "object 3": "audience",
+      "attributes": ["standing and watching", "clapping"]
+    },
+    {
+      "object 4": "guitar",
+      "attributes": ["electric guitar", "played by band member"]
+    },
+    {
+      "object 5": "microphone",
+      "attributes": ["held by band member", "used for singing"]
+    },
+    {
+      "object 6": "stage",
+      "attributes": ["platform for performance", "contains band members"]
+    },
+    {
+      "object 7": "audience member",
+      "attributes": ["part of audience", "clapping"]
+    },
+    {
+      "object 8": "audience member",
+      "attributes": ["part of audience", "clapping"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "dancing with",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "playing music for",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "watching",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "clapping",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "clapping",
+      8,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

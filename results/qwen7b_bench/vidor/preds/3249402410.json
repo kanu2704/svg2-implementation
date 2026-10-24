@@ -1,0 +1,92 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing black hoodie", "holding pizza"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing black shirt", "holding pizza"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing red shirt", "standing behind counter"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing pink shirt", "standing in front of camera"]
+    },
+    {
+      "object 5": "pizza",
+      "attributes": ["uncooked", "on tray"]
+    },
+    {
+      "object 6": "pizza",
+      "attributes": ["uncooked", "on tray"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "placing",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "placing",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "reaching for",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "reaching for",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observing",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observing",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

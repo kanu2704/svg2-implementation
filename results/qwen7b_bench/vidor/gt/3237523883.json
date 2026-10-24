@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "3237523883",
+ "fps": 25.0,
+ "n_frames": 650,
+ "video_fps": 25.0,
+ "ann_frames": 650,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "duck"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "duck"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "chase",
+   "obj": 0,
+   "spans": [
+    [
+     23.4,
+     26.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     23.4,
+     25.96
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     23.4,
+     25.96
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0054/3237523883.mp4",
+ "video": "video.mp4"
+}

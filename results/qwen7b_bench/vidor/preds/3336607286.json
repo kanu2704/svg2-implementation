@@ -1,0 +1,25 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a suit", "performing a magic trick"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a black dress", "holding a drink"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "performing for",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec", "16 - 20 sec", "24 - 28 sec", "32 - 36 sec", "40 - 44 sec"],
+        ["4 - 8 sec", "12 - 16 sec", "20 - 24 sec", "28 - 32 sec", "36 - 40 sec", "44 - 48 sec"]
+      ]
+    ]
+  ]
+}
+```

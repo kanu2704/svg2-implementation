@@ -1,0 +1,777 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["sitting", "playing games"]
+    },
+    {
+      "object 2": "phones",
+      "attributes": ["being held", "used for gaming"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["white", "holding snacks and drinks"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["yellow", "people are sitting on it"]
+    },
+    {
+      "object 5": "laptop",
+      "attributes": ["silver", "used by one person"]
+    },
+    {
+      "object 6": "television",
+      "attributes": ["on", "showing a game or movie"]
+    },
+    {
+      "object 7": "shelves",
+      "attributes": ["wooden", "holding various items"]
+    },
+    {
+      "object 8": "floor",
+      "attributes": ["visible", "people are sitting on it"]
+    },
+    {
+      "object 9": "snacks",
+      "attributes": ["on table", "being eaten"]
+    },
+    {
+      "object 10": "drinks",
+      "attributes": ["on table", "being consumed"]
+    },
+    {
+      "object 11": "remote",
+      "attributes": ["being used", "to control television"]
+    },
+    {
+      "object 12": "gaming console",
+      "attributes": ["being used", "for playing games"]
+    },
+    {
+      "object 13": "controller",
+      "attributes": ["being used", "for gaming"]
+    },
+    {
+      "object 14": "game",
+      "attributes": ["being played", "on television"]
+    },
+    {
+      "object 15": "lens",
+      "attributes": ["on camera", "capturing the scene"]
+    },
+    {
+      "object 16": "screen",
+      "attributes": ["on laptop", "used for gaming"]
+    },
+    {
+      "object 17": "chair",
+      "attributes": ["brown", "people are sitting on it"]
+    },
+    {
+      "object 18": "couch",
+      "attributes": ["yellow", "people are sitting on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "watching",
+      6,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "using",
+      16,
+      [
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      4,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      17,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sitting on",
+      18,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec

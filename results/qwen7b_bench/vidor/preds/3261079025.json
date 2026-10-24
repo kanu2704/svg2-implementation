@@ -1,0 +1,135 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a plaid shirt", "wearing green pants", "wearing sandals"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a gray jacket", "wearing dark pants", "wearing sneakers"]
+    },
+    {
+      "object 3": "model_airplane",
+      "attributes": ["yellow and red model airplane", "on a wooden surface"]
+    }
+  ],
+  "relationships": [
+    [
+      "man1",
+      "holding",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man2",
+      "standing near",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man1",
+      "standing near",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man2",
+      "bending over",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man1",
+      "standing still",
+      "man2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man2",
+      "standing still",
+      "man1",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man1",
+      "standing still",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "man2",
+      "standing still",
+      "model_airplane",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "model_airplane",
+      "on the ground",
+      "wooden surface",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "model_airplane",
+      "on the ground",
+      "man2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "model_airplane",
+      "on the ground",
+      "man1",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "model_airplane",
+      "on the ground",
+      "man2",
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      "model_airplane",
+      "on the ground",
+      "man1",
+      [
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

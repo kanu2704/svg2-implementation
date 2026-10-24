@@ -1,0 +1,98 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dancer",
+      "attributes": ["red shirt", "jeans", "white cap"]
+    },
+    {
+      "object 2": "group",
+      "attributes": ["red shirts", "jeans"]
+    },
+    {
+      "object 3": "leader",
+      "attributes": ["red shirt", "jeans", "white cap"]
+    },
+    {
+      "object 4": "children",
+      "attributes": ["red shirts", "jeans"]
+    },
+    {
+      "object 5": "performers",
+      "attributes": ["red shirts", "jeans"]
+    },
+    {
+      "object 6": "team",
+      "attributes": ["red shirts", "jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      "dancer",
+      "leads",
+      "group",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      "leader",
+      "coordinates",
+      "group",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      "performers",
+      "aligns with",
+      "team",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ]
+  ]
+}
+```

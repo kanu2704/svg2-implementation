@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["playing guitar", "singing"]
+    },
+    {
+      "object 2": "guitar",
+      "attributes": ["being played by woman"]
+    },
+    {
+      "object 3": "microphone",
+      "attributes": ["held by woman", "used for singing"]
+    },
+    {
+      "object 4": "projector screen",
+      "attributes": ["displaying content in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "playing",
+      "guitar",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "microphone",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "projector screen",
+      "in the background",
+      "woman",
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

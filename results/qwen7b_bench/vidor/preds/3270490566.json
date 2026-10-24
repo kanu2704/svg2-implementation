@@ -1,0 +1,212 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing white shirt"]
+    },
+    {
+      "object 2": "drummer",
+      "attributes": ["playing drums", "wearing white shirt"]
+    },
+    {
+      "object 3": "singer",
+      "attributes": ["singing", "wearing white shirt"]
+    },
+    {
+      "object 4": "violinist",
+      "attributes": ["playing violin", "wearing white shirt"]
+    },
+    {
+      "object 5": "ukulele player",
+      "attributes": ["playing ukulele", "wearing white shirt"]
+    },
+    {
+      "object 6": "camera",
+      "attributes": ["red tablecloth", "black chair"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing with",
+      "ukulele player",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing with",
+      "ukulele player",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "violinist",
+      "playing with",
+      "ukulele player",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "singer",
+      "playing with",
+      "ukulele player",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "camera",
+      "fixed on",
+      "guitarist",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "camera",
+      "fixed on",
+      "drummer",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "camera",
+      "fixed on",
+      "singer",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "camera",
+      "fixed on",
+      "violinist",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "camera",
+      "fixed on",
+      "ukulele player",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "taxi",
+      "attributes": ["yellow and black", "stationary"]
+    },
+    {
+      "object 2": "airplane",
+      "attributes": ["white", "on runway"]
+    },
+    {
+      "object 3": "truck",
+      "attributes": ["black", "on runway"]
+    },
+    {
+      "object 4": "forklift",
+      "attributes": ["green", "on truck"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing yellow vest", "standing near airplane"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing yellow vest", "standing near airplane"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing yellow vest", "standing near airplane"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 2",
+      "is next to",
+      "object 3",
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      "object 4",
+      "is on",
+      "object 1",
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      "object 5",
+      "is standing near",
+      "object 2",
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      "object 6",
+      "is standing near",
+      "object 2",
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      "object 7",
+      "is standing near",
+      "object 2",
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```
