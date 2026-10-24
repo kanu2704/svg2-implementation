@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["riding a tricycle", "wearing a blue shirt and pink pants"]
+    },
+    {
+      "object 2": "tricycle",
+      "attributes": ["red with training wheels", "being ridden by the girl"]
+    },
+    {
+      "object 3": "teddy bear",
+      "attributes": ["attached to the tricycle", "brown in color"]
+    },
+    {
+      "object 4": "bicycle",
+      "attributes": ["orange and white", "parked in the background"]
+    },
+    {
+      "object 5": "bicycle",
+      "attributes": ["blue and white", "parked in the background"]
+    },
+    {
+      "object 6": "bicycle",
+      "attributes": ["red and white", "parked in the background"]
+    },
+    {
+      "object 7": "bench",
+      "attributes": ["green, visible behind the bicycles"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding",
+      2,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      2,
+      "has",
+      3,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      4,
+      "parked near",
+      5,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      4,
+      "parked near",
+      6,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      5,
+      "parked near",
+      6,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      6,
+      "parked near",
+      7,
+      [
+        [0, 40]
+      ]
+    ]
+  ]
+}
+```

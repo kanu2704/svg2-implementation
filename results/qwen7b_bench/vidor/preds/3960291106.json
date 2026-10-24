@@ -1,0 +1,168 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["laughing", "wearing white shirt"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["laughing", "wearing black dress"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["laughing", "wearing suit"]
+    },
+    {
+      "object 4": "man 3",
+      "attributes": ["laughing", "wearing suit"]
+    },
+    {
+      "object 5": "camera person",
+      "attributes": ["holding camera", "filming"]
+    },
+    {
+      "object 6": "wine glass",
+      "attributes": ["on table", "filled with wine"]
+    },
+    {
+      "object 7": "man 4",
+      "attributes": ["laughing", "wearing suit"]
+    },
+    {
+      "object 8": "man 5",
+      "attributes": ["laughing", "wearing suit"]
+    },
+    {
+      "object 9": "bottle",
+      "attributes": ["on table", "contains wine"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "clapping",
+      2,
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      2,
+      "clapping",
+      1,
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      1,
+      "laughing",
+      3,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      2,
+      "laughing",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      3,
+      "laughing",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      4,
+      "laughing",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      5,
+      "filming",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      6,
+      "on table",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      7,
+      "laughing",
+      3,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      8,
+      "laughing",
+      4,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ],
+    [
+      9,
+      "on table",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"]
+      ]
+    ]
+  ]
+}
+```

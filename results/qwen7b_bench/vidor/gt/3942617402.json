@@ -1,0 +1,140 @@
+{
+ "dataset": "vidor",
+ "video_id": "3942617402",
+ "fps": 23.976023976023978,
+ "n_frames": 738,
+ "video_fps": 23.976023976023978,
+ "ann_frames": 738,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "train"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "train"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.75575
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     9.592916666666666,
+     11.052708333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     11.970291666666666,
+     30.780749999999998
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.75575
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     12.011999999999999,
+     30.780749999999998
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.75575
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     12.011999999999999,
+     30.780749999999998
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     14.055708333333332,
+     30.739041666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     20.02,
+     30.780749999999998
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     14.055708333333332,
+     26.985291666666665
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1005/3942617402.mp4",
+ "video": "video.mp4"
+}

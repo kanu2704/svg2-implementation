@@ -1,0 +1,37 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing blue shirt", "standing"]
+    },
+    {
+      "object 2": "train",
+      "attributes": ["black color", "emitting smoke"]
+    },
+    {
+      "object 3": "wagon",
+      "attributes": ["brown color", "stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing near",
+      2,
+      [
+        ["<4 - 8 sec>", "<8 - 12 sec>"],
+        ["<16 - 20 sec>"]
+      ]
+    ],
+    [
+      2,
+      "moving past",
+      3,
+      [
+        ["<12 - 16 sec>", "<20 - 24 sec>"]
+      ]
+    ]
+  ]
+}
+```

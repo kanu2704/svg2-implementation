@@ -1,0 +1,117 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing red shirt", "standing still"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing yellow shirt", "playing with ball"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown color", "in the background"]
+    },
+    {
+      "object 4": "balloons",
+      "attributes": ["blue and yellow colors", "floating in air"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["yellow color", "held by child"]
+    },
+    {
+      "object 6": "walker",
+      "attributes": ["green and blue colors", "on the floor"]
+    },
+    {
+      "object 7": "toys",
+      "attributes": ["colorful", "on the floor"]
+    },
+    {
+      "object 8": "child's hand",
+      "attributes": ["holding ball", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "holds",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "walks past",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "throws",
+      5,
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "reaches for",
+      8,
+      [
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

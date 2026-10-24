@@ -1,0 +1,103 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fencer1",
+      "attributes": ["wearing fencing gear", "moving"]
+    },
+    {
+      "object 2": "fencer2",
+      "attributes": ["wearing fencing gear", "moving"]
+    },
+    {
+      "object 3": "observer1",
+      "attributes": ["standing still", "wearing casual clothes"]
+    },
+    {
+      "object 4": "observer2",
+      "attributes": ["standing still", "wearing casual clothes"]
+    },
+    {
+      "object 5": "observer3",
+      "attributes": ["sitting on a chair", "wearing casual clothes"]
+    },
+    {
+      "object 6": "observer4",
+      "attributes": ["sitting on a chair", "wearing casual clothes"]
+    },
+    {
+      "object 7": "observer5",
+      "attributes": ["sitting on a chair", "wearing casual clothes"]
+    },
+    {
+      "object 8": "observer6",
+      "attributes": ["sitting on a chair", "wearing casual clothes"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "fencing with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "sitting behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "sitting behind",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "sitting behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "sitting behind",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

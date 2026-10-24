@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 2": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 3": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 4": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 5": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 6": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 7": "band",
+      "attributes": ["playing instruments", "standing in a line"]
+    },
+    {
+      "object 8": "child",
+      "attributes": ["waving hand", "standing near the band"]
+    },
+    {
+      "object 9": "child",
+      "attributes": ["wearing pink shirt", "sitting on the ground"]
+    },
+    {
+      "object 10": "child",
+      "attributes": ["wearing blue shirt", "sitting on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      8,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      9,
+      "playing with",
+      10,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ]
+  ]
+}
+```

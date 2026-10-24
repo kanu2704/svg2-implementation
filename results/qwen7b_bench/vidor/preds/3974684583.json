@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a yellow safety vest", "black and white patterned skirt", "black boots"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a yellow safety vest", "plaid shirt", "blue jeans", "brown shoes"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "standing next to",
+      "object 2",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "object 1",
+      "turning towards",
+      "object 2",
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      "object 2",
+      "smiling at",
+      "object 1",
+      [
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,125 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing orange vest", "carrying backpack"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing orange vest", "carrying backpack"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing orange vest", "carrying backpack"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing blue shirt", "carrying backpack"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing orange vest", "carrying backpack"]
+    },
+    {
+      "object 6": "car",
+      "attributes": ["black and white", "number 28 on side"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["sitting on ground", "wearing hat"]
+    },
+    {
+      "object 8": "people",
+      "attributes": ["standing near fence", "watching event"]
+    },
+    {
+      "object 9": "people",
+      "attributes": ["standing near fence", "watching event"]
+    },
+    {
+      "object 10": "people",
+      "attributes": ["standing near fence", "watching event"]
+    },
+    {
+      "object 11": "people",
+      "attributes": ["standing near fence", "watching event"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "talks to",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      4,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "drives past",
+      1,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "sits near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      10,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      11,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

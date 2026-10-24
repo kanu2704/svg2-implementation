@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "table",
+      "attributes": ["interactive display", "touch-sensitive"]
+    },
+    {
+      "object 2": "hand1",
+      "attributes": ["touching table", "moving"]
+    },
+    {
+      "object 3": "hand2",
+      "attributes": ["touching table", "moving"]
+    },
+    {
+      "object 4": "hand3",
+      "attributes": ["touching table", "moving"]
+    },
+    {
+      "object 5": "hand4",
+      "attributes": ["touching table", "moving"]
+    },
+    {
+      "object 6": "hand5",
+      "attributes": ["touching table", "moving"]
+    },
+    {
+      "object 7": "person1",
+      "attributes": ["standing near table", "wearing colorful shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "touching",
+      1,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      3,
+      "touching",
+      1,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      4,
+      "touching",
+      1,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      5,
+      "touching",
+      1,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      6,
+      "touching",
+      1,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      7,
+      "near",
+      1,
+      [
+        [0, 32]
+      ]
+    ]
+  ]
+}
+```

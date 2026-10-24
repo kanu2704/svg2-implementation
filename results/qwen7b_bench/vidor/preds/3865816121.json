@@ -1,0 +1,45 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a white shirt", "standing near the cart"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a green shirt", "playing with a toy"]
+    },
+    {
+      "object 3": "cart",
+      "attributes": ["being pulled by the man", "stationary in the first 4 seconds"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["green in color", "held by the child"]
+    },
+    {
+      "object 5": "motorcycle",
+      "attributes": ["pulling the cart", "appears in the last 4 seconds"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pulls",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      4,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

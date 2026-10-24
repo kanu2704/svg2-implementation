@@ -1,0 +1,168 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person1",
+      "attributes": ["wearing white shirt and black pants", "holding a sword"]
+    },
+    {
+      "object 2": "person2",
+      "attributes": ["wearing white shirt and black pants", "holding a sword"]
+    },
+    {
+      "object 3": "person3",
+      "attributes": ["wearing white shirt and black pants", "holding a sword"]
+    },
+    {
+      "object 4": "person4",
+      "attributes": ["wearing white shirt and black pants", "holding a sword"]
+    },
+    {
+      "object 5": "fan",
+      "attributes": ["attached to the wall", "spinning"]
+    }
+  ],
+  "relationships": [
+    [
+      "person1",
+      "is facing",
+      "person2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person2",
+      "is facing",
+      "person1",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person1",
+      "is facing",
+      "person3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person3",
+      "is facing",
+      "person1",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person1",
+      "is facing",
+      "person4",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person4",
+      "is facing",
+      "person1",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person2",
+      "is facing",
+      "person3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person3",
+      "is facing",
+      "person2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person2",
+      "is facing",
+      "person4",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person4",
+      "is facing",
+      "person2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person3",
+      "is facing",
+      "person4",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person4",
+      "is facing",
+      "person3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "person1",
+      "is standing near",
+      "fan",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "person2",
+      "is standing near",
+      "fan",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "person3",
+      "is standing near",
+      "fan",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "person4",
+      "is standing near",
+      "fan",
+      [
+        [0, 9]
+      ]
+    ]
+  ]
+}
+```

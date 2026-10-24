@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "swimmer",
+      "attributes": ["wearing yellow cap", "wearing black swimsuit"]
+    },
+    {
+      "object 2": "child 1",
+      "attributes": ["wearing pink swim cap", "wearing red swimsuit"]
+    },
+    {
+      "object 3": "child 2",
+      "attributes": ["wearing blue swim cap", "wearing black swimsuit"]
+    },
+    {
+      "object 4": "child 3",
+      "attributes": ["wearing black swim cap", "wearing black swimsuit"]
+    },
+    {
+      "object 5": "child 4",
+      "attributes": ["wearing white swim cap", "wearing white swimsuit"]
+    },
+    {
+      "object 6": "child 5",
+      "attributes": ["wearing black swim cap", "wearing black swimsuit"]
+    },
+    {
+      "object 7": "child 6",
+      "attributes": ["wearing black swim cap", "wearing black swimsuit"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [[0, 16]]
+    ],
+    [
+      1,
+      "swimming with",
+      3,
+      [[0, 16]]
+    ],
+    [
+      1,
+      "swimming with",
+      4,
+      [[0, 16]]
+    ],
+    [
+      1,
+      "swimming with",
+      5,
+      [[0, 16]]
+    ],
+    [
+      1,
+      "swimming with",
+      6,
+      [[0, 16]]
+    ],
+    [
+      1,
+      "swimming with",
+      7,
+      [[0, 16]]
+    ]
+  ]
+}
+```

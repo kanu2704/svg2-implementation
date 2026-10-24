@@ -1,0 +1,92 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a hat", "playing a keyboard"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["smiling", "wearing a denim jacket"]
+    },
+    {
+      "object 3": "bicycle",
+      "attributes": ["blue frame", "being ridden by a person"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["waving hand", "standing near the bicycle"]
+    },
+    {
+      "object 5": "bicycle",
+      "attributes": ["blue frame", "being ridden by a person"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing a hat", "playing a keyboard"]
+    },
+    {
+      "object 7": "bicycle",
+      "attributes": ["blue frame", "being ridden by a person"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "smiling",
+      null,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "being ridden by",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "waving hand",
+      null,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "playing",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      6,
+      "playing",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      7,
+      "being ridden by",
+      5,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```
