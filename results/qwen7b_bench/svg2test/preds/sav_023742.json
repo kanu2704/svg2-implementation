@@ -1,0 +1,403 @@
+```json
+{
+  "objects": [
+    {
+      "1": "dog",
+      "attributes": ["standing", "white fur"]
+    },
+    {
+      "2": "bowl",
+      "attributes": ["metallic", "on the ground"]
+    },
+    {
+      "3": "light",
+      "attributes": ["bright", "overhead"]
+    },
+    {
+      "4": "mat",
+      "attributes": ["green", "on the floor"]
+    },
+    {
+      "5": "towel",
+      "attributes": ["white", "folded"]
+    },
+    {
+      "6": "toy",
+      "attributes": ["pink", "on the mat"]
+    },
+    {
+      "7": "person",
+      "attributes": ["wearing white coat", "behind the glass"]
+    },
+    {
+      "8": "sink",
+      "attributes": ["white", "in the background"]
+    },
+    {
+      "9": "bottle",
+      "attributes": ["clear", "on the counter"]
+    },
+    {
+      "10": "counter",
+      "attributes": ["white", "with various items"]
+    },
+    {
+      "11": "glass",
+      "attributes": ["transparent", "on the counter"]
+    },
+    {
+      "12": "mirror",
+      "attributes": ["reflective", "on the wall"]
+    },
+    {
+      "13": "shampoo",
+      "attributes": ["blue", "on the counter"]
+    },
+    {
+      "14": "brush",
+      "attributes": ["black", "on the counter"]
+    },
+    {
+      "15": "water",
+      "attributes": ["clear", "in the bowl"]
+    },
+    {
+      "16": "hairdryer",
+      "attributes": ["red", "attached to the wall"]
+    },
+    {
+      "17": "vent",
+      "attributes": ["metallic", "on the ceiling"]
+    },
+    {
+      "18": "towel rack",
+      "attributes": ["silver", "on the wall"]
+    },
+    {
+      "19": "scale",
+      "attributes": ["black", "on the counter"]
+    },
+    {
+      "20": "grooming table",
+      "attributes": ["transparent", "on the floor"]
+    },
+    {
+      "21": "clock",
+      "attributes": ["black", "on the wall"]
+    },
+    {
+      "22": "towel stand",
+      "attributes": ["white", "on the floor"]
+    },
+    {
+      "23": "towel hanger",
+      "attributes": ["white", "on the wall"]
+    },
+    {
+      "24": "towel holder",
+      "attributes": ["white", "on the floor"]
+    }
+  ],
+  "relationships": [
+    [
+      "1",
+      "stands on",
+      "2",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "4",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "5",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "6",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "7",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "8",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "9",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "10",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "11",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "12",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "13",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "14",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "15",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "16",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "17",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "18",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "19",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "20",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "21",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "22",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "23",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "1",
+      "near",
+      "24",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"]
+      ]
+    ]
+  ]
+}
+```
