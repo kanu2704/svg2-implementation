@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "grass",
+      "attributes": ["green", "wet"]
+    },
+    {
+      "object 2": "water",
+      "attributes": ["calm", "reflective"]
+    },
+    {
+      "object 3": "sky",
+      "attributes": ["blue", "sunset"]
+    },
+    {
+      "object 4": "fishing rod",
+      "attributes": ["black", "yellow handle"]
+    },
+    {
+      "object 5": "reel",
+      "attributes": ["black", "yellow"]
+    },
+    {
+      "object 6": "hand",
+      "attributes": ["holding fishing rod"]
+    },
+    {
+      "object 7": "fishing line",
+      "attributes": ["thin", "visible"]
+    },
+    {
+      "object 8": "water surface",
+      "attributes": ["smooth", "reflecting sky"]
+    },
+    {
+      "object 9": "fishing rod",
+      "attributes": ["black", "yellow handle"]
+    },
+    {
+      "object 10": "reel",
+      "attributes": ["black", "yellow"]
+    },
+    {
+      "object 11": "fishing rod",
+      "attributes": ["black", "yellow handle"]
+    },
+    {
+      "object 12": "hand",
+      "attributes": ["holding fishing rod"]
+    },
+    {
+      "object 13": "fishing rod",
+      "attributes": ["black", "yellow handle"]
+    }
+  ],
+  "relationships": [
+    [
+      6,
+      "holds",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      12,
+      "holds",
+      11,
+      [
+        [0, 4],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      13,
+      "holds",
+      11,
+      [
+        [0, 4],
+        [12, 16],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

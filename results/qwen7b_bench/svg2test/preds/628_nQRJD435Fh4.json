@@ -1,0 +1,1181 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 2": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 3": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 4": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 5": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 6": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 7": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 8": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 9": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 10": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 11": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 12": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 13": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 14": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 15": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 16": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 17": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 18": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 19": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 20": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 21": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 22": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 23": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 24": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 25": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 26": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 27": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 28": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 29": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 30": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 31": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 32": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 33": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 34": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 35": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 36": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    },
+    {
+      "object 37": "Player",
+      "attributes": ["wearing blue shirt", "playing table tennis"]
+    },
+    {
+      "object 38": "Player",
+      "attributes": ["wearing black shirt", "playing table tennis"]
+    },
+    {
+      "object 39": "Player",
+      "attributes": ["wearing red and yellow shirt", "playing table tennis"]
+    },
+    {
+      "object 40": "Player",
+      "attributes": ["wearing green shirt", "playing table tennis"]
+    }
+  ],
+  "relationships": [
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 2",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 2",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 3",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 3",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 4",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 4",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 5",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 5",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 6",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 6",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 7",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 7",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 8",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 8",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 9",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 9",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 10",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 10",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 11",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 11",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 12",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 12",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 13",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 13",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 14",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 14",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 15",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 15",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 16",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 16",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 17",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 17",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 18",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 18",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 19",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 19",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 20",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 20",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 21",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 21",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 22",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 22",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 23",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 23",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 24",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 24",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 25",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 25",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 26",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 26",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 27",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 27",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 28",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 28",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 29",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 29",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 30",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 30",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 31",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 31",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 32",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 32",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 33",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 33",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 34",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 34",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 35",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 35",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 36",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 36",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 37",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 37",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 38",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 38",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 39",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 39",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 1",
+      "hits the ball",
+      "Player 40",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ],
+    [
+      "Player 40",
+      "returns the ball",
+      "Player 1",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>"
+      ]
+    ]
+  ]
+}

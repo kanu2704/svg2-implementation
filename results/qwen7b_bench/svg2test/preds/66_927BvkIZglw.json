@@ -1,0 +1,430 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "window",
+      "attributes": ["closed", "gray frame"]
+    },
+    {
+      "object 2": "tree",
+      "attributes": ["green leaves"]
+    },
+    {
+      "object 3": "window",
+      "attributes": ["closed", "gray frame"]
+    },
+    {
+      "object 4": "tree",
+      "attributes": ["green leaves"]
+    },
+    {
+      "object 5": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 6": "wall",
+      "attributes": ["white paint"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["white paint"]
+    },
+    {
+      "object 8": "wall",
+      "attributes": ["white paint"]
+    },
+    {
+      "object 9": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 10": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 11": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 12": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 13": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 14": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 15": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 16": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 17": "hot_tub",
+      "attributes": ["white exterior", "black jets"]
+    },
+    {
+      "object 18": "window",
+      "attributes": ["closed", "gray frame"]
+    },
+    {
+      "object 19": "tree",
+      "attributes": ["green leaves"]
+    },
+    {
+      "object 20": "window",
+      "attributes": ["closed", "gray frame"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "outside",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "outside",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "in",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "in",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "above",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "outside",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "above",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "above",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

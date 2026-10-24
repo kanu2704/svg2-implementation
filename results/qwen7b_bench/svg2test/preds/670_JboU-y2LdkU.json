@@ -1,0 +1,275 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "grass",
+      "attributes": ["green", "flat"]
+    },
+    {
+      "object 2": "bushes",
+      "attributes": ["trimmed", "dense"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["walking", "dressed in casual clothes"]
+    },
+    {
+      "object 4": "car",
+      "attributes": ["red", "stationary"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 6": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["wearing black dress", "standing"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing blue shirt", "standing"]
+    },
+    {
+      "object 9": "woman",
+      "attributes": ["wearing pink dress", "sitting"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 11": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 12": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 13": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 14": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 15": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 16": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 17": "woman",
+      "attributes": ["wearing white dress", "walking"]
+    },
+    {
+      "object 18": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 19": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 20": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 21": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 22": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 23": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    },
+    {
+      "object 24": "man",
+      "attributes": ["wearing white shirt and pants", "walking"]
+    }
+  ],
+  "relationships": [
+    [
+      5,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "sits on ground",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "walks past",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

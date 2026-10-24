@@ -1,0 +1,99 @@
+```json
+{
+  "objects": [
+    {
+      "1": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "2": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "3": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "4": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "5": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "6": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "7": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "8": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "9": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "10": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "11": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "12": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "13": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "14": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "15": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "16": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "17": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "18": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "19": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "20": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "21": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "22": "car",
+      "attributes": ["hood open", "snow-covered"]
+    },
+    {
+      "23": "car",
+      "attributes": ["hood open", "snow-covered"]
+    }
+  ],
+  "relationships": []
+}
+```

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "mat",
+      "attributes": ["black", "white", "gray"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["red hoodie", "black pants", "black cap", "holding bat"]
+    },
+    {
+      "object 3": "bat",
+      "attributes": ["wooden", "brown"]
+    },
+    {
+      "object 4": "cart",
+      "attributes": ["metal", "wheels"]
+    },
+    {
+      "object 5": "baseball field",
+      "attributes": ["green", "white lines"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "standing on",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "in background",
+      1,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```
