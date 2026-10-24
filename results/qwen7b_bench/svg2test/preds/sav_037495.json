@@ -1,0 +1,1842 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing pink sweater", "wearing blue jeans"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing striped shirt", "wearing dark pants"]
+    },
+    {
+      "object 3": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 4": "door",
+      "attributes": ["white", "with black handle"]
+    },
+    {
+      "object 5": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 6": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 8": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 9": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 10": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 11": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 12": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 13": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 14": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 15": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 16": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 17": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 18": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 19": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 20": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 21": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 22": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 23": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 24": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 25": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 26": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 27": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 28": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 29": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 30": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 31": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    },
+    {
+      "object 32": "wall",
+      "attributes": ["patterned wallpaper"]
+    },
+    {
+      "object 33": "floor",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 34": "cabinet",
+      "attributes": ["wooden", "with glass doors"]
+    },
+    {
+      "object 35": "rug",
+      "attributes": ["green and white patterned"]
+    },
+    {
+      "object 36": "television",
+      "attributes": ["flat-screen", "playing video game"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks towards",
+      2,
+      [
+        [0, 4],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      6,
+      [
+        [0, 4],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      6,
+      [
+        [0, 4],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "turns around",
+      1,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "turns around",
+      2,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      6,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      6,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      4,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      4,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      9,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      9,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      9,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      9,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      10,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      10,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      10,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      11,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      11,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      11,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      11,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      11,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      11,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      12,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      12,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      12,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      12,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      12,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      13,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      13,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      13,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      13,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      13,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      13,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      14,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      14,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      14,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      14,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      14,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      14,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      15,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      15,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      15,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      15,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      15,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      15,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      16,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      16,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      16,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      16,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      16,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      16,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      17,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      17,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      17,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      17,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      17,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      17,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      18,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      18,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      18,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      18,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      18,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      18,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      19,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      19,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      19,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      19,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      19,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      19,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      20,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      20,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      21,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      21,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      21,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      21,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      21,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      21,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      22,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      22,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      22,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      22,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      22,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      22,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      23,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      23,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      24,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      24,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      24,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      24,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      24,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      24,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      25,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      25,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      25,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      25,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      25,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      25,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      26,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      26,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      26,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      26,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      26,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      26,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      27,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      27,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      27,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      27,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      27,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      27,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      28,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      28,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      28,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      28,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      28,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      28,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      29,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      29,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      29,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      29,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      29,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      29,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      30,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      30,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      30,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      30,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      30,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      30,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      31,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      31,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      31,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      31,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      31,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      31,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      32,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      32,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      32,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      32,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      32,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      32,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      33,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      33,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      33,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      33,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      33,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      33,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      34,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      34,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      34,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      34,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      34,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      34,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      35,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      35,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      35,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      35,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      35,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      35,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "enters room",
+      36,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "enters room",
+      36,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "stands in front of",
+      36,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands in front of",
+      36,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      1,
+      "walks away from",
+      36,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "walks away from",
+      36,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,118 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing black jacket"]
+    },
+    {
+      "object 2": "accordionist",
+      "attributes": ["playing accordion", "wearing yellow shirt"]
+    },
+    {
+      "object 3": "drummer",
+      "attributes": ["playing drums", "wearing black shirt"]
+    },
+    {
+      "object 4": "audience",
+      "attributes": ["watching performance", "taking photos"]
+    },
+    {
+      "object 5": "stage lights",
+      "attributes": ["illuminating the stage", "changing colors"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing with",
+      "accordionist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing with",
+      "drummer",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "accordionist",
+      "playing with",
+      "drummer",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "audience",
+      "watching",
+      "guitarist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "audience",
+      "watching",
+      "accordionist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "audience",
+      "watching",
+      "drummer",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "stage lights",
+      "illuminating",
+      "guitarist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "stage lights",
+      "illuminating",
+      "accordionist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "stage lights",
+      "illuminating",
+      "drummer",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

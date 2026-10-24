@@ -1,0 +1,180 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pot",
+      "attributes": ["black", "metallic", "with handles"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["skinny", "dark"]
+    },
+    {
+      "object 3": "fire",
+      "attributes": ["burning", "glowing"]
+    },
+    {
+      "object 4": "wood",
+      "attributes": ["charred", "smoldering"]
+    },
+    {
+      "object 5": "ash",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 6": "smoke",
+      "attributes": ["white", "rising"]
+    },
+    {
+      "object 7": "ground",
+      "attributes": ["dirt", "rough"]
+    },
+    {
+      "object 8": "coals",
+      "attributes": ["black", "glowing"]
+    },
+    {
+      "object 9": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 10": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 11": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 12": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 13": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 14": "ashes",
+      "attributes": ["black", "powdery"]
+    },
+    {
+      "object 15": "ashes",
+      "attributes": ["black", "powdery"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "above",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "below",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "on",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      6,
+      "emanating from",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      7,
+      "underneath",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      8,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      9,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      10,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      11,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      12,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      13,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      14,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      15,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```
