@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["riding a bike", "wearing blue shorts"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["riding a bike", "wearing pink skirt"]
+    },
+    {
+      "object 3": "bicycle 1",
+      "attributes": ["being ridden by boy", "black frame"]
+    },
+    {
+      "object 4": "bicycle 2",
+      "attributes": ["being ridden by girl", "pink frame"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding",
+      3,
+      [
+        [0, 4],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "riding",
+      4,
+      [
+        [12, 16],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "behind",
+      2,
+      [
+        [0, 4],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      4,
+      [
+        [0, 4],
+        [16, 20],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

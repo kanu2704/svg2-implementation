@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing glasses", "dark hair"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing white outfit with patterns", "looking around"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["yellow cushion", "white frame"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "looking at",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      2,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

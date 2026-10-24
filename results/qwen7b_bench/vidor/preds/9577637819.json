@@ -1,0 +1,57 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a white top", "smiling"]
+    },
+    {
+      "object 2": "man 1",
+      "attributes": ["wearing a black shirt with colorful text", "wearing light-colored shorts", "wearing flip-flops"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing a yellow hat", "wearing dark pants", "wearing a dark shirt"]
+    },
+    {
+      "object 4": "phone 1",
+      "attributes": ["blue color", "being held by the woman"]
+    },
+    {
+      "object 5": "beer bottle 1",
+      "attributes": ["brown label", "being held by man 2"]
+    },
+    {
+      "object 6": "beer bottle 2",
+      "attributes": ["brown label", "being held by man 1"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "holding",
+      "phone 1",
+      [
+        ["0 - 4 sec"],
+        ["12 - 16 sec"]
+      ]
+    ],
+    [
+      "man 1",
+      "holding",
+      "beer bottle 2",
+      [
+        ["16 - 20 sec"]
+      ]
+    ],
+    [
+      "man 2",
+      "holding",
+      "beer bottle 1",
+      [
+        ["16 - 20 sec"]
+      ]
+    ]
+  ]
+}
+```

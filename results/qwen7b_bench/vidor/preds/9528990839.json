@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "driver",
+      "attributes": ["wearing a hat", "driving the vehicle"]
+    },
+    {
+      "object 2": "passenger",
+      "attributes": ["wearing a hat", "sitting in the passenger seat"]
+    },
+    {
+      "object 3": "vehicle",
+      "attributes": ["a safari jeep with an open roof"]
+    },
+    {
+      "object 4": "navigator",
+      "attributes": ["wearing a hat", "sitting in the navigator's seat"]
+    }
+  ],
+  "relationships": [
+    [
+      "driver",
+      "drives",
+      "vehicle",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "passenger",
+      "sits next to",
+      "navigator",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "navigator",
+      "sits behind",
+      "driver",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "navigator",
+      "looks at",
+      "driver",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "navigator",
+      "points out",
+      "passenger",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "navigator",
+      "interacts with",
+      "driver",
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

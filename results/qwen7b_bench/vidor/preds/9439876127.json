@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "player",
+      "attributes": ["wearing a black jersey", "wearing a helmet"]
+    },
+    {
+      "object 2": "player",
+      "attributes": ["wearing a white jersey", "wearing a helmet"]
+    },
+    {
+      "object 3": "referee",
+      "attributes": ["wearing a light-colored shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "collides with",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "collides with",
+      3,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

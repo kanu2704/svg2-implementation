@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child1",
+      "attributes": ["smiling", "wearing striped shirt"]
+    },
+    {
+      "object 2": "child2",
+      "attributes": ["smiling", "wearing white shirt"]
+    },
+    {
+      "object 3": "child3",
+      "attributes": ["smiling", "wearing pink shirt"]
+    },
+    {
+      "object 4": "child4",
+      "attributes": ["smiling", "wearing white shirt with red design"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      4,
+      [
+        [0, 40]
+      ]
+    ]
+  ]
+}
+```

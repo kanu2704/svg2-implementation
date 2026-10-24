@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with hands"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["holding child's hand", "wearing striped shirt"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["brown surface", "high chair attached"]
+    },
+    {
+      "object 4": "waiter",
+      "attributes": ["standing in background", "wearing white shirt and red apron"]
+    },
+    {
+      "object 5": "high chair",
+      "attributes": ["attached to table", "child seated on it"]
+    },
+    {
+      "object 6": "restaurant",
+      "attributes": ["interior setting", "tables and chairs visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being held by",
+      2,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      3,
+      "attached to",
+      5,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      4,
+      "standing behind",
+      6,
+      [
+        [0, 84]
+      ]
+    ]
+  ]
+}
+```

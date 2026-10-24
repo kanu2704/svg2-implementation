@@ -1,0 +1,151 @@
+{
+ "dataset": "vidor",
+ "video_id": "9439876127",
+ "fps": 29.97,
+ "n_frames": 107,
+ "video_fps": 29.97,
+ "ann_frames": 107,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.33366700033366703,
+     0.5672339005672339
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     1.8685352018685353,
+     2.5025025025025025
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "pull",
+   "obj": 1,
+   "spans": [
+    [
+     1.234567901234568,
+     2.2022022022022023
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "knock",
+   "obj": 0,
+   "spans": [
+    [
+     0.5005005005005005,
+     1.1678345011678346
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.6673340006673341,
+     1.2679346012679347
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.5025025025025025
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.6673340006673341,
+     3.5368702035368704
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.5025025025025025
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.5025025025025025
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     0.6673340006673341,
+     2.5025025025025025
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     2.002002002002002,
+     3.570236903570237
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0080/9439876127.mp4",
+ "video": "video.mp4"
+}

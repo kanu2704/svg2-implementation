@@ -15,10 +15,32 @@
    "json_ok": 42,
    "triplet": 0.0,
    "relation": 0.0,
-   "object": 7.6,
-   "relation_any_time": 0.4,
-   "unjudged": 899,
+   "object": 13.9,
+   "relation_any_time": 1.1,
+   "unjudged": 0,
    "answer_tokens": 2490
+  }
+ },
+ "vidor": {
+  "traser": {
+   "videos": 835,
+   "json_ok": 835,
+   "triplet": 11.2,
+   "relation": 13.0,
+   "object": 86.2,
+   "relation_any_time": 22.2,
+   "unjudged": 0,
+   "answer_tokens": 499
+  },
+  "qwen7b": {
+   "videos": 835,
+   "json_ok": 812,
+   "triplet": 0.7,
+   "relation": 1.3,
+   "object": 47.0,
+   "relation_any_time": 2.7,
+   "unjudged": 5197,
+   "answer_tokens": 580
   }
  },
  "svg2test": {
@@ -35,11 +57,11 @@
   "qwen7b": {
    "videos": 100,
    "json_ok": 86,
-   "triplet": 0.2,
-   "relation": 0.9,
-   "object": 7.1,
-   "relation_any_time": 1.1,
-   "unjudged": 1998,
+   "triplet": 0.9,
+   "relation": 2.2,
+   "object": 11.8,
+   "relation_any_time": 2.6,
+   "unjudged": 0,
    "answer_tokens": 2500
   }
  }

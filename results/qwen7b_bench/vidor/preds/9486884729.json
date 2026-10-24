@@ -1,0 +1,107 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing sunglasses", "holding a banana"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a backpack", "standing in the background"]
+    },
+    {
+      "object 3": "child 1",
+      "attributes": ["wearing a red shirt", "playing with a toy"]
+    },
+    {
+      "object 4": "child 2",
+      "attributes": ["wearing a blue shirt", "playing with a toy"]
+    },
+    {
+      "object 5": "stroller",
+      "attributes": ["black and white", "being pushed by someone"]
+    },
+    {
+      "object 6": "man 2",
+      "attributes": ["wearing a red shirt", "standing near the stroller"]
+    },
+    {
+      "object 7": "man 3",
+      "attributes": ["wearing a red shirt", "standing near the stroller"]
+    },
+    {
+      "object 8": "man 4",
+      "attributes": ["wearing a red shirt", "standing near the stroller"]
+    },
+    {
+      "object 9": "banana",
+      "attributes": ["held by woman", "yellow color"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "stands behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "plays with",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

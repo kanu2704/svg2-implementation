@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing pink dress", "being held"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["holding baby", "smiling"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["sitting in seat", "wearing white shirt"]
+    },
+    {
+      "object 4": "seat",
+      "attributes": ["occupied by man", "adjacent to woman"]
+    },
+    {
+      "object 5": "window",
+      "attributes": ["visible behind woman", "natural light coming through"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being held by",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      1,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "sitting in",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      4,
+      "adjacent to",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "visible behind",
+      2,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,132 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing camouflage pants", "standing in front of TV"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing green shirt and patterned pants", "standing near child"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["wooden frame with striped cushion"]
+    },
+    {
+      "object 4": "cabinet",
+      "attributes": ["dark wood, possibly a TV stand"]
+    },
+    {
+      "object 5": "television",
+      "attributes": ["large screen displaying a scene with people dancing"]
+    },
+    {
+      "object 6": "child",
+      "attributes": ["wearing camouflage pants", "standing in front of TV"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "near",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "near",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "near",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "near",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

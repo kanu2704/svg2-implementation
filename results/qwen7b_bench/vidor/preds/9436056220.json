@@ -1,0 +1,34 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing black jacket", "wearing light-colored pants"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing blue jacket", "wearing beige pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks behind",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "walks in front of",
+      1,
+      [
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

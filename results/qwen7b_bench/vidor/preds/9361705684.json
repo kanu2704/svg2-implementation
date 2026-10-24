@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing yellow shirt", "wearing straw hat"]
+    },
+    {
+      "object 2": "man 2",
+      "attributes": ["wearing white hat", "wearing blue and white striped shirt"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing blue and white striped shirt", "wearing brown pants"]
+    },
+    {
+      "object 4": "car",
+      "attributes": ["black car", "numbered with '123' on the side"]
+    },
+    {
+      "object 5": "man 3",
+      "attributes": ["wearing white hat", "wearing blue and white striped shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "pointing at",
+      "car",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "man 2",
+      "pointing at",
+      "car",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "man 3",
+      "pointing at",
+      "car",
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

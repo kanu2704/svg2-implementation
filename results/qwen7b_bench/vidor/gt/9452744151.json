@@ -1,0 +1,183 @@
+{
+ "dataset": "vidor",
+ "video_id": "9452744151",
+ "fps": 29.97,
+ "n_frames": 189,
+ "video_fps": 29.97,
+ "ann_frames": 189,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "chair"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     0.3670337003670337
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.9342676009342676
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     2.8695362028695364,
+     6.306306306306307
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     6.039372706039373,
+     6.306306306306307
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     2.8695362028695364,
+     6.2729396062729395
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.8028028028028027
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.235568902235569
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.235568902235569
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.235568902235569
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.235568902235569
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     2.8695362028695364,
+     6.2729396062729395
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.8028028028028027
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.235568902235569
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1015/9452744151.mp4",
+ "video": "video.mp4"
+}

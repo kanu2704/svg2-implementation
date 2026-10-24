@@ -1,0 +1,133 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a black jacket with fur-lined hood", "listening to earphones"]
+    },
+    {
+      "object 2": "bag",
+      "attributes": ["white bag with text 'debut'"]
+    },
+    {
+      "object 3": "phone",
+      "attributes": ["black phone with red buttons"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["distant person walking away"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["distant person walking away"]
+    },
+    {
+      "object 6": "bag",
+      "attributes": ["white bag with text 'debut'"]
+    },
+    {
+      "object 7": "phone",
+      "attributes": ["black phone with red buttons"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "holding",
+      "object 3",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "wearing",
+      "object 2",
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ],
+    [
+      "object 4",
+      "walking away from",
+      "object 1",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ],
+    [
+      "object 5",
+      "walking away from",
+      "object 1",
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ],
+    [
+      "object 6",
+      "carrying",
+      "object 2",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ],
+    [
+      "object 7",
+      "carrying",
+      "object 3",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,96 @@
+{
+ "dataset": "vidor",
+ "video_id": "9571377943",
+ "fps": 23.976,
+ "n_frames": 209,
+ "video_fps": 23.976,
+ "ann_frames": 209,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "elephant"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "elephant"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "elephant"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.717050383717051
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1006/9571377943.mp4",
+ "video": "video.mp4"
+}

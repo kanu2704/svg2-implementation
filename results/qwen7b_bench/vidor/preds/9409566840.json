@@ -1,0 +1,50 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog1",
+      "attributes": ["brown and white fur", "open mouth"]
+    },
+    {
+      "object 2": "dog2",
+      "attributes": ["tan fur", "closed mouth"]
+    },
+    {
+      "object 3": "puppy",
+      "attributes": ["small size", "brown fur with black spots"]
+    }
+  ],
+  "relationships": [
+    [
+      "dog1",
+      "chewing",
+      "object 2",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "dog2",
+      "chewing",
+      "object 1",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "puppy",
+      "looking around",
+      "object 1",
+      [
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

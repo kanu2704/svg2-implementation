@@ -1,0 +1,41 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["moving on a ferry"]
+    },
+    {
+      "object 2": "canoe",
+      "attributes": ["red canoe with people paddling"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["in the canoe"]
+    },
+    {
+      "object 4": "ferry",
+      "attributes": ["car ferry"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on",
+      4,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "in",
+      3,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,87 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "penguin",
+      "attributes": ["standing", "waddling"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["sitting", "holding object"]
+    },
+    {
+      "object 3": "penguin",
+      "attributes": ["standing", "waddling"]
+    },
+    {
+      "object 4": "penguin",
+      "attributes": ["standing", "waddling"]
+    },
+    {
+      "object 5": "penguin",
+      "attributes": ["standing", "waddling"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "waddles past",
+      3,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      1,
+      "waddles past",
+      4,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      1,
+      "waddles past",
+      5,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      2,
+      "reaches out hand",
+      1,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "reaches out hand",
+      3,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "reaches out hand",
+      4,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "reaches out hand",
+      5,
+      [
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

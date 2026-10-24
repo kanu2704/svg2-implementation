@@ -1,0 +1,186 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Dancer",
+      "attributes": ["wearing traditional attire", "performing a dance routine"]
+    },
+    {
+      "object 2": "Musicians",
+      "attributes": ["playing instruments", "sitting on stage"]
+    },
+    {
+      "object 3": "Sitar Player",
+      "attributes": ["playing sitar", "sitting on the floor"]
+    },
+    {
+      "object 4": "Guitarist",
+      "attributes": ["playing guitar", "sitting on the floor"]
+    },
+    {
+      "object 5": "Drummer",
+      "attributes": ["playing drums", "sitting on the floor"]
+    },
+    {
+      "object 6": "Audience",
+      "attributes": ["watching performance", "seated in the background"]
+    },
+    {
+      "object 7": "Projection Screen",
+      "attributes": ["displaying visuals", "behind performers"]
+    }
+  ],
+  "relationships": [
+    [
+      "Dancer",
+      "performing",
+      "Musicians",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      "Sitar Player",
+      "playing",
+      "Musicians",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      "Guitarist",
+      "playing",
+      "Musicians",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      "Drummer",
+      "playing",
+      "Musicians",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      "Dancer",
+      "performing",
+      "Projection Screen",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "88 - 92 sec"]
+      ]
+    ]
+  ]
+}
+```

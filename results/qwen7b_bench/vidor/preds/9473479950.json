@@ -1,0 +1,112 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["lying down", "smiling"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing glasses", "holding baby", "smiling"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["red and yellow", "in front of baby", "being held by woman"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["wooden", "in the background", "with a laptop on it"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "holding",
+      "baby",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "looking at",
+      "baby",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "smiling",
+      "baby",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "toy",
+      [
+        [8, 20]
+      ]
+    ],
+    [
+      "baby",
+      "looking at",
+      "toy",
+      [
+        [8, 20]
+      ]
+    ],
+    [
+      "woman",
+      "smiling",
+      "toy",
+      [
+        [8, 20]
+      ]
+    ],
+    [
+      "baby",
+      "on",
+      "table",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "standing",
+      "table",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "behind",
+      "baby",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "table",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "toy",
+      "in front of",
+      "baby",
+      [
+        [8, 20]
+      ]
+    ]
+  ]
+}
+```

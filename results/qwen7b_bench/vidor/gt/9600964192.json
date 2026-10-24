@@ -1,0 +1,102 @@
+{
+ "dataset": "vidor",
+ "video_id": "9600964192",
+ "fps": 25.0,
+ "n_frames": 228,
+ "video_fps": 25.0,
+ "ann_frames": 228,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.12
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     7.28,
+     9.12
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 0,
+   "spans": [
+    [
+     7.24,
+     9.12
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lift",
+   "obj": 1,
+   "spans": [
+    [
+     6.88,
+     7.84
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     4.0,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     9.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1052/9600964192.mp4",
+ "video": "video.mp4"
+}
