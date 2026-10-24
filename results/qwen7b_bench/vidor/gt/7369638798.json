@@ -1,0 +1,129 @@
+{
+ "dataset": "vidor",
+ "video_id": "7369638798",
+ "fps": 29.97002997002997,
+ "n_frames": 1200,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1200,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bicycle"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     31.1311
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     31.197833333333335,
+     40.04
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     32.565866666666665,
+     34.5345
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     36.903533333333336,
+     40.00663333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     36.903533333333336,
+     40.00663333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     36.903533333333336,
+     40.00663333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     40.04
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     36.903533333333336,
+     40.00663333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     40.04
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1200/7369638798.mp4",
+ "video": "video.mp4"
+}

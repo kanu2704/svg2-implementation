@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing red boots", "wearing a blue jacket"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on a bench", "wearing a black jacket"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["brown fur", "standing near the woman"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["brown fur", "playing with child"]
+    },
+    {
+      "object 5": "dog",
+      "attributes": ["black fur", "standing near the woman"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "plays with",
+      "object 4",
+      [
+        ["8 - 12 sec", "12 - 16 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "chases",
+      "object 5",
+      [
+        ["8 - 12 sec"]
+      ]
+    ],
+    [
+      "object 1",
+      "interacts with",
+      "object 3",
+      [
+        ["0 - 4 sec", "4 - 8 sec"]
+      ]
+    ],
+    [
+      "object 1",
+      "interacts with",
+      "object 5",
+      [
+        ["8 - 12 sec"]
+      ]
+    ]
+  ]
+}
+```

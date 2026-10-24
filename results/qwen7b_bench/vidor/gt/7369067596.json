@@ -1,0 +1,140 @@
+{
+ "dataset": "vidor",
+ "video_id": "7369067596",
+ "fps": 29.97002997002997,
+ "n_frames": 980,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 980,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bottle"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     1.8351666666666666,
+     15.048366666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     17.951266666666665,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     3.069733333333333,
+     14.481133333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     18.585233333333335,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.0020000000000002,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     2.0020000000000002,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     32.699333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     32.699333333333335
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1164/7369067596.mp4",
+ "video": "video.mp4"
+}

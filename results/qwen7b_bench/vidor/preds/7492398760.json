@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing purple dress", "holding object"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing blue shirt and khaki shorts", "playing with child"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing white shirt and tie", "running around"]
+    },
+    {
+      "object 4": "child2",
+      "attributes": ["wearing blue dress", "standing still"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "playing with",
+      "child",
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "object",
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      "child",
+      "running towards",
+      "child2",
+      [
+        [0, 89]
+      ]
+    ]
+  ]
+}
+```

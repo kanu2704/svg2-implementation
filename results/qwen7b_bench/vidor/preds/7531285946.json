@@ -1,0 +1,63 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing green jacket", "wearing blue jeans", "wearing brown boots"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing blue jeans", "wearing brown shoes"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing blue jeans", "wearing red shoes"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["wearing black jacket", "wearing white hat"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "climbing",
+      "ladder",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "man",
+      "standing",
+      "ladder",
+      [
+        [12, 16],
+        [16, 20],
+        [28, 32]
+      ]
+    ],
+    [
+      "child",
+      "standing",
+      "ladder",
+      [
+        [12, 16],
+        [16, 20],
+        [28, 32]
+      ]
+    ],
+    [
+      "dog",
+      "standing",
+      "ladder",
+      [
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,99 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wears glasses", "red shirt", "brown hair"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["striped shirt", "playing with toy"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["black and white fur", "standing near woman"]
+    },
+    {
+      "object 4": "bookshelf",
+      "attributes": ["filled with books", "behind woman"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["blue patterned fabric", "in front of woman"]
+    },
+    {
+      "object 6": "couch",
+      "attributes": ["blue patterned fabric", "next to chair"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing yellow top", "standing behind chair"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "walks down stairs",
+      "child",
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "woman",
+      "plays with child",
+      "child",
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "woman",
+      "stands in front of bookshelf",
+      "bookshelf",
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "woman",
+      "stands next to chair",
+      "chair",
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "woman",
+      "stands next to couch",
+      "couch",
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "woman",
+      "stands behind chair",
+      "person",
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "child",
+      "plays with toy",
+      "toy",
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

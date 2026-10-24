@@ -1,0 +1,17 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing a shirt with a dinosaur print", "holding hands together"]
+    },
+    {
+      "object 2": "legs",
+      "attributes": ["wearing black socks with white stripes", "crossed at the ankles"]
+    }
+  ],
+  "relationships": [
+    [1, "looking at", 2, [[0, 40]]]
+  ]
+}
+```

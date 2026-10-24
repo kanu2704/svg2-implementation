@@ -1,0 +1,204 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a striped shirt", "sitting"]
+    },
+    {
+      "object 2": "child1",
+      "attributes": ["wearing a pink shirt", "standing"]
+    },
+    {
+      "object 3": "child2",
+      "attributes": ["wearing a green shirt", "standing"]
+    },
+    {
+      "object 4": "child3",
+      "attributes": ["wearing a blue shirt", "standing"]
+    },
+    {
+      "object 5": "child4",
+      "attributes": ["wearing a pink shirt", "standing"]
+    },
+    {
+      "object 6": "child5",
+      "attributes": ["wearing a green shirt", "standing"]
+    },
+    {
+      "object 7": "child6",
+      "attributes": ["wearing a blue shirt", "standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      7,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

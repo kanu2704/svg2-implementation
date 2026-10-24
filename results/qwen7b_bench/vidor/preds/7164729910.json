@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["riding toy car", "wearing black shirt"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["blue and red", "moving on floor"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["red patterned fabric", "in background"]
+    },
+    {
+      "object 4": "floor",
+      "attributes": ["hard surface", "under toy car"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "rides",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "moves on",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      1,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

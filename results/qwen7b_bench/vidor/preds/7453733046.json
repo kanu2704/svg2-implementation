@@ -1,0 +1,148 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing pink swimsuit", "playing in water"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing white swimsuit", "playing in water"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing blue swimsuit", "playing in water"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing green shorts and shirt", "standing near water"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing black outfit", "standing near water"]
+    },
+    {
+      "object 6": "baby",
+      "attributes": ["wearing pink outfit", "sleeping in stroller"]
+    },
+    {
+      "object 7": "stroller",
+      "attributes": ["containing baby", "stationary on ground"]
+    },
+    {
+      "object 8": "water fountain",
+      "attributes": ["spraying water", "at playground"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing red cap", "sitting on bench"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["wearing green cap", "sitting on bench"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["wearing gray cap", "sitting on bench"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      1,
+      "near",
+      8,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      2,
+      "near",
+      8,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      3,
+      "near",
+      8,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      8,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      5,
+      "standing near",
+      8,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      6,
+      "in",
+      7,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      9,
+      "sitting on",
+      10,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      9,
+      "sitting on",
+      11,
+      [
+        [0, 32]
+      ]
+    ],
+    [
+      10,
+      "sitting on",
+      11,
+      [
+        [0, 32]
+      ]
+    ]
+  ]
+}
+```

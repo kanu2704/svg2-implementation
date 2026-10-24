@@ -1,0 +1,113 @@
+{
+ "dataset": "vidor",
+ "video_id": "7308042410",
+ "fps": 29.97002997002997,
+ "n_frames": 1019,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1019,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     21.5215,
+     21.9219
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "touch",
+   "obj": 0,
+   "spans": [
+    [
+     25.692333333333334,
+     33.86716666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     11.878533333333333,
+     34.00063333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold hand of",
+   "obj": 0,
+   "spans": [
+    [
+     27.193833333333334,
+     33.900533333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     11.244566666666667,
+     14.981633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     16.016000000000002,
+     34.00063333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     14.014000000000001,
+     17.017
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     11.244566666666667,
+     33.96726666666667
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1010/7308042410.mp4",
+ "video": "video.mp4"
+}

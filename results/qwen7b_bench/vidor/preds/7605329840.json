@@ -1,0 +1,144 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a hat", "holding a toy"]
+    },
+    {
+      "object 2": "girl 1",
+      "attributes": ["wearing a pink dress", "playing with a balloon"]
+    },
+    {
+      "object 3": "girl 2",
+      "attributes": ["wearing a white dress", "playing with a balloon"]
+    },
+    {
+      "object 4": "girl 3",
+      "attributes": ["wearing a striped dress", "playing with a balloon"]
+    },
+    {
+      "object 5": "boy 1",
+      "attributes": ["wearing a blue shirt", "playing with a balloon"]
+    },
+    {
+      "object 6": "boy 2",
+      "attributes": ["wearing a red shirt", "playing with a balloon"]
+    },
+    {
+      "object 7": "balloon 1",
+      "attributes": ["pink color", "with a face design"]
+    },
+    {
+      "object 8": "balloon 2",
+      "attributes": ["orange color", "with a face design"]
+    },
+    {
+      "object 9": "balloon 3",
+      "attributes": ["red color", "with a face design"]
+    },
+    {
+      "object 10": "balloon 4",
+      "attributes": ["green color", "with a face design"]
+    },
+    {
+      "object 11": "balloon 5",
+      "attributes": ["purple color", "with a face design"]
+    },
+    {
+      "object 12": "table",
+      "attributes": ["red surface", "with toys on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "plays with",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      6,
+      "plays with",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "sits near",
+      12,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

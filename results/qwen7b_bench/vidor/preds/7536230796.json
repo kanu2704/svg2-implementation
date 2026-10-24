@@ -1,0 +1,97 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a white shirt with green trim", "wearing blue shorts", "playing with a toy fire truck"]
+    },
+    {
+      "object 2": "toy fire truck",
+      "attributes": ["red and yellow color scheme", "with '112' written on the side", "being pushed by the child"]
+    },
+    {
+      "object 3": "bottle",
+      "attributes": ["blue cap", "white body with red and blue design", "placed on the table"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["dark surface", "holds the bottle and the toy fire truck"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["purple fabric", "sitting behind the child when they play with the toy fire truck"]
+    },
+    {
+      "object 6": "television",
+      "attributes": ["large screen", "visible in the background during the child's playtime"]
+    },
+    {
+      "object 7": "toy car",
+      "attributes": ["red and yellow color scheme", "being pushed by the child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pushes",
+      2,
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<64 - 68 sec>"],
+        ["<68 - 72 sec>", "<72 - 76 sec>"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      7,
+      [
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        ["<4 - 8 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<64 - 68 sec>"],
+        ["<68 - 72 sec>", "<72 - 76 sec>"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        ["<52 - 56 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<64 - 68 sec>"],
+        ["<68 - 72 sec>", "<72 - 76 sec>"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<68 - 72 sec>"],
+        ["<72 - 76 sec>", "<76 - 80 sec>"]
+      ]
+    ]
+  ]
+}
+```
