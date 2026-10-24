@@ -1,0 +1,597 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person1",
+      "attributes": ["black shirt", "tan pants"]
+    },
+    {
+      "object 2": "person2",
+      "attributes": ["yellow shirt", "black pants"]
+    },
+    {
+      "object 3": "person3",
+      "attributes": ["white shirt", "black shorts"]
+    },
+    {
+      "object 4": "person4",
+      "attributes": ["striped shirt", "gray pants"]
+    },
+    {
+      "object 5": "person5",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 6": "person6",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 7": "person7",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 8": "person8",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 9": "person9",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 10": "person10",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 11": "person11",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 12": "person12",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 13": "person13",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 14": "person14",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 15": "person15",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 16": "person16",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 17": "person17",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 18": "person18",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 19": "person19",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 20": "person20",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 21": "person21",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 22": "person22",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 23": "person23",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 24": "person24",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 25": "person25",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 26": "person26",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 27": "person27",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 28": "person28",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 29": "person29",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 30": "person30",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 31": "person31",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 32": "person32",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 33": "person33",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 34": "person34",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 35": "person35",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 36": "person36",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 37": "person37",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 38": "person38",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 39": "person39",
+      "attributes": ["black shirt", "shorts"]
+    },
+    {
+      "object 40": "person40",
+      "attributes": ["black shirt", "shorts"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "walks with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "walks with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "walks with",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "walks with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "walks with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "walks with",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "walks with",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "walks with",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "walks with",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      11,
+      "walks with",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "walks with",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      13,
+      "walks with",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      14,
+      "walks with",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "walks with",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      16,
+      "walks with",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "walks with",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      18,
+      "walks with",
+      19,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      19,
+      "walks with",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      20,
+      "walks with",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      21,
+      "walks with",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      22,
+      "walks with",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      23,
+      "walks with",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      24,
+      "walks with",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      25,
+      "walks with",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      26,
+      "walks with",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      27,
+      "walks with",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      28,
+      "walks with",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      29,
+      "walks with",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      30,
+      "walks with",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      31,
+      "walks with",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      32,
+      "walks with",
+      33,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      33,
+      "walks with",
+      34,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      34,
+      "walks with",
+      35,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      35,
+      "walks with",
+      36,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      36,
+      "walks with",
+      37,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      37,
+      "walks with",
+      38,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      38,
+      "walks with",
+      39,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      39,
+      "walks with",
+      40,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

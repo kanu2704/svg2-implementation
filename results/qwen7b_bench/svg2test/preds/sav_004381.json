@@ -1,0 +1,611 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "skater",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 2": "skater2",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 3": "skater3",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 4": "skater4",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 5": "skater5",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 6": "skater6",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 7": "skater7",
+      "attributes": ["wearing green shirt", "skating on ice"]
+    },
+    {
+      "object 8": "skater8",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 9": "skater9",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 10": "skater10",
+      "attributes": ["wearing black outfit", "skating on ice"]
+    },
+    {
+      "object 11": "skater11",
+      "attributes": ["wearing blue outfit", "skating on ice"]
+    },
+    {
+      "object 12": "scoreboard",
+      "attributes": ["digital display", "showing scores"]
+    },
+    {
+      "object 13": "audience",
+      "attributes": ["watching the skaters", "standing in stands"]
+    },
+    {
+      "object 14": "mall",
+      "attributes": ["indoor ice rink", "surrounded by shops"]
+    },
+    {
+      "object 15": "ice_rink",
+      "attributes": ["smooth surface", "reflects light"]
+    },
+    {
+      "object 16": "wall",
+      "attributes": ["decorated with banners", "advertising logos"]
+    },
+    {
+      "object 17": "ceiling",
+      "attributes": ["high and open", "with recessed lighting"]
+    },
+    {
+      "object 18": "floor",
+      "attributes": ["made of polished wood", "reflective surface"]
+    },
+    {
+      "object 19": "bench",
+      "attributes": ["long and wooden", "placed along wall"]
+    },
+    {
+      "object 20": "shop",
+      "attributes": ["retail store", "selling goods"]
+    },
+    {
+      "object 21": "signage",
+      "attributes": ["promotional", "visible in mall"]
+    },
+    {
+      "object 22": "display_window",
+      "attributes": ["showcasing products", "at shop entrance"]
+    },
+    {
+      "object 23": "skating_rink_barrier",
+      "attributes": ["protects spectators", "from falling skaters"]
+    },
+    {
+      "object 24": "skating_rink_gate",
+      "attributes": ["controls access", "to skating area"]
+    },
+    {
+      "object 25": "skating_rink_lighting",
+      "attributes": ["brightens rink", "for visibility"]
+    },
+    {
+      "object 26": "skating_rink_markings",
+      "attributes": ["defines boundaries", "for skating paths"]
+    },
+    {
+      "object 27": "skating_rink_reflectors",
+      "attributes": ["reflect light", "to enhance visibility"]
+    },
+    {
+      "object 28": "skating_rink_safety_pads",
+      "attributes": ["protects skaters", "from falls"]
+    },
+    {
+      "object 29": "skating_rink_spectator_seats",
+      "attributes": ["comfortable seating", "for spectators"]
+    },
+    {
+      "object 30": "skating_rink_spectator_stands",
+      "attributes": ["elevated seating", "for better view"]
+    },
+    {
+      "object 31": "skating_rink_spectator_bars",
+      "attributes": ["protects spectators", "from falling skaters"]
+    },
+    {
+      "object 32": "skating_rink_spectator_fencing",
+      "attributes": ["protects spectators", "from falling skaters"]
+    },
+    {
+      "object 33": "skating_rink_spectator_lights",
+      "attributes": ["brightens rink", "for visibility"]
+    },
+    {
+      "object 34": "skating_rink_spectator_reflectors",
+      "attributes": ["reflect light", "to enhance visibility"]
+    },
+    {
+      "object 35": "skating_rink_spectator_pads",
+      "attributes": ["protects spectators", "from falling skaters"]
+    },
+    {
+      "object 36": "skating_rink_spectator_seats",
+      "attributes": ["comfortable seating", "for spectators"]
+    },
+    {
+      "object 37": "skating_rink_spectator_stands",
+      "attributes": ["elevated seating", "for better view"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "skating with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "skating with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "skating with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "skating with",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "skating with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      7,
+      "skating with",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      8,
+      "skating with",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      9,
+      "skating with",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      10,
+      "skating with",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "skating near",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      12,
+      "displayed above",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      13,
+      "watched by",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      14,
+      "located inside",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "reflects light from",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      16,
+      "supported by",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      17,
+      "reflects light from",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      18,
+      "supports",
+      19,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      19,
+      "located at",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      20,
+      "located inside",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      21,
+      "supported by",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      22,
+      "located inside",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      23,
+      "supported by",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      24,
+      "located inside",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      25,
+      "supported by",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      26,
+      "located inside",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      27,
+      "supported by",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      28,
+      "located inside",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      29,
+      "supported by",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      30,
+      "located inside",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      31,
+      "supported by",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      32,
+      "located inside",
+      33,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      33,
+      "supported by",
+      34,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      34,
+      "located inside",
+      35,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      35,
+      "supported by",
+      36,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      36,
+      "located inside",
+      37,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```
