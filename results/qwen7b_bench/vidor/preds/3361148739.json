@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "o1": "man",
+      "attributes": ["wearing beige jacket", "standing"]
+    },
+    {
+      "o2": "man",
+      "attributes": ["wearing black jacket", "sitting"]
+    },
+    {
+      "o3": "man",
+      "attributes": ["wearing brown jacket", "standing"]
+    },
+    {
+      "o4": "man",
+      "attributes": ["wearing yellow hat and jacket", "walking"]
+    },
+    {
+      "o5": "man",
+      "attributes": ["wearing black jacket", "sitting"]
+    }
+  ],
+  "relationships": [
+    [
+      "o1",
+      "stands near",
+      "o3",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ],
+    [
+      "o4",
+      "walks past",
+      "o2",
+      [
+        ["<20 - 24 sec>"]
+      ]
+    ],
+    [
+      "o4",
+      "walks past",
+      "o5",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"]
+      ]
+    ]
+  ]
+}
+```

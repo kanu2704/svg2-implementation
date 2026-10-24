@@ -1,0 +1,51 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person1",
+      "attributes": ["wearing a black jacket", "wearing camouflage pants"]
+    },
+    {
+      "object 2": "person2",
+      "attributes": ["wearing a black jacket", "wearing camouflage pants"]
+    },
+    {
+      "object 3": "person3",
+      "attributes": ["wearing a black jacket", "wearing camouflage pants"]
+    },
+    {
+      "object 4": "person4",
+      "attributes": ["wearing a black jacket", "wearing camouflage pants"]
+    }
+  ],
+  "relationships": [
+    [
+      "person1",
+      "is in front of",
+      "person2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "person2",
+      "is in front of",
+      "person3",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "person3",
+      "is in front of",
+      "person4",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

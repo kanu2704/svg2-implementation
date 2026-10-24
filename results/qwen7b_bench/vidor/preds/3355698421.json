@@ -1,0 +1,162 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing plaid shirt", "drinking water"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing black dress", "using phone"]
+    },
+    {
+      "object 3": "glass of water",
+      "attributes": ["in man's hand", "being drunk from"]
+    },
+    {
+      "object 4": "phone",
+      "attributes": ["in woman's hand", "displaying screen"]
+    },
+    {
+      "object 5": "champagne glass",
+      "attributes": ["on table", "partially filled with champagne"]
+    },
+    {
+      "object 6": "hand",
+      "attributes": ["holding phone", "operating it"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["surface for objects"]
+    },
+    {
+      "object 8": "wine glass",
+      "attributes": ["on table", "containing red wine"]
+    },
+    {
+      "object 9": "spoon",
+      "attributes": ["on table", "near glass"]
+    },
+    {
+      "object 10": "phone",
+      "attributes": ["in hand", "displaying screen"]
+    },
+    {
+      "object 11": "phone",
+      "attributes": ["in hand", "displaying screen"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drinks from",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "uses",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "held by",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "holding",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "surface for",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "surface for",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "surface for",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      11,
+      "in",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

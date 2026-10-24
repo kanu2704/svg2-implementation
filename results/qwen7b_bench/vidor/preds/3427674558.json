@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dancers",
+      "attributes": ["performing", "wearing traditional attire"]
+    },
+    {
+      "object 2": "dancer",
+      "attributes": ["performing", "wearing traditional attire"]
+    },
+    {
+      "object 3": "dancer",
+      "attributes": ["performing", "wearing traditional attire"]
+    },
+    {
+      "object 4": "dancer",
+      "attributes": ["performing", "wearing traditional attire"]
+    },
+    {
+      "object 5": "dancer",
+      "attributes": ["performing", "wearing traditional attire"]
+    },
+    {
+      "object 6": "dancer",
+      "attributes": ["performing", "wearing traditional attire"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "performing with",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "performing with",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "performing with",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "performing with",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "performing with",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "performing with",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "performing with",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "performing with",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "performing with",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "performing with",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "performing with",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "performing with",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "performing with",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "performing with",
+      6,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "performing with",
+      6,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

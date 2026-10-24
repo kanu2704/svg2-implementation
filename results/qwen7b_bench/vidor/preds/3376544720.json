@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing striped shirt", "riding mechanical bull"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing black jacket", "assisting man on bull"]
+    },
+    {
+      "object 3": "crowd",
+      "attributes": ["cheering", "watching bull riding event"]
+    },
+    {
+      "object 4": "bull",
+      "attributes": ["mechanical", "moving up and down"]
+    },
+    {
+      "object 5": "hat",
+      "attributes": ["black", "on man's head"]
+    },
+    {
+      "object 6": "hat",
+      "attributes": ["black", "on man's head"]
+    },
+    {
+      "object 7": "hat",
+      "attributes": ["black", "on man's head"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "assisting",
+      1,
+      [
+        [20, 88]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      1,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      2,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "cheering",
+      7,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

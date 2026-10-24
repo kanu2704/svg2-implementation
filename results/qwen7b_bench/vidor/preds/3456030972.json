@@ -1,0 +1,188 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing black shirt", "smiling"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing pink shirt", "writing"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing white shirt", "writing"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing striped shirt", "writing"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["wearing orange shirt", "writing"]
+    },
+    {
+      "object 6": "child",
+      "attributes": ["wearing gray shirt", "writing"]
+    },
+    {
+      "object 7": "child",
+      "attributes": ["wearing red shirt", "writing"]
+    },
+    {
+      "object 8": "child",
+      "attributes": ["wearing black shirt", "writing"]
+    },
+    {
+      "object 9": "child",
+      "attributes": ["wearing black shirt", "writing"]
+    },
+    {
+      "object 10": "child",
+      "attributes": ["wearing black shirt", "writing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "writing",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "writing",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "writing",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      4,
+      "writing",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      5,
+      "writing",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      6,
+      "writing",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      7,
+      "writing",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      8,
+      "writing",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      9,
+      "writing",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      10,
+      "writing",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,99 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a white shirt", "playing with a vacuum cleaner"]
+    },
+    {
+      "object 2": "vacuum cleaner",
+      "attributes": ["red and black color", "being held by the child"]
+    },
+    {
+      "object 3": "stool",
+      "attributes": ["wooden stool", "in the background"]
+    },
+    {
+      "object 4": "bar counter",
+      "attributes": ["long wooden counter", "in the background"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["wooden chair", "near the bar counter"]
+    },
+    {
+      "object 6": "wall",
+      "attributes": ["white wall in the background"]
+    },
+    {
+      "object 7": "floor",
+      "attributes": ["wooden floor visible"]
+    },
+    {
+      "object 8": "staircase",
+      "attributes": ["visible in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      5,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      6,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      7,
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      8,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

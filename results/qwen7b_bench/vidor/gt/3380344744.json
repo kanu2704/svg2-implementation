@@ -1,0 +1,129 @@
+{
+ "dataset": "vidor",
+ "video_id": "3380344744",
+ "fps": 29.97002997002997,
+ "n_frames": 1485,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1485,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "baby"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "microwave"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "lift",
+   "obj": 1,
+   "spans": [
+    [
+     7.073733333333333,
+     9.242566666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lift",
+   "obj": 1,
+   "spans": [
+    [
+     48.9489,
+     49.5495
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "clean",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.7067000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "clean",
+   "obj": 1,
+   "spans": [
+    [
+     31.4314,
+     32.1321
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "clean",
+   "obj": 1,
+   "spans": [
+    [
+     34.40103333333333,
+     37.10373333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     9.476133333333333,
+     48.98226666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     49.5495
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     49.049
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     49.049
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1000/3380344744.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["standing", "wearing a onesie", "looking around"]
+    },
+    {
+      "object 2": "jumper",
+      "attributes": ["green and white", "has toys attached", "on the floor"]
+    },
+    {
+      "object 3": "balls",
+      "attributes": ["green", "on the floor", "near the jumper"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["attached to the jumper", "colorful", "has lights"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["indoor setting", "neutral colors", "no other objects"]
+    }
+  ],
+  "relationships": [
+    [
+      "baby",
+      "standing on",
+      "jumper",
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      "balls",
+      "near",
+      "jumper",
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      "toy",
+      "attached to",
+      "jumper",
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```

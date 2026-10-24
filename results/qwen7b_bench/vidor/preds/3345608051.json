@@ -1,0 +1,319 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A black dog with a brown patch on its back, wearing a collar.",
+      "attributes": ["black", "brown patch", "collar"]
+    },
+    {
+      "dog2": "A black dog with a brown patch on its back, wearing a collar.",
+      "attributes": ["black", "brown patch", "collar"]
+    },
+    {
+      "man1": "A person wearing a dark jacket and jeans.",
+      "attributes": ["dark jacket", "jeans"]
+    },
+    {
+      "man2": "A person wearing a dark jacket and jeans.",
+      "attributes": ["dark jacket", "jeans"]
+    },
+    {
+      "man3": "A person wearing a dark jacket and jeans.",
+      "attributes": ["dark jacket", "jeans"]
+    },
+    {
+      "man4": "A person wearing a dark jacket and jeans.",
+      "attributes": ["dark jacket", "jeans"]
+    },
+    {
+      "man5": "A person wearing a dark jacket and jeans.",
+      "attributes": ["dark jacket", "jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        ["0 - 4 sec", "48 - 52 sec", "52 - 56 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      1,
+      [
+        ["0 - 4 sec", "48 - 52 sec", "52 - 56 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      7,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      7,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      11,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      11,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      12,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      12,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      13,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      13,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      14,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      14,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      15,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      15,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      16,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      16,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      17,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      17,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      1,
+      "attacks",
+      18,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec", "80 - 84 sec", "84 - 88 sec", "84 - 88 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "attacks",
+      18,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec", "32 - 36 sec", "36 - 40 sec", "40 - 44 sec", "44 - 48 sec", "44 - 48 sec", "48 - 52 sec", "52 - 56 sec", "56 - 60 sec", "60 - 64 sec", "64 - 68 sec", "68 - 72 sec", "72 - 76 sec", "76 - 80 sec

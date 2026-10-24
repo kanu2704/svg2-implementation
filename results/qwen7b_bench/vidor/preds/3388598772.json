@@ -1,0 +1,123 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["standing", "clapping"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["standing", "hugging"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["standing", "hugging"]
+    },
+    {
+      "object 10": "bar stool",
+      "attributes": ["brown", "wooden"]
+    },
+    {
+      "object 11": "bar stool",
+      "attributes": ["brown", "wooden"]
+    },
+    {
+      "object 12": "bar stool",
+      "attributes": ["brown", "wooden"]
+    },
+    {
+      "object 13": "bar stool",
+      "attributes": ["brown", "wooden"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "clapping with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "clapping with",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "clapping with",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "clapping with",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "clapping with",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "clapping with",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "hugging",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

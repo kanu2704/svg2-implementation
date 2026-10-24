@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "knife",
+      "attributes": ["on table", "next to fish"]
+    },
+    {
+      "object 2": "fish",
+      "attributes": ["on cutting board", "being cut"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing blue shirt", "cutting fish"]
+    },
+    {
+      "object 4": "cutting board",
+      "attributes": ["on table", "under fish"]
+    },
+    {
+      "object 5": "cat",
+      "attributes": ["near person", "looking at fish"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["wooden surface", "holding objects"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "cutting",
+      2,
+      [
+        [4, 28]
+      ]
+    ],
+    [
+      5,
+      "near",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "near",
+      2,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

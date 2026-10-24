@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a white shirt", "standing still"]
+    },
+    {
+      "object 2": "batter",
+      "attributes": ["holding a bat", "swinging the bat"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["in motion towards the batter"]
+    },
+    {
+      "object 4": "umpire",
+      "attributes": ["standing behind the batter", "observing the play"]
+    },
+    {
+      "object 5": "spectator",
+      "attributes": ["standing near the umpire", "watching the game"]
+    }
+  ],
+  "relationships": [
+    [
+      "batter",
+      "hits",
+      "ball",
+      [
+        ["8 - 12 sec", "12 - 16 sec"]
+      ]
+    ],
+    [
+      "umpire",
+      "stands behind",
+      "batter",
+      [
+        ["0 - 16 sec"]
+      ]
+    ],
+    [
+      "spectator",
+      "stands near",
+      "umpire",
+      [
+        ["0 - 16 sec"]
+      ]
+    ]
+  ]
+}
+```
