@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["blue", "inflatable", "with stars"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing white shirt", "kneeling", "holding camera"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing green shirt", "standing", "holding camera"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing grey shirt", "brown pants", "playing with ball"]
+    },
+    {
+      "object 5": "girl",
+      "attributes": ["wearing pink dress", "standing", "playing with ball"]
+    },
+    {
+      "object 6": "camera",
+      "attributes": ["black and silver", "held by woman", "held by man"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "plays with",
+      "ball",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "girl",
+      "plays with",
+      "ball",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "woman",
+      "holds",
+      "camera",
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      "man",
+      "holds",
+      "camera",
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      "woman",
+      "stands behind",
+      "girl",
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      "man",
+      "stands behind",
+      "girl",
+      [
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

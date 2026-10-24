@@ -1,0 +1,104 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["sits on box", "plays drum"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["plays guitar", "sings"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["plays guitar", "dances"]
+    },
+    {
+      "object 4": "boy",
+      "attributes": ["dances", "moves arms"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["plays guitar", "dances"]
+    },
+    {
+      "object 6": "woman",
+      "attributes": ["plays guitar", "sings"]
+    },
+    {
+      "object 7": "box",
+      "attributes": ["serves as seat for girl"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["plays guitar", "dances"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      3,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      2,
+      "performs in front of",
+      1,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      3,
+      "performs in front of",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      4,
+      "dances with",
+      3,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      5,
+      "performs in front of",
+      3,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      6,
+      "performs in front of",
+      5,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      7,
+      "sits on",
+      1,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      8,
+      "performs in front of",
+      5,
+      [
+        [0, 33]
+      ]
+    ]
+  ]
+}
+```

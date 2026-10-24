@@ -1,0 +1,181 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "singer",
+      "attributes": ["wearing a black shirt", "holding a microphone"]
+    },
+    {
+      "object 2": "guitarist",
+      "attributes": ["playing a red guitar", "wearing a plaid shirt"]
+    },
+    {
+      "object 3": "drummer",
+      "attributes": ["playing drums", "wearing a black shirt with studded belt"]
+    },
+    {
+      "object 4": "bassist",
+      "attributes": ["playing bass guitar", "wearing a red and white striped shirt"]
+    },
+    {
+      "object 5": "audience member",
+      "attributes": ["wearing a pink outfit", "smiling"]
+    },
+    {
+      "object 6": "audience member",
+      "attributes": ["wearing a striped dress", "standing near the stage"]
+    },
+    {
+      "object 7": "audience member",
+      "attributes": ["wearing a dark outfit", "standing behind the stage tent"]
+    },
+    {
+      "object 8": "audience member",
+      "attributes": ["wearing a red outfit", "standing in front of the stage tent"]
+    }
+  ],
+  "relationships": [
+    [
+      "singer",
+      "singing into",
+      "microphone",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing guitar",
+      "guitar",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing drums",
+      "drums",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "bassist",
+      "playing bass guitar",
+      "bass guitar",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "audience member",
+      "clapping",
+      "audience",
+      [
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "audience member",
+      "smiling",
+      "audience",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "audience member",
+      "standing near",
+      "stage",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "audience member",
+      "standing behind",
+      "stage tent",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      "audience member",
+      "standing in front",
+      "stage tent",
+      [
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ]
+  ]
+}
+```

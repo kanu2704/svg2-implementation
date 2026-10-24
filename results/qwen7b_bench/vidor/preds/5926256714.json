@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["standing", "wearing red shirt and plaid shorts"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["holding child's hands", "wearing white shirt and dark pants"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown couch in background"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["small table with toys on it"]
+    },
+    {
+      "object 5": "toys",
+      "attributes": ["colorful toys scattered around the room"]
+    },
+    {
+      "object 6": "floor",
+      "attributes": ["living room floor where child is standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "supported by",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      5,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      6,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

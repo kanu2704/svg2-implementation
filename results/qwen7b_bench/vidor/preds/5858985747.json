@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing yellow shirt", "wearing black pants"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing pink dress", "sitting on couch"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["pink color", "woman is sitting on it"]
+    },
+    {
+      "object 4": "fan",
+      "attributes": ["blue and white", "on the right side of the frame"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["red color", "on the far right of the frame"]
+    },
+    {
+      "object 6": "cushion",
+      "attributes": ["purple color", "part of the couch"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "on",
+      3,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      4,
+      "on",
+      5,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "standing",
+      6,
+      [
+        [0, 11]
+      ]
+    ]
+  ]
+}
+```

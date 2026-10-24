@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a hat", "swimming"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a hat", "holding a drink", "standing by the pool"]
+    },
+    {
+      "object 3": "cup",
+      "attributes": ["containing a drink", "held by man"]
+    },
+    {
+      "object 4": "woman 2",
+      "attributes": ["wearing a blue dress", "standing near the pool"]
+    },
+    {
+      "object 5": "woman 3",
+      "attributes": ["wearing a blue dress", "standing near the pool"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["white", "near the pool"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["white", "near the pool"]
+    },
+    {
+      "object 8": "pool",
+      "attributes": ["water body", "surrounding the chairs and table"]
+    },
+    {
+      "object 9": "house",
+      "attributes": ["visible in the background", "near the pool area"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        ["24 - 28 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      8,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      5,
+      "standing near",
+      8,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      6,
+      "near",
+      8,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      7,
+      "near",
+      8,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      8,
+      "surrounding",
+      6,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      8,
+      "surrounding",
+      7,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      8,
+      "surrounding",
+      9,
+      [
+        ["0 - 4 sec", "40 - 44 sec"]
+      ]
+    ]
+  ]
+}
+```

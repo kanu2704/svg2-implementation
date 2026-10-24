@@ -1,0 +1,792 @@
+{
+ "dataset": "vidor",
+ "video_id": "5940941487",
+ "fps": 25.0,
+ "n_frames": 838,
+ "video_fps": 25.0,
+ "ann_frames": 838,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "guitar"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "guitar"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "child"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "stool"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     16.52,
+     16.88
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     33.08,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     11.48,
+     14.16
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     23.0,
+     23.92
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "pat",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 7,
+   "spans": [
+    [
+     19.2,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "play(instrument)",
+   "obj": 2,
+   "spans": [
+    [
+     0.2,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     12.0,
+     15.28
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     13.0,
+     13.88
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     23.08,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     0.2,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     1.12,
+     4.44
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     9.8,
+     10.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     19.28,
+     19.64
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     22.08,
+     22.76
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     9.36,
+     10.72
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 7,
+   "spans": [
+    [
+     19.2,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.2,
+     6.96
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     30.0,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     31.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.2,
+     6.96
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     24.0,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     6.0,
+     25.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.2,
+     6.96
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     30.0,
+     33.52
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     6.0,
+     31.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "next to",
+   "obj": 7,
+   "spans": [
+    [
+     19.2,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     0.2,
+     33.48
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     20.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     19.2,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     22.0,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 2,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     20.0,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 3,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 3,
+   "spans": [
+    [
+     20.0,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 4,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 4,
+   "spans": [
+    [
+     20.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     20.0,
+     23.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 5,
+   "spans": [
+    [
+     20.0,
+     23.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "towards",
+   "obj": 6,
+   "spans": [
+    [
+     19.2,
+     20.96
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "away",
+   "obj": 6,
+   "spans": [
+    [
+     20.0,
+     23.96
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1009/5940941487.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cyclist",
+      "attributes": ["riding a bike", "wearing helmet and cycling gear"]
+    },
+    {
+      "object 2": "cyclist2",
+      "attributes": ["riding a bike", "wearing helmet and cycling gear"]
+    },
+    {
+      "object 3": "spectator",
+      "attributes": ["holding camera", "wearing casual clothing"]
+    },
+    {
+      "object 4": "bicycle",
+      "attributes": ["being ridden by cyclist", "being ridden by cyclist2"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "riding",
+      "object 4",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "riding",
+      "object 4",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "observing",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "observing",
+      "object 2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec"]
+      ]
+    ]
+  ]
+}
+```

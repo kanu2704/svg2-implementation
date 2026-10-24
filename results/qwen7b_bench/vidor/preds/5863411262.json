@@ -1,0 +1,160 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding object", "moving"]
+    },
+    {
+      "object 2": "donkey",
+      "attributes": ["standing", "being petted"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing white shirt", "wearing brown pants", "petting donkey"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing striped shirt", "wearing sandals", "holding camera"]
+    },
+    {
+      "object 5": "camera",
+      "attributes": ["pink color", "held by person in striped shirt"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing checkered shirt", "wearing sandals", "petting donkey"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing striped dress", "wearing sandals", "holding camera"]
+    },
+    {
+      "object 8": "water bottle",
+      "attributes": ["red color", "attached to person's belt"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["wearing white shirt", "wearing brown pants", "petting donkey"]
+    },
+    {
+      "object 10": "donkey",
+      "attributes": ["standing", "being petted"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "petting",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      3,
+      "petting",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      6,
+      "petting",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      9,
+      "petting",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      4,
+      "holding",
+      5,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      7,
+      "holding",
+      5,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      6,
+      "standing near",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      9,
+      "standing near",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      7,
+      "standing near",
+      2,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      8,
+      "attached to",
+      3,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      8,
+      "attached to",
+      6,
+      [
+        [0, 33]
+      ]
+    ],
+    [
+      8,
+      "attached to",
+      9,
+      [
+        [0, 33]
+      ]
+    ]
+  ]
+}
+```

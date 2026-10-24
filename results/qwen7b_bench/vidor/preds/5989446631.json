@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing red shirt", "blonde hair"]
+    },
+    {
+      "object 2": "cup",
+      "attributes": ["yellow and red", "on table"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["wooden surface", "spoon on it"]
+    },
+    {
+      "object 4": "spoon",
+      "attributes": ["metallic", "on table"]
+    },
+    {
+      "object 5": "bib",
+      "attributes": ["white", "on child"]
+    },
+    {
+      "object 6": "toy",
+      "attributes": ["yellow and blue", "on floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drinks from",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "eats with",
+      4,
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "on",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "on",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "on",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      6,
+      "near",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

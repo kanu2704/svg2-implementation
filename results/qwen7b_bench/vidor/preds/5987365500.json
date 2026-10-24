@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "microphone",
+      "attributes": ["pink", "orange", "purple"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing white shirt", "wearing blue jeans", "holding microphone"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["wooden", "brown"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["black", "textured"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "holding",
+      "microphone",
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "chair",
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "couch",
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```
