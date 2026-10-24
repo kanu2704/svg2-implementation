@@ -1,0 +1,190 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a dark shirt", "wearing jeans"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["holding an object"]
+    },
+    {
+      "object 3": "object",
+      "attributes": ["being held by the hand"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["flat surface for placing objects"]
+    },
+    {
+      "object 5": "marker",
+      "attributes": ["black and white color"]
+    },
+    {
+      "object 6": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 7": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 8": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 9": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 10": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 11": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 12": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 13": "marker cap",
+      "attributes": ["attached to the marker"]
+    },
+    {
+      "object 14": "marker cap",
+      "attributes": ["attached to the marker"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "drops",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      3,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "rests on",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      8,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      9,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      10,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      11,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      12,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      13,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "attached to",
+      14,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

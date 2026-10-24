@@ -1,0 +1,1599 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "drawer",
+      "attributes": ["white", "metal handle"]
+    },
+    {
+      "object 2": "stove",
+      "attributes": ["white", "black burners"]
+    },
+    {
+      "object 3": "plant",
+      "attributes": ["green leaves", "in white pot"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing shorts", "holding broom"]
+    },
+    {
+      "object 5": "broom",
+      "attributes": ["blue handle", "leaning against stove"]
+    },
+    {
+      "object 6": "floor",
+      "attributes": ["tile", "cleaning"]
+    },
+    {
+      "object 7": "radiator",
+      "attributes": ["white", "under window"]
+    },
+    {
+      "object 8": "window",
+      "attributes": ["white frame", "natural light"]
+    },
+    {
+      "object 9": "wall",
+      "attributes": ["white tiles", "clean"]
+    },
+    {
+      "object 10": "kitchen counter",
+      "attributes": ["white", "near stove"]
+    },
+    {
+      "object 11": "kitchen sink",
+      "attributes": ["silver", "near counter"]
+    },
+    {
+      "object 12": "kitchen cabinet",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 13": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 14": "kitchen towel",
+      "attributes": ["brown", "hanging"]
+    },
+    {
+      "object 15": "kitchen trash can",
+      "attributes": ["white", "plastic"]
+    },
+    {
+      "object 16": "kitchen floor mat",
+      "attributes": ["brown", "textured"]
+    },
+    {
+      "object 17": "kitchen wall",
+      "attributes": ["white tiles", "clean"]
+    },
+    {
+      "object 18": "kitchen counter top",
+      "attributes": ["white", "clean"]
+    },
+    {
+      "object 19": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 20": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 21": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 22": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 23": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 24": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 25": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 26": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 27": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 28": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 29": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 30": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 31": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 32": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 33": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 34": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 35": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 36": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 37": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 38": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    },
+    {
+      "object 39": "kitchen drawer handle",
+      "attributes": ["metallic", "attached to drawer"]
+    },
+    {
+      "object 40": "kitchen drawer",
+      "attributes": ["white", "closed"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "standing near",
+      "stove",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "holding",
+      "broom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "cleaning",
+      "floor",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "moving",
+      "broom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "looking at",
+      "kitchen counter",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen counter",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen sink",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen cabinet",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen towel",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen trash can",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen floor mat",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen wall",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen counter top",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer handle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen drawer",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "person",
+      "standing near",
+      "kitchen
