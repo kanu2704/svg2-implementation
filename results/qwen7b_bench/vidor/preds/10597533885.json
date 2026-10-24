@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a white shirt", "playing with toys"]
+    },
+    {
+      "object 2": "toy box",
+      "attributes": ["filled with toys", "colorful"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["spinning wheel toy", "yellow and colorful"]
+    },
+    {
+      "object 4": "house",
+      "attributes": ["wooden house toy", "red roof"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      3,
+      "spinning",
+      3,
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```

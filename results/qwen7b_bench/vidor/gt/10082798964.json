@@ -1,0 +1,261 @@
+{
+ "dataset": "vidor",
+ "video_id": "10082798964",
+ "fps": 25.0,
+ "n_frames": 345,
+ "video_fps": 25.0,
+ "ann_frames": 345,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.48,
+     7.44
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     9.4,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     1.28,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     3.44,
+     4.68
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     5.24,
+     7.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     7.44,
+     8.24
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     9.04,
+     9.96
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     10.88,
+     11.72
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     12.64,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.76
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     2.16,
+     3.08
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     3.88,
+     5.2
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     9.68,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "speak to",
+   "obj": 0,
+   "spans": [
+    [
+     11.72,
+     12.64
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1161/10082798964.mp4",
+ "video": "video.mp4"
+}

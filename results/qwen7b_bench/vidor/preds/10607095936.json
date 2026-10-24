@@ -1,0 +1,70 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "speaker",
+      "attributes": ["holding microphone", "wearing red cape"]
+    },
+    {
+      "object 2": "man in vest",
+      "attributes": ["wearing blue vest", "standing next to speaker"]
+    },
+    {
+      "object 3": "man in green shirt",
+      "attributes": ["wearing green shirt", "standing near man in vest"]
+    },
+    {
+      "object 4": "woman in blue dress",
+      "attributes": ["wearing blue dress", "holding microphone"]
+    },
+    {
+      "object 5": "person in mascot costume",
+      "attributes": ["wearing mascot costume", "holding yellow object"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      1,
+      "stands behind",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      4,
+      "stands behind",
+      1,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      5,
+      "stands next to",
+      1,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["smiling", "wearing a floral dress"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing a pink shirt and gray shorts"]
+    },
+    {
+      "object 3": "fan",
+      "attributes": ["blue and white color"]
+    }
+  ],
+  "relationships": [
+    [
+      "baby",
+      "near",
+      "adult",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "adult",
+      "near",
+      "fan",
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

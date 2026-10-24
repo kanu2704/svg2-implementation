@@ -1,0 +1,37 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing blue jacket", "holding phone"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing camouflage jacket", "wearing green gloves"]
+    },
+    {
+      "object 3": "phone",
+      "attributes": ["white color", "being held by person 1"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "is holding",
+      "object 3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 2",
+      "is walking",
+      "background",
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

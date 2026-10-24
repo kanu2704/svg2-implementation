@@ -1,0 +1,140 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fencer",
+      "attributes": ["wearing white fencing gear", "engaged in a fencing match"]
+    },
+    {
+      "object 2": "opponent",
+      "attributes": ["wearing white fencing gear", "engaged in a fencing match"]
+    },
+    {
+      "object 3": "spectators",
+      "attributes": ["sitting on benches", "watching the fencing match"]
+    },
+    {
+      "object 4": "fencing foil",
+      "attributes": ["held by fencer", "used for striking"]
+    },
+    {
+      "object 5": "fencing foil",
+      "attributes": ["held by opponent", "used for striking"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["white, with a curved backrest", "placed against the wall"]
+    },
+    {
+      "object 7": "referee",
+      "attributes": ["standing near the fencers", "observing the match"]
+    },
+    {
+      "object 8": "fencing strip",
+      "attributes": ["blue and white striped surface", "used for fencing matches"]
+    },
+    {
+      "object 9": "camera",
+      "attributes": ["positioned to capture the match", "used for recording the event"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "fencing with",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "holds",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "holds",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "watches",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "watches",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      8,
+      "is on",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      8,
+      "is on",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      9,
+      "records",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      9,
+      "records",
+      2,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

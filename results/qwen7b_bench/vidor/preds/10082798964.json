@@ -1,0 +1,37 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["sitting", "wearing a dress"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting", "wearing a patterned dress"]
+    },
+    {
+      "object 3": "teddy bear",
+      "attributes": ["orange", "soft toy"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "clapping hands",
+      null,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

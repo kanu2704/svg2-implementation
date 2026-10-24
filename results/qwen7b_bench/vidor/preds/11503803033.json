@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "skier",
+      "attributes": ["wearing patterned jacket", "wearing black pants", "wearing ski boots"]
+    },
+    {
+      "object 2": "skier",
+      "attributes": ["wearing black jacket", "wearing yellow pants", "wearing ski boots"]
+    },
+    {
+      "object 3": "skier",
+      "attributes": ["wearing green jacket", "wearing red pants", "wearing ski boots"]
+    },
+    {
+      "object 4": "skier",
+      "attributes": ["wearing white and black patterned jacket", "wearing black pants", "wearing ski boots"]
+    },
+    {
+      "object 5": "skier",
+      "attributes": ["wearing black jacket", "wearing black pants", "wearing ski boots"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "skis with",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "skis with",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "skis with",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "skis with",
+      5,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

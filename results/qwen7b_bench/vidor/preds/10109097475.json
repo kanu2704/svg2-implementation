@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "airplane",
+      "attributes": ["gray", "propeller-driven", "large"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing orange vest", "standing on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ]
+  ]
+}
+```

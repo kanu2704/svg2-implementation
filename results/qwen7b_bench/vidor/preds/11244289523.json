@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["sitting", "wearing black top"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing pink outfit", "wearing headband"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing striped shirt", "holding baby"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["cleaning baby's face"]
+    },
+    {
+      "object 5": "plate",
+      "attributes": ["on table", "with food remnants"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "cleaning",
+      "baby",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,47 @@
+{
+ "dataset": "vidor",
+ "video_id": "10109097475",
+ "fps": 29.97,
+ "n_frames": 2698,
+ "video_fps": 29.97,
+ "ann_frames": 2698,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "aircraft"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     64.06406406406407,
+     71.07107107107107
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     74.07407407407408,
+     77.91124457791125
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1123/10109097475.mp4",
+ "video": "video.mp4"
+}

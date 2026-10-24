@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "deer1",
+      "attributes": ["brown", "spotted"]
+    },
+    {
+      "object 2": "deer2",
+      "attributes": ["brown", "spotted"]
+    },
+    {
+      "object 3": "deer3",
+      "attributes": ["brown", "spotted"]
+    },
+    {
+      "object 4": "deer4",
+      "attributes": ["brown", "spotted"]
+    },
+    {
+      "object 5": "deer5",
+      "attributes": ["brown", "spotted"]
+    }
+  ],
+  "relationships": [
+    [
+      "deer1",
+      "battles",
+      "deer2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ],
+    [
+      "deer2",
+      "battles",
+      "deer3",
+      [
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "deer3",
+      "battles",
+      "deer4",
+      [
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ],
+    [
+      "deer4",
+      "battles",
+      "deer5",
+      [
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      "deer5",
+      "battles",
+      "deer1",
+      [
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with toy car"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["yellow and black color", "being pushed by child"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["plastic, greenish-blue color", "placed on the deck"]
+    },
+    {
+      "object 4": "deck",
+      "attributes": ["wooden surface", "outdoor setting"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["wooden, small size", "on the deck"]
+    },
+    {
+      "object 6": "toy",
+      "attributes": ["blue and red color", "on the deck"]
+    },
+    {
+      "object 7": "tree",
+      "attributes": ["green leaves", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pushing",
+      2,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      3,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      5,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      6,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      7,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

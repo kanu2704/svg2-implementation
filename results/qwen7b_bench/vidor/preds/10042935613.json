@@ -1,0 +1,120 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["eating", "talking"]
+    },
+    {
+      "object 2": "plates",
+      "attributes": ["full of food", "on table"]
+    },
+    {
+      "object 3": "forks",
+      "attributes": ["in use", "on plates"]
+    },
+    {
+      "object 4": "bottles",
+      "attributes": ["green", "on table"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["white", "with food and drinks"]
+    },
+    {
+      "object 6": "ceiling fan",
+      "attributes": ["spinning", "overhead"]
+    },
+    {
+      "object 7": "windows",
+      "attributes": ["visible", "behind people"]
+    },
+    {
+      "object 8": "food",
+      "attributes": ["on plates", "being eaten"]
+    },
+    {
+      "object 9": "napkins",
+      "attributes": ["on table", "near plates"]
+    },
+    {
+      "object 10": "chairs",
+      "attributes": ["under people", "at table"]
+    },
+    {
+      "object 11": "coca-cola shirt",
+      "attributes": ["red", "on boy"]
+    },
+    {
+      "object 12": "blue shirt",
+      "attributes": ["on boy", "wearing glasses"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "eating",
+      2,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "talking",
+      1,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "using",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "on",
+      5,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "under",
+      10,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "wearing",
+      11,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      1,
+      "wearing",
+      12,
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```

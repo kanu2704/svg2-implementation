@@ -1,0 +1,140 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing a dark blue shirt", "wearing camouflage pants", "playing with a toy"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["standing in the background", "wearing a red dress"]
+    },
+    {
+      "object 3": "tv",
+      "attributes": ["large screen", "placed on a stand"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["beige leather", "located near the boy"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["wooden", "arranged around a table"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["dark wood", "surrounded by chairs"]
+    },
+    {
+      "object 7": "floor",
+      "attributes": ["marble-like texture", "visible beneath the furniture"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      2,
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      2,
+      "stands behind",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      5,
+      "near",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      6,
+      "around",
+      5,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      7,
+      "under",
+      6,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "priest",
+      "attributes": ["wears golden robe", "holds staff"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wears white dress", "has blonde hair"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wears suit", "stands near woman"]
+    },
+    {
+      "object 4": "ceremonial staff",
+      "attributes": ["held by priest", "golden"]
+    },
+    {
+      "object 5": "altar",
+      "attributes": ["white cloth", "religious significance"]
+    },
+    {
+      "object 6": "people",
+      "attributes": ["attending ceremony", "dressed formally"]
+    },
+    {
+      "object 7": "nun",
+      "attributes": ["wears habit", "stands near altar"]
+    },
+    {
+      "object 8": "camera",
+      "attributes": ["records ceremony", "positioned in front of people"]
+    },
+    {
+      "object 9": "altar cross",
+      "attributes": ["visible on altar", "symbolic"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands behind",
+      6,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      1,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      2,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      4,
+      "holds",
+      1,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      5,
+      "is in front of",
+      6,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      6,
+      "stands around",
+      7,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      8,
+      "records",
+      6,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      9,
+      "is on",
+      5,
+      [
+        ["0 - 4 sec", "36 - 40 sec"]
+      ]
+    ]
+  ]
+}
+```
