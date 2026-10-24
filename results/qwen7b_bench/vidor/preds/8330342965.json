@@ -1,0 +1,57 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a blue shirt and pink pants", "playing with a toy"]
+    },
+    {
+      "object 2": "couch",
+      "attributes": ["brown leather couch", "in the living room"]
+    },
+    {
+      "object 3": "hat",
+      "attributes": ["silver and shiny", "on the girl's head"]
+    },
+    {
+      "object 4": "tv",
+      "attributes": ["black television", "in the corner of the room"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      3,
+      [
+        [8, 16],
+        [24, 32]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      3,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      1,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      4,
+      "opposite",
+      2,
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```

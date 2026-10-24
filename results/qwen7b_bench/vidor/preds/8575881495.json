@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pink pajamas", "playing with a toy"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on the couch", "using a laptop"]
+    },
+    {
+      "object 3": "laptop",
+      "attributes": ["on woman's lap", "being used by woman"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["pink and purple", "held by child"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["brown leather", "where woman is sitting"]
+    },
+    {
+      "object 6": "background",
+      "attributes": ["indoor setting", "with furniture"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      2,
+      "using",
+      3,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      2,
+      "on",
+      5,
+      [
+        [0, 68]
+      ]
+    ]
+  ]
+}
+```

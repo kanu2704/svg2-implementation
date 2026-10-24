@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Skier",
+      "attributes": ["yellow jacket", "purple helmet", "ski poles"]
+    },
+    {
+      "object 2": "Skis",
+      "attributes": ["attached to skier's feet"]
+    },
+    {
+      "object 3": "Snow",
+      "attributes": ["white and snowy terrain"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "skiing on",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "standing on",
+      3,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

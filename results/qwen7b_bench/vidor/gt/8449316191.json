@@ -1,0 +1,233 @@
+{
+ "dataset": "vidor",
+ "video_id": "8449316191",
+ "fps": 29.97002997002997,
+ "n_frames": 502,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 502,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "guitar"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "guitar"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.847166666666666
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "play(instrument)",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.016000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "hold",
+   "obj": 0,
+   "spans": [
+    [
+     16.016000000000002,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.279933333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     12.879533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     13.5135,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.750066666666665
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1001/8449316191.mp4",
+ "video": "video.mp4"
+}

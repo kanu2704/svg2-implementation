@@ -1,0 +1,130 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["standing", "wearing white shirt and blue jeans"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["standing", "wearing red shirt and blue jeans"]
+    },
+    {
+      "object 3": "phone",
+      "attributes": ["in hand", "displaying screen"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["standing", "wearing green shirt and blue pants"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["standing", "wearing black pants and sandals"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["standing", "wearing purple pants and sandals"]
+    },
+    {
+      "object 7": "phone",
+      "attributes": ["in hand", "displaying screen"]
+    },
+    {
+      "object 8": "child",
+      "attributes": ["standing", "wearing striped shirt and blue pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "held by",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "in hand",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "held by",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

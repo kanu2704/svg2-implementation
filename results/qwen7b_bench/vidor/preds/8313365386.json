@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing red sweater with snowflake pattern", "sitting at table"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing green and white shirt", "sitting at table"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["white surface", "items on it"]
+    },
+    {
+      "object 4": "gift bag",
+      "attributes": ["green with red stars", "on the left side of the table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      3,
+      "has items on",
+      4,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

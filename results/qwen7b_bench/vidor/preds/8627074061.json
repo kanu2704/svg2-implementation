@@ -1,0 +1,150 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Child",
+      "attributes": ["wearing a grey sweater", "playing with paper cups"]
+    },
+    {
+      "object 2": "Adult",
+      "attributes": ["wearing a blue shirt", "holding a paper cup"]
+    },
+    {
+      "object 3": "Paper Cups",
+      "attributes": ["white with colorful designs", "being passed between the Child and Adult"]
+    },
+    {
+      "object 4": "Table",
+      "attributes": ["dark surface", "holds the paper cups and other items"]
+    },
+    {
+      "object 5": "Chair",
+      "attributes": ["brown wicker", "in the background of the scene"]
+    },
+    {
+      "object 6": "Woven Chair",
+      "attributes": ["brown wicker", "in the background of the scene"]
+    },
+    {
+      "object 7": "Other Items",
+      "attributes": ["green toy car", "pieces of paper", "being used by the Child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "passes",
+      2,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ],
+    [
+      2,
+      "holds",
+      3,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ],
+    [
+      3,
+      "on",
+      4,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      5,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      6,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      7,
+      [
+        [0, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40],
+        [44, 48],
+        [52, 56],
+        [60, 64],
+        [68, 72],
+        [76, 80],
+        [84, 88],
+        [92, 96]
+      ]
+    ]
+  ]
+}
+```

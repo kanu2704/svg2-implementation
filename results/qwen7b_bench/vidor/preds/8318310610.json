@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dancer",
+      "attributes": ["wearing a grey jacket", "blue jeans", "white sneakers"]
+    },
+    {
+      "object 2": "dancer",
+      "attributes": ["wearing a black jacket", "blue jeans", "white sneakers"]
+    },
+    {
+      "object 3": "dancer",
+      "attributes": ["wearing a pink and white patterned jacket", "jeans with colorful patterns", "white sneakers"]
+    },
+    {
+      "object 4": "dancer",
+      "attributes": ["wearing a white jacket with black polka dots", "jeans", "white sneakers"]
+    },
+    {
+      "object 5": "dancer",
+      "attributes": ["wearing a blue jacket", "jeans with red and white stripes", "red sneakers"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "dancing together",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "dancing together",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "dancing together",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "dancing together",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "dancing together",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "dancing together",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "dancing together",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "dancing together",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "dancing together",
+      5,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "dancing together",
+      5,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

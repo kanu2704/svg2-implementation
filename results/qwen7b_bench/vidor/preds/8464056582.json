@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a colorful jacket", "kneeling on the floor"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["brown and black fur", "standing near the child"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["blue and orange", "on the floor"]
+    },
+    {
+      "object 4": "bag",
+      "attributes": ["blue with white text", "on the floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

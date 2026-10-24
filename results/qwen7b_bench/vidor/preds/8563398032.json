@@ -1,0 +1,128 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["sitting", "wearing black sweatshirt"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["sitting", "wearing black sweater"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["green tablecloth", "papers on it"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["red", "metallic frame"]
+    },
+    {
+      "object 5": "cup",
+      "attributes": ["white", "on the table"]
+    },
+    {
+      "object 6": "leg",
+      "attributes": ["crossed", "black shoes"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaking to",
+      2,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "speaking to",
+      1,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "gesturing with",
+      6,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "gesturing with",
+      6,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "sitting at",
+      3,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "sitting at",
+      3,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      5,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      5,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      4,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      4,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      1,
+      "across from",
+      2,
+      [
+        [0, 84]
+      ]
+    ],
+    [
+      2,
+      "across from",
+      1,
+      [
+        [0, 84]
+      ]
+    ]
+  ]
+}
+```

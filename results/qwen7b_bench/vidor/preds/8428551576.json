@@ -1,0 +1,128 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["sitting", "playing with toy"]
+    },
+    {
+      "object 2": "toy",
+      "attributes": ["green plush", "on floor"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["white paper", "being folded"]
+    },
+    {
+      "object 4": "bookshelf",
+      "attributes": ["filled with books", "in background"]
+    },
+    {
+      "object 5": "teddy bear",
+      "attributes": ["wearing pink shirt", "on shelf"]
+    },
+    {
+      "object 6": "peppa pig",
+      "attributes": ["red outfit", "lying on floor"]
+    },
+    {
+      "object 7": "toy box",
+      "attributes": ["colorful", "on floor"]
+    },
+    {
+      "object 8": "superman toy",
+      "attributes": ["red cape", "on top of toy box"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        [72, 92]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [72, 92]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        [80, 92]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        [80, 92]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      8,
+      [
+        [80, 92]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      7,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "lies on",
+      8,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

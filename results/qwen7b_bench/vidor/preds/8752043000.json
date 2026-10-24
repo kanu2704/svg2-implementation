@@ -1,0 +1,37 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["smiling", "wearing striped shirt"]
+    },
+    {
+      "object 2": "car seat",
+      "attributes": ["black and yellow", "child seated in it"]
+    },
+    {
+      "object 3": "hand",
+      "attributes": ["holding camera", "moving around"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "being held by",
+      "object 3",
+      [
+        ["0 - 4 sec", "60 - 64 sec"],
+        ["48 - 52 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      "object 1",
+      "seated in",
+      "object 2",
+      [
+        ["0 - 68 sec"]
+      ]
+    ]
+  ]
+}
+```

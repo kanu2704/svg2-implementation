@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "tablet",
+      "attributes": ["being held", "illuminating face"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["reading tablet", "wearing camouflage shirt"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["looking at girl", "wearing white and maroon top"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["sitting at table", "wearing gray hoodie"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["wooden surface", "holding books"]
+    },
+    {
+      "object 6": "book",
+      "attributes": ["open on table", "illuminated by tablet light"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "reading",
+      1,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      3,
+      "observing",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      4,
+      "sitting",
+      5,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      6,
+      "illuminated by",
+      1,
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```

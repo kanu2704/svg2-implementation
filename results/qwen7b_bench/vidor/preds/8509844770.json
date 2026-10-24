@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing blue shirt", "holding object"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing floral dress", "standing upright"]
+    },
+    {
+      "object 3": "object",
+      "attributes": ["being held by person 1", "moving slightly"]
+    },
+    {
+      "object 4": "object",
+      "attributes": ["held by person 2", "positioned near person 1"]
+    },
+    {
+      "object 5": "object",
+      "attributes": ["positioned on floor", "part of furniture"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      3,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      2,
+      "holds",
+      4,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      3,
+      "is near",
+      4,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      4,
+      "is near",
+      5,
+      [
+        [0, 3]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing blue shirt", "playing with toy"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing yellow shirt", "playing with toy"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["yellow color", "rolling on ground"]
+    },
+    {
+      "object 4": "tricycle",
+      "attributes": ["blue color", "stationary on ground"]
+    },
+    {
+      "object 5": "truck",
+      "attributes": ["yellow color", "stationary on ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays_with",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      2,
+      "plays_with",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "stands_near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      2,
+      "stands_near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "stands_near",
+      5,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      2,
+      "stands_near",
+      5,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

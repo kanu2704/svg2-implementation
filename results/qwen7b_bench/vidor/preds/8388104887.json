@@ -1,0 +1,41 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["white fur", "wearing a collar"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["red and white patterned"]
+    },
+    {
+      "object 3": "grass",
+      "attributes": ["green, short grass"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 4],
+        [16, 20],
+        [36, 40]
+      ]
+    ],
+    [
+      2,
+      "in the presence of",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [20, 24],
+        [40, 44]
+      ]
+    ]
+  ]
+}
+```

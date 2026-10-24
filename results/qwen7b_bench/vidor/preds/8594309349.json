@@ -1,0 +1,57 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "diver",
+      "attributes": ["wearing scuba gear", "swimming underwater"]
+    },
+    {
+      "object 2": "fish",
+      "attributes": ["swimming underwater", "yellow and black coloration"]
+    },
+    {
+      "object 3": "diver",
+      "attributes": ["wearing scuba gear", "swimming underwater"]
+    },
+    {
+      "object 4": "diver",
+      "attributes": ["wearing scuba gear", "swimming underwater"]
+    },
+    {
+      "object 5": "diver",
+      "attributes": ["wearing scuba gear", "swimming underwater"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      4,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      5,
+      [
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

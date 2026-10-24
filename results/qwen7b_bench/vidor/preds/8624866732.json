@@ -1,0 +1,50 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["moving", "touching surface"]
+    },
+    {
+      "object 2": "rolling pin",
+      "attributes": ["rolling", "on surface"]
+    },
+    {
+      "object 3": "surface",
+      "attributes": ["flat", "wooden"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "rolling",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "touching",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "on",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,74 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing blue jacket", "holding a stick"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing black jacket", "carrying a backpack"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing brown jacket", "carrying a backpack"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing next to",
+      2,
+      [
+        [0, 4],
+        [8, 16]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      3,
+      [
+        [0, 4],
+        [8, 16]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [0, 4],
+        [8, 16]
+      ]
+    ],
+    [
+      1,
+      "walking with",
+      2,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "walking with",
+      3,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

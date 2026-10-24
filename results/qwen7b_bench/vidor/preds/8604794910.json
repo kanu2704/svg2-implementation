@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing a red cap", "wearing a striped shirt"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing a blue jacket", "wearing blue pants with white stripes"]
+    },
+    {
+      "object 3": "tennis racket",
+      "attributes": ["yellow and black frame", "being held by the boy in object 1"]
+    },
+    {
+      "object 4": "tennis racket",
+      "attributes": ["yellow and black frame", "being held by the boy in object 2"]
+    },
+    {
+      "object 5": "tennis ball",
+      "attributes": ["on the ground", "visible in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      5,
+      "in front of",
+      1,
+      [
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```
