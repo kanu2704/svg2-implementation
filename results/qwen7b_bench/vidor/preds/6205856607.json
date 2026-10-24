@@ -1,0 +1,42 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing pink jacket", "smiling"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing black shirt", "holding girl"]
+    },
+    {
+      "object 3": "horse",
+      "attributes": ["brown and white", "sniffing girl"]
+    }
+  ],
+  "relationships": [
+    [
+      "girl",
+      "being held by",
+      "man",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "girl",
+      "being sniffed by",
+      "horse",
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32]
+      ]
+    ]
+  ]
+}
+```

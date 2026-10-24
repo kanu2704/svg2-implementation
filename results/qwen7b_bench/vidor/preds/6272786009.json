@@ -1,0 +1,208 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 2": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 3": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 4": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 5": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 6": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 7": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 8": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 9": "boat",
+      "attributes": ["crew", "rowing"]
+    },
+    {
+      "object 10": "boat",
+      "attributes": ["crew", "rowing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "parallel to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "parallel to",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "parallel to",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "parallel to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "parallel to",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "parallel to",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "parallel to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "parallel to",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "parallel to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "parallel to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "crosses in front of",
+      6,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "crosses in front of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "crosses in front of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "crosses in front of",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "crosses in front of",
+      10,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,17 @@
+```json
+{
+  "objects": [
+    {
+      "1": "rider",
+      "attributes": ["wearing helmet", "wearing protective gear", "riding ATV"]
+    },
+    {
+      "2": "ATV",
+      "attributes": ["four-wheeled", "muddy", "moving through terrain"]
+    }
+  ],
+  "relationships": [
+    [1, "riding", 2, [[4, 28]]]
+  ]
+}
+```

@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["sitting", "clapping"]
+    },
+    {
+      "object 2": "woman in pink",
+      "attributes": ["standing", "dancing"]
+    },
+    {
+      "object 3": "clapboard",
+      "attributes": ["on table", "being held by girl"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["white surface", "holds clapboard"]
+    },
+    {
+      "object 5": "girls at table",
+      "attributes": ["sitting", "clapping"]
+    },
+    {
+      "object 6": "clapboard",
+      "attributes": ["on table", "being held by girl"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["white surface", "holds clapboard"]
+    },
+    {
+      "object 8": "people",
+      "attributes": ["sitting", "clapping"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "clapping with",
+      8,
+      [
+        [0, 74]
+      ]
+    ],
+    [
+      2,
+      "dancing near",
+      1,
+      [
+        [0, 74]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [12, 74]
+      ]
+    ],
+    [
+      5,
+      "clapping with",
+      8,
+      [
+        [0, 74]
+      ]
+    ],
+    [
+      6,
+      "holding",
+      7,
+      [
+        [12, 74]
+      ]
+    ]
+  ]
+}
+```

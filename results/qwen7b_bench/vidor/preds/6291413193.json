@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a white shirt", "wearing black shorts", "wearing a cap"]
+    },
+    {
+      "object 2": "dolphin",
+      "attributes": ["swimming in water", "grayish color"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing near",
+      2,
+      [
+        ["0 - 68 sec", "0 - 68 sec"]
+      ]
+    ]
+  ]
+}
+```

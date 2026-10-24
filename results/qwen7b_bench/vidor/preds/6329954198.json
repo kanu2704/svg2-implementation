@@ -1,0 +1,53 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing glasses", "wearing a t-shirt", "wearing pants"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a cardigan", "wearing a shirt", "wearing pants"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["silver", "station wagon", "parked"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing near",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "crouching",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "standing behind",
+      1,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "stationary",
+      null,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

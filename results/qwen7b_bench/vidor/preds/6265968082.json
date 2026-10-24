@@ -1,0 +1,134 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing a jacket"]
+    },
+    {
+      "object 2": "guitarist_2",
+      "attributes": ["playing guitar", "wearing a vest"]
+    },
+    {
+      "object 3": "guitarist_3",
+      "attributes": ["playing guitar", "wearing a plaid shirt"]
+    },
+    {
+      "object 4": "drummer",
+      "attributes": ["playing drums", "wearing a hat"]
+    },
+    {
+      "object 5": "singer",
+      "attributes": ["singing", "wearing a jacket"]
+    },
+    {
+      "object 6": "drums",
+      "attributes": ["drum set", "on stage"]
+    },
+    {
+      "object 7": "microphone",
+      "attributes": ["on stand", "near singer"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing with",
+      "guitarist_2",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing with",
+      "guitarist_3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "guitarist_2",
+      "playing with",
+      "guitarist_3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing with",
+      "guitarist",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing with",
+      "guitarist_2",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing with",
+      "guitarist_3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "singer",
+      "singing into",
+      "microphone",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ]
+  ]
+}
+```

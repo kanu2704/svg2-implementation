@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Baby",
+      "attributes": ["wearing pink outfit", "sitting in chair"]
+    },
+    {
+      "object 2": "Child",
+      "attributes": ["wearing red outfit", "sitting in chair"]
+    },
+    {
+      "object 3": "Baby",
+      "attributes": ["wearing yellow outfit", "sitting in chair"]
+    },
+    {
+      "object 4": "Child",
+      "attributes": ["wearing brown outfit", "sitting in chair"]
+    },
+    {
+      "object 5": "Baby",
+      "attributes": ["wearing green outfit", "sitting in chair"]
+    },
+    {
+      "object 6": "Chair",
+      "attributes": ["purple color", "baby sitting on it"]
+    },
+    {
+      "object 7": "Chair",
+      "attributes": ["green color", "child sitting on it"]
+    },
+    {
+      "object 8": "Chair",
+      "attributes": ["yellow color", "baby sitting on it"]
+    },
+    {
+      "object 9": "Chair",
+      "attributes": ["brown color", "child sitting on it"]
+    },
+    {
+      "object 10": "Chair",
+      "attributes": ["green color", "baby sitting on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "sits next to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

@@ -1,0 +1,78 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "duck",
+      "attributes": ["swimming", "feathers"]
+    },
+    {
+      "object 2": "duckling",
+      "attributes": ["swimming", "feathers"]
+    },
+    {
+      "object 3": "duck",
+      "attributes": ["swimming", "feathers"]
+    },
+    {
+      "object 4": "duck",
+      "attributes": ["swimming", "feathers"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ],
+    [
+      1,
+      "swimming with",
+      3,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ],
+    [
+      1,
+      "swimming with",
+      4,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ],
+    [
+      2,
+      "swimming with",
+      3,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ],
+    [
+      2,
+      "swimming with",
+      4,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      4,
+      [
+        [0, 48],
+        [52, 56]
+      ]
+    ]
+  ]
+}
+```

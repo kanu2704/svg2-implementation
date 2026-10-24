@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Patient",
+      "attributes": ["wearing hospital gown", "using walker"]
+    },
+    {
+      "object 2": "Nurse 1",
+      "attributes": ["wearing scrubs", "assisting patient"]
+    },
+    {
+      "object 3": "Nurse 2",
+      "attributes": ["wearing scrubs", "assisting patient"]
+    },
+    {
+      "object 4": "Medical Equipment",
+      "attributes": ["IV drip stand", "medical monitors"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being assisted by",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "being assisted by",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      4,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

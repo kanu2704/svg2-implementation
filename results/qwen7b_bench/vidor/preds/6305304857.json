@@ -1,0 +1,37 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing glasses", "wearing a shirt with a pattern"]
+    },
+    {
+      "object 2": "hat",
+      "attributes": ["checkered pattern", "white pom-poms"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["beige color", "wooden structure"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "wears",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec", "16 - 20 sec", "24 - 28 sec"],
+        ["4 - 8 sec", "12 - 16 sec", "20 - 24 sec", "28 - 32 sec"]
+      ]
+    ],
+    [
+      1,
+      "sits on",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec", "28 - 32 sec"]
+      ]
+    ]
+  ]
+}
+```

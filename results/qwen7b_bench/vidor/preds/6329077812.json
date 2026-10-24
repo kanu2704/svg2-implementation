@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["sleeping", "being held"]
+    },
+    {
+      "object 2": "bottle",
+      "attributes": ["blue cap", "white body"]
+    },
+    {
+      "object 3": "hand",
+      "attributes": ["holding bottle", "supporting baby"]
+    },
+    {
+      "object 4": "cloth",
+      "attributes": ["patterned", "under baby"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "being fed",
+      "object 2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "holding",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "supporting",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "covering",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

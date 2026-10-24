@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "walker",
+      "attributes": ["colorful", "plastic", "with wheels"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing winter clothes", "playing with walker"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["white", "station wagon", "parked"]
+    },
+    {
+      "object 4": "background",
+      "attributes": ["residential street", "trees visible", "daytime"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "playing with",
+      "walker",
+      [
+        ["0 - 84 sec", "0 - 84 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "car",
+      [
+        ["12 - 84 sec", "12 - 84 sec"]
+      ]
+    ]
+  ]
+}
+```
