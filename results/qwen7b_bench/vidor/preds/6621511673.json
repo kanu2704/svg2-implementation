@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing red shirt", "pointing at objects"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing glasses", "holding child"]
+    },
+    {
+      "object 3": "christmas tree",
+      "attributes": ["decorated with ornaments", "on the wall"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pointing at",
+      3,
+      [
+        ["0 - 4 sec", "88 - 92 sec"]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      1,
+      [
+        ["0 - 92 sec"]
+      ]
+    ]
+  ]
+}
+```

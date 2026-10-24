@@ -1,0 +1,212 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pajamas", "playing with stuffed animal"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing casual clothes", "interacting with child"]
+    },
+    {
+      "object 3": "child2",
+      "attributes": ["wearing pajamas", "standing nearby"]
+    },
+    {
+      "object 4": "child3",
+      "attributes": ["wearing pajamas", "standing nearby"]
+    },
+    {
+      "object 5": "child4",
+      "attributes": ["wearing pajamas", "standing nearby"]
+    },
+    {
+      "object 6": "child5",
+      "attributes": ["wearing pajamas", "standing nearby"]
+    },
+    {
+      "object 7": "child6",
+      "attributes": ["wearing pajamas", "standing nearby"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "playing with",
+      "child2",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "playing with",
+      "child3",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "playing with",
+      "child4",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "playing with",
+      "child5",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "playing with",
+      "child6",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "child",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "child2",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "child3",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "child4",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "child5",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      "child",
+      "standing near",
+      "child6",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,63 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["black fur", "sniffing"]
+    },
+    {
+      "object 2": "computer",
+      "attributes": ["screen visible", "laptop"]
+    },
+    {
+      "object 3": "dog2",
+      "attributes": ["brown fur", "sniffing"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["holding object", "visible in close-up"]
+    }
+  ],
+  "relationships": [
+    [
+      "dog",
+      "sniffing",
+      "computer",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "dog2",
+      "sniffing",
+      "computer",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "dog",
+      "sniffing",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["40 - 44 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      "hand",
+      "holding",
+      "object 4",
+      [
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"]
+      ]
+    ]
+  ]
+}
+```

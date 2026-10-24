@@ -1,0 +1,74 @@
+```json
+{
+  "objects": [
+    {
+      "o1": "man in white",
+      "attributes": ["wearing white outfit", "holding football"]
+    },
+    {
+      "o2": "man in black",
+      "attributes": ["wearing black outfit", "standing still"]
+    },
+    {
+      "o3": "man in red",
+      "attributes": ["wearing red outfit", "running"]
+    },
+    {
+      "o4": "man in white and red",
+      "attributes": ["wearing white and red outfit", "running"]
+    },
+    {
+      "o5": "man in black and red",
+      "attributes": ["wearing black and red outfit", "running"]
+    },
+    {
+      "o6": "man in black and white",
+      "attributes": ["wearing black and white outfit", "running"]
+    }
+  ],
+  "relationships": [
+    [
+      "o1",
+      "holds",
+      "o3",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "o3",
+      "runs past",
+      "o2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "o4",
+      "runs past",
+      "o2",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "o5",
+      "runs past",
+      "o2",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "o6",
+      "runs past",
+      "o2",
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

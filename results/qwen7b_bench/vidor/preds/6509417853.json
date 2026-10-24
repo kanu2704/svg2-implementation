@@ -1,0 +1,96 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person1",
+      "attributes": ["wearing a black jacket", "sitting at a table"]
+    },
+    {
+      "object 2": "person2",
+      "attributes": ["wearing a blue cap", "sitting at a table"]
+    },
+    {
+      "object 3": "person3",
+      "attributes": ["wearing a black shirt", "sitting at a table"]
+    },
+    {
+      "object 4": "person4",
+      "attributes": ["wearing a dark jacket", "sitting at a table"]
+    },
+    {
+      "object 5": "cup1",
+      "attributes": ["yellow paper cup", "on the table"]
+    },
+    {
+      "object 6": "bottle1",
+      "attributes": ["plastic bottle", "on the table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,91 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a black jacket", "smiling"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a gray sweater", "standing with hands behind back"]
+    },
+    {
+      "object 3": "video1",
+      "attributes": ["displaying a soccer match", "changing scenes"]
+    },
+    {
+      "object 4": "man3",
+      "attributes": ["wearing a dark jacket and jeans", "walking in the background"]
+    },
+    {
+      "object 5": "man4",
+      "attributes": ["wearing a green jacket", "holding a child"]
+    },
+    {
+      "object 6": "people6",
+      "attributes": ["dancing in the background", "moving rhythmically"]
+    },
+    {
+      "object 7": "people7",
+      "attributes": ["standing in a line", "watching the scene"]
+    }
+  ],
+  "relationships": [
+    [
+      "man1",
+      "standing next to",
+      "man2",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "man3",
+      "walking past",
+      "man1",
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32]
+      ]
+    ],
+    [
+      "man4",
+      "holding",
+      "child",
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "people6",
+      "dancing",
+      "video1",
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      "people7",
+      "standing",
+      "video1",
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

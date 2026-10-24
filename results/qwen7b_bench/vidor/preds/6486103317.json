@@ -1,0 +1,2090 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing white shirt", "black pants"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing red and black jacket", "black pants"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing red jacket", "red pants"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing gray hoodie", "gray pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks past",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "walks past",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "stands in front of",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "stands in front of",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands in a circle with",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "stands in a circle with",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "stands in a circle with",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands in a circle with",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+   

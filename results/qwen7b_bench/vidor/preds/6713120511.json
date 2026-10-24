@@ -1,0 +1,163 @@
+```json
+{
+  "objects": [
+    {
+      "1": "Person",
+      "attributes": ["wearing snow gear", "sitting on a sled"]
+    },
+    {
+      "2": "Person",
+      "attributes": ["standing in the background", "wearing black clothing"]
+    },
+    {
+      "3": "Person",
+      "attributes": ["standing in the background", "wearing black clothing"]
+    },
+    {
+      "4": "Person",
+      "attributes": ["standing in the background", "wearing black clothing"]
+    },
+    {
+      "5": "Person",
+      "attributes": ["wearing snow gear", "sitting on a sled"]
+    },
+    {
+      "6": "Person",
+      "attributes": ["wearing green and yellow jacket", "carrying a backpack"]
+    },
+    {
+      "7": "Person",
+      "attributes": ["wearing snow gear", "standing in the foreground"]
+    },
+    {
+      "8": "Person",
+      "attributes": ["wearing snow gear", "standing in the foreground"]
+    },
+    {
+      "9": "Person",
+      "attributes": ["wearing snow gear", "standing in the foreground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "sledding with",
+      5,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      2,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      3,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      4,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      5,
+      "sledding with",
+      1,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      6,
+      "standing near",
+      1,
+      [
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      7,
+      "standing near",
+      1,
+      [
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      8,
+      "standing near",
+      1,
+      [
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ],
+    [
+      9,
+      "standing near",
+      1,
+      [
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"]
+      ]
+    ]
+  ]
+}
+```

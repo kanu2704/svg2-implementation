@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing light shirt and dark pants"]
+    },
+    {
+      "object 2": "banjo player",
+      "attributes": ["playing banjo", "wearing patterned top and dark pants"]
+    },
+    {
+      "object 3": "double bass player",
+      "attributes": ["playing double bass", "wearing dark outfit with a white apron"]
+    },
+    {
+      "object 4": "guitarist",
+      "attributes": ["playing guitar", "wearing light shirt and dark pants"]
+    },
+    {
+      "object 5": "double bass player",
+      "attributes": ["playing double bass", "wearing dark outfit with a white apron"]
+    },
+    {
+      "object 6": "banjo player",
+      "attributes": ["playing banjo", "wearing patterned top and dark pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing together",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing together",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing together",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "playing together",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "playing together",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "playing together",
+      6,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

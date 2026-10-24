@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["yellow shirt", "holding shoe"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["white shirt", "standing next to man in yellow shirt"]
+    },
+    {
+      "object 3": "shoe",
+      "attributes": ["on table", "being tied by man in yellow shirt"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["wooden", "has shoe on it"]
+    },
+    {
+      "object 5": "park bench",
+      "attributes": ["black", "in background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "tied shoe",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      1,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      3,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

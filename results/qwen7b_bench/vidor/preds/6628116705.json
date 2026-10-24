@@ -1,0 +1,86 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["riding scooter", "wearing black jacket"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing purple jacket", "wearing helmet", "riding scooter"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["black car", "driving on road"]
+    },
+    {
+      "object 4": "truck",
+      "attributes": ["blue truck", "driving on road"]
+    },
+    {
+      "object 5": "scooter",
+      "attributes": ["silver scooter", "being ridden by child"]
+    },
+    {
+      "object 6": "scooter",
+      "attributes": ["silver scooter", "being ridden by man"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding",
+      6,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "riding",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "driving",
+      0,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "driving",
+      0,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "being ridden by",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "being ridden by",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

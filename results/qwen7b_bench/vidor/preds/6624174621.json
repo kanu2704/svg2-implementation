@@ -1,0 +1,67 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["sitting at table", "wearing glasses"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["sitting at table", "wearing light-colored shirt"]
+    },
+    {
+      "object 3": "bottle",
+      "attributes": ["on table", "contains champagne"]
+    },
+    {
+      "object 4": "candle",
+      "attributes": ["burning on cake", "glowing brightly"]
+    },
+    {
+      "object 5": "cake",
+      "attributes": ["on table", "decorated with frosting"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["wooden surface", "decorated with paper cutouts"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      3,
+      "near",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      5,
+      "on",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "player",
+      "attributes": ["wearing a gray shirt", "wearing black shorts"]
+    },
+    {
+      "object 2": "player",
+      "attributes": ["wearing a white jacket", "wearing black pants"]
+    },
+    {
+      "object 3": "player",
+      "attributes": ["wearing a gray hoodie", "wearing black pants"]
+    },
+    {
+      "object 4": "player",
+      "attributes": ["wearing a green jacket", "wearing black pants"]
+    },
+    {
+      "object 5": "player",
+      "attributes": ["wearing a blue jacket", "wearing black pants"]
+    },
+    {
+      "object 6": "ball",
+      "attributes": ["orange color", "round shape"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chasing",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "standing",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "standing",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "standing",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

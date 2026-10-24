@@ -1,0 +1,49 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a white shirt", "looking at the camera"]
+    },
+    {
+      "object 2": "computer monitor",
+      "attributes": ["displaying content", "bright screen"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["holds computer monitor and keyboard"]
+    },
+    {
+      "object 4": "keyboard",
+      "attributes": ["white, on desk", "next to computer monitor"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "looking at",
+      "computer monitor",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"]
+      ]
+    ],
+    [
+      "computer monitor",
+      "on",
+      "desk",
+      [
+        ["0 - 8 sec", "0 - 8 sec"]
+      ]
+    ],
+    [
+      "keyboard",
+      "on",
+      "desk",
+      [
+        ["0 - 8 sec", "0 - 8 sec"]
+      ]
+    ]
+  ]
+}
+```

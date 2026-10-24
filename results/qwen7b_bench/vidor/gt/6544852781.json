@@ -1,0 +1,52 @@
+{
+ "dataset": "vidor",
+ "video_id": "6544852781",
+ "fps": 29.97002997002997,
+ "n_frames": 716,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 716,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "bus/truck"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     23.890533333333334
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     23.890533333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1018/6544852781.mp4",
+ "video": "video.mp4"
+}
