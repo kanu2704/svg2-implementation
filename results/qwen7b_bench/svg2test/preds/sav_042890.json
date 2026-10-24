@@ -1,0 +1,450 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a cap", "wearing a t-shirt", "wearing jeans"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["moving"]
+    },
+    {
+      "object 3": "tv",
+      "attributes": ["on the wall"]
+    },
+    {
+      "object 4": "couch",
+      "attributes": ["in the room"]
+    },
+    {
+      "object 5": "remote",
+      "attributes": ["on the couch"]
+    },
+    {
+      "object 6": "plant",
+      "attributes": ["green leaves"]
+    },
+    {
+      "object 7": "wall",
+      "attributes": ["white"]
+    },
+    {
+      "object 8": "floor",
+      "attributes": ["tile"]
+    },
+    {
+      "object 9": "stool",
+      "attributes": ["golden frame"]
+    },
+    {
+      "object 10": "table",
+      "attributes": ["small, golden frame"]
+    },
+    {
+      "object 11": "remote",
+      "attributes": ["black"]
+    },
+    {
+      "object 12": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 13": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 14": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 15": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 16": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 17": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 18": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 19": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 20": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 21": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 22": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 23": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 24": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 25": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 26": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 27": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 28": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 29": "jeans",
+      "attributes": ["blue"]
+    },
+    {
+      "object 30": "cap",
+      "attributes": ["black with white logo"]
+    },
+    {
+      "object 31": "t-shirt",
+      "attributes": ["gray"]
+    },
+    {
+      "object 32": "jeans",
+      "attributes": ["blue"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "wears",
+      12,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      13,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      14,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "moves",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "is on",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "has",
+      5,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "is in",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      7,
+      "is behind",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      8,
+      "is under",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      9,
+      "is under",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      10,
+      "is on",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      11,
+      "is on",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      12,
+      "wears",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      13,
+      "wears",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      14,
+      "wears",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "wears",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      16,
+      "wears",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "wears",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      18,
+      "wears",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      19,
+      "wears",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      20,
+      "wears",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      21,
+      "wears",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      22,
+      "wears",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      23,
+      "wears",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      24,
+      "wears",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      25,
+      "wears",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      26,
+      "wears",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      27,
+      "wears",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      28,
+      "wears",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      29,
+      "wears",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      30,
+      "wears",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      31,
+      "wears",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      32,
+      "wears",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

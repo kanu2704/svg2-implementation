@@ -1,0 +1,636 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Person A",
+      "attributes": ["wearing a white shirt and gray pants", "performing dance movements"]
+    },
+    {
+      "object 2": "Person B",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 3": "Person C",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 4": "Person D",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 5": "Person E",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 6": "Person F",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 7": "Person G",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 8": "Person H",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 9": "Person I",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 10": "Person J",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 11": "Person K",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 12": "Person L",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 13": "Person M",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 14": "Person N",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 15": "Person O",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 16": "Person P",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 17": "Person Q",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 18": "Person R",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 19": "Person S",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 20": "Person T",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 21": "Person U",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 22": "Person V",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 23": "Person W",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 24": "Person X",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 25": "Person Y",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 26": "Person Z",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 27": "Person AA",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 28": "Person BB",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 29": "Person CC",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 30": "Person DD",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 31": "Person EE",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 32": "Person FF",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 33": "Person GG",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 34": "Person HH",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 35": "Person II",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 36": "Person JJ",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 37": "Person KK",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 38": "Person LL",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    },
+    {
+      "object 39": "Person MM",
+      "attributes": ["wearing a black top and black shorts", "performing dance movements"]
+    },
+    {
+      "object 40": "Person NN",
+      "attributes": ["wearing a black top and pink shorts", "performing dance movements"]
+    }
+  ],
+  "relationships": [
+    [
+      "Person A",
+      "dances with",
+      "Person B",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person C",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person D",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person E",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person F",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person G",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person H",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person I",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person J",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person K",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person L",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person M",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person N",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person O",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person P",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person Q",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person R",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person S",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person T",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person U",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person V",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person W",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person X",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person Y",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person Z",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person AA",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person BB",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person CC",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person DD",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person EE",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person FF",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person GG",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person HH",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person II",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person JJ",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person KK",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person LL",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person MM",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "Person A",
+      "dances with",
+      "Person NN",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}  
+```

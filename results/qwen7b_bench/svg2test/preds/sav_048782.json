@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["walking", "carrying backpacks"]
+    },
+    {
+      "object 2": "shops",
+      "attributes": ["displaying goods", "decorated with signs"]
+    },
+    {
+      "object 3": "plants",
+      "attributes": ["in pots", "lining the walkway"]
+    },
+    {
+      "object 4": "ceiling lights",
+      "attributes": ["illuminating the area", "hanging from the ceiling"]
+    },
+    {
+      "object 5": "signboards",
+      "attributes": ["informing about shops", "visible along the walkway"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pass by",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "have",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "are illuminated by",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "are above",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "are above",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "are above",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "are above",
+      5,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

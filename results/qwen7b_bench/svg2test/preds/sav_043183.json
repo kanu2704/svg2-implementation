@@ -1,0 +1,280 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing blue outfit", "swinging"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white shirt and black shorts", "pushing swing"]
+    },
+    {
+      "object 3": "swing",
+      "attributes": ["blue and yellow", "attached to metal frame"]
+    },
+    {
+      "object 4": "ground",
+      "attributes": ["dirt surface", "under swing set"]
+    },
+    {
+      "object 5": "trees",
+      "attributes": ["green foliage", "behind playground"]
+    },
+    {
+      "object 6": "other swing",
+      "attributes": ["red and yellow", "empty"]
+    },
+    {
+      "object 7": "other child",
+      "attributes": ["wearing red outfit", "swinging"]
+    },
+    {
+      "object 8": "man pushing other child",
+      "attributes": ["wearing white shirt and black shorts", "pushing swing"]
+    },
+    {
+      "object 9": "other swing set",
+      "attributes": ["metal frame with swings", "in background"]
+    },
+    {
+      "object 10": "man pushing child",
+      "attributes": ["wearing white shirt and black shorts", "pushing swing"]
+    },
+    {
+      "object 11": "man standing",
+      "attributes": ["wearing white shirt and black shorts", "standing near swing set"]
+    },
+    {
+      "object 12": "child on ground",
+      "attributes": ["wearing blue outfit", "standing on ground"]
+    },
+    {
+      "object 13": "man sitting",
+      "attributes": ["wearing white shirt and black shorts", "sitting on swing"]
+    },
+    {
+      "object 14": "man pushing child",
+      "attributes": ["wearing white shirt and black shorts", "pushing swing"]
+    },
+    {
+      "object 15": "man standing",
+      "attributes": ["wearing white shirt and black shorts", "standing near swing set"]
+    },
+    {
+      "object 16": "man sitting",
+      "attributes": ["wearing white shirt and black shorts", "sitting on swing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being pushed by",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "being pushed by",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "being pushed by",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      13,
+      "being pushed by",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "swinging on",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      7,
+      "swinging on",
+      6,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      10,
+      "swinging on",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      13,
+      "swinging on",
+      11,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      7,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      7,
+      "near",
+      10,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      10,
+      "near",
+      13,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      13,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "near",
+      1,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      7,
+      "near",
+      7,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      10,
+      "near",
+      10,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      13,
+      "near",
+      13,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "on",
+      1,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      7,
+      "on",
+      7,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      10,
+      "on",
+      10,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      13,
+      "on",
+      13,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "being swung by",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "being swung by",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "being swung by",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      13,
+      "being swung by",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```
