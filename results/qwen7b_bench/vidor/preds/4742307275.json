@@ -1,0 +1,28 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "phone",
+      "attributes": ["disassembled", "screen on"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["holding phone"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "held by",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

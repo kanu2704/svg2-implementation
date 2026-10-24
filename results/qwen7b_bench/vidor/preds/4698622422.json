@@ -1,0 +1,94 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "soccer ball",
+      "attributes": ["black and white pattern", "pink and black design"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["yellow jacket", "red pants", "holding racket"]
+    },
+    {
+      "object 3": "racket",
+      "attributes": ["yellow frame", "black strings"]
+    },
+    {
+      "object 4": "foot",
+      "attributes": ["wearing shoe"]
+    },
+    {
+      "object 5": "adult",
+      "attributes": ["wearing jeans", "standing nearby"]
+    },
+    {
+      "object 6": "tennis racket",
+      "attributes": ["yellow frame", "black strings"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "holds",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40]
+      ]
+    ],
+    [
+      3,
+      "hits",
+      1,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40]
+      ]
+    ],
+    [
+      6,
+      "hits",
+      1,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40]
+      ]
+    ],
+    [
+      5,
+      "stands",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40]
+      ]
+    ]
+  ]
+}
+```

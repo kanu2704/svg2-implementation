@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "gymnast",
+      "attributes": ["wearing red leotard", "performing on rings"]
+    },
+    {
+      "object 2": "coach",
+      "attributes": ["wearing black shirt", "standing behind gymnast"]
+    },
+    {
+      "object 3": "judge",
+      "attributes": ["wearing white shirt", "observing performance"]
+    },
+    {
+      "object 4": "audience",
+      "attributes": ["sitting in chairs", "watching performance"]
+    },
+    {
+      "object 5": "assistant",
+      "attributes": ["wearing black suit", "assisting coach"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["white plastic", "arranged in rows"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["white plastic", "with judges sitting at it"]
+    },
+    {
+      "object 8": "judges",
+      "attributes": ["wearing suits", "taking notes"]
+    },
+    {
+      "object 9": "gym floor",
+      "attributes": ["hardwood surface", "marked with lines"]
+    },
+    {
+      "object 10": "gym equipment",
+      "attributes": ["rings for gymnastics", "red and white color"]
+    },
+    {
+      "object 11": "gymnast 2",
+      "attributes": ["wearing black leotard", "performing on rings"]
+    },
+    {
+      "object 12": "assistant 2",
+      "attributes": ["wearing black suit", "assisting coach 2"]
+    }
+  ],
+  "relationships": [
+    [
+      "gymnast",
+      "being watched by",
+      "judge",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast",
+      "being assisted by",
+      "coach",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast",
+      "being observed by",
+      "audience",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast",
+      "being judged by",
+      "judges",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast 2",
+      "being watched by",
+      "judge",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast 2",
+      "being assisted by",
+      "coach",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast 2",
+      "being observed by",
+      "audience",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast 2",
+      "being judged by",
+      "judges",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "assistant",
+      "standing behind",
+      "gymnast",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "assistant 2",
+      "standing behind",
+      "gymnast 2",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast",
+      "performing on",
+      "gym equipment",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "gymnast 2",
+      "performing on",
+      "gym equipment",
+      [
+        ["<0 - 4 sec>", "<24 - 28 sec>"]
+      ]
+    ]
+  ]
+}
+```

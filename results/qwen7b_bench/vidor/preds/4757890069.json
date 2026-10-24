@@ -1,0 +1,161 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ambulance",
+      "attributes": ["white", "emergency vehicle"]
+    },
+    {
+      "object 2": "fire truck",
+      "attributes": ["red", "emergency vehicle"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["silver", "passenger car"]
+    },
+    {
+      "object 4": "pedestrian",
+      "attributes": ["woman in white dress", "man in brown jacket"]
+    },
+    {
+      "object 5": "car",
+      "attributes": ["black", "passenger car"]
+    },
+    {
+      "object 6": "fire hydrant",
+      "attributes": ["white", "stationary"]
+    },
+    {
+      "object 7": "driver",
+      "attributes": ["in fire truck", "wearing uniform"]
+    },
+    {
+      "object 8": "passenger",
+      "attributes": ["in fire truck", "wearing uniform"]
+    },
+    {
+      "object 9": "car",
+      "attributes": ["brown", "passenger car"]
+    },
+    {
+      "object 10": "ambulance",
+      "attributes": ["white", "emergency vehicle"]
+    },
+    {
+      "object 11": "driver",
+      "attributes": ["in ambulance", "wearing uniform"]
+    },
+    {
+      "object 12": "passenger",
+      "attributes": ["in ambulance", "wearing uniform"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drives past",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      1,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      3,
+      [
+        [24, 28],
+        [28, 32],
+        [32, 36]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      5,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      6,
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      7,
+      [
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      8,
+      [
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "drives past",
+      9,
+      [
+        [28, 32],
+        [32, 36]
+      ]
+    ],
+    [
+      10,
+      "drives past",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      11,
+      "drives past",
+      10,
+      [
+        [32, 36],
+        [36, 40]
+      ]
+    ],
+    [
+      12,
+      "drives past",
+      11,
+      [
+        [32, 36],
+        [36, 40]
+      ]
+    ]
+  ]
+}
+```

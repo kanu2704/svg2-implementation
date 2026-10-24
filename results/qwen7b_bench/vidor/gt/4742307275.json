@@ -1,0 +1,135 @@
+{
+ "dataset": "vidor",
+ "video_id": "4742307275",
+ "fps": 29.97002997002997,
+ "n_frames": 555,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 555,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "cellphone"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "press",
+   "obj": 0,
+   "spans": [
+    [
+     1.3680333333333334,
+     2.769433333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "press",
+   "obj": 0,
+   "spans": [
+    [
+     8.2082,
+     8.875533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "squeeze",
+   "obj": 0,
+   "spans": [
+    [
+     5.6056,
+     6.3063
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "squeeze",
+   "obj": 0,
+   "spans": [
+    [
+     10.543866666666666,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.9009,
+     2.9362666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     4.637966666666666,
+     6.439766666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.9009,
+     2.9362666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     4.637966666666666,
+     6.439766666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     0.9009,
+     2.9362666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     4.637966666666666,
+     6.439766666666666
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1104/4742307275.mp4",
+ "video": "video.mp4"
+}

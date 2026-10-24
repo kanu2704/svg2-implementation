@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing green shirt", "talking"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing white jacket", "listening"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["yellow surface", "documents on top"]
+    },
+    {
+      "object 4": "whiteboard",
+      "attributes": ["blank", "behind girls"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaking to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "listening to",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "sitting at",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "sitting at",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "facing",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "facing",
+      4,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

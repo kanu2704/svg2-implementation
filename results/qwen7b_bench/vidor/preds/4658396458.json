@@ -1,0 +1,117 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Baby",
+      "attributes": ["wearing pink outfit", "playing with toys"]
+    },
+    {
+      "object 2": "Activity Center",
+      "attributes": ["pink and purple", "with various toys"]
+    },
+    {
+      "object 3": "Stacked Cups",
+      "attributes": ["colorful", "stacked on the activity center"]
+    },
+    {
+      "object 4": "Stacked Discs",
+      "attributes": ["colorful", "stacked on the activity center"]
+    },
+    {
+      "object 5": "Hand",
+      "attributes": ["holding a toy"]
+    },
+    {
+      "object 6": "Toys",
+      "attributes": ["attached to the activity center"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      5,
+      [
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"],
+        ["84 - 88 sec", "88 - 92 sec"],
+        ["92 - 96 sec", "96 - 100 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"],
+        ["80 - 84 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ]
+  ]
+}
+```

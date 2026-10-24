@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing glasses", "smiling"]
+    },
+    {
+      "object 2": "sink",
+      "attributes": ["white", "with faucet"]
+    },
+    {
+      "object 3": "toothbrushes",
+      "attributes": ["on sink counter", "in toothbrush holder"]
+    },
+    {
+      "object 4": "mugs",
+      "attributes": ["on sink counter", "near toothbrushes"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      3,
+      "on",
+      2,
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      4,
+      "on",
+      2,
+      [
+        [0, 9]
+      ]
+    ]
+  ]
+}
+```

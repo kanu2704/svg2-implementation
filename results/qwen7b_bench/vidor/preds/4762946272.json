@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["playing with toy", "sitting"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["holding object", "standing"]
+    },
+    {
+      "object 3": "banana",
+      "attributes": ["on counter", "yellow"]
+    },
+    {
+      "object 4": "egg carton",
+      "attributes": ["on counter", "open"]
+    },
+    {
+      "object 5": "microwave",
+      "attributes": ["on counter", "black"]
+    },
+    {
+      "object 6": "oven",
+      "attributes": ["on counter", "black"]
+    },
+    {
+      "object 7": "counter",
+      "attributes": ["with bananas and microwave"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "on",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "on",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      6,
+      "on",
+      7,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

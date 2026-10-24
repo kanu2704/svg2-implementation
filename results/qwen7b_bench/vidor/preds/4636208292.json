@@ -1,0 +1,1007 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "beer bottle",
+      "attributes": ["brown", "label: Brainless Golden Ale"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing denim jacket", "smiling"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["outdoor setting", "with food and drinks"]
+    },
+    {
+      "object 4": "glass",
+      "attributes": ["containing beer", "on table"]
+    },
+    {
+      "object 5": "plate",
+      "attributes": ["with food", "on table"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["long hair", "beard"]
+    },
+    {
+      "object 7": "beer glass",
+      "attributes": ["on table", "contains beer"]
+    },
+    {
+      "object 8": "chocolate bar",
+      "attributes": ["on plate", "dark color"]
+    },
+    {
+      "object 9": "woman",
+      "attributes": ["wearing white shirt", "smiling"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["long hair", "beard"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "drinks from",
+      "beer glass",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks from",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles at",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles at",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "holds",
+      "beer bottle",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<16 - 20 sec>"],
+        ["<20 - 24 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<64 - 68 sec>"],
+        ["<72 - 76 sec>", "<72 - 76 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "holds",
+      "beer bottle",
+      [
+        ["<12 - 16 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<16 - 20 sec>"],
+        ["<20 - 24 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<28 - 32 sec>"],
+        ["<32 - 36 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<36 - 40 sec>"],
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<56 - 60 sec>"],
+        ["<60 - 64 sec>", "<60 - 64 sec>"],
+        ["<64 - 68 sec>", "<64 - 68 sec>"],
+        ["<72 - 76 sec>", "<72 - 76 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "clinks",
+      "beer glass",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "smiles",
+      "man",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "smiles",
+      "woman",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "drinks",
+      "beer",
+      [
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "drinks",
+      "beer",
+      [
+        ["<40 - 44 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      "woman",
+      "clinks",
+      "beer glass",
+      [
+        ["<0 - 4 sec>", "<0 - 4 sec>"],
+        ["<4 - 8 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<68 - 72 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "man

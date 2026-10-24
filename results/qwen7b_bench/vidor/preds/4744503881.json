@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["sitting"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["standing", "talking"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 5": "woman",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["standing", "playing guitar"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["sitting", "talking"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "plays guitar for",
+      6,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      5,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      7,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      8,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "plays guitar near",
+      9,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

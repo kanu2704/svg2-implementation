@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing safety gear", "standing"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing safety gear", "standing"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing safety gear", "standing"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing safety gear", "standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

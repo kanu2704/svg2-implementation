@@ -1,0 +1,468 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a black beanie", "wearing sunglasses", "wearing a dark jacket and jeans"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["white", "on the ground"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing a green jacket", "wearing jeans"]
+    },
+    {
+      "object 4": "man 3",
+      "attributes": ["wearing a black jacket", "wearing jeans"]
+    },
+    {
+      "object 5": "man 4",
+      "attributes": ["wearing a white cap", "wearing a blue and black jacket"]
+    },
+    {
+      "object 6": "man 5",
+      "attributes": ["wearing a light blue jacket", "wearing jeans"]
+    },
+    {
+      "object 7": "man 6",
+      "attributes": ["wearing a dark shirt", "wearing jeans"]
+    },
+    {
+      "object 8": "man 7",
+      "attributes": ["wearing a light blue jacket", "wearing jeans"]
+    },
+    {
+      "object 9": "man 8",
+      "attributes": ["wearing a dark jacket", "wearing jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "hits",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      3,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "walks with",
+      4,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      9,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

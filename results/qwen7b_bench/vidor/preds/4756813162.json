@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["standing", "wearing a white shirt and dark pants"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["in the air", "being thrown"]
+    },
+    {
+      "object 3": "television",
+      "attributes": ["displaying a game", "stationary"]
+    },
+    {
+      "object 4": "baseball field",
+      "attributes": ["visible on television screen", "stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "is throwing",
+      "ball",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "is watching",
+      "television",
+      [
+        ["<0 - 12 sec>"]
+      ]
+    ],
+    [
+      "ball",
+      "is in front of",
+      "television",
+      [
+        ["<0 - 12 sec>"]
+      ]
+    ],
+    [
+      "man",
+      "is standing in front of",
+      "television",
+      [
+        ["<0 - 12 sec>"]
+      ]
+    ]
+  ]
+}
+```
