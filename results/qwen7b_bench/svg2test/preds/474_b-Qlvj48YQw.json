@@ -1,0 +1,245 @@
+```json
+{
+  "objects": [
+    {
+      "1": "train",
+      "attributes": ["moving"]
+    },
+    {
+      "2": "platform",
+      "attributes": ["stationary"]
+    },
+    {
+      "3": "person",
+      "attributes": ["standing", "waiting"]
+    },
+    {
+      "4": "sign",
+      "attributes": ["station name"]
+    },
+    {
+      "5": "column",
+      "attributes": ["stationary"]
+    },
+    {
+      "6": "light",
+      "attributes": ["stationary"]
+    },
+    {
+      "7": "door",
+      "attributes": ["stationary"]
+    },
+    {
+      "8": "poster",
+      "attributes": ["stationary"]
+    },
+    {
+      "9": "wall",
+      "attributes": ["stationary"]
+    },
+    {
+      "10": "ceiling",
+      "attributes": ["stationary"]
+    },
+    {
+      "11": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "12": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "13": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "14": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "15": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "16": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "17": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "18": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "19": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "20": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "21": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "22": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "23": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "24": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "25": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "26": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "27": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "28": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "29": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "30": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "31": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "32": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "33": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "34": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "35": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "36": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "37": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "38": "ceiling light",
+      "attributes": ["stationary"]
+    },
+    {
+      "39": "ceiling light",
+      "attributes": ["stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "approaching",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "facing",
+      1,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "holding",
+      34,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      34,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      35,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      36,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      37,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      38,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "wearing",
+      39,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

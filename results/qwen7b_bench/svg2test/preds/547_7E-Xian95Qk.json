@@ -1,0 +1,230 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["smiling", "wearing blue dress"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["holding plate with donuts", "wearing red shirt"]
+    },
+    {
+      "object 3": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 4": "plate",
+      "attributes": ["black", "holds donuts"]
+    },
+    {
+      "object 5": "shelf",
+      "attributes": ["wooden", "in background"]
+    },
+    {
+      "object 6": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 7": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 8": "plate",
+      "attributes": ["black", "holds donuts"]
+    },
+    {
+      "object 9": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 10": "hand",
+      "attributes": ["pointing towards camera"]
+    },
+    {
+      "object 11": "man",
+      "attributes": ["smiling", "wearing red shirt"]
+    },
+    {
+      "object 12": "shelf",
+      "attributes": ["wooden", "in background"]
+    },
+    {
+      "object 13": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 14": "plate",
+      "attributes": ["black", "holds donuts"]
+    },
+    {
+      "object 15": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 16": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 17": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 18": "plate",
+      "attributes": ["black", "holds donuts"]
+    },
+    {
+      "object 19": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    },
+    {
+      "object 20": "plate",
+      "attributes": ["black", "holds donuts"]
+    },
+    {
+      "object 21": "toy",
+      "attributes": ["red and white", "in hand"]
+    },
+    {
+      "object 22": "donut",
+      "attributes": ["on plate", "various colors and designs"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pointing at",
+      10,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "near",
+      11,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      9,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      13,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      14,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      15,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      16,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      17,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      18,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      19,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      20,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      22,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,432 @@
+```json
+{
+  "objects": [
+    {
+      "1": "man",
+      "attributes": ["walking", "wearing black jacket"]
+    },
+    {
+      "2": "woman",
+      "attributes": ["standing", "wearing black dress"]
+    },
+    {
+      "3": "child",
+      "attributes": ["holding hand with adult", "wearing blue shirt"]
+    },
+    {
+      "4": "man",
+      "attributes": ["walking", "wearing brown jacket"]
+    },
+    {
+      "5": "man",
+      "attributes": ["walking", "wearing black suit"]
+    },
+    {
+      "6": "wall",
+      "attributes": ["mural painting", "depicting people"]
+    },
+    {
+      "7": "ceiling",
+      "attributes": ["partially visible", "white color"]
+    },
+    {
+      "8": "light",
+      "attributes": ["fluorescent", "long shape"]
+    },
+    {
+      "9": "child",
+      "attributes": ["sitting on ground", "wearing blue shirt"]
+    },
+    {
+      "10": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "11": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "12": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "13": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "14": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "15": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "16": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "17": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "18": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "19": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "20": "child",
+      "attributes": ["walking", "holding hand with adult"]
+    },
+    {
+      "21": "child",
+      "attributes": ["walking", "holding hand with adult"]
+    },
+    {
+      "22": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "23": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "24": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "25": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "26": "people",
+      "attributes": ["walking in line", "dressed in formal attire"]
+    },
+    {
+      "27": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "28": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "29": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "30": "child",
+      "attributes": ["walking", "holding hand with adult"]
+    },
+    {
+      "31": "man",
+      "attributes": ["walking", "wearing black jacket and hat"]
+    },
+    {
+      "32": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "33": "woman",
+      "attributes": ["standing", "wearing black dress"]
+    },
+    {
+      "34": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "35": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    },
+    {
+      "36": "man",
+      "attributes": ["standing", "wearing black jacket and hat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks past",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands still",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "holds hands with",
+      20,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "has mural painting",
+      7,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      8,
+      "hangs from ceiling",
+      7,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      9,
+      "sits on ground",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      10,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "walks in line",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "walks past",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "stands still",
+      6,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

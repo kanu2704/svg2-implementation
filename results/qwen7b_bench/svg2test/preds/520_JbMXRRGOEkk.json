@@ -1,0 +1,288 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 2": "Player",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 3": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 4": "Player",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 5": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 6": "Player",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 7": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 8": "Player",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 9": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 10": "Player",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 11": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 12": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 13": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 14": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 15": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 16": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 17": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 18": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 19": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 20": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 21": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 22": "Player",
+      "attributes": ["wearing black jersey", "wearing helmet"]
+    },
+    {
+      "object 23": "Hockey Stick",
+      "attributes": ["held by player in black jersey"]
+    },
+    {
+      "object 24": "Puck",
+      "attributes": ["on ice surface"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      7,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      8,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      9,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      10,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      11,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      12,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      13,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      14,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      15,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      17,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      18,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      19,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      20,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      21,
+      "plays with",
+      23,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      22,
+      "plays against",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      23,
+      "hits puck",
+      24,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

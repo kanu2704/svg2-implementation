@@ -1,0 +1,515 @@
+```json
+{
+  "objects": [
+    {
+      "1": "man in white suit",
+      "attributes": ["playing saxophone", "wearing white suit and hat"]
+    },
+    {
+      "2": "man in black shirt",
+      "attributes": ["dancing", "wearing black shirt and shorts"]
+    },
+    {
+      "3": "man in blue shirt",
+      "attributes": ["clapping", "wearing blue shirt"]
+    },
+    {
+      "4": "woman in floral dress",
+      "attributes": ["standing still", "wearing floral dress"]
+    },
+    {
+      "5": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "6": "man in black jacket",
+      "attributes": ["clapping", "wearing black jacket"]
+    },
+    {
+      "7": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "8": "man in blue shirt",
+      "attributes": ["playing saxophone", "wearing blue shirt"]
+    },
+    {
+      "9": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "10": "man in black shirt",
+      "attributes": ["clapping", "wearing black shirt"]
+    },
+    {
+      "11": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "12": "man in blue shirt",
+      "attributes": ["playing saxophone", "wearing blue shirt"]
+    },
+    {
+      "13": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "14": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "15": "man in black shirt",
+      "attributes": ["clapping", "wearing black shirt"]
+    },
+    {
+      "16": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "17": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "18": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "19": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "20": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "21": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "22": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "23": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "24": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "25": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "26": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "27": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "28": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "29": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "30": "man in white suit",
+      "attributes": ["playing saxophone", "wearing white suit and hat"]
+    },
+    {
+      "31": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "32": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "33": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "34": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "35": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "36": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "37": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "38": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    },
+    {
+      "39": "man in white shirt",
+      "attributes": ["clapping", "wearing white shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays saxophone with",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "dances next to",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "stands still behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "plays saxophone with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "plays saxophone with",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "plays saxophone with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      39,
+      "claps along with",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```
