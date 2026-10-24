@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["red", "inflated"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["wooden", "stacked"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["wooden", "stacked"]
+    },
+    {
+      "object 4": "baby",
+      "attributes": ["crawling", "wearing purple outfit"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      1,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "near",
+      1,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

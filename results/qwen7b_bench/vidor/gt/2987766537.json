@@ -1,0 +1,112 @@
+{
+ "dataset": "vidor",
+ "video_id": "2987766537",
+ "fps": 29.96969696969697,
+ "n_frames": 497,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 497,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "ball/sports ball"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "chair"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "chair"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "baby"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     16.583417593528818
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1103/2987766537.mp4",
+ "video": "video.mp4"
+}

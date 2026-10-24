@@ -1,0 +1,26 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guinea_pig_1",
+      "attributes": ["black and brown fur", "eating"]
+    },
+    {
+      "object 2": "guinea_pig_2",
+      "attributes": ["white and black fur", "eating"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "eating",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

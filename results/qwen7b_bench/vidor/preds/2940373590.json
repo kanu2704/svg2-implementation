@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing floral dress", "holding man's hand"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing suit", "holding woman's hand"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["black, empty"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["black, empty"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "dancing with",
+      "man",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "woman",
+      "standing next to",
+      "chair",
+      [
+        [0, 9]
+      ]
+    ],
+    [
+      "man",
+      "standing next to",
+      "chair",
+      [
+        [0, 9]
+      ]
+    ]
+  ]
+}
+```

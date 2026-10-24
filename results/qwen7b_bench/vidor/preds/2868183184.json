@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a white tank top", "holding a black bag"]
+    },
+    {
+      "object 2": "woman 2",
+      "attributes": ["wearing a floral dress", "standing up"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing a blue shirt and a hat", "standing up"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      2,
+      "stands behind",
+      1,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      2,
+      "stands behind",
+      3,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      3,
+      "stands in front of",
+      1,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      3,
+      "stands in front of",
+      2,
+      [
+        [0, 48]
+      ]
+    ]
+  ]
+}
+```

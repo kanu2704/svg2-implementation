@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["playing guitar", "wearing checkered shirt"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["playing guitar", "wearing white shirt"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["playing drums", "wearing white shirt"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["playing bass guitar", "wearing black shirt"]
+    },
+    {
+      "object 5": "woman",
+      "attributes": ["dancing", "wearing striped dress"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["dancing", "wearing black shirt"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["dancing", "wearing checkered shirt"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["playing guitar", "wearing white shirt"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["playing bass guitar", "wearing black shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "dancing with",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "dancing with",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      7,
+      "dancing with",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      7,
+      "dancing with",
+      9,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

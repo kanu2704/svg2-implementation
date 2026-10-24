@@ -1,0 +1,196 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a black shirt", "wearing a cap"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing an orange jersey", "wearing a cap"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing a white shirt and red skirt", "wearing a wig"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing a white shirt and blue jeans", "wearing a headband"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing a white shirt and blue jeans", "wearing a headband"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing a white shirt and blue jeans", "wearing a headband"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaking into",
+      2,
+      [
+        [0, 8],
+        [12, 16],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      4,
+      "standing next to",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      4,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      5,
+      "standing next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

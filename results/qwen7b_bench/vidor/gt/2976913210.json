@@ -1,0 +1,69 @@
+{
+ "dataset": "vidor",
+ "video_id": "2976913210",
+ "fps": 29.97002997002997,
+ "n_frames": 542,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 542,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "motorcycle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.943266666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     16.583233333333332,
+     18.084733333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     18.084733333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     18.084733333333332
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1111/2976913210.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,112 @@
+{
+ "dataset": "vidor",
+ "video_id": "2940373590",
+ "fps": 29.97002997002997,
+ "n_frames": 306,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 306,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "chair"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "chair"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold hand of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hold hand of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     10.2102
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     4.0040000000000004,
+     6.5065
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0038/2940373590.mp4",
+ "video": "video.mp4"
+}

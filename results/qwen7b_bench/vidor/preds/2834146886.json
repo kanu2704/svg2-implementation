@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["black and brown fur", "playing"]
+    },
+    {
+      "object 2": "cat",
+      "attributes": ["white fur", "playing"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["wooden surface", "computer mouse on it"]
+    },
+    {
+      "object 4": "mug",
+      "attributes": ["white with blue design", "contains liquid"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["dark fabric", "dog is on it"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["wooden surface", "keyboard on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      6,
+      [
+        [0, 4],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      1,
+      [
+        [0, 4],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44]
+      ]
+    ],
+    [
+      3,
+      "has",
+      4,
+      [
+        [48, 52]
+      ]
+    ],
+    [
+      5,
+      "sits on",
+      1,
+      [
+        [0, 4],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44]
+      ]
+    ],
+    [
+      6,
+      "has",
+      3,
+      [
+        [0, 4],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44]
+      ]
+    ]
+  ]
+}
+```

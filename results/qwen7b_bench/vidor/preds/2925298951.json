@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cup",
+      "attributes": ["green", "held"]
+    },
+    {
+      "object 2": "cup",
+      "attributes": ["green", "held"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wears red shirt", "wears jacket", "holds cup"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wears blue patterned shirt", "wears jacket", "holds cup"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wears pink shirt", "wears jacket", "holds cup"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wears brown jacket", "wears red shirt", "holds cup"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wears black jacket", "wears red hat", "holds cup"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["wears black jacket", "wears red hat", "holds cup"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["wears red hat", "wears green dress", "holds cup"]
+    },
+    {
+      "object 10": "backpack",
+      "attributes": ["black", "on ground"]
+    },
+    {
+      "object 11": "chair",
+      "attributes": ["green", "covered in snow"]
+    }
+  ],
+  "relationships": [
+    [
+      3,
+      "drinks from",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "drinks from",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      5,
+      "drinks from",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "drinks from",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      7,
+      "drinks from",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      8,
+      "drinks from",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      9,
+      "drinks from",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      10,
+      "near",
+      11,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

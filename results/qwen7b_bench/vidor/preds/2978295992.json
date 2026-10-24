@@ -1,0 +1,83 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pumpkin",
+      "attributes": ["orange", "carved"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wears black top", "holds knife"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wears glasses", "holds knife"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["covered with tablecloth", "has tools and pumpkin carving supplies"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "carves",
+      1,
+      [
+        [8, 16],
+        [20, 28],
+        [32, 40]
+      ]
+    ],
+    [
+      3,
+      "carves",
+      1,
+      [
+        [8, 16],
+        [20, 28],
+        [32, 40]
+      ]
+    ],
+    [
+      2,
+      "talks to",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      2,
+      "shares",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      3,
+      "shares",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [36, 40]
+      ]
+    ]
+  ]
+}
+```

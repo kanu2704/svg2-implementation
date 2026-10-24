@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a brown shirt", "carrying a backpack"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a yellow top", "carrying a bag"]
+    },
+    {
+      "object 3": "escalator",
+      "attributes": ["moving upwards"]
+    },
+    {
+      "object 4": "bag",
+      "attributes": ["attached to the woman's shoulder"]
+    },
+    {
+      "object 5": "briefcase",
+      "attributes": ["held by the man in his hand"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "on",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      1,
+      "carries",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "carries",
+      4,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

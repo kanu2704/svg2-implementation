@@ -1,0 +1,89 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["red", "stationary"]
+    },
+    {
+      "object 2": "bicycle",
+      "attributes": ["black", "parked"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing white pants and a white shirt", "walking"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing white pants and a white shirt", "walking"]
+    },
+    {
+      "object 5": "bucket",
+      "attributes": ["red", "held by person 3"]
+    },
+    {
+      "object 6": "bench",
+      "attributes": ["empty", "in the background"]
+    },
+    {
+      "object 7": "sidewalk",
+      "attributes": ["concrete", "adjacent to bench"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 3",
+      "walks past",
+      "object 4",
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "object 3",
+      "carries",
+      "object 5",
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "object 3",
+      "approaches",
+      "object 6",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "object 4",
+      "remains stationary",
+      "object 2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      "object 6",
+      "adjacent to",
+      "object 7",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing black jacket", "wearing blue jeans"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing red pants", "wearing black jacket with white design"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "being held by",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "standing behind",
+      2,
+      [
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "standing in front of",
+      1,
+      [
+        [4, 8],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

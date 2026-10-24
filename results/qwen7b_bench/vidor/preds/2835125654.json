@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "elephant",
+      "attributes": ["large", "gray", "moving"]
+    },
+    {
+      "object 2": "elephant",
+      "attributes": ["large", "gray", "moving"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing orange dress", "smiling"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing striped shirt", "sitting"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing green shirt", "standing"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing blue shirt", "sitting"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      3,
+      "near",
+      5,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      4,
+      "near",
+      6,
+      [
+        [0, 48]
+      ]
+    ]
+  ]
+}
+```

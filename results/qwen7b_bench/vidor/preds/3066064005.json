@@ -1,0 +1,185 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wears black top", "has blonde hair"]
+    },
+    {
+      "object 2": "woman 2",
+      "attributes": ["wears red jacket", "has brown hair"]
+    },
+    {
+      "object 3": "woman 3",
+      "attributes": ["wears green sweater", "has short hair"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wears light blue shirt", "has short hair"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["holds various items", "is wooden"]
+    },
+    {
+      "object 6": "plate",
+      "attributes": ["contains food", "is ceramic"]
+    },
+    {
+      "object 7": "glass",
+      "attributes": ["contains liquid", "is transparent"]
+    },
+    {
+      "object 8": "wine glass",
+      "attributes": ["contains wine", "is tall"]
+    },
+    {
+      "object 9": "bowl",
+      "attributes": ["contains salad", "is ceramic"]
+    },
+    {
+      "object 10": "fork",
+      "attributes": ["used for eating", "metallic"]
+    },
+    {
+      "object 11": "spoon",
+      "attributes": ["used for eating", "metallic"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      5,
+      [
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      5,
+      [
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      6,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      7,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      8,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      9,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      10,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      5,
+      "holds",
+      11,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pajamas", "wearing a cap"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["sitting on the couch", "wearing a white shirt"]
+    },
+    {
+      "object 3": "ball",
+      "attributes": ["blue and green color", "being thrown around"]
+    },
+    {
+      "object 4": "toys",
+      "attributes": ["on the floor", "colorful"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["brown color", "in the living room"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["wooden", "in front of the couch"]
+    },
+    {
+      "object 7": "stuffed toy",
+      "attributes": ["purple color", "on the floor"]
+    },
+    {
+      "object 8": "rug",
+      "attributes": ["red and blue patterned", "on the floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "sitting on",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "being thrown by",
+      2,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      7,
+      "lying on",
+      8,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

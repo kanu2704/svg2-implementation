@@ -1,0 +1,214 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing glasses", "holding camera"]
+    },
+    {
+      "object 2": "camera",
+      "attributes": ["purple", "being held by woman"]
+    },
+    {
+      "object 3": "woman 2",
+      "attributes": ["wearing glasses", "wearing blue shirt"]
+    },
+    {
+      "object 4": "woman 3",
+      "attributes": ["wearing glasses", "wearing green shirt"]
+    },
+    {
+      "object 5": "woman 4",
+      "attributes": ["wearing glasses", "wearing blue shirt"]
+    },
+    {
+      "object 6": "couch",
+      "attributes": ["green", "in living room"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["black", "in living room"]
+    },
+    {
+      "object 8": "chair",
+      "attributes": ["brown", "in living room"]
+    },
+    {
+      "object 9": "dining table",
+      "attributes": ["dark wood", "in dining area"]
+    },
+    {
+      "object 10": "laptop",
+      "attributes": ["on table", "in dining area"]
+    },
+    {
+      "object 11": "microwave",
+      "attributes": ["white", "in kitchen"]
+    },
+    {
+      "object 12": "fridge",
+      "attributes": ["stainless steel", "in kitchen"]
+    },
+    {
+      "object 13": "bananas",
+      "attributes": ["yellow", "in bowl"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      3,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      4,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      5,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      3,
+      "faces",
+      4,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      3,
+      "faces",
+      5,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      4,
+      "faces",
+      5,
+      [
+        ["<4 - 8 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"],
+        ["<52 - 56 sec>", "<56 - 60 sec>"]
+      ]
+    ],
+    [
+      1,
+      "holds",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<40 - 44 sec>", "<44 - 48 sec>"],
+        ["<48 - 52 sec>", "<52 - 56 sec>"],
+        ["<56 - 60 sec>", "<60 - 64 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      6,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      7,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      8,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      9,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      10,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      11,
+      [
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      12,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      13,
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      1,
+      "points at",
+      14,
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ]
+  ]
+}
+```
