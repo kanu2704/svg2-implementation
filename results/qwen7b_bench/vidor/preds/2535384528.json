@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "golfer",
+      "attributes": ["wearing black shirt", "wearing gray pants", "holding golf club"]
+    },
+    {
+      "object 2": "spectator 1",
+      "attributes": ["wearing white shirt", "wearing green shorts", "standing still"]
+    },
+    {
+      "object 3": "spectator 2",
+      "attributes": ["wearing white shirt", "wearing dark shorts", "standing still"]
+    },
+    {
+      "object 4": "spectator 3",
+      "attributes": ["wearing white shirt", "wearing dark shorts", "standing still"]
+    },
+    {
+      "object 5": "golf ball",
+      "attributes": ["silver and yellow", "on ground"]
+    },
+    {
+      "object 6": "golf club",
+      "attributes": ["black and silver", "held by golfer"]
+    }
+  ],
+  "relationships": [
+    [
+      "golfer",
+      "hits",
+      "golf ball",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"]
+      ]
+    ],
+    [
+      "golfer",
+      "aiming at",
+      "golf ball",
+      [
+        ["<8 - 12 sec>"]
+      ]
+    ],
+    [
+      "spectator 1",
+      "watching",
+      "golfer",
+      [
+        ["<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "spectator 2",
+      "watching",
+      "golfer",
+      [
+        ["<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "spectator 3",
+      "watching",
+      "golfer",
+      [
+        ["<12 - 16 sec>"]
+      ]
+    ]
+  ]
+}
+```

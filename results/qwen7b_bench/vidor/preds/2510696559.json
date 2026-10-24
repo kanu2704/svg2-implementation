@@ -1,0 +1,127 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "biker",
+      "attributes": ["riding a bicycle", "wearing black and white outfit"]
+    },
+    {
+      "object 2": "bicycle",
+      "attributes": ["being ridden by the biker", "black in color"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["sitting on the ground", "wearing casual clothes"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["standing and talking", "wearing blue top"]
+    },
+    {
+      "object 5": "woman 2",
+      "attributes": ["walking past the camera", "wearing green top"]
+    },
+    {
+      "object 6": "woman 3",
+      "attributes": ["standing and talking", "wearing patterned top"]
+    },
+    {
+      "object 7": "bicycle 2",
+      "attributes": ["black in color", "being ridden by the biker"]
+    }
+  ],
+  "relationships": [
+    [
+      "biker",
+      "riding",
+      "bicycle",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60],
+        [60, 64],
+        [64, 68],
+        [68, 72]
+      ]
+    ],
+    [
+      "biker",
+      "riding",
+      "bicycle 2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60],
+        [60, 64],
+        [64, 68],
+        [68, 72]
+      ]
+    ],
+    [
+      "biker",
+      "performing trick",
+      "bicycle",
+      [
+        [56, 60]
+      ]
+    ],
+    [
+      "woman",
+      "talking",
+      "woman 3",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [40, 44],
+        [44, 48],
+        [48, 52],
+        [52, 56],
+        [56, 60],
+        [60, 64],
+        [64, 68],
+        [68, 72]
+      ]
+    ],
+    [
+      "woman 2",
+      "walking past",
+      "woman",
+      [
+        [60, 64]
+      ]
+    ]
+  ]
+}
+```

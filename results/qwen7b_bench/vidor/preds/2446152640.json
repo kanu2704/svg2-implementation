@@ -1,0 +1,70 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fighter",
+      "attributes": ["wearing white gi", "black belt"]
+    },
+    {
+      "object 2": "opponent",
+      "attributes": ["wearing white gi", "black belt"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "grabs",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      2,
+      "grabs",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      1,
+      "throws",
+      2,
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      2,
+      "throws",
+      1,
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      1,
+      "faces",
+      2,
+      [
+        [44, 48]
+      ]
+    ],
+    [
+      2,
+      "faces",
+      1,
+      [
+        [44, 48]
+      ]
+    ]
+  ]
+}
+```

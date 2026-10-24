@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing glasses", "wearing a striped shirt"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing a green outfit"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["wooden frame", "has a cushioned seat"]
+    },
+    {
+      "object 4": "wall",
+      "attributes": ["plain and light-colored"]
+    },
+    {
+      "object 5": "dolls",
+      "attributes": ["seated on the chair", "various sizes and colors"]
+    },
+    {
+      "object 6": "stuffed animals",
+      "attributes": ["placed on the chair", "soft and plush"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      1,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      5,
+      "on top of",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      6,
+      "on top of",
+      3,
+      [
+        [0, 89]
+      ]
+    ]
+  ]
+}
+```

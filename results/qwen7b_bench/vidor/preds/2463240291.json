@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a suit", "dancing"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a suit", "dancing"]
+    },
+    {
+      "object 3": "woman1",
+      "attributes": ["wearing a suit", "dancing"]
+    },
+    {
+      "object 4": "woman2",
+      "attributes": ["wearing a suit", "dancing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "dances with",
+      2,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      1,
+      "dances with",
+      3,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      2,
+      "dances with",
+      3,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      2,
+      "dances with",
+      4,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      3,
+      "dances with",
+      4,
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ]
+  ]
+}
+```

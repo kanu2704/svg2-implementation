@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a hat", "wearing a swimsuit", "playing with toys"]
+    },
+    {
+      "object 2": "toy",
+      "attributes": ["floating in water", "yellow and green color", "star shape"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["green and yellow color", "octopus shape", "attached to the toy boat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "floating near",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

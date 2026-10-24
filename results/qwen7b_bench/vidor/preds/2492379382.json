@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "motorcycle",
+      "attributes": ["red", "carrying two people"]
+    },
+    {
+      "object 2": "motorcycle",
+      "attributes": ["blue", "carrying one person"]
+    },
+    {
+      "object 3": "motorcycle",
+      "attributes": ["black", "carrying one person"]
+    },
+    {
+      "object 4": "motorcycle",
+      "attributes": ["blue", "carrying one person"]
+    },
+    {
+      "object 5": "motorcycle",
+      "attributes": ["blue", "carrying one person"]
+    },
+    {
+      "object 6": "motorcycle",
+      "attributes": ["red", "carrying two people"]
+    },
+    {
+      "object 7": "motorcycle",
+      "attributes": ["black", "carrying one person"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      5,
+      "next to",
+      6,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      6,
+      "next to",
+      7,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

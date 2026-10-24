@@ -1,0 +1,59 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a hat", "wearing sunglasses"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a backpack", "wearing a hat"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing a white shirt", "wearing a hat"]
+    },
+    {
+      "object 4": "pig",
+      "attributes": ["striped fur", "sniffing the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walking behind",
+      2,
+      [
+        [52, 60],
+        [64, 72]
+      ]
+    ],
+    [
+      1,
+      "standing next to",
+      3,
+      [
+        [52, 60],
+        [64, 72]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [52, 60],
+        [64, 72]
+      ]
+    ],
+    [
+      4,
+      "sniffing the ground",
+      null,
+      [
+        [0, 80]
+      ]
+    ]
+  ]
+}
+```

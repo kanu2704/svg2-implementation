@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fan",
+      "attributes": ["white", "standing"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["sitting", "playing drum"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["sitting", "playing drum"]
+    },
+    {
+      "object 4": "drum",
+      "attributes": ["black", "played by man"]
+    },
+    {
+      "object 5": "drum",
+      "attributes": ["black", "played by woman"]
+    },
+    {
+      "object 6": "camera",
+      "attributes": ["being held", "used to take photos"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["sitting", "taking photo"]
+    },
+    {
+      "object 8": "woman",
+      "attributes": ["sitting", "taking photo"]
+    },
+    {
+      "object 9": "woman",
+      "attributes": ["sitting", "taking photo"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "playing",
+      4,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      3,
+      "playing",
+      5,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      7,
+      "holding",
+      6,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      8,
+      "holding",
+      6,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      9,
+      "holding",
+      6,
+      [
+        [0, 68]
+      ]
+    ]
+  ]
+}
+```

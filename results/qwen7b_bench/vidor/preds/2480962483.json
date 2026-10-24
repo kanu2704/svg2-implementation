@@ -1,0 +1,26 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A dog with a spotted coat and a collar, standing on its hind legs."
+    },
+    {
+      "dog2": "A dog with a white coat and a collar, standing on the ground."
+    },
+    {
+      "van": "A white van parked in the background."
+    },
+    {
+      "frisbee": "A frisbee flying through the air."
+    },
+    {
+      "ball": "A blue ball held by the dog2."
+    }
+  ],
+  "relationships": [
+    ["dog1", "jumping", "dog2", [[0, 4], [4, 8], [8, 12]]],
+    ["frisbee", "flying", "dog1", [[0, 4], [4, 8], [8, 12]]],
+    ["ball", "held_by", "dog2", [[0, 4], [4, 8], [8, 12]]]
+  ]
+}
+```

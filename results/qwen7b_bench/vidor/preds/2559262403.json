@@ -1,0 +1,58 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "puppy",
+      "attributes": ["white fur", "playing", "eating"]
+    },
+    {
+      "object 2": "puppy",
+      "attributes": ["white fur", "playing", "eating"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["red and white", "on floor", "near puppies"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      1,
+      "eating from",
+      3,
+      [
+        [4, 8],
+        [16, 20],
+        [40, 44],
+        [48, 52],
+        [60, 64],
+        [72, 76],
+        [80, 84],
+        [88, 92]
+      ]
+    ],
+    [
+      2,
+      "eating from",
+      3,
+      [
+        [4, 8],
+        [16, 20],
+        [40, 44],
+        [48, 52],
+        [60, 64],
+        [72, 76],
+        [80, 84],
+        [88, 92]
+      ]
+    ]
+  ]
+}
+```

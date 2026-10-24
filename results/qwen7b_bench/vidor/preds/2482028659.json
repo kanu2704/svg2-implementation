@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "speaker",
+      "attributes": ["wearing a striped shirt", "holding a microphone"]
+    },
+    {
+      "object 2": "dj",
+      "attributes": ["wearing a black shirt", "operating equipment"]
+    },
+    {
+      "object 3": "audience member",
+      "attributes": ["sitting in the background", "wearing a dark outfit"]
+    },
+    {
+      "object 4": "person with white jacket",
+      "attributes": ["standing in the foreground", "wearing a white jacket"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaking to",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "operating equipment",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "watching",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

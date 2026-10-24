@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Chef",
+      "attributes": ["wearing chef hat", "wearing apron", "engaged in cooking"]
+    },
+    {
+      "object 2": "Assistant Chef",
+      "attributes": ["wearing chef hat", "wearing apron", "engaged in cooking"]
+    },
+    {
+      "object 3": "Vegetable",
+      "attributes": ["carrot", "being held by Assistant Chef"]
+    },
+    {
+      "object 4": "Fruit",
+      "attributes": ["orange", "being held by Assistant Chef"]
+    },
+    {
+      "object 5": "Chef's Apron",
+      "attributes": ["red and white striped", "worn by Chef"]
+    },
+    {
+      "object 6": "Assistant Chef's Apron",
+      "attributes": ["red and white striped", "worn by Assistant Chef"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "cooking with",
+      2,
+      [
+        [0, 48]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      3,
+      [
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      4,
+      [
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```
