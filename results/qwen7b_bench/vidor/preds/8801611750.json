@@ -1,0 +1,38 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing red and white striped shirt", "holding object"]
+    },
+    {
+      "object 2": "computer",
+      "attributes": ["black monitor", "white keyboard"]
+    },
+    {
+      "object 3": "cup",
+      "attributes": ["brown paper cup with lid", "on desk"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "using",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "looking at",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,100 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "climber",
+      "attributes": ["wearing blue shirt", "wearing black pants"]
+    },
+    {
+      "object 2": "climber2",
+      "attributes": ["wearing red shirt", "wearing black pants"]
+    },
+    {
+      "object 3": "climber3",
+      "attributes": ["wearing green shirt", "wearing black pants"]
+    },
+    {
+      "object 4": "climber4",
+      "attributes": ["wearing red shirt", "wearing black pants"]
+    },
+    {
+      "object 5": "climber5",
+      "attributes": ["wearing green shirt", "wearing black pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "climbing",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "climbing",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "climbing",
+      4,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "climbing",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "above",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "above",
+      4,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "above",
+      5,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

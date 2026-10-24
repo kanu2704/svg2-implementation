@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing diaper", "standing and moving"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on bed", "wearing pink shirt"]
+    },
+    {
+      "object 3": "child2",
+      "attributes": ["wearing pink shirt", "sitting on bed"]
+    },
+    {
+      "object 4": "teddy bear",
+      "attributes": ["lying on bed", "wearing pink dress"]
+    },
+    {
+      "object 5": "pillow",
+      "attributes": ["pink color", "on the bed"]
+    },
+    {
+      "object 6": "bed",
+      "attributes": ["covered with colorful sheets", "children are playing on it"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      2,
+      "watching",
+      1,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      3,
+      "near",
+      5,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      4,
+      [
+        [0, 72]
+      ]
+    ],
+    [
+      4,
+      "on",
+      6,
+      [
+        [0, 72]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,50 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Man A",
+      "attributes": ["wearing blue shirt", "wearing black shorts"]
+    },
+    {
+      "object 2": "Man B",
+      "attributes": ["wearing black outfit", "holding phone"]
+    },
+    {
+      "object 3": "Man C",
+      "attributes": ["wearing red shirt", "wearing black shorts with yellow stripes"]
+    },
+    {
+      "object 4": "Man D",
+      "attributes": ["wearing blue shirt", "wearing black shorts"]
+    }
+  ],
+  "relationships": [
+    [
+      "Man A",
+      "stands near",
+      "Man D",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "Man B",
+      "stands near",
+      "Man C",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "Man C",
+      "bends down",
+      "Man C",
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

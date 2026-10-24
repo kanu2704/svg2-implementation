@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "blanket",
+      "attributes": ["striped", "being held"]
+    },
+    {
+      "object 2": "person A",
+      "attributes": ["wearing blue jacket", "holding blanket"]
+    },
+    {
+      "object 3": "person B",
+      "attributes": ["wearing gray jacket", "standing near person A"]
+    },
+    {
+      "object 4": "person C",
+      "attributes": ["wearing red jacket", "standing near person A"]
+    },
+    {
+      "object 5": "person D",
+      "attributes": ["wearing gray jacket with hood up", "standing near person A"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "holding",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      5,
+      "standing near",
+      2,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,167 @@
+{
+ "dataset": "vidor",
+ "video_id": "8966147395",
+ "fps": 29.97,
+ "n_frames": 289,
+ "video_fps": 29.97,
+ "ann_frames": 289,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "ball/sports ball"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     2.8028028028028027,
+     4.104104104104104
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     0.5338672005338673
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     4.604604604604605,
+     7.474140807474141
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     7.440774107440775,
+     7.907907907907909
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.1011011011011012
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     9.442776109442777,
+     9.642976309642977
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "throw",
+   "obj": 3,
+   "spans": [
+    [
+     7.207207207207207,
+     7.540874207540875
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     9.642976309642977
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.005005005005005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0030030030030033
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "towards",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.005005005005005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005005005005005
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1161/8966147395.mp4",
+ "video": "video.mp4"
+}

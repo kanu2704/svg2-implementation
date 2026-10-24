@@ -1,0 +1,351 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing blue tank top", "standing"]
+    },
+    {
+      "object 2": "woman 1",
+      "attributes": ["wearing black dress", "standing"]
+    },
+    {
+      "object 3": "woman 2",
+      "attributes": ["wearing black dress", "standing"]
+    },
+    {
+      "object 4": "woman 3",
+      "attributes": ["wearing cheerleading outfit", "standing"]
+    },
+    {
+      "object 5": "woman 4",
+      "attributes": ["wearing cheerleading outfit", "standing"]
+    },
+    {
+      "object 6": "woman 5",
+      "attributes": ["wearing cheerleading outfit", "standing"]
+    },
+    {
+      "object 7": "woman 6",
+      "attributes": ["wearing cheerleading outfit", "standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      6,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      6,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      4,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      6,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      3,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      6,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      4,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      6,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      6,
+      "interacts with",
+      7,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

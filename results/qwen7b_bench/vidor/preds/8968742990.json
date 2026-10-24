@@ -1,0 +1,284 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sumo1",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 2": "sumo2",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 3": "sumo3",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 4": "sumo4",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 5": "sumo5",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 6": "sumo6",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 7": "sumo7",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 8": "sumo8",
+      "attributes": ["standing", "wearing mawashi"]
+    },
+    {
+      "object 9": "sumo9",
+      "attributes": ["standing", "wearing mawashi"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands next to",
+      2,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      3,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      4,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      4,
+      "stands next to",
+      5,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      5,
+      "stands next to",
+      6,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      6,
+      "stands next to",
+      7,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      7,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      8,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      3,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      4,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      5,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      4,
+      "stands next to",
+      6,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      5,
+      "stands next to",
+      7,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      6,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      7,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      5,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      6,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      7,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      4,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      5,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      6,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      7,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      4,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      7,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      8,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      9,
+      [
+        [0, 11]
+      ]
+    ]
+  ]
+}
+```

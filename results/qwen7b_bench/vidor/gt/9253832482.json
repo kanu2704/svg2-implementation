@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "9253832482",
+ "fps": 29.97,
+ "n_frames": 186,
+ "video_fps": 29.97,
+ "ann_frames": 186,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "snowboard"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.206206206206207
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.206206206206207
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.206206206206207
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1007/9253832482.mp4",
+ "video": "video.mp4"
+}

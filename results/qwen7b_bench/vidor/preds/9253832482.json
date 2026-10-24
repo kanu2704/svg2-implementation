@@ -1,0 +1,25 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a blue shirt", "shorts", "black shoes"]
+    },
+    {
+      "object 2": "skateboard",
+      "attributes": ["on the ground", "being ridden by person 1"]
+    }
+  ],
+  "relationships": [
+    [
+      "person 1",
+      "riding",
+      "skateboard 2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```
