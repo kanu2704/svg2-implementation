@@ -1,0 +1,172 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "meatball",
+      "attributes": ["cooked", "glazed"]
+    },
+    {
+      "object 2": "pan",
+      "attributes": ["black", "hot"]
+    },
+    {
+      "object 3": "hand",
+      "attributes": ["gloved", "holding meatball"]
+    },
+    {
+      "object 4": "oil",
+      "attributes": ["dark", "hot"]
+    },
+    {
+      "object 5": "flour",
+      "attributes": ["white", "powdery"]
+    },
+    {
+      "object 6": "bowl",
+      "attributes": ["white", "ceramic"]
+    },
+    {
+      "object 7": "spoon",
+      "attributes": ["wooden", "used for stirring"]
+    },
+    {
+      "object 8": "plate",
+      "attributes": ["gray", "ceramic"]
+    },
+    {
+      "object 9": "chopsticks",
+      "attributes": ["wooden", "used for serving"]
+    },
+    {
+      "object 10": "flower",
+      "attributes": ["pink", "orange"]
+    },
+    {
+      "object 11": "cup",
+      "attributes": ["pink", "ceramic"]
+    },
+    {
+      "object 12": "container",
+      "attributes": ["pink", "ceramic"]
+    },
+    {
+      "object 13": "flour",
+      "attributes": ["white", "powdery"]
+    },
+    {
+      "object 14": "pan",
+      "attributes": ["black", "hot"]
+    }
+  ],
+  "relationships": [
+    [
+      "hand",
+      "holding",
+      "meatball",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "meatball",
+      "cooking in",
+      "pan",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "pan",
+      "filled with",
+      "oil",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "hand",
+      "dipping",
+      "meatball",
+      [
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ],
+    [
+      "meatball",
+      "covered in",
+      "flour",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "hand",
+      "stirring",
+      "flour",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "hand",
+      "holding",
+      "spoon",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "plate",
+      "on",
+      "table",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "chopsticks",
+      "on",
+      "plate",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "flower",
+      "on",
+      "table",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "cup",
+      "on",
+      "table",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "container",
+      "on",
+      "table",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ]
+  ]
+}
+```

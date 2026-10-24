@@ -1,0 +1,596 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 2": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 3": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 4": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 5": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 6": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 7": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 8": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 9": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 10": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 11": "swan",
+      "attributes": ["black", "swimming"]
+    },
+    {
+      "object 12": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 13": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 14": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 15": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 16": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 17": "person",
+      "attributes": ["wearing striped shirt", "walking"]
+    },
+    {
+      "object 18": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 19": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 20": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 21": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 22": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 23": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 24": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 25": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 26": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 27": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 28": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 29": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 30": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 31": "duck",
+      "attributes": ["brown", "swimming"]
+    },
+    {
+      "object 32": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 33": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 34": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 35": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 36": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 37": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 38": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 39": "plant",
+      "attributes": ["green leaves", "near water"]
+    },
+    {
+      "object 40": "plant",
+      "attributes": ["green leaves", "near water"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "swimming with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "swimming with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "swimming with",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "swimming with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      6,
+      "swimming with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      7,
+      "swimming with",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      8,
+      "swimming with",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      9,
+      "swimming with",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      10,
+      "swimming with",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      12,
+      "swimming with",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      13,
+      "swimming with",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      14,
+      "swimming with",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      15,
+      "swimming with",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      17,
+      "walking near",
+      18,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      19,
+      "swimming with",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      20,
+      "swimming with",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      21,
+      "swimming with",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      22,
+      "swimming with",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      23,
+      "swimming with",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      24,
+      "swimming with",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      25,
+      "swimming with",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      26,
+      "swimming with",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      27,
+      "swimming with",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      28,
+      "swimming with",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      29,
+      "swimming with",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      30,
+      "swimming with",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      31,
+      "swimming with",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      32,
+      "swimming with",
+      33,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      33,
+      "swimming with",
+      34,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      34,
+      "swimming with",
+      35,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      35,
+      "swimming with",
+      36,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      36,
+      "swimming with",
+      37,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      37,
+      "swimming with",
+      38,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      38,
+      "swimming with",
+      39,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      39,
+      "swimming with",
+      40,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,608 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 2": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 3": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 4": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 5": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 6": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 7": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 8": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 9": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 10": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 11": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 12": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 13": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 14": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 15": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 16": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 17": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 18": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 19": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 20": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 21": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 22": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 23": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 24": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 25": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 26": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 27": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 28": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 29": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 30": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 31": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 32": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 33": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 34": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 35": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 36": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 37": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 38": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 39": "cat",
+      "attributes": ["fluffy", "white"]
+    },
+    {
+      "object 40": "cat",
+      "attributes": ["fluffy", "white"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "chases",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "chases",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "chases",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "chases",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "chases",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "chases",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "chases",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      11,
+      "chases",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "chases",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      13,
+      "chases",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      14,
+      "chases",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "chases",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      16,
+      "chases",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "chases",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      18,
+      "chases",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      19,
+      "chases",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      20,
+      "chases",
+      19,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      21,
+      "chases",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      22,
+      "chases",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      23,
+      "chases",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      24,
+      "chases",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      25,
+      "chases",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      26,
+      "chases",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      27,
+      "chases",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      28,
+      "chases",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      29,
+      "chases",
+      30,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      30,
+      "chases",
+      29,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      31,
+      "chases",
+      32,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      32,
+      "chases",
+      31,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      33,
+      "chases",
+      34,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      34,
+      "chases",
+      33,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      35,
+      "chases",
+      36,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      36,
+      "chases",
+      35,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      37,
+      "chases",
+      38,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      38,
+      "chases",
+      37,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      39,
+      "chases",
+      40,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      40,
+      "chases",
+      39,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

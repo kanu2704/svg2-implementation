@@ -1,0 +1,180 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "roast",
+      "attributes": ["golden-brown", "sizzling"]
+    },
+    {
+      "object 2": "torch",
+      "attributes": ["blue flame", "used for cooking"]
+    },
+    {
+      "object 3": "stove",
+      "attributes": ["induction cooktop", "flat surface"]
+    },
+    {
+      "object 4": "spatula",
+      "attributes": ["metallic", "used for flipping"]
+    },
+    {
+      "object 5": "bottle",
+      "attributes": ["ketchup", "on counter"]
+    },
+    {
+      "object 6": "hand",
+      "attributes": ["holding spatula", "positioning roast"]
+    },
+    {
+      "object 7": "counter",
+      "attributes": ["wooden", "holds bottle"]
+    },
+    {
+      "object 8": "burner",
+      "attributes": ["electric", "under roast"]
+    },
+    {
+      "object 9": "flame",
+      "attributes": ["blue", "emanating from torch"]
+    },
+    {
+      "object 10": "spoon",
+      "attributes": ["metallic", "used for basting"]
+    },
+    {
+      "object 11": "basting",
+      "attributes": ["liquid", "applied to roast"]
+    },
+    {
+      "object 12": "lid",
+      "attributes": ["transparent", "on stove"]
+    },
+    {
+      "object 13": "kitchen",
+      "attributes": ["cooking area", "organized"]
+    }
+  ],
+  "relationships": [
+    [
+      "hand",
+      "holding",
+      "spatula",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "torch",
+      "directed at",
+      "roast",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "spatula",
+      "used to flip",
+      "roast",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "bottle",
+      "placed on",
+      "counter",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "hand",
+      "positioning",
+      "roast",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "spoon",
+      "used to baste",
+      "roast",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "lid",
+      "on",
+      "stove",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "flame",
+      "emanating from",
+      "torch",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "roast",
+      "cooking on",
+      "stove",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "kitchen",
+      "organized",
+      "cooking area",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```
