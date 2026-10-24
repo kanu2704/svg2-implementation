@@ -1,0 +1,1357 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a blue shirt and shorts", "standing on the left side of the court"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a black shirt and shorts", "standing on the right side of the court"]
+    },
+    {
+      "object 3": "man3",
+      "attributes": ["wearing a white shirt and shorts", "standing in the middle of the court"]
+    },
+    {
+      "object 4": "man4",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 5": "man5",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 6": "man6",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 7": "man7",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 8": "man8",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 9": "man9",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 10": "man10",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 11": "man11",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 12": "man12",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 13": "man13",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 14": "man14",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 15": "man15",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 16": "man16",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 17": "man17",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 18": "man18",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 19": "man19",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 20": "man20",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 21": "man21",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 22": "man22",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 23": "man23",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 24": "man24",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 25": "man25",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 26": "man26",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 27": "man27",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 28": "man28",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 29": "man29",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 30": "man30",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 31": "man31",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 32": "man32",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 33": "man33",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 34": "man34",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 35": "man35",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    },
+    {
+      "object 36": "man36",
+      "attributes": ["wearing a black shirt and shorts", "standing behind man3"]
+    }
+  ],
+  "relationships": [
+    [
+      "man1",
+      "plays with",
+      "man2",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man3",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man4",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man5",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man6",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man7",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man8",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man9",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man10",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man11",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man12",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man13",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man14",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man15",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man16",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man17",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man18",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man19",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man20",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man21",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man22",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man23",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man24",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man25",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man26",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man27",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man28",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man29",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man30",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man31",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man32",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man33",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man34",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man35",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man1",
+      "plays with",
+      "man36",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man3",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man4",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man5",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man6",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man7",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man8",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man9",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man10",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man11",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man12",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man13",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man14",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man15",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man16",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man17",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man18",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man19",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man20",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man21",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man22",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man23",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man24",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man25",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man26",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man27",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man28",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man29",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man30",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man31",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man32",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man33",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man34",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man35",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "plays with",
+      "man36",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man4",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man5",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man6",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man7",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man8",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man9",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man10",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man11",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man12",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man13",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man14",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man15",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man16",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man17",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man18",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man19",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man20",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man21",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man22",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man23",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man24",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man25",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man26",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man27",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man28",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man29",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man30",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man31",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man32",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man33",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man34",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "plays with",
+      "man35",
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec

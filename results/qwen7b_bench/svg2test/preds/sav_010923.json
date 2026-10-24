@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing black shirt", "short blue shorts", "braided hair"]
+    },
+    {
+      "object 2": "air_conditioner",
+      "attributes": ["white color", "mounted on wall"]
+    },
+    {
+      "object 3": "wall",
+      "attributes": ["white color", "smooth surface"]
+    },
+    {
+      "object 4": "door",
+      "attributes": ["wooden frame", "slightly ajar"]
+    },
+    {
+      "object 5": "cabinet",
+      "attributes": ["brown color", "closed"]
+    },
+    {
+      "object 6": "desk",
+      "attributes": ["black color", "holds items"]
+    },
+    {
+      "object 7": "items_on_desk",
+      "attributes": ["boxed products", "organized neatly"]
+    },
+    {
+      "object 8": "chair",
+      "attributes": ["blue fabric", "partially visible"]
+    },
+    {
+      "object 9": "floor",
+      "attributes": ["light brown color", "hard material"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "standing near",
+      "chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "moving towards",
+      "air_conditioner",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "touching",
+      "chair",
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "standing in front of",
+      "cabinet",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "looking at",
+      "items_on_desk",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "standing next to",
+      "door",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person",
+      "standing on",
+      "floor",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```
