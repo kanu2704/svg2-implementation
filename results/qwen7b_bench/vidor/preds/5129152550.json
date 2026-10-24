@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing glasses", "brown jacket"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing glasses", "plaid shirt"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing glasses", "purple sweater"]
+    },
+    {
+      "object 4": "woman2",
+      "attributes": ["wearing glasses", "red sweater"]
+    },
+    {
+      "object 5": "man3",
+      "attributes": ["wearing glasses", "brown jacket with blue patch"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "stands next to",
+      "woman",
+      [
+        "<0 - 4 sec>",
+        "<8 - 12 sec>",
+        "<16 - 20 sec>",
+        "<24 - 28 sec>",
+        "<32 - 36 sec>",
+        "<40 - 44 sec>",
+        "<48 - 52 sec>",
+        "<56 - 60 sec>",
+        "<64 - 68 sec>",
+        "<72 - 76 sec>",
+        "<80 - 84 sec>",
+        "<88 - 92 sec>"
+      ]
+    ],
+    [
+      "man2",
+      "stands next to",
+      "woman2",
+      [
+        "<4 - 8 sec>",
+        "<12 - 16 sec>",
+        "<20 - 24 sec>",
+        "<28 - 32 sec>",
+        "<36 - 40 sec>",
+        "<44 - 48 sec>",
+        "<52 - 56 sec>",
+        "<60 - 64 sec>",
+        "<68 - 72 sec>",
+        "<76 - 80 sec>",
+        "<84 - 88 sec>",
+        "<92 - 96 sec>"
+      ]
+    ],
+    [
+      "man3",
+      "stands next to",
+      "woman",
+      [
+        "<20 - 24 sec>",
+        "<48 - 52 sec>",
+        "<56 - 60 sec>",
+        "<64 - 68 sec>",
+        "<72 - 76 sec>",
+        "<80 - 84 sec>",
+        "<88 - 92 sec>"
+      ]
+    ]
+  ]
+}
+```

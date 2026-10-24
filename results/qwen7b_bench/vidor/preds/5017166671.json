@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    },
+    {
+      "object 2": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    },
+    {
+      "object 3": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    },
+    {
+      "object 4": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    },
+    {
+      "object 5": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    },
+    {
+      "object 6": "guitarist",
+      "attributes": ["playing guitar", "sitting"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      5,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      6,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      4,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      5,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      6,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      4,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      5,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      6,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      5,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      6,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      5,
+      "playing with",
+      6,
+      [
+        [0, 89]
+      ]
+    ]
+  ]
+}
+```

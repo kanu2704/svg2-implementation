@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wet", "playing with toys"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["holding baby", "wearing green shirt"]
+    },
+    {
+      "object 3": "bathtub",
+      "attributes": ["filled with water", "yellow rubber ducks"]
+    },
+    {
+      "object 4": "toys",
+      "attributes": ["floating in water", "yellow and orange"]
+    },
+    {
+      "object 5": "door",
+      "attributes": ["metallic, partially open"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      1,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      5,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

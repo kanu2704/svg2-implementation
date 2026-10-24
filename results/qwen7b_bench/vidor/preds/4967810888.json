@@ -1,0 +1,90 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Dancer",
+      "attributes": ["wearing a pink headscarf", "black and red dress", "performing gestures"]
+    },
+    {
+      "object 2": "Audience",
+      "attributes": ["sitting on the floor", "wearing white clothes", "watching the performance"]
+    },
+    {
+      "object 3": "Man 1",
+      "attributes": ["wearing a white shirt", "sitting on the floor", "clapping hands"]
+    },
+    {
+      "object 4": "Man 2",
+      "attributes": ["wearing a white shirt", "sitting on the floor", "clapping hands"]
+    },
+    {
+      "object 5": "Man 3",
+      "attributes": ["wearing a white shirt", "sitting on the floor", "clapping hands"]
+    },
+    {
+      "object 6": "Man 4",
+      "attributes": ["wearing a white shirt", "sitting on the floor", "clapping hands"]
+    },
+    {
+      "object 7": "Woman 1",
+      "attributes": ["wearing a white shirt", "sitting on the floor", "clapping hands"]
+    }
+  ],
+  "relationships": [
+    [
+      "Dancer",
+      "performing for",
+      "Audience",
+      [
+        ["0 - 4 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "Man 1",
+      "clapping",
+      "Dancer",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "Man 2",
+      "clapping",
+      "Dancer",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "Man 3",
+      "clapping",
+      "Dancer",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "Man 4",
+      "clapping",
+      "Dancer",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      "Woman 1",
+      "clapping",
+      "Dancer",
+      [
+        ["4 - 8 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,110 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing green shirt", "waving hand"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing blue shirt", "waving hand"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing red shorts", "waving hand"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing white shirt", "waving hand"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing white shirt", "waving hand"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing black shorts", "waving hand"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing yellow shirt", "waving hand"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["waving hand"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "waving hand with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "waving hand with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "waving hand with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "waving hand with",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "waving hand with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "waving hand with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "waving hand with",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["black and brown fur", "playing with a toy"]
+    },
+    {
+      "object 2": "cat",
+      "attributes": ["brown fur", "chasing the dog"]
+    },
+    {
+      "object 3": "bird",
+      "attributes": ["fluffy, light-colored feathers", "flying in the air"]
+    },
+    {
+      "object 4": "bench",
+      "attributes": ["wooden structure", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      3,
+      "flies near",
+      1,
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"]
+      ]
+    ]
+  ]
+}
+```

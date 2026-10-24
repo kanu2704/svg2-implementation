@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "1": "deer",
+      "attributes": ["standing", "looking around"]
+    },
+    {
+      "2": "deer",
+      "attributes": ["standing", "looking around"]
+    },
+    {
+      "3": "deer",
+      "attributes": ["standing", "looking around"]
+    },
+    {
+      "4": "dog",
+      "attributes": ["running", "black and brown coat"]
+    },
+    {
+      "5": "man",
+      "attributes": ["walking", "wearing gray hoodie"]
+    },
+    {
+      "6": "child",
+      "attributes": ["being carried", "wearing white knee pads"]
+    },
+    {
+      "7": "car",
+      "attributes": ["partially visible", "blue color"]
+    }
+  ],
+  "relationships": [
+    [1, "near", 2, [[0, 20]]],
+    [1, "near", 3, [[0, 20]]],
+    [2, "near", 3, [[0, 20]]],
+    [4, "near", 5, [[16, 20]]]
+  ]
+}
+```

@@ -1,0 +1,89 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "speaker",
+      "attributes": ["holding microphone", "wearing checkered shirt"]
+    },
+    {
+      "object 2": "listener 1",
+      "attributes": ["wearing black shirt", "standing still"]
+    },
+    {
+      "object 3": "listener 2",
+      "attributes": ["wearing black shirt", "standing still"]
+    },
+    {
+      "object 4": "listener 3",
+      "attributes": ["wearing black shirt", "standing still"]
+    },
+    {
+      "object 5": "listener 4",
+      "attributes": ["wearing black shirt", "holding microphone", "smiling"]
+    },
+    {
+      "object 6": "listener 5",
+      "attributes": ["wearing black shirt", "standing still"]
+    },
+    {
+      "object 7": "water bottle",
+      "attributes": ["blue cap", "clear plastic", "on table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaking to",
+      2,
+      [
+        [0, 20],
+        [24, 48]
+      ]
+    ],
+    [
+      1,
+      "speaking to",
+      3,
+      [
+        [0, 20],
+        [24, 48]
+      ]
+    ],
+    [
+      1,
+      "speaking to",
+      4,
+      [
+        [0, 20],
+        [24, 48]
+      ]
+    ],
+    [
+      1,
+      "speaking to",
+      5,
+      [
+        [0, 20],
+        [24, 48]
+      ]
+    ],
+    [
+      1,
+      "speaking to",
+      6,
+      [
+        [0, 20],
+        [24, 48]
+      ]
+    ],
+    [
+      5,
+      "holding microphone",
+      7,
+      [
+        [20, 64]
+      ]
+    ]
+  ]
+}
+```

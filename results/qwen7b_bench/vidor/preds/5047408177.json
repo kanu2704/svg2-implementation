@@ -1,0 +1,97 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing blue pajamas", "playing with a blanket"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["holding a blanket", "standing still"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing red and black outfit", "playing with toys"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing white shirt", "standing near the child"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["wooden", "arranged in rows"]
+    },
+    {
+      "object 6": "toy car",
+      "attributes": ["red and blue", "on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36],
+        [40, 44]
+      ]
+    ],
+    [
+      2,
+      "holding blanket",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36],
+        [40, 44]
+      ]
+    ],
+    [
+      3,
+      "playing with toys",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36],
+        [40, 44]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36],
+        [40, 44]
+      ]
+    ],
+    [
+      5,
+      "arranged in rows",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36],
+        [40, 44]
+      ]
+    ]
+  ]
+}
+```

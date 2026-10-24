@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing yellow shirt", "playing with toy"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on couch", "talking on phone"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown fabric", "woman sitting on it"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["in child's hand", "colorful design"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["wooden surface", "magazines on top"]
+    },
+    {
+      "object 6": "car",
+      "attributes": ["red and blue", "on floor"]
+    },
+    {
+      "object 7": "pillow",
+      "attributes": ["white with pattern", "on couch"]
+    },
+    {
+      "object 8": "floor",
+      "attributes": ["dark color", "child standing on it"]
+    },
+    {
+      "object 9": "box",
+      "attributes": ["green and white", "on table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "talking to",
+      1,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      8,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "sitting on",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      4,
+      "held by",
+      1,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      5,
+      "on",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      6,
+      "on",
+      8,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      7,
+      "on",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      9,
+      "on",
+      5,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,178 @@
+{
+ "dataset": "vidor",
+ "video_id": "4976725963",
+ "fps": 10.0,
+ "n_frames": 490,
+ "video_fps": 10.0,
+ "ann_frames": 490,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bottle"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "faucet"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sink"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     15.7,
+     32.1
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "beneath",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.9
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1007/4976725963.mp4",
+ "video": "video.mp4"
+}

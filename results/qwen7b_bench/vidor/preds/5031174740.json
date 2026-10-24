@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["holding hand with adult", "wearing striped shirt"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing floral dress", "holding child's hand"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing black and yellow jacket", "standing in background"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["wearing white top", "standing in background"]
+    },
+    {
+      "object 5": "car",
+      "attributes": ["parked on street", "red color"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding hand with",
+      2,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      2,
+      "walking with",
+      1,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      5,
+      [
+        [0, 3]
+      ]
+    ]
+  ]
+}
+```

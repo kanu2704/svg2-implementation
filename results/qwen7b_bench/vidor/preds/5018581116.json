@@ -1,0 +1,102 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "mouse",
+      "attributes": ["moving"]
+    },
+    {
+      "object 2": "left_monitor",
+      "attributes": ["displaying content", "changing content"]
+    },
+    {
+      "object 3": "right_monitor",
+      "attributes": ["displaying content", "changing content"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing checkered shirt", "moving arm"]
+    },
+    {
+      "object 5": "document",
+      "attributes": ["on left_monitor", "on right_monitor"]
+    },
+    {
+      "object 6": "desk",
+      "attributes": ["holding monitors and keyboard"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "moving mouse",
+      "mouse",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<16 - 20 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "left_monitor",
+      "content change",
+      "document",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "right_monitor",
+      "content change",
+      "document",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "person",
+      "pointing at left_monitor",
+      "left_monitor",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "person",
+      "pointing at right_monitor",
+      "right_monitor",
+      [
+        ["<12 - 16 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "left_monitor",
+      "on desk",
+      "desk",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "right_monitor",
+      "on desk",
+      "desk",
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<8 - 12 sec>", "<12 - 16 sec>"],
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<28 - 32 sec>"]
+      ]
+    ]
+  ]
+}
+```

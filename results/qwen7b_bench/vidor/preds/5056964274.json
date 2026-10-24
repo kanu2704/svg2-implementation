@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a black jacket", "holding food"]
+    },
+    {
+      "object 2": "hand",
+      "attributes": ["holding a box of juice"]
+    },
+    {
+      "object 3": "stroller",
+      "attributes": ["black with silver wheels"]
+    },
+    {
+      "object 4": "car",
+      "attributes": ["red and white"]
+    },
+    {
+      "object 5": "bike",
+      "attributes": ["pink with yellow handlebars"]
+    },
+    {
+      "object 6": "food",
+      "attributes": ["sandwich-like item being eaten"]
+    },
+    {
+      "object 7": "box",
+      "attributes": ["green and red, holding juice"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "eating",
+      6,
+      [
+        [8, 20]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      7,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "in the background",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "in the background",
+      5,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

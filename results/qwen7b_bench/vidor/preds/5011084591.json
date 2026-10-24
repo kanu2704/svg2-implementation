@@ -1,0 +1,172 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man1",
+      "attributes": ["wearing a brown shirt and black shorts", "walking away from the camera"]
+    },
+    {
+      "object 2": "man2",
+      "attributes": ["wearing a green shirt and blue jeans", "walking away from the camera"]
+    },
+    {
+      "object 3": "man3",
+      "attributes": ["wearing a gray shirt and white pants", "walking away from the camera"]
+    },
+    {
+      "object 4": "man4",
+      "attributes": ["wearing a dark shirt and light-colored pants", "walking away from the camera"]
+    },
+    {
+      "object 5": "car1",
+      "attributes": ["a silver car parked on the side of the road", "stationary"]
+    },
+    {
+      "object 6": "car2",
+      "attributes": ["a black car parked on the side of the road", "stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walking with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "walking with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "walking with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "walking with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "walking with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "walking with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

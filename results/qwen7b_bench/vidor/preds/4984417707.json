@@ -1,0 +1,160 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing blue shirt", "wearing hat"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing red shirt", "wearing headscarf"]
+    },
+    {
+      "object 3": "elephant",
+      "attributes": ["large size", "being ridden by child"]
+    },
+    {
+      "object 4": "soccer ball",
+      "attributes": ["blue and white patterned"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["blue and white patterned"]
+    },
+    {
+      "object 6": "people",
+      "attributes": ["wearing pink shirts", "standing still"]
+    },
+    {
+      "object 7": "people",
+      "attributes": ["wearing pink shirts", "standing still"]
+    },
+    {
+      "object 8": "people",
+      "attributes": ["wearing pink shirts", "standing still"]
+    },
+    {
+      "object 9": "signboard",
+      "attributes": ["brown color", "text on it"]
+    },
+    {
+      "object 10": "person",
+      "attributes": ["wearing green shirt", "partially visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "interacts with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands behind",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands behind",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands behind",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

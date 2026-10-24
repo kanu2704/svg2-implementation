@@ -1,0 +1,34 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Man",
+      "attributes": ["wearing a brown shirt and blue jeans", "moving his arms"]
+    },
+    {
+      "object 2": "Man",
+      "attributes": ["wearing a gray shirt and khaki pants", "moving his arms"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "moving towards",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "moving away from",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

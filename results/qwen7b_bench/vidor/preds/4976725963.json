@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cat",
+      "attributes": ["black", "wet"]
+    },
+    {
+      "object 2": "sink",
+      "attributes": ["white", "water"]
+    },
+    {
+      "object 3": "water",
+      "attributes": ["flowing", "clear"]
+    },
+    {
+      "object 4": "towel",
+      "attributes": ["black", "wet"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drinking from",
+      2,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      4,
+      "hanging on",
+      2,
+      [
+        [0, 52]
+      ]
+    ]
+  ]
+}
+```
