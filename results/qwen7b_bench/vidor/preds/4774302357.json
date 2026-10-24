@@ -1,0 +1,105 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["playing guitar", "wearing glasses"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["playing banjo", "wearing glasses"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["sitting at desk", "working on computer"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["sitting at desk", "working on computer"]
+    },
+    {
+      "object 5": "guitar",
+      "attributes": ["being played by man 1"]
+    },
+    {
+      "object 6": "banjo",
+      "attributes": ["being played by man 2"]
+    },
+    {
+      "object 7": "computer",
+      "attributes": ["on desk", "used by man 3 and man 4"]
+    },
+    {
+      "object 8": "desk",
+      "attributes": ["wooden", "holds computer, bowls, and other items"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "playing",
+      6,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "working on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "working on",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "sitting at",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "sitting at",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

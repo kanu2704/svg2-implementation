@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing black t-shirt", "holding beer bottle"]
+    },
+    {
+      "object 2": "phone",
+      "attributes": ["being held by person in background"]
+    },
+    {
+      "object 3": "beer bottle",
+      "attributes": ["being held by man", "label visible"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["standing in background"]
+    },
+    {
+      "object 5": "car",
+      "attributes": ["parked on street"]
+    },
+    {
+      "object 6": "hand",
+      "attributes": ["holding beer bottle"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "being held by",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      6,
+      "being held by",
+      1,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "behind",
+      1,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

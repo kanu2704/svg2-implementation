@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a grey shirt with Batman logo", "wearing black and white striped pants", "driving a toy car"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["blue color", "yellow and black stripes", "steering wheel", "seats the child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "driving",
+      2,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

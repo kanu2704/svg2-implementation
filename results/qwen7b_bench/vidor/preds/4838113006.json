@@ -1,0 +1,78 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a dress", "moving around the table"]
+    },
+    {
+      "object 2": "table",
+      "attributes": ["white surface", "holds various objects"]
+    },
+    {
+      "object 3": "bottle",
+      "attributes": ["placed on the table", "moved by the woman"]
+    },
+    {
+      "object 4": "camera",
+      "attributes": ["held by a person in green shirt", "used to take photos"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["white, simple design", "positioned near the table"]
+    },
+    {
+      "object 6": "box",
+      "attributes": ["white with letter 'A'", "contains objects on top"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing a green shirt", "holding a camera"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "moves",
+      "object 2",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<16 - 20 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "interacts with",
+      "object 3",
+      [
+        ["<4 - 8 sec>", "<12 - 16 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"]
+      ]
+    ],
+    [
+      "object 4",
+      "is held by",
+      "object 7",
+      [
+        ["<20 - 24 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "object 5",
+      "is positioned near",
+      "object 2",
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "object 6",
+      "is placed on",
+      "object 5",
+      [
+        ["<16 - 20 sec>", "<24 - 28 sec>"]
+      ]
+    ]
+  ]
+}
+```

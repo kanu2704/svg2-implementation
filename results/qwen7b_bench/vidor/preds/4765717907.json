@@ -1,0 +1,61 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with ball"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["orange color", "being held by child"]
+    },
+    {
+      "object 3": "adult",
+      "attributes": ["wearing sunglasses", "lifting child"]
+    },
+    {
+      "object 4": "stroller",
+      "attributes": ["gray and black color", "stationary in background"]
+    },
+    {
+      "object 5": "park bench",
+      "attributes": ["wooden structure", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 40]
+      ]
+    ],
+    [
+      3,
+      "lifting",
+      1,
+      [
+        [8, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      4,
+      [
+        [0, 38]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      5,
+      [
+        [0, 38]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,139 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing orange shorts", "playing on a slide"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a bikini", "standing near the slide"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing shorts and a t-shirt", "standing near the slide"]
+    },
+    {
+      "object 4": "child 2",
+      "attributes": ["wearing a green shirt", "playing with a ball"]
+    },
+    {
+      "object 5": "child 3",
+      "attributes": ["wearing a pink dress", "playing with a ball"]
+    },
+    {
+      "object 6": "child 4",
+      "attributes": ["wearing blue shorts", "playing with a ball"]
+    },
+    {
+      "object 7": "soccer ball",
+      "attributes": ["on the ground", "near the slide"]
+    },
+    {
+      "object 8": "slide",
+      "attributes": ["orange", "sliding down"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "playing with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "playing with",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "sliding down",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

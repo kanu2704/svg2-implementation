@@ -1,0 +1,166 @@
+```json
+{
+  "objects": [
+    {
+      "1": "cyclist",
+      "attributes": ["wearing blue and white jersey", "riding bicycle"]
+    },
+    {
+      "2": "cyclist",
+      "attributes": ["wearing red and black jersey", "riding bicycle"]
+    },
+    {
+      "3": "cyclist",
+      "attributes": ["wearing white and yellow jersey", "riding bicycle"]
+    },
+    {
+      "4": "cyclist",
+      "attributes": ["wearing pink and white jersey", "riding bicycle"]
+    },
+    {
+      "5": "cyclist",
+      "attributes": ["wearing red and black jersey", "riding bicycle"]
+    },
+    {
+      "6": "cyclist",
+      "attributes": ["wearing white and yellow jersey", "riding bicycle"]
+    },
+    {
+      "7": "cyclist",
+      "attributes": ["wearing blue and white jersey", "riding bicycle"]
+    },
+    {
+      "8": "cyclist",
+      "attributes": ["wearing red and black jersey", "riding bicycle"]
+    },
+    {
+      "9": "cyclist",
+      "attributes": ["wearing white and yellow jersey", "riding bicycle"]
+    },
+    {
+      "10": "cyclist",
+      "attributes": ["wearing pink and white jersey", "riding bicycle"]
+    },
+    {
+      "11": "cyclist",
+      "attributes": ["wearing red and black jersey", "riding bicycle"]
+    },
+    {
+      "12": "cyclist",
+      "attributes": ["wearing white and yellow jersey", "riding bicycle"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding alongside",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "riding alongside",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "riding alongside",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "riding alongside",
+      5,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "riding alongside",
+      6,
+      [
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      6,
+      "riding alongside",
+      7,
+      [
+        [36, 40],
+        [40, 44],
+        [44, 48]
+      ]
+    ],
+    [
+      7,
+      "riding alongside",
+      8,
+      [
+        [52, 56],
+        [56, 60],
+        [60, 64]
+      ]
+    ],
+    [
+      8,
+      "riding alongside",
+      9,
+      [
+        [76, 80],
+        [80, 84],
+        [84, 88]
+      ]
+    ],
+    [
+      9,
+      "riding alongside",
+      10,
+      [
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ],
+    [
+      10,
+      "riding alongside",
+      11,
+      [
+        [20, 24],
+        [24, 28],
+        [28, 32]
+      ]
+    ],
+    [
+      11,
+      "riding alongside",
+      12,
+      [
+        [48, 52],
+        [52, 56],
+        [56, 60]
+      ]
+    ]
+  ]
+}
+```

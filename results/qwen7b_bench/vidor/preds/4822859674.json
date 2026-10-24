@@ -1,0 +1,142 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["standing", "wearing a white shirt and gray shorts"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["sitting", "wearing a black shirt and khaki shorts"]
+    },
+    {
+      "object 3": "dog",
+      "attributes": ["walking on the floor", "wearing a red collar"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["wooden", "yellow cushion"]
+    },
+    {
+      "object 5": "rocking chair",
+      "attributes": ["wooden", "yellow cushion"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["round", "wooden"]
+    },
+    {
+      "object 7": "couch",
+      "attributes": ["gray fabric", "large size"]
+    },
+    {
+      "object 8": "hand",
+      "attributes": ["holding an object", "visible in the foreground"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["sitting", "wearing a blue shirt"]
+    },
+    {
+      "object 10": "object",
+      "attributes": ["being held by hand", "red color"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        ["12 - 16 sec", "12 - 16 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        ["28 - 32 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      5,
+      [
+        ["28 - 32 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      6,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      8,
+      "holding",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ]
+  ]
+}
+```

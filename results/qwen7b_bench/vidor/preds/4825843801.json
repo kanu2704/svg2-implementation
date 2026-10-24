@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "penguin",
+      "attributes": ["black and white plumage", "walking"]
+    },
+    {
+      "object 2": "penguin",
+      "attributes": ["black and white plumage", "walking"]
+    },
+    {
+      "object 3": "penguin",
+      "attributes": ["black and white plumage", "walking"]
+    },
+    {
+      "object 4": "penguin",
+      "attributes": ["black and white plumage", "walking"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing beige pants", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "walks with",
+      "object 2",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "object 2",
+      "walks with",
+      "object 3",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "object 3",
+      "walks with",
+      "object 4",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "object 1",
+      "walks behind",
+      "object 5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 2",
+      "walks behind",
+      "object 5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 3",
+      "walks behind",
+      "object 5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 4",
+      "walks behind",
+      "object 5",
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

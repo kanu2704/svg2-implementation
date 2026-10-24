@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing bib", "holding spaghetti"]
+    },
+    {
+      "object 2": "highchair",
+      "attributes": ["child is seated in it"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["spaghetti on it"]
+    },
+    {
+      "object 4": "adult",
+      "attributes": ["sitting behind child"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["adult is sitting on it"]
+    },
+    {
+      "object 6": "spaghetti",
+      "attributes": ["on table, held by child"]
+    },
+    {
+      "object 7": "background",
+      "attributes": ["restaurant setting"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "eating",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "in highchair",
+      2,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      4,
+      "behind child",
+      1,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      5,
+      "occupied by adult",
+      4,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,129 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing pink shirt"]
+    },
+    {
+      "object 2": "singer",
+      "attributes": ["singing", "wearing floral dress"]
+    },
+    {
+      "object 3": "keyboardist",
+      "attributes": ["playing keyboard", "wearing brown dress"]
+    },
+    {
+      "object 4": "drummer",
+      "attributes": ["playing drums", "wearing black outfit"]
+    },
+    {
+      "object 5": "audience",
+      "attributes": ["watching performance", "standing still"]
+    },
+    {
+      "object 6": "water bottle",
+      "attributes": ["held by person in black", "transparent with blue cap"]
+    },
+    {
+      "object 7": "microphone",
+      "attributes": ["held by singer", "black and silver"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing",
+      "drummer",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "singer",
+      "singing",
+      "keyboardist",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing",
+      "audience",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "keyboardist",
+      "playing",
+      "audience",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing",
+      "audience",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "water bottle",
+      "held by",
+      "person in black",
+      [
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ],
+    [
+      "microphone",
+      "held by",
+      "singer",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"]
+      ]
+    ]
+  ]
+}
+```

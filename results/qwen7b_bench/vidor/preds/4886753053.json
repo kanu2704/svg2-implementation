@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "workers",
+      "attributes": ["wearing high-visibility vests", "standing in a line"]
+    },
+    {
+      "object 2": "workers",
+      "attributes": ["wearing high-visibility vests", "standing in a line"]
+    },
+    {
+      "object 3": "workers",
+      "attributes": ["wearing high-visibility vests", "standing in a line"]
+    },
+    {
+      "object 4": "tractor",
+      "attributes": ["red color", "stationary position"]
+    },
+    {
+      "object 5": "workers",
+      "attributes": ["wearing high-visibility vests", "standing in a line"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      5,
+      "near",
+      4,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

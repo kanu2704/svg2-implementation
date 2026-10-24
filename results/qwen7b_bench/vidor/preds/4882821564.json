@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing blue and white pajamas", "playing with a toy"]
+    },
+    {
+      "object 2": "couch",
+      "attributes": ["pink leather couch", "in the living room"]
+    },
+    {
+      "object 3": "adult",
+      "attributes": ["wearing a robe", "interacting with child"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["being held by adult", "played with by child"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "plays with",
+      "object 4",
+      [
+        ["<0 - 4 sec>", "<88 - 92 sec>"]
+      ]
+    ],
+    [
+      "object 3",
+      "holds",
+      "object 4",
+      [
+        ["<20 - 24 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "approaches",
+      "object 2",
+      [
+        ["<4 - 8 sec>", "<20 - 24 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "stands near",
+      "object 2",
+      [
+        ["<24 - 28 sec>", "<68 - 72 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "interacts with",
+      "object 3",
+      [
+        ["<20 - 24 sec>", "<28 - 32 sec>"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,65 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a green bandana", "waving hand"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a red cap", "holding a drink"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing sunglasses", "taking a photo"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["wearing black top", "sitting on the boat"]
+    },
+    {
+      "object 5": "camera",
+      "attributes": ["being held by man 3", "white in color"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing blue shirt", "sitting on the boat"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "waving at",
+      "object 2",
+      [
+        ["<8 - 12 sec>", "<8 - 12 sec>"],
+        ["<12 - 16 sec>", "<12 - 16 sec>"]
+      ]
+    ],
+    [
+      "object 3",
+      "taking a photo of",
+      "object 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "object 5",
+      "held by",
+      "object 3",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ],
+    [
+      "object 6",
+      "sitting next to",
+      "object 4",
+      [
+        ["<16 - 20 sec>", "<16 - 20 sec>"]
+      ]
+    ]
+  ]
+}
+```

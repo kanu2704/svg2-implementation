@@ -1,0 +1,212 @@
+{
+ "dataset": "vidor",
+ "video_id": "4815534482",
+ "fps": 25.0,
+ "n_frames": 2250,
+ "video_fps": 25.0,
+ "ann_frames": 2250,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     6.64,
+     7.32
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     23.36,
+     24.6
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     49.12,
+     50.76
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     68.56,
+     71.56
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     73.72,
+     75.28
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     77.32,
+     81.64
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     84.96,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.4
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     13.88,
+     19.44
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     23.48,
+     58.36
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     60.56,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     7.52,
+     20.24
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     32.36,
+     38.48
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     43.28,
+     59.88
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "drive",
+   "obj": 1,
+   "spans": [
+    [
+     86.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "inside",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1017/4815534482.mp4",
+ "video": "video.mp4"
+}
