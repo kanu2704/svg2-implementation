@@ -95,7 +95,8 @@ def page(res, judge_note):
         for m, name, _ in MODELS:
             r = res[ds][m]
             L.append(f"| {ds} | {name} | {r['videos']} | {r['json_ok']} | {r['answer_tokens']} | {r['relation_any_time']} | {r['unjudged']} |")
-    L += ["", "*Unjudged words count as wrong (`--ask` or another judge fills them in).*" + (f" Judge: {judge_note}" if judge_note else "")]
+    L += ["", "*Unjudged words count as wrong (`--ask` or another judge fills them in). Qwen sometimes leaves an object "
+          "unnamed (\"object 3\"): such a name was judged a mismatch.*" + (f" Judge: {judge_note}" if judge_note else "")]
     return "\n".join(L) + "\n"
 
 
