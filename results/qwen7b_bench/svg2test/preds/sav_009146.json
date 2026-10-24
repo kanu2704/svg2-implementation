@@ -1,0 +1,392 @@
+```json
+{
+  "objects": [
+    {
+      "1": "bike",
+      "attributes": ["black frame", "handlebars visible"]
+    },
+    {
+      "2": "tree",
+      "attributes": ["green leaves", "trunk visible"]
+    },
+    {
+      "3": "building",
+      "attributes": ["red brick facade", "windows visible"]
+    },
+    {
+      "4": "sidewalk",
+      "attributes": ["paved surface", "curb visible"]
+    },
+    {
+      "5": "cement truck",
+      "attributes": ["beige color", "large wheels"]
+    },
+    {
+      "6": "pole",
+      "attributes": ["metallic, cylindrical"]
+    },
+    {
+      "7": "streetlight",
+      "attributes": ["tall, slender structure"]
+    },
+    {
+      "8": "motorcycle",
+      "attributes": ["white and black", "license plate visible"]
+    },
+    {
+      "9": "sky",
+      "attributes": ["blue with scattered clouds"]
+    },
+    {
+      "10": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "11": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "12": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "13": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "14": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "15": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "16": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "17": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "18": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "19": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "20": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "21": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "22": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "23": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "24": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "25": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "26": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "27": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "28": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "29": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "30": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "31": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    },
+    {
+      "32": "concrete mixer",
+      "attributes": ["attached to truck", "rotating drum"]
+    }
+  ],
+  "relationships": [
+    [
+      "1",
+      "is next to",
+      "2",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "3",
+      "is in the background of",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "4",
+      "is on the sidewalk",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "5",
+      "is behind",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "6",
+      "is near",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "7",
+      "is above",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "8",
+      "is on the sidewalk",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "9",
+      "is above",
+      "1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "10",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "11",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "12",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "13",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      "14",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "15",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "16",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "17",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      "18",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "19",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "20",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "21",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      "22",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "23",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "24",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "25",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      "26",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "27",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "28",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "29",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      "30",
+      "is attached to",
+      "5",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "31",
+      "is attached to",
+      "5",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "32",
+      "is attached to",
+      "5",
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      "32",
+      "is attached to",
+      "5",
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

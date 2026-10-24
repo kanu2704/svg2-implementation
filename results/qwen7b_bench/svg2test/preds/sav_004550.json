@@ -1,0 +1,1336 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man in suit",
+      "attributes": ["wearing a suit", "standing still"]
+    },
+    {
+      "object 2": "woman in white dress",
+      "attributes": ["wearing a white dress", "standing still"]
+    },
+    {
+      "object 3": "man with bald head",
+      "attributes": ["wearing a suit", "standing still"]
+    },
+    {
+      "object 4": "woman in black dress",
+      "attributes": ["wearing a black dress", "standing still"]
+    },
+    {
+      "object 5": "woman in green dress",
+      "attributes": ["wearing a green dress", "standing still"]
+    },
+    {
+      "object 6": "red carpet",
+      "attributes": ["red color", "smooth surface"]
+    },
+    {
+      "object 7": "bride",
+      "attributes": ["wearing a white wedding dress", "holding a bouquet of flowers"]
+    },
+    {
+      "object 8": "groom",
+      "attributes": ["wearing a suit and tie", "standing next to the bride"]
+    },
+    {
+      "object 9": "guests",
+      "attributes": ["wearing formal attire", "taking photos or videos"]
+    },
+    {
+      "object 10": "flower arrangement",
+      "attributes": ["placed on the red carpet", "decorative purpose"]
+    },
+    {
+      "object 11": "church interior",
+      "attributes": ["ornate architecture", "religious setting"]
+    },
+    {
+      "object 12": "camera",
+      "attributes": ["used for capturing moments", "held by guests"]
+    },
+    {
+      "object 13": "phone",
+      "attributes": ["used for taking photos or videos", "held by guests"]
+    },
+    {
+      "object 14": "mask",
+      "attributes": ["protective face covering", "worn by some guests"]
+    },
+    {
+      "object 15": "door",
+      "attributes": ["part of the church structure", "possibly leading to another area"]
+    },
+    {
+      "object 16": "altar",
+      "attributes": ["religious significance", "not visible in the frames"]
+    },
+    {
+      "object 17": "pulpit",
+      "attributes": ["religious significance", "not visible in the frames"]
+    },
+    {
+      "object 18": "altar table",
+      "attributes": ["religious significance", "not visible in the frames"]
+    },
+    {
+      "object 19": "altar cross",
+      "attributes": ["religious significance", "not visible in the frames"]
+    },
+    {
+      "object 20": "altar candle",
+      "attributes": ["religious significance", "not visible in the frames"]
+    },
+    {
+      "object 21": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 22": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 23": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 24": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 25": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 26": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 27": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 28": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 29": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 30": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 31": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 32": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 33": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 34": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 35": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 36": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 37": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    },
+    {
+      "object 38": "guest",
+      "attributes": ["attending the ceremony", "wearing formal attire"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      9,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      10,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      11,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      12,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      13,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      14,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      15,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      16,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      17,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      18,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      19,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      20,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      21,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      22,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      23,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      24,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      25,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      26,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      27,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      28,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      29,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      30,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      31,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      32,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      33,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      34,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      35,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      36,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      37,
+      "takes photo of",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      38,
+      "takes photo of",
+      8,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "takes photo of",
+      7,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "takes photo of",
+      8,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      2,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      9,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      11,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      12,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      13,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      14,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      15,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      16,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      17,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      18,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      19,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      20,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      21,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      22,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      23,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      24,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      25,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      26,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      27,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      28,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      29,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      30,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      31,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      32,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      33,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      34,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      35,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      36,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      37,
+      "takes photo of",
+      7,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      38,
+      "takes photo of",
+      8,
+      [
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      2,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      11,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      13,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      14,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      15,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      16,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      17,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      18,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      19,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      20,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      21,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      22,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      23,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      24,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      25,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      26,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      27,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      28,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      29,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      30,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      31,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      32,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      33,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      34,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      35,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      36,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      37,
+      "takes photo of",
+      7,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      38,
+      "takes photo of",
+      8,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

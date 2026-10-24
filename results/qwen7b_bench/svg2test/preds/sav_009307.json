@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["sitting", "standing"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["white", "plastic"]
+    },
+    {
+      "object 3": "stage",
+      "attributes": ["decorated", "with lights"]
+    },
+    {
+      "object 4": "performer",
+      "attributes": ["playing guitar", "wearing red shirt"]
+    },
+    {
+      "object 5": "audience",
+      "attributes": ["watching performance", "clapping"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "facing",
+      3,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "listening to",
+      4,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "performing for",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      1,
+      "clapping",
+      5,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```
