@@ -1,0 +1,42 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "camel",
+      "attributes": ["standing", "tied"]
+    },
+    {
+      "object 2": "camel",
+      "attributes": ["lying down", "tied"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing blue clothing", "standing"]
+    },
+    {
+      "object 4": "camel",
+      "attributes": ["standing", "tied"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "next to",
+      "object 2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 3",
+      "standing near",
+      "object 2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,22 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["standing", "wearing blue jacket"]
+    },
+    {
+      "object 2": "car",
+      "attributes": ["white", "station wagon", "driving away"]
+    },
+    {
+      "object 3": "pedestrian",
+      "attributes": ["crossing street", "wearing dark clothing"]
+    }
+  ],
+  "relationships": [
+    [2, "driving past", 1, [[0, 4]]],
+    [3, "crossing in front of", 2, [[0, 4]]]
+  ]
+}
+```

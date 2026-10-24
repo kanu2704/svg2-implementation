@@ -1,0 +1,81 @@
+{
+ "video": "/media/nas_mount/kanupriya/svg2_big/traser_bench/vidor/4185271324/video.mp4",
+ "task": "scene_graph",
+ "dtype": "bfloat16",
+ "vision_dtype": "bfloat16",
+ "max_objects": 40,
+ "duration_s": 19.22,
+ "video_frames": 576,
+ "video_fps": 29.97,
+ "sampled_frames": 19,
+ "sampled_idx": [
+  0,
+  31,
+  63,
+  95,
+  127,
+  159,
+  191,
+  223,
+  255,
+  287,
+  319,
+  351,
+  383,
+  415,
+  447,
+  479,
+  511,
+  543,
+  575
+ ],
+ "effective_fps": 0.989,
+ "grid_thw": [
+  10,
+  18,
+  22
+ ],
+ "raw_video_tokens": 990,
+ "resized_hw": [
+  252,
+  308
+ ],
+ "objects_requested": 3,
+ "objects": 3,
+ "mask_columns": [
+  0,
+  1,
+  2
+ ],
+ "tokens_per_object": [
+  5,
+  340,
+  284
+ ],
+ "tokens_selected_union": 589,
+ "tokens_dropped_fraction": 0.405,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>",
+  "<8 - 12 sec>",
+  "<12 - 16 sec>",
+  "<16 - 20 sec>"
+ ],
+ "prompt_tokens": 1187,
+ "prompt": "Output the Video Scene Graph from the video and object trajectories:\n<video>\nEach \"Object k:\" block above is one tracked object of the video, with its tokens over time; the labels <a - b sec> are its time windows. Time is counted in frames, from 0 to 18.\nAnswer with JSON only, in exactly this form:\n{\"objects\": [{\"object 1\": \"<name>\", \"attributes\": [\"<attribute>\", ...]}, {\"object 2\": \"<name>\", \"attributes\": [...]}, ...], \"relationships\": [[<subject object number>, \"<relation>\", <object number>, [[<start>, <end>], ...]], ...]}\nName every object from 1 to 3 with a short noun and list its attributes; then list every relationship (actions and spatial relations) between two of these objects, with the time spans when it holds.\n",
+ "arranged_tokens": 751,
+ "arrange_s": 0.6,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "generate_s": 5.9,
+ "new_tokens": 105,
+ "engine": "hf",
+ "peak_gpu_gb": 15.63,
+ "json_ok": true,
+ "out_objects": 2,
+ "out_relationships": 1,
+ "out_uncertain_labels": 0,
+ "lm": "qwen7b",
+ "total_s": 6.8,
+ "gpu": "NVIDIA RTX A6000"
+}

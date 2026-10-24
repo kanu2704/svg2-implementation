@@ -1,0 +1,168 @@
+{
+ "dataset": "vidor",
+ "video_id": "4276006683",
+ "fps": 29.97002997002997,
+ "n_frames": 799,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 799,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     9.743066666666667,
+     11.2112
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     21.654966666666667,
+     23.223200000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "bite",
+   "obj": 0,
+   "spans": [
+    [
+     24.691333333333333,
+     25.4254
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.9362666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     3.2032000000000003,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     8.008000000000001,
+     8.274933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     9.3093,
+     15.582233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     16.082733333333334,
+     26.6266
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.9362666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     3.2032000000000003,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     8.008000000000001,
+     8.274933333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     9.3093,
+     15.582233333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     16.082733333333334,
+     26.6266
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1201/4276006683.mp4",
+ "video": "video.mp4"
+}

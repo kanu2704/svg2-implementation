@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "seagull",
+      "attributes": ["standing", "on a surface"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["sitting", "wearing sunglasses", "writing on paper"]
+    },
+    {
+      "object 3": "shell",
+      "attributes": ["on the table", "near the man"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["metal mesh", "round shape"]
+    },
+    {
+      "object 5": "plants",
+      "attributes": ["on the table", "near the shell"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "writing",
+      4,
+      [
+        [8, 32]
+      ]
+    ],
+    [
+      3,
+      "on",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      5,
+      "on",
+      4,
+      [
+        [32, 40]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,172 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cup",
+      "attributes": ["brown", "stacked"]
+    },
+    {
+      "object 2": "cup",
+      "attributes": ["white", "stacked"]
+    },
+    {
+      "object 3": "cup",
+      "attributes": ["blue", "stacked"]
+    },
+    {
+      "object 4": "cup",
+      "attributes": ["black", "stacked"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["wearing blue and white shirt", "playing with cups"]
+    },
+    {
+      "object 6": "woman",
+      "attributes": ["standing", "watching child"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["standing", "watching child"]
+    },
+    {
+      "object 8": "microwave",
+      "attributes": ["black", "on counter"]
+    },
+    {
+      "object 9": "tablecloth",
+      "attributes": ["colorful", "under cups"]
+    }
+  ],
+  "relationships": [
+    [
+      5,
+      "stacks",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "stacks",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "stacks",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "stacks",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      1,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      2,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      3,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      4,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      6,
+      "observes",
+      5,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      7,
+      "observes",
+      5,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      5,
+      "drops",
+      1,
+      [
+        [60, 64]
+      ]
+    ],
+    [
+      5,
+      "drops",
+      2,
+      [
+        [60, 64]
+      ]
+    ],
+    [
+      5,
+      "drops",
+      3,
+      [
+        [60, 64]
+      ]
+    ],
+    [
+      5,
+      "drops",
+      4,
+      [
+        [60, 64]
+      ]
+    ],
+    [
+      5,
+      "drops",
+      9,
+      [
+        [60, 64]
+      ]
+    ]
+  ]
+}
+```

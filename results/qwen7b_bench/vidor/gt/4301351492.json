@@ -1,0 +1,101 @@
+{
+ "dataset": "vidor",
+ "video_id": "4301351492",
+ "fps": 29.97002997002997,
+ "n_frames": 374,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 374,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "camel"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "camel"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "camel"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     12.479133333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1009/4301351492.mp4",
+ "video": "video.mp4"
+}

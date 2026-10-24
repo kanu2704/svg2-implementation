@@ -1,0 +1,42 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing blue outfit", "looking around"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing striped shirt", "holding baby"]
+    },
+    {
+      "object 3": "microwave",
+      "attributes": ["white color", "on the counter"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["black color", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 2",
+      "holding",
+      "object 1",
+      [
+        ["<0 - 4 sec>", "<8 - 16 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "object 3",
+      "on",
+      "object 4",
+      [
+        ["<16 - 20 sec>", "<20 - 24 sec>"],
+        ["<24 - 28 sec>", "<24 - 28 sec>"]
+      ]
+    ]
+  ]
+}
+```

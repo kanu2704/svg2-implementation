@@ -1,0 +1,190 @@
+{
+ "dataset": "vidor",
+ "video_id": "4279106208",
+ "fps": 25.0,
+ "n_frames": 559,
+ "video_fps": 25.0,
+ "ann_frames": 559,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.4
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hold hand of",
+   "obj": 1,
+   "spans": [
+    [
+     9.64,
+     15.24
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "release",
+   "obj": 1,
+   "spans": [
+    [
+     15.2,
+     15.96
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "lift",
+   "obj": 1,
+   "spans": [
+    [
+     5.68,
+     6.64
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     2.52,
+     9.32
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     17.92,
+     20.16
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     21.04,
+     21.68
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "speak to",
+   "obj": 1,
+   "spans": [
+    [
+     20.32,
+     21.32
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     19.6,
+     20.88
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     20.0,
+     22.36
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     16.0,
+     22.36
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     4.0,
+     17.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1102/4279106208.mp4",
+ "video": "video.mp4"
+}

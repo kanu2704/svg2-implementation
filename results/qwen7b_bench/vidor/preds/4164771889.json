@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man 1",
+      "attributes": ["wearing a black shirt and red shorts", "kneeling on the sand"]
+    },
+    {
+      "object 2": "man 2",
+      "attributes": ["wearing a white shirt and blue shorts", "kneeling on the sand"]
+    },
+    {
+      "object 3": "man 3",
+      "attributes": ["wearing a pink shirt and black shorts", "kneeling on the sand"]
+    },
+    {
+      "object 4": "man 4",
+      "attributes": ["wearing a black shirt and black shorts with white patterns", "kneeling on the sand"]
+    },
+    {
+      "object 5": "man 5",
+      "attributes": ["wearing a black shirt and black shorts with white patterns", "kneeling on the sand"]
+    },
+    {
+      "object 6": "man 6",
+      "attributes": ["wearing a black shirt and black shorts with white patterns", "kneeling on the sand"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "parrot",
+      "attributes": ["gray and white feathers", "perched on a person's shoulder"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a gray shirt", "wearing camouflage shorts", "holding a camera"]
+    },
+    {
+      "object 3": "cat",
+      "attributes": ["black and white fur", "standing on the ground"]
+    },
+    {
+      "object 4": "camera",
+      "attributes": ["black and yellow", "held by the person"]
+    },
+    {
+      "object 5": "chair",
+      "attributes": ["brown fabric", "folded up in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "perched on",
+      "object 2",
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      "object 4",
+      "held by",
+      "object 2",
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      "object 3",
+      "standing near",
+      "object 5",
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

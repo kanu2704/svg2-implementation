@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "chair",
+      "attributes": ["patterned fabric", "armrests"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["green pajamas", "playing with shovel"]
+    },
+    {
+      "object 3": "girl",
+      "attributes": ["red shirt", "wearing floral pants"]
+    },
+    {
+      "object 4": "shovel",
+      "attributes": ["red blade", "wooden handle"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "playing with",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      2,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

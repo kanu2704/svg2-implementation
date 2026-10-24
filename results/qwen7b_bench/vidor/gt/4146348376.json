@@ -1,0 +1,139 @@
+{
+ "dataset": "vidor",
+ "video_id": "4146348376",
+ "fps": 29.97002997002997,
+ "n_frames": 1585,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1585,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bird"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "table"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 3,
+   "spans": [
+    [
+     1.6683333333333334,
+     8.775433333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 3,
+   "spans": [
+    [
+     11.778433333333334,
+     32.265566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 3,
+   "spans": [
+    [
+     37.17046666666667,
+     39.039
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     2.0020000000000002,
+     8.775433333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     12.012,
+     32.265566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     37.17046666666667,
+     39.005633333333336
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     2.0020000000000002,
+     8.775433333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     12.012,
+     32.265566666666665
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     37.17046666666667,
+     39.005633333333336
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1013/4146348376.mp4",
+ "video": "video.mp4"
+}

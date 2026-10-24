@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Child",
+      "attributes": ["wearing a hat", "smiling"]
+    },
+    {
+      "object 2": "Adult",
+      "attributes": ["holding the child", "wearing a patterned shirt"]
+    },
+    {
+      "object 3": "Baby",
+      "attributes": ["being held by the adult", "wearing a headband with beads"]
+    },
+    {
+      "object 4": "Woman",
+      "attributes": ["sitting in a chair", "wearing a dark top"]
+    },
+    {
+      "object 5": "Man",
+      "attributes": ["standing behind the woman", "wearing a light-colored shirt"]
+    },
+    {
+      "object 6": "Chair",
+      "attributes": ["wooden armrests", "green cushion"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      2,
+      "holds",
+      3,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      4,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ],
+    [
+      2,
+      "sits on",
+      6,
+      [
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ]
+  ]
+}
+```

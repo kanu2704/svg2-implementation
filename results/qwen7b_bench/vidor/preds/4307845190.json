@@ -1,0 +1,96 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "singing"]
+    },
+    {
+      "object 2": "flutist",
+      "attributes": ["playing flute", "singing"]
+    },
+    {
+      "object 3": "vocalist",
+      "attributes": ["singing", "playing keyboard"]
+    },
+    {
+      "object 4": "drummer",
+      "attributes": ["playing drums"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing with",
+      "flutist",
+      [
+        "<0 - 8 sec>",
+        "<8 - 16 sec>",
+        "<16 - 24 sec>",
+        "<24 - 32 sec>",
+        "<32 - 40 sec>",
+        "<40 - 48 sec>",
+        "<48 - 56 sec>",
+        "<56 - 64 sec>",
+        "<64 - 72 sec>",
+        "<72 - 80 sec>",
+        "<80 - 88 sec>"
+      ]
+    ],
+    [
+      "flutist",
+      "playing with",
+      "vocalist",
+      [
+        "<0 - 8 sec>",
+        "<8 - 16 sec>",
+        "<16 - 24 sec>",
+        "<24 - 32 sec>",
+        "<32 - 40 sec>",
+        "<40 - 48 sec>",
+        "<48 - 56 sec>",
+        "<56 - 64 sec>",
+        "<64 - 72 sec>",
+        "<72 - 80 sec>",
+          "<80 - 88 sec>"
+      ]
+    ],
+    [
+      "vocalist",
+      "playing with",
+      "drummer",
+      [
+        "<0 - 8 sec>",
+        "<8 - 16 sec>",
+        "<16 - 24 sec>",
+        "<24 - 32 sec>",
+        "<32 - 40 sec>",
+        "<40 - 48 sec>",
+        "<48 - 56 sec>",
+        "<56 - 64 sec>",
+        "<64 - 72 sec>",
+        "<72 - 80 sec>",
+          "<80 - 88 sec>"
+      ]
+    ],
+    [
+      "drummer",
+      "playing with",
+      "guitarist",
+      [
+        "<0 - 8 sec>",
+        "<8 - 16 sec>",
+        "<16 - 24 sec>",
+        "<24 - 32 sec>",
+        "<32 - 40 sec>",
+        "<40 - 48 sec>",
+        "<48 - 56 sec>",
+        "<56 - 64 sec>",
+        "<64 - 72 sec>",
+        "<72 - 80 sec>",
+          "<80 - 88 sec>"
+      ]
+    ]
+  ]
+}
+```

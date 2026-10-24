@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing red and blue outfit", "black hat"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing black coat", "green hat"]
+    },
+    {
+      "object 3": "sled",
+      "attributes": ["red sled with handle"]
+    },
+    {
+      "object 4": "child 2",
+      "attributes": ["wearing red jacket", "black pants"]
+    },
+    {
+      "object 5": "sled 2",
+      "attributes": ["red sled with handle"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "playing with",
+      "sled",
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "adult",
+      "standing near",
+      "child",
+      [
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "child 2",
+      "standing near",
+      "sled 2",
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      "child 2",
+      "playing with",
+      "sled 2",
+      [
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,52 @@
+{
+ "dataset": "vidor",
+ "video_id": "4327413406",
+ "fps": 29.97002997002997,
+ "n_frames": 124,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 124,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "car"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "car"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0020000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.0020000000000002
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1012/4327413406.mp4",
+ "video": "video.mp4"
+}

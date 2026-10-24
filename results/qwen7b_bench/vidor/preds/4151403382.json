@@ -1,0 +1,128 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with toy"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing white shirt", "playing with toy"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["colorful", "on floor"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["yellow", "on floor"]
+    },
+    {
+      "object 5": "adult",
+      "attributes": ["sitting on couch", "wearing glasses"]
+    },
+    {
+      "object 6": "couch",
+      "attributes": ["brown", "adult is sitting on it"]
+    },
+    {
+      "object 7": "keyboard",
+      "attributes": ["red and black", "on floor"]
+    },
+    {
+      "object 8": "book",
+      "attributes": ["open", "on floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      3,
+      [
+        ["0 - 4 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      4,
+      [
+        ["0 - 4 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      5,
+      [
+        ["0 - 4 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        ["12 - 16 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      7,
+      [
+        ["12 - 16 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      1,
+      "sits near",
+      8,
+      [
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ],
+    [
+      2,
+      "sits near",
+      8,
+      [
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

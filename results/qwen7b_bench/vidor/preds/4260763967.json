@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "toy",
+      "attributes": ["black and orange", "with green accents"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing blue shirt", "playing with toy"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["patterned fabric", "in background"]
+    },
+    {
+      "object 4": "rug",
+      "attributes": ["colorful", "on floor"]
+    },
+    {
+      "object 5": "another child",
+      "attributes": ["wearing yellow shirt", "playing nearby"]
+    },
+    {
+      "object 6": "cabinet",
+      "attributes": ["wooden", "in background"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "playing with",
+      1,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      5,
+      "nearby",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      6,
+      "behind",
+      2,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

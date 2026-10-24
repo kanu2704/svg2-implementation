@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["playing with Rubik's cube", "wearing striped shirt"]
+    },
+    {
+      "object 2": "rubik's cube",
+      "attributes": ["colorful", "manipulated by child"]
+    },
+    {
+      "object 3": "suitcase",
+      "attributes": ["black", "in background", "remains stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

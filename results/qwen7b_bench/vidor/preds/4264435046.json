@@ -1,0 +1,94 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A black and tan dog",
+      "attributes": ["black and tan fur", "wearing a harness"]
+    },
+    {
+      "person1": "A person wearing a red jacket and blue jeans",
+      "attributes": ["red jacket", "blue jeans", "long blonde hair"]
+    },
+    {
+      "dog2": "A smaller black dog",
+      "attributes": ["black fur", "wearing a harness"]
+    },
+    {
+      "car1": "A white car",
+      "attributes": ["white color", "station wagon style"]
+    },
+    {
+      "truck1": "A white truck",
+      "attributes": ["white color", "utility truck style"]
+    },
+    {
+      "atv1": "An all-terrain vehicle (ATV)",
+      "attributes": ["green and black color", "four wheels"]
+    },
+    {
+      "haystacks": "Stacked hay bales",
+      "attributes": ["light brown color", "stacked in rows"]
+    }
+  ],
+  "relationships": [
+    [
+      "dog1",
+      "chases",
+      "dog2",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "person1",
+      "walks with",
+      "dog1",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "person1",
+      "walks with",
+      "dog2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "car1",
+      "drives past",
+      "truck1",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "atv1",
+      "remains stationary",
+      "haystacks",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

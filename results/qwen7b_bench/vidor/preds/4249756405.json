@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing plaid shirt"]
+    },
+    {
+      "object 2": "listener",
+      "attributes": ["sitting on couch", "wearing dark clothing"]
+    },
+    {
+      "object 3": "audience",
+      "attributes": ["seated in room", "watching performance"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing",
+      "listener",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing",
+      "audience",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "listener",
+      "listening to",
+      "guitarist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      "audience",
+      "watching",
+      "guitarist",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

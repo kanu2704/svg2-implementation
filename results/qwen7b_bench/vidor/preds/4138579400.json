@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing glasses", "wearing a red shirt"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["brown wooden chair"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["beige surface"]
+    },
+    {
+      "object 4": "cup",
+      "attributes": ["white cup with red liquid"]
+    },
+    {
+      "object 5": "handbag",
+      "attributes": ["brown handbag on the floor"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "sits at",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "on top of",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "behind",
+      3,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

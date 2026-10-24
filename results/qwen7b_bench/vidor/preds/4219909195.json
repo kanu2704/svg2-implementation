@@ -1,0 +1,91 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing glasses", "black shirt"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing pink pants", "wearing a scarf"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing a black jacket", "smiling"]
+    },
+    {
+      "object 4": "man 2",
+      "attributes": ["wearing a green shirt", "sitting on the left side of the couch"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "interacts with",
+      "girl",
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "man",
+      "interacts with",
+      "woman",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "man 2",
+      "interacts with",
+      "woman",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "man",
+      "sits next to",
+      "man 2",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "man",
+      "sits next to",
+      "woman",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "man",
+      "sits next to",
+      "girl",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "woman",
+      "sits next to",
+      "man 2",
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      "woman",
+      "sits next to",
+      "girl",
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

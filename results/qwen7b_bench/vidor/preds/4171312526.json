@@ -1,0 +1,89 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "ball",
+      "attributes": ["blue", "round"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["white", "fluffy"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing a beige shirt and dark pants"]
+    },
+    {
+      "object 4": "child_2",
+      "attributes": ["wearing a pink shirt and light-colored pants"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "chases",
+      "dog",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "child_2",
+      "chases",
+      "dog",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "child",
+      "plays with",
+      "ball",
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "child_2",
+      "plays with",
+      "ball",
+      [
+        [0, 4],
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      "child",
+      "chases",
+      "child_2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "dog",
+      "chases",
+      "child",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "dog",
+      "chases",
+      "child_2",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

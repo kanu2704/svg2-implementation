@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a necklace", "holding a spoon"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a yellow shirt", "eating with a spoon"]
+    },
+    {
+      "object 3": "food",
+      "attributes": ["on a plate", "being eaten by the child"]
+    },
+    {
+      "object 4": "toy",
+      "attributes": ["red and yellow", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "feeding",
+      "child",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "child",
+      "eating",
+      "food",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "toy",
+      "in the background",
+      "woman",
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

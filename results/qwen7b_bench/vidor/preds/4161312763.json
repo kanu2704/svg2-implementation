@@ -1,0 +1,92 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing red and black outfit", "wearing white helmet"]
+    },
+    {
+      "object 2": "child1",
+      "attributes": ["wearing blue costume", "waving hand"]
+    },
+    {
+      "object 3": "child2",
+      "attributes": ["wearing black costume with hood", "standing still"]
+    },
+    {
+      "object 4": "child3",
+      "attributes": ["wearing green costume", "holding stick"]
+    },
+    {
+      "object 5": "child4",
+      "attributes": ["wearing red costume", "raising arm"]
+    },
+    {
+      "object 6": "child5",
+      "attributes": ["wearing brown costume", "standing close to child4"]
+    },
+    {
+      "object 7": "child6",
+      "attributes": ["wearing blue costume", "standing behind child4"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "standing in front of",
+      "child1",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child1",
+      "waving at",
+      "man",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child2",
+      "standing still",
+      "man",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child3",
+      "holding stick",
+      "man",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child4",
+      "raising arm",
+      "man",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child5",
+      "standing close to",
+      "child4",
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      "child6",
+      "standing behind",
+      "child4",
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

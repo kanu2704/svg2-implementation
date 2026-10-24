@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["laughing", "sitting"]
+    },
+    {
+      "object 2": "man 1",
+      "attributes": ["wearing white shirt", "laughing"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["wearing suit", "laughing"]
+    },
+    {
+      "object 4": "woman 1",
+      "attributes": ["wearing Santa hat", "holding papers", "laughing"]
+    },
+    {
+      "object 5": "cup 1",
+      "attributes": ["white", "held by man 1"]
+    },
+    {
+      "object 6": "chair 1",
+      "attributes": ["black", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "laughing with",
+      2,
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>",
+        "<24 - 28 sec>",
+        "<28 - 32 sec>",
+        "<32 - 36 sec>",
+         "<36 - 40 sec>",
+         "<40 - 44 sec>",
+         "<44 - 48 sec>",
+         "<48 - 52 sec>",
+         "<52 - 56 sec>"
+      ]
+    ],
+    [
+      1,
+      "laughing with",
+      3,
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>",
+        "<24 - 28 sec>",
+        "<28 - 32 sec>",
+        "<32 - 36 sec>",
+         "<36 - 40 sec>",
+         "<40 - 44 sec>",
+         "<44 - 48 sec>",
+         "<48 - 52 sec>",
+         "<52 - 56 sec>"
+      ]
+    ],
+    [
+      1,
+      "laughing with",
+      4,
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>",
+        "<24 - 28 sec>",
+        "<28 - 32 sec>",
+        "<32 - 36 sec>",
+         "<36 - 40 sec>",
+         "<40 - 44 sec>",
+         "<44 - 48 sec>",
+         "<48 - 52 sec>",
+         "<52 - 56 sec>"
+      ]
+    ],
+    [
+      2,
+      "holding",
+      5,
+      [
+        "<0 - 4 sec>",
+        "<4 - 8 sec>",
+        "<8 - 12 sec>",
+        "<12 - 16 sec>",
+        "<16 - 20 sec>",
+        "<20 - 24 sec>",
+        "<24 - 28 sec>",
+        "<28 - 32 sec>",
+        "<32 - 36 sec>",
+         "<36 - 40 sec>",
+         "<40 - 44 sec>",
+         "<44 - 48 sec>",
+         "<48 - 52 sec>",
+         "<52 - 56 sec>"
+      ]
+    ]
+  ]
+}
+```
