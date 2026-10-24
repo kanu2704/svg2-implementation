@@ -1,0 +1,114 @@
+```json
+{
+  "objects": [
+    {
+      "dog": "A fluffy black and white dog with a long coat, wearing a red collar."
+    },
+    {
+      "person1": "A person wearing a white shirt, blue skirt, and brown boots, holding the dog's leash."
+    },
+    {
+      "person2": "A person in a dark blue outfit, standing near the dog."
+    },
+    {
+      "person3": "A person in a green outfit, standing near the dog."
+    },
+    {
+      "dog2": "A smaller white dog wearing a green jacket."
+    },
+    {
+      "dog3": "A white dog wearing a green jacket."
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being walked by",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "holding leash of",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      4,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      5,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      6,
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      5,
+      "wearing",
+      "green jacket",
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      6,
+      "wearing",
+      "green jacket",
+      [
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

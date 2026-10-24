@@ -1,0 +1,129 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "train",
+      "attributes": ["yellow", "moving"]
+    },
+    {
+      "object 2": "pedestrian",
+      "attributes": ["walking", "crossing"]
+    },
+    {
+      "object 3": "pedestrian",
+      "attributes": ["standing", "waiting"]
+    },
+    {
+      "object 4": "pedestrian",
+      "attributes": ["walking", "crossing"]
+    },
+    {
+      "object 5": "pedestrian",
+      "attributes": ["standing", "waiting"]
+    },
+    {
+      "object 6": "pedestrian",
+      "attributes": ["standing", "waiting"]
+    },
+    {
+      "object 7": "traffic light",
+      "attributes": ["red", "stationary"]
+    },
+    {
+      "object 8": "pedestrian",
+      "attributes": ["walking", "crossing"]
+    },
+    {
+      "object 9": "pedestrian",
+      "attributes": ["standing", "waiting"]
+    },
+    {
+      "object 10": "pedestrian",
+      "attributes": ["standing", "waiting"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "crosses in front of",
+      1,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      1,
+      [
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "crosses in front of",
+      1,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      1,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      1,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      7,
+      "controls traffic flow",
+      1,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "crosses in front of",
+      1,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      1,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      1,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

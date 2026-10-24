@@ -1,0 +1,83 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a blue dress", "playing with a toy"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["striped pattern", "in the background"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["floral pattern", "in the background"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["wooden surface", "in the foreground"]
+    },
+    {
+      "object 5": "book",
+      "attributes": ["on the table", "open"]
+    },
+    {
+      "object 6": "toy",
+      "attributes": ["pink and red", "with a handle"]
+    },
+    {
+      "object 7": "tv",
+      "attributes": ["playing an animated show", "in the background"]
+    },
+    {
+      "object 8": "basket",
+      "attributes": ["red with a floral design", "holding colorful balls"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      6,
+      "held by",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      6,
+      "placed in",
+      8,
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "contains",
+      7,
+      [
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

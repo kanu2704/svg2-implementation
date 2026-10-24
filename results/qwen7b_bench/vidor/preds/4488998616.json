@@ -1,0 +1,104 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a white dress", "running"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing a yellow shirt", "crouching"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["standing in the background", "wearing a plaid shirt"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["standing in the background", "wearing a black top"]
+    },
+    {
+      "object 5": "car",
+      "attributes": ["red", "stationary"]
+    },
+    {
+      "object 6": "balloon",
+      "attributes": ["yellow", "attached to the car"]
+    },
+    {
+      "object 7": "balloon",
+      "attributes": ["yellow", "attached to the car"]
+    },
+    {
+      "object 8": "balloon",
+      "attributes": ["yellow", "attached to the car"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "crouches",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "stands",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "stands",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "stationary",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "attached_to",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      7,
+      "attached_to",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      8,
+      "attached_to",
+      5,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,51 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a red dress", "playing with a doll"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing a pink dress", "holding the child"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing a red shirt", "standing near the woman and child"]
+    },
+    {
+      "object 4": "doll",
+      "attributes": ["being held by the child", "wearing a red outfit"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "playing with",
+      "object 4",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "holding",
+      "object 1",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "standing near",
+      "object 2",
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ]
+  ]
+}
+```

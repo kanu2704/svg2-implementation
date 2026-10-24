@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["sitting", "brown"]
+    },
+    {
+      "object 2": "cat",
+      "attributes": ["standing", "white with brown spots"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["marble", "dark surface"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "sniffing",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "jumping on",
+      3,
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "looking at",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      1,
+      "sniffing",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "jumping off",
+      3,
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

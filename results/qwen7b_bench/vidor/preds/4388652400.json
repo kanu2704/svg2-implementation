@@ -1,0 +1,92 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["black", "standing"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["black", "moving"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["cluttered", "office setting"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["office chair", "behind desk"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["cluttered", "in front of TV"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["sitting", "watching TV"]
+    },
+    {
+      "object 7": "computer monitor",
+      "attributes": ["on desk", "displaying content"]
+    },
+    {
+      "object 8": "remote control",
+      "attributes": ["on table", "used to change channels"]
+    },
+    {
+      "object 9": "TV",
+      "attributes": ["large", "showing content"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      6,
+      "watching",
+      9,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      8,
+      "on",
+      5,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      8,
+      "used by",
+      6,
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```

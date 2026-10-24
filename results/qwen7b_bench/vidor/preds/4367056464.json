@@ -1,0 +1,102 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "turkey",
+      "attributes": ["rotating", "golden-brown"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing red dress", "smiling"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing striped shirt", "smiling"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["wearing white top", "laughing"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing glasses", "smiling"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing yellow shirt", "smiling"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "near",
+      "turkey",
+      [
+        [0, 8],
+        [12, 20],
+        [24, 32]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "turkey",
+      [
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      "woman",
+      "near",
+      "turkey",
+      [
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "child",
+      [
+        [0, 8],
+        [12, 20],
+        [24, 32]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "woman",
+      [
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "man",
+      [
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "person",
+      [
+        [8, 12],
+        [12, 16],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,112 @@
+{
+ "dataset": "vidor",
+ "video_id": "4335807873",
+ "fps": 29.97002997002997,
+ "n_frames": 1806,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1806,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "child"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     2.8695333333333335,
+     5.1051
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     14.881533333333334,
+     60.2602
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     1.7684333333333333,
+     3.937266666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     10.243566666666666,
+     13.8138
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hug",
+   "obj": 0,
+   "spans": [
+    [
+     45.178466666666665,
+     55.021633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     60.2602
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     60.2602
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1001/4335807873.mp4",
+ "video": "video.mp4"
+}

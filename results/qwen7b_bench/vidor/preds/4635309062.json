@@ -1,0 +1,112 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing black shirt", "cutting meat"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing white shirt", "assisting in cutting meat"]
+    },
+    {
+      "object 3": "meat",
+      "attributes": ["being cut into strips"]
+    },
+    {
+      "object 4": "knife",
+      "attributes": ["used for cutting meat"]
+    },
+    {
+      "object 5": "plate",
+      "attributes": ["holding cut meat strips"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["surface for cutting and holding plates"]
+    },
+    {
+      "object 7": "spices",
+      "attributes": ["on the table, used for seasoning meat"]
+    },
+    {
+      "object 8": "chopsticks",
+      "attributes": ["used for handling meat on plate"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "using",
+      4,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      1,
+      "cutting",
+      3,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      2,
+      "assisting",
+      1,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      2,
+      "using",
+      4,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      2,
+      "cutting",
+      3,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      3,
+      "on",
+      5,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      3,
+      "being handled with",
+      8,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      3,
+      "being seasoned with",
+      7,
+      [
+        [0, 68]
+      ]
+    ],
+    [
+      5,
+      "on",
+      6,
+      [
+        [0, 68]
+      ]
+    ]
+  ]
+}
+```

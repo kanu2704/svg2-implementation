@@ -1,0 +1,17 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing green jacket"]
+    },
+    {
+      "object 2": "guitar",
+      "attributes": ["red acoustic guitar", "being played"]
+    }
+  ],
+  "relationships": [
+    [1, "playing", 2, [[0, 64]]]
+  ]
+}
+```

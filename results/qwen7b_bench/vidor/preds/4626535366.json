@@ -1,0 +1,51 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "students",
+      "attributes": ["standing", "wearing school uniforms"]
+    },
+    {
+      "object 2": "students",
+      "attributes": ["standing", "wearing school uniforms"]
+    },
+    {
+      "object 3": "students",
+      "attributes": ["standing", "wearing school uniforms"]
+    },
+    {
+      "object 4": "students",
+      "attributes": ["standing", "wearing school uniforms"]
+    },
+    {
+      "object 5": "students",
+      "attributes": ["standing", "wearing school uniforms"]
+    },
+    {
+      "object 6": "bucket",
+      "attributes": ["blue bucket with white handle"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "near",
+      "object 6",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ]
+  ]
+}
+```

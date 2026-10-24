@@ -1,0 +1,96 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a hat", "holding a stick"]
+    },
+    {
+      "object 2": "goat 1",
+      "attributes": ["black and white coat"]
+    },
+    {
+      "object 3": "goat 2",
+      "attributes": ["brown and white coat"]
+    },
+    {
+      "object 4": "goat 3",
+      "attributes": ["brown and white coat"]
+    },
+    {
+      "object 5": "goat 4",
+      "attributes": ["white coat with brown spots"]
+    },
+    {
+      "object 6": "goat 5",
+      "attributes": ["brown and white coat"]
+    },
+    {
+      "object 7": "goat 6",
+      "attributes": ["brown and white coat"]
+    },
+    {
+      "object 8": "goat 7",
+      "attributes": ["brown and white coat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts_with",
+      2,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      3,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      4,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      6,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      7,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      1,
+      "interacts_with",
+      8,
+      [
+        [0, 3]
+      ]
+    ]
+  ]
+}
+```

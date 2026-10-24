@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing striped onesie", "playing on floor"]
+    },
+    {
+      "object 2": "chair",
+      "attributes": ["wooden", "in kitchen"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["wooden", "in kitchen"]
+    },
+    {
+      "object 4": "kitchen",
+      "attributes": ["interior space", "contains chair and table"]
+    },
+    {
+      "object 5": "adult",
+      "attributes": ["standing nearby", "wearing shorts"]
+    },
+    {
+      "object 6": "refrigerator",
+      "attributes": ["white", "in kitchen"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 64]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 64]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [12, 64]
+      ]
+    ],
+    [
+      1,
+      "near",
+      6,
+      [
+        [0, 64]
+      ]
+    ]
+  ]
+}
+```

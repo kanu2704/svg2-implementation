@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding whisk", "mixing"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing bib", "playing with spoon"]
+    },
+    {
+      "object 3": "spoon",
+      "attributes": ["in baby's hand", "used for eating"]
+    },
+    {
+      "object 4": "bowl",
+      "attributes": ["on table", "containing food"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "mixing",
+      4,
+      [
+        [0, 87]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 87]
+      ]
+    ],
+    [
+      2,
+      "eating from",
+      4,
+      [
+        [0, 87]
+      ]
+    ]
+  ]
+}
+```

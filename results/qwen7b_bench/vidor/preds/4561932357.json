@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["striped shirt", "blue jeans"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["pink shirt", "blonde hair"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["purple shirt", "gray pants"]
+    },
+    {
+      "object 4": "woman",
+      "attributes": ["green shirt", "black pants"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["yellow shirt", "gray pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      5,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

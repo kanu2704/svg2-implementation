@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog1",
+      "attributes": ["black and white fur", "wearing a red collar"]
+    },
+    {
+      "object 2": "dog2",
+      "attributes": ["black and white fur", "wearing a colorful vest"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["red plush toy with a yellow tag"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing a blue shirt"]
+    },
+    {
+      "object 5": "cloth",
+      "attributes": ["brown fabric with a black design"]
+    },
+    {
+      "object 6": "couch",
+      "attributes": ["beige fabric couch"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      3,
+      "on top of",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "next to",
+      6,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["wearing a red shirt", "standing on the floor"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing black shoes", "sitting on the floor"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["red color", "lying on the floor"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["holding the toy", "moving around"]
+    },
+    {
+      "object 5": "leg",
+      "attributes": ["part of the person sitting", "visible in some frames"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      4,
+      "holds",
+      3,
+      [
+        [0, 89]
+      ]
+    ],
+    [
+      5,
+      "part of",
+      2,
+      [
+        [0, 89]
+      ]
+    ]
+  ]
+}
+```

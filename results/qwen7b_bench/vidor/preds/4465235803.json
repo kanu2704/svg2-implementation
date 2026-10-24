@@ -1,0 +1,59 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing red shirt", "holding comb"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing blue cape", "seated in chair"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["red and black", "child is seated on it"]
+    },
+    {
+      "object 4": "television",
+      "attributes": ["on", "playing cartoon"]
+    },
+    {
+      "object 5": "hand",
+      "attributes": ["holding comb"]
+    },
+    {
+      "object 6": "comb",
+      "attributes": ["being held by person"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "combing child's hair",
+      2,
+      [
+        [0, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      1,
+      "holding comb",
+      5,
+      [
+        [0, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      4,
+      "playing cartoon",
+      2,
+      [
+        [0, 28],
+        [32, 36]
+      ]
+    ]
+  ]
+}
+```

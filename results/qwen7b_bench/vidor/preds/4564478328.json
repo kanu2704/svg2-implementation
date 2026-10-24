@@ -1,0 +1,159 @@
+```json
+{
+  "objects": [
+    {
+      "lion1": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion2": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion3": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion4": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion5": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion6": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    },
+    {
+      "lion7": {
+        "attributes": ["walking", "chasing", "playing"]
+      }
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      3,
+      [
+        [12, 16],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      4,
+      [
+        [12, 16],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      3,
+      "chases",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      5,
+      [
+        [12, 16],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      4,
+      "chases",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      4,
+      "plays with",
+      6,
+      [
+        [12, 16],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      5,
+      "chases",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      7,
+      [
+        [12, 16],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      6,
+      "chases",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [28, 32],
+        [36, 40]
+      ]
+    ]
+  ]
+}
+```
