@@ -1,0 +1,430 @@
+```json
+{
+  "objects": [
+    {
+      "1": "man",
+      "attributes": ["wearing striped sweater", "walking"]
+    },
+    {
+      "2": "woman",
+      "attributes": ["wearing pink jacket", "standing"]
+    },
+    {
+      "3": "man",
+      "attributes": ["wearing black shirt", "walking"]
+    },
+    {
+      "4": "man",
+      "attributes": ["wearing blue jacket", "walking"]
+    },
+    {
+      "5": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "6": "man",
+      "attributes": ["wearing black shirt", "riding carriage"]
+    },
+    {
+      "7": "horse",
+      "attributes": ["pulling carriage", "standing"]
+    },
+    {
+      "8": "carriage",
+      "attributes": ["being pulled by horse", "stationary"]
+    },
+    {
+      "9": "woman",
+      "attributes": ["wearing floral shirt", "walking"]
+    },
+    {
+      "10": "woman",
+      "attributes": ["wearing blue shirt", "standing"]
+    },
+    {
+      "11": "woman",
+      "attributes": ["wearing pink shirt", "standing"]
+    },
+    {
+      "12": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "13": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "14": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "15": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "16": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "17": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "18": "sidewalk",
+      "attributes": ["paved", "wide"]
+    },
+    {
+      "19": "man",
+      "attributes": ["wearing striped sweater", "walking"]
+    },
+    {
+      "20": "carriage",
+      "attributes": ["being pulled by horse", "stationary"]
+    },
+    {
+      "21": "man",
+      "attributes": ["wearing black shirt", "riding carriage"]
+    },
+    {
+      "22": "woman",
+      "attributes": ["wearing pink jacket", "standing"]
+    },
+    {
+      "23": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "24": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "25": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "26": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "27": "streetlight",
+      "attributes": ["decorative", "attached to building"]
+    },
+    {
+      "28": "car",
+      "attributes": ["white", "parked"]
+    },
+    {
+      "29": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "30": "signboard",
+      "attributes": ["attached to wall", "informative"]
+    },
+    {
+      "31": "man",
+      "attributes": ["wearing striped sweater", "walking"]
+    },
+    {
+      "32": "man",
+      "attributes": ["wearing black shirt", "walking"]
+    },
+    {
+      "33": "man",
+      "attributes": ["wearing black shirt", "riding carriage"]
+    },
+    {
+      "34": "carriage",
+      "attributes": ["being pulled by horse", "stationary"]
+    },
+    {
+      "35": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "36": "man",
+      "attributes": ["wearing black shirt", "standing"]
+    },
+    {
+      "37": "woman",
+      "attributes": ["wearing pink jacket", "standing"]
+    },
+    {
+      "38": "carriage",
+      "attributes": ["being pulled by horse", "stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks past",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "walks past",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "walks past",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "rides",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "pulls",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "walks past",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      10,
+      "stands near",
+      11,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      11,
+      "stands near",
+      12,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      12,
+      "stands near",
+      13,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      13,
+      "stands near",
+      14,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      14,
+      "stands near",
+      15,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      15,
+      "stands near",
+      16,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      16,
+      "stands near",
+      17,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      18,
+      "adjacent to",
+      19,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      20,
+      "rides",
+      21,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "stands near",
+      23,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      23,
+      "stands near",
+      24,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      24,
+      "stands near",
+      25,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      25,
+      "stands near",
+      26,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      26,
+      "stands near",
+      27,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      28,
+      "adjacent to",
+      29,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      30,
+      "attached to",
+      31,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      31,
+      "walks past",
+      32,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      32,
+      "rides",
+      33,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "pulls",
+      34,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "stands near",
+      36,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      36,
+      "stands near",
+      37,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      37,
+      "stands near",
+      38,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cabinet",
+      "attributes": ["wooden", "closed"]
+    },
+    {
+      "object 2": "shelf",
+      "attributes": ["white", "filled with books and bottles"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing glasses", "gray hair", "black shirt"]
+    },
+    {
+      "object 4": "apple",
+      "attributes": ["red and green", "being held by person"]
+    },
+    {
+      "object 5": "bracelet",
+      "attributes": ["red, white, and blue", "on person's wrist"]
+    }
+  ],
+  "relationships": [
+    [
+      "person",
+      "holding",
+      "apple",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      "person",
+      "wearing",
+      "bracelet",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ]
+  ]
+}
+```
