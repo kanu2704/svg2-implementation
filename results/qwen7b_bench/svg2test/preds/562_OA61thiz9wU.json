@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "fence",
+      "attributes": ["metal", "blue"]
+    },
+    {
+      "object 2": "tree",
+      "attributes": ["green leaves", "trunk"]
+    },
+    {
+      "object 3": "ship",
+      "attributes": ["gray", "military", "numbered"]
+    },
+    {
+      "object 4": "water",
+      "attributes": ["calm", "blue"]
+    },
+    {
+      "object 5": "land",
+      "attributes": ["green grass", "vegetation"]
+    }
+  ],
+  "relationships": [
+    [
+      "ship",
+      "in front of",
+      "fence",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "tree",
+      "behind",
+      "fence",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "ship",
+      "on water",
+      "water",
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      "land",
+      "behind",
+      "fence",
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

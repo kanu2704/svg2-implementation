@@ -1,0 +1,528 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing glasses", "long hair"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white coat", "standing behind counter"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["customers in bakery"]
+    },
+    {
+      "object 4": "bakery counter",
+      "attributes": ["displaying pastries", "covered with glass domes"]
+    },
+    {
+      "object 5": "pastries",
+      "attributes": ["various types of baked goods"]
+    },
+    {
+      "object 6": "glass dome",
+      "attributes": ["protects pastries", "curved top"]
+    },
+    {
+      "object 7": "shelf",
+      "attributes": ["holding pastries", "part of bakery counter"]
+    },
+    {
+      "object 8": "customer",
+      "attributes": ["looking at pastries", "wearing casual clothes"]
+    },
+    {
+      "object 9": "woman 2",
+      "attributes": ["wearing denim jacket", "smiling"]
+    },
+    {
+      "object 10": "man 2",
+      "attributes": ["wearing red shirt", "standing near counter"]
+    },
+    {
+      "object 11": "customer 2",
+      "attributes": ["wearing pink shirt", "standing near counter"]
+    },
+    {
+      "object 12": "customer 3",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 13": "customer 4",
+      "attributes": ["wearing beige shirt", "standing near counter"]
+    },
+    {
+      "object 14": "customer 5",
+      "attributes": ["wearing black shirt", "standing near counter"]
+    },
+    {
+      "object 15": "customer 6",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 16": "customer 7",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 17": "customer 8",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 18": "customer 9",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 19": "customer 10",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 20": "customer 11",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 21": "customer 12",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 22": "customer 13",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 23": "customer 14",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 24": "customer 15",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 25": "customer 16",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 26": "customer 17",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 27": "customer 18",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 28": "customer 19",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 29": "customer 20",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 30": "customer 21",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 31": "customer 22",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 32": "customer 23",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 33": "customer 24",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 34": "customer 25",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 35": "customer 26",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 36": "customer 27",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 37": "customer 28",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 38": "customer 29",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 39": "customer 30",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    },
+    {
+      "object 40": "customer 31",
+      "attributes": ["wearing white shirt", "standing near counter"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "prepares food",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "orders from",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "displayed by",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "protected by",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "supports",
+      7,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "holds",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "looks at",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      24,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      25,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      26,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      27,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      28,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      29,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      30,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      31,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      32,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      33,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      34,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      35,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      36,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      37,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      38,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      39,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      40,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```
