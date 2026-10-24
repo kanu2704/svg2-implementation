@@ -1,0 +1,49 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing red shirt", "wearing white shorts"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing gray shirt", "wearing black pants"]
+    },
+    {
+      "object 3": "television",
+      "attributes": ["on", "displaying content"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["visible in the foreground"]
+    }
+  ],
+  "relationships": [
+    [
+      "girl",
+      "dancing",
+      "man",
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      "man",
+      "standing",
+      "television",
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      "hand",
+      "in front of",
+      "girl",
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

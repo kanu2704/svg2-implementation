@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dino1",
+      "attributes": ["skeleton", "moving"]
+    },
+    {
+      "object 2": "dino2",
+      "attributes": ["skeleton", "moving"]
+    },
+    {
+      "object 3": "dino3",
+      "attributes": ["skeleton", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      1,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28],
+        [32, 36]
+      ]
+    ]
+  ]
+}
+```

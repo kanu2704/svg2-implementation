@@ -1,0 +1,85 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pink dress", "sliding down"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing yellow top", "assisting child"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing white shirt and yellow shorts", "climbing slide"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing blue shirt and yellow shorts", "sliding down"]
+    },
+    {
+      "object 5": "woman",
+      "attributes": ["wearing black top", "assisting child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being assisted by",
+      2,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      3,
+      "being assisted by",
+      5,
+      [
+        [0, 12],
+        [16, 24]
+      ]
+    ],
+    [
+      4,
+      "being assisted by",
+      2,
+      [
+        [0, 8],
+        [16, 24]
+      ]
+    ],
+    [
+      4,
+      "sliding down with",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "sliding down with",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "climbing slide with",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

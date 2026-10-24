@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "turtle",
+      "attributes": ["slowly moving", "brown shell"]
+    },
+    {
+      "object 2": "turtle",
+      "attributes": ["slowly moving", "brown shell"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [8, 36]
+      ]
+    ]
+  ]
+}
+```

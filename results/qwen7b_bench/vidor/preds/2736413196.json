@@ -1,0 +1,208 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "laptop",
+      "attributes": ["on table", "open"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing glasses", "sitting at table"]
+    },
+    {
+      "object 3": "phone",
+      "attributes": ["on table", "near laptop"]
+    },
+    {
+      "object 4": "cup",
+      "attributes": ["on table", "near laptop"]
+    },
+    {
+      "object 5": "glass",
+      "attributes": ["on table", "near laptop"]
+    },
+    {
+      "object 6": "table",
+      "attributes": ["round", "in bar"]
+    },
+    {
+      "object 7": "bar",
+      "attributes": ["dimly lit", "in background"]
+    },
+    {
+      "object 8": "light",
+      "attributes": ["bright", "in bar"]
+    },
+    {
+      "object 9": "couch",
+      "attributes": ["in bar", "behind person"]
+    },
+    {
+      "object 10": "chair",
+      "attributes": ["at table", "under person"]
+    },
+    {
+      "object 11": "phone",
+      "attributes": ["on table", "near laptop"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "interacts with",
+      1,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      2,
+      "sits on",
+      10,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "on",
+      6,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      2,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      6,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      7,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      8,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      9,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      10,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ],
+    [
+      1,
+      "near",
+      11,
+      [
+        ["<0 - 4 sec>", "<4 - 8 sec>"],
+        ["<20 - 24 sec>", "<24 - 28 sec>"],
+        ["<28 - 32 sec>", "<32 - 36 sec>"],
+        ["<36 - 40 sec>", "<40 - 44 sec>"],
+        ["<44 - 48 sec>", "<48 - 52 sec>"]
+      ]
+    ]
+  ]
+}
+```

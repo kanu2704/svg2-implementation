@@ -1,0 +1,151 @@
+{
+ "dataset": "vidor",
+ "video_id": "2731071928",
+ "fps": 29.96969696969697,
+ "n_frames": 1959,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 1959,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "guitar"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     63.09706774519717
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     4.404448938321537,
+     8.94236602628918
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     16.14964610717897,
+     19.186046511627907
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     27.09403437815976,
+     31.932254802831142
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     48.71587462082912,
+     51.151668351870576
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     65.06572295247724
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1023/2731071928.mp4",
+ "video": "video.mp4"
+}

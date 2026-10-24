@@ -1,0 +1,124 @@
+{
+ "dataset": "vidor",
+ "video_id": "2596300565",
+ "fps": 29.96969696969697,
+ "n_frames": 2415,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 2415,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "baby"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "baby seat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     0.9676440849342771,
+     35.10212335692619
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     39.77350859453994,
+     76.4438827098079
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.9676440849342771,
+     37.00404448938322
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     36.03640040444894,
+     39.03943377148635
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     38.03842264914055,
+     76.4438827098079
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.9676440849342771,
+     39.00606673407482
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     40.04044489383215,
+     43.04347826086957
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     38.03842264914055,
+     41.04145601617796
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     42.04246713852376,
+     76.4438827098079
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0022/2596300565.mp4",
+ "video": "video.mp4"
+}

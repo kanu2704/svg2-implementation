@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "playing with ball"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["blue and white patterned"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["black wooden chair"]
+    },
+    {
+      "object 4": "highchair",
+      "attributes": ["white highchair with red straps"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "throws",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "bounces",
+      2,
+      [
+        [4, 8],
+        [12, 16],
+        [20, 24],
+        [28, 32]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32]
+      ]
+    ]
+  ]
+}
+```

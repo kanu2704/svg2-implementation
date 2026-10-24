@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "guitarist",
+      "attributes": ["playing guitar", "wearing headphones"]
+    },
+    {
+      "object 2": "bassist",
+      "attributes": ["playing bass guitar", "wearing headphones"]
+    },
+    {
+      "object 3": "guitarist",
+      "attributes": ["playing guitar", "wearing headphones"]
+    },
+    {
+      "object 4": "bassist",
+      "attributes": ["playing bass guitar", "wearing headphones"]
+    }
+  ],
+  "relationships": [
+    [
+      "guitarist",
+      "playing with",
+      "bassist",
+      [
+        ["0 - 64 sec", "0 - 64 sec"]
+      ]
+    ],
+    [
+      "bassist",
+      "playing with",
+      "guitarist",
+      [
+        ["0 - 64 sec", "0 - 64 sec"]
+      ]
+    ]
+  ]
+}
+```

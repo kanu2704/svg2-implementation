@@ -1,0 +1,135 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person A",
+      "attributes": ["wearing a white shirt and blue jeans"]
+    },
+    {
+      "object 2": "person B",
+      "attributes": ["wearing a black dress and black shoes"]
+    },
+    {
+      "object 3": "person C",
+      "attributes": ["wearing a white shirt and brown pants"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["blue office chair with wheels"]
+    },
+    {
+      "object 5": "person D",
+      "attributes": ["wearing a white shirt and blue jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands next to",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands next to",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      5,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "is behind",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "is behind",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "is behind",
+      3,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "is behind",
+      5,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

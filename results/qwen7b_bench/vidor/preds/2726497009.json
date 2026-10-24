@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cyclist",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 2": "cyclist_2",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 3": "cyclist_3",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 4": "cyclist_4",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 5": "cyclist_5",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 6": "cyclist_6",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 7": "cyclist_7",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    },
+    {
+      "object 8": "cyclist_8",
+      "attributes": ["riding a bike", "wearing helmet", "wearing backpack"]
+    }
+  ],
+  "relationships": [
+    [
+      "cyclist_1",
+      "riding behind",
+      "cyclist_2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_2",
+      "riding behind",
+      "cyclist_3",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_3",
+      "riding behind",
+      "cyclist_4",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_4",
+      "riding behind",
+      "cyclist_5",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_5",
+      "riding behind",
+      "cyclist_6",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_6",
+      "riding behind",
+      "cyclist_7",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_7",
+      "riding behind",
+      "cyclist_8",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ],
+    [
+      "cyclist_8",
+      "riding behind",
+      "cyclist_1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "0 - 4 sec"]
+      ]
+    ]
+  ]
+}
+```

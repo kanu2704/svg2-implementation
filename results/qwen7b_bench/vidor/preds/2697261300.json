@@ -1,0 +1,43 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing a white shirt", "being held"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a dark shirt", "holding the baby"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing a white tank top and sunglasses", "taking photos"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["black dog", "walking on a leash"]
+    },
+    {
+      "object 5": "camera",
+      "attributes": ["yellow and black camera", "being used by the woman"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing a white tank top and sunglasses", "standing still"]
+    },
+    {
+      "object 7": "green object",
+      "attributes": ["green object in the background", "remains stationary"]
+    },
+    {
+      "object 8": "bag",
+      "attributes": ["white bag with red strap", "being held by the baby"]
+    }
+  ],
+  "relationships": [
+    [2, "holding", 1, [[0, 48]]],
+    [3, "taking photos of", 1, [[20, 28], [36, 40]]],
+    [4, "walking past", 6, [[32, 40]]]
+  ]
+}
+```

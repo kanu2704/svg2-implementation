@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a white dress", "curly hair"]
+    },
+    {
+      "object 2": "toy",
+      "attributes": ["yellow and orange colors", "animal shape"]
+    },
+    {
+      "object 3": "adult",
+      "attributes": ["wearing a white shirt", "hand movements"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 64]
+      ]
+    ],
+    [
+      1,
+      "being near",
+      3,
+      [
+        [8, 64]
+      ]
+    ],
+    [
+      3,
+      "touching",
+      2,
+      [
+        [12, 16],
+        [20, 24],
+        [28, 32],
+        [52, 56],
+        [56, 60]
+      ]
+    ]
+  ]
+}
+```

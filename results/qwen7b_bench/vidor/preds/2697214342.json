@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing gloves", "green shirt"]
+    },
+    {
+      "object 2": "man 2",
+      "attributes": ["wearing gloves", "red shirt"]
+    },
+    {
+      "object 3": "man 3",
+      "attributes": ["wearing gloves", "gray shirt"]
+    },
+    {
+      "object 4": "man 4",
+      "attributes": ["wearing gloves", "white shirt"]
+    },
+    {
+      "object 5": "man 5",
+      "attributes": ["wearing gloves", "gray shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "collaborating with",
+      2,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      1,
+      "collaborating with",
+      3,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      1,
+      "collaborating with",
+      4,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      1,
+      "collaborating with",
+      5,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      2,
+      "collaborating with",
+      3,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      2,
+      "collaborating with",
+      4,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      2,
+      "collaborating with",
+      5,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      3,
+      "collaborating with",
+      4,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      3,
+      "collaborating with",
+      5,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      4,
+      "collaborating with",
+      5,
+      [
+        [0, 52]
+      ]
+    ]
+  ]
+}
+```

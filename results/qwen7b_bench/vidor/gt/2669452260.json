@@ -1,0 +1,157 @@
+{
+ "dataset": "vidor",
+ "video_id": "2669452260",
+ "fps": 29.97002997002997,
+ "n_frames": 456,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 456,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "car"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "car"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "car"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "car"
+  },
+  {
+   "col": 8,
+   "gt_id": 8,
+   "name": "car"
+  },
+  {
+   "col": 9,
+   "gt_id": 9,
+   "name": "car"
+  },
+  {
+   "col": 10,
+   "gt_id": 10,
+   "name": "car"
+  },
+  {
+   "col": 11,
+   "gt_id": 11,
+   "name": "car"
+  },
+  {
+   "col": 12,
+   "gt_id": 12,
+   "name": "backpack"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     7.3406666666666665,
+     7.6076
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "carry",
+   "obj": 12,
+   "spans": [
+    [
+     7.4074,
+     8.775433333333334
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 5,
+   "spans": [
+    [
+     2.2689333333333335,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 5,
+   "spans": [
+    [
+     4.0040000000000004,
+     7.674333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     2.2689333333333335,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     2.2689333333333335,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     7.674333333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0067/2669452260.mp4",
+ "video": "video.mp4"
+}

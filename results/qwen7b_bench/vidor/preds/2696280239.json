@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "rider",
+      "attributes": ["wearing red and black outfit", "riding a bull"]
+    },
+    {
+      "object 2": "cowboy",
+      "attributes": ["wearing cowboy hat", "standing near the fence"]
+    },
+    {
+      "object 3": "spectator",
+      "attributes": ["wearing white shirt", "standing behind the fence"]
+    },
+    {
+      "object 4": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 5": "spectator",
+      "attributes": ["wearing green shirt", "standing behind the fence"]
+    },
+    {
+      "object 6": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 7": "spectator",
+      "attributes": ["wearing white shirt", "standing behind the fence"]
+    },
+    {
+      "object 8": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 9": "spectator",
+      "attributes": ["wearing green shirt", "standing behind the fence"]
+    },
+    {
+      "object 10": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 11": "bull",
+      "attributes": ["black with white markings", "jumping and bucking"]
+    },
+    {
+      "object 12": "rider",
+      "attributes": ["wearing green and brown outfit", "riding a bull"]
+    },
+    {
+      "object 13": "cowboy",
+      "attributes": ["wearing cowboy hat", "standing near the fence"]
+    },
+    {
+      "object 14": "spectator",
+      "attributes": ["wearing white shirt", "standing behind the fence"]
+    },
+    {
+      "object 15": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 16": "spectator",
+      "attributes": ["wearing green shirt", "standing behind the fence"]
+    },
+    {
+      "object 17": "spectator",
+      "attributes": ["wearing blue shirt", "standing behind the fence"]
+    },
+    {
+      "object 18": "bull",
+      "attributes": ["black with white markings", "jumping and bucking"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "rides",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "chases",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      12,
+      "rides",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

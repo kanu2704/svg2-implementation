@@ -1,0 +1,152 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing pink shirt", "carrying yellow backpack"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing red shirt", "carrying red backpack"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing yellow shirt", "carrying yellow backpack"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing blue shirt", "carrying blue backpack"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing green shirt", "carrying green backpack"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing orange shirt", "carrying orange backpack"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walking together",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "walking together",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "walking together",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "walking together",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "walking together",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "walking together",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "walking together",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "walking together",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      2,
+      "walking together",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "walking together",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "walking together",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "walking together",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      4,
+      "walking together",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      4,
+      "walking together",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "walking together",
+      6,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

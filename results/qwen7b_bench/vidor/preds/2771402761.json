@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a bikini top", "holding a baby"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["wearing a green floatation device", "being held by the woman"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing a green floatation device", "swimming with the woman and baby"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing swim trunks", "standing in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      2,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      3,
+      "swimming with",
+      1,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      4,
+      "standing behind",
+      1,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

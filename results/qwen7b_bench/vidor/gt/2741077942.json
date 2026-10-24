@@ -1,0 +1,326 @@
+{
+ "dataset": "vidor",
+ "video_id": "2741077942",
+ "fps": 29.97002997002997,
+ "n_frames": 264,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 264,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "chair"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "pull",
+   "obj": 2,
+   "spans": [
+    [
+     3.7037,
+     4.371033333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     0.9009
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "lean on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     5.939266666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "pull",
+   "obj": 3,
+   "spans": [
+    [
+     7.874533333333334,
+     8.5085
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "release",
+   "obj": 3,
+   "spans": [
+    [
+     8.341666666666667,
+     8.7087
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     4.0040000000000004,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     4.0040000000000004,
+     8.8088
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "above",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     6.006,
+     8.8088
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.1061000000000005
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     6.006,
+     8.8088
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "beneath",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.007000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     6.006,
+     8.8088
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     4.237566666666667,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     6.006,
+     8.8088
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     4.237566666666667,
+     6.973633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "away",
+   "obj": 3,
+   "spans": [
+    [
+     4.237566666666667,
+     6.973633333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1000/2741077942.mp4",
+ "video": "video.mp4"
+}
