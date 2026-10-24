@@ -1,0 +1,106 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "building",
+      "attributes": ["tall", "architectural"]
+    },
+    {
+      "object 2": "tower",
+      "attributes": ["tall", "architectural"]
+    },
+    {
+      "object 3": "window",
+      "attributes": ["rectangular", "multiple"]
+    },
+    {
+      "object 4": "column",
+      "attributes": ["stone", "symmetrical"]
+    },
+    {
+      "object 5": "sculpture",
+      "attributes": ["stone", "human-like"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "adjacent to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "above",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "supporting",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "part of",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "part of",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

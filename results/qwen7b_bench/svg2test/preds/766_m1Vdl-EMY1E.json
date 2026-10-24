@@ -1,0 +1,254 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "batter",
+      "attributes": ["holding bat", "standing at home plate"]
+    },
+    {
+      "object 2": "pitcher",
+      "attributes": ["wearing white uniform", "standing on pitcher's mound"]
+    },
+    {
+      "object 3": "catcher",
+      "attributes": ["wearing protective gear", "positioned behind batter"]
+    },
+    {
+      "object 4": "umpire",
+      "attributes": ["wearing black uniform", "standing behind catcher"]
+    },
+    {
+      "object 5": "baseball field",
+      "attributes": ["baseball diamond", "outfield grass"]
+    },
+    {
+      "object 6": "audience",
+      "attributes": ["seated in stands", "watching game"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "hits ball",
+      2,
+      [
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "throws ball",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "catches ball",
+      2,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observes pitch",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observes hit",
+      1,
+      [
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observes throw",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "observes catch",
+      3,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      4,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      6,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      7,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      8,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      9,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      10,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      11,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      12,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      13,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      14,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      15,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      16,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      17,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      18,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      19,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "provides backdrop",
+      20,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

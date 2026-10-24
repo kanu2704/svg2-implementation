@@ -1,0 +1,657 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a blue shirt", "holding a black tarp"]
+    },
+    {
+      "object 2": "tarp",
+      "attributes": ["black in color", "being held by the man"]
+    },
+    {
+      "object 3": "garden bed",
+      "attributes": ["wooden frame", "filled with soil"]
+    },
+    {
+      "object 4": "soil",
+      "attributes": ["dark brown", "in the garden bed"]
+    },
+    {
+      "object 5": "grass",
+      "attributes": ["green", "surrounding the garden beds"]
+    },
+    {
+      "object 6": "fence",
+      "attributes": ["wooden", "bordering the garden area"]
+    },
+    {
+      "object 7": "tree",
+      "attributes": ["tall", "standing near the fence"]
+    },
+    {
+      "object 8": "plant",
+      "attributes": ["small", "growing in pots"]
+    },
+    {
+      "object 9": "pot",
+      "attributes": ["black plastic", "containing plants"]
+    },
+    {
+      "object 10": "gloves",
+      "attributes": ["red", "on the man's hands"]
+    },
+    {
+      "object 11": "garden tools",
+      "attributes": ["various types", "stored on the ground"]
+    },
+    {
+      "object 12": "watering can",
+      "attributes": ["green", "with a long spout"]
+    },
+    {
+      "object 13": "man 2",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 14": "man 3",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 15": "man 4",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 16": "man 5",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 17": "man 6",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 18": "man 7",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 19": "man 8",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 20": "man 9",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 21": "man 10",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 22": "man 11",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 23": "man 12",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 24": "man 13",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 25": "man 14",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 26": "man 15",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 27": "man 16",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 28": "man 17",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 29": "man 18",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 30": "man 19",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 31": "man 20",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 32": "man 21",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 33": "man 22",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 34": "man 23",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 35": "man 24",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 36": "man 25",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 37": "man 26",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 38": "man 27",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 39": "man 28",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    },
+    {
+      "object 40": "man 29",
+      "attributes": ["wearing a blue shirt", "standing in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "carries",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "holds",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      11,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      12,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      13,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      14,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      15,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      16,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      17,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      18,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      19,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      20,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      21,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      22,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      23,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      24,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      25,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      26,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      27,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      28,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      29,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      30,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      31,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      32,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      33,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      34,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      35,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      36,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      37,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      38,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      39,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "wears",
+      40,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      13,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      14,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      15,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      16,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      17,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      18,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      19,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      20,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      21,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      22,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      23,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      24,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      25,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      26,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      27,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      28,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      29,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      30,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      31,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      32,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      33,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      34,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      35,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      36,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      37,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      38,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      39,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      40,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

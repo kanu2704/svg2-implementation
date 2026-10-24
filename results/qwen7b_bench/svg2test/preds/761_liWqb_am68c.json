@@ -1,0 +1,174 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing gloves", "wearing plaid shirt"]
+    },
+    {
+      "object 2": "gloves",
+      "attributes": ["on hands"]
+    },
+    {
+      "object 3": "plant",
+      "attributes": ["green leaves"]
+    },
+    {
+      "object 4": "garden bed",
+      "attributes": ["wooden frame"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["trees, sky"]
+    },
+    {
+      "object 6": "fence",
+      "attributes": ["wooden"]
+    },
+    {
+      "object 7": "soil",
+      "attributes": ["brown"]
+    },
+    {
+      "object 8": "man's head",
+      "attributes": ["gray hair"]
+    },
+    {
+      "object 9": "man's face",
+      "attributes": ["looking down"]
+    },
+    {
+      "object 10": "tool",
+      "attributes": ["in hand"]
+    },
+    {
+      "object 11": "man's arm",
+      "attributes": ["holding tool"]
+    },
+    {
+      "object 12": "man's hand",
+      "attributes": ["wearing glove"]
+    },
+    {
+      "object 13": "man's leg",
+      "attributes": ["wearing jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "is using",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "is wearing",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing near",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing in",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is looking at",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is holding",
+      10,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "is wearing",
+      12,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is wearing",
+      13,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing on",
+      5,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing next to",
+      6,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing near",
+      7,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing near",
+      8,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing near",
+      9,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "is standing near",
+      11,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

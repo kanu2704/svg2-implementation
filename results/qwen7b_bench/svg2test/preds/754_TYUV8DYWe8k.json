@@ -1,0 +1,471 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "truck",
+      "attributes": ["moving"]
+    },
+    {
+      "object 2": "building",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 3": "trees",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 4": "field",
+      "attributes": ["open", "green"]
+    },
+    {
+      "object 5": "fence",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 6": "hill",
+      "attributes": ["slanted"]
+    },
+    {
+      "object 7": "sky",
+      "attributes": ["clear"]
+    },
+    {
+      "object 8": "grass",
+      "attributes": ["short", "green"]
+    },
+    {
+      "object 9": "soil",
+      "attributes": ["brown", "flat"]
+    },
+    {
+      "object 10": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 11": "hand",
+      "attributes": ["visible", "holding something"]
+    },
+    {
+      "object 12": "deer",
+      "attributes": ["standing", "in field"]
+    },
+    {
+      "object 13": "fence wire",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 14": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 15": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 16": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 17": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 18": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 19": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 20": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 21": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 22": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 23": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 24": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 25": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 26": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 27": "fence post",
+      "attributes": ["stationary"]
+    },
+    {
+      "object 28": "fence post",
+      "attributes": ["stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "drives past",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      13,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      14,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      15,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      16,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      17,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      18,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      19,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      20,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      21,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      22,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      23,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      24,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      25,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      26,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves away from",
+      27,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      1,
+      "moves towards",
+      28,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

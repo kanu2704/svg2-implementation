@@ -1,0 +1,316 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "smoke",
+      "attributes": ["white", "dense", "moving"]
+    },
+    {
+      "object 2": "hillside",
+      "attributes": ["green", "steep", "vegetated"]
+    },
+    {
+      "object 3": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 4": "train",
+      "attributes": ["red", "vintage", "steam engine"]
+    },
+    {
+      "object 5": "sky",
+      "attributes": ["blue", "cloudy", "clear"]
+    },
+    {
+      "object 6": "track",
+      "attributes": ["curved", "metal", "railway"]
+    },
+    {
+      "object 7": "carriage",
+      "attributes": ["red", "windows", "train car"]
+    },
+    {
+      "object 8": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 9": "train",
+      "attributes": ["red", "vintage", "steam engine"]
+    },
+    {
+      "object 10": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 11": "sky",
+      "attributes": ["blue", "cloudy", "clear"]
+    },
+    {
+      "object 12": "carriage",
+      "attributes": ["red", "windows", "train car"]
+    },
+    {
+      "object 13": "train",
+      "attributes": ["red", "vintage", "steam engine"]
+    },
+    {
+      "object 14": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 15": "hillside",
+      "attributes": ["green", "steep", "vegetated"]
+    },
+    {
+      "object 16": "track",
+      "attributes": ["curved", "metal", "railway"]
+    },
+    {
+      "object 17": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 18": "train",
+      "attributes": ["red", "vintage", "steam engine"]
+    },
+    {
+      "object 19": "bridge",
+      "attributes": ["stone", "arched", "overpass"]
+    },
+    {
+      "object 20": "sky",
+      "attributes": ["blue", "cloudy", "clear"]
+    },
+    {
+      "object 21": "track",
+      "attributes": ["curved", "metal", "railway"]
+    },
+    {
+      "object 22": "hillside",
+      "attributes": ["green", "steep", "vegetated"]
+    },
+    {
+      "object 23": "train",
+      "attributes": ["red", "vintage", "steam engine"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "under",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "on",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "above",
+      6,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "below",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "part of",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      8,
+      "above",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "on",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      10,
+      "under",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      11,
+      "above",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      12,
+      "part of",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      13,
+      "on",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      14,
+      "under",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      15,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      16,
+      "part of",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      17,
+      "above",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      18,
+      "on",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      19,
+      "under",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      20,
+      "above",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      21,
+      "part of",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      22,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "on",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      23,
+      "under",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```
