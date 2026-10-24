@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing striped shirt", "smiling"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing striped shirt", "holding child"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["blue and yellow", "in background"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "being held by",
+      "object 2",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "in the background",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec"]
+      ]
+    ]
+  ]
+}
+```

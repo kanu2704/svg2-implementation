@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sheep1",
+      "attributes": ["standing", "facing left"]
+    },
+    {
+      "object 2": "sheep2",
+      "attributes": ["standing", "facing right"]
+    },
+    {
+      "object 3": "sheep3",
+      "attributes": ["standing", "facing forward"]
+    },
+    {
+      "object 4": "sheep4",
+      "attributes": ["standing", "facing backward"]
+    },
+    {
+      "object 5": "goat",
+      "attributes": ["lying down", "black fur"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "behind",
+      5,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      5,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      5,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      5,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

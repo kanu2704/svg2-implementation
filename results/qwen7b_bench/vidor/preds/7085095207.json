@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing pink shirt", "carrying backpack"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing blue jacket", "carrying child on shoulders"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing blue shirt", "walking away"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing green jacket", "walking away"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing black jacket", "walking away"]
+    },
+    {
+      "object 6": "child",
+      "attributes": ["being carried by woman", "wearing blue jacket"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "carrying",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "carrying",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "walking away from",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "walking away from",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "walking away from",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "walking away from",
+      5,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player A",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 2": "Player B",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 3": "Player C",
+      "attributes": ["wearing green jersey", "wearing helmet"]
+    },
+    {
+      "object 4": "Player D",
+      "attributes": ["wearing green jersey", "wearing helmet"]
+    },
+    {
+      "object 5": "Player E",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    },
+    {
+      "object 6": "Player F",
+      "attributes": ["wearing white jersey", "wearing helmet"]
+    }
+  ],
+  "relationships": [
+    [
+      "Player A",
+      "standing next to",
+      "Player B",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "Player C",
+      "standing next to",
+      "Player D",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "Player E",
+      "standing next to",
+      "Player F",
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

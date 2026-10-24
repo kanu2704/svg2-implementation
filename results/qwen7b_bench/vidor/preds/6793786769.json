@@ -1,0 +1,49 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "train",
+      "attributes": ["green", "red", "yellow"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing striped shirt", "playing with train"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["blue and yellow"]
+    },
+    {
+      "object 4": "adult",
+      "attributes": ["wearing dark pants", "sitting on floor"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 2",
+      "playing with",
+      "object 1",
+      [
+        ["0 - 4 sec", "8 - 12 sec", "36 - 40 sec"],
+        ["44 - 48 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "near",
+      "object 3",
+      [
+        ["28 - 32 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "sitting near",
+      "object 2",
+      [
+        ["20 - 24 sec", "24 - 28 sec"]
+      ]
+    ]
+  ]
+}
+```

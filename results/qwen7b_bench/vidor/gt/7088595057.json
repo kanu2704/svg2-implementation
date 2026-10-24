@@ -1,0 +1,260 @@
+{
+ "dataset": "vidor",
+ "video_id": "7088595057",
+ "fps": 29.97002997002997,
+ "n_frames": 1052,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1052,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "sheep/goat"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sheep/goat"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "sheep/goat"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "sheep/goat"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "sheep/goat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 4,
+   "spans": [
+    [
+     19.352666666666668,
+     22.856166666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     16.249566666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     23.023
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 4,
+   "spans": [
+    [
+     22.022000000000002,
+     32.06536666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     8.008000000000001,
+     16.249566666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     9.009
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     15.9159
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     8.008000000000001,
+     15.9159
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     4.0040000000000004,
+     9.009
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     15.9159
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "behind",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     32.06536666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "behind",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     6.339666666666667
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1110/7088595057.mp4",
+ "video": "video.mp4"
+}

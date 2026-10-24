@@ -1,0 +1,65 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing black shorts", "standing still"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a helmet", "holding a bat", "running"]
+    },
+    {
+      "object 3": "bat",
+      "attributes": ["blue", "held by child", "in motion"]
+    },
+    {
+      "object 4": "baseball player",
+      "attributes": ["wearing red and gray uniform", "standing still", "ready to pitch"]
+    },
+    {
+      "object 5": "umpire",
+      "attributes": ["wearing red shirt", "standing still", "observing the game"]
+    },
+    {
+      "object 6": "baseball",
+      "attributes": ["white", "on the ground", "stationary"]
+    }
+  ],
+  "relationships": [
+    [
+      "child",
+      "hits",
+      "baseball",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "child",
+      "runs towards",
+      "baseball",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "baseball player",
+      "throws",
+      "baseball",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "umpire",
+      "stands behind",
+      "baseball player",
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,136 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Player A",
+      "attributes": ["wearing green jersey", "wearing black shorts", "wearing helmet"]
+    },
+    {
+      "object 2": "Player B",
+      "attributes": ["wearing white jersey", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 3": "Coach",
+      "attributes": ["wearing green jacket", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 4": "Coach 2",
+      "attributes": ["wearing gray hoodie", "wearing green beanie", "wearing black pants"]
+    },
+    {
+      "object 5": "Player C",
+      "attributes": ["wearing blue jersey", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 6": "Player D",
+      "attributes": ["wearing red jacket", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 7": "Player E",
+      "attributes": ["wearing white jersey", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 8": "Coach 3",
+      "attributes": ["wearing red jacket", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 9": "Coach 4",
+      "attributes": ["wearing green jacket", "wearing black pants", "wearing helmet"]
+    },
+    {
+      "object 10": "Football",
+      "attributes": ["red and white color", "in motion"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      10,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      10,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "plays with",
+      10,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      6,
+      "plays with",
+      10,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      7,
+      "plays with",
+      10,
+      [
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      9,
+      "stands near",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

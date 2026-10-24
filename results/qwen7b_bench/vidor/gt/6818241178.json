@@ -1,0 +1,177 @@
+{
+ "dataset": "vidor",
+ "video_id": "6818241178",
+ "fps": 29.97002997002997,
+ "n_frames": 322,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 322,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "bat"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "child"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "ball/sports ball"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.0010000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "wave",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     0.5672333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     1.8351666666666666,
+     2.0020000000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "hit",
+   "obj": 5,
+   "spans": [
+    [
+     0.16683333333333333,
+     0.33366666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     0.33366666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     10.043366666666667,
+     10.744066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     8.008000000000001,
+     10.744066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     6.7067000000000005,
+     8.975633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 4,
+   "spans": [
+    [
+     6.7067000000000005,
+     8.975633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     6.473133333333333,
+     8.975633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.008000000000001,
+     10.744066666666667
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     6.7067000000000005,
+     8.975633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0054/6818241178.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,45 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a red shirt", "standing near the sink"]
+    },
+    {
+      "object 2": "faucet",
+      "attributes": ["silver and shiny", "attached to the sink"]
+    },
+    {
+      "object 3": "sink",
+      "attributes": ["white ceramic", "with a faucet"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [4, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      2,
+      "attached to",
+      3,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

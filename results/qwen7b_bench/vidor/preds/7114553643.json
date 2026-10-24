@@ -1,0 +1,132 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Dancer",
+      "attributes": ["wears yellow skirt", "wears white blouse"]
+    },
+    {
+      "object 2": "Partner Dancer",
+      "attributes": ["wears brown vest", "wears green pants"]
+    },
+    {
+      "object 3": "Waiter",
+      "attributes": ["wears black vest", "wears white shirt"]
+    },
+    {
+      "object 4": "Audience Member",
+      "attributes": ["wears black suit", "wears white shirt"]
+    },
+    {
+      "object 5": "Audience Member",
+      "attributes": ["wears black suit", "wears white shirt"]
+    },
+    {
+      "object 6": "Audience Member",
+      "attributes": ["wears black suit", "wears white shirt"]
+    },
+    {
+      "object 7": "Audience Member",
+      "attributes": ["wears black suit", "wears white shirt"]
+    }
+  ],
+  "relationships": [
+    [
+      "Dancer",
+      "dances with",
+      "Partner Dancer",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      "Dancer",
+      "performs in front of",
+      "Audience Member",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      "Partner Dancer",
+      "performs in front of",
+      "Audience Member",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      "Waiter",
+      "serves food to",
+      "Audience Member",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["4 - 8 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "40 - 44 sec"],
+        ["44 - 48 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "56 - 60 sec"],
+        ["60 - 64 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "64 - 68 sec"]
+      ]
+    ]
+  ]
+}
+```

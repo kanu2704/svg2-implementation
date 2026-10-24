@@ -1,0 +1,45 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["brown fur", "sniffing"]
+    },
+    {
+      "object 2": "toy",
+      "attributes": ["purple color", "being held by dog"]
+    },
+    {
+      "object 3": "other dog",
+      "attributes": ["brown fur", "standing still"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "sniffing",
+      "object 2",
+      [
+        ["<0 - 4 sec>", "<8 - 12 sec>"],
+        ["<16 - 20 sec>", "<24 - 28 sec>"]
+      ]
+    ],
+    [
+      "object 1",
+      "holding",
+      "object 2",
+      [
+        ["<12 - 16 sec>", "<28 - 32 sec>"]
+      ]
+    ],
+    [
+      "object 3",
+      "standing near",
+      "object 1",
+      [
+        ["<28 - 32 sec>"]
+      ]
+    ]
+  ]
+}
+```

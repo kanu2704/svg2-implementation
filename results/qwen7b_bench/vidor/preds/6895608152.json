@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Dancer",
+      "attributes": ["wearing a red dress", "holding a flower"]
+    },
+    {
+      "object 2": "Ballerina",
+      "attributes": ["wearing a white tutu", "performing ballet movements"]
+    },
+    {
+      "object 3": "Soldier",
+      "attributes": ["wearing a red and white uniform", "standing still"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "performs ballet with",
+      3,
+      [
+        [16, 20],
+        [28, 32],
+        [36, 40],
+        [48, 52],
+        [56, 60],
+        [64, 68],
+        [72, 76],
+        [80, 84]
+      ]
+    ]
+  ]
+}
+```

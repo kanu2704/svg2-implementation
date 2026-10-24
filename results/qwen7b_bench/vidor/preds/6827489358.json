@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["playing drums", "wearing a jacket"]
+    },
+    {
+      "object 2": "drums",
+      "attributes": ["drum set", "multiple cymbals and drums"]
+    },
+    {
+      "object 3": "drumsticks",
+      "attributes": ["held by child", "used to play drums"]
+    },
+    {
+      "object 4": "adult",
+      "attributes": ["standing near drums", "watching child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      2,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      3,
+      "held by",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      2,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

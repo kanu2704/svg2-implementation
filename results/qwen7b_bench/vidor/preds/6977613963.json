@@ -1,0 +1,106 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a white and black jacket", "black pants"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a gray hoodie", "black shorts"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing a white shirt", "brown shorts"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing an orange shirt", "black pants"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["orange color"]
+    },
+    {
+      "object 6": "ball",
+      "attributes": ["brown color"]
+    },
+    {
+      "object 7": "ball",
+      "attributes": ["white color"]
+    },
+    {
+      "object 8": "ball",
+      "attributes": ["green color"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "standing",
+      "object 2",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 2",
+      "running towards",
+      "object 1",
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      "object 3",
+      "standing",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 4",
+      "standing",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 5",
+      "on the ground",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 6",
+      "on the ground",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 7",
+      "on the ground",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      "object 8",
+      "on the ground",
+      "object 1",
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

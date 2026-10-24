@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 2": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 4": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 5": "baby",
+      "attributes": ["in stroller", "pink stroller"]
+    },
+    {
+      "object 6": "people",
+      "attributes": ["sitting", "talking"]
+    },
+    {
+      "object 7": "table",
+      "attributes": ["white", "with items on it"]
+    },
+    {
+      "object 8": "chair",
+      "attributes": ["white", "next to table"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      2,
+      "near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      3,
+      "near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      4,
+      "near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      6,
+      "near",
+      5,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      7,
+      "on",
+      8,
+      [
+        [0, 3]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,330 @@
+{
+ "dataset": "vidor",
+ "video_id": "6836443264",
+ "fps": 29.97002997002997,
+ "n_frames": 86,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 86,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "baby"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "baby seat"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  },
+  {
+   "col": 6,
+   "gt_id": 6,
+   "name": "cup"
+  },
+  {
+   "col": 7,
+   "gt_id": 7,
+   "name": "chair"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "lean on",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.8361666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "inside",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "next to",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     2.8695333333333335
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1013/6836443264.mp4",
+ "video": "video.mp4"
+}

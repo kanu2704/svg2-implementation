@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pointer",
+      "attributes": ["in hand", "moving"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing suit", "holding pointer", "standing"]
+    },
+    {
+      "object 3": "projector",
+      "attributes": ["on table", "projecting image"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "holding",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "standing near",
+      3,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```
