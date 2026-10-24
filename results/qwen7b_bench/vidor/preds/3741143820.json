@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a tie", "standing in front of others"]
+    },
+    {
+      "object 2": "man with glasses",
+      "attributes": ["wearing a tie and glasses", "standing on stage"]
+    },
+    {
+      "object 3": "man in cape",
+      "attributes": ["wearing a cape", "standing on stage"]
+    },
+    {
+      "object 4": "man in sweater vest",
+      "attributes": ["crossed arms", "standing on stage"]
+    },
+    {
+      "object 5": "woman with blonde hair",
+      "attributes": ["wearing a tie", "standing on stage"]
+    },
+    {
+      "object 6": "woman with blue bow",
+      "attributes": ["wearing a bow in her hair", "standing on stage"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands behind",
+      2,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "stands next to",
+      3,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      3,
+      "stands next to",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      4,
+      "stands next to",
+      5,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      5,
+      "stands next to",
+      6,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

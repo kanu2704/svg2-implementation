@@ -1,0 +1,65 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child1",
+      "attributes": ["wearing red shirt", "wearing camouflage pants"]
+    },
+    {
+      "object 2": "child2",
+      "attributes": ["wearing blue shirt", "wearing yellow shorts"]
+    },
+    {
+      "object 3": "child3",
+      "attributes": ["wearing white dress"]
+    },
+    {
+      "object 4": "adult",
+      "attributes": ["wearing red shirt", "wearing green pants"]
+    },
+    {
+      "object 5": "child4",
+      "attributes": ["wearing blue shirt and hat", "holding teddy bear"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "playing with",
+      3,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "playing with",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "playing with",
+      5,
+      [
+        [0, 4],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,112 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing pink top", "wearing white shorts"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing blue dress", "waving hand"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing black top", "wearing black pants"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing white shirt", "wearing black pants"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing green top", "wearing black pants"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing black top", "wearing black pants"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing black top", "wearing black pants"]
+    },
+    {
+      "object 8": "record player",
+      "attributes": ["playing music", "orange record"]
+    },
+    {
+      "object 9": "table",
+      "attributes": ["holding record player"]
+    },
+    {
+      "object 10": "car",
+      "attributes": ["parked in background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "near",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      4,
+      "near",
+      5,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "near",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      6,
+      "near",
+      7,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      8,
+      "on",
+      9,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      9,
+      "in front of",
+      10,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

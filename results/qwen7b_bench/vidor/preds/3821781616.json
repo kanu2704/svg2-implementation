@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a black t-shirt with a graphic design"]
+    },
+    {
+      "object 2": "tv",
+      "attributes": ["playing a video game", "positioned on a stand"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "looking at",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec", "20 - 24 sec", "24 - 28 sec"]
+      ]
+    ]
+  ]
+}
+```

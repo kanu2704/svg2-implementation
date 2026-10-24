@@ -1,0 +1,92 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boat",
+      "attributes": ["checkered pattern", "speeding"]
+    },
+    {
+      "object 2": "person A",
+      "attributes": ["wearing sunglasses", "drinking from a bottle"]
+    },
+    {
+      "object 3": "person B",
+      "attributes": ["wearing sunglasses", "sitting on the boat"]
+    },
+    {
+      "object 4": "person C",
+      "attributes": ["wearing sunglasses", "sitting on the boat"]
+    },
+    {
+      "object 5": "person D",
+      "attributes": ["wearing sunglasses", "sitting on the boat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "passenger of",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "passenger of",
+      3,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "passenger of",
+      4,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      1,
+      "passenger of",
+      5,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      2,
+      "drinking",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "sitting",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "sitting",
+      1,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "sitting",
+      1,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

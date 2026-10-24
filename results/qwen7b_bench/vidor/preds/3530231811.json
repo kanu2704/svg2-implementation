@@ -1,0 +1,99 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "singer",
+      "attributes": ["wearing a leather jacket", "holding a microphone"]
+    },
+    {
+      "object 2": "guitarist",
+      "attributes": ["playing an electric guitar", "wearing a hat and striped shirt"]
+    },
+    {
+      "object 3": "drummer",
+      "attributes": ["playing drums", "wearing a black shirt"]
+    },
+    {
+      "object 4": "female performer",
+      "attributes": ["wearing a blue dress", "standing on stage"]
+    },
+    {
+      "object 5": "camera person",
+      "attributes": ["filming the performance", "wearing a blue shirt"]
+    },
+    {
+      "object 6": "audience",
+      "attributes": ["watching the performance", "standing in front of the stage"]
+    },
+    {
+      "object 7": "stage lights",
+      "attributes": ["illuminating the performers", "changing colors"]
+    }
+  ],
+  "relationships": [
+    [
+      "singer",
+      "singing into",
+      "microphone",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "guitarist",
+      "playing",
+      "electric guitar",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "drummer",
+      "playing",
+      "drums",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "female performer",
+      "standing next to",
+      "singer",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "camera person",
+      "filming",
+      "singer",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "audience",
+      "watching",
+      "performance",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      "stage lights",
+      "illuminating",
+      "performers",
+      [
+        ["0 - 4 sec", "84 - 88 sec"],
+        ["88 - 92 sec", "92 - 96 sec"]
+      ]
+    ]
+  ]
+}
+```

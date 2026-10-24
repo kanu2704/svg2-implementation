@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["silver", "station wagon"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["black outfit", "jumping"]
+    },
+    {
+      "object 3": "bicycle",
+      "attributes": ["parked", "front wheel visible"]
+    },
+    {
+      "object 4": "pole",
+      "attributes": ["metallic", "partially visible"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["urban street scene", "other cars parked"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "jumping over",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "behind",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "in the background",
+      1,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["smiling", "wearing a grey outfit"]
+    },
+    {
+      "object 2": "walker",
+      "attributes": ["green and white", "has toys attached"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["orange fish", "blue tail"]
+    },
+    {
+      "object 4": "banana",
+      "attributes": ["yellow", "hanging from walker"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "hangs from",
+      2,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "hangs from",
+      2,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

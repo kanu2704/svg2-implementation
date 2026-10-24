@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Man 1",
+      "attributes": ["wearing a black shirt", "wearing glasses"]
+    },
+    {
+      "object 2": "Man 2",
+      "attributes": ["wearing a maroon shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 3": "Man 3",
+      "attributes": ["wearing a black shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 4": "Man 4",
+      "attributes": ["wearing a maroon shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 5": "Man 5",
+      "attributes": ["wearing a black shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 6": "Man 6",
+      "attributes": ["wearing a maroon shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 7": "Man 7",
+      "attributes": ["wearing a black shirt", "wearing a fencing mask"]
+    },
+    {
+      "object 8": "Man 8",
+      "attributes": ["wearing a maroon shirt", "wearing a fencing mask"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "fencing with",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         ...
+    ]
+  ]
+}
+```

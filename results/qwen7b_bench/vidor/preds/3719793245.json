@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a pink shirt", "holding onto the car"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing sunglasses", "smiling"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["yellow and black", "moving on the track"]
+    },
+    {
+      "object 4": "other car",
+      "attributes": ["white with blue stripes", "stationary in the background"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["decorated with cars and patterns"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "in",
+      "object 3",
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      "object 2",
+      "in",
+      "object 3",
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      "object 4",
+      "near",
+      "object 3",
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      "object 5",
+      "behind",
+      "object 3",
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,58 @@
+{
+ "dataset": "vidor",
+ "video_id": "3491520401",
+ "fps": 23.976023976023978,
+ "n_frames": 40,
+ "video_fps": 23.976023976023978,
+ "ann_frames": 40,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bicycle"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "child"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "lean on",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.6683333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "beneath",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.6683333333333332
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     1.6683333333333332
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1006/3491520401.mp4",
+ "video": "video.mp4"
+}

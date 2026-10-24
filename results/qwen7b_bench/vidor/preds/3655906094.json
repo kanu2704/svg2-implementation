@@ -1,0 +1,84 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "drummer",
+      "attributes": ["playing drums", "wearing a suit"]
+    },
+    {
+      "object 2": "saxophonist",
+      "attributes": ["playing saxophone", "wearing a suit"]
+    },
+    {
+      "object 3": "trumpeter",
+      "attributes": ["playing trumpet", "wearing a suit"]
+    },
+    {
+      "object 4": "flutist",
+      "attributes": ["playing flute", "wearing a suit"]
+    },
+    {
+      "object 5": "violinist",
+      "attributes": ["playing violin", "wearing a suit"]
+    },
+    {
+      "object 6": "pianist",
+      "attributes": ["playing piano", "wearing a suit"]
+    },
+    {
+      "object 7": "bench",
+      "attributes": ["wooden bench", "in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      4,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      5,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "playing with",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      7,
+      "behind",
+      1,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

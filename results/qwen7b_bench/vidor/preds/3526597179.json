@@ -1,0 +1,58 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a black shirt", "moving towards the camera"]
+    },
+    {
+      "object 2": "woman 1",
+      "attributes": ["wearing a yellow shirt", "moving away from the camera"]
+    },
+    {
+      "object 3": "woman 2",
+      "attributes": ["wearing a white shirt and shorts", "moving towards the camera"]
+    },
+    {
+      "object 4": "ceiling fan",
+      "attributes": ["spinning above the people", "visible in the top part of the frame"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "approaching",
+      2,
+      [
+        [0, 4],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "standing still",
+      3,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "approaching",
+      1,
+      [
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "above",
+      1,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

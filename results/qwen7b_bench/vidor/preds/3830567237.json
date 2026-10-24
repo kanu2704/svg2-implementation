@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "horse",
+      "attributes": ["black", "harnessed"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing black shirt", "holding hose"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing white shirt", "standing near horse"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing striped shirt", "standing near horse"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing white shirt", "standing near horse"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing striped shirt", "standing near horse"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "spraying water on",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      5,
+      "standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      6,
+      "standing near",
+      1,
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

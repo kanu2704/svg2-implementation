@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing white shirt", "wearing khaki shorts", "holding microphone"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting on chair", "wearing blue shirt and pink pants", "playing guitar"]
+    },
+    {
+      "object 3": "man 2",
+      "attributes": ["standing", "wearing light blue shirt", "wearing beige shorts", "playing guitar"]
+    },
+    {
+      "object 4": "man 3",
+      "attributes": ["standing", "wearing dark blue shirt", "wearing black shorts", "playing guitar"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["sitting on woman's lap", "wearing blue shirt", "playing guitar"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["red with metal frame"]
+    },
+    {
+      "object 7": "room",
+      "attributes": ["indoor setting", "furniture visible"]
+    },
+    {
+      "object 8": "guitar",
+      "attributes": ["electric guitar", "being played by multiple people"]
+    },
+    {
+      "object 9": "microphone",
+      "attributes": ["held by man 1", "used for singing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      2,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      1,
+      "singing into",
+      9,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      3,
+      "playing",
+      8,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      4,
+      "playing",
+      8,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      5,
+      "playing",
+      8,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      2,
+      "sitting on",
+      6,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      5,
+      "sitting on",
+      6,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      3,
+      "standing near",
+      6,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      4,
+      "standing near",
+      6,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      1,
+      "standing near",
+      6,
+      [
+        [0, 14]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "diver",
+      "attributes": ["wearing scuba gear", "kneeling underwater"]
+    },
+    {
+      "object 2": "instructor",
+      "attributes": ["wearing scuba gear", "standing underwater", "guiding diver"]
+    },
+    {
+      "object 3": "assistant",
+      "attributes": ["wearing scuba gear", "assisting diver"]
+    },
+    {
+      "object 4": "diver group",
+      "attributes": ["underwater", "wearing scuba gear"]
+    },
+    {
+      "object 5": "instructor group",
+      "attributes": ["underwater", "wearing scuba gear", "guiding divers"]
+    }
+  ],
+  "relationships": [
+    [
+      "diver",
+      "being guided by",
+      "instructor",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"]
+      ]
+    ],
+    [
+      "assistant",
+      "assisting",
+      "diver",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"]
+      ]
+    ],
+    [
+      "instructor group",
+      "guiding",
+      "diver group",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"]
+      ]
+    ]
+  ]
+}
+```

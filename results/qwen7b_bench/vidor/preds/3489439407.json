@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["clicks buttons"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wears headset", "stands behind desk"]
+    },
+    {
+      "object 3": "desk",
+      "attributes": ["has multiple monitors", "woman stands behind it"]
+    },
+    {
+      "object 4": "monitor",
+      "attributes": ["displays video feed", "multiple screens"]
+    },
+    {
+      "object 5": "video feed",
+      "attributes": ["shown on monitor", "changing content"]
+    },
+    {
+      "object 6": "camera",
+      "attributes": ["records video feed", "positioned to capture monitors"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "clicks",
+      6,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      2,
+      "stands behind",
+      3,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      3,
+      "has",
+      4,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      4,
+      "displays",
+      5,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      5,
+      "recorded by",
+      6,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

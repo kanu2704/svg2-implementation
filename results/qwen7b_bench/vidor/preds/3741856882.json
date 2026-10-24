@@ -1,0 +1,162 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "bride",
+      "attributes": ["wearing a white dress", "holding a bouquet"]
+    },
+    {
+      "object 2": "groom",
+      "attributes": ["wearing a suit and tie", "holding a glass of champagne"]
+    },
+    {
+      "object 3": "cake",
+      "attributes": ["white, multi-tiered cake with floral decorations"]
+    },
+    {
+      "object 4": "photographer 1",
+      "attributes": ["wearing a light-colored shirt", "holding a camera"]
+    },
+    {
+      "object 5": "photographer 2",
+      "attributes": ["wearing dark clothing", "holding a camera"]
+    },
+    {
+      "object 6": "photographer 3",
+      "attributes": ["wearing dark clothing", "holding a camera"]
+    },
+    {
+      "object 7": "photographer 4",
+      "attributes": ["wearing dark clothing", "holding a camera"]
+    },
+    {
+      "object 8": "photographer 5",
+      "attributes": ["wearing dark clothing", "holding a camera"]
+    },
+    {
+      "object 9": "photographer 6",
+      "attributes": ["wearing dark clothing", "holding a camera"]
+    },
+    {
+      "object 10": "guest 1",
+      "attributes": ["wearing formal attire", "holding a glass of champagne"]
+    },
+    {
+      "object 11": "guest 2",
+      "attributes": ["wearing formal attire", "holding a glass of champagne"]
+    }
+  ],
+  "relationships": [
+    [
+      "bride",
+      "interacts with",
+      "groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "bride",
+      "holds",
+      "bouquet",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "groom",
+      "holds",
+      "glass of champagne",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 1",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 2",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 3",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 4",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 5",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "photographer 6",
+      "records",
+      "bride and groom",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "guest 1",
+      "holds",
+      "glass of champagne",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      "guest 2",
+      "holds",
+      "glass of champagne",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

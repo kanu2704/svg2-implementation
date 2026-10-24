@@ -1,0 +1,50 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["washing ferret"]
+    },
+    {
+      "object 2": "ferret",
+      "attributes": ["being washed"]
+    },
+    {
+      "object 3": "sink",
+      "attributes": ["water running"]
+    },
+    {
+      "object 4": "towel",
+      "attributes": ["used for drying"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "washes",
+      2,
+      [
+        [0, 24],
+        [28, 56]
+      ]
+    ],
+    [
+      2,
+      "in",
+      3,
+      [
+        [0, 24],
+        [28, 56]
+      ]
+    ],
+    [
+      1,
+      "dries",
+      4,
+      [
+        [24, 56]
+      ]
+    ]
+  ]
+}
+```

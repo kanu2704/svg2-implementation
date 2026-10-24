@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pianist",
+      "attributes": ["playing piano", "sitting"]
+    },
+    {
+      "object 2": "cellist",
+      "attributes": ["playing cello", "sitting"]
+    },
+    {
+      "object 3": "drummer",
+      "attributes": ["playing drums", "standing"]
+    },
+    {
+      "object 4": "piano",
+      "attributes": ["black and white keys", "piano bench"]
+    },
+    {
+      "object 5": "cello",
+      "attributes": ["brown wooden body", "black bow"]
+    },
+    {
+      "object 6": "drum set",
+      "attributes": ["drums and cymbals", "drumsticks"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      2,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "playing",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "playing",
+      6,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      1,
+      "sitting",
+      4,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      2,
+      "sitting",
+      5,
+      [
+        [0, 92]
+      ]
+    ],
+    [
+      3,
+      "standing",
+      6,
+      [
+        [0, 92]
+      ]
+    ]
+  ]
+}
+```

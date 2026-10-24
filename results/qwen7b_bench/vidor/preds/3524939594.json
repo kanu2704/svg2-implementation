@@ -1,0 +1,169 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing white shirt", "holding pole"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing white shirt", "holding pole"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wearing black shirt", "holding pole"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    },
+    {
+      "object 5": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    },
+    {
+      "object 6": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    },
+    {
+      "object 7": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    },
+    {
+      "object 8": "dog",
+      "attributes": ["brown fur", "moving quickly"]
+    },
+    {
+      "object 9": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    },
+    {
+      "object 10": "man",
+      "attributes": ["wearing white shirt", "standing in background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "pushing against",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "pushing against",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "being pushed by",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "being pushed by",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      1,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      2,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      3,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      4,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      5,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      6,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      7,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      9,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ],
+    [
+      8,
+      "moving past",
+      10,
+      [
+        [4, 8],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

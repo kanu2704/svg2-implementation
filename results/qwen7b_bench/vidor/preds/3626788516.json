@@ -1,0 +1,66 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "snake",
+      "attributes": ["striped pattern", "slithering"]
+    },
+    {
+      "object 2": "person A",
+      "attributes": ["wearing brown top", "holding snake"]
+    },
+    {
+      "object 3": "person B",
+      "attributes": ["wearing blue top", "reaching out hand"]
+    },
+    {
+      "object 4": "person C",
+      "attributes": ["wearing red top", "sitting on bench"]
+    },
+    {
+      "object 5": "person D",
+      "attributes": ["wearing green top", "sitting on bench"]
+    },
+    {
+      "object 6": "green bag",
+      "attributes": ["on person D's lap", "visible in background"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "reaches for",
+      1,
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      4,
+      "sits near",
+      5,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      6,
+      "visible behind",
+      5,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

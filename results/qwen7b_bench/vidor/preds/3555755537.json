@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["lying down", "wearing a white shirt and blue jeans"]
+    },
+    {
+      "object 2": "car",
+      "attributes": ["silver car", "station wagon"]
+    },
+    {
+      "object 3": "bottles",
+      "attributes": ["water bottles", "blue caps"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["white dog", "walking away"]
+    },
+    {
+      "object 5": "horses",
+      "attributes": ["brown horses", "standing in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "near",
+      "car",
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      "man",
+      "near",
+      "bottles",
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      "dog",
+      "near",
+      "man",
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      "dog",
+      "near",
+      "horses",
+      [
+        [0, 52]
+      ]
+    ]
+  ]
+}
+```

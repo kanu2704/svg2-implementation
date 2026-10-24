@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cyclist",
+      "attributes": ["wearing a helmet", "wearing a black and white shirt", "wearing shorts"]
+    },
+    {
+      "object 2": "cyclist2",
+      "attributes": ["wearing a helmet", "wearing a blue and white shirt", "wearing shorts"]
+    },
+    {
+      "object 3": "car",
+      "attributes": ["blue car", "driving on the road"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "riding",
+      "object 2",
+      [
+        ["8 - 12 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "riding",
+      "object 1",
+      [
+        ["8 - 12 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      "object 3",
+      "passing by",
+      "object 1",
+      [
+        ["24 - 28 sec"]
+      ]
+    ]
+  ]
+}
+```

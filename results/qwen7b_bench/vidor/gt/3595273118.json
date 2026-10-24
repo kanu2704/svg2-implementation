@@ -1,0 +1,90 @@
+{
+ "dataset": "vidor",
+ "video_id": "3595273118",
+ "fps": 29.97002997002997,
+ "n_frames": 375,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 375,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "camera"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "screen/monitor"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "table"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     12.512500000000001
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     12.512500000000001
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "behind",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     12.512500000000001
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     12.512500000000001
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     12.512500000000001
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1105/3595273118.mp4",
+ "video": "video.mp4"
+}

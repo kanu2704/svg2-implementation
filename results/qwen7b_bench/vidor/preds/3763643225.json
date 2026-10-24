@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["shirtless", "wearing plaid shorts", "standing"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["wearing blue shirt and green cap", "standing behind child"]
+    },
+    {
+      "object 3": "green bucket",
+      "attributes": ["green", "on the ground"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "interacts with",
+      "object 2",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ],
+    [
+      "object 1",
+      "stands near",
+      "object 3",
+      [
+        ["0 - 4 sec", "0 - 4 sec"],
+        ["8 - 12 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "16 - 20 sec"],
+        ["24 - 28 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "32 - 36 sec"]
+      ]
+    ]
+  ]
+}
+```

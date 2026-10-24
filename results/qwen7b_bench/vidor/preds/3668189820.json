@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["wearing bib", "eating"]
+    },
+    {
+      "object 2": "adult",
+      "attributes": ["feeding baby", "holding spoon"]
+    },
+    {
+      "object 3": "highchair",
+      "attributes": ["blue and white", "baby sitting in it"]
+    },
+    {
+      "object 4": "food",
+      "attributes": ["in spoon", "on baby's bib"]
+    },
+    {
+      "object 5": "cup",
+      "attributes": ["green liquid", "on highchair tray"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "being fed",
+      2,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      4,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      1,
+      "sitting in",
+      3,
+      [
+        [0, 52]
+      ]
+    ],
+    [
+      5,
+      "on",
+      3,
+      [
+        [0, 52]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,36 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["sitting in a stroller", "wearing a brown jacket"]
+    },
+    {
+      "object 2": "stroller",
+      "attributes": ["has a purple and white seat", "is being pushed"]
+    },
+    {
+      "object 3": "fence",
+      "attributes": ["chain-link fence", "surrounding the area"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "in",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```
