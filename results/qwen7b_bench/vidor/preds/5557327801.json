@@ -1,0 +1,21 @@
+```json
+{
+  "objects": [
+    {
+      "o1": "cow",
+      "attributes": ["black", "standing"]
+    },
+    {
+      "o2": "elephant",
+      "attributes": ["brown", "standing"]
+    },
+    {
+      "o3": "camera",
+      "attributes": ["silver", "stationary"]
+    }
+  ],
+  "relationships": [
+    [1, "near", 2, [[0, 9]]]
+  ]
+}
+```

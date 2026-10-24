@@ -1,0 +1,61 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["riding a bike", "wearing a helmet"]
+    },
+    {
+      "object 2": "bike",
+      "attributes": ["yellow and black", "being ridden by the child"]
+    },
+    {
+      "object 3": "bench",
+      "attributes": ["wooden", "in the background"]
+    },
+    {
+      "object 4": "table",
+      "attributes": ["red", "in the background"]
+    },
+    {
+      "object 5": "tricycle",
+      "attributes": ["brown", "stationary in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "rides",
+      2,
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      1,
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      5,
+      "behind",
+      1,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

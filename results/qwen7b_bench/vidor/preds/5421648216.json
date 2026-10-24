@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sheep1",
+      "attributes": ["black wool", "standing behind fence"]
+    },
+    {
+      "object 2": "sheep2",
+      "attributes": ["brown wool", "standing behind fence"]
+    },
+    {
+      "object 3": "sheep3",
+      "attributes": ["white wool", "standing behind fence"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "behind",
+      2,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      1,
+      "behind",
+      3,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      1,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      3,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      1,
+      [
+        [0, 44]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      2,
+      [
+        [0, 44]
+      ]
+    ]
+  ]
+}
+```

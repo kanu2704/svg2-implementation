@@ -1,0 +1,168 @@
+{
+ "dataset": "vidor",
+ "video_id": "5607805258",
+ "fps": 24.0,
+ "n_frames": 718,
+ "video_fps": 24.0,
+ "ann_frames": 718,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "cat"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.5416666666666665
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     6.125,
+     7.583333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "smell",
+   "obj": 1,
+   "spans": [
+    [
+     9.875,
+     14.416666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     1.875,
+     7.208333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     19.958333333333332,
+     25.75
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "smell",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.7916666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     11.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     20.0,
+     25.75
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     10.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     18.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     16.0,
+     25.75
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     12.0,
+     17.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1105/5607805258.mp4",
+ "video": "video.mp4"
+}

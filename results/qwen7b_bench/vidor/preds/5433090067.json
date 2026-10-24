@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing orange shirt", "standing"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing orange jacket", "running"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing red plaid shirt", "standing"]
+    },
+    {
+      "object 4": "bag",
+      "attributes": ["black", "on ground"]
+    },
+    {
+      "object 5": "sled",
+      "attributes": ["black", "on ground"]
+    },
+    {
+      "object 6": "sled",
+      "attributes": ["red", "on ground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      2,
+      "runs past",
+      5,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      2,
+      "runs past",
+      6,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      5,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      6,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      4,
+      "on ground",
+      5,
+      [
+        [0, 19]
+      ]
+    ],
+    [
+      4,
+      "on ground",
+      6,
+      [
+        [0, 19]
+      ]
+    ]
+  ]
+}
+```

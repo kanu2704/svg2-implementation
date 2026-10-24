@@ -1,0 +1,226 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": {
+        "attributes": ["brown dog", "wearing a collar"]
+      }
+    },
+    {
+      "dog2": {
+        "attributes": ["brown dog", "wearing a collar"]
+      }
+    },
+    {
+      "woman1": {
+        "attributes": ["wearing a blue shirt and shorts", "holding a bottle of water"]
+      }
+    },
+    {
+      "woman2": {
+        "attributes": ["wearing a white shirt and blue shorts", "standing near the dogs"]
+      }
+    },
+    {
+      "man1": {
+        "attributes": ["wearing a white shirt and blue shorts", "standing near the dogs"]
+      }
+    },
+    {
+      "man2": {
+        "attributes": ["wearing a white shirt and blue shorts", "standing near the dogs"]
+      }
+    },
+    {
+      "man3": {
+        "attributes": ["wearing a white shirt and blue shorts", "standing near the dogs"]
+      }
+    },
+    {
+      "bottle1": {
+        "attributes": ["water bottle", "on the ground"]
+      }
+    },
+    {
+      "bottle2": {
+        "attributes": ["water bottle", "on the ground"]
+      }
+    },
+    {
+      "bottle3": {
+        "attributes": ["water bottle", "on the ground"]
+      }
+    }
+  ],
+  "relationships": [
+    [
+      "dog1",
+      "interacts with",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "woman1",
+      "stands near",
+      "dog1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "woman1",
+      "stands near",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "woman2",
+      "stands near",
+      "dog1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "woman2",
+      "stands near",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands near",
+      "dog1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man1",
+      "stands near",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands near",
+      "dog1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man2",
+      "stands near",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands near",
+      "dog1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "man3",
+      "stands near",
+      "dog2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "bottle1",
+      "on the ground",
+      "bottle2",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "bottle1",
+      "on the ground",
+      "bottle3",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "bottle2",
+      "on the ground",
+      "bottle3",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ]
+  ]
+}
+```

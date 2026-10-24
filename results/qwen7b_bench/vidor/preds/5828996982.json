@@ -1,0 +1,80 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "sign",
+      "attributes": ["text changes over time"]
+    },
+    {
+      "object 2": "car",
+      "attributes": ["moving on the road"]
+    },
+    {
+      "object 3": "bus",
+      "attributes": ["stationary, red color"]
+    },
+    {
+      "object 4": "motorcycle",
+      "attributes": ["moving on the road"]
+    },
+    {
+      "object 5": "van",
+      "attributes": ["stationary, dark color"]
+    },
+    {
+      "object 6": "truck",
+      "attributes": ["stationary, white color"]
+    },
+    {
+      "object 7": "pedestrian",
+      "attributes": ["walking on the sidewalk"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "behind",
+      3,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      3,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      5,
+      "behind",
+      3,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      6,
+      "behind",
+      3,
+      [
+        [0, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      7,
+      "on the sidewalk",
+      3,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

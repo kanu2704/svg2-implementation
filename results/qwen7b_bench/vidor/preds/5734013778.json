@@ -1,0 +1,192 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "pigeon",
+      "attributes": ["standing", "moving"]
+    },
+    {
+      "object 2": "pigeon",
+      "attributes": ["standing", "moving"]
+    },
+    {
+      "object 3": "pigeon",
+      "attributes": ["standing", "moving"]
+    },
+    {
+      "object 4": "pigeon",
+      "attributes": ["standing", "moving"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "behind",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "behind",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "behind",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "in front of",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "in front of",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "above",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "above",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "below",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "below",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "below",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "left of",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "left of",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "left of",
+      4,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      1,
+      "right of",
+      2,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      2,
+      "right of",
+      3,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "right of",
+      4,
+      [
+        [0, 36]
+      ]
+    ]
+  ]
+}
+```

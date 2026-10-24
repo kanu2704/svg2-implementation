@@ -1,0 +1,80 @@
+{
+ "dataset": "vidor",
+ "video_id": "5504913999",
+ "fps": 29.97002997002997,
+ "n_frames": 1475,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1475,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "ski"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 1,
+   "spans": [
+    [
+     25.291933333333333,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     25.291933333333333,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     43.41003333333333,
+     49.015633333333334
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     25.291933333333333,
+     28.8288
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     43.41003333333333,
+     49.015633333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1008/5504913999.mp4",
+ "video": "video.mp4"
+}

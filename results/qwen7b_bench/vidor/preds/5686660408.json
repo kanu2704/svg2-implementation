@@ -1,0 +1,107 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "hand",
+      "attributes": ["holding object", "moving"]
+    },
+    {
+      "object 2": "object",
+      "attributes": ["being held", "changing position"]
+    },
+    {
+      "object 3": "hand",
+      "attributes": ["reaching out", "grabbing object"]
+    },
+    {
+      "object 4": "hand",
+      "attributes": ["reaching out", "grabbing object"]
+    },
+    {
+      "object 5": "hand",
+      "attributes": ["reaching out", "grabbing object"]
+    },
+    {
+      "object 6": "hand",
+      "attributes": ["reaching out", "grabbing object"]
+    },
+    {
+      "object 7": "hand",
+      "attributes": ["reaching out", "grabbing object"]
+    },
+    {
+      "object 8": "table",
+      "attributes": ["covered with objects", "static"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "grabs",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "is held by",
+      1,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "reaches for",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      4,
+      "reaches for",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      5,
+      "reaches for",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "reaches for",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      7,
+      "reaches for",
+      2,
+      [
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "on top of",
+      8,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

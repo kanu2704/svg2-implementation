@@ -1,0 +1,22 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["sitting", "wearing black shirt and jeans"]
+    },
+    {
+      "object 2": "couch",
+      "attributes": ["brown leather couch"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["brown leather chair behind the man"]
+    }
+  ],
+  "relationships": [
+    [1, "on", 2, [[0, 12]]],
+    [1, "behind", 3, [[0, 12]]]
+  ]
+}
+```

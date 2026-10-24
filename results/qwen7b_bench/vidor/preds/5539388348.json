@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wears white dress", "has red hair"]
+    },
+    {
+      "object 2": "woman2",
+      "attributes": ["wears white dress", "has blonde hair"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["wears brown shirt", "stands near woman"]
+    },
+    {
+      "object 4": "man2",
+      "attributes": ["wears red shirt", "stands near woman"]
+    },
+    {
+      "object 5": "horse",
+      "attributes": ["pulls carriage", "wears harness"]
+    },
+    {
+      "object 6": "carriage",
+      "attributes": ["white and gold", "drawn by horse"]
+    },
+    {
+      "object 7": "man3",
+      "attributes": ["wears black jacket", "stands near woman"]
+    },
+    {
+      "object 8": "man4",
+      "attributes": ["wears blue shirt", "stands near woman"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "walks with",
+      2,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      1,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      4,
+      "stands near",
+      1,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      5,
+      "pulls",
+      6,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      7,
+      "stands near",
+      1,
+      [
+        [0, 3]
+      ]
+    ],
+    [
+      8,
+      "stands near",
+      1,
+      [
+        [0, 3]
+      ]
+    ]
+  ]
+}
+```

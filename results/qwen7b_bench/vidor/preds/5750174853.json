@@ -1,0 +1,42 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "falcon",
+      "attributes": ["perched", "gray and black feathers"]
+    },
+    {
+      "object 2": "chicks",
+      "attributes": ["fluffy", "white down feathers"]
+    },
+    {
+      "object 3": "nest",
+      "attributes": ["covered with white foam", "holding chicks"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "in",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

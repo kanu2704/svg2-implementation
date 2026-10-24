@@ -1,0 +1,50 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing a light blue shirt", "short hair"]
+    },
+    {
+      "object 2": "teddy_bear",
+      "attributes": ["red hat", "white face"]
+    },
+    {
+      "object 3": "other_teddy_bear",
+      "attributes": ["gray fur", "no hat"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ],
+    [
+      2,
+      "rests on",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,86 @@
+```json
+{
+  "objects": [
+    {
+      "dog1": "A white dog with a fluffy tail and a black spot on its back."
+    },
+    {
+      "dog2": "A smaller white dog with a fluffy tail."
+    },
+    {
+      "dog3": "A brown and white dog with a fluffy tail."
+    },
+    {
+      "dog4": "A light brown dog with a fluffy tail."
+    },
+    {
+      "dog5": "A small white dog with a fluffy tail."
+    },
+    {
+      "dog6": "A light brown dog with a fluffy tail."
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "chases",
+      1,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "chases",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "chases",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "chases",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      6,
+      "chases",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

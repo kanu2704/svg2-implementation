@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["sitting", "smiling"]
+    },
+    {
+      "object 2": "bag",
+      "attributes": ["black", "on the floor"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["checkered pattern", "gray and white"]
+    },
+    {
+      "object 4": "bottles",
+      "attributes": ["yellow", "on the floor"]
+    },
+    {
+      "object 5": "girl",
+      "attributes": ["standing", "clapping hands"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["checkered pattern", "gray and white"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      1,
+      "on",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "on",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "near",
+      6,
+      [
+        [0, 20]
+      ]
+    ]
+  ]
+}
+```

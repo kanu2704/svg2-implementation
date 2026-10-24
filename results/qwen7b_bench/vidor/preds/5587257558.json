@@ -1,0 +1,65 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a beige coat", "black pants", "brown boots"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing a black jacket", "brown hat"]
+    },
+    {
+      "object 3": "camera",
+      "attributes": ["being held by the man"]
+    },
+    {
+      "object 4": "sign",
+      "attributes": ["red and white color"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "standing near",
+      "sign",
+      [
+        [0, 8],
+        [12, 20]
+      ]
+    ],
+    [
+      "man",
+      "holding",
+      "camera",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "woman",
+      "standing behind",
+      "man",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "woman",
+      "looking at",
+      "man",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "aiming",
+      "camera",
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

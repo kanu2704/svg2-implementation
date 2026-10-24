@@ -1,0 +1,78 @@
+{
+ "video": "/media/nas_mount/kanupriya/svg2_big/traser_bench/vidor/5721942178/video.mp4",
+ "task": "scene_graph",
+ "dtype": "bfloat16",
+ "vision_dtype": "bfloat16",
+ "max_objects": 40,
+ "duration_s": 7.01,
+ "video_frames": 210,
+ "video_fps": 29.97,
+ "sampled_frames": 7,
+ "sampled_idx": [
+  0,
+  34,
+  69,
+  104,
+  139,
+  174,
+  209
+ ],
+ "effective_fps": 0.999,
+ "grid_thw": [
+  4,
+  34,
+  46
+ ],
+ "raw_video_tokens": 1564,
+ "resized_hw": [
+  476,
+  644
+ ],
+ "objects_requested": 9,
+ "objects": 9,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "tokens_per_object": [
+  192,
+  224,
+  229,
+  9,
+  8,
+  8,
+  1,
+  1,
+  14
+ ],
+ "tokens_selected_union": 626,
+ "tokens_dropped_fraction": 0.6,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>"
+ ],
+ "prompt_tokens": 1760,
+ "prompt": "Output the Video Scene Graph from the video and object trajectories:\n<video>\nEach \"Object k:\" block above is one tracked object of the video, with its tokens over time; the labels <a - b sec> are its time windows. Time is counted in frames, from 0 to 6.\nAnswer with JSON only, in exactly this form:\n{\"objects\": [{\"object 1\": \"<name>\", \"attributes\": [\"<attribute>\", ...]}, {\"object 2\": \"<name>\", \"attributes\": [...]}, ...], \"relationships\": [[<subject object number>, \"<relation>\", <object number>, [[<start>, <end>], ...]], ...]}\nName every object from 1 to 9 with a short noun and list its attributes; then list every relationship (actions and spatial relations) between two of these objects, with the time spans when it holds.\n",
+ "arranged_tokens": 1091,
+ "arrange_s": 0.5,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "generate_s": 17.1,
+ "new_tokens": 531,
+ "engine": "hf",
+ "peak_gpu_gb": 15.73,
+ "json_ok": true,
+ "out_objects": 9,
+ "out_relationships": 9,
+ "out_uncertain_labels": 0,
+ "lm": "qwen7b",
+ "total_s": 18.0,
+ "gpu": "NVIDIA RTX A6000"
+}

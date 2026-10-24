@@ -1,0 +1,64 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing a white jacket", "smiling"]
+    },
+    {
+      "object 2": "woman 2",
+      "attributes": ["wearing a black jacket", "singing into a microphone"]
+    },
+    {
+      "object 3": "man",
+      "attributes": ["playing guitar", "wearing a hat"]
+    },
+    {
+      "object 4": "woman 3",
+      "attributes": ["wearing a blue top", "smiling"]
+    },
+    {
+      "object 5": "man 2",
+      "attributes": ["wearing a dark jacket", "moving quickly"]
+    },
+    {
+      "object 6": "woman 4",
+      "attributes": ["wearing a black jacket", "standing close to woman 2"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      2,
+      "singing",
+      3,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      4,
+      "near",
+      6,
+      [
+        [0, 20]
+      ]
+    ],
+    [
+      5,
+      "quickly moving",
+      null,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

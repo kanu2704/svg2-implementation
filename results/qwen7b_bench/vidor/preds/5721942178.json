@@ -1,0 +1,117 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "personA",
+      "attributes": ["wearing a helmet", "wearing a checkered shirt"]
+    },
+    {
+      "object 2": "personB",
+      "attributes": ["wearing a helmet", "wearing a black shirt"]
+    },
+    {
+      "object 3": "motorcycle",
+      "attributes": ["black and red", "with a visible license plate"]
+    },
+    {
+      "object 4": "car1",
+      "attributes": ["silver car in the background"]
+    },
+    {
+      "object 5": "car2",
+      "attributes": ["dark-colored car in the background"]
+    },
+    {
+      "object 6": "car3",
+      "attributes": ["silver car in the background"]
+    },
+    {
+      "object 7": "car4",
+      "attributes": ["silver car in the background"]
+    },
+    {
+      "object 8": "car5",
+      "attributes": ["silver car in the background"]
+    },
+    {
+      "object 9": "car6",
+      "attributes": ["silver car in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "rides on",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      4,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      5,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      6,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      7,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      8,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      9,
+      "in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

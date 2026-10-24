@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a t-shirt", "playing with a toy helicopter"]
+    },
+    {
+      "object 2": "helicopter",
+      "attributes": ["flying in the air", "being played with by the child"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["wooden surface", "holding a remote control"]
+    },
+    {
+      "object 4": "remote",
+      "attributes": ["placed on the table", "controlled by the child"]
+    },
+    {
+      "object 5": "couch",
+      "attributes": ["sitting position", "child's resting place"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["black leather", "adjacent to the couch"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays_with",
+      2,
+      [
+        ["0 - 4 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "60 - 64 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      1,
+      "sits_on",
+      5,
+      [
+        ["0 - 4 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands_by",
+      6,
+      [
+        ["44 - 48 sec", "48 - 52 sec"],
+        ["52 - 56 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"]
+      ]
+    ],
+    [
+      4,
+      "on",
+      3,
+      [
+        ["48 - 52 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "60 - 64 sec"],
+        ["64 - 68 sec", "68 - 72 sec"],
+        ["72 - 76 sec", "76 - 80 sec"]
+      ]
+    ]
+  ]
+}
+```

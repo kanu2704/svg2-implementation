@@ -1,0 +1,67 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing white shirt", "standing"]
+    },
+    {
+      "object 2": "camera",
+      "attributes": ["black and silver", "held by man"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing black dress", "standing"]
+    },
+    {
+      "object 4": "light",
+      "attributes": ["bright", "illuminating woman"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["covered with white cloth", "with objects on it"]
+    },
+    {
+      "object 6": "bottle",
+      "attributes": ["on table", "clear glass"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holds",
+      2,
+      [
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      6,
+      "on",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

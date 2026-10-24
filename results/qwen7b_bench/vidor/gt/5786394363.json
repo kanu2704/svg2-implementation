@@ -1,0 +1,177 @@
+{
+ "dataset": "vidor",
+ "video_id": "5786394363",
+ "fps": 29.97002997002997,
+ "n_frames": 298,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 298,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "ball/sports ball"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     0.5338666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     0.9009
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.26693333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.6006,
+     0.8675333333333334
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.8008000000000001
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     1.3346666666666667,
+     1.7017
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     1.5348666666666666,
+     2.5358666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "grab",
+   "obj": 1,
+   "spans": [
+    [
+     2.2022,
+     2.5358666666666667
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "hold",
+   "obj": 1,
+   "spans": [
+    [
+     7.6076,
+     7.974633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watch",
+   "obj": 3,
+   "spans": [
+    [
+     2.3356666666666666,
+     2.7027
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "away",
+   "obj": 5,
+   "spans": [
+    [
+     2.3356666666666666,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "towards",
+   "obj": 5,
+   "spans": [
+    [
+     4.0040000000000004,
+     6.973633333333334
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0012/5786394363.mp4",
+ "video": "video.mp4"
+}

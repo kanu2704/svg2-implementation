@@ -1,0 +1,44 @@
+{
+ "dataset": "vidor",
+ "video_id": "5549276998",
+ "fps": 25.0,
+ "n_frames": 140,
+ "video_fps": 25.0,
+ "ann_frames": 140,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "kangaroo"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "kangaroo"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "kangaroo"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "kangaroo"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "kangaroo"
+  },
+  {
+   "col": 5,
+   "gt_id": 5,
+   "name": "kangaroo"
+  }
+ ],
+ "relations": [],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1009/5549276998.mp4",
+ "video": "video.mp4"
+}

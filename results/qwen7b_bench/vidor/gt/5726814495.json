@@ -1,0 +1,47 @@
+{
+ "dataset": "vidor",
+ "video_id": "5726814495",
+ "fps": 29.97002997002997,
+ "n_frames": 1292,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1292,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "bird"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bird"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     43.043
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     43.043
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1111/5726814495.mp4",
+ "video": "video.mp4"
+}

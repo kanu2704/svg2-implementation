@@ -1,0 +1,88 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "kangaroo",
+      "attributes": ["jumping"]
+    },
+    {
+      "object 2": "kangaroo",
+      "attributes": ["lying down"]
+    },
+    {
+      "object 3": "kangaroo",
+      "attributes": ["jumping"]
+    },
+    {
+      "object 4": "kangaroo",
+      "attributes": ["jumping"]
+    },
+    {
+      "object 5": "kangaroo",
+      "attributes": ["running"]
+    },
+    {
+      "object 6": "kangaroo",
+      "attributes": ["lying down"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "jumping",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      2,
+      "lying down",
+      6,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      3,
+      "jumping",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "running",
+      1,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "running",
+      3,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "running",
+      4,
+      [
+        [0, 4]
+      ]
+    ],
+    [
+      5,
+      "running",
+      6,
+      [
+        [0, 4]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,107 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "jet ski",
+      "attributes": ["yellow and black", "moving"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing yellow shirt", "standing on jet ski"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing blue swim trunks", "walking in water"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing blue swim trunks", "walking in water"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["wearing blue swim trunks", "walking in water"]
+    },
+    {
+      "object 6": "child",
+      "attributes": ["wearing blue swim trunks", "walking in water"]
+    },
+    {
+      "object 7": "woman",
+      "attributes": ["wearing pink dress", "standing near water"]
+    },
+    {
+      "object 8": "man",
+      "attributes": ["wearing white shirt", "standing near water"]
+    },
+    {
+      "object 9": "group of people",
+      "attributes": ["wearing swimwear", "walking together"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "on top of",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["12 - 16 sec", "16 - 20 sec"]
+      ]
+    ],
+    [
+      3,
+      "near",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      4,
+      "near",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      5,
+      "near",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      6,
+      "near",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      9,
+      "behind",
+      7,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ],
+    [
+      9,
+      "behind",
+      8,
+      [
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["sitting", "wearing a light blue shirt and green shorts"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["sitting", "wearing a gray top and glasses"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec", "8 - 12 sec", "12 - 16 sec", "16 - 20 sec"]
+      ]
+    ]
+  ]
+}
+```

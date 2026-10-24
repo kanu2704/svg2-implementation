@@ -1,0 +1,124 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "players",
+      "attributes": ["wearing blue and white uniforms", "playing soccer"]
+    },
+    {
+      "object 2": "ball",
+      "attributes": ["moving on the ground", "being kicked by players"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["white plastic chair in the background"]
+    },
+    {
+      "object 4": "dust",
+      "attributes": ["visible in the air due to movement"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["buildings and trees visible"]
+    },
+    {
+      "object 6": "field",
+      "attributes": ["open space for playing soccer"]
+    },
+    {
+      "object 7": "spectators",
+      "attributes": ["standing near the field"]
+    },
+    {
+      "object 8": "lighting",
+      "attributes": ["artificial lights illuminating the scene"]
+    }
+  ],
+  "relationships": [
+    [
+      "players",
+      "kicking",
+      "ball",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "players",
+      "running",
+      "field",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "ball",
+      "rolling",
+      "field",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "players",
+      "watching",
+      "spectators",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "players",
+      "standing",
+      "background",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "players",
+      "near",
+      "chair",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      "players",
+      "under",
+      "lighting",
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

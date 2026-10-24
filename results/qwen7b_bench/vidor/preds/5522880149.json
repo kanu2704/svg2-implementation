@@ -1,0 +1,112 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing a red backpack"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a black backpack"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["wearing a blue backpack"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing a blue backpack"]
+    },
+    {
+      "object 5": "person",
+      "attributes": ["wearing a green jacket and beige pants"]
+    },
+    {
+      "object 6": "person",
+      "attributes": ["wearing a brown backpack"]
+    },
+    {
+      "object 7": "person",
+      "attributes": ["wearing a black backpack and shorts"]
+    },
+    {
+      "object 8": "person",
+      "attributes": ["wearing a red backpack and dark pants"]
+    },
+    {
+      "object 9": "person",
+      "attributes": ["wearing a blue backpack and shorts"]
+    },
+    {
+      "object 10": "person",
+      "attributes": ["wearing a red backpack and dark pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing next to",
+      2,
+      [
+        [8, 12],
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "standing next to",
+      3,
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "standing next to",
+      4,
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "standing next to",
+      6,
+      [
+        [12, 16],
+        [16, 20]
+      ]
+    ],
+    [
+      7,
+      "standing next to",
+      8,
+      [
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      7,
+      "standing next to",
+      9,
+      [
+        [20, 24],
+        [24, 28]
+      ]
+    ],
+    [
+      8,
+      "standing next to",
+      10,
+      [
+        [20, 24],
+        [24, 28]
+      ]
+    ]
+  ]
+}
+```

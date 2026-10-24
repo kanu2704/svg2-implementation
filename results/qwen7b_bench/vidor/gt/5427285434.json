@@ -1,0 +1,107 @@
+{
+ "dataset": "vidor",
+ "video_id": "5427285434",
+ "fps": 29.97002997002997,
+ "n_frames": 615,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 615,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "sofa"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "lean on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.5348666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     10.276933333333334,
+     10.9109
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 2,
+   "spans": [
+    [
+     17.484133333333332,
+     20.520500000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     17.484133333333332,
+     20.487133333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "beneath",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     5.005
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     17.484133333333332,
+     20.487133333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1102/5427285434.mp4",
+ "video": "video.mp4"
+}

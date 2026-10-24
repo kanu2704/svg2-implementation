@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "skier",
+      "attributes": ["wearing a purple jacket", "wearing white pants", "wearing a helmet"]
+    },
+    {
+      "object 2": "skier",
+      "attributes": ["wearing a pink jacket", "wearing white pants", "wearing a helmet"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "skiing with",
+      2,
+      [
+        ["44 - 52 sec", "48 - 52 sec"]
+      ]
+    ]
+  ]
+}
+```

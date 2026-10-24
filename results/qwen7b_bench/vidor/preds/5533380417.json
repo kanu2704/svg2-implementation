@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "baby",
+      "attributes": ["sleeping", "wearing pink outfit"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["holding baby", "wearing plaid shirt"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["brown wooden chair", "rocking"]
+    },
+    {
+      "object 4": "tv",
+      "attributes": ["black screen", "on the right side of the frame"]
+    }
+  ],
+  "relationships": [
+    [
+      "man",
+      "holding",
+      "baby",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "sitting on",
+      "chair",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "looking at",
+      "baby",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "rocking",
+      "chair",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "holding",
+      "baby",
+      [
+        [0, 16]
+      ]
+    ],
+    [
+      "man",
+      "looking at",
+      "tv",
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

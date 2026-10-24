@@ -1,0 +1,98 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "people",
+      "attributes": ["standing", "dressed in black"]
+    },
+    {
+      "object 2": "person with red snowboard",
+      "attributes": ["holding a red snowboard", "standing still"]
+    },
+    {
+      "object 3": "people",
+      "attributes": ["standing", "dressed in black"]
+    },
+    {
+      "object 4": "people",
+      "attributes": ["standing", "dressed in black"]
+    },
+    {
+      "object 5": "red snowboard",
+      "attributes": ["on the ground", "red color"]
+    },
+    {
+      "object 6": "person with yellow snowboard",
+      "attributes": ["wearing a yellow snowboard", "standing still"]
+    },
+    {
+      "object 7": "person falling",
+      "attributes": ["falling down", "wearing dark clothing"]
+    },
+    {
+      "object 8": "yellow snowboard",
+      "attributes": ["on the ground", "yellow color"]
+    },
+    {
+      "object 9": "man standing",
+      "attributes": ["standing", "wearing a jacket and jeans"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "holding",
+      5,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      6,
+      "standing near",
+      8,
+      [
+        [8, 12],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      7,
+      "falling",
+      9,
+      [
+        [12, 16]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,135 @@
+{
+ "dataset": "vidor",
+ "video_id": "5429688959",
+ "fps": 29.97002997002997,
+ "n_frames": 2490,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 2490,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "guitar"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     44.4444
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "play(instrument)",
+   "obj": 1,
+   "spans": [
+    [
+     57.190466666666666,
+     83.083
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     23.9239,
+     24.257566666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     31.698333333333334,
+     32.032000000000004
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     65.73233333333333,
+     66.066
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     82.4824,
+     82.91616666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     44.4444
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "behind",
+   "obj": 1,
+   "spans": [
+    [
+     57.190466666666666,
+     83.04963333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     44.4444
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     57.190466666666666,
+     83.04963333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1015/5429688959.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,44 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing helmet", "riding bike"]
+    },
+    {
+      "object 2": "bike",
+      "attributes": ["red frame", "black handlebars", "white wheels"]
+    },
+    {
+      "object 3": "garage door",
+      "attributes": ["white color", "partially open"]
+    },
+    {
+      "object 4": "car",
+      "attributes": ["white color", "station wagon style"]
+    },
+    {
+      "object 5": "background",
+      "attributes": ["parked cars", "sidewalk visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "rides",
+      2,
+      [
+        [0, 6]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      4,
+      [
+        [0, 6]
+      ]
+    ]
+  ]
+}
+```

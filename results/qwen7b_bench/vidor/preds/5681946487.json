@@ -1,0 +1,56 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wet", "bathing"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["holding child", "washing"]
+    },
+    {
+      "object 3": "bathtub",
+      "attributes": ["red", "water-filled"]
+    },
+    {
+      "object 4": "cup",
+      "attributes": ["white", "used for washing"]
+    }
+  ],
+  "relationships": [
+    [
+      "woman",
+      "washing",
+      "child",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "woman",
+      "holding",
+      "child",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "child",
+      "in",
+      "bathtub",
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      "woman",
+      "using",
+      "cup",
+      [
+        [16, 28]
+      ]
+    ]
+  ]
+}
+```

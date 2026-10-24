@@ -1,0 +1,116 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a backpack", "wearing shorts"]
+    },
+    {
+      "object 2": "man with camera",
+      "attributes": ["wearing a cap", "holding a camera"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["sitting on a bench", "wearing a hat"]
+    },
+    {
+      "object 4": "man sitting",
+      "attributes": ["wearing a jacket", "sitting next to the woman"]
+    },
+    {
+      "object 5": "man in gray shirt",
+      "attributes": ["wearing a backpack", "standing and moving around"]
+    },
+    {
+      "object 6": "man with backpack",
+      "attributes": ["wearing a backpack", "walking and looking around"]
+    },
+    {
+      "object 7": "man in black jacket",
+      "attributes": ["wearing a black jacket", "standing and looking around"]
+    },
+    {
+      "object 8": "man holding camera",
+      "attributes": ["wearing a cap", "holding a camera, standing and moving around"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "stands near",
+      5,
+      [
+        ["4 - 8 sec", "16 - 20 sec"],
+        ["36 - 40 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      5,
+      [
+        ["4 - 8 sec", "16 - 20 sec"],
+        ["36 - 40 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        ["16 - 20 sec", "36 - 40 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      6,
+      [
+        ["16 - 20 sec", "36 - 40 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        ["16 - 20 sec", "36 - 40 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      7,
+      [
+        ["16 - 20 sec", "36 - 40 sec"],
+        ["52 - 56 sec", "56 - 60 sec"]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      8,
+      [
+        ["4 - 8 sec", "16 - 20 sec"],
+        ["36 - 40 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "64 - 68 sec"]
+      ]
+    ],
+    [
+      2,
+      "stands near",
+      8,
+      [
+        ["4 - 8 sec", "16 - 20 sec"],
+        ["36 - 40 sec", "52 - 56 sec"],
+        ["56 - 60 sec", "64 - 68 sec"]
+      ]
+    ]
+  ]
+}
+```
