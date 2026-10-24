@@ -1,0 +1,108 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing red and gray shirt", "playing with toy phone"]
+    },
+    {
+      "object 2": "doll",
+      "attributes": ["wearing white outfit", "lying on couch"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown leather couch", "background of scene"]
+    },
+    {
+      "object 4": "other child",
+      "attributes": ["wearing red and white shirt", "playing in background"]
+    },
+    {
+      "object 5": "woman",
+      "attributes": ["wearing red sweater", "smiling and interacting with children"]
+    },
+    {
+      "object 6": "television",
+      "attributes": ["on in the background", "showing content"]
+    },
+    {
+      "object 7": "toy phone",
+      "attributes": ["being held by child", "red and white color scheme"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      7,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      1,
+      "near",
+      2,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      1,
+      "near",
+      3,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      1,
+      "near",
+      5,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      1,
+      "near",
+      6,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      4,
+      "near",
+      2,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      5,
+      "near",
+      2,
+      [
+        [0, 53]
+      ]
+    ],
+    [
+      6,
+      "above",
+      3,
+      [
+        [0, 53]
+      ]
+    ]
+  ]
+}
+```

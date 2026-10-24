@@ -1,0 +1,87 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a plaid shirt", "playing with toys"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["red and yellow color", "on the floor"]
+    },
+    {
+      "object 3": "toy",
+      "attributes": ["yellow color", "being held by girl"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["black color", "in the background"]
+    },
+    {
+      "object 5": "toy",
+      "attributes": ["blue color", "being held by girl"]
+    },
+    {
+      "object 6": "toy",
+      "attributes": ["green color", "being held by girl"]
+    },
+    {
+      "object 7": "toy",
+      "attributes": ["purple color", "being held by girl"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      3,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["92 - 96 sec", "108 - 112 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      5,
+      [
+        ["80 - 84 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      6,
+      [
+        ["80 - 84 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      1,
+      "plays with",
+      7,
+      [
+        ["80 - 84 sec", "92 - 96 sec"]
+      ]
+    ],
+    [
+      2,
+      "near",
+      1,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["92 - 96 sec", "108 - 112 sec"]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      1,
+      [
+        ["0 - 4 sec", "80 - 84 sec"],
+        ["92 - 96 sec", "108 - 112 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,47 @@
+{
+ "dataset": "vidor",
+ "video_id": "12857712065",
+ "fps": 29.97,
+ "n_frames": 147,
+ "video_fps": 29.97,
+ "ann_frames": 147,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "bottle"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     4.904904904904905
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     4.904904904904905
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1007/12857712065.mp4",
+ "video": "video.mp4"
+}

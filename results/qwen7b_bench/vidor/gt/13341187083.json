@@ -1,0 +1,52 @@
+{
+ "dataset": "vidor",
+ "video_id": "13341187083",
+ "fps": 29.97002997002997,
+ "n_frames": 236,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 236,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "dog"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "dog"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 2,
+   "spans": [
+    [
+     2.5692333333333335,
+     4.971633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     2.5692333333333335,
+     4.971633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1005/13341187083.mp4",
+ "video": "video.mp4"
+}

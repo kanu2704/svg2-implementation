@@ -1,0 +1,234 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing black outfit", "playing with toy"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing red shirt", "playing with toy"]
+    },
+    {
+      "object 3": "child",
+      "attributes": ["wearing green shirt", "playing with toy"]
+    },
+    {
+      "object 4": "child",
+      "attributes": ["wearing black outfit", "playing with toy"]
+    },
+    {
+      "object 5": "adult",
+      "attributes": ["wearing blue shirt", "supervising children"]
+    },
+    {
+      "object 6": "adult",
+      "attributes": ["wearing blue shirt", "supervising children"]
+    },
+    {
+      "object 7": "ball",
+      "attributes": ["rolling on floor"]
+    },
+    {
+      "object 8": "skateboard",
+      "attributes": ["hovering in air"]
+    },
+    {
+      "object 9": "toy",
+      "attributes": ["being played with by child"]
+    },
+    {
+      "object 10": "toy",
+      "attributes": ["being played with by child"]
+    },
+    {
+      "object 11": "toy",
+      "attributes": ["being played with by child"]
+    },
+    {
+      "object 12": "toy",
+      "attributes": ["being played with by child"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      9,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [44, 48]
+      ]
+    ],
+    [
+      2,
+      "plays with",
+      10,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [44, 48]
+      ]
+    ],
+    [
+      3,
+      "plays with",
+      11,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [44, 48]
+      ]
+    ],
+    [
+      4,
+      "plays with",
+      12,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [28, 32],
+        [32, 36],
+        [36, 40],
+        [44, 48]
+      ]
+    ],
+    [
+      5,
+      "supervises",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ],
+    [
+      6,
+      "supervises",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ],
+    [
+      5,
+      "supervises",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ],
+    [
+      6,
+      "supervises",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ],
+    [
+      5,
+      "stands near",
+      7,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ],
+    [
+      6,
+      "stands near",
+      8,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24],
+        [24, 28],
+        [28, 32],
+        [32, 36],
+         [36, 40],
+         [40, 44],
+         [44, 48]
+      ]
+    ]
+  ]
+}
+```

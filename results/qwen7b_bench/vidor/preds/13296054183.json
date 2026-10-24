@@ -1,0 +1,74 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "cyclist",
+      "attributes": ["wearing a helmet", "wearing a dark uniform"]
+    },
+    {
+      "object 2": "cyclist",
+      "attributes": ["wearing a helmet", "wearing a dark uniform"]
+    },
+    {
+      "object 3": "cyclist",
+      "attributes": ["wearing a helmet", "wearing a dark uniform"]
+    },
+    {
+      "object 4": "cyclist",
+      "attributes": ["wearing a helmet", "wearing a dark uniform"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "riding next to",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      1,
+      "riding next to",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "riding next to",
+      3,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      2,
+      "riding next to",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "riding next to",
+      4,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

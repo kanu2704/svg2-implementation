@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "airplane",
+      "attributes": ["large", "metallic", "static"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["wearing hat", "wearing glasses", "smiling"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["wearing dress", "standing near airplane"]
+    },
+    {
+      "object 4": "people",
+      "attributes": ["visitors", "standing around airplane"]
+    },
+    {
+      "object 5": "hat",
+      "attributes": ["brown", "on man's head"]
+    }
+  ],
+  "relationships": [
+    [
+      2,
+      "near",
+      1,
+      [
+        [0, 36]
+      ]
+    ],
+    [
+      3,
+      "near",
+      1,
+      [
+        [4, 36]
+      ]
+    ],
+    [
+      4,
+      "near",
+      1,
+      [
+        [4, 36]
+      ]
+    ],
+    [
+      5,
+      "on",
+      2,
+      [
+        [16, 36]
+      ]
+    ]
+  ]
+}
+```

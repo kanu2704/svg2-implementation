@@ -1,0 +1,102 @@
+{
+ "dataset": "vidor",
+ "video_id": "11966080214",
+ "fps": 29.97002997002997,
+ "n_frames": 1531,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1531,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "child"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     22.455766666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     37.037,
+     51.08436666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hit",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     1.4681333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hit",
+   "obj": 1,
+   "spans": [
+    [
+     3.6036,
+     6.139466666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hit",
+   "obj": 1,
+   "spans": [
+    [
+     16.182833333333335,
+     18.2182
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     51.051
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     51.051
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1150/11966080214.mp4",
+ "video": "video.mp4"
+}

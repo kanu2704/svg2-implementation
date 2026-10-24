@@ -1,0 +1,118 @@
+{
+ "dataset": "vidor",
+ "video_id": "12231797435",
+ "fps": 29.97002997002997,
+ "n_frames": 345,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 345,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "crab"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 1,
+   "pred": "hold",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.875533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.26693333333333336
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     8.5085,
+     8.875533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     0.16683333333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     8.875533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     8.875533333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     8.908900000000001,
+     10.977633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.908900000000001,
+     10.977633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0043/12231797435.mp4",
+ "video": "video.mp4"
+}

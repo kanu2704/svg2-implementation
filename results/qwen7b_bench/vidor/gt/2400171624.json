@@ -1,0 +1,96 @@
+{
+ "dataset": "vidor",
+ "video_id": "2400171624",
+ "fps": 29.96969696969697,
+ "n_frames": 996,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 996,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "ski"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 2,
+   "spans": [
+    [
+     6.206268958543984,
+     8.341759352881699
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "ride",
+   "obj": 2,
+   "spans": [
+    [
+     9.009100101112235,
+     9.276036400404449
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     6.306370070778565
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     6.306370070778565
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "away",
+   "obj": 1,
+   "spans": [
+    [
+     4.004044489383215,
+     6.306370070778565
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     6.206268958543984,
+     8.341759352881699
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1110/2400171624.mp4",
+ "video": "video.mp4"
+}

@@ -1,0 +1,113 @@
+{
+ "dataset": "vidor",
+ "video_id": "12682618843",
+ "fps": 29.97002997002997,
+ "n_frames": 1458,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 1458,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "toy"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "bite",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.5025
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "push",
+   "obj": 1,
+   "spans": [
+    [
+     7.741066666666667,
+     8.908900000000001
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "hug",
+   "obj": 1,
+   "spans": [
+    [
+     2.0353666666666665,
+     7.140466666666667
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     13.980633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     30.8308,
+     39.773066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     13.980633333333333
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     30.8308,
+     39.773066666666665
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "away",
+   "obj": 0,
+   "spans": [
+    [
+     12.012,
+     13.980633333333333
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1023/12682618843.mp4",
+ "video": "video.mp4"
+}

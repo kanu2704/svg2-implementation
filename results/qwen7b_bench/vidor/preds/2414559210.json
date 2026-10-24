@@ -1,0 +1,40 @@
+```json
+{
+  "objects": [
+    {
+      "o1": "person",
+      "attributes": ["wearing a black jacket", "rowing"]
+    },
+    {
+      "o2": "person",
+      "attributes": ["wearing a life vest", "rowing"]
+    },
+    {
+      "o3": "kayak",
+      "attributes": ["blue and yellow kayak", "being rowed by two people"]
+    },
+    {
+      "o4": "boat",
+      "attributes": ["large, red and white boat", "stationary in the background"]
+    },
+    {
+      "o5": "boat",
+      "attributes": ["smaller blue and green boats", "lined up along the dock"]
+    },
+    {
+      "o6": "dock",
+      "attributes": ["wooden structure", "supporting the boats"]
+    },
+    {
+      "o7": "water",
+      "attributes": ["calm water surface", "reflecting the boats and kayaks"]
+    }
+  ],
+  "relationships": [
+    [1, "rowing", 3, [[0, 8]]],
+    [2, "rowing", 3, [[0, 8]]],
+    [3, "in front of", 4, [[0, 8]]],
+    [5, "lined up on", 6, [[0, 8]]]
+  ]
+}
+```

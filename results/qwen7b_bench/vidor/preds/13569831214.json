@@ -1,0 +1,89 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Skier",
+      "attributes": ["wearing blue jacket", "red helmet", "skiing"]
+    },
+    {
+      "object 2": "Skier 2",
+      "attributes": ["wearing teal jacket", "black pants", "skiing"]
+    },
+    {
+      "object 3": "Skier 3",
+      "attributes": ["wearing brown jacket", "skiing"]
+    },
+    {
+      "object 4": "Skier 4",
+      "attributes": ["wearing black jacket", "skiing"]
+    },
+    {
+      "object 5": "Skier 5",
+      "attributes": ["wearing green jacket", "skiing"]
+    },
+    {
+      "object 6": "Skier 6",
+      "attributes": ["wearing yellow jacket", "skiing"]
+    },
+    {
+      "object 7": "Skier 7",
+      "attributes": ["wearing brown jacket", "skiing"]
+    }
+  ],
+  "relationships": [
+    [
+      "Skier 1",
+      "skis behind",
+      "Skier 2",
+      [
+        [8, 16],
+        [28, 36]
+      ]
+    ],
+    [
+      "Skier 2",
+      "skis behind",
+      "Skier 3",
+      [
+        [36, 40]
+      ]
+    ],
+    [
+      "Skier 3",
+      "skis behind",
+      "Skier 4",
+      [
+        [8, 16],
+        [28, 36]
+      ]
+    ],
+    [
+      "Skier 4",
+      "skis behind",
+      "Skier 5",
+      [
+        [8, 16],
+        [28, 36]
+      ]
+    ],
+    [
+      "Skier 5",
+      "skis behind",
+      "Skier 6",
+      [
+        [8, 16],
+        [28, 36]
+      ]
+    ],
+    [
+      "Skier 6",
+      "skis behind",
+      "Skier 7",
+      [
+        [8, 16],
+        [28, 36]
+      ]
+    ]
+  ]
+}
+```

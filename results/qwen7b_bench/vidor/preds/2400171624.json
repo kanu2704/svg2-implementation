@@ -1,0 +1,38 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "skier",
+      "attributes": ["wearing a helmet", "wearing ski gear"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["wearing a blue jacket", "wearing a backpack"]
+    },
+    {
+      "object 3": "snowboarder",
+      "attributes": ["wearing a white helmet", "wearing snowboarding gear"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "skiing",
+      "object 3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ],
+    [
+      "object 2",
+      "standing",
+      "object 3",
+      [
+        [0, 4],
+        [8, 12]
+      ]
+    ]
+  ]
+}
+```

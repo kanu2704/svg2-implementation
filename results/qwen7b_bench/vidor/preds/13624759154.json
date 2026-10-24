@@ -1,0 +1,78 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Person A",
+      "attributes": ["sitting at table", "wearing camouflage jacket"]
+    },
+    {
+      "object 2": "Person B",
+      "attributes": ["sitting at table", "wearing striped shirt"]
+    },
+    {
+      "object 3": "Person C",
+      "attributes": ["sitting at table", "wearing gray hoodie"]
+    },
+    {
+      "object 4": "Cards",
+      "attributes": ["on table", "being moved by individuals"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "interacts with",
+      3,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      1,
+      "moves cards",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      2,
+      "moves cards",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ],
+    [
+      3,
+      "moves cards",
+      4,
+      [
+        [0, 4],
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

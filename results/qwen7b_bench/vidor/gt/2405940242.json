@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "2405940242",
+ "fps": 29.96969696969697,
+ "n_frames": 415,
+ "video_fps": 29.96969696969697,
+ "ann_frames": 415,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "adult"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     4.37108190091001,
+     8.708796764408493
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "knock",
+   "obj": 0,
+   "spans": [
+    [
+     8.341759352881699,
+     9.17593528816987
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     4.37108190091001,
+     8.975733063700709
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.00808897876643,
+     13.847320525783621
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 0,
+   "spans": [
+    [
+     4.37108190091001,
+     13.813953488372093
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "towards",
+   "obj": 0,
+   "spans": [
+    [
+     4.37108190091001,
+     10.977755308392316
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/0043/2405940242.mp4",
+ "video": "video.mp4"
+}

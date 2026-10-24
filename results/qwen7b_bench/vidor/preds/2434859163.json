@@ -1,0 +1,97 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["wearing a hat", "holding a camera"]
+    },
+    {
+      "object 2": "man 2",
+      "attributes": ["wearing a backpack", "standing behind man 1"]
+    },
+    {
+      "object 3": "man 3",
+      "attributes": ["wearing a green shirt", "standing to the left of man 1"]
+    },
+    {
+      "object 4": "man 4",
+      "attributes": ["wearing a black shirt", "standing in front of man 1"]
+    },
+    {
+      "object 5": "polar bear",
+      "attributes": ["swimming underwater", "white fur"]
+    },
+    {
+      "object 6": "water",
+      "attributes": ["transparent", "reflects light"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "looking at",
+      5,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      2,
+      "standing behind",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      3,
+      "standing to the left of",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      4,
+      "standing in front of",
+      1,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ],
+    [
+      5,
+      "swimming in",
+      6,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12],
+        [12, 16],
+        [16, 20],
+        [20, 24]
+      ]
+    ]
+  ]
+}
+```

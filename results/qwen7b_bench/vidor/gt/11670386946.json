@@ -1,0 +1,161 @@
+{
+ "dataset": "vidor",
+ "video_id": "11670386946",
+ "fps": 29.97,
+ "n_frames": 998,
+ "video_fps": 29.97,
+ "ann_frames": 998,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "car"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "aircraft"
+  },
+  {
+   "col": 2,
+   "gt_id": 2,
+   "name": "adult"
+  },
+  {
+   "col": 3,
+   "gt_id": 3,
+   "name": "adult"
+  },
+  {
+   "col": 4,
+   "gt_id": 4,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     2.3023023023023024
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     2.3023023023023024
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "above",
+   "obj": 2,
+   "spans": [
+    [
+     8.008008008008009,
+     11.01101101101101
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 2,
+   "spans": [
+    [
+     10.01001001001001,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     7.040373707040374,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 4,
+   "spans": [
+    [
+     18.51851851851852,
+     32.99966633299967
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     8.008008008008009,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 2,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     8.008008008008009,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     7.040373707040374,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     8.008008008008009,
+     17.884551217884553
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "next to",
+   "obj": 1,
+   "spans": [
+    [
+     18.51851851851852,
+     32.99966633299967
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1017/11670386946.mp4",
+ "video": "video.mp4"
+}

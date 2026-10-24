@@ -1,0 +1,38 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "boy",
+      "attributes": ["wearing green shirt", "playing with toy car"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["red and black color", "moving on the floor"]
+    },
+    {
+      "object 3": "plastic bag",
+      "attributes": ["transparent material", "covering part of the toy car"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      2,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "24 - 28 sec"]
+      ]
+    ],
+    [
+      2,
+      "covered by",
+      3,
+      [
+        ["0 - 4 sec", "8 - 12 sec"],
+        ["16 - 20 sec", "24 - 28 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,186 @@
+```json
+{
+  "objects": [
+    {
+      "1": "man in striped shirt",
+      "attributes": ["wearing a striped shirt", "riding a tricycle"]
+    },
+    {
+      "2": "man in red shirt",
+      "attributes": ["wearing a red shirt", "riding a tricycle"]
+    },
+    {
+      "3": "man in white shirt",
+      "attributes": ["wearing a white shirt", "riding a bicycle"]
+    },
+    {
+      "4": "man in beige vest",
+      "attributes": ["wearing a beige vest", "riding a bicycle"]
+    },
+    {
+      "5": "rickshaw with yellow cover",
+      "attributes": ["yellow cover", "being pulled by a man in a striped shirt"]
+    },
+    {
+      "6": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a red shirt"]
+    },
+    {
+      "7": "man in green shirt",
+      "attributes": ["wearing a green shirt", "standing near the rickshaws"]
+    },
+    {
+      "8": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "9": "man in brown jacket",
+      "attributes": ["wearing a brown jacket", "standing near the rickshaws"]
+    },
+    {
+      "10": "man in blue jeans",
+      "attributes": ["wearing blue jeans", "riding a bicycle"]
+    },
+    {
+      "11": "man in white shirt and blue jeans",
+      "attributes": ["wearing a white shirt and blue jeans", "riding a bicycle"]
+    },
+    {
+      "12": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a white shirt and blue jeans"]
+    },
+    {
+      "13": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "14": "man in brown jacket",
+      "attributes": ["wearing a brown jacket", "standing near the rickshaws"]
+    },
+    {
+      "15": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "16": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a white shirt and black pants"]
+    },
+    {
+      "17": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "18": "man in brown jacket",
+      "attributes": ["wearing a brown jacket", "standing near the rickshaws"]
+    },
+    {
+      "19": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "20": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a white shirt and black pants"]
+    },
+    {
+      "21": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "22": "man in brown jacket",
+      "attributes": ["wearing a brown jacket", "standing near the rickshaws"]
+    },
+    {
+      "23": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "24": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a white shirt and black pants"]
+    },
+    {
+      "25": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "26": "man in brown jacket",
+      "attributes": ["wearing a brown jacket", "standing near the rickshaws"]
+    },
+    {
+      "27": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    },
+    {
+      "28": "rickshaw with red cover",
+      "attributes": ["red cover", "being pulled by a man in a white shirt and black pants"]
+    },
+    {
+      "29": "man in white shirt and black pants",
+      "attributes": ["wearing a white shirt and black pants", "standing near the rickshaws"]
+    }
+  ],
+  "relationships": [
+    [1, "pulls", 5, [[0, 4]]],
+    [2, "pulls", 6, [[0, 4]]],
+    [3, "rides", 1, [[0, 4]]],
+    [4, "rides", 2, [[0, 4]]],
+    [3, "rides", 3, [[0, 4]]],
+    [4, "rides", 4, [[0, 4]]],
+    [5, "pulls", 1, [[4, 8]]],
+    [6, "pulls", 2, [[4, 8]]],
+    [3, "rides", 5, [[4, 8]]],
+    [4, "rides", 6, [[4, 8]]],
+    [5, "pulls", 1, [[8, 12]]],
+    [6, "pulls", 2, [[8, 12]]],
+    [3, "rides", 5, [[8, 12]]],
+    [4, "rides", 6, [[8, 12]]],
+    [5, "pulls", 1, [[12, 16]]],
+    [6, "pulls", 2, [[12, 16]]],
+    [3, "rides", 5, [[12, 16]]],
+    [4, "rides", 6, [[12, 16]]],
+    [5, "pulls", 1, [[16, 20]]],
+    [6, "pulls", 2, [[16, 20]]],
+    [3, "rides", 5, [[16, 20]]],
+    [4, "rides", 6, [[16, 20]]],
+    [5, "pulls", 1, [[20, 24]]],
+    [6, "pulls", 2, [[20, 24]]],
+    [3, "rides", 5, [[20, 24]]],
+    [4, "rides", 6, [[20, 24]]],
+    [5, "pulls", 1, [[24, 28]]],
+    [6, "pulls", 2, [[24, 28]]],
+    [3, "rides", 5, [[24, 28]]],
+    [4, "rides", 6, [[24, 28]]],
+    [5, "pulls", 1, [[28, 32]]],
+    [6, "pulls", 2, [[28, 32]]],
+    [3, "rides", 5, [[28, 32]]],
+    [4, "rides", 6, [[28, 32]]],
+    [5, "pulls", 1, [[32, 36]]],
+    [6, "pulls", 2, [[32, 36]]],
+    [3, "rides", 5, [[32, 36]]],
+    [4, "rides", 6, [[32, 36]]],
+    [5, "pulls", 1, [[36, 40]]],
+    [6, "pulls", 2, [[36, 40]]],
+    [3, "rides", 5, [[36, 40]]],
+    [4, "rides", 6, [[36, 40]]],
+    [5, "pulls", 1, [[40, 44]]],
+    [6, "pulls", 2, [[40, 44]]],
+    [3, "rides", 5, [[40, 44]]],
+    [4, "rides", 6, [[40, 44]]],
+    [5, "pulls", 1, [[44, 48]]],
+    [6, "pulls", 2, [[44, 48]]],
+    [3, "rides", 5, [[44, 48]]],
+    [4, "rides", 6, [[44, 48]]],
+    [5, "pulls", 1, [[48, 52]]],
+    [6, "pulls", 2, [[48, 52]]],
+    [3, "rides", 5, [[48, 52]]],
+    [4, "rides", 6, [[48, 52]]],
+    [5, "pulls", 1, [[52, 56]]],
+    [6, "pulls", 2, [[52, 56]]],
+    [3, "rides", 5, [[52, 56]]],
+    [4, "rides", 6, [[52, 56]]],
+    [5, "pulls", 1, [[56, 60]]],
+    [6, "pulls", 2, [[56, 60]]],
+    [3, "rides", 5, [[56, 60]]],
+    [4, "rides", 6, [[56, 60]]]
+  ]
+}
+```

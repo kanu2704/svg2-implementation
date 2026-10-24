@@ -1,0 +1,96 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "children",
+      "attributes": ["wearing white shirts", "standing in a line"]
+    },
+    {
+      "object 2": "children",
+      "attributes": ["wearing blue dresses", "holding red objects"]
+    },
+    {
+      "object 3": "children",
+      "attributes": ["wearing dark blue uniforms", "standing in a line"]
+    },
+    {
+      "object 4": "children",
+      "attributes": ["wearing green sweaters", "holding red objects"]
+    },
+    {
+      "object 5": "children",
+      "attributes": ["wearing green sweaters", "standing in a line"]
+    },
+    {
+      "object 6": "children",
+      "attributes": ["wearing plaid dresses", "holding red objects"]
+    },
+    {
+      "object 7": "children",
+      "attributes": ["wearing dark blue uniforms", "standing in a line"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      4,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      5,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      5,
+      "next to",
+      6,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      6,
+      "next to",
+      7,
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing a blue shirt with yellow design", "holding pink dumbbells"]
+    },
+    {
+      "object 2": "dumbbell",
+      "attributes": ["pink color", "with 'nu' written on it"]
+    },
+    {
+      "object 3": "dumbbell",
+      "attributes": ["pink color", "with 'nu' written on it"]
+    },
+    {
+      "object 4": "chair",
+      "attributes": ["brown fabric"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "holding",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "holding",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      4,
+      "behind",
+      1,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

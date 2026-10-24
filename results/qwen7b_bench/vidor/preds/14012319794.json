@@ -1,0 +1,129 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["wearing pink outfit", "playing with toy"]
+    },
+    {
+      "object 2": "toy car",
+      "attributes": ["red and yellow color", "on the floor"]
+    },
+    {
+      "object 3": "couch",
+      "attributes": ["brown leather", "in the background"]
+    },
+    {
+      "object 4": "tricycle",
+      "attributes": ["pink and purple", "on the floor"]
+    },
+    {
+      "object 5": "table",
+      "attributes": ["wooden", "near the couch"]
+    },
+    {
+      "object 6": "chair",
+      "attributes": ["black metal", "next to the table"]
+    },
+    {
+      "object 7": "stuffed animal",
+      "attributes": ["large size", "on the couch"]
+    },
+    {
+      "object 8": "fireplace",
+      "attributes": ["black frame", "against the wall"]
+    },
+    {
+      "object 9": "bookshelf",
+      "attributes": ["filled with books", "behind the couch"]
+    },
+    {
+      "object 10": "basketball hoop",
+      "attributes": ["red and white", "attached to a stand"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "plays with",
+      4,
+      [
+        [84, 88]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      2,
+      [
+        [76, 80],
+        [84, 88]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      3,
+      [
+        [76, 80]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      5,
+      [
+        [76, 80]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      6,
+      [
+        [76, 80]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      7,
+      [
+        [76, 80]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      8,
+      [
+        [96, 100]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      9,
+      [
+        [84, 88]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      10,
+      [
+        [84, 88]
+      ]
+    ],
+    [
+      1,
+      "stands near",
+      10,
+      [
+        [88, 92]
+      ]
+    ]
+  ]
+}
+```

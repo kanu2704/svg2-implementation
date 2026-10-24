@@ -1,0 +1,82 @@
+{
+ "video": "/media/nas_mount/kanupriya/svg2_big/traser_bench/vidor/13311361995/video.mp4",
+ "task": "scene_graph",
+ "dtype": "bfloat16",
+ "vision_dtype": "bfloat16",
+ "max_objects": 40,
+ "duration_s": 12.08,
+ "video_frames": 362,
+ "video_fps": 29.97,
+ "sampled_frames": 12,
+ "sampled_idx": [
+  0,
+  32,
+  65,
+  98,
+  131,
+  164,
+  196,
+  229,
+  262,
+  295,
+  328,
+  361
+ ],
+ "effective_fps": 0.993,
+ "grid_thw": [
+  6,
+  72,
+  40
+ ],
+ "raw_video_tokens": 4320,
+ "resized_hw": [
+  1008,
+  560
+ ],
+ "objects_requested": 8,
+ "objects": 8,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "tokens_per_object": [
+  444,
+  310,
+  192,
+  83,
+  569,
+  1200,
+  323,
+  132
+ ],
+ "tokens_selected_union": 2785,
+ "tokens_dropped_fraction": 0.355,
+ "window_labels": [
+  "<0 - 4 sec>",
+  "<4 - 8 sec>",
+  "<8 - 12 sec>"
+ ],
+ "prompt_tokens": 4517,
+ "prompt": "Output the Video Scene Graph from the video and object trajectories:\n<video>\nEach \"Object k:\" block above is one tracked object of the video, with its tokens over time; the labels <a - b sec> are its time windows. Time is counted in frames, from 0 to 11.\nAnswer with JSON only, in exactly this form:\n{\"objects\": [{\"object 1\": \"<name>\", \"attributes\": [\"<attribute>\", ...]}, {\"object 2\": \"<name>\", \"attributes\": [...]}, ...], \"relationships\": [[<subject object number>, \"<relation>\", <object number>, [[<start>, <end>], ...]], ...]}\nName every object from 1 to 8 with a short noun and list its attributes; then list every relationship (actions and spatial relations) between two of these objects, with the time spans when it holds.\n",
+ "arranged_tokens": 1411,
+ "arrange_s": 1.7,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "generate_s": 22.8,
+ "new_tokens": 363,
+ "engine": "hf",
+ "peak_gpu_gb": 16.21,
+ "json_ok": true,
+ "out_objects": 8,
+ "out_relationships": 7,
+ "out_uncertain_labels": 0,
+ "lm": "qwen7b",
+ "total_s": 25.5,
+ "gpu": "NVIDIA RTX A6000"
+}

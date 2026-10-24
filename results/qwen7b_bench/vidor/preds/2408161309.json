@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "Man in Red",
+      "attributes": ["wearing red robe", "standing still"]
+    },
+    {
+      "object 2": "Man in Blue",
+      "attributes": ["wearing blue robe", "standing still"]
+    },
+    {
+      "object 3": "Man in White",
+      "attributes": ["wearing white robe", "holding staff", "standing still"]
+    },
+    {
+      "object 4": "Man in Green",
+      "attributes": ["wearing green robe", "standing still"]
+    },
+    {
+      "object 5": "Man in Green and White",
+      "attributes": ["wearing green and white robe", "standing still"]
+    },
+    {
+      "object 6": "Man in Yellow",
+      "attributes": ["wearing yellow robe", "standing still"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "next to",
+      2,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      2,
+      "next to",
+      3,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      3,
+      "next to",
+      4,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      4,
+      "next to",
+      5,
+      [
+        [0, 14]
+      ]
+    ],
+    [
+      5,
+      "next to",
+      6,
+      [
+        [0, 14]
+      ]
+    ]
+  ]
+}
+```

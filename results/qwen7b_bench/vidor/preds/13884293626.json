@@ -1,0 +1,76 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "laptop",
+      "attributes": ["open", "on table"]
+    },
+    {
+      "object 2": "speaker",
+      "attributes": ["brown suit", "speaking at podium"]
+    },
+    {
+      "object 3": "audience",
+      "attributes": ["attentive", "seated"]
+    },
+    {
+      "object 4": "bottles",
+      "attributes": ["on podium", "visible"]
+    },
+    {
+      "object 5": "woman",
+      "attributes": ["wearing glasses", "attentive listener"]
+    }
+  ],
+  "relationships": [
+    [
+      "speaker",
+      "stands behind",
+      "podium",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "laptop",
+      "in front of",
+      "speaker",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "bottles",
+      "on",
+      "podium",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "woman",
+      "sits in audience",
+      "left side",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "woman",
+      "wears",
+      "glasses",
+      [
+        [0, 128]
+      ]
+    ],
+    [
+      "woman",
+      "attentively listens to",
+      "speaker",
+      [
+        [0, 128]
+      ]
+    ]
+  ]
+}
+```
