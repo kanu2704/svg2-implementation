@@ -1,0 +1,38 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "balloon",
+      "attributes": ["purple", "inflatable"]
+    },
+    {
+      "object 2": "baby",
+      "attributes": ["sleeping", "wearing pink outfit"]
+    },
+    {
+      "object 3": "hand",
+      "attributes": ["holding balloon", "visible in the foreground"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "above",
+      2,
+      [
+        [0, 4],
+        [4, 8],
+        [8, 12]
+      ]
+    ],
+    [
+      3,
+      "holding",
+      1,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```

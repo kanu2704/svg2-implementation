@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["wearing black shirt", "wearing white shorts"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing pink floral kimono", "wearing red hair accessory"]
+    },
+    {
+      "object 3": "grandmother",
+      "attributes": ["wearing floral dress", "wearing glasses"]
+    },
+    {
+      "object 4": "assistant",
+      "attributes": ["wearing pink shirt", "wearing black pants"]
+    },
+    {
+      "object 5": "observer",
+      "attributes": ["wearing white shirt", "wearing black pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "helping",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      3,
+      "attending to",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      4,
+      "observing",
+      2,
+      [
+        [0, 28]
+      ]
+    ],
+    [
+      5,
+      "standing behind",
+      4,
+      [
+        [0, 28]
+      ]
+    ]
+  ]
+}
+```

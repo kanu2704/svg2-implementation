@@ -1,0 +1,47 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing orange shirt", "wearing red and white striped pants"]
+    },
+    {
+      "object 2": "girl",
+      "attributes": ["wearing yellow shirt", "wearing red and white striped pants"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "claps hands",
+      2,
+      [
+        [0, 4],
+        [8, 12],
+        [20, 24],
+        [28, 32],
+        [40, 44],
+        [52, 56],
+        [60, 64],
+        [76, 80],
+        [84, 88]
+      ]
+    ],
+    [
+      1,
+      "dances",
+      2,
+      [
+        [4, 8],
+        [12, 16],
+        [24, 28],
+        [32, 36],
+        [48, 52],
+        [64, 68],
+        [72, 76],
+        [88, 92]
+      ]
+    ]
+  ]
+}
+```

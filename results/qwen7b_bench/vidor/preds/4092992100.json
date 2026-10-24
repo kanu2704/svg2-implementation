@@ -1,0 +1,31 @@
+```json
+{
+  "objects": [
+    {
+      "1": "cyclist",
+      "attributes": ["wearing red and white jersey", "wearing black shorts", "wearing knee pads"]
+    },
+    {
+      "2": "cyclist",
+      "attributes": ["wearing yellow and blue jersey", "wearing black shorts", "wearing helmet"]
+    },
+    {
+      "3": "cyclist",
+      "attributes": ["wearing white helmet", "wearing black shorts", "wearing knee pads"]
+    },
+    {
+      "4": "cyclist",
+      "attributes": ["wearing yellow and blue jersey", "wearing black shorts", "wearing helmet"]
+    },
+    {
+      "5": "cyclist",
+      "attributes": ["wearing white helmet", "wearing black shorts", "wearing knee pads"]
+    }
+  ],
+  "relationships": [
+    [1, "riding", 2, [[0, 8], [12, 16]]],
+    [2, "riding", 4, [[0, 8], [12, 16]]],
+    [3, "riding", 5, [[0, 8], [12, 16]]]
+  ]
+}
+```

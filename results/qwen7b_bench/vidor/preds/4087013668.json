@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "child",
+      "attributes": ["shirtless", "sitting"]
+    },
+    {
+      "object 2": "woman",
+      "attributes": ["wearing white shirt", "seated"]
+    },
+    {
+      "object 3": "pumpkin",
+      "attributes": ["orange", "large"]
+    },
+    {
+      "object 4": "knife",
+      "attributes": ["orange", "sharp"]
+    },
+    {
+      "object 5": "newspaper",
+      "attributes": ["printed", "underneath"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      2,
+      "observes",
+      1,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      3,
+      "rests on",
+      5,
+      [
+        [0, 60]
+      ]
+    ],
+    [
+      4,
+      "used by",
+      1,
+      [
+        [0, 60]
+      ]
+    ]
+  ]
+}
+```
