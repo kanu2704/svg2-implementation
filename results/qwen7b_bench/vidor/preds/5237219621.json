@@ -1,0 +1,336 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["speaking", "wearing glasses"]
+    },
+    {
+      "object 2": "woman 2",
+      "attributes": ["listening", "wearing glasses"]
+    },
+    {
+      "object 3": "woman 3",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 5": "woman 4",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 6": "man 2",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 7": "man 3",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 8": "woman 5",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 9": "woman 6",
+      "attributes": ["sitting", "wearing glasses"]
+    },
+    {
+      "object 10": "man 4",
+      "attributes": ["sitting", "wearing glasses"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "speaks to",
+      2,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      2,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      3,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      3,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      4,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      4,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      5,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      5,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      6,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      6,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      7,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      7,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      8,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      8,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      9,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      9,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      1,
+      "looks at",
+      10,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ],
+    [
+      10,
+      "listens to",
+      1,
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"],
+        ["40 - 44 sec", "44 - 48 sec"],
+        ["60 - 64 sec", "64 - 68 sec"],
+        ["68 - 72 sec", "72 - 76 sec"],
+        ["76 - 80 sec", "80 - 84 sec"]
+      ]
+    ]
+  ]
+}
+```

@@ -1,0 +1,72 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "woman",
+      "attributes": ["standing", "wearing blue shirt"]
+    },
+    {
+      "object 2": "man",
+      "attributes": ["standing", "wearing gray shirt"]
+    },
+    {
+      "object 3": "boy",
+      "attributes": ["standing", "wearing orange shirt"]
+    },
+    {
+      "object 4": "oven",
+      "attributes": ["white", "has a digital display"]
+    },
+    {
+      "object 5": "microwave",
+      "attributes": ["white", "above the oven"]
+    },
+    {
+      "object 6": "stove",
+      "attributes": ["white", "below the microwave"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "near",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      2,
+      "near",
+      4,
+      [
+        [8, 16]
+      ]
+    ],
+    [
+      3,
+      "near",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      5,
+      "above",
+      4,
+      [
+        [0, 12]
+      ]
+    ],
+    [
+      6,
+      "below",
+      5,
+      [
+        [0, 12]
+      ]
+    ]
+  ]
+}
+```

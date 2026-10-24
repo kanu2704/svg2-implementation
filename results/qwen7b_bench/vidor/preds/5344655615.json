@@ -1,0 +1,60 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "man",
+      "attributes": ["playing piano", "wearing hoodie"]
+    },
+    {
+      "object 2": "piano",
+      "attributes": ["black", "keys being played"]
+    },
+    {
+      "object 3": "chair",
+      "attributes": ["red", "wooden legs"]
+    },
+    {
+      "object 4": "desk",
+      "attributes": ["white", "paper on top"]
+    },
+    {
+      "object 5": "room",
+      "attributes": ["indoor setting", "chairs and desk visible"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing",
+      2,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      3,
+      "in front of",
+      2,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      4,
+      "on",
+      3,
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      5,
+      "part of",
+      1,
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

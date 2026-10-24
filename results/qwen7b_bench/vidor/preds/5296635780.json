@@ -1,0 +1,52 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "bride",
+      "attributes": ["wearing a white dress", "pearl necklace", "hair in a bun"]
+    },
+    {
+      "object 2": "groom",
+      "attributes": ["wearing a black suit", "white shirt", "pink tie", "wearing a boutonniere"]
+    }
+  ],
+  "relationships": [
+    [
+      "bride",
+      "smiling at",
+      "groom",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "groom",
+      "smiling at",
+      "bride",
+      [
+        [0, 4],
+        [8, 12],
+        [16, 20]
+      ]
+    ],
+    [
+      "bride",
+      "holding bouquet",
+      "bride",
+      [
+        [0, 24]
+      ]
+    ],
+    [
+      "groom",
+      "holding bouquet",
+      "groom",
+      [
+        [0, 24]
+      ]
+    ]
+  ]
+}
+```

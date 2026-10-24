@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "car",
+      "attributes": ["moving", "headlights on"]
+    },
+    {
+      "object 2": "truck",
+      "attributes": ["moving", "headlights on"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "passing",
+      2,
+      [
+        [4, 8]
+      ]
+    ]
+  ]
+}
+```

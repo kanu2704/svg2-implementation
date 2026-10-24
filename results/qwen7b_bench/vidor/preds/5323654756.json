@@ -1,0 +1,128 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing pink shirt", "playing with balloon"]
+    },
+    {
+      "object 2": "boy",
+      "attributes": ["wearing green shirt", "sitting on chair"]
+    },
+    {
+      "object 3": "woman",
+      "attributes": ["standing behind children", "wearing blue jacket"]
+    },
+    {
+      "object 4": "man",
+      "attributes": ["wearing black sweater", "standing near children"]
+    },
+    {
+      "object 5": "child",
+      "attributes": ["wearing blue jacket", "sitting on chair"]
+    },
+    {
+      "object 6": "child",
+      "attributes": ["wearing black jacket", "sitting on chair"]
+    },
+    {
+      "object 7": "child",
+      "attributes": ["wearing black jacket", "sitting on chair"]
+    },
+    {
+      "object 8": "child",
+      "attributes": ["wearing black jacket", "sitting on chair"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "playing with",
+      2,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      2,
+      "sitting next to",
+      5,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      2,
+      "sitting next to",
+      6,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      2,
+      "sitting next to",
+      7,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      2,
+      "sitting next to",
+      8,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      5,
+      "sitting next to",
+      6,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      5,
+      "sitting next to",
+      7,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      5,
+      "sitting next to",
+      8,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      6,
+      "sitting next to",
+      7,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      6,
+      "sitting next to",
+      8,
+      [
+        [0, 67]
+      ]
+    ],
+    [
+      7,
+      "sitting next to",
+      8,
+      [
+        [0, 67]
+      ]
+    ]
+  ]
+}
+```

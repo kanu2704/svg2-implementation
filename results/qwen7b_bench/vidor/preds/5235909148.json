@@ -1,0 +1,22 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "person",
+      "attributes": ["wearing harness", "sitting on swing"]
+    },
+    {
+      "object 2": "swing",
+      "attributes": ["swinging", "attached to rope"]
+    },
+    {
+      "object 3": "rope",
+      "attributes": ["supporting swing", "connected to person"]
+    }
+  ],
+  "relationships": [
+    [1, "on", 2, [[4, 8], [8, 12]]],
+    [1, "attached to", 3, [[4, 8], [8, 12]]]
+  ]
+}
+```

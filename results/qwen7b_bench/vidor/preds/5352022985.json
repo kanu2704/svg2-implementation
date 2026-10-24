@@ -1,0 +1,24 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["running", "jumping"]
+    },
+    {
+      "object 2": "person",
+      "attributes": ["walking", "standing"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "chases",
+      2,
+      [
+        [0, 46]
+      ]
+    ]
+  ]
+}
+```

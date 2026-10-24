@@ -1,0 +1,48 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["wearing a red shirt with a panda face", "standing on a checkered floor"]
+    },
+    {
+      "object 2": "child",
+      "attributes": ["wearing a grey sweater and pink pants", "standing behind the girl"]
+    },
+    {
+      "object 3": "table",
+      "attributes": ["wooden table with a yellow top", "positioned near the girl and child"]
+    },
+    {
+      "object 4": "refrigerator",
+      "attributes": ["white refrigerator", "visible in the background"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "standing next to",
+      2,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "standing in front of",
+      3,
+      [
+        [0, 8]
+      ]
+    ],
+    [
+      1,
+      "standing in front of",
+      4,
+      [
+        [0, 8]
+      ]
+    ]
+  ]
+}
+```

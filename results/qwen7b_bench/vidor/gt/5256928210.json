@@ -1,0 +1,91 @@
+{
+ "dataset": "vidor",
+ "video_id": "5256928210",
+ "fps": 29.97002997002997,
+ "n_frames": 606,
+ "video_fps": 29.97002997002997,
+ "ann_frames": 606,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 0,
+   "name": "dog"
+  },
+  {
+   "col": 1,
+   "gt_id": 1,
+   "name": "adult"
+  }
+ ],
+ "relations": [
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     3.5368666666666666
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "watch",
+   "obj": 1,
+   "spans": [
+    [
+     19.853166666666667,
+     20.220200000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "caress",
+   "obj": 0,
+   "spans": [
+    [
+     1.7350666666666668,
+     20.220200000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "watch",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.220200000000002
+    ]
+   ]
+  },
+  {
+   "subj": 0,
+   "pred": "in front of",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     20.220200000000002
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "next to",
+   "obj": 0,
+   "spans": [
+    [
+     0.0,
+     20.220200000000002
+    ]
+   ]
+  }
+ ],
+ "video_source": "/media/nas_mount/kanupriya/svg2_big/vidor/videos/video/1160/5256928210.mp4",
+ "video": "video.mp4"
+}

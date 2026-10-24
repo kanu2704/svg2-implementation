@@ -1,0 +1,99 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "dog",
+      "attributes": ["black fur", "sitting"]
+    },
+    {
+      "object 2": "toy",
+      "attributes": ["hanging", "colorful"]
+    },
+    {
+      "object 3": "fan",
+      "attributes": ["rotating blades", "lighted"]
+    },
+    {
+      "object 4": "person",
+      "attributes": ["wearing black pants", "standing"]
+    },
+    {
+      "object 5": "ball",
+      "attributes": ["yellow", "on floor"]
+    },
+    {
+      "object 6": "rug",
+      "attributes": ["patterned", "on floor"]
+    },
+    {
+      "object 7": "hedgehog toy",
+      "attributes": ["attached to toy", "colorful"]
+    },
+    {
+      "object 8": "cat",
+      "attributes": ["brown fur", "playing with toy"]
+    }
+  ],
+  "relationships": [
+    [
+      "object 1",
+      "interacts with",
+      "object 7",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "object 8",
+      "plays with",
+      "object 7",
+      [
+        ["12 - 16 sec", "16 - 20 sec"],
+        ["20 - 24 sec", "24 - 28 sec"],
+        ["28 - 32 sec", "32 - 36 sec"],
+        ["36 - 40 sec", "40 - 44 sec"]
+      ]
+    ],
+    [
+      "object 2",
+      "hangs from",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "object 4",
+      "stands near",
+      "object 1",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ],
+    [
+      "object 5",
+      "lies on",
+      "object 6",
+      [
+        ["0 - 4 sec", "4 - 8 sec"],
+        ["8 - 12 sec", "12 - 16 sec"],
+        ["16 - 20 sec", "20 - 24 sec"],
+        ["24 - 28 sec", "28 - 32 sec"],
+        ["32 - 36 sec", "36 - 40 sec"]
+      ]
+    ]
+  ]
+}
+```

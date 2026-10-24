@@ -1,0 +1,68 @@
+```json
+{
+  "objects": [
+    {
+      "lion1": "A lioness lying down, relaxed posture with occasional head movements.",
+      "attributes": ["relaxed", "lying down"]
+    },
+    {
+      "lion2": "Another lioness lying down, similar relaxed posture to the first lioness.",
+      "attributes": ["relaxed", "lying down"]
+    },
+    {
+      "possum": "A possum standing upright, facing away from the camera."
+    },
+    {
+      "person1": "A person sitting in a vehicle, partially visible."
+    },
+    {
+      "person2": "Another person sitting in a vehicle, partially visible."
+    },
+    {
+      "vehicle": "A safari vehicle with two people inside."
+    }
+  ],
+  "relationships": [
+    [
+      "lion1",
+      "near",
+      "lion2",
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      "lion1",
+      "near",
+      "possum",
+      [
+        [48, 56]
+      ]
+    ],
+    [
+      "lion2",
+      "near",
+      "possum",
+      [
+        [48, 56]
+      ]
+    ],
+    [
+      "person1",
+      "in",
+      "vehicle",
+      [
+        [0, 56]
+      ]
+    ],
+    [
+      "person2",
+      "in",
+      "vehicle",
+      [
+        [0, 56]
+      ]
+    ]
+  ]
+}
+```

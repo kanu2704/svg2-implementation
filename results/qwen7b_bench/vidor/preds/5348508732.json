@@ -1,0 +1,49 @@
+```json
+{
+  "objects": [
+    {
+      "object 1": "girl",
+      "attributes": ["sitting", "wearing brown jacket"]
+    },
+    {
+      "object 2": "dog",
+      "attributes": ["brown fur", "wearing collar"]
+    },
+    {
+      "object 3": "person",
+      "attributes": ["standing", "wearing red jacket and gray pants"]
+    },
+    {
+      "object 4": "dog",
+      "attributes": ["black fur", "wearing collar"]
+    }
+  ],
+  "relationships": [
+    [
+      1,
+      "interacts with",
+      4,
+      [
+        [0, 8],
+        [12, 16]
+      ]
+    ],
+    [
+      2,
+      "approaches",
+      4,
+      [
+        [12, 16]
+      ]
+    ],
+    [
+      3,
+      "stands near",
+      4,
+      [
+        [0, 16]
+      ]
+    ]
+  ]
+}
+```
