@@ -56,7 +56,8 @@ def ask(client, model, messages, settings, max_tokens=4096, tries=2):
                 parsed = extract_json(resp.choices[0].message.content or "")
                 if parsed is not None:
                     return parsed
-                last = f"{name}: no JSON in reply"
+                why = resp.choices[0].finish_reason
+                last = f"{name}: no JSON in reply" + (" (cut off at max_tokens)" if why == "length" else f" ({why})")
             except Exception as e:  # noqa: BLE001
                 last = f"{name}: {type(e).__name__}: {str(e)[:200]}"
             log.warning("%s attempt %d (%s) failed after %.0f s: %s", model, attempt + 1, name, time.time() - t0, last)

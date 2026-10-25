@@ -42,6 +42,8 @@ from interp import pairs_lenient as PL  # noqa: E402
 
 CHUNK = 50                                      # words per request, as before
 SETTINGS = dict(temperature=0.0)                # as before
+MAX_TOKENS = 16384      # only a cap on the reply: a thinking model (Nemotron) reasons before the JSON; Kimi K3 had 4096
+TIMEOUT = 600           # seconds to wait for one reply
 OUT = E.REPO / "results" / "judge_rerun"
 FATAL = [(("410", "end of life", "End of Life"), "the model was retired by NVIDIA; choose another model"),
          (("401", "403", "Unauthorized", "Forbidden"), "the key was refused; check it (python3 tools/rejudge.py --list)"),
@@ -101,10 +103,10 @@ def ft_sets():
 def key_from_env():
     from nim import nim_client
     try:
-        return nim_client(timeout=180)
+        return nim_client(timeout=TIMEOUT)
     except SystemExit:
         os.environ["NVIDIA_API_KEY"] = getpass.getpass("NVIDIA key from build.nvidia.com (hidden, starts with nvapi-): ").strip()
-        return nim_client(timeout=180)
+        return nim_client(timeout=TIMEOUT)
 
 
 def parse(reply, n):
@@ -119,7 +121,7 @@ def request(client, model, part):
     items = [{"i": n, "type": k.split("\t")[0], "reference": k.split("\t")[1], "predicted": k.split("\t")[2]}
              for n, k in enumerate(part)]
     reply = ask(client, model, [{"role": "user", "content": E.JUDGE_PROMPT % json.dumps(items)}], dict(SETTINGS),
-                max_tokens=4096)
+                max_tokens=MAX_TOKENS)
     return {part[i]: c for i, c in parse(reply, len(part)).items()}
 
 
@@ -129,7 +131,7 @@ def test(client, model):
     for attempt in range(2):
         try:
             reply = ask(client, model, [{"role": "user", "content": E.JUDGE_PROMPT % json.dumps(TEST)}], dict(SETTINGS),
-                        max_tokens=4096, tries=1)
+                        max_tokens=MAX_TOKENS, tries=1)
         except RuntimeError as e:
             if attempt:
                 raise SystemExit(f"{model} does not answer: {str(e)[:300]}\n(python3 tools/rejudge.py --list shows the "
@@ -385,7 +387,9 @@ def main():
     ap.add_argument("--count", action="store_true", help="only count the words judged / left")
     ap.add_argument("--pages", action="store_true", help="only write the pages from the saved verdicts")
     ap.add_argument("--workers", type=int, default=4, help="requests at a time (default 4)")
+    ap.add_argument("--max_tokens", type=int, default=MAX_TOKENS, help=f"cap on one reply (default {MAX_TOKENS})")
     args = ap.parse_args()
+    globals()["MAX_TOKENS"] = args.max_tokens
     if args.list is not None:
         client = key_from_env()
         ids = sorted(m.id for m in client.models.list().data)
