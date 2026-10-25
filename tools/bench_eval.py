@@ -657,17 +657,20 @@ def pair_report(gt, pred, stats, judge, thr=0.5):
     return objects, rows, counts
 
 
-def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
+def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None, root=None, judge=None, model="TRASER", note=""):
     """<dataset>/PAIRS.md: for n random videos (fixed seed), every object pair the humans or TRASER mention,
-    side by side, so one can see which pairs TRASER covers, misses, reverses or adds."""
+    side by side, so one can see which pairs TRASER covers, misses, reverses or adds.
+    root / model: another model's answers (<root>/<dataset>/preds), named `model` on the page; note: a line under
+    the title."""
     import random
-    judge = Judge()
-    done = [v for v in video_ids(dataset) if (RESULTS / dataset / "preds" / f"{v}.json").exists()]
+    judge = judge or Judge()
+    root = Path(root or RESULTS)
+    done = [v for v in video_ids(dataset) if (root / dataset / "preds" / f"{v}.json").exists()]
     videos = videos or sorted(random.Random(seed).sample(done, min(n, len(done))))
-    path = Path(path or RESULTS / dataset / "PAIRS.md")
+    path = Path(path or root / dataset / "PAIRS.md")
     overview, sections = [], []
     for v in videos:
-        gt, pred, stats = load_video(dataset, v)
+        gt, pred, stats = load_video(dataset, v, root)
         objects, rows, c = pair_report(gt, pred, stats, judge, thr)
         sc = score_video(gt, pred, stats, judge, "lenient", thr)
         anchor = re.sub(r"[^a-z0-9_-]", "", v.lower())
@@ -721,6 +724,11 @@ def write_pairs(dataset, videos=None, n=10, seed=0, thr=0.5, path=None):
             f"{tot['pairs in both']} in both, {tot['missed by TRASER']} missed, {tot['reversed']} reversed, "
             f"{tot['object not given']} with an object not given, "
             f"{tot['only TRASER']} only TRASER.\n\n" + _md_table(overview) + "\n" + "\n".join(sections))
+    if model != "TRASER":
+        text = text.replace("TRASER", model)
+    if note:
+        title, rest = text.split("\n\n", 1)
+        text = f"{title}\n\n{note}\n\n{rest}"
     path.write_text(text)
     return path
 

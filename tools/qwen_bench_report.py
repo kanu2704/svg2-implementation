@@ -11,6 +11,7 @@ answers on the same videos next to it. A word no judge was asked about counts as
 """
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -124,6 +125,14 @@ def main():
         judge.check()
         judge.ask_all(pairs)
         judge.save()
+    for ds in loaded:     # the 10 videos of TRASER's <dataset>/PAIRS.md, pair by pair, for a direct comparison
+        own = E.RESULTS / ds / "PAIRS.md"
+        vids = re.findall(r"^## (\S+)$", own.read_text(), re.M) if own.exists() else None
+        if vids and all(v in loaded[ds]["qwen7b"] for v in vids):
+            E.write_pairs(ds, videos=vids, root=QRES, judge=judge, model="Qwen-7B",
+                          note=f"The same {len(vids)} videos as TRASER's page "
+                               f"([`results/traser_bench/{ds}/PAIRS.md`](../../traser_bench/{ds}/PAIRS.md)), with the "
+                               "answers of Qwen2.5-VL-7B-Instruct (not fine-tuned) in TRASER's pipeline (`../README.md`).")
     res = scores(loaded, judge)
     QRES.mkdir(parents=True, exist_ok=True)
     (QRES / "scores.json").write_text(json.dumps(res, indent=1))
