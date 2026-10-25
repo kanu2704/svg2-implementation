@@ -86,6 +86,42 @@ def words():
     return {s: {k for k in ks if k.split("\t")[1] != k.split("\t")[2]} for s, ks in src.items()}
 
 
+class Spy(E.Judge):
+    """A judge that only notes which word pairs a table looks up."""
+    def __init__(self):
+        super().__init__()
+        self.into = set()
+
+    def verdict_by_key(self, k):
+        self.into.add(k)
+        return None, None
+
+
+def parts(src):
+    """{part of the tables: the word pairs it needs}, in the order they are judged: experiment 2's relation word
+    (setting 0, 1, 2), Table 2, fine-tuning, then experiment 2's objects and the remaining words."""
+    spy, out = Spy(), {}
+    groups = [("experiment 2, setting 0 (its own answer): relation word", None, None),
+              ("experiment 2, setting 1 (fresh): relation word", "fresh", "relation"),
+              ("experiment 2, setting 2 (after its own answer): relation word", "answer", "relation")]
+    for ds in DS_NAME:
+        vids = PL.load(str(IC.OUT / "raw"), str(IC.RESULTS), ds)
+        for name, ctx, what in groups + [("experiment 2, setting 1 (fresh): object", "fresh", "object"),
+                                         ("experiment 2, setting 2 (after its own answer): object", "answer", "object")]:
+            spy.into = out.setdefault(name, set())
+            if ctx is None:
+                setting0(spy, vids, ds)
+            else:
+                for k in (1, 5):
+                    e2_counts(spy, vids, what, k, rows=[r for r in E2_ROWS if r[0] == ctx])
+    order = [g for g, _, _ in groups] + list(src)[:2] + ["fine-tuning", "experiment 2, setting 1 (fresh): object",
+                                                         "experiment 2, setting 2 (after its own answer): object"]
+    out.update({s: src[s] for s in src if s != "experiment 2"})
+    out = {g: {k for k in out[g] if k.split("\t")[1] != k.split("\t")[2]} for g in order}
+    out["other words (older experiment 2 runs, extra top-5 words)"] = set().union(*src.values()) - set().union(*out.values())
+    return out
+
+
 def ft_models():
     return [m for m in S.NAMES if m == "traser" or (F.OUT / m).exists()]
 
@@ -255,11 +291,11 @@ def setting0(judge, vids, ds):
     return n, ok
 
 
-def e2_counts(judge, vids, what, k):
+def e2_counts(judge, vids, what, k, rows=None):
     """{row label: (pairs, {input: right})}, selected as pairs_lenient.table selects them; "same" = the missed pairs
     that setting 2 also tested (their answer was not cut off), asked fresh."""
     out = {}
-    for ctx, group, label in E2_ROWS:
+    for ctx, group, label in rows or E2_ROWS:
         items = []
         for d, names in vids:
             pairs = d.get("missed", []) + d.get("written", []) if group == "all human pairs" else \
@@ -439,10 +475,17 @@ def main():
     todo_all = sorted(set().union(*src.values()))
     judge = Solo(args.model)
     judge.mine().update({k: "mismatch" for k in todo_all if UNNAMED.fullmatch(k.split("\t")[2])})
-    todo = [k for k in todo_all if k not in judge.mine()]
-    print(f"{len(todo_all)} different word pairs to judge: " + ", ".join(f"{s} {len(ks)}" for s, ks in src.items()))
-    print(f"{len(todo_all) - len(todo)} judged by {args.model} already, {len(todo)} left "
-          f"({-(-len(todo) // CHUNK)} requests of {CHUNK} words)")
+    groups = parts(src)
+    first = {}
+    for i, ks in enumerate(groups.values()):
+        for k in ks:
+            first.setdefault(k, i)
+    todo = sorted((k for k in todo_all if k not in judge.mine()), key=lambda k: (first.get(k, len(groups)), k))
+    print(f"{len(todo_all) - len(todo)} of {len(todo_all)} word pairs judged by {args.model}, {len(todo)} left "
+          f"({-(-len(todo) // CHUNK)} requests of {CHUNK} words). By part, in the order they are judged:")
+    for g, ks in groups.items():
+        done = sum(k in judge.mine() for k in ks)
+        print(f"  {g}: {done} of {len(ks)}" + (" (all judged)" if done == len(ks) else ""))
     if args.count:
         return 0
     if args.check:
