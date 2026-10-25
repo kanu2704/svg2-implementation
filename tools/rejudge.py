@@ -233,9 +233,26 @@ def check(judge, todo_all, n, workers):
 
 
 # ----------------------------------------------------------------------------- experiment 2
-E2_ROWS = [("fresh", "all human pairs", "setting 1 (fresh), every human pair"), ("fresh", "missed", "↳ missed"),
-           ("fresh", "written", "↳ written"), ("fresh", "same", "setting 1 on setting 2's pairs"),
-           ("answer", "missed", "setting 2 (after its own answer), missed")]
+E2_ROWS = [("fresh", "all human pairs", "setting 1, all {n}"), ("fresh", "missed", "↳ missed {n}"),
+           ("fresh", "written", "↳ written {n}"), ("fresh", "same", "setting 1 on the {n}"),
+           ("answer", "missed", "setting 2, same {n}")]
+INPUTS = [("clean", "with video"), ("zeros", "video blanked"), ("other_video", "other video")]
+DS_NAME = {"pvsg": "PVSG", "svg2test": "SVG2test", "vidor": "VidOR"}
+
+
+def setting0(judge, vids, ds):
+    """(human pairs, pairs TRASER wrote in its own answer with a word the judge accepts for one of the human words)."""
+    n = ok = 0
+    for d, _ in vids:
+        pred = E.parse_prediction(Path(IC.RESULTS, ds, "preds", f"{d['video']}.json").read_text())
+        said = {}
+        for s, w, o, _ in pred["relations"]:
+            said.setdefault((s, o), []).append(w)
+        for p in d.get("missed", []) + d.get("written", []):
+            n += 1
+            ok += any(E.is_right(judge.category("relation", h, w), "lenient") for w in said.get((p["s_k"], p["o_k"]), [])
+                      for h in p["words"])
+    return n, ok
 
 
 def e2_counts(judge, vids, what, k):
@@ -327,21 +344,37 @@ def page(model, judge, old, src, left):
         L += [""]
 
     L += ["## Experiment 2 (TRASER fills in the relation word of a human pair)", "",
-          "Setting 1 (fresh): its own object list, no relations; every human pair of every video. Setting 2 (after its "
-          "own answer): its relation list re-opened; the missed pairs of the answers that were not cut off. "
-          f"Full tables (objects too): [`PAIRS_LENIENT.md`](PAIRS_LENIENT.md).", ""]
-    for ds in IC.DATASETS:
-        vids = PL.load(str(IC.OUT / "raw"), str(IC.RESULTS), ds)
-        if not vids:
-            continue
-        for k, title in ((1, "1st choice right"), (5, "right word in its top 5")):
-            o, n = e2_counts(old, vids, "relation", k), e2_counts(judge, vids, "relation", k)
-            L += [f"**{ds}, relation word, {title}**", "",
-                  "| pairs | " + " | ".join(name for _, name in PL.CONDS) + " |", "|---|" + "---|" * len(PL.CONDS)]
+          "Setting 0: its own answer (the pair written, with a right word). Setting 1 (fresh): its own object list, no "
+          "relations; every human pair of every video. Setting 2 (after its own answer): its relation list re-opened; "
+          "the missed pairs of the answers that were not cut off. Each row: the same pairs with all three inputs. "
+          "Every column of these tables, by the judge: [`PAIRS_LENIENT.md`](PAIRS_LENIENT.md).", ""]
+    data = {ds: PL.load(str(IC.OUT / "raw"), str(IC.RESULTS), ds) for ds in DS_NAME if ds in IC.DATASETS}
+    data = {ds: v for ds, v in data.items() if v}
+    counts = {(ds, what, k, name): e2_counts(j, vids, what, k) for ds, vids in data.items()
+              for what in ("relation", "object") for k in (1, 5) for name, j in (("old", old), ("new", judge))}
+    L += ["### How much was tested", "", "| | videos | human pairs | missed | written | setting 2 |", "|---|---|---|---|---|---|"]
+    for ds, vids in data.items():
+        c = counts[(ds, "relation", 1, "new")]
+        n = lambda label: c[label][0] if label in c else 0  # noqa: E731
+        L.append(f"| {DS_NAME.get(ds, ds)} | {len(vids)} | {n('setting 1, all {n}'):,} | {n('↳ missed {n}'):,} | "
+                 f"{n('↳ written {n}'):,} | {n('setting 2, same {n}'):,} |")
+    L += [""]
+    num = lambda a, b: f"{a:,} ({pct(a, b)})"  # noqa: E731
+    for what, k, title in (("relation", 1, "Relation word: 1st choice right"), ("relation", 5, "Relation word: right word in its top 5"),
+                           ("object", 1, "Object: 1st choice right"), ("object", 5, "Object: right object in its top 5")):
+        L += [f"### {title}", "", "| | pairs | " + " | ".join(name for _, name in INPUTS) + " |", "|---|---|---|---|---|"]
+        for ds, vids in data.items():
+            o, n = counts[(ds, what, k, "old")], counts[(ds, what, k, "new")]
+            first = f"**{DS_NAME.get(ds, ds)}**"
+            if what == "relation" and k == 1:
+                (cnt, a), (_, b) = setting0(old, vids, ds), setting0(judge, vids, ds)
+                L.append(f"| {first} | setting 0, its own answer {cnt:,} | {num(a, cnt)} → **{num(b, cnt)}** | - | - |")
+                first = ""
             for label, (cnt, right) in n.items():
-                L.append(f"| {label} ({cnt}) | " + " | ".join(
-                    f"{pct(o[label][1][c], cnt)} → **{pct(right[c], cnt)}** ({right[c]})" for c, _ in PL.CONDS) + " |")
-            L += [""]
+                L.append(f"| {first} | {label.format(n=f'{cnt:,}')} | " + " | ".join(
+                    f"{num(o[label][1][c], cnt)} → **{num(right[c], cnt)}**" for c, _ in INPUTS) + " |")
+                first = ""
+        L += [""]
     return "\n".join(L) + "\n"
 
 
