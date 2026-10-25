@@ -11,8 +11,10 @@ Two experiments give the evidence:
   (`results/traser_bench/interp/PAIRS_LENIENT.md`). Setting 0 = its own answer; setting 1 = asked about the pair with
   nothing else written; setting 2 = asked after its own answer.
 
-Experiment 2 numbers: lenient judge (Kimi K3, Claude for words judged after Kimi K3 was retired); to be updated with the
-Nemotron judge.
+Judge: every word judged by one model, Nemotron 3.5 Super (`nvidia/nemotron-3.5-super-vl-120b-a12b`), with the paper's
+lenient setup (`results/judge_rerun/nvidia__nemotron-3.5-super-vl-120b-a12b/`). It is stricter than the earlier judge
+(Kimi K3): of the words Kimi K3 accepted it accepts 63%, of those Kimi K3 rejected it rejects 98%. The numbers drop a
+little; every finding below holds with both judges.
 
 ---
 
@@ -53,15 +55,15 @@ with any word:
 | Qwen-7B (untrained) | **4%** | **18%** | **8%** |
 
 **What it means:** most of the untrained model's relations are lost before any relation word is chosen: the pair is
-simply not in its answer. Together with finding 1, this is why its relation recall is almost 0 (0.0 / 2.0 / 2.2%
-against TRASER's 13.9 / 13.0 / 27.1%), the same as the paper's untrained 3B baseline (0.1 / 0.4 / 0.3%).
+simply not in its answer. Together with finding 1, this is why its relation recall is almost 0 (0.0 / 1.5 / 1.5%
+against TRASER's 12.9 / 10.7 / 24.8%), the same as the paper's untrained 3B baseline (0.1 / 0.4 / 0.3%).
 
 ---
 
 ## 3. It learns each dataset's naming habits
 
-**In one line:** on VidOR, TRASER picks the relation word from the object names, not from what it sees: it learned how
-VidOR usually labels such pairs.
+**In one line:** on VidOR, TRASER picks the relation word mostly from the object names, hardly from what it sees: it
+learned how VidOR usually labels such pairs.
 
 **Background:** each dataset names relations its own way. VidOR uses a fixed list of about 50 words (`next_to`,
 `in_front_of`, `behind`, `watch`, `hold`, ...); PVSG and SVG2 use other words. VidOR is in TRASER's training data.
@@ -72,14 +74,16 @@ still there as text.
 
 **What we found** (1st choice right):
 
-| | with video | video blanked |
-|---|---|---|
-| PVSG | 61% | 55% (worse without the video) |
-| SVG2test | 62% | 51% (worse without the video) |
-| VidOR | 29% | **33% (not worse)** |
+| | with video | video blanked | the video adds |
+|---|---|---|---|
+| PVSG | 54% | 46% | 8 points |
+| SVG2test | 53% | 41% | 12 points |
+| VidOR | 22% | 20% | **only 2 points** |
+
+(With the earlier judge, Kimi K3, VidOR was even better blanked: 33% vs 29%.)
 
 **What it means:** on PVSG and SVG2test it uses the video. On VidOR, the object names alone ("adult" and "car") are
-enough for it to guess VidOR's usual word (`next_to`), as well as with the video. Part of what it learned is the
+enough for it to guess VidOR's usual word (`next_to`) almost as well as with the video. Part of what it learned is the
 labelling habits of its training datasets. The paper calls TRASER open-vocabulary; on a new dataset with other naming
 habits it may do worse. This fits Table 2 (TRASER scores higher on SVG2test, from its training data, than on PVSG, not
 in it), but is not a proof: PVSG also has other kinds of video (first-person, kitchens).
@@ -98,15 +102,17 @@ pair, with nothing else written (setting 1, the real video).
 
 | | setting 0: its own answer has the pair with a right word | setting 1: asked about the pair, 1st choice right | setting 1, only the pairs it left out of its answer |
 |---|---|---|---|
-| PVSG | 220 of 739 (30%) | **449 of 739 (61%)** | 256 of 476 (54%) |
-| SVG2test | 841 of 2,519 (33%) | **1,558 of 2,519 (62%)** | 862 of 1,534 (56%) |
-| VidOR | 2,957 of 11,157 (27%) | 3,265 of 11,157 (29%) | 1,543 of 6,528 (24%) |
+| PVSG | 202 of 739 (27%) | **399 of 739 (54%)** | 220 of 476 (46%) |
+| SVG2test | 788 of 2,519 (31%) | **1,338 of 2,519 (53%)** | 708 of 1,534 (46%) |
+| VidOR | 2,615 of 11,157 (23%) | 2,469 of 11,157 (22%) | 1,118 of 6,528 (17%) |
+
+(Earlier judge, Kimi K3: PVSG 30% → 61%, SVG2test 33% → 62%.)
 
 **What it means:** on PVSG and SVG2test it picks a right word about twice as often when asked as it writes one in its
-own answer, and it knows a right word for about half of the pairs it left out. Its knowledge is there; its answer
-leaves much of it out, because it writes only about a third of the human pairs. On VidOR the fresh question does not
-help (29% vs 27%), but asked after its own answer (setting 2) it gets 52% of the left-out pairs right (3,405 of 6,528),
-likely helped by the words already in its own list.
+own answer (PVSG 54% vs 27%, SVG2test 53% vs 31%), and it knows a right word for almost half of the pairs it left out.
+Its knowledge is there; its answer leaves much of it out, because it writes only about a third of the human pairs. On
+VidOR the fresh question does not help (22% vs 23%), but asked after its own answer (setting 2) it gets 44% of the
+left-out pairs right (2,857 of 6,528), likely helped by the words already in its own list.
 
 **Fairness note:** when asked, it picks from a fixed list of words (66 / 55 / 74 per dataset) that always includes the
 human word. That is easier than writing freely, but its 1st choice still has to beat all the other words.
