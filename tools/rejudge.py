@@ -12,10 +12,11 @@ results/qwen7b_bench/<dataset>/preds; experiment 2: results/traser_bench/interp/
 results/traser_bench/finetune/<model>). The verdicts are saved to results/traser_bench/judge_cache_<model>.json after
 every request, so a stopped run continues where it stopped. The pages go to results/judge_rerun/<model>/.
 
-    python3 tools/rejudge.py --list                               # the moonshotai models your key can use
-    python3 tools/rejudge.py --model moonshotai/<name>            # judge every word, then write the pages
-    python3 tools/rejudge.py --model moonshotai/<name> --count    # only count what is judged / left
-    python3 tools/rejudge.py --model moonshotai/<name> --pages    # only rewrite the pages from the saved verdicts
+    python3 tools/rejudge.py --list [nemotron]                    # the models your key can use (names with "nemotron")
+    python3 tools/rejudge.py --model <name> --check 200           # first: 200 words Kimi K3 judged, how often it agrees
+    python3 tools/rejudge.py --model <name>                       # judge every word, then write the pages
+    python3 tools/rejudge.py --model <name> --count               # only count what is judged / left
+    python3 tools/rejudge.py --model <name> --pages               # only rewrite the pages from the saved verdicts
 
 The key comes from $NVIDIA_API_KEY or ~/.svg2_keys (NVIDIA_API_KEY=...), else a hidden prompt; it is never printed or saved.
 """
@@ -202,6 +203,33 @@ def agreement(new, old):
                 same_category=sum(old[k] == new[k] for k in both))
 
 
+def check(judge, todo_all, n, workers):
+    """Ask about n words Kimi K3 judged (half accepted, half rejected; fixed sample) and print the agreement."""
+    import random
+    kimi = E.Judge().cache
+    have = sorted(k for k in set(todo_all) & set(kimi) if not UNNAMED.fullmatch(k.split("\t")[2]))
+    rng = random.Random(0)
+    acc = [k for k in have if E.is_right(kimi[k], "lenient")]
+    rej = [k for k in have if not E.is_right(kimi[k], "lenient")]
+    sample = rng.sample(acc, min(n // 2, len(acc))) + rng.sample(rej, min(n - n // 2, len(rej)))
+    todo = [k for k in sample if k not in judge.mine()]
+    if todo:
+        client = key_from_env()
+        test(client, judge.model)
+        judge_all(judge, todo, client, workers)
+    a = agreement({k: judge.mine()[k] for k in sample if k in judge.mine()}, kimi)
+    print(f"\non {a['both']} words Kimi K3 judged: same right/wrong {a['same']} ({pct(a['same'], a['both'])}); "
+          f"Kimi K3 accepted {a['accepted']}, {judge.model} accepts {a['also_accepted']} of them; "
+          f"Kimi K3 rejected {a['rejected']}, {judge.model} rejects {a['also_rejected']} of them; "
+          f"same category {a['same_category']}")
+    print("(Claude on 200 such words: accepted 79 of Kimi K3's 100 accepted, rejected 98 of its 100 rejected)")
+    diff = [k for k in sample if k in judge.mine() and E.is_right(kimi[k], "lenient") != E.is_right(judge.mine()[k], "lenient")]
+    for k in diff[:15]:
+        kind, ref, pred = k.split("\t")
+        print(f"  {kind}: {ref} / {pred}: Kimi K3 {kimi[k]}, {judge.model} {judge.mine()[k]}")
+    return 0
+
+
 # ----------------------------------------------------------------------------- experiment 2
 E2_ROWS = [("fresh", "all human pairs", "setting 1 (fresh), every human pair"), ("fresh", "missed", "↳ missed"),
            ("fresh", "written", "↳ written"), ("fresh", "same", "setting 1 on setting 2's pairs"),
@@ -348,17 +376,22 @@ def write_pages(model, judge, src):
 # ----------------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--model", help="a model of build.nvidia.com, e.g. moonshotai/<name> (see --list)")
-    ap.add_argument("--list", action="store_true", help="list the moonshotai models your key can use, and stop")
+    ap.add_argument("--model", help="a model of build.nvidia.com, e.g. nvidia/<name> (see --list)")
+    ap.add_argument("--list", nargs="?", const="", default=None, metavar="TEXT",
+                    help="list the models your key can use (only names containing TEXT), and stop")
+    ap.add_argument("--check", type=int, default=0, metavar="N",
+                    help="only judge N words Kimi K3 judged (half it accepted, half it rejected) and show how often "
+                         "the model agrees; they count for the full run too")
     ap.add_argument("--count", action="store_true", help="only count the words judged / left")
     ap.add_argument("--pages", action="store_true", help="only write the pages from the saved verdicts")
     ap.add_argument("--workers", type=int, default=4, help="requests at a time (default 4)")
     args = ap.parse_args()
-    if args.list:
+    if args.list is not None:
         client = key_from_env()
         ids = sorted(m.id for m in client.models.list().data)
-        kimi = [m for m in ids if m.startswith("moonshotai/")]
-        print("moonshotai models your key can use:\n  " + ("\n  ".join(kimi) or "none"))
+        shown = [m for m in ids if args.list.lower() in m.lower()]
+        print(f"models your key can use{f' with {args.list!r} in the name' if args.list else ''}:\n  "
+              + ("\n  ".join(shown) or "none"))
         print(f"({len(ids)} models in all; Kimi K3 = moonshotai/kimi-k3 was retired on 15 Oct 2026)")
         return 0
     if not args.model:
@@ -375,6 +408,8 @@ def main():
           f"({-(-len(todo) // CHUNK)} requests of {CHUNK} words)")
     if args.count:
         return 0
+    if args.check:
+        return check(judge, todo_all, args.check, args.workers)
     if todo and not args.pages:
         client = key_from_env()
         test(client, args.model)
