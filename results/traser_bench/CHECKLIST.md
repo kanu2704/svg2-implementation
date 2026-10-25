@@ -38,8 +38,8 @@ Updated 22 Oct 2026, 15:30. ✅ done · ⏳ running · ⬜ to do (who does it)
 
 ## 10. Table 2 with an untrained Qwen2.5-VL-7B in TRASER's pipeline (`results/qwen7b_bench/README.md`)
 - ✅ code: `tools/run_traser.py` (`load_qwen`: same frames, masks, token arrangement, prompt + JSON format; Qwen's own vision encoder and language model; the two trained resamplers replaced by plain averaging to 32 tokens), `tools/bench_run.py --lm qwen7b`, `tools/qwen_bench_report.py`, `notebooks/qwen7b_run.py`
-- ⬜ run on the server (you): `notebooks/qwen7b_run.py` (PVSG, SVG2test, then VidOR; about a day)
-- ⬜ judge the new words of Qwen's answers, then the table (Claude)
+- ✅ run on the server: all 997 videos answered (PVSG 62, SVG2test 100, VidOR 835), none failed
+- ✅ every new word of Qwen's answers judged (3,852, by Claude with the benchmark's prompt; unnamed "object N" = mismatch); table done
 
 ## 8. Write-up
 - ⬜ one-page summary for the supervisor: interpretability + pair experiment + fine-tuning (Claude)
