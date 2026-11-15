@@ -8,12 +8,14 @@ standard deviation over the runs, Nemotron judge) come from tools/repeat_report.
     cd /media/nas_mount/kanupriya/svg2-implementation
     /media/nas_mount/kanupriya/envs/traser/bin/python notebooks/traser_repeat_run.py 2>&1 | tee -a /media/nas_mount/kanupriya/repeat.log
 
+REPEAT_RUNS=3 and REPEAT_WORKERS=2 in front of the command change the number of runs and of workers per GPU.
 Every step skips videos already answered: after an interruption, run the same command again. Nothing is pushed:
 push the results yourself at the end. Setup part made from notebooks/qwen7b_run.py (its cells 0a-0b).
 """
-N_RUNS = 3              # how many times the whole baseline is run
-WORKERS_PER_GPU = 2     # TRASER (3B, bfloat16) needs about 10 GB per worker; 2 fit on a 48 GB A6000. Set 1 if
-                        # a run fails with "out of memory".
+import os
+N_RUNS = int(os.environ.get("REPEAT_RUNS", "3"))              # how many times the whole baseline is run
+WORKERS_PER_GPU = int(os.environ.get("REPEAT_WORKERS", "2"))  # TRASER (3B, bfloat16) needs about 10 GB per worker; 2 fit
+                        # on a 48 GB A6000. Start with REPEAT_WORKERS=1 in front of the command after "out of memory".
 RUN_DATASETS = ["pvsg", "svg2test", "vidor"]
 
 # ----------------------------------------------------------------------------- pairs 0a
