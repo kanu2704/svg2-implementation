@@ -1,0 +1,383 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P09_07",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 276,
+ "video_fps": 5.0,
+ "mask_pngs": 276,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "microwave",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "scissor",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "powder",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "bottle",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 15,
+   "spans": [
+    [
+     1.6,
+     5.0
+    ],
+    [
+     48.6,
+     53.4
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "opening",
+   "obj": 15,
+   "spans": [
+    [
+     2.4,
+     4.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     4.2,
+     5.0
+    ],
+    [
+     48.0,
+     52.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "opening",
+   "obj": 9,
+   "spans": [
+    [
+     5.8,
+     7.0
+    ],
+    [
+     44.6,
+     45.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 27,
+   "spans": [
+    [
+     7.6,
+     9.8
+    ],
+    [
+     12.4,
+     30.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 29,
+   "spans": [
+    [
+     10.6,
+     12.2
+    ],
+    [
+     32.2,
+     46.4
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "opening",
+   "obj": 27,
+   "spans": [
+    [
+     12.4,
+     15.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 18,
+   "spans": [
+    [
+     14.6,
+     25.4
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 20,
+   "spans": [
+    [
+     16.4,
+     25.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "closing",
+   "obj": 27,
+   "spans": [
+    [
+     25.6,
+     27.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "closing",
+   "obj": 9,
+   "spans": [
+    [
+     30.6,
+     31.8
+    ],
+    [
+     46.4,
+     47.2
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "opening",
+   "obj": 29,
+   "spans": [
+    [
+     32.4,
+     34.6
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "holding",
+   "obj": 28,
+   "spans": [
+    [
+     33.8,
+     34.6
+    ],
+    [
+     39.4,
+     40.4
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "closing",
+   "obj": 29,
+   "spans": [
+    [
+     40.2,
+     43.8
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "closing",
+   "obj": 15,
+   "spans": [
+    [
+     48.0,
+     52.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P09_07.mp4"
+}
