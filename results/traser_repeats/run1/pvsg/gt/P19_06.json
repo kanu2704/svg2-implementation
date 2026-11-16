@@ -1,0 +1,463 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P19_06",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 1168,
+ "video_fps": 5.0,
+ "mask_pngs": 1168,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "egg",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "meat",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "microwave",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "spatula",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "pan",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "egg",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "spatula",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "pan",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 40,
+   "gt_id": 41,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 41,
+   "gt_id": 42,
+   "name": "cabinet",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 18,
+   "pred": "opening",
+   "obj": 13,
+   "spans": [
+    [
+     4.2,
+     6.6
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 14,
+   "spans": [
+    [
+     6.6,
+     10.4
+    ],
+    [
+     54.6,
+     91.0
+    ],
+    [
+     92.4,
+     94.4
+    ],
+    [
+     109.8,
+     199.6
+    ],
+    [
+     205.0,
+     207.8
+    ],
+    [
+     212.2,
+     217.2
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "opening",
+   "obj": 17,
+   "spans": [
+    [
+     13.8,
+     14.2
+    ],
+    [
+     41.8,
+     43.6
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "closing",
+   "obj": 17,
+   "spans": [
+    [
+     21.8,
+     23.2
+    ],
+    [
+     44.2,
+     45.4
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 35,
+   "spans": [
+    [
+     14.2,
+     19.4
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 3,
+   "spans": [
+    [
+     17.0,
+     26.0
+    ],
+    [
+     91.4,
+     106.2
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 24,
+   "spans": [
+    [
+     19.6,
+     44.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "opening",
+   "obj": 24,
+   "spans": [
+    [
+     28.2,
+     37.4
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     37.4,
+     39.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     50.6,
+     91.0
+    ],
+    [
+     109.8,
+     213.2
+    ],
+    [
+     109.8,
+     213.0
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "cooking",
+   "obj": 6,
+   "spans": [
+    [
+     55.0,
+     90.8
+    ],
+    [
+     173.6,
+     174.8
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "cooking",
+   "obj": 26,
+   "spans": [
+    [
+     115.8,
+     173.0
+    ],
+    [
+     175.0,
+     199.8
+    ],
+    [
+     204.4,
+     207.4
+    ]
+   ]
+  },
+  {
+   "subj": 18,
+   "pred": "closing",
+   "obj": 13,
+   "spans": [
+    [
+     207.8,
+     211.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P19_06.mp4"
+}
