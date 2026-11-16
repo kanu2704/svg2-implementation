@@ -1,0 +1,214 @@
+"""TRASER's Table 2 baseline N times on Kaggle (2 x T4), with the paper's official settings (tools/bench_run.py: released
+UWGZQ/TRASER, 1 fps, at most 128 frames, at most 40 objects, coverage 0.5, 4 s windows, greedy decoding), on the same
+videos as the published run. For a terminal in the Kaggle session (e.g. VS Code through a tunnel). Each run's answers
+go to results/traser_repeats/run<k>/<dataset>/ and are pushed to GitHub every 20 minutes, so a session that ends loses
+at most 20 minutes of work; in the next session run the same commands and it continues where it stopped.
+
+    git clone -b claude/traser-interpretability https://github.com/kanu2704/svg2-implementation /kaggle/working/svg2-implementation
+    cd /kaggle/working/svg2-implementation
+    read -s SVG2_GH_TOKEN && export SVG2_GH_TOKEN          # GitHub token, typed hidden (needed to push)
+    REPEAT_DATASETS=pvsg nohup python3 notebooks/traser_repeat_kaggle.py >> /kaggle/working/repeat.log 2>&1 &
+    tail -f /kaggle/working/repeat.log
+
+REPEAT_DATASETS   pvsg, vidor, svg2test, comma-separated, in that order (default: pvsg,svg2test,vidor)
+REPEAT_RUNS       how many runs (default 3)
+SAV_LINKS         SVG2test: path of Meta's SA-V links file (uploaded to the session), for its 33 SA-V videos;
+                  without it only the 67 VIPSeg videos run
+VIPSEG_ZIP        SVG2test: path of VIPSeg.zip if Google Drive refuses the download
+
+Scores afterwards (anywhere, NVIDIA key): python3 tools/repeat_report.py. On the server the same runs are made by
+notebooks/traser_repeat_run.py (there the data is already prepared).
+"""
+import glob
+import os
+import queue
+import shutil
+import subprocess
+import sys
+import threading
+import time
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BRANCH = "claude/traser-interpretability"
+N_RUNS = int(os.environ.get("REPEAT_RUNS", "3"))
+DATASETS = [d.strip() for d in os.environ.get("REPEAT_DATASETS", "pvsg,svg2test,vidor").split(",") if d.strip()]
+SAVE_EVERY_MIN = 20
+
+
+def step(msg):
+    print(f"{time.strftime('%H:%M:%S')}  {msg}", flush=True)
+
+
+def git(*args):
+    env = dict(os.environ, GIT_TERMINAL_PROMPT="0", GIT_ASKPASS="", SSH_ASKPASS="")   # never ask for a login
+    return subprocess.run(["git", *args], capture_output=True, text=True, cwd=REPO, env=env)
+
+
+os.chdir(REPO)
+os.environ["HF_HOME"] = "/tmp/hf_cache"
+BIG = "/kaggle/tmp" if os.path.isdir("/kaggle/tmp") else "/tmp"            # big downloads: not in the repo
+BENCH = os.path.join(BIG, "traser_bench")                                   # prepared videos (masks + labels)
+RUNS = os.path.join(BIG, "traser_repeat_runs")                              # worker logs and progress
+PREP = os.path.join(BIG, "prep_results")                                    # labels written while preparing
+REP = os.path.join(REPO, "results", "traser_repeats")
+for d in (BENCH, RUNS, PREP, REP):
+    os.makedirs(d, exist_ok=True)
+step(f"code: {REPO} @ " + git("log", "--oneline", "-1").stdout.strip() + f"; datasets {DATASETS}, {N_RUNS} runs")
+
+# ----------------------------------------------------------------------------- setup
+step("installing packages + the official SVG2 code (1-2 min) ...")
+r = subprocess.run("bash setup_kaggle.sh", shell=True, capture_output=True, text=True)
+print("\n".join("    " + l for l in r.stdout.strip().splitlines()[-4:]), flush=True)
+if any(l.lstrip().startswith("!!") for l in (r.stdout + r.stderr).splitlines()):
+    print("    !! a setup step failed:\n", r.stderr[-800:], flush=True)
+subprocess.run("python3 -m pip install -q openai huggingface_hub 'gdown>=5'", shell=True, capture_output=True)
+sys.path.insert(0, os.path.join(REPO, "tools"))
+import bench_data as B  # noqa: E402
+import pvsg_data  # noqa: E402
+from interp import common as IC  # noqa: E402
+
+# ----------------------------------------------------------------------------- GitHub (to save the answers)
+if not git("config", "user.name").stdout.strip():
+    git("config", "user.name", "kanu2704")
+    git("config", "user.email", "kanu2704@users.noreply.github.com")
+token = os.environ.pop("SVG2_GH_TOKEN", "").strip()
+if token:
+    git("config", "--global", "credential.helper", "store")
+    cred = os.path.expanduser("~/.git-credentials")
+    with open(cred, "a") as f:
+        f.write(f"https://kanu2704:{token}@github.com\n")
+    os.chmod(cred, 0o600)
+del token
+PUSH = git("push", "--dry-run", "origin", f"HEAD:{BRANCH}").returncode == 0
+step("GitHub: push works ✓" if PUSH else "!! GitHub: no push access (set SVG2_GH_TOKEN, see the top of this file): "
+     "the answers stay in this session only, push them yourself before it ends")
+
+
+def answered(root, ds):
+    return {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(root, ds, "preds", "*.json")) if not p.endswith(".stats.json")}
+
+
+def summary():
+    return ", ".join(f"run{k} " + "/".join(f"{ds} {len(answered(os.path.join(REP, f'run{k}'), ds))}" for ds in DATASETS)
+                     for k in range(1, N_RUNS + 1))
+
+
+def save():
+    """git add + commit + push results/traser_repeats (after pulling what others pushed)."""
+    if not PUSH:
+        return
+    git("add", "results/traser_repeats")
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        return
+    git("commit", "-q", "-m", f"TRASER repeat runs (Kaggle T4): {summary()}")
+    for _ in range(3):
+        git("pull", "--rebase", "--autostash", "-q", "origin", BRANCH)
+        r = git("push", "-q", "origin", f"HEAD:{BRANCH}")
+        if r.returncode == 0:
+            step(f"saved to GitHub ✓ ({summary()})")
+            return
+        time.sleep(15)
+    step("!! push failed: " + (r.stderr.strip().splitlines() or ["?"])[-1][:200] + " (committed here; push by hand: "
+         f"cd {REPO} && git push origin HEAD:{BRANCH})")
+
+
+# ----------------------------------------------------------------------------- data (once per session)
+def prepare(ds):
+    """Download what this dataset needs; returns (videos to run, extra bench_run arguments)."""
+    want = IC.select_videos(ds, 0)                          # the videos of the published run
+    if ds == "pvsg":
+        root = os.path.join(BIG, "pvsg")
+        paths = pvsg_data.download(root, sources=("vidor", "epic_kitchen", "ego4d"))
+        shutil.copy(paths["pvsg.json"], os.path.join(root, "pvsg.json"))
+        anno = pvsg_data.load_anno(root)
+        vids = [v for v in want if v in set(B.pvsg_val_ids(anno))]
+        new = [v for v in vids if not os.path.exists(os.path.join(root, pvsg_data.video_source(anno, v), "videos", f"{v}.mp4"))]
+        if new:
+            pvsg_data.extract_videos(root, {os.path.basename(p): p for p in paths.values()}, anno, new)
+        return vids, f"--pvsg_root {root}"
+    if ds == "vidor":
+        root = os.path.join(BIG, "vidor")
+        B.download_vidor(root)
+        have = B.vidor_index({"videos": os.path.join(root, "videos"), "anno": os.path.join(root, "anno")})
+        return [v for v in want if v in have], f"--vidor_root {root}"
+    if ds == "svg2test":
+        root = os.path.join(BIG, "svg2")
+        B.download_svg2test(root)
+        rows, masks = B.svg2test_rows(root), B.svg2test_masks(root)
+        todo = [v for v in want if v in rows and not B.item_ready(BENCH, ds, v)]
+        vip = [v for v in todo if rows[v]["split"] == "vipseg"]
+        sav = [v for v in todo if rows[v]["split"] == "sav"]
+        out = os.path.join(BIG, "svg2test_videos")
+        videos = {}
+        if vip:
+            zpath = os.environ.get("VIPSEG_ZIP") or os.path.join(BIG, "VIPSeg.zip")
+            if not os.path.exists(zpath):
+                import gdown
+                gdown.download(id="1B13QUiE82xf7N6nVHclb4ErN-Zuai-sZ", output=zpath, quiet=False)
+            found = B.extract_vipseg_frames(zpath, vip, os.path.join(BIG, "vipseg_frames"))
+            for v in sorted(found):
+                videos[v] = B.vipseg_to_mp4(os.path.join(BIG, "vipseg_frames", v), os.path.join(out, f"{v}.mp4"))
+        if sav and os.environ.get("SAV_LINKS"):
+            missing = B.fetch_sav_videos(B.sav_links(os.environ["SAV_LINKS"]), sav, out)
+            if missing:
+                step(f"!! SA-V videos not found: {sorted(missing)}")
+            videos.update({v: os.path.join(out, f"{v}.mp4") for v in sav if os.path.exists(os.path.join(out, f"{v}.mp4"))})
+        elif sav:
+            step(f"!! {len(sav)} SA-V videos skipped: set SAV_LINKS to Meta's links file to run them")
+        for v, p in sorted(videos.items()):
+            B.prepare_svg2test(v, rows[v], masks[v], p, BENCH, PREP)
+        return [v for v in want if B.item_ready(BENCH, ds, v)], ""
+    raise SystemExit(f"unknown dataset {ds}")
+
+
+def run_live(cmds, label):
+    """Run the workers side by side, print their output live, save to GitHub every SAVE_EVERY_MIN minutes."""
+    q, procs, last = queue.Queue(), [], time.time()
+    for c in cmds:
+        p = subprocess.Popen(c, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, cwd=REPO)
+        procs.append(p)
+        threading.Thread(target=lambda p=p: [q.put(l) for l in p.stdout], daemon=True).start()
+    while any(p.poll() is None for p in procs) or not q.empty():
+        try:
+            line = q.get(timeout=5).rstrip()
+            if "Warning" not in line and "warn(" not in line:
+                print("    " + line, flush=True)
+        except queue.Empty:
+            pass
+        if time.time() - last > SAVE_EVERY_MIN * 60:
+            save()
+            last = time.time()
+    bad = [i for i, p in enumerate(procs) if p.returncode]
+    step(f"{label}: finished" + (f" (!! worker {bad} exited with an error, see above)" if bad else ""))
+
+
+out = subprocess.run(["nvidia-smi", "-L"], capture_output=True, text=True).stdout
+GPUS = [str(i) for i in range(len([l for l in out.splitlines() if l.startswith("GPU ")]))] or ["0"]
+step(f"GPUs: {GPUS} (one worker each)")
+t_all = time.time()
+for ds in DATASETS:
+    t0 = time.time()
+    step(f"{ds}: downloading / preparing (this session only) ...")
+    vids, extra = prepare(ds)
+    step(f"{ds}: {len(vids)} videos ready ({(time.time() - t0) / 60:.0f} min)")
+    for k in range(1, N_RUNS + 1):
+        root = os.path.join(REP, f"run{k}")
+        todo = [v for v in vids if v not in answered(root, ds)]
+        step(f"run {k}, {ds}: {len(vids) - len(todo)} answered before, {len(todo)} to answer")
+        if not todo:
+            continue
+        t1, cmds = time.time(), []
+        for i, g in enumerate(GPUS):
+            part = todo[i::len(GPUS)]
+            if part:
+                qfile = os.path.join(RUNS, f"run{k}_{ds}_gpu{i}.queue")
+                open(qfile, "w").write("\n".join(part))
+                cmds.append(f"CUDA_VISIBLE_DEVICES={g} HF_HOME={os.environ['HF_HOME']} python3 tools/bench_run.py "
+                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS} --gpu_name run{k}_gpu{i} "
+                            f"{extra} --videos $(cat {qfile})")
+        run_live(cmds, f"run {k}, {ds}")
+        step(f"run {k}, {ds}: {len(answered(root, ds))} of {len(vids)} answered ({(time.time() - t1) / 3600:.1f} h)")
+        save()
+step(f"===== done in {(time.time() - t_all) / 3600:.1f} h: {summary()}")
+save()
+step("next (anywhere, NVIDIA key): python3 tools/repeat_report.py")
