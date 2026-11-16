@@ -147,7 +147,41 @@ REP = os.path.join(REPO, "results", "traser_repeats")        # run<k>/<dataset>/
 RUNS_R = os.path.join(RUNS, "traser_repeats")                 # worker logs and progress files
 os.makedirs(RUNS_R, exist_ok=True)
 GPUS = [x.strip() for x in os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(",") if x.strip()]
-SLOTS = [g for g in GPUS for _ in range(max(1, WORKERS_PER_GPU))]
+GB_PER_WORKER = 15      # TRASER's peak in the earlier run: up to 14 GB per video (PVSG), about 11 GB (SVG2test)
+
+
+def parse_free(text):
+    """nvidia-smi 'uuid, free MiB' lines -> {uuid: free GB}."""
+    out = {}
+    for line in text.splitlines():
+        parts = [x.strip() for x in line.split(",")]
+        if len(parts) == 2 and parts[1].isdigit():
+            out[parts[0]] = int(parts[1]) / 1024
+    return out
+
+
+def free_gb():
+    r = subprocess.run(["nvidia-smi", "--query-gpu=uuid,memory.free", "--format=csv,noheader,nounits"],
+                       capture_output=True, text=True)
+    free = parse_free(r.stdout)
+    return {g: free.get(g, 999.0) for g in GPUS}    # a GPU nvidia-smi does not list by this id: do not wait for it
+
+
+def wait_for_memory():
+    """Worker slots for the next step: on each GPU as many workers (up to WORKERS_PER_GPU) as its free memory allows.
+    Waits (checking every 5 minutes) while another job leaves no room for even one worker on a GPU."""
+    last = 0
+    while True:
+        free = free_gb()
+        n = {g: min(max(1, WORKERS_PER_GPU), int(f // GB_PER_WORKER)) for g, f in free.items()}
+        if n and all(v >= 1 for v in n.values()):
+            step("GPU memory free: " + ", ".join(f"{f:.0f} GB -> {n[g]} worker(s)" for g, f in free.items()))
+            return [g for g in GPUS for _ in range(n[g])]
+        if time.time() - last > 1800:
+            step("waiting: another job is using the GPU (" + ", ".join(f"{f:.0f} GB free" for f in free.values()) +
+                 f", {GB_PER_WORKER} GB needed per worker); checking every 5 minutes, starting by itself when there is room")
+            last = time.time()
+        time.sleep(300)
 
 
 def answered(root, ds):
@@ -172,7 +206,7 @@ def run_live(cmds, label):
     step(f"{label}: finished" + (f" (!! worker {bad} exited with an error, see above)" if bad else ""))
 
 
-step(f"{N_RUNS} runs x {RUN_DATASETS}, {len(SLOTS)} worker(s) on GPU(s) {GPUS}; answers -> {REP}/run<k>")
+step(f"{N_RUNS} runs x {RUN_DATASETS}, up to {WORKERS_PER_GPU} worker(s) per GPU on {GPUS}; answers -> {REP}/run<k>")
 t_all = time.time()
 for k in range(1, N_RUNS + 1):
     root = os.path.join(REP, f"run{k}")
@@ -182,6 +216,7 @@ for k in range(1, N_RUNS + 1):
         step(f"run {k}, {ds}: {len(vids)} videos, {len(vids) - len(todo)} answered before, {len(todo)} to answer")
         if not todo:
             continue
+        SLOTS = wait_for_memory()
         t0, cmds = time.time(), []
         for i, g in enumerate(SLOTS):
             part = todo[i::len(SLOTS)]
