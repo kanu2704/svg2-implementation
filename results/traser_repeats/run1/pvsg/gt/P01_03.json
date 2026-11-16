@@ -1,0 +1,702 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P01_03",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 594,
+ "video_fps": 5.0,
+ "mask_pngs": 594,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "switch",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "mat",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "beverage",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "microwave",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "plant",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "washer",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "drawer",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "flower",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "towel",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "bread",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "bag",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 40,
+   "gt_id": 41,
+   "name": "drawer",
+   "is_thing": true
+  },
+  {
+   "col": 41,
+   "gt_id": 42,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 42,
+   "gt_id": 43,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 43,
+   "gt_id": 44,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 44,
+   "gt_id": 45,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 45,
+   "gt_id": 46,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 46,
+   "gt_id": 47,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 47,
+   "gt_id": 48,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 48,
+   "gt_id": 49,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 49,
+   "gt_id": 50,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 50,
+   "gt_id": 51,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 51,
+   "gt_id": 52,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 52,
+   "gt_id": 53,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 53,
+   "gt_id": 54,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 54,
+   "gt_id": 55,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 55,
+   "gt_id": 56,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 56,
+   "gt_id": 57,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 57,
+   "gt_id": 58,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 58,
+   "gt_id": 59,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 59,
+   "gt_id": 60,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 60,
+   "gt_id": 61,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 61,
+   "gt_id": 62,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 62,
+   "gt_id": 63,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 63,
+   "gt_id": 64,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 64,
+   "gt_id": 65,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 65,
+   "gt_id": 66,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 66,
+   "gt_id": 67,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 67,
+   "gt_id": 68,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 68,
+   "gt_id": 69,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 69,
+   "gt_id": 70,
+   "name": "bottle",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 26,
+   "pred": "touching",
+   "obj": 3,
+   "spans": [
+    [
+     4.6,
+     8.2
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 20,
+   "spans": [
+    [
+     11.0,
+     13.6
+    ],
+    [
+     69.6,
+     71.6
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 36,
+   "spans": [
+    [
+     13.0,
+     25.8
+    ],
+    [
+     51.8,
+     72.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 50,
+   "spans": [
+    [
+     14.6,
+     18.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 31,
+   "spans": [
+    [
+     18.2,
+     25.8
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "closing",
+   "obj": 20,
+   "spans": [
+    [
+     19.2,
+     22.6
+    ],
+    [
+     72.0,
+     73.4
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "touching",
+   "obj": 4,
+   "spans": [
+    [
+     28.4,
+     43.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 68,
+   "spans": [
+    [
+     31.8,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 51,
+   "spans": [
+    [
+     33.4,
+     35.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 43,
+   "spans": [
+    [
+     46.4,
+     47.8
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 33,
+   "spans": [
+    [
+     48.0,
+     51.2
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 15,
+   "spans": [
+    [
+     76.4,
+     78.2
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 23,
+   "spans": [
+    [
+     78.6,
+     82.2
+    ],
+    [
+     115.2,
+     116.8
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 18,
+   "spans": [
+    [
+     83.4,
+     84.6
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 53,
+   "spans": [
+    [
+     85.0,
+     95.2
+    ],
+    [
+     97.2,
+     99.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "closing",
+   "obj": 18,
+   "spans": [
+    [
+     87.8,
+     89.6
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "touching",
+   "obj": 24,
+   "spans": [
+    [
+     89.6,
+     90.8
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 53,
+   "spans": [
+    [
+     95.2,
+     97.2
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "holding",
+   "obj": 35,
+   "spans": [
+    [
+     97.2,
+     99.6
+    ],
+    [
+     103.0,
+     115.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "opening",
+   "obj": 35,
+   "spans": [
+    [
+     99.6,
+     103.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "pulling",
+   "obj": 15,
+   "spans": [
+    [
+     76.6,
+     78.2
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "hanging from",
+   "obj": 18,
+   "spans": [
+    [
+     0.0,
+     116.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P01_03.mp4"
+}
