@@ -1,0 +1,338 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P14_06",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 323,
+ "video_fps": 5.0,
+ "mask_pngs": 323,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "beverage",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "rack",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "stairs",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "scissor",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "beverage",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "bowl",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 33,
+   "spans": [
+    [
+     4.2,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "opening",
+   "obj": 16,
+   "spans": [
+    [
+     10.4,
+     12.0
+    ],
+    [
+     35.8,
+     38.2
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     13.2,
+     40.8
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "closing",
+   "obj": 16,
+   "spans": [
+    [
+     13.8,
+     15.2
+    ],
+    [
+     41.6,
+     43.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "opening",
+   "obj": 5,
+   "spans": [
+    [
+     17.8,
+     19.8
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "touching",
+   "obj": 33,
+   "spans": [
+    [
+     21.0,
+     21.6
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 28,
+   "spans": [
+    [
+     45.6,
+     57.4
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 17,
+   "spans": [
+    [
+     60.2,
+     64.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 22,
+   "spans": [
+    [
+     17.8,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 22,
+   "spans": [
+    [
+     9.0,
+     64.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P14_06.mp4"
+}
