@@ -1,0 +1,646 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P03_06",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 546,
+ "video_fps": 5.0,
+ "mask_pngs": 546,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "cloth",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "mat",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "simmering",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "rack",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "spatula",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "chopstick",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "teapot",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "brush",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "rag",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "washer",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "drawer",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "towel",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "fork",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "mat",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 40,
+   "gt_id": 41,
+   "name": "simmering",
+   "is_thing": true
+  },
+  {
+   "col": 41,
+   "gt_id": 42,
+   "name": "rack",
+   "is_thing": true
+  },
+  {
+   "col": 42,
+   "gt_id": 43,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 43,
+   "gt_id": 44,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 44,
+   "gt_id": 45,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 45,
+   "gt_id": 46,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 46,
+   "gt_id": 47,
+   "name": "glass",
+   "is_thing": true
+  },
+  {
+   "col": 47,
+   "gt_id": 48,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 48,
+   "gt_id": 49,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 49,
+   "gt_id": 50,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 50,
+   "gt_id": 51,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 51,
+   "gt_id": 52,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 52,
+   "gt_id": 53,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 53,
+   "gt_id": 54,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 54,
+   "gt_id": 55,
+   "name": "paper",
+   "is_thing": true
+  },
+  {
+   "col": 55,
+   "gt_id": 56,
+   "name": "grain",
+   "is_thing": true
+  },
+  {
+   "col": 56,
+   "gt_id": 57,
+   "name": "simmering",
+   "is_thing": true
+  },
+  {
+   "col": 57,
+   "gt_id": 58,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 58,
+   "gt_id": 59,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 59,
+   "gt_id": 60,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 60,
+   "gt_id": 61,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 61,
+   "gt_id": 62,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 62,
+   "gt_id": 63,
+   "name": "pot",
+   "is_thing": true
+  },
+  {
+   "col": 63,
+   "gt_id": 64,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 64,
+   "gt_id": 65,
+   "name": "plate",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     2.8,
+     9.0
+    ],
+    [
+     66.0,
+     69.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "touching",
+   "obj": 12,
+   "spans": [
+    [
+     3.4,
+     8.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "touching",
+   "obj": 21,
+   "spans": [
+    [
+     9.2,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 44,
+   "spans": [
+    [
+     10.2,
+     12.2
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "touching",
+   "obj": 43,
+   "spans": [
+    [
+     10.2,
+     12.6
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 25,
+   "spans": [
+    [
+     13.4,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "opening",
+   "obj": 46,
+   "spans": [
+    [
+     14.2,
+     15.0
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 65,
+   "spans": [
+    [
+     15.4,
+     19.4
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 64,
+   "spans": [
+    [
+     15.0,
+     19.6
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 43,
+   "spans": [
+    [
+     20.8,
+     23.2
+    ],
+    [
+     28.0,
+     62.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "opening",
+   "obj": 19,
+   "spans": [
+    [
+     24.6,
+     26.6
+    ],
+    [
+     101.0,
+     101.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 26,
+   "spans": [
+    [
+     26.4,
+     97.2
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "touching",
+   "obj": 65,
+   "spans": [
+    [
+     63.0,
+     64.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     69.4,
+     99.6
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 33,
+   "spans": [
+    [
+     102.2,
+     109.2
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "holding",
+   "obj": 34,
+   "spans": [
+    [
+     103.0,
+     109.2
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "hanging from",
+   "obj": 20,
+   "spans": [
+    [
+     0.0,
+     109.2
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "stirring",
+   "obj": 7,
+   "spans": [
+    [
+     3.8,
+     8.6
+    ],
+    [
+     7.2,
+     42.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "pulling",
+   "obj": 19,
+   "spans": [
+    [
+     25.2,
+     26.4
+    ],
+    [
+     101.0,
+     102.4
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "stirring",
+   "obj": 6,
+   "spans": [
+    [
+     28.2,
+     35.6
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P03_06.mp4"
+}

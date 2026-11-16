@@ -1,0 +1,731 @@
+{
+ "dataset": "pvsg",
+ "video_id": "d1d4a1b3-a651-4eb8-bb7f-8d66982854fa",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 919,
+ "video_fps": 5.0,
+ "mask_pngs": 877,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "mat",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "cellphone",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 40,
+   "gt_id": 41,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 41,
+   "gt_id": 42,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 42,
+   "gt_id": 43,
+   "name": "card",
+   "is_thing": true
+  },
+  {
+   "col": 43,
+   "gt_id": 44,
+   "name": "card",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 18,
+   "spans": [
+    [
+     6.6,
+     14.4
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 17,
+   "spans": [
+    [
+     8.8,
+     14.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 19,
+   "spans": [
+    [
+     18.4,
+     21.2
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "on",
+   "obj": 13,
+   "spans": [
+    [
+     20.4,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 20,
+   "spans": [
+    [
+     23.2,
+     27.8
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     27.6,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 21,
+   "spans": [
+    [
+     29.0,
+     31.0
+    ]
+   ]
+  },
+  {
+   "subj": 21,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     30.8,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 22,
+   "spans": [
+    [
+     32.6,
+     35.2
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 23,
+   "spans": [
+    [
+     36.0,
+     39.8
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     39.8,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 24,
+   "spans": [
+    [
+     40.6,
+     44.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 25,
+   "spans": [
+    [
+     45.4,
+     48.4
+    ]
+   ]
+  },
+  {
+   "subj": 24,
+   "pred": "on",
+   "obj": 4,
+   "spans": [
+    [
+     43.8,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "picking",
+   "obj": 23,
+   "spans": [
+    [
+     59.4,
+     65.6
+    ]
+   ]
+  },
+  {
+   "subj": 23,
+   "pred": "on",
+   "obj": 25,
+   "spans": [
+    [
+     65.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 26,
+   "spans": [
+    [
+     72.8,
+     79.6
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 28,
+   "spans": [
+    [
+     83.8,
+     86.8
+    ]
+   ]
+  },
+  {
+   "subj": 28,
+   "pred": "on",
+   "obj": 9,
+   "spans": [
+    [
+     86.6,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 25,
+   "pred": "on",
+   "obj": 22,
+   "spans": [
+    [
+     48.4,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 20,
+   "spans": [
+    [
+     79.2,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 30,
+   "spans": [
+    [
+     92.0,
+     99.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 26,
+   "spans": [
+    [
+     98.8,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 30,
+   "spans": [
+    [
+     65.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 36,
+   "spans": [
+    [
+     125.0,
+     130.2
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 37,
+   "spans": [
+    [
+     132.4,
+     137.4
+    ]
+   ]
+  },
+  {
+   "subj": 37,
+   "pred": "on",
+   "obj": 35,
+   "spans": [
+    [
+     137.2,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 36,
+   "spans": [
+    [
+     142.2,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 38,
+   "spans": [
+    [
+     139.8,
+     142.6
+    ]
+   ]
+  },
+  {
+   "subj": 40,
+   "pred": "on",
+   "obj": 38,
+   "spans": [
+    [
+     152.0,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 40,
+   "spans": [
+    [
+     149.0,
+     152.0
+    ]
+   ]
+  },
+  {
+   "subj": 42,
+   "pred": "on",
+   "obj": 40,
+   "spans": [
+    [
+     158.4,
+     175.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 42,
+   "spans": [
+    [
+     155.8,
+     158.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 44,
+   "spans": [
+    [
+     167.6,
+     173.2
+    ]
+   ]
+  },
+  {
+   "subj": 44,
+   "pred": "on",
+   "obj": 21,
+   "spans": [
+    [
+     173.0,
+     175.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/d1d4a1b3-a651-4eb8-bb7f-8d66982854fa.mp4"
+}
