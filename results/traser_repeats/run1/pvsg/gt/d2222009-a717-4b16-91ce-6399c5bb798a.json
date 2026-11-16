@@ -1,0 +1,660 @@
+{
+ "dataset": "pvsg",
+ "video_id": "d2222009-a717-4b16-91ce-6399c5bb798a",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 579,
+ "video_fps": 5.0,
+ "mask_pngs": 579,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "mat",
+   "is_thing": true
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "tray",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "tray",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "tray",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "cup",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     2.2,
+     5.6
+    ],
+    [
+     29.0,
+     35.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     29.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "beside",
+   "obj": 10,
+   "spans": [
+    [
+     4.6,
+     30.2
+    ],
+    [
+     39.6,
+     44.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "beside",
+   "obj": 17,
+   "spans": [
+    [
+     53.0,
+     110.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 15,
+   "spans": [
+    [
+     43.0,
+     55.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 23,
+   "spans": [
+    [
+     56.6,
+     60.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "beside",
+   "obj": 29,
+   "spans": [
+    [
+     82.0,
+     88.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 13,
+   "spans": [
+    [
+     4.6,
+     6.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 31,
+   "spans": [
+    [
+     6.0,
+     7.2
+    ],
+    [
+     80.8,
+     86.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 22,
+   "spans": [
+    [
+     7.2,
+     8.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 23,
+   "spans": [
+    [
+     8.6,
+     10.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 20,
+   "spans": [
+    [
+     10.2,
+     11.6
+    ],
+    [
+     68.2,
+     73.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 27,
+   "spans": [
+    [
+     11.6,
+     13.2
+    ],
+    [
+     80.8,
+     86.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 14,
+   "spans": [
+    [
+     14.2,
+     15.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 12,
+   "spans": [
+    [
+     15.8,
+     18.8
+    ],
+    [
+     26.4,
+     28.8
+    ],
+    [
+     56.0,
+     62.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 33,
+   "spans": [
+    [
+     21.6,
+     23.8
+    ],
+    [
+     95.0,
+     101.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 34,
+   "spans": [
+    [
+     23.8,
+     26.4
+    ],
+    [
+     95.0,
+     101.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 26,
+   "spans": [
+    [
+     39.0,
+     41.0
+    ]
+   ]
+  },
+  {
+   "subj": 26,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     40.8,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 36,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     42.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 35,
+   "pred": "on",
+   "obj": 15,
+   "spans": [
+    [
+     42.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 39,
+   "pred": "on",
+   "obj": 26,
+   "spans": [
+    [
+     42.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "on",
+   "obj": 17,
+   "spans": [
+    [
+     52.2,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     62.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 29,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     62.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 38,
+   "spans": [
+    [
+     68.2,
+     73.2
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     73.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 12,
+   "spans": [
+    [
+     73.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 20,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     86.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 38,
+   "pred": "on",
+   "obj": 29,
+   "spans": [
+    [
+     86.0,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 34,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     101.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 33,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     101.6,
+     115.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 4,
+   "spans": [
+    [
+     110.4,
+     115.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "on",
+   "obj": 7,
+   "spans": [
+    [
+     115.0,
+     115.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/d2222009-a717-4b16-91ce-6399c5bb798a.mp4"
+}
