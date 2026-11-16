@@ -1,0 +1,304 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0057_7001078933",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 106,
+ "video_fps": 5.0,
+ "mask_pngs": 106,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 4,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     3.0,
+     10.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "wearing",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     21.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "wearing",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "wearing",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     11.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "wearing",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "wearing",
+   "obj": 10,
+   "spans": [
+    [
+     9.4,
+     17.2
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "wearing",
+   "obj": 12,
+   "spans": [
+    [
+     17.0,
+     18.4
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     16.0,
+     19.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "getting down on",
+   "obj": 2,
+   "spans": [
+    [
+     6.0,
+     7.6
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pushing",
+   "obj": 13,
+   "spans": [
+    [
+     11.4,
+     13.6
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pushing",
+   "obj": 14,
+   "spans": [
+    [
+     14.8,
+     15.4
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "pushing",
+   "obj": 15,
+   "spans": [
+    [
+     17.0,
+     17.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "squatting on",
+   "obj": 2,
+   "spans": [
+    [
+     6.2,
+     7.6
+    ]
+   ]
+  },
+  {
+   "subj": 13,
+   "pred": "squatting on",
+   "obj": 2,
+   "spans": [
+    [
+     8.8,
+     11.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0057_7001078933.mp4"
+}

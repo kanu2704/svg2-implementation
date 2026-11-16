@@ -1,0 +1,216 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0053_5599511471",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 142,
+ "video_fps": 5.0,
+ "mask_pngs": 142,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 7,
+   "pred": "wearing",
+   "obj": 3,
+   "spans": [
+    [
+     3.8,
+     28.4
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     0.6
+    ],
+    [
+     14.2,
+     28.4
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "catching",
+   "obj": 5,
+   "spans": [
+    [
+     2.8,
+     3.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     13.6,
+     25.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     24.6,
+     28.4
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "running on",
+   "obj": 2,
+   "spans": [
+    [
+     1.4,
+     9.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     9.6,
+     25.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     24.6,
+     28.4
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "running on",
+   "obj": 2,
+   "spans": [
+    [
+     1.0,
+     9.8
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     9.6,
+     25.8
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     24.6,
+     28.4
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     3.6,
+     13.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "throwing",
+   "obj": 5,
+   "spans": [
+    [
+     13.6,
+     14.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "catching",
+   "obj": 5,
+   "spans": [
+    [
+     14.0,
+     14.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0053_5599511471.mp4"
+}
