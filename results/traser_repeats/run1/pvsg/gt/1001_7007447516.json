@@ -1,0 +1,259 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1001_7007447516",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 418,
+ "video_fps": 5.0,
+ "mask_pngs": 418,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "sky",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "fence",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "bike",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "car",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "car",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 21,
+   "pred": "walking on",
+   "obj": 3,
+   "spans": [
+    [
+     40.0,
+     70.2
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "riding",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     83.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     75.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     15.4
+    ],
+    [
+     42.8,
+     44.6
+    ],
+    [
+     54.6,
+     63.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     15.2,
+     42.8
+    ],
+    [
+     63.0,
+     72.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     19.2,
+     25.4
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "walking on",
+   "obj": 3,
+   "spans": [
+    [
+     72.8,
+     83.4
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "talking to",
+   "obj": 10,
+   "spans": [
+    [
+     72.8,
+     75.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "guiding",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     71.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1001_7007447516.mp4"
+}

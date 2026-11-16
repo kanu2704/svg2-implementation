@@ -1,0 +1,277 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0051_3702633786",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 245,
+ "video_fps": 5.0,
+ "mask_pngs": 245,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "rock",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "water",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 8,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     2.6
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "in",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     38.4
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     43.0,
+     47.2
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     42.8,
+     46.2
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "holding",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "beside",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     37.2
+    ],
+    [
+     46.8,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     38.2,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "walking on",
+   "obj": 2,
+   "spans": [
+    [
+     38.2,
+     49.0
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "in front of",
+   "obj": 11,
+   "spans": [
+    [
+     0.0,
+     17.2
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "next to",
+   "obj": 11,
+   "spans": [
+    [
+     2.8,
+     15.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "cleaning",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     36.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "watering",
+   "obj": 6,
+   "spans": [
+    [
+     4.6,
+     5.6
+    ],
+    [
+     7.4,
+     8.8
+    ],
+    [
+     11.0,
+     13.4
+    ],
+    [
+     17.4,
+     20.4
+    ],
+    [
+     22.4,
+     33.0
+    ],
+    [
+     34.4,
+     35.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "jumping over",
+   "obj": 3,
+   "spans": [
+    [
+     38.8,
+     42.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "guiding",
+   "obj": 6,
+   "spans": [
+    [
+     38.2,
+     46.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0051_3702633786.mp4"
+}

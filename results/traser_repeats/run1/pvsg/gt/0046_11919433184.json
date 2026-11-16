@@ -1,0 +1,355 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0046_11919433184",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 563,
+ "video_fps": 5.0,
+ "mask_pngs": 563,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "rock",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "fence",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "fence",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "window",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 9,
+   "pred": "kicking",
+   "obj": 13,
+   "spans": [
+    [
+     86.6,
+     88.0
+    ],
+    [
+     77.4,
+     78.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "standing on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     1.6
+    ],
+    [
+     4.4,
+     7.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "kicking",
+   "obj": 10,
+   "spans": [
+    [
+     1.6,
+     4.4
+    ],
+    [
+     49.6,
+     54.2
+    ],
+    [
+     85.2,
+     86.0
+    ],
+    [
+     61.8,
+     72.0
+    ],
+    [
+     78.0,
+     78.8
+    ],
+    [
+     100.0,
+     105.2
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "toward",
+   "obj": 10,
+   "spans": [
+    [
+     7.8,
+     10.0
+    ],
+    [
+     21.0,
+     29.8
+    ],
+    [
+     47.4,
+     49.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 10,
+   "spans": [
+    [
+     10.0,
+     11.2
+    ],
+    [
+     93.6,
+     95.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "toward",
+   "obj": 8,
+   "spans": [
+    [
+     11.2,
+     14.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "standing on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "picking",
+   "obj": 10,
+   "spans": [
+    [
+     19.0,
+     20.4
+    ],
+    [
+     41.6,
+     43.6
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "next to",
+   "obj": 8,
+   "spans": [
+    [
+     12.8,
+     47.6
+    ],
+    [
+     57.8,
+     64.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "pulling",
+   "obj": 9,
+   "spans": [
+    [
+     60.6,
+     62.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "picking",
+   "obj": 13,
+   "spans": [
+    [
+     73.2,
+     76.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "chasing",
+   "obj": 13,
+   "spans": [
+    [
+     78.8,
+     85.0
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "holding",
+   "obj": 10,
+   "spans": [
+    [
+     94.8,
+     99.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     105.2,
+     112.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "jumping from",
+   "obj": 3,
+   "spans": [
+    [
+     20.8,
+     33.0
+    ],
+    [
+     38.6,
+     40.6
+    ],
+    [
+     44.2,
+     45.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "playing with",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     112.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "playing with",
+   "obj": 13,
+   "spans": [
+    [
+     77.4,
+     88.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0046_11919433184.mp4"
+}
