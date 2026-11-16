@@ -1,0 +1,243 @@
+{
+ "dataset": "pvsg",
+ "video_id": "P02_10",
+ "source": "epic_kitchen",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 244,
+ "video_fps": 5.0,
+ "mask_pngs": 244,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "simmering",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "rack",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "spatula",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "teapot",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "board",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "glove",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "washer",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "pan",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "towel",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "fork",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "cover",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "glove",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "pan",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "cabinet",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     2.8,
+     46.4
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     3.4,
+     6.8
+    ],
+    [
+     43.4,
+     46.0
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "touching",
+   "obj": 15,
+   "spans": [
+    [
+     6.8,
+     43.4
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "in front of",
+   "obj": 14,
+   "spans": [
+    [
+     2.8,
+     47.2
+    ]
+   ]
+  },
+  {
+   "subj": 19,
+   "pred": "stirring",
+   "obj": 4,
+   "spans": [
+    [
+     6.0,
+     43.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/epic_kitchen/videos/P02_10.mp4"
+}
