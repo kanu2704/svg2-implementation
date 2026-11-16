@@ -1,0 +1,159 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1005_7031128593",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 450,
+ "video_fps": 5.0,
+ "mask_pngs": 450,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "toy",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "dog",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 3,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "standing on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "biting",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     24.2
+    ],
+    [
+     43.6,
+     62.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "playing with",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 7,
+   "spans": [
+    [
+     24.0,
+     33.4
+    ],
+    [
+     62.2,
+     80.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "throwing",
+   "obj": 7,
+   "spans": [
+    [
+     32.8,
+     33.4
+    ],
+    [
+     79.6,
+     80.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1005_7031128593.mp4"
+}
