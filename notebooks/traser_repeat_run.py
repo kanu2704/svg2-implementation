@@ -8,7 +8,8 @@ standard deviation over the runs, Nemotron judge) come from tools/repeat_report.
     cd /media/nas_mount/kanupriya/svg2-implementation
     /media/nas_mount/kanupriya/envs/traser/bin/python notebooks/traser_repeat_run.py 2>&1 | tee -a /media/nas_mount/kanupriya/repeat.log
 
-REPEAT_RUNS=3 and REPEAT_WORKERS=2 in front of the command change the number of runs and of workers per GPU.
+REPEAT_RUNS=3 and REPEAT_WORKERS=2 in front of the command change the number of runs and of workers per GPU;
+REPEAT_GPUS=2 uses that GPU (nvidia-smi's number) for this run instead of the GPU_IDS of svg2_settings.json.
 Every step skips videos already answered: after an interruption, run the same command again. Nothing is pushed:
 push the results yourself at the end. Setup part made from notebooks/qwen7b_run.py (its cells 0a-0b).
 """
@@ -21,7 +22,7 @@ RUN_DATASETS = ["pvsg", "svg2test", "vidor"]
 # ----------------------------------------------------------------------------- pairs 0a
 import os, sys, json, glob, time, shutil, subprocess, getpass, random
 BIG_DIR = ""        # your own server: a folder with ~150 GB free, e.g. "/data/kanu/svg2_big" (Kaggle: leave empty)
-GPU_IDS = ""        # your own server: the only GPUs this notebook may touch, e.g. "6" or "6,7" (Kaggle: leave empty)
+GPU_IDS = os.environ.get("REPEAT_GPUS", "")   # this run only, e.g. REPEAT_GPUS=2; empty: GPU_IDS of svg2_settings.json
 ENV = ""            # your own server: your Python environment's folder; 0a stops if the kernel is another one
 # own server: instead of editing these lines, put them in svg2_settings.json next to the repo folder,
 # {"BIG_DIR": "...", "GPU_IDS": "6", "ENV": "..."}; then a git pull never clashes with your edits
