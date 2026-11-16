@@ -1,0 +1,474 @@
+{
+ "dataset": "pvsg",
+ "video_id": "c2e6d807-d903-4b64-98e1-2c07ca700c78_2",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 630,
+ "video_fps": 5.0,
+ "mask_pngs": 630,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "countertop",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "teapot",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "rag",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "glove",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "oven",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "stove",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "sponge",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "window",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "fridge",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "sink",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "faucet",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "bag",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 26,
+   "gt_id": 27,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 27,
+   "gt_id": 28,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 28,
+   "gt_id": 29,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 29,
+   "gt_id": 30,
+   "name": "bowl",
+   "is_thing": true
+  },
+  {
+   "col": 30,
+   "gt_id": 31,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 31,
+   "gt_id": 32,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 32,
+   "gt_id": 33,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 33,
+   "gt_id": 34,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 34,
+   "gt_id": 35,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 35,
+   "gt_id": 36,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 36,
+   "gt_id": 37,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 37,
+   "gt_id": 38,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 38,
+   "gt_id": 39,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 39,
+   "gt_id": 40,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 40,
+   "gt_id": 41,
+   "name": "chair",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 16,
+   "pred": "on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     125.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 22,
+   "spans": [
+    [
+     3.6,
+     13.8
+    ],
+    [
+     15.8,
+     25.0
+    ],
+    [
+     47.2,
+     64.8
+    ],
+    [
+     104.2,
+     125.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "opening",
+   "obj": 18,
+   "spans": [
+    [
+     14.0,
+     15.2
+    ],
+    [
+     33.6,
+     34.2
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "closing",
+   "obj": 18,
+   "spans": [
+    [
+     58.4,
+     59.2
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 30,
+   "spans": [
+    [
+     25.6,
+     46.4
+    ],
+    [
+     104.2,
+     125.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "cleaning",
+   "obj": 22,
+   "spans": [
+    [
+     15.8,
+     25.0
+    ],
+    [
+     47.8,
+     61.8
+    ],
+    [
+     84.8,
+     104.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "cleaning",
+   "obj": 30,
+   "spans": [
+    [
+     27.4,
+     44.4
+    ],
+    [
+     64.8,
+     83.6
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     64.4,
+     104.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "holding",
+   "obj": 11,
+   "spans": [
+    [
+     13.2,
+     33.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "walking on",
+   "obj": 1,
+   "spans": [
+    [
+     108.0,
+     125.4
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "beside",
+   "obj": 17,
+   "spans": [
+    [
+     10.0,
+     62.2
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     123.6,
+     126.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 19,
+   "spans": [
+    [
+     123.6,
+     126.0
+    ]
+   ]
+  },
+  {
+   "subj": 22,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     63.4,
+     114.0
+    ]
+   ]
+  },
+  {
+   "subj": 30,
+   "pred": "on",
+   "obj": 27,
+   "spans": [
+    [
+     46.2,
+     114.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "entering",
+   "obj": 26,
+   "spans": [
+    [
+     6.6,
+     8.0
+    ],
+    [
+     117.2,
+     118.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/c2e6d807-d903-4b64-98e1-2c07ca700c78_2.mp4"
+}
