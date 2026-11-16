@@ -1,0 +1,286 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0028_4021064662",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 95,
+ "video_fps": 5.0,
+ "mask_pngs": 95,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "bottle",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "bag",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 10,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     8.4,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "looking at",
+   "obj": 4,
+   "spans": [
+    [
+     2.2,
+     4.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "wearing",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     7.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "sitting on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     1.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     1.8,
+     3.8
+    ],
+    [
+     11.2,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     3.6,
+     9.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "standing on",
+   "obj": 2,
+   "spans": [
+    [
+     2.2,
+     7.2
+    ],
+    [
+     18.2,
+     19.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "running on",
+   "obj": 2,
+   "spans": [
+    [
+     7.0,
+     10.0
+    ],
+    [
+     11.2,
+     12.8
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 3,
+   "spans": [
+    [
+     7.6,
+     8.0
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "throwing",
+   "obj": 8,
+   "spans": [
+    [
+     9.6,
+     10.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "catching",
+   "obj": 8,
+   "spans": [
+    [
+     9.8,
+     11.4
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "playing with",
+   "obj": 3,
+   "spans": [
+    [
+     12.6,
+     18.6
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "hugging",
+   "obj": 4,
+   "spans": [
+    [
+     12.4,
+     15.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0028_4021064662.mp4"
+}

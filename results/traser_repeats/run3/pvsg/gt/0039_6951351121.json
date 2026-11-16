@@ -1,0 +1,273 @@
+{
+ "dataset": "pvsg",
+ "video_id": "0039_6951351121",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 79,
+ "video_fps": 5.0,
+ "mask_pngs": 79,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "sky",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "grass",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "helmet",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "adult",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 17,
+   "pred": "walking on",
+   "obj": 3,
+   "spans": [
+    [
+     1.4,
+     4.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "in front of",
+   "obj": 17,
+   "spans": [
+    [
+     1.8,
+     3.8
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 6,
+   "spans": [
+    [
+     1.4,
+     3.8
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     1.4,
+     3.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     15.2,
+     15.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     2.2
+    ],
+    [
+     13.0,
+     14.2
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "throwing",
+   "obj": 12,
+   "spans": [
+    [
+     1.6,
+     3.6
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     2.4,
+     10.4
+    ],
+    [
+     12.2,
+     14.8
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "running on",
+   "obj": 3,
+   "spans": [
+    [
+     4.6,
+     5.8
+    ],
+    [
+     12.2,
+     14.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "catching",
+   "obj": 12,
+   "spans": [
+    [
+     5.6,
+     9.0
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "throwing",
+   "obj": 12,
+   "spans": [
+    [
+     8.8,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "throwing",
+   "obj": 15,
+   "spans": [
+    [
+     13.2,
+     13.6
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "throwing",
+   "obj": 12,
+   "spans": [
+    [
+     13.8,
+     15.0
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/0039_6951351121.mp4"
+}
