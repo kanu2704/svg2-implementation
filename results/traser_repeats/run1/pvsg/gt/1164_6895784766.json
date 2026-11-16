@@ -1,0 +1,290 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1164_6895784766",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 223,
+ "video_fps": 5.0,
+ "mask_pngs": 223,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "ceiling",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "basket",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "bed",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "sofa",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "light",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "ball",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "ball",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 7,
+   "pred": "kicking",
+   "obj": 16,
+   "spans": [
+    [
+     26.6,
+     27.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "next to",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     44.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     0.8
+    ],
+    [
+     17.4,
+     44.6
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "standing on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     34.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "standing on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     44.6
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 12,
+   "spans": [
+    [
+     6.4,
+     7.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 16,
+   "spans": [
+    [
+     7.6,
+     10.6
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 16,
+   "spans": [
+    [
+     10.6,
+     16.2
+    ],
+    [
+     18.2,
+     20.2
+    ],
+    [
+     28.4,
+     32.8
+    ],
+    [
+     35.4,
+     38.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     31.6,
+     34.8
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "throwing",
+   "obj": 12,
+   "spans": [
+    [
+     0.0,
+     1.2
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "throwing",
+   "obj": 12,
+   "spans": [
+    [
+     6.8,
+     7.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "carrying",
+   "obj": 16,
+   "spans": [
+    [
+     10.0,
+     13.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "throwing",
+   "obj": 16,
+   "spans": [
+    [
+     12.8,
+     14.6
+    ],
+    [
+     20.0,
+     20.8
+    ],
+    [
+     37.8,
+     38.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "squatting on",
+   "obj": 1,
+   "spans": [
+    [
+     16.8,
+     17.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1164_6895784766.mp4"
+}

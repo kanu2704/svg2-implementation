@@ -1,0 +1,268 @@
+{
+ "dataset": "pvsg",
+ "video_id": "43b0205a-4e3c-46a7-9d1c-c04ead730180",
+ "source": "ego4d",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 980,
+ "video_fps": 5.0,
+ "mask_pngs": 937,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "water",
+   "is_thing": false
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "brush",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "carpet",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "dustbin",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "washer",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "spray",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "mop",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "shelf",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "door",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "towel",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 17,
+   "gt_id": 18,
+   "name": "cup",
+   "is_thing": true
+  },
+  {
+   "col": 18,
+   "gt_id": 19,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 19,
+   "gt_id": 20,
+   "name": "bike",
+   "is_thing": true
+  },
+  {
+   "col": 20,
+   "gt_id": 21,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 21,
+   "gt_id": 22,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 22,
+   "gt_id": 23,
+   "name": "chair",
+   "is_thing": true
+  },
+  {
+   "col": 23,
+   "gt_id": 24,
+   "name": "bike",
+   "is_thing": true
+  },
+  {
+   "col": 24,
+   "gt_id": 25,
+   "name": "others",
+   "is_thing": true
+  },
+  {
+   "col": 25,
+   "gt_id": 26,
+   "name": "chair",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     4.8
+    ],
+    [
+     10.6,
+     187.4
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "walking on",
+   "obj": 1,
+   "spans": [
+    [
+     0.0,
+     17.8
+    ],
+    [
+     31.4,
+     161.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "cleaning",
+   "obj": 1,
+   "spans": [
+    [
+     11.6,
+     161.8
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 17,
+   "spans": [
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     162.0,
+     187.4
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "cleaning",
+   "obj": 10,
+   "spans": [
+    [
+     163.6,
+     187.4
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "carrying",
+   "obj": 17,
+   "spans": [
+    [
+     5.2,
+     9.6
+    ]
+   ]
+  },
+  {
+   "subj": 15,
+   "pred": "watering",
+   "obj": 10,
+   "spans": [
+    [
+     163.6,
+     187.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/ego4d/videos/43b0205a-4e3c-46a7-9d1c-c04ead730180.mp4"
+}
