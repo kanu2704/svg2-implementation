@@ -118,9 +118,10 @@ def main():
     ap.add_argument("--runs", default="/kaggle/working/traser_bench_runs")
     ap.add_argument("--gpu_name", default="gpu0")
     ap.add_argument("--model", default=None, help="TRASER checkpoint (Hub id or local folder)")
-    ap.add_argument("--lm", choices=["traser", "qwen7b"], default="traser",
+    ap.add_argument("--lm", choices=["traser", "qwen7b", "traser_meanpool"], default="traser",
                     help="qwen7b: Qwen2.5-VL-7B-Instruct, not fine-tuned, in TRASER's pipeline (run_traser.load_qwen); "
-                         "use another --results folder")
+                         "traser_meanpool: TRASER with its two trained resamplers replaced by plain averaging "
+                         "(run_traser.load_traser_meanpool); use another --results folder")
     ap.add_argument("--qwen_model", default=None, help="--lm qwen7b: Qwen2.5-VL-7B-Instruct (Hub id or local folder)")
     ap.add_argument("--base_model", default=None, help="Qwen2.5-VL-3B-Instruct processor (Hub id or local folder)")
     ap.add_argument("--sam2_ckpt", default=None, help="local sam2.1_hiera_large.pt (VidOR masks, offline)")
@@ -216,7 +217,7 @@ def main():
     threading.Thread(target=watchdog, daemon=True).start()
     import torch
     import bench_data as B
-    from run_traser import QWEN_PROMPT, encode, infer, load_model, load_qwen
+    from run_traser import QWEN_PROMPT, encode, infer, load_model, load_qwen, load_traser_meanpool
     prompt = QWEN_PROMPT if args.lm == "qwen7b" else None
 
     prepare = Preparer(args)
@@ -235,10 +236,15 @@ def main():
                 shutil.copyfile(B.item_dir(args.bench, B.base_dataset(dataset), video_id) / "gt.json", gt_copy)
             if model is None:
                 save_status(state="loading model")
-                log("loading the TRASER model ..." if args.lm == "traser" else "loading Qwen2.5-VL-7B-Instruct (TRASER's pipeline) ...")
+                log({"traser": "loading the TRASER model ...", "qwen7b": "loading Qwen2.5-VL-7B-Instruct (TRASER's pipeline) ...",
+                     "traser_meanpool": "loading TRASER, resamplers replaced by plain averaging ..."}[args.lm])
                 t0 = time.time()
-                model, processor, tokenizer = (load_qwen(args.qwen_model, dtype=args.dtype) if args.lm == "qwen7b" else
-                                               load_model(args.model, dtype=args.dtype, base_model=args.base_model))
+                if args.lm == "qwen7b":
+                    model, processor, tokenizer = load_qwen(args.qwen_model, dtype=args.dtype)
+                elif args.lm == "traser_meanpool":
+                    model, processor, tokenizer = load_traser_meanpool(args.model, dtype=args.dtype, base_model=args.base_model)
+                else:
+                    model, processor, tokenizer = load_model(args.model, dtype=args.dtype, base_model=args.base_model)
                 log(f"model loaded in {time.time() - t0:.0f} s ({getattr(getattr(getattr(model, 'lm_head', None), 'weight', None), 'dtype', '?')}, "
                     f"{torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'})")
             gt = B.load_gt(args.bench, dataset, video_id)

@@ -261,6 +261,18 @@ def load_model(model_id=None, dtype="auto", device=None, base_model=None):
     return model, processor, tokenizer
 
 
+def load_traser_meanpool(model_id=None, dtype="auto", device=None, base_model=None):
+    """TRASER without its two trained resamplers: the released checkpoint (its vision encoder, fine-tuned language
+    model and special tokens) and the same input layout ("Object k:" blocks, "<a - b sec>" window labels, 32 tokens per
+    object and per window), but the Object-Trajectory and Temporal-Window resamplers replaced by plain averaging to
+    the same number of tokens (MeanPool, nothing learned). What the fine-tuned language model does without them."""
+    model, processor, tokenizer = load_model(model_id, dtype, device, base_model)
+    model.perceiver_resampler = MeanPool(int(getattr(model.config, "temporal_resampler_n_latents", 32)))
+    model.second_perceiver_resampler = MeanPool(int(getattr(model.config, "object_resampler_n_latents", 32)))
+    chunk_resamplers(model)
+    return model, processor, tokenizer
+
+
 def _token_counter(progress, t0, every=25):
     """A stopping criterion that never stops: it only reports how many tokens have been generated."""
     from transformers import StoppingCriteria, StoppingCriteriaList

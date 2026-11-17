@@ -12,6 +12,8 @@ at most 20 minutes of work; in the next session run the same commands and it con
 
 REPEAT_DATASETS   pvsg, vidor, svg2test, comma-separated, in that order (default: pvsg,svg2test,vidor)
 REPEAT_RUNS       how many runs (default 3)
+REPEAT_LM         traser (default) or traser_meanpool (TRASER with its two resamplers replaced by plain averaging)
+REPEAT_OUT        where the answers go (default results/traser_repeats; results/<REPEAT_LM> for another model)
 SAV_LINKS         SVG2test: path of Meta's SA-V links file (uploaded to the session), for its 33 SA-V videos;
                   without it only the 67 VIPSeg videos run
 VIPSEG_ZIP        SVG2test: path of VIPSeg.zip if Google Drive refuses the download
@@ -31,6 +33,8 @@ import time
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRANCH = "claude/traser-interpretability"
 N_RUNS = int(os.environ.get("REPEAT_RUNS", "3"))
+LM = os.environ.get("REPEAT_LM", "traser")          # traser_meanpool: TRASER with its resamplers replaced by averaging
+OUT = os.environ.get("REPEAT_OUT", "results/traser_repeats" if LM == "traser" else f"results/{LM}")
 DATASETS = [d.strip() for d in os.environ.get("REPEAT_DATASETS", "pvsg,svg2test,vidor").split(",") if d.strip()]
 SAVE_EVERY_MIN = 20
 
@@ -50,10 +54,10 @@ BIG = "/kaggle/tmp" if os.path.isdir("/kaggle/tmp") else "/tmp"            # big
 BENCH = os.path.join(BIG, "traser_bench")                                   # prepared videos (masks + labels)
 RUNS = os.path.join(BIG, "traser_repeat_runs")                              # worker logs and progress
 PREP = os.path.join(BIG, "prep_results")                                    # labels written while preparing
-REP = os.path.join(REPO, "results", "traser_repeats")
+REP = os.path.join(REPO, OUT)
 for d in (BENCH, RUNS, PREP, REP):
     os.makedirs(d, exist_ok=True)
-step(f"code: {REPO} @ " + git("log", "--oneline", "-1").stdout.strip() + f"; datasets {DATASETS}, {N_RUNS} runs")
+step(f"code: {REPO} @ " + git("log", "--oneline", "-1").stdout.strip() + f"; --lm {LM}, datasets {DATASETS}, {N_RUNS} runs -> {OUT}")
 
 # ----------------------------------------------------------------------------- setup
 step("installing packages + the official SVG2 code (1-2 min) ...")
@@ -97,10 +101,10 @@ def save():
     """git add + commit + push results/traser_repeats (after pulling what others pushed)."""
     if not PUSH:
         return
-    git("add", "results/traser_repeats")
+    git("add", OUT)
     if git("diff", "--cached", "--quiet").returncode == 0:
         return
-    git("commit", "-q", "-m", f"TRASER repeat runs (Kaggle T4): {summary()}")
+    git("commit", "-q", "-m", f"{OUT} (Kaggle T4, --lm {LM}): {summary()}")
     for _ in range(3):
         git("pull", "--rebase", "--autostash", "-q", "origin", BRANCH)
         r = git("push", "-q", "origin", f"HEAD:{BRANCH}")
@@ -204,7 +208,7 @@ for ds in DATASETS:
                 qfile = os.path.join(RUNS, f"run{k}_{ds}_gpu{i}.queue")
                 open(qfile, "w").write("\n".join(part))
                 cmds.append(f"CUDA_VISIBLE_DEVICES={g} HF_HOME={os.environ['HF_HOME']} python3 tools/bench_run.py "
-                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS} --gpu_name run{k}_gpu{i} "
+                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS} --gpu_name run{k}_gpu{i} --lm {LM} "
                             f"{extra} --videos $(cat {qfile})")
         run_live(cmds, f"run {k}, {ds}")
         step(f"run {k}, {ds}: {len(answered(root, ds))} of {len(vids)} answered ({(time.time() - t1) / 3600:.1f} h)")

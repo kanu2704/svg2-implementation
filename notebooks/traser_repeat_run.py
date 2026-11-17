@@ -10,7 +10,8 @@ standard deviation over the runs, Nemotron judge) come from tools/repeat_report.
 
 REPEAT_RUNS=3 and REPEAT_WORKERS=2 in front of the command change the number of runs and of workers per GPU;
 REPEAT_GPUS=2 uses that GPU (nvidia-smi's number) for this run instead of the GPU_IDS of svg2_settings.json;
-REPEAT_DATASETS=svg2test,vidor runs only those; REPEAT_DTYPE=float16 uses Kaggle's T4 precision (default auto).
+REPEAT_DATASETS=svg2test,vidor runs only those; REPEAT_DTYPE=float16 uses Kaggle's T4 precision (default auto);
+REPEAT_LM=traser_meanpool runs TRASER with its two resamplers replaced by averaging (answers in results/traser_meanpool).
 Every step skips videos already answered: after an interruption, run the same command again. Nothing is pushed:
 push the results yourself at the end. Setup part made from notebooks/qwen7b_run.py (its cells 0a-0b).
 """
@@ -19,6 +20,8 @@ N_RUNS = int(os.environ.get("REPEAT_RUNS", "3"))              # how many times t
 WORKERS_PER_GPU = int(os.environ.get("REPEAT_WORKERS", "2"))  # TRASER (3B, bfloat16) needs about 10 GB per worker; 2 fit
                         # on a 48 GB A6000. Start with REPEAT_WORKERS=1 in front of the command after "out of memory".
 RUN_DATASETS = [d.strip() for d in os.environ.get("REPEAT_DATASETS", "pvsg,svg2test,vidor").split(",") if d.strip()]
+LM = os.environ.get("REPEAT_LM", "traser")            # traser_meanpool: TRASER with its resamplers replaced by averaging
+OUT = os.environ.get("REPEAT_OUT", "results/traser_repeats" if LM == "traser" else f"results/{LM}")
 DTYPE = os.environ.get("REPEAT_DTYPE", "auto")   # float16: as on Kaggle's T4s (vision in float32); auto: bfloat16 here
 
 # ----------------------------------------------------------------------------- pairs 0a
@@ -146,8 +149,8 @@ while True:
 # ----------------------------------------------------------------------------- TRASER, N_RUNS times
 import threading, queue
 from interp import common as IC
-REP = os.path.join(REPO, "results", "traser_repeats")        # run<k>/<dataset>/preds + gt
-RUNS_R = os.path.join(RUNS, "traser_repeats")                 # worker logs and progress files
+REP = os.path.join(REPO, OUT)                                # run<k>/<dataset>/preds + gt
+RUNS_R = os.path.join(RUNS, os.path.basename(OUT))                 # worker logs and progress files
 os.makedirs(RUNS_R, exist_ok=True)
 GPUS = [x.strip() for x in os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(",") if x.strip()]
 GB_PER_WORKER = 15      # TRASER's peak in the earlier run: up to 14 GB per video (PVSG), about 11 GB (SVG2test)
@@ -227,7 +230,7 @@ for k in range(1, N_RUNS + 1):
                 qfile = os.path.join(RUNS_R, f"run{k}_{ds}_w{i}.queue")
                 open(qfile, "w").write("\n".join(part))
                 cmds.append(f"CUDA_VISIBLE_DEVICES={g} HF_HOME={os.environ['HF_HOME']} python3 tools/bench_run.py "
-                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS_R} --dtype {DTYPE} "
+                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS_R} --dtype {DTYPE} --lm {LM} "
                             f"--gpu_name run{k}_w{i} --videos $(cat {qfile})")
         run_live(cmds, f"run {k}, {ds}")
         n = len(answered(root, ds))
