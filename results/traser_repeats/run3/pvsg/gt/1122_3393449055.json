@@ -1,0 +1,203 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1122_3393449055",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 92,
+ "video_fps": 5.0,
+ "mask_pngs": 92,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "cabinet",
+   "is_thing": true
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "dog",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "hat",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "hat",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 3,
+   "pred": "holding",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     18.4
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "looking at",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     18.4
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "wearing",
+   "obj": 7,
+   "spans": [
+    [
+     0.0,
+     18.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "looking at",
+   "obj": 5,
+   "spans": [
+    [
+     0.0,
+     12.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "wearing",
+   "obj": 9,
+   "spans": [
+    [
+     7.8,
+     13.6
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "playing with",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.8
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "kissing",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     8.8
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "next to",
+   "obj": 8,
+   "spans": [
+    [
+     0.0,
+     13.6
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "cleaning",
+   "obj": 4,
+   "spans": [
+    [
+     13.0,
+     15.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "licking",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     2.4
+    ],
+    [
+     3.4,
+     5.0
+    ],
+    [
+     6.6,
+     7.8
+    ],
+    [
+     0.0,
+     2.4
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1122_3393449055.mp4"
+}
