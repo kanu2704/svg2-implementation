@@ -9,7 +9,8 @@ standard deviation over the runs, Nemotron judge) come from tools/repeat_report.
     /media/nas_mount/kanupriya/envs/traser/bin/python notebooks/traser_repeat_run.py 2>&1 | tee -a /media/nas_mount/kanupriya/repeat.log
 
 REPEAT_RUNS=3 and REPEAT_WORKERS=2 in front of the command change the number of runs and of workers per GPU;
-REPEAT_GPUS=2 uses that GPU (nvidia-smi's number) for this run instead of the GPU_IDS of svg2_settings.json.
+REPEAT_GPUS=2 uses that GPU (nvidia-smi's number) for this run instead of the GPU_IDS of svg2_settings.json;
+REPEAT_DATASETS=svg2test,vidor runs only those; REPEAT_DTYPE=float16 uses Kaggle's T4 precision (default auto).
 Every step skips videos already answered: after an interruption, run the same command again. Nothing is pushed:
 push the results yourself at the end. Setup part made from notebooks/qwen7b_run.py (its cells 0a-0b).
 """
@@ -17,7 +18,8 @@ import os
 N_RUNS = int(os.environ.get("REPEAT_RUNS", "3"))              # how many times the whole baseline is run
 WORKERS_PER_GPU = int(os.environ.get("REPEAT_WORKERS", "2"))  # TRASER (3B, bfloat16) needs about 10 GB per worker; 2 fit
                         # on a 48 GB A6000. Start with REPEAT_WORKERS=1 in front of the command after "out of memory".
-RUN_DATASETS = ["pvsg", "svg2test", "vidor"]
+RUN_DATASETS = [d.strip() for d in os.environ.get("REPEAT_DATASETS", "pvsg,svg2test,vidor").split(",") if d.strip()]
+DTYPE = os.environ.get("REPEAT_DTYPE", "auto")   # float16: as on Kaggle's T4s (vision in float32); auto: bfloat16 here
 
 # ----------------------------------------------------------------------------- pairs 0a
 import os, sys, json, glob, time, shutil, subprocess, getpass, random
@@ -207,7 +209,7 @@ def run_live(cmds, label):
     step(f"{label}: finished" + (f" (!! worker {bad} exited with an error, see above)" if bad else ""))
 
 
-step(f"{N_RUNS} runs x {RUN_DATASETS}, up to {WORKERS_PER_GPU} worker(s) per GPU on {GPUS}; answers -> {REP}/run<k>")
+step(f"{N_RUNS} runs x {RUN_DATASETS} ({DTYPE}), up to {WORKERS_PER_GPU} worker(s) per GPU on {GPUS}; answers -> {REP}/run<k>")
 t_all = time.time()
 for k in range(1, N_RUNS + 1):
     root = os.path.join(REP, f"run{k}")
@@ -225,7 +227,7 @@ for k in range(1, N_RUNS + 1):
                 qfile = os.path.join(RUNS_R, f"run{k}_{ds}_w{i}.queue")
                 open(qfile, "w").write("\n".join(part))
                 cmds.append(f"CUDA_VISIBLE_DEVICES={g} HF_HOME={os.environ['HF_HOME']} python3 tools/bench_run.py "
-                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS_R} "
+                            f"--results {root} --bench {BENCH} --dataset {ds} --runs {RUNS_R} --dtype {DTYPE} "
                             f"--gpu_name run{k}_w{i} --videos $(cat {qfile})")
         run_live(cmds, f"run {k}, {ds}")
         n = len(answered(root, ds))
