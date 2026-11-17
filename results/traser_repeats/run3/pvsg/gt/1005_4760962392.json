@@ -1,0 +1,338 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1005_4760962392",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 450,
+ "video_fps": 5.0,
+ "mask_pngs": 450,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "ground",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "wall",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "spoon",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "table",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "candle",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "cake",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 11,
+   "gt_id": 12,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 12,
+   "gt_id": 13,
+   "name": "knife",
+   "is_thing": true
+  },
+  {
+   "col": 13,
+   "gt_id": 14,
+   "name": "candle",
+   "is_thing": true
+  },
+  {
+   "col": 14,
+   "gt_id": 15,
+   "name": "plate",
+   "is_thing": true
+  },
+  {
+   "col": 15,
+   "gt_id": 16,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 16,
+   "gt_id": 17,
+   "name": "child",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 17,
+   "pred": "blowing",
+   "obj": 8,
+   "spans": [
+    [
+     5.4,
+     9.2
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "holding",
+   "obj": 9,
+   "spans": [
+    [
+     39.6,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 15,
+   "spans": [
+    [
+     84.6,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 3,
+   "spans": [
+    [
+     86.6,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     5.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "looking at",
+   "obj": 10,
+   "spans": [
+    [
+     5.0,
+     8.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 7,
+   "spans": [
+    [
+     11.6,
+     22.6
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "holding",
+   "obj": 13,
+   "spans": [
+    [
+     34.0,
+     80.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "cutting",
+   "obj": 10,
+   "spans": [
+    [
+     36.0,
+     75.2
+    ]
+   ]
+  },
+  {
+   "subj": 4,
+   "pred": "in front of",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "picking",
+   "obj": 8,
+   "spans": [
+    [
+     23.0,
+     26.2
+    ]
+   ]
+  },
+  {
+   "subj": 16,
+   "pred": "picking",
+   "obj": 14,
+   "spans": [
+    [
+     23.0,
+     26.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "beside",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     14.2
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "beside",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "beside",
+   "obj": 4,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 12,
+   "pred": "beside",
+   "obj": 17,
+   "spans": [
+    [
+     0.0,
+     20.2
+    ]
+   ]
+  },
+  {
+   "subj": 17,
+   "pred": "beside",
+   "obj": 6,
+   "spans": [
+    [
+     39.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     23.2
+    ]
+   ]
+  },
+  {
+   "subj": 14,
+   "pred": "on",
+   "obj": 10,
+   "spans": [
+    [
+     0.0,
+     23.2
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1005_4760962392.mp4"
+}

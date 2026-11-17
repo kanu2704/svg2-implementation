@@ -1,0 +1,325 @@
+{
+ "dataset": "pvsg",
+ "video_id": "1021_4278168115",
+ "source": "vidor",
+ "video": "video.mp4",
+ "fps": 5.0,
+ "n_frames": 399,
+ "video_fps": 5.0,
+ "mask_pngs": 399,
+ "time_unit": "seconds",
+ "objects": [
+  {
+   "col": 0,
+   "gt_id": 1,
+   "name": "tree",
+   "is_thing": false
+  },
+  {
+   "col": 1,
+   "gt_id": 2,
+   "name": "floor",
+   "is_thing": false
+  },
+  {
+   "col": 2,
+   "gt_id": 3,
+   "name": "gift",
+   "is_thing": true
+  },
+  {
+   "col": 3,
+   "gt_id": 4,
+   "name": "curtain",
+   "is_thing": true
+  },
+  {
+   "col": 4,
+   "gt_id": 5,
+   "name": "book",
+   "is_thing": true
+  },
+  {
+   "col": 5,
+   "gt_id": 6,
+   "name": "adult",
+   "is_thing": true
+  },
+  {
+   "col": 6,
+   "gt_id": 7,
+   "name": "child",
+   "is_thing": true
+  },
+  {
+   "col": 7,
+   "gt_id": 8,
+   "name": "box",
+   "is_thing": true
+  },
+  {
+   "col": 8,
+   "gt_id": 9,
+   "name": "book",
+   "is_thing": true
+  },
+  {
+   "col": 9,
+   "gt_id": 10,
+   "name": "book",
+   "is_thing": true
+  },
+  {
+   "col": 10,
+   "gt_id": 11,
+   "name": "book",
+   "is_thing": true
+  }
+ ],
+ "relations": [
+  {
+   "subj": 7,
+   "pred": "touching",
+   "obj": 9,
+   "spans": [
+    [
+     66.2,
+     71.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "touching",
+   "obj": 11,
+   "spans": [
+    [
+     78.2,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "touching",
+   "obj": 5,
+   "spans": [
+    [
+     49.4,
+     52.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "sitting on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "in front of",
+   "obj": 6,
+   "spans": [
+    [
+     0.0,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holding",
+   "obj": 3,
+   "spans": [
+    [
+     0.0,
+     3.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "opening",
+   "obj": 3,
+   "spans": [
+    [
+     3.6,
+     31.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 8,
+   "spans": [
+    [
+     31.0,
+     33.2
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "opening",
+   "obj": 8,
+   "spans": [
+    [
+     33.4,
+     42.4
+    ]
+   ]
+  },
+  {
+   "subj": 5,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     42.8,
+     43.4
+    ],
+    [
+     50.6,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 9,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     42.8,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 10,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     42.8,
+     50.0
+    ],
+    [
+     54.0,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 11,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     42.8,
+     54.6
+    ],
+    [
+     65.4,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     43.2,
+     48.8
+    ]
+   ]
+  },
+  {
+   "subj": 6,
+   "pred": "holding",
+   "obj": 5,
+   "spans": [
+    [
+     49.0,
+     51.2
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 10,
+   "spans": [
+    [
+     50.0,
+     54.0
+    ]
+   ]
+  },
+  {
+   "subj": 7,
+   "pred": "holding",
+   "obj": 11,
+   "spans": [
+    [
+     54.6,
+     65.4
+    ]
+   ]
+  },
+  {
+   "subj": 8,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     42.4,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 3,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     31.0,
+     79.8
+    ]
+   ]
+  },
+  {
+   "subj": 1,
+   "pred": "on",
+   "obj": 2,
+   "spans": [
+    [
+     0.0,
+     79.8
+    ]
+   ]
+  }
+ ],
+ "video_source": "/tmp/pvsg/vidor/videos/1021_4278168115.mp4"
+}
