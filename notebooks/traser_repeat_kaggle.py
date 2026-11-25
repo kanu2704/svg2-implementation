@@ -15,8 +15,9 @@ REPEAT_RUNS       how many runs (default 3)
 REPEAT_LM         traser (default) or traser_meanpool (TRASER with its two resamplers replaced by plain averaging)
 REPEAT_OUT        where the answers go (default results/traser_repeats; results/<REPEAT_LM> for another model)
 SAV_LINKS         SVG2test: path of Meta's SA-V links file (uploaded to the session), for its 33 SA-V videos;
-                  without it only the 67 VIPSeg videos run
-VIPSEG_ZIP        SVG2test: path of VIPSeg.zip if Google Drive refuses the download
+                  without it only the 67 VSPW videos run
+VSPW_DIR          SVG2test: a folder with your own copy of VSPW (VSPW_data.tar_aa ... or one archive), if Google Drive
+                  refuses the download; otherwise it is downloaded (full resolution, ~43 GB)
 
 Scores afterwards (anywhere, NVIDIA key): python3 tools/repeat_report.py. On the server the same runs are made by
 notebooks/traser_repeat_run.py (there the data is already prepared).
@@ -143,15 +144,36 @@ def prepare(ds):
         vip = [v for v in todo if rows[v]["split"] == "vipseg"]
         sav = [v for v in todo if rows[v]["split"] == "sav"]
         out = os.path.join(BIG, "svg2test_videos")
-        videos = {}
+        videos, fallback = {}, {}
         if vip:
-            zpath = os.environ.get("VIPSEG_ZIP") or os.path.join(BIG, "VIPSeg.zip")
-            if not os.path.exists(zpath):
-                import gdown
-                gdown.download(id="1B13QUiE82xf7N6nVHclb4ErN-Zuai-sZ", output=zpath, quiet=False)
-            found = B.extract_vipseg_frames(zpath, vip, os.path.join(BIG, "vipseg_frames"))
+            # As the published run (notebooks/full_pairs_run.py) and the paper: VSPW's own frames, one per mask frame, at
+            # 6 fps. Not VIPSeg: it keeps only every 3rd frame, so its videos would be a third as long and the human
+            # relation times (mask frame / 6) would not match the video.
+            vdir = os.path.join(BIG, "svg2test_vspw_videos")
+            if os.environ.get("VSPW_DIR"):
+                parts = sorted(glob.glob(os.path.join(os.environ["VSPW_DIR"], "*")))
+            elif max(masks[v][0][0]["size"][0] for v in vip) <= 480:
+                parts = B.download_vspw(BIG, "480p")
+            else:
+                step("SVG2test: downloading full-resolution VSPW (6 parts, ~43 GB) ...")
+                try:
+                    parts = B.download_vspw(BIG, "full_parts")
+                except Exception as e:  # noqa: BLE001
+                    step(f"!! Google Drive refused the full VSPW ({str(e)[:150]}); using 480p, scaled up to the mask size")
+                    parts = B.download_vspw(BIG, "480p")
+            found = B.extract_vspw_frames(parts if len(parts) > 1 else parts[0], vip, os.path.join(BIG, "vspw_frames"),
+                                          log=print)
+            if set(vip) - found:
+                step(f"!! VSPW frames not found for {sorted(set(vip) - found)}")
             for v in sorted(found):
-                videos[v] = B.vipseg_to_mp4(os.path.join(BIG, "vipseg_frames", v), os.path.join(out, f"{v}.mp4"))
+                fdir = os.path.join(BIG, "vspw_frames", v)
+                h, w = masks[v][0][0]["size"]
+                p = os.path.join(vdir, f"{v}.mp4")
+                if not os.path.exists(p):
+                    B.frames_to_mp4(fdir, p, fps=6, size=(w - w % 2, h - h % 2))
+                videos[v] = p
+                if len(glob.glob(os.path.join(fdir, "*.jpg"))) != len(masks[v]):   # not expected: nearest frame
+                    fallback[v] = fdir
         if sav and os.environ.get("SAV_LINKS"):
             missing = B.fetch_sav_videos(B.sav_links(os.environ["SAV_LINKS"]), sav, out)
             if missing:
@@ -160,7 +182,7 @@ def prepare(ds):
         elif sav:
             step(f"!! {len(sav)} SA-V videos skipped: set SAV_LINKS to Meta's links file to run them")
         for v, p in sorted(videos.items()):
-            B.prepare_svg2test(v, rows[v], masks[v], p, BENCH, PREP)
+            B.prepare_svg2test(v, rows[v], masks[v], p, BENCH, PREP, vipseg_frames=fallback.get(v))
         return [v for v in want if B.item_ready(BENCH, ds, v)], ""
     raise SystemExit(f"unknown dataset {ds}")
 
