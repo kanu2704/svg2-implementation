@@ -465,7 +465,7 @@ def extract_vipseg_frames(archive, video_ids, out_dir):
         with tarfile.open(archive, "r:*") as t:
             for m in t:
                 if m.isfile():
-                    keep(m.name, lambda m=m: t.extractfile(m).read(), m.offset)
+                    keep(m.name, lambda m=m: t.extractfile(m).read())
     else:
         head = open(archive, "rb").read(300)
         size = os.path.getsize(archive)
