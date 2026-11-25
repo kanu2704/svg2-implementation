@@ -140,7 +140,10 @@ def prepare(ds):
         root = os.path.join(BIG, "svg2")
         B.download_svg2test(root)
         rows, masks = B.svg2test_rows(root), B.svg2test_masks(root)
-        todo = [v for v in want if v in rows and not B.item_ready(BENCH, ds, v)]
+        def from_vipseg(v):          # made by the old version of this script (VIPSeg, a third of the frames): redo
+            g = B.load_gt(BENCH, ds, v)
+            return g["source"] == "vipseg" and g["n_frames"] != g["mask_frames"]
+        todo = [v for v in want if v in rows and (not B.item_ready(BENCH, ds, v) or from_vipseg(v))]
         vip = [v for v in todo if rows[v]["split"] == "vipseg"]
         sav = [v for v in todo if rows[v]["split"] == "sav"]
         out = os.path.join(BIG, "svg2test_videos")
