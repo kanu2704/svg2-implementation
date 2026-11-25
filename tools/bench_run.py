@@ -118,10 +118,12 @@ def main():
     ap.add_argument("--runs", default="/kaggle/working/traser_bench_runs")
     ap.add_argument("--gpu_name", default="gpu0")
     ap.add_argument("--model", default=None, help="TRASER checkpoint (Hub id or local folder)")
-    ap.add_argument("--lm", choices=["traser", "qwen7b", "traser_meanpool"], default="traser",
+    ap.add_argument("--lm", choices=["traser", "qwen7b", "traser_meanpool", "traser_plain"], default="traser",
                     help="qwen7b: Qwen2.5-VL-7B-Instruct, not fine-tuned, in TRASER's pipeline (run_traser.load_qwen); "
                          "traser_meanpool: TRASER with its two trained resamplers replaced by plain averaging "
-                         "(run_traser.load_traser_meanpool); use another --results folder")
+                         "(run_traser.load_traser_meanpool); traser_plain: TRASER's fine-tuned model alone, as a "
+                         "standard Qwen2.5-VL (whole video + the objects' boxes as text, run_plain.py); "
+                         "use another --results folder")
     ap.add_argument("--qwen_model", default=None, help="--lm qwen7b: Qwen2.5-VL-7B-Instruct (Hub id or local folder)")
     ap.add_argument("--base_model", default=None, help="Qwen2.5-VL-3B-Instruct processor (Hub id or local folder)")
     ap.add_argument("--sam2_ckpt", default=None, help="local sam2.1_hiera_large.pt (VidOR masks, offline)")
@@ -218,6 +220,10 @@ def main():
     import torch
     import bench_data as B
     from run_traser import QWEN_PROMPT, encode, infer, load_model, load_qwen, load_traser_meanpool
+    if args.lm == "traser_plain":
+        if encode_mode:
+            raise SystemExit("--lm traser_plain has no TRASER sequence to encode (use --mode hf)")
+        from run_plain import infer_plain as infer, load_plain
     prompt = QWEN_PROMPT if args.lm == "qwen7b" else None
 
     prepare = Preparer(args)
@@ -237,10 +243,13 @@ def main():
             if model is None:
                 save_status(state="loading model")
                 log({"traser": "loading the TRASER model ...", "qwen7b": "loading Qwen2.5-VL-7B-Instruct (TRASER's pipeline) ...",
-                     "traser_meanpool": "loading TRASER, resamplers replaced by plain averaging ..."}[args.lm])
+                     "traser_meanpool": "loading TRASER, resamplers replaced by plain averaging ...",
+                     "traser_plain": "loading TRASER's weights as a standard Qwen2.5-VL (no TRASER pipeline) ..."}[args.lm])
                 t0 = time.time()
                 if args.lm == "qwen7b":
                     model, processor, tokenizer = load_qwen(args.qwen_model, dtype=args.dtype)
+                elif args.lm == "traser_plain":
+                    model, processor, tokenizer = load_plain(args.model, dtype=args.dtype, base_model=args.base_model)
                 elif args.lm == "traser_meanpool":
                     model, processor, tokenizer = load_traser_meanpool(args.model, dtype=args.dtype, base_model=args.base_model)
                 else:

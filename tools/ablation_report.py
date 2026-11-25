@@ -1,7 +1,9 @@
-"""Is TRASER's fine-tuned language model "just the vocabulary"? TRASER with its two trained resamplers (Object-Trajectory
-and Temporal-Window) replaced by plain averaging (bench_run.py --lm traser_meanpool; same input layout, same prompt,
-same output format) next to TRASER itself and the untrained Qwen2.5-VL-7B in the same averaging pipeline, on the same
-videos. Three kinds of numbers:
+"""Is TRASER's fine-tuned language model "just the vocabulary"? On the same videos, next to TRASER itself:
+  - TRASER's fine-tuned model alone (bench_run.py --lm traser_plain, run_plain.py): its weights as a standard
+    Qwen2.5-VL, the whole video as ordinary video tokens and the objects' boxes as text, no TRASER pipeline;
+  - TRASER with its two trained resamplers replaced by plain averaging (--lm traser_meanpool; same layout);
+  - the untrained Qwen2.5-VL-7B in TRASER's pipeline with averaging (results/qwen7b_bench).
+A model without answers for a dataset is left out of that dataset's table. Three kinds of numbers:
 
   Table 2      triplet / relation / object, lenient, temporal IoU > 0.5 (one judge alone, rejudge.py; default Nemotron)
   vocabulary   share of the answer's relation words / object names that are in the dataset's human label set (exact,
@@ -9,8 +11,8 @@ videos. Three kinds of numbers:
   grounding    human pairs written (any word) and, per object, its own human name vs another object's (exact, no
                judge; qwen_why.py)
 
-    python3 tools/meanpool_report.py              # judge new words (NVIDIA key), write results/traser_meanpool/README.md
-    python3 tools/meanpool_report.py --no_ask     # saved verdicts only (unjudged words count as wrong)
+    python3 tools/ablation_report.py              # judge new words (NVIDIA key), write results/ablation/README.md
+    python3 tools/ablation_report.py --no_ask     # saved verdicts only (unjudged words count as wrong)
 """
 import argparse
 import collections
@@ -26,16 +28,19 @@ import rejudge as R  # noqa: E402
 import repeat_report as RR  # noqa: E402
 
 NAMES = {"pvsg": "PVSG", "vidor": "VidOR", "svg2test": "SVG2test"}
-OUT = E.REPO / "results" / "traser_meanpool"
+OUT = E.REPO / "results" / "ablation"
+RES = E.REPO / "results"
 
 
 def models(ds):
     """(label, root) per model; TRASER from the repeat runs when they have this dataset (same code and GPU)."""
     rep = E.REPO / "results" / "traser_repeats" / "run1"
     traser = rep if RR.videos(rep, ds) else E.RESULTS
-    return [("TRASER (trained resamplers)", traser),
-            ("TRASER, resamplers replaced by averaging", OUT / "run1"),
-            ("Qwen-7B, not fine-tuned, averaging", E.REPO / "results" / "qwen7b_bench")]
+    out = [("TRASER (full pipeline)", traser),
+           ("TRASER's fine-tuned model alone (video + boxes as text)", RES / "traser_plain" / "run1"),
+           ("TRASER, resamplers replaced by averaging", RES / "traser_meanpool" / "run1"),
+           ("Qwen-7B, not fine-tuned, averaging", RES / "qwen7b_bench")]
+    return [(label, root) for label, root in out if RR.videos(root, ds)]
 
 
 def human_vocab(ds):
@@ -85,12 +90,14 @@ def main():
     data = {}
     for ds in NAMES:
         ms = models(ds)
+        if len(ms) < 2:
+            continue
         common = sorted(set.intersection(*[set(RR.videos(root, ds)) for _, root in ms]))
         if common:
             data[ds] = [(label, root, RR.load(root, ds, common)) for label, root in ms]
     if not data:
-        raise SystemExit(f"no answers in {OUT}/run1 yet (notebooks/traser_repeat_kaggle.py or traser_repeat_run.py "
-                         "with REPEAT_LM=traser_meanpool REPEAT_RUNS=1)")
+        raise SystemExit("no answers of results/traser_plain/run1 or results/traser_meanpool/run1 yet "
+                         "(traser_repeat_kaggle.py / traser_repeat_run.py with REPEAT_LM=traser_plain REPEAT_RUNS=1)")
     judge = R.Solo(args.judge)
     keys = {E.Judge.key(*p) for ms in data.values() for _, _, x in ms for gt, pred, st in x.values() if pred is not None
             for p in E.video_pairs(gt, pred, st)[0]}
@@ -105,13 +112,18 @@ def main():
         judge.save()
 
     L = ["# Is TRASER's fine-tuned language model just the vocabulary?", "",
+         "**TRASER's fine-tuned model alone**: the released checkpoint loaded as a standard Qwen2.5-VL-3B (vision "
+         "encoder + fine-tuned language model, no resamplers), the whole video as ordinary video tokens and each object "
+         "as text, `Object k: <0 - 4 sec> [x1, y1, x2, y2] ...` (its box in each 4 s window, from the cells TRASER "
+         "selects for it), after TRASER's own prompt; same JSON answer (`bench_run.py --lm traser_plain`, "
+         "`tools/run_plain.py`). ",
          "**TRASER, resamplers replaced by averaging**: the released TRASER (its vision encoder, fine-tuned language "
          "model and special tokens) with the same input layout (\"Object k:\" blocks, `<a - b sec>` window labels, 32 "
          "tokens per object and per window), the same prompt and the same output format, but its two trained "
          "resamplers (Object-Trajectory and Temporal-Window) replaced by plain averaging to the same number of tokens "
          "(`bench_run.py --lm traser_meanpool`). The untrained Qwen2.5-VL-7B ran in the same averaging pipeline "
-         f"(`results/qwen7b_bench`). Same videos for all three. Judge: {args.judge} alone, lenient, temporal IoU > 0.5. "
-         "Made by `tools/meanpool_report.py`.", ""]
+         f"(`results/qwen7b_bench`). Same videos for all models. Judge: {args.judge} alone, lenient, temporal IoU > 0.5. "
+         "Made by `tools/ablation_report.py`.", ""]
     res = {}
     for ds, ms in data.items():
         rel_v, obj_v = human_vocab(ds)
@@ -133,7 +145,7 @@ def main():
         unj = sum(res[ds][label]["unjudged"] for label, _, _ in ms)
         if unj:
             L += [f"*{unj} word pairs not judged yet (counted as wrong): run the report again with the NVIDIA key.*", ""]
-    L += ["**How to read it.** If the averaging model still uses the dataset's words (high \"in the human vocabulary\") "
+    L += ["**How to read it.** If a model without TRASER's pipeline still uses the dataset's words (high \"in the human vocabulary\") "
           "but writes the wrong pairs or puts names on the wrong objects (low \"pairs written\" / \"own name\", high "
           "\"another object's name\"), the fine-tuned language model carries the vocabulary and the resamplers carry the "
           "grounding. If it keeps TRASER's grounding too, the resamplers add little. Exact names are strict: \"adult\" vs "

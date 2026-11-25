@@ -56,11 +56,16 @@ def main():
     ap.add_argument("--count", action="store_true", help="only count the words not judged yet")
     ap.add_argument("--no_ask", action="store_true", help="do not ask the judge; unjudged words count as wrong")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--runs", default="run1,run2", help="the run folders to use, comma-separated (default run1,run2; "
+                    "'all' = every run<k> folder)")
     ap.add_argument("--earlier", action=argparse.BooleanOptionalAction, default=True,
                     help="also score the published run (results/traser_bench) as a reference row (default: yes)")
     args = ap.parse_args()
     root = Path(args.root)
     runs = sorted((p for p in root.glob("run*") if p.is_dir()), key=lambda p: int(p.name[3:]) if p.name[3:].isdigit() else 0)
+    if args.runs != "all":
+        want = [r.strip() for r in args.runs.split(",") if r.strip()]
+        runs = [p for p in runs if p.name in want]
     if not runs:
         raise SystemExit(f"no runs in {root} (run notebooks/traser_repeat_run.py first)")
     # the same videos in every run: those every run answered
