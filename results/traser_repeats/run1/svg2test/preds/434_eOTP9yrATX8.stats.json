@@ -1,0 +1,82 @@
+{
+ "video": "/tmp/traser_bench/svg2test/434_eOTP9yrATX8/video.mp4",
+ "task": "scene_graph",
+ "dtype": "float16",
+ "vision_dtype": "float32",
+ "max_objects": 40,
+ "duration_s": 2.5,
+ "video_frames": 15,
+ "video_fps": 6.0,
+ "sampled_frames": 4,
+ "sampled_idx": [
+  0,
+  4,
+  9,
+  14
+ ],
+ "effective_fps": 1.6,
+ "grid_thw": [
+  2,
+  40,
+  74
+ ],
+ "raw_video_tokens": 1480,
+ "resized_hw": [
+  560,
+  1036
+ ],
+ "objects_requested": 14,
+ "objects": 13,
+ "mask_columns": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "tokens_per_object": [
+  194,
+  51,
+  5,
+  1330,
+  9,
+  2,
+  2,
+  2,
+  2,
+  5,
+  1,
+  4,
+  1
+ ],
+ "tokens_selected_union": 1480,
+ "tokens_dropped_fraction": 0.0,
+ "window_labels": [
+  "<0 - 4 sec>"
+ ],
+ "prompt_tokens": 1514,
+ "prompt": "Output the Video Scene Graph from the video and object trajectories:\n<video>\n",
+ "arranged_tokens": 1076,
+ "arrange_s": 2.9,
+ "embeds_finite": true,
+ "linear_positions": true,
+ "generate_s": 54.0,
+ "new_tokens": 1034,
+ "engine": "hf",
+ "peak_gpu_gb": 10.26,
+ "json_ok": true,
+ "out_objects": 13,
+ "out_relationships": 28,
+ "out_uncertain_labels": 0,
+ "lm": "traser",
+ "total_s": 57.3,
+ "gpu": "Tesla T4"
+}
